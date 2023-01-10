@@ -155,7 +155,7 @@ def parse_bibliography(g, doc_as_json):
             g.add((bib_reference, BIBO.volume, Literal(int(data["volume"]))))  # number
         # Issue
         if data.get("issue", None):
-            g.add((bib_reference, BIBO.volume, Literal(int(data["issue"]))))  # number
+            g.add((bib_reference, BIBO.issue, Literal(int(data["issue"]))))  # number
         # Pages
         if data.get("pages", None):
             if m := re.match(r"^(\d+)--(\d+)$", data["pages"]):
