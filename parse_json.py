@@ -53,15 +53,19 @@ def parse_sections(g, doc_as_json, body_matter):
         section_name: str = paragraph["section"]
         section_number: str = paragraph["sec_num"]
         if (section_name, section_number) not in sections_dict:
-            g.add((section:= SDP[f"section{section_name.title().replace(' ', '').replace('.', '')}"], RDF.type, DOCO.Section))
-            g.add((section_title:=SDP[f"sectionTitle{section_name.title().replace(' ', '').replace('.', '')}"], RDF.type, DOCO.SectionTitle))
+            g.add((section:= SDP[f"section{i}"], RDF.type, DOCO.Section))
+            g.add((section_title:=SDP[f"sectionTitle{i}"], RDF.type, DOCO.SectionTitle))
             g.add((section_title, C4O.hasContent, Literal(section_name)))
             g.add((section, PO.containsAsHeader, section_title))
+            if section_number:
+                g.add((section_label:=SDP[f"sectionLabel{i}"], RDF.type, DOCO.SectionLabel))
+                g.add((section_label, C4O.hasContent, Literal(section_number)))
+                g.add((section, PO.contains, section_label))
             sections_dict[(section_name, section_number)] = section
 
 
             depth = len(str(section_number).split("."))
-            print(section_name, section_number, depth)
+            # print(section_name, section_number, depth)
             if depth == 1:
                 if hierarchy[0] == "":
                     g.add((body_matter, CO.firstItem, body_list_item := BNode()))
@@ -95,13 +99,13 @@ def parse_sections(g, doc_as_json, body_matter):
         else:
             section = sections_dict[(section_name, section_number)]
 
-        citations = paragraph['cite_spans']
-        if citations:
-            for citation in citations:
+        for citation in paragraph.get('cite_spans', []):
+            if citation.get('ref_id', None):
                 g.add((section, PO.contains, citation_node := SDP[f"referenceTo{citation['ref_id']}"]))
                 g.add((citation_node, RDF.type, DEO.Reference))
                 g.add((citation_node, C4O.hasContent, Literal(citation['text'])))
                 g.add((citation_node, DCTERMS.references, SDP[citation['ref_id']]))
+
 
 
 def parse_bibliography(g, doc_as_json):
