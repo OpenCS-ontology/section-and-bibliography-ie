@@ -7,6 +7,5 @@ WORKDIR /s2orc-doc2json
 RUN ./scripts/setup_grobid.sh; exit 0
 COPY parse_json.py parse_json.py
 COPY run.sh run.sh
-COPY sample.pdf sample.pdf
 ENV PYTHONPATH=/s2orc-doc2json
 CMD ./scripts/run_grobid.sh

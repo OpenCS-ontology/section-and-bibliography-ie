@@ -35,7 +35,10 @@ def json_to_rdf(filepath):
         g.add((back_matter, CO.firstItem, bibliography_list_item := BNode()))
         g.add((bibliography_list_item, CO.itemContent, bibliography))
 
-    g.serialize(destination=f"{Path(filepath.parent) / Path(filepath.stem)}.ttl", format="turtle")
+    output_name = re.sub(r"\s+", "", doc_as_json.get("title", "")) + "_sections_biblio_ie"
+    output_path = Path(filepath.parent) / f"{output_name}.ttl"
+    g.serialize(destination=output_path, format="turtle")
+    output_path.chmod(0o666)
 
 
 def parse_bibliography(g, doc_as_json):
@@ -93,10 +96,14 @@ def parse_bibliography(g, doc_as_json):
                 g.add((bib_reference, BIBO.pageEnd, Literal(int(m.group(2)))))
             else:
                 g.add((bib_reference, BIBO.pages, Literal(data["pages"])))
+        # DOI
+        if data.get("other_ids", {}).get("DOI", None):
+            g.add((bib_reference, BIBO.doi, Literal(data["other_ids"]["DOI"])))
 
         first_iter = False
 
     return bibliography
+
 
 if __name__ == "__main__":
     input_file = sys.argv[1]
