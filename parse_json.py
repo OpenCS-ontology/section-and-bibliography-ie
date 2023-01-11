@@ -39,7 +39,7 @@ def json_to_rdf(filepath):
     if doc_as_json.get("pdf_parse", {}).get("body_text", None):
         parse_sections(g, doc_as_json, body_matter)
 
-    output_name = re.sub(r"\s+", "", doc_as_json.get("title", "")) + "_sections_biblio_ie"
+    output_name = re.sub(r"\s+", "_", doc_as_json.get("title", "").strip()) + "_sections_biblio_ie"
     output_path = Path(filepath.parent) / f"{output_name}.ttl"
     g.serialize(destination=output_path, format="turtle")
     output_path.chmod(0o666)
