@@ -39,7 +39,7 @@ def json_to_rdf(filepath):
     if doc_as_json.get("pdf_parse", {}).get("body_text", None):
         parse_sections(g, doc_as_json, body_matter)
 
-    output_name = re.sub(r"\s+", "", doc_as_json.get("title", "")) + "_sections_biblio_ie"
+    output_name = re.sub(r"\s+", "_", doc_as_json.get("title", "").strip()) + "_sections_biblio_ie"
     output_path = Path(filepath.parent) / f"{output_name}.ttl"
     g.serialize(destination=output_path, format="turtle")
     output_path.chmod(0o666)
@@ -57,6 +57,10 @@ def parse_sections(g, doc_as_json, body_matter):
             g.add((section_title:=SDP[f"sectionTitle{i}"], RDF.type, DOCO.SectionTitle))
             g.add((section_title, C4O.hasContent, Literal(section_name)))
             g.add((section, PO.containsAsHeader, section_title))
+            if section_number:
+                g.add((section_label:=SDP[f"sectionLabel{i}"], RDF.type, DOCO.SectionLabel))
+                g.add((section_label, C4O.hasContent, Literal(section_number)))
+                g.add((section, PO.contains, section_label))
             sections_dict[(section_name, section_number)] = section
 
 
@@ -94,9 +98,8 @@ def parse_sections(g, doc_as_json, body_matter):
         else:
             section = sections_dict[(section_name, section_number)]
 
-        citations = paragraph['cite_spans']
-        if citations:
-            for citation in citations:
+        for citation in paragraph.get('cite_spans', []):
+            if citation.get('ref_id', None):
                 g.add((section, PO.contains, citation_node := SDP[f"referenceTo{citation['ref_id']}"]))
                 g.add((citation_node, RDF.type, DEO.Reference))
                 g.add((citation_node, C4O.hasContent, Literal(citation['text'])))
@@ -148,10 +151,10 @@ def parse_bibliography(g, doc_as_json):
             g.add((publisher, FOAF.name, Literal(data["venue"])))
         # Volume
         if data.get("volume", None):
-            g.add((bib_reference, BIBO.volume, Literal(int(data["volume"]))))  # number
+            g.add((bib_reference, BIBO.volume, Literal(data["volume"])))  # string because we believe that things like 1-2 may happen
         # Issue
         if data.get("issue", None):
-            g.add((bib_reference, BIBO.volume, Literal(int(data["issue"]))))  # number
+            g.add((bib_reference, BIBO.issue, Literal(data["issue"])))  # string because something like 1-2 may happen
         # Pages
         if data.get("pages", None):
             if m := re.match(r"^(\d+)--(\d+)$", data["pages"]):
