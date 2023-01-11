@@ -152,10 +152,10 @@ def parse_bibliography(g, doc_as_json):
             g.add((publisher, FOAF.name, Literal(data["venue"])))
         # Volume
         if data.get("volume", None):
-            g.add((bib_reference, BIBO.volume, Literal(int(data["volume"]))))  # number
+            g.add((bib_reference, BIBO.volume, Literal(data["volume"])))  # string because we believe that things like 1-2 may happen
         # Issue
         if data.get("issue", None):
-            g.add((bib_reference, BIBO.issue, Literal(int(data["issue"]))))  # number
+            g.add((bib_reference, BIBO.issue, Literal(data["issue"])))  # string because something like 1-2 may happen
         # Pages
         if data.get("pages", None):
             if m := re.match(r"^(\d+)--(\d+)$", data["pages"]):
