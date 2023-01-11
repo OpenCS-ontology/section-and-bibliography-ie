@@ -60,8 +60,7 @@ def parse_sections(g, doc_as_json, body_matter):
             sections_dict[(section_name, section_number)] = section
 
 
-            depth = len(str(section_number).split("."))
-            print(section_name, section_number, depth)
+            depth = len(list(filter(None,str(section_number).split("."))))
             if depth == 1:
                 if hierarchy[0] == "":
                     g.add((body_matter, CO.firstItem, body_list_item := BNode()))
