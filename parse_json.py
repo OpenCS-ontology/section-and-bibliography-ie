@@ -4,6 +4,7 @@ import sys
 from pathlib import Path
 
 from rdflib import DCTERMS, FOAF, RDF, BNode, Graph, Namespace, Literal
+from functools import partial
 
 SDP = Namespace("http://mini.pw.edu.pl/semantic_data_processing/")
 DOCO = Namespace("http://purl.org/spar/doco/")
@@ -44,14 +45,100 @@ def json_to_rdf(filepath):
     g.serialize(destination=output_path, format="turtle")
     output_path.chmod(0o666)
 
+def to_arabic(number):
+    roman_to_arabic_dict = {
+        "I": "1",
+        "II": "2",
+        "III": "3",
+        "IV": "4",
+        "V": "5",
+        "VI": "6",
+        "VII": "7",
+        "VIII": "8",
+        "IX": "9",
+        "X": "10",
+        "XI": "11",
+        "XII": "12",
+        "XIII": "13",
+        "XIV": "14",
+        "XV": "15",
+        "XVI": "16",
+        "XVII": "17",
+        "XVIII": "18",
+        "XIX": "19",
+        "XX": "20",
+        "XXI": "21",
+        "XXII": "22",
+        "XXIII": "23",
+        "XXIV": "24",
+        "XXV": "25",
+        "XXVI": "26",
+        "XXVII": "27",
+        "XXVIII": "28",
+        "XXIX": "29",
+        "XXX": "30",
+        "XXXI": "31",
+        "XXXII": "32",
+        "XXXIII": "33",
+        "XXXIV": "34",
+        "XXXV": "35",
+        "XXXVI": "36",
+        "XXXVII": "37",
+        "XXXVIII": "38",
+        "XXXIX": "39",
+        "XL": "40",
+        "XLI": "41",
+        "XLII": "42",
+        "XLIII": "43",
+        "XLIV": "44",
+        "XLV": "45",
+        "XLVI": "46",
+        "XLVII": "47",
+        "XLVIII": "48",
+        "XLIX": "49",
+        "L": "50", 
+    }
+    return roman_to_arabic_dict.get(number, number)
 def parse_sections(g, doc_as_json, body_matter):
     sections_dict = {}
     first_iter = True
     first_iter_inner = True
     hierarchy = ["", ""]
+    prev_section_name = ""
     for i, paragraph in enumerate(doc_as_json.get("pdf_parse", {}).get("body_text", [])):
         section_name: str = paragraph["section"]
+        match = re.match(r'^([0-9\s.IVX]+) (.*)$', paragraph['text'])
+        if not section_name:
+            if not match and prev_section_name != "":
+                section_name = prev_section_name
+            elif match:
+                    num, section_name = match.group(1), match.group(2)
+                    section_name = section_name.split('. ', 1)[0]
+                    section_name = num + ' ' + section_name
+                    prev_section_name = section_name
+            else:
+                section_name = 'ERROR'
+        if section_name != prev_section_name:
+            match = re.match(r'^([0-9\s.IVX]+) (.*)$', section_name)
+            if match:
+                num, section_name = match.group(1), match.group(2)
+                section_name = section_name.split('. ', 1)[0]
+                section_name = num + ' ' + section_name
+                prev_section_name = section_name
+        
         section_number: str = paragraph["sec_num"]
+        if not section_number and section_name is not None:
+            match = re.match(r'^([0-9\s.IVX]+) (.*)$', section_name)
+            if match:
+                section_number = match.group(1)
+            else:
+                section_number = None
+        if not section_number or not section_name:
+            continue
+        match = re.match(r'^([0-9\s.IVX]+) (.*)$', section_name)
+        if match:
+            section_name = match.group(2)
+        section_number = ".".join(map(to_arabic, section_number.split('.')))
         if (section_name, section_number) not in sections_dict:
             g.add((section:= SDP[f"section{i}"], RDF.type, DOCO.Section))
             g.add((section_title:=SDP[f"sectionTitle{i}"], RDF.type, DOCO.SectionTitle))
@@ -102,7 +189,11 @@ def parse_sections(g, doc_as_json, body_matter):
             if citation.get('ref_id', None):
                 g.add((section, PO.contains, citation_node := SDP[f"referenceTo{citation['ref_id']}"]))
                 g.add((citation_node, RDF.type, DEO.Reference))
-                g.add((citation_node, C4O.hasContent, Literal(citation['text'])))
+                cite_text = citation['text']
+                for char in [',', '.', '[', ']', '(', ')']:
+                    cite_text = cite_text.replace(char, '')
+                cite_text = f'[{cite_text}]'
+                g.add((citation_node, C4O.hasContent, Literal(cite_text)))
                 g.add((citation_node, DCTERMS.references, SDP[citation['ref_id']]))
 
 
