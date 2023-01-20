@@ -1,0 +1,849 @@
+@prefix : <http://mini.pw.edu.pl/semantic_data_processing/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o> .
+@prefix co: <http://purl.org/co/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper po:contains :back-matter,
+        :body-matter .
+
+:back-matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body-matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section5 ;
+                    co:nextItem [ co:itemContent :section13 ;
+                            co:nextItem [ co:itemContent :section16 ;
+                                    co:nextItem [ co:itemContent :section20 ;
+                                            co:nextItem [ co:itemContent :section22 ;
+                                                    co:nextItem [ co:itemContent :section65 ;
+                                                            co:nextItem [ co:itemContent :section67 ;
+                                                                    co:nextItem [ co:itemContent :section70 ;
+                                                                            co:nextItem [ co:itemContent :section73 ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section13,
+        :section16,
+        :section20,
+        :section22,
+        :section5,
+        :section65,
+        :section67,
+        :section70,
+        :section73 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF26 a deo:Reference ;
+    dcterms:references :BIBREF26 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF27 a deo:Reference ;
+    dcterms:references :BIBREF27 ;
+    c4o:hasContent "[27]" .
+
+:referenceToBIBREF28 a deo:Reference ;
+    dcterms:references :BIBREF28 ;
+    c4o:hasContent "[28]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF30 a deo:Reference ;
+    dcterms:references :BIBREF30 ;
+    c4o:hasContent "[30]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel13 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel16 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel5 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel70 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel73 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction" .
+
+:sectionTitle13 a doco:SectionTitle ;
+    c4o:hasContent "Proposed Approach" .
+
+:sectionTitle16 a doco:SectionTitle ;
+    c4o:hasContent "Client Module (CM) : Main responsibility of this Module is to filter the jobs to be processed by cloud environment and to submit those requests to a server node, through a broker" .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "Job Distribution among cloud and fog Layer" .
+
+:sectionTitle22 a doco:SectionTitle ;
+    c4o:hasContent "Evaluating Load Status for Node Allocation" .
+
+:sectionTitle5 a doco:SectionTitle ;
+    c4o:hasContent "Related Work" .
+
+:sectionTitle65 a doco:SectionTitle ;
+    c4o:hasContent "Task Assignment" .
+
+:sectionTitle67 a doco:SectionTitle ;
+    c4o:hasContent "Algorithm 1 Partition Selection" .
+
+:sectionTitle70 a doco:SectionTitle ;
+    c4o:hasContent "Implementation and Results" .
+
+:sectionTitle73 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "IEEE 3rd International Conference on MOOCs, Innovation and Technology in Education (MITE)" ] ;
+    dcterms:title "Fault tolerant algorithm for replication management in distributed cloud system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sidhu" ;
+                    foaf:givenname "Avtar Singh" ] ] ;
+    bibo:pageEnd 83 ;
+    bibo:pageStart 78 ;
+    c4o:hasContent "Avtar Singh Sidhu. Fault tolerant algorithm for replication management in distributed cloud system. 2015 IEEE 3rd International Conference on MOOCs, Innovation and Technology in Education (MITE), pages 78-83, 2015." .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF25 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF26 ;
+                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF27 ;
+                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF28 ;
+                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF29 ;
+                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF30 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF26,
+        :BIBREF27,
+        :BIBREF28,
+        :BIBREF29,
+        :BIBREF3,
+        :BIBREF30,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF29 a deo:Reference ;
+    dcterms:references :BIBREF29 ;
+    c4o:hasContent "[29]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF11,
+        :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :referenceToBIBREF26,
+        :referenceToBIBREF27,
+        :referenceToBIBREF28,
+        :referenceToBIBREF30,
+        :referenceToBIBREF4,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section13 a doco:Section ;
+    po:contains :referenceToBIBREF29,
+        :sectionLabel13 ;
+    po:containsAsHeader :sectionTitle13 .
+
+:section16 a doco:Section ;
+    po:contains :sectionLabel16 ;
+    po:containsAsHeader :sectionTitle16 .
+
+:section20 a doco:Section ;
+    po:contains :referenceToBIBREF12 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section22 a doco:Section ;
+    po:containsAsHeader :sectionTitle22 .
+
+:section5 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF10,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF2,
+        :referenceToBIBREF20,
+        :referenceToBIBREF23,
+        :referenceToBIBREF24,
+        :referenceToBIBREF25,
+        :referenceToBIBREF29,
+        :referenceToBIBREF3,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel5 ;
+    po:containsAsHeader :sectionTitle5 .
+
+:section65 a doco:Section ;
+    po:containsAsHeader :sectionTitle65 .
+
+:section67 a doco:Section ;
+    po:containsAsHeader :sectionTitle67 .
+
+:section70 a doco:Section ;
+    po:contains :sectionLabel70 ;
+    po:containsAsHeader :sectionTitle70 .
+
+:section73 a doco:Section ;
+    po:contains :sectionLabel73 ;
+    po:containsAsHeader :sectionTitle73 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "Transactions on Parallel and Distributed Systems" ] ;
+    dcterms:title "Replication-based load balancing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Orda" ;
+                    foaf:givenname "Ariel" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nahir" ;
+                    foaf:givenname "Amir" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Raz" ;
+                    foaf:givenname "Danny" ] ] ;
+    bibo:pageEnd 15 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Ariel Orda Amir Nahir and Danny Raz. Replication-based load balancing. Transactions on Parallel and Distributed Systems, pages 1-15, 2015." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Parallel and Distributed Systems" ] ;
+    dcterms:title "Replication-based load balancing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nahir" ;
+                    foaf:givenname "Danny Raz Amir" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Orda" ;
+                    foaf:givenname "Ariel" ] ] ;
+    bibo:pageEnd 507 ;
+    bibo:pageStart 494 ;
+    bibo:volume "27" ;
+    c4o:hasContent "Danny Raz Amir Nahir, Ariel Orda. Replication-based load balancing. IEEE Transactions on Parallel and Distributed Systems, 27:494-507, feb 2016." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "IEEE TRANSACTIONS ON CLOUD COMPUTING" ] ;
+    dcterms:title "Decentralized and energy-efficient workload management in enterprise clouds" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gavriil Tzortzakis" ;
+                    foaf:givenname "Michael" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pantazoglou" ;
+                    foaf:givenname "Alex" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Delis" ] ] ;
+    bibo:pageEnd 14 ;
+    bibo:pageStart 1 ;
+    bibo:volume "10" ;
+    c4o:hasContent "Gavriil Tzortzakis Michael Pantazoglou and Alex Delis. Decentralized and energy-efficient workload management in enterprise clouds. IEEE TRANSACTIONS ON CLOUD COMPUTING, 10:1-14, 2017." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 8th IEEE GCC Conference and Exhibition" ] ;
+    dcterms:title "An intelligent dynamic replica selection model within grid systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hamza Nour Mostafa" ;
+                    foaf:givenname "Ahmed" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ridhawi" ;
+                    foaf:givenname "Al" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Ahmed Hamza Nour Mostafa, Ismaeel Al Ridhawi. An intelligent dynamic replica selection model within grid systems. Proceedings of the 8th IEEE GCC Conference and Exhibition, Muscat, Oman, pages 1 -6, 2015." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:title "Processing iot data: From cloud to fogits time to be down to earth. ResearchGate" ;
+    bibo:pageEnd 148 ;
+    bibo:pageStart 124 ;
+    c4o:hasContent "Aditya Brahmachari Pijush Kanti Dutta Pramanik, Saurabh Pal and Prasenjit Choudhury. Processing iot data: From cloud to fogits time to be down to earth. ResearchGate, pages 124-148, 2018." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "International Journal of Computer Science and Information Technologies" ] ;
+    dcterms:title "Load degree calculation for the public cloud based on cloud partitioning model using turnaround time" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sharma" ;
+                    foaf:givenname "Pankaj" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "Priti" ] ] ;
+    c4o:hasContent "Pankaj Sharma Priti Singh. Load degree calculation for the public cloud based on cloud partitioning model using turnaround time. International Journal of Computer Science and Information Technologies, 2015." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE Communications Magazine" ] ;
+    dcterms:title "Secure and sustainable load balancing of edge data centers in fog computing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Puthal" ;
+                    foaf:givenname "Deepak" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Obaidat" ;
+                    foaf:givenname "Mohammad" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Nanda" ;
+                    foaf:givenname "Priyadarsi" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Prasad" ;
+                    foaf:givenname "Mukesh" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Saraju" ;
+                    foaf:givenname "P" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Mohanty" ;
+                    foaf:givenname "Albert" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Zomaya" ] ] ;
+    bibo:pageEnd 65 ;
+    bibo:pageStart 60 ;
+    bibo:volume "56" ;
+    c4o:hasContent "Deepak Puthal, Mohammad S. Obaidat, Priyadarsi Nanda, Mukesh Prasad, Saraju P. Mohanty, and Albert Y. Zomaya. Secure and sustainable load balancing of edge data centers in fog computing. IEEE Communications Magazine, 56:60-65, 2018." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE Globecom Workshops (GC Wkshps)" ] ;
+    dcterms:title "Data consumption-aware load forecasting scheme for smart grid systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sudeep Tanwar Shriya Kaneriya" ;
+                    foaf:givenname "Anand" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nayyar" ;
+                    foaf:givenname "Jai" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Verma" ;
+                    foaf:givenname "Sudhanshu" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Tyagi" ;
+                    foaf:givenname "Neeraj" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Obaidat" ;
+                    foaf:givenname "Joel J P C" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Rodrigues" ] ] ;
+    c4o:hasContent "Sudeep Tanwar Shriya Kaneriya, Anand Nayyar, Jai Prakash Verma, Sudhanshu Tyagi, Neeraj Kumar, M. S. Obaidat, and Joel J P C Rodrigues. Data consumption-aware load forecasting scheme for smart grid systems. 2018 IEEE Globecom Workshops (GC Wkshps), 2019." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "The Journal of Supercomputing" ] ;
+    dcterms:title "Fog computing: from architecture to edge computing and big data processing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "Rajesh Kumar Simar Preet" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nayyar" ;
+                    foaf:givenname "Anand" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sharma" ;
+                    foaf:givenname "Anju" ] ] ;
+    bibo:pageEnd 36 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Rajesh Kumar Simar Preet Singh, Anand Nayyar and Anju Sharma. Fog computing: from architecture to edge computing and big data processing. The Journal of Supercomputing, pages 1-36, 2018." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "The Journal of Supercomputing" ] ;
+    dcterms:title "Fog computing: from architecture to edge computing and big data processing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Simar" ;
+                    foaf:givenname "Preet" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "Anand" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Nayyar" ;
+                    foaf:givenname "Rajesh Kumar Anju" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sharma" ] ] ;
+    bibo:pageEnd 36 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Simar Preet Singh, Anand Nayyar, and Rajesh Kumar Anju Sharma. Fog computing: from architecture to edge computing and big data processing. The Journal of Supercomputing, pages 1-36, 2018." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Data Management, Analytics and Innovation. Advances in Intelligent Systems and Computing" ] ;
+    dcterms:title "Logarithmic spiral based local search in artificial bee colony algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Suseendran Anand Nayyar" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Puri" ;
+                    foaf:givenname "Vikram" ] ] ;
+    bibo:pageEnd 525 ;
+    bibo:pageStart 513 ;
+    bibo:volume "839" ;
+    c4o:hasContent "G. Suseendran Anand Nayyar, Vikram Puri. Logarithmic spiral based local search in artificial bee colony algorithm. Balas V., Sharma N., Chakrabarti A. (eds) Data Management, Analytics and Innovation. Advances in Intelligent Systems and Computing, 839:513-525, 2018." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Industrial Networks and Intelligent Systems. INISCOM 2018" ] ;
+    dcterms:title "Logarithmic spiral based local search in artificial bee colony algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sharma" ;
+                    foaf:givenname "Anand Nayyar Sonal" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "Sandeep" ] ] ;
+    bibo:pageEnd 27 ;
+    bibo:pageStart 15 ;
+    bibo:volume "257" ;
+    c4o:hasContent "Anand Nayyar Sonal Sharma, Sandeep Kumar. Logarithmic spiral based local search in artificial bee colony algorithm. Duong T., Vo NS. (eds) Industrial Networks and Intelligent Systems. INISCOM 2018, 257:15-27, 2019." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "International Journal of Parallel, Emergent and Distributed Systems" ] ;
+    dcterms:title "Trends in data replication strategies: a survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Souravlas" ;
+                    foaf:givenname "Stavros" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sifaleras" ;
+                    foaf:givenname "Angelo" ] ] ;
+    bibo:pageEnd 19 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Stavros Souravlas and Angelo Sifaleras. Trends in data replication strategies: a survey. International Journal of Parallel, Emergent and Distributed Systems, pages 1 -19, 2017." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Parallel and Distributed Systems" ] ;
+    dcterms:title "Binary-tree based estimation of file requests for efficient data replication" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sifaleras" ;
+                    foaf:givenname "Angelo" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Souravlas" ;
+                    foaf:givenname "Stavros" ] ] ;
+    bibo:pageEnd 1852 ;
+    bibo:pageStart 1839 ;
+    bibo:volume "28" ;
+    c4o:hasContent "Angelo Sifaleras Stavros Souravlas. Binary-tree based estimation of file requests for efficient data replication. IEEE Transactions on Parallel and Distributed Systems, 28:1839 -1852, 2017." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "IEEE Conference on Collaboration and Internet Computing" ] ;
+    dcterms:title "A workload-based approach to partition the volunteer cloud" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Scala" ;
+                    foaf:givenname "Antonio" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sebastio" ;
+                    foaf:givenname "Stefano" ] ] ;
+    bibo:pageEnd 2018 ;
+    bibo:pageStart 2010 ;
+    c4o:hasContent "Antonio Scala Stefano Sebastio. A workload-based approach to partition the volunteer cloud. IEEE Conference on Collaboration and Internet Computing, pages 2010-2018, 2015." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "Journal of Theoretical and Applied Information Technology" ] ;
+    dcterms:title "A novel approach for dynamic cloud partitioning and load balancing in cloud computing environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Divya Mohandass Suguna R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ranjani" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 667 ;
+    bibo:pageStart 662 ;
+    bibo:volume "62" ;
+    c4o:hasContent "Divya Mohandass Suguna R and Ranjani R. A novel approach for dynamic cloud partitioning and load balancing in cloud computing environment. Journal of Theoretical and Applied Information Technology, 62:662-667, 2014." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "China Communications" ] ;
+    dcterms:title "A novel load balancing strategy of software-defined cloud/fog networking in the internet of vehicles" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shi Xiuli He" ;
+                    foaf:givenname "Chenhua" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ren" ;
+                    foaf:givenname "Zhiyuan" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Fang" ;
+                    foaf:givenname "Jian" ] ] ;
+    bibo:pageEnd 149 ;
+    bibo:pageStart 140 ;
+    bibo:volume "13" ;
+    c4o:hasContent "Chenhua Shi Xiuli He, Zhiyuan Ren and Jian Fang. A novel load balancing strategy of software-defined cloud/fog networking in the internet of vehicles. China Communications, 13:140-149, 2016." .
+
+:BIBREF26 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Elastic load balancing using self-adaptive replication management" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Jui-Pin" ] ] ;
+    bibo:pageEnd 7504 ;
+    bibo:pageStart 7495 ;
+    bibo:volume "5" ;
+    c4o:hasContent "Jui-Pin Yang. Elastic load balancing using self-adaptive replication management. IEEE Access, 5:7495-7504, 2017." .
+
+:BIBREF27 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "On minimizing energy cost in internet-scale systems with dynamic data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jui Pin" ;
+                    foaf:givenname "Yang" ] ] ;
+    bibo:volume "5" ;
+    c4o:hasContent "Jui Pin Yang. On minimizing energy cost in internet-scale systems with dynamic data. IEEE Access, 5:20068 -20082, 2017." .
+
+:BIBREF28 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Intelligent offload detection for achieving approximately optimal load balancing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Jui-Pin" ] ] ;
+    bibo:pageEnd 3536 ;
+    bibo:pageStart 2169 ;
+    bibo:volume "6" ;
+    c4o:hasContent "Jui-Pin Yang. Intelligent offload detection for achieving approximately optimal load balancing. IEEE Access, 6:2169-3536, 2018." .
+
+:BIBREF29 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "A partitioning and index algorithm for rdf data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang Yonglin Leng" ;
+                    foaf:givenname "Hongmin" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "Zhikui" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhong" ;
+                    foaf:givenname "Fangming" ] ] ;
+    bibo:pageEnd 29845 ;
+    bibo:pageStart 29836 ;
+    c4o:hasContent "Hongmin Wang Yonglin Leng, Zhikui Chen and Fangming Zhong. A partitioning and index algorithm for rdf data. IEEE Access, pages 29836 -29845, 2018." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "3rd International Conference on Computing for Sustainable Global Development (INDIACom)" ] ;
+    dcterms:title "Ant colony optimization computational swarm intelligence technique" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "Rajeshwar" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nayyar" ;
+                    foaf:givenname "Anand" ] ] ;
+    c4o:hasContent "Rajeshwar Singh Anand Nayyar. Ant colony optimization computational swarm intelligence technique. 2016 3rd Inter- national Conference on Computing for Sustainable Global Development (INDIACom), 2016." .
+
+:BIBREF30 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "IEEE TRANSACTIONS ON PARALLEL AND DISTRIBUTED SYSTEMS)" ] ;
+    dcterms:title "Evaluating replication for parallel jobs:an efficient approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Juan" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "P'erez Zhan" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Qiu" ] ] ;
+    bibo:pageEnd 2302 ;
+    bibo:pageStart 2288 ;
+    c4o:hasContent "Juan F. P'erez Zhan Qiu. Evaluating replication for parallel jobs:an efficient approach. IEEE TRANSACTIONS ON PARALLEL AND DISTRIBUTED SYSTEMS), pages 2288-2302, 2016." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:title "Energy-aware resource allocation heuristics for efficient management of data centers for cloud computing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Buyya" ;
+                    foaf:givenname "Rajkumar" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Beloglazov" ;
+                    foaf:givenname "Anton" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Abawajy" ;
+                    foaf:givenname "Jemal" ] ] ;
+    bibo:volume "5" ;
+    c4o:hasContent "Rajkumar Buyya Anton Beloglazov, Jemal Abawajy. Energy-aware resource allocation heuristics for efficient manage- ment of data centers for cloud computing. Elsevier, 5:20068 -20082, 2017." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "IEEE Internet of Things Journal" ] ;
+    dcterms:title "Optimal workload allocation in fog-cloud computing toward balanced delay and power consumption" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Deng" ;
+                    foaf:givenname "Ruilong" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lu" ;
+                    foaf:givenname "Rongxing" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lai" ;
+                    foaf:givenname "Chengzhe" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Luan" ;
+                    foaf:givenname "Tom" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Liang" ;
+                    foaf:givenname "Hao" ] ] ;
+    bibo:pageEnd 1181 ;
+    bibo:pageStart 1171 ;
+    bibo:volume "3" ;
+    c4o:hasContent "Ruilong Deng, Rongxing Lu, Chengzhe Lai, Tom H. Luan, and Hao Liang. Optimal workload allocation in fog-cloud computing toward balanced delay and power consumption. IEEE Internet of Things Journal, 3:1171-1181, 2016." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "TSINGHUA SCIENCE AND TECHNOLOGY" ] ;
+    dcterms:title "A load balancing model based on cloud partitioning for the public cloud" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pang" ;
+                    foaf:givenname "Junjie" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "Gaochao" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Fu" ;
+                    foaf:givenname "Xiaodong" ] ] ;
+    bibo:pageEnd 39 ;
+    bibo:pageStart 34 ;
+    c4o:hasContent "Junjie Pang Gaochao Xu and Xiaodong Fu. A load balancing model based on cloud partitioning for the public cloud. TSINGHUA SCIENCE AND TECHNOLOGY, pages 34-39, 2013." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "IEEE TRANSACTIONS ON NETWORK AND SERVICE MANAGEMENT" ] ;
+    dcterms:title "Proactive workload management in hybrid cloud comput-ing+b17" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "Kenji Yoshihira Hui" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jiang" ;
+                    foaf:givenname "Guofei" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "Haifeng" ] ] ;
+    bibo:pageEnd 100 ;
+    bibo:pageStart 90 ;
+    bibo:volume "11" ;
+    c4o:hasContent "Kenji Yoshihira Hui Zhang, Guofei Jiang and Haifeng Chen. Proactive workload management in hybrid cloud comput- ing+b17. IEEE TRANSACTIONS ON NETWORK AND SERVICE MANAGEMENT, 11:90-100, 2014." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Industrial Informatics" ] ;
+    dcterms:title "Service popularity-based smart resources partitioning for fog computing-enabled industrial internet of things" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Gaolei" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "Jun" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Jianhua" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Kuan" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ye" ;
+                    foaf:givenname "Tianpeng" ] ] ;
+    bibo:pageEnd 4711 ;
+    bibo:pageStart 4702 ;
+    c4o:hasContent "Gaolei Li, Jun Wu, Jianhua Li, Kuan Wang, and Tianpeng Ye. Service popularity-based smart resources partitioning for fog computing-enabled industrial internet of things. IEEE Transactions on Industrial Informatics, pages 4702-4711, 2018." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Industrial Informatics" ] ;
+    dcterms:title "Service popularity-based smart resources partitioning for fog computing-enabled industrial internet of things" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Gaolei" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "Jun" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Jianhua" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Kuan" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ye" ;
+                    foaf:givenname "Tianpeng" ] ] ;
+    bibo:pageEnd 4711 ;
+    bibo:pageStart 4702 ;
+    c4o:hasContent "Gaolei Li, Jun Wu, Jianhua Li, Kuan Wang, and Tianpeng Ye. Service popularity-based smart resources partitioning for fog computing-enabled industrial internet of things. IEEE Transactions on Industrial Informatics, pages 4702-4711, 2018." .
+

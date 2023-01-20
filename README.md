@@ -7,7 +7,7 @@ The following tool aims to extract some structured information, namely section i
 The information captured is written in a semantic manner based on ontology.
 For a given PDF file, an application generates a corresponding TTL file with all the relevant data extracted.
 
-To be specific, the application tries to extract the following contest:
+To be specific, the application tries to extract the following content:
 
 1. Bibliographical data, which is an ordered list of bibliographical entries, which is usually located at the end of the document. Each entry may contain the following information:
     - Raw text - the whole bibliographical reference text as it appears in the Bibliography section.
@@ -36,6 +36,9 @@ The ontology is strongly based on DOCO and BIBO ontologies. DOCO provides [compr
 6. Now, you can call `./run.sh /path/to/your/pdf/file.pdf`. If you followed the commands above, the exemplary command might be `./run.sh /common/paper.pdf`. The output TTL will be produced in the same location. The name of the output file is based on the parsed name of the paper, suffixed with "_sections_biblio_ie". This is a common convention that we agreed on across the teams.
 
 Remark: You should be able to call the `/s2orc-doc2json/run.sh` script from any directory, as it should resolve the paths correctly.
+
+Note that for debugging purposes, our solution, apart from a PDF file, also produces a JSON file.
+If you want to have it removed, uncomment the lines commented out in the `REPO/run.sh` file.
 
 ## Internal
 
@@ -86,7 +89,7 @@ A section may also contain subsections, which, apart from `po:contains`, are mar
 
 ### Sample generated Turtle file
 
-Transforming a paper `/common/paper2.pdf` yields `Attention_Is_All_You_Need_sections_biblio_ie.ttl` file. In the beginning, prefixes are introduced.
+Transforming a paper [Attention Is All You Need](https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf) yields `Attention_Is_All_You_Need_sections_biblio_ie.ttl` file. The content of the file is as follows. In the beginning, prefixes are introduced.
 Then, you can find the following content:
 
 ```

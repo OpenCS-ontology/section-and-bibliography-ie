@@ -1,0 +1,323 @@
+@prefix : <http://mini.pw.edu.pl/semantic_data_processing/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o> .
+@prefix co: <http://purl.org/co/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper po:contains :back-matter,
+        :body-matter .
+
+:back-matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body-matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section10 ;
+                    co:nextItem [ co:itemContent :section15 ;
+                            co:nextItem [ co:itemContent :section25 ;
+                                    co:nextItem [ co:itemContent :section32 ;
+                                            co:nextItem [ co:itemContent :section39 ;
+                                                    co:nextItem [ co:itemContent :section44 ;
+                                                            co:nextItem [ co:itemContent :section49 ;
+                                                                    co:nextItem [ co:itemContent :section56 ;
+                                                                            co:nextItem [ co:itemContent :section62 ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section10,
+        :section15,
+        :section25,
+        :section32,
+        :section39,
+        :section44,
+        :section49,
+        :section56,
+        :section62 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel10 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel15 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel25 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel32 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel49 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel56 a doco:SectionLabel ;
+    c4o:hasContent "7." .
+
+:sectionLabel62 a doco:SectionLabel ;
+    c4o:hasContent "8." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle10 a doco:SectionTitle ;
+    c4o:hasContent "BACKGROUND AND RATIONALE" .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "LEARNING FROM THE CBR AND ACM PERSPECTIVE" .
+
+:sectionTitle25 a doco:SectionTitle ;
+    c4o:hasContent "HOW CBR IS RELATED TO ACM" .
+
+:sectionTitle32 a doco:SectionTitle ;
+    c4o:hasContent "INCORPORATING CBR INTO ACM" .
+
+:sectionTitle39 a doco:SectionTitle ;
+    c4o:hasContent "REVISE" .
+
+:sectionTitle44 a doco:SectionTitle ;
+    c4o:hasContent "RETAIN" .
+
+:sectionTitle49 a doco:SectionTitle ;
+    c4o:hasContent "APPLICATION EXAMPLES" .
+
+:sectionTitle56 a doco:SectionTitle ;
+    c4o:hasContent "THE POSSIBILITY OF EXTENDING THE APPLICATION" .
+
+:sectionTitle62 a doco:SectionTitle ;
+    c4o:hasContent "SUMMARY" .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8 .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:section0 a doco:Section ;
+    po:contains :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section10 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :sectionLabel10 ;
+    po:containsAsHeader :sectionTitle10 .
+
+:section15 a doco:Section ;
+    po:contains :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :sectionLabel15 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section25 a doco:Section ;
+    po:contains :referenceToBIBREF5,
+        :sectionLabel25 ;
+    po:containsAsHeader :sectionTitle25 .
+
+:section32 a doco:Section ;
+    po:contains :sectionLabel32 ;
+    po:containsAsHeader :sectionTitle32 .
+
+:section39 a doco:Section ;
+    po:contains :referenceToBIBREF6 ;
+    po:containsAsHeader :sectionTitle39 .
+
+:section44 a doco:Section ;
+    po:contains :referenceToBIBREF2,
+        :referenceToBIBREF7 ;
+    po:containsAsHeader :sectionTitle44 .
+
+:section49 a doco:Section ;
+    po:contains :sectionLabel49 ;
+    po:containsAsHeader :sectionTitle49 .
+
+:section56 a doco:Section ;
+    po:contains :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :sectionLabel56 ;
+    po:containsAsHeader :sectionTitle56 .
+
+:section62 a doco:Section ;
+    po:contains :sectionLabel62 ;
+    po:containsAsHeader :sectionTitle62 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2000 ;
+    dcterms:publisher [ foaf:name "Information Systems Frontiers" ] ;
+    dcterms:title "Organizational memory and knowledge management" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abecker" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Decker" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Maurer" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:issue "3-4" ;
+    bibo:pageEnd 252 ;
+    bibo:pageStart 251 ;
+    bibo:volume "2" ;
+    c4o:hasContent "A. Abecker, S. Decker, F. Maurer, \"Organizational memory and knowledge management,\" Information Systems Frontiers 2(3-4), 2000, pp. 251-252." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 1995 ;
+    dcterms:publisher [ foaf:name "Data and Knowledge Engineering" ] ;
+    dcterms:title "Different roles and mutual dependencies of data, information, and knowledge-an AI perspective on their integration" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Aamodt" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nygård" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 222 ;
+    bibo:pageStart 191 ;
+    bibo:volume "16" ;
+    c4o:hasContent "A. Aamodt, M. Nygård, \"Different roles and mutual dependencies of data, information, and knowledge-an AI perspective on their integration,\" Data and Knowledge Engineering 16, 1995, pp. 191-222." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 1994 ;
+    dcterms:title "Case-Based Reasoning: Foundational Issues, Methodological Variations, and System Approaches" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Aamodt" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Plaza" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:pageEnd 59 ;
+    bibo:pageStart 39 ;
+    bibo:volume "7" ;
+    c4o:hasContent "A. Aamodt, E. Plaza, \"Case-Based Reasoning: Foundational Issues, Methodological Variations, and System Approaches,\" AI Communications, IOS Press, Vol. 7(1), 1994, pp. 39-59." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:title "Podejście procesowe jako klucz do optymalizacji pracy nowoczesnych przedsiębiorstw. PTI, Krajowa Konferencja Inżynierii Oprogramowania" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Osuszek" ;
+                    foaf:givenname "Ł" ] ] ;
+    c4o:hasContent "Ł. Osuszek, Podejście procesowe jako klucz do optymalizacji pracy nowoczesnych przedsiębiorstw. PTI, Krajowa Konferencja Inżynierii Oprogramowania, 2013." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:title "Mastering the Unpredictable: How Adaptive Case Management Will Revolutionize the Way that Knowledge Workers Get Things Done, Chapter 1 \"The nature of knowledge work" ;
+    c4o:hasContent "K. D. Swenson (Ed.), Mastering the Unpredictable: How Adaptive Case Management Will Revolutionize the Way that Knowledge Workers Get Things Done, Chapter 1 \"The nature of knowledge work.\" Tampa: Meghan-Kiffer Press, 2010." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2001 ;
+    dcterms:publisher [ foaf:name "Computer-Aided Design" ] ;
+    dcterms:title "Case Base of Case-Based Design Tools for Architecture" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Heylighen" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Neuckermans" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 1122 ;
+    bibo:pageStart 1111 ;
+    c4o:hasContent "A. Heylighen, H. Neuckermans, \"Case Base of Case-Based Design Tools for Architecture,\" Computer-Aided Design, 2001, pp. 1111- 1122." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 1996 ;
+    dcterms:publisher [ foaf:name "IEEE Expert Intelligent Systems & Their Applications" ] ;
+    dcterms:title "Developing Cased-Based Reasoning for Structural Design" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Maher" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gomez De" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Garza" ;
+                    foaf:givenname "Silva" ] ] ;
+    bibo:pageEnd 53 ;
+    bibo:pageStart 42 ;
+    c4o:hasContent "M. L. Maher, A. Gomez de Silva Garza, \"Developing Cased-Based Reasoning for Structural Design,\" IEEE Expert Intelligent Systems & Their Applications, June 1996, pp. 42-53." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2001 ;
+    dcterms:publisher [ foaf:name "Zarządzanie wartością przedsiębiorstwa w warunkach globalizacji. Wybrane zagadnienia. Szczecin: Wydawnictwo Naukowe Uniwersytetu Szczecińskiego" ] ;
+    dcterms:title "Wpływ zarządzania wiedzą na wartość firmy" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Skrzypek" ;
+                    foaf:givenname "E" ] ] ;
+    c4o:hasContent "E. Skrzypek, \"Wpływ zarządzania wiedzą na wartość firmy\" in E. Urbańczyk (Ed.), Zarządzanie wartością przedsiębiorstwa w warunkach globalizacji. Wybrane zagadnienia. Szczecin: Wydawnictwo Naukowe Uniwersytetu Szczecińskiego, 2001." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "Artificial Intelligence in Theory and Practice" ] ;
+    dcterms:title "Artificial Intelligence and Knowledge Management" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hoeschl" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Barcellos" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 19 ;
+    bibo:pageStart 11 ;
+    c4o:hasContent "H. C. Hoeschl, V. Barcellos, \"Artificial Intelligence and Knowledge Management,\" in M. Bramer (Ed.), Artificial Intelligence in Theory and Practice, Boston: Springer, 2006, pp. 11-19." .
+
