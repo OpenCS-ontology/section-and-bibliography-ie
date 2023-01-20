@@ -259,4 +259,4 @@ During the development, we have encountered various types of problematic `s2orc-
 We did our best to overcome issues 1., 5., 6., 7.
 However, it does not mean that our solution can handle all the possible cases that one can imagine.
 Our set of testing papers was highly limited.
-The problem of parsing captions as sections may be of great importance, but we do not see any universal solution.
+The problem of parsing captions as sections sometimes may be of great importance, but we do not see any universal solution.
