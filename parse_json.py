@@ -117,7 +117,7 @@ def parse_sections(g, doc_as_json, body_matter):
                     section_name = num + ' ' + section_name
                     prev_section_name = section_name
             else:
-                section_name = 'ERROR'
+                continue
         if section_name != prev_section_name:
             match = re.match(r'^([0-9\s.IVX]+) (.*)$', section_name)
             if match:
@@ -125,6 +125,9 @@ def parse_sections(g, doc_as_json, body_matter):
                 section_name = section_name.split('. ', 1)[0]
                 section_name = num + ' ' + section_name
                 prev_section_name = section_name
+
+        if not section_name or not any(c.isalpha() for c in section_name):
+            continue
         
         section_number: str = paragraph["sec_num"]
         if not section_number and section_name is not None:
@@ -133,12 +136,10 @@ def parse_sections(g, doc_as_json, body_matter):
                 section_number = match.group(1)
             else:
                 section_number = None
-        if not section_number or not section_name:
-            continue
         match = re.match(r'^([0-9\s.IVX]+) (.*)$', section_name)
         if match:
             section_name = match.group(2)
-        section_number = ".".join(map(to_arabic, section_number.split('.')))
+        section_number = ".".join(map(to_arabic, section_number.split('.'))) if section_number is not None else None
         if (section_name, section_number) not in sections_dict:
             g.add((section:= SDP[f"section{i}"], RDF.type, DOCO.Section))
             g.add((section_title:=SDP[f"sectionTitle{i}"], RDF.type, DOCO.SectionTitle))
