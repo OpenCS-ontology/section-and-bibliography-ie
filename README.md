@@ -191,6 +191,8 @@ Finally, we see that `:section8` contains some references. We can check that the
     c4o:hasContent "Ilya Sutskever, Oriol Vinyals, and Quoc VV Le. Sequence to sequence learning with neural networks. In Advances in Neural Information Processing Systems, pages 3104-3112, 2014.".
 ```
 
+Bibliographic references are also contained by the `:bibliography`, using `po:contains` and `co` namespaces properties. We do not present it here due to readability reasons.
+
 
 
 ## <a name="head1234"></a>Known issues
