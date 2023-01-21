@@ -1,0 +1,633 @@
+@prefix : <http://mini.pw.edu.pl/semantic_data_processing/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o> .
+@prefix co: <http://purl.org/co/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper po:contains :back-matter,
+        :body-matter .
+
+:back-matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body-matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section38 ;
+                    co:nextItem [ co:itemContent :section61 ;
+                            co:nextItem [ co:itemContent :section79 ] ] ] ] ;
+    po:contains :section0,
+        :section38,
+        :section61,
+        :section79 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel1 a doco:SectionLabel ;
+    c4o:hasContent "1.1." .
+
+:sectionLabel11 a doco:SectionLabel ;
+    c4o:hasContent "1.2." .
+
+:sectionLabel28 a doco:SectionLabel ;
+    c4o:hasContent "2.1." .
+
+:sectionLabel61 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel63 a doco:SectionLabel ;
+    c4o:hasContent "4.1." .
+
+:sectionLabel64 a doco:SectionLabel ;
+    c4o:hasContent "4.2." .
+
+:sectionLabel79 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle1 a doco:SectionTitle ;
+    c4o:hasContent "Parallel Computing" .
+
+:sectionTitle11 a doco:SectionTitle ;
+    c4o:hasContent "Our result." .
+
+:sectionTitle28 a doco:SectionTitle ;
+    c4o:hasContent "The Prediction Binary Tree." .
+
+:sectionTitle38 a doco:SectionTitle ;
+    c4o:hasContent "Algorithm 1 PBT-Update" .
+
+:sectionTitle61 a doco:SectionTitle ;
+    c4o:hasContent "Experiments and Results" .
+
+:sectionTitle63 a doco:SectionTitle ;
+    c4o:hasContent "Setting of the experiments." .
+
+:sectionTitle64 a doco:SectionTitle ;
+    c4o:hasContent "Results" .
+
+:sectionTitle79 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF7 ;
+                                                            co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF25 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF7,
+        :BIBREF8 .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:section0 a doco:Section ;
+    co:firstItem [ co:itemContent :section1 ;
+            co:nextItem [ co:itemContent :section11 ;
+                    co:nextItem [ co:itemContent :section28 ] ] ] ;
+    po:contains :section1,
+        :section11,
+        :section28,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section1 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF15,
+        :referenceToBIBREF7,
+        :sectionLabel1 ;
+    po:containsAsHeader :sectionTitle1 .
+
+:section11 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF11,
+        :referenceToBIBREF14,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF2,
+        :referenceToBIBREF23,
+        :referenceToBIBREF24,
+        :referenceToBIBREF25,
+        :referenceToBIBREF3,
+        :sectionLabel11 ;
+    po:containsAsHeader :sectionTitle11 .
+
+:section28 a doco:Section ;
+    po:contains :sectionLabel28 ;
+    po:containsAsHeader :sectionTitle28 .
+
+:section38 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF19,
+        :referenceToBIBREF21,
+        :referenceToBIBREF23,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF8 ;
+    po:containsAsHeader :sectionTitle38 .
+
+:section61 a doco:Section ;
+    co:firstItem [ co:itemContent :section63 ;
+            co:nextItem [ co:itemContent :section64 ] ] ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF20,
+        :referenceToBIBREF22,
+        :section63,
+        :section64,
+        :sectionLabel61 ;
+    po:containsAsHeader :sectionTitle61 .
+
+:section63 a doco:Section ;
+    po:contains :sectionLabel63 ;
+    po:containsAsHeader :sectionTitle63 .
+
+:section64 a doco:Section ;
+    po:contains :sectionLabel64 ;
+    po:containsAsHeader :sectionTitle64 .
+
+:section79 a doco:Section ;
+    po:contains :sectionLabel79 ;
+    po:containsAsHeader :sectionTitle79 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2003 ;
+    dcterms:publisher [ foaf:name "SIAM J. Comput" ] ;
+    dcterms:title "The natural work-stealing algorithm is stable" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Berenbrink" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Friedetzky" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Goldberg" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:issue "5" ;
+    bibo:pageEnd 1279 ;
+    bibo:pageStart 1260 ;
+    bibo:volume "32" ;
+    c4o:hasContent "P. Berenbrink, T. Friedetzky, and L. A. Goldberg, The natural work-stealing algorithm is stable, in SIAM J. Comput., 32(5):1260-1279, 2003." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "IEEE Symposium on Interactive Ray Tracing" ] ;
+    dcterms:title "Design for parallel interactive ray tracing systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bigler" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Stephens" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Parker" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 196 ;
+    bibo:pageStart 187 ;
+    bibo:volume "0" ;
+    c4o:hasContent "J. Bigler, A. Stephens, and S. G. Parker, Design for parallel interactive ray tracing systems, in IEEE Symposium on Interactive Ray Tracing, 0:187-196, 2006." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 1998 ;
+    dcterms:title "Scalable Parallel Computing: Technology, Architecture, Programming" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hwang" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "Z" ] ] ;
+    c4o:hasContent "K. Hwang and Z. Xu., Scalable Parallel Computing: Technology, Architecture, Programming, McGraw-Hill, 1998." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 1999 ;
+    dcterms:publisher [ foaf:name "Journal of Parallel and Distributed Computing" ] ;
+    dcterms:title "Benchmarking and comparison of the task graph scheduling algorithms" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kwok" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ahmad" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:issue "3" ;
+    bibo:pageEnd 422 ;
+    bibo:pageStart 381 ;
+    bibo:volume "59" ;
+    c4o:hasContent "Y. Kwok and I. Ahmad, Benchmarking and comparison of the task graph scheduling algorithms, in Journal of Parallel and Distributed Computing, 59(3):381-422, 1999." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:title "Message Passing Interface Forum. The Message Passing Interface (MPI) standard" ;
+    c4o:hasContent "Message Passing Interface Forum. The Message Passing Interface (MPI) standard." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 1984 ;
+    dcterms:title "Congestion control in ip/tcp internerworks" ;
+    bibo:volume "896" ;
+    c4o:hasContent "J. Nagle Rfc 896: Congestion control in ip/tcp internerworks, 1984." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 1988 ;
+    dcterms:publisher [ foaf:name "IEEE Transaction on Computer" ] ;
+    dcterms:title "Dynamic remapping of parallel computations with varying resource demands" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nicol" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Saltz" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:issue "9" ;
+    bibo:pageEnd 1087 ;
+    bibo:pageStart 1073 ;
+    bibo:volume "37" ;
+    c4o:hasContent "D. M. Nicol and J. H. Saltz, Dynamic remapping of parallel computations with varying resource demands, in IEEE Transaction on Computer, 37(9):1073-1087, 1988." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 1995 ;
+    dcterms:publisher [ foaf:name "Proceedings of the International Conference on High Performance Computing" ] ;
+    dcterms:title "Distributed dynamic data-structures for parallel adaptive mesh refinement" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Parashar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Browne" ;
+                    foaf:givenname "J" ] ] ;
+    c4o:hasContent "M. Parashar and J. C. Browne, Distributed dynamic data-structures for parallel adaptive mesh refinement, in Proceedings of the International Conference on High Performance Computing, 1995." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 1996 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 29th Hawaii International Conference on System Sciences (HICSS'96" ] ;
+    dcterms:title "On partitioning dynamic adaptive grid hierarchies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Parashar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Browne" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "1" ;
+    c4o:hasContent "M. Parashar and J. C. Browne, On partitioning dynamic adaptive grid hierarchies, in Proceedings of the 29th Hawaii Inter- national Conference on System Sciences (HICSS'96) Volume 1: Software Technology and Architecture. IEEE Computer Society, 1996." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 1998 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 31st Hawaii International Conference on System Sciences (HICSS'98" ] ;
+    dcterms:title "Mapping of parallel tasks to multiprocessors with duplication" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Park" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shirazi" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Marquis" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "7" ;
+    c4o:hasContent "G. L. Park, B. Shirazi, and J. Marquis, Mapping of parallel tasks to multiprocessors with duplication, in Proceedings of the 31st Hawaii International Conference on System Sciences (HICSS'98) Volume 7, page 96, Washington, DC, USA, 1998. IEEE Computer Society." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2007 ;
+    dcterms:title "Ray Tracing from the Ground Up" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Suffern ; A" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Peters" ;
+                    foaf:givenname "Ltd" ] ] ;
+    c4o:hasContent "K. Suffern, Ray Tracing from the Ground Up, A. K. Peters, Ltd., Natick, MA, USA, 2007." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 1999 ;
+    dcterms:publisher [ foaf:name "Journal of ACM" ] ;
+    dcterms:title "Experiences with Mesh-like computations using Prediction Binary Trees 187" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Blumofe" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Leiserson" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:issue "5" ;
+    bibo:pageEnd 748 ;
+    bibo:pageStart 720 ;
+    bibo:volume "46" ;
+    c4o:hasContent "R. D. Blumofe and C. E. Leiserson, Scheduling multithreaded computations by work stealing, in Journal of ACM, 46(5):720- 748, 1999. Experiences with Mesh-like computations using Prediction Binary Trees 187" .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2004 ;
+    dcterms:title "Realtime Ray Tracing and Interactive Global Illumination" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wald" ;
+                    foaf:givenname "I" ] ] ;
+    c4o:hasContent "I. Wald, Realtime Ray Tracing and Interactive Global Illumination. PhD thesis, Saarland University, 2004." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2003 ;
+    dcterms:publisher [ foaf:name "Proceedings of EuroPar '03" ] ;
+    dcterms:title "Interactive Distributed Ray Tracing on Commodity PC Clusters -State of the Art and Practical Applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wald" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Benthin" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Dietrich" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Slusallek" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 508 ;
+    bibo:pageStart 499 ;
+    bibo:volume "2790" ;
+    c4o:hasContent "I. Wald, C. Benthin, A. Dietrich, and P. Slusallek, Interactive Distributed Ray Tracing on Commodity PC Clusters -State of the Art and Practical Applications, in Proceedings of EuroPar '03, Lecture Notes on Computer Science, 2790:499-508, 2003." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 2006 IEEE Symposium on Interactive Ray Tracing" ] ;
+    dcterms:title "On building fast kd-trees for ray tracing, and on doing that in O(N log N)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wald" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Havran" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 69 ;
+    bibo:pageStart 61 ;
+    c4o:hasContent "I. Wald and V. Havran, On building fast kd-trees for ray tracing, and on doing that in O(N log N), in Proceedings of the 2006 IEEE Symposium on Interactive Ray Tracing, pages 61-69, 2006." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 1980 ;
+    dcterms:publisher [ foaf:name "Communications of the ACM" ] ;
+    dcterms:title "An improved illumination model for shaded display" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Whitted" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:issue "6" ;
+    bibo:pageEnd 349 ;
+    bibo:pageStart 343 ;
+    bibo:volume "23" ;
+    c4o:hasContent "T. Whitted, An improved illumination model for shaded display, in Communications of the ACM, 23(6):343-349, 1980." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2003 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 2003 ACM/IEEE conference on Supercomputing (SC'03)" ] ;
+    dcterms:title "Conservative scheduling: Using predicted variance to improve scheduling decisions in dynamic environments" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Schopf" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Foster" ;
+                    foaf:givenname "I" ] ] ;
+    c4o:hasContent "L. Yang, J. M. Schopf, and I. Foster., Conservative scheduling: Using predicted variance to improve scheduling decisions in dynamic environments, in Proceedings of the 2003 ACM/IEEE conference on Supercomputing (SC'03), page 31. IEEE Computer Society, 2003." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 1994 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Parallel and Distributed Systems" ] ;
+    dcterms:title "Dsc: Scheduling parallel tasks on an unbounded number of processors" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gerasoulis" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 967 ;
+    bibo:pageStart 951 ;
+    bibo:volume "5" ;
+    c4o:hasContent "T. Yang and A. Gerasoulis, Dsc: Scheduling parallel tasks on an unbounded number of processors, in IEEE Transactions on Parallel and Distributed Systems, 5:951-967, 1994." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2002 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 14th Symposium on Computer Architecture and High Performance Computing (SCAB-PAD'02)" ] ;
+    dcterms:title "Cluster-based static scheduling: Theory and practice" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Boeres" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rebello" ;
+                    foaf:givenname "V" ] ] ;
+    c4o:hasContent "C. Boeres and V. Rebello, Cluster-based static scheduling: Theory and practice, in Proceedings of the 14th Symposium on Computer Architecture and High Performance Computing (SCAB-PAD'02), page 133, Washington, DC, USA, 2002. IEEE Computer Society." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2002 ;
+    dcterms:title "Practical Parallel Rendering. A. K. Peters, Ltd" ;
+    c4o:hasContent "A. Chalmers and E. Reinhard, editors. Practical Parallel Rendering. A. K. Peters, Ltd., Natick, MA, USA, 2002." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 1990 ;
+    dcterms:publisher [ foaf:name "Proceedings on Graphics interface '90" ] ;
+    dcterms:title "Exploiting temporal coherence in ray tracing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chapman" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Calvert" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Dill" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 204 ;
+    bibo:pageStart 196 ;
+    c4o:hasContent "J.Chapman, T. W. Calvert, and J.Dill, Exploiting temporal coherence in ray tracing, in Proceedings on Graphics interface '90, pages 196-204, Toronto, Canada, 1990." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2008 ;
+    dcterms:publisher [ foaf:name "International Symposium on Parallel and Distributed Computing (ISPDC '08)" ] ;
+    dcterms:title "Load Balancing in Mesh-like Computations using Prediction Binary Trees" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cosenza" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cordasco" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "De Chiara" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Erra" ;
+                    foaf:givenname "U" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Scarano" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 146 ;
+    bibo:pageStart 139 ;
+    c4o:hasContent "B. Cosenza, G. Cordasco, R. De Chiara, U. Erra, and V. Scarano, Load Balancing in Mesh-like Computations using Prediction Binary Trees, in International Symposium on Parallel and Distributed Computing (ISPDC '08), pages 139-146, ISBN: 978-0-7695-3472-5, 2008. IEEE Computer Society." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:publisher [ foaf:name "Parallel Computing" ] ;
+    dcterms:title "Memory sharing for interactive ray tracing on clusters" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Demarle" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gribble" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Boulos" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Parker" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 242 ;
+    bibo:pageStart 221 ;
+    bibo:volume "31" ;
+    c4o:hasContent "D. E. DeMarle, C. P. Gribble, S. Boulos, and S. G. Parker, Memory sharing for interactive ray tracing on clusters, in Parallel Computing, 31(2):221-242, 2005." .
+
