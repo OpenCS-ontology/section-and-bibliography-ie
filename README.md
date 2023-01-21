@@ -11,7 +11,7 @@ To be specific, the application tries to extract the following content:
 
 1. Bibliographical data, which is an ordered list of bibliographical entries, which is usually located at the end of the document. Each entry may contain the following information:
     - Raw text - the whole bibliographical reference text as it appears in the Bibliography section.
-    - Authors - on an ordered list of authors, as written in the document. The application tries to parse the first and last names of every author.
+    - Authors - an ordered list of authors, as written in the document. The application tries to parse the first and last names of every author.
     - Title.
     - Year.
     - Venue.
