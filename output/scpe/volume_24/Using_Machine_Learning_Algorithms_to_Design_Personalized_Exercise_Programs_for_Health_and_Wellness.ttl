@@ -1,0 +1,984 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Clinical trials"^^xsd:string,
+        "Drug discovery"^^xsd:string,
+        "Electronic Health Records"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "Using Machine Learning Algorithms to Design Personalized Exercise Programs for Health and Wellness"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "The research paper showcases an elaborate study of machine learning, which is used in healthcare or medical platforms and can be used by healthcare professionals to adopt better diagnostic instruments and tools for examining medical issues or images. The paper highlights that a machine learning algorithm can be utilized in X-rays or MRI scans to examine disease and health issues. This paper will also discuss how this algorithm can help healthcare professionals, doctors, and nurses make accurate diagnoses for better services and patient outcomes. One of the major advantages of using the secondary research method in the following research is the abundance of the literature. All the data being used here are previously collected and evaluated with the result, and using these will increase the impact of the study overall. This method saves resources, including money, time, and manpower. This research method allows the researcher to build new knowledge and draw new conclusions based on existing expertise and knowledge. The chosen research philosophy is the Interpretivism research philosophy. The chosen research approach here is the inductive research approach. The chosen research design for this study is exploratory. All these help the research to achieve its objectives and reach the proposed goal of this research."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 474 ;
+    prism:pageCount 11 ;
+    prism:startingPage 463 ;
+    datacite:doi "10.12694/scpe.v24i3.2340"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2340"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2340> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Lu"^^xsd:string ;
+    foaf:givenName "Yan"^^xsd:string ;
+    foaf:name "Yan Lu"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section4 ;
+                    co:nextItem [ co:itemContent :section6 ;
+                            co:nextItem [ co:itemContent :section7 ;
+                                    co:nextItem [ co:itemContent :section20 ;
+                                            co:nextItem [ co:itemContent :section37 ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section20,
+        :section37,
+        :section4,
+        :section6,
+        :section7 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "School of Physical Education, University of Sanya, Sanya, Hainan, 572000 China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF26 a deo:Reference ;
+    dcterms:references :BIBREF26 ;
+    c4o:hasContent "[27]" .
+
+:referenceToBIBREF27 a deo:Reference ;
+    dcterms:references :BIBREF27 ;
+    c4o:hasContent "[28]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel20 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel37 a doco:SectionLabel ;
+    c4o:hasContent "8." .
+
+:sectionLabel4 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel6 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel7 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "Electronic Health Records (EHRS)." .
+
+:sectionTitle37 a doco:SectionTitle ;
+    c4o:hasContent "Conclusions." .
+
+:sectionTitle4 a doco:SectionTitle ;
+    c4o:hasContent "Objectives." .
+
+:sectionTitle6 a doco:SectionTitle ;
+    c4o:hasContent "Methodology." .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "Machine" .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF25 ;
+                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF26 ;
+                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF27 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF26,
+        :BIBREF27,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section20 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF11,
+        :referenceToBIBREF19,
+        :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :referenceToBIBREF23,
+        :referenceToBIBREF24,
+        :referenceToBIBREF25,
+        :referenceToBIBREF26,
+        :referenceToBIBREF27,
+        :referenceToBIBREF7,
+        :sectionLabel20 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section37 a doco:Section ;
+    po:contains :sectionLabel37 ;
+    po:containsAsHeader :sectionTitle37 .
+
+:section4 a doco:Section ;
+    po:contains :sectionLabel4 ;
+    po:containsAsHeader :sectionTitle4 .
+
+:section6 a doco:Section ;
+    po:contains :referenceToBIBREF15,
+        :referenceToBIBREF4,
+        :sectionLabel6 ;
+    po:containsAsHeader :sectionTitle6 .
+
+:section7 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF2,
+        :referenceToBIBREF20,
+        :referenceToBIBREF23,
+        :referenceToBIBREF3,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel7 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Biomedical Engineering" ] ;
+    dcterms:title "Personalizing activity recognition models through quantifying different types of uncertainty using wearable sensors" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Akbari" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jafari" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 2541 ;
+    bibo:pageStart 2530 ;
+    bibo:volume "67" ;
+    c4o:hasContent "A. Akbari and R. Jafari, Personalizing activity recognition models through quantifying different types of uncertainty using wearable sensors, IEEE Transactions on Biomedical Engineering, 67 (2020), pp. 2530-2541." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Quantifying uncertainty in internet of medical things and big-data services using intelligence and deep learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Al-Turjman" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zahmatkesh" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Mostarda" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 115759 ;
+    bibo:pageStart 115749 ;
+    bibo:volume "7" ;
+    c4o:hasContent "F. Al-Turjman, H. Zahmatkesh, and L. Mostarda, Quantifying uncertainty in internet of medical things and big-data services using intelligence and deep learning, IEEE Access, 7 (2019), pp. 115749-115759." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Personalized Medicine" ] ;
+    dcterms:title "How do machines learn? artificial intelligence as a new era in medicine" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Koteluk" ;
+                    foaf:givenname "O" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wartecki" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Mazurek" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kołodziejczak" ;
+                    foaf:givenname "I" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Mackiewicz" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "11" ;
+    c4o:hasContent "O. Koteluk, A. Wartecki, S. Mazurek, I. Kołodziejczak, and A. Mackiewicz, How do machines learn? artificial intelligence as a new era in medicine, Journal of Personalized Medicine, 11 (2021), p. 32." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Signal Processing Magazine" ] ;
+    dcterms:title "Personalized education in the artificial intelligence era: what to expect next" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Maghsudi" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lan" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Van Der" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Schaar" ] ] ;
+    bibo:pageEnd 50 ;
+    bibo:pageStart 37 ;
+    bibo:volume "38" ;
+    c4o:hasContent "S. Maghsudi, A. Lan, J. Xu, and M. van Der Schaar, Personalized education in the artificial intelligence era: what to expect next, IEEE Signal Processing Magazine, 38 (2021), pp. 37-50." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" ] ;
+    dcterms:title "Arachnophobia exposure therapy using experience-driven procedural content generation via reinforcement learning (edpcgrl)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mahmoudi-Nejad" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Guzdial" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Boulanger" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 171 ;
+    bibo:pageStart 164 ;
+    bibo:volume "17" ;
+    c4o:hasContent "A. Mahmoudi-Nejad, M. Guzdial, and P. Boulanger, Arachnophobia exposure therapy using experience-driven procedural content generation via reinforcement learning (edpcgrl), in Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment, vol. 17, 2021, pp. 164-171." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Computer" ] ;
+    dcterms:title "The ten commandments of ethical medical ai" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Muller" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mayrhofer" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Van Veen" ;
+                    foaf:givenname "E.-B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Holzinger" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 123 ;
+    bibo:pageStart 119 ;
+    bibo:volume "54" ;
+    c4o:hasContent "H. Muller, M. T. Mayrhofer, E.-B. Van Veen, and A. Holzinger, The ten commandments of ethical medical ai, Computer, 54 (2021), pp. 119-123." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "2019 IEEE International Conference on Artificial Intelligence and Virtual Reality (AIVR)" ] ;
+    dcterms:title "Kinematically adaptive exergames: personalizing exercise therapy through closedloop systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Muñoz" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cao" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Boger" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 1187 ;
+    bibo:pageStart 118 ;
+    c4o:hasContent "J. E. Muñoz, S. Cao, and J. Boger, Kinematically adaptive exergames: personalizing exercise therapy through closed- loop systems, in 2019 IEEE International Conference on Artificial Intelligence and Virtual Reality (AIVR), IEEE, 2019, pp. 118-1187." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "ACM Transactions on Computing for Healthcare" ] ;
+    dcterms:title "Toward assessing and recommending combinations of behaviors for improving health and well-being" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nosakhare" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Picard" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 29 ;
+    bibo:pageStart 1 ;
+    bibo:volume "1" ;
+    c4o:hasContent "E. Nosakhare and R. Picard, Toward assessing and recommending combinations of behaviors for improving health and well-being, ACM Transactions on Computing for Healthcare, 1 (2020), pp. 1-29." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Bio-inspired neurocomputing" ] ;
+    dcterms:title "Artificial intelligence for internet of things and enhanced medical systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Oniani" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Marques" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Barnovi" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Pires" ;
+                    foaf:givenname "I" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Bhoi" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 59 ;
+    bibo:pageStart 43 ;
+    c4o:hasContent "S. Oniani, G. Marques, S. Barnovi, I. M. Pires, and A. K. Bhoi, Artificial intelligence for internet of things and enhanced medical systems, Bio-inspired neurocomputing, (2021), pp. 43-59." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Animals" ] ;
+    dcterms:title "Behavioral monitoring tool for pig farmers: Ear tag sensors, machine intelligence, and technology adoption roadmap" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pandey" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kalwa" ;
+                    foaf:givenname "U" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kong" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Guo" ;
+                    foaf:givenname "B" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Gauger" ;
+                    foaf:givenname "P" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Peters" ;
+                    foaf:givenname "D" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Yoon" ;
+                    foaf:givenname "K.-J" ] ] ;
+    bibo:volume "11" ;
+    c4o:hasContent "S. Pandey, U. Kalwa, T. Kong, B. Guo, P. C. Gauger, D. J. Peters, and K.-J. Yoon, Behavioral monitoring tool for pig farmers: Ear tag sensors, machine intelligence, and technology adoption roadmap, Animals, 11 (2021), p. 2665." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Healthcare Technology Letters" ] ;
+    dcterms:title "A remote healthcare monitoring framework for diabetes prediction using machine learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ramesh" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Aburukba" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sagahyroon" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 57 ;
+    bibo:pageStart 45 ;
+    bibo:volume "8" ;
+    c4o:hasContent "J. Ramesh, R. Aburukba, and A. Sagahyroon, A remote healthcare monitoring framework for diabetes prediction using machine learning, Healthcare Technology Letters, 8 (2021), pp. 45-57." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Computer Methods and Programs in Biomedicine" ] ;
+    dcterms:title "A review on utilizing machine learning technology in the fields of electronic emergency triage and patient priority systems in telemedicine: Coherent taxonomy, motivations, open research challenges and recommendations for intelligent future work" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Salman" ;
+                    foaf:givenname "O" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Taha" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Alsabah" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hussein" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Mohammed" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Aal-Nouman" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:volume "209" ;
+    c4o:hasContent "O. H. Salman, Z. Taha, M. Q. Alsabah, Y. S. Hussein, A. S. Mohammed, and M. Aal-Nouman, A review on utilizing machine learning technology in the fields of electronic emergency triage and patient priority systems in telemedicine: Coherent taxonomy, motivations, open research challenges and recommendations for intelligent future work, Computer Methods and Programs in Biomedicine, 209 (2021), p. 106357." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "European Journal of Personality" ] ;
+    dcterms:title "Using big data and machine learning in personality measurement: Opportunities and challenges" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alexander" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mulfinger" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Oswald" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 648 ;
+    bibo:pageStart 632 ;
+    bibo:volume "34" ;
+    c4o:hasContent "L. Alexander III, E. Mulfinger, and F. L. Oswald, Using big data and machine learning in personality measurement: Opportunities and challenges, European Journal of Personality, 34 (2020), pp. 632-648." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Information" ] ;
+    dcterms:title "Covid-19 public sentiment insights and machine learning for tweets classification" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Samuel" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ali" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Rahman" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Esawi" ;
+                    foaf:givenname "E" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Samuel" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:volume "11" ;
+    c4o:hasContent "J. Samuel, G. M. N. Ali, M. M. Rahman, E. Esawi, and Y. Samuel, Covid-19 public sentiment insights and machine learning for tweets classification, Information, 11 (2020), p. 314." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "Recognition and repetition counting for complex physical exercises with deep learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Soro" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Brunner" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tanner" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wattenhofer" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:volume "19" ;
+    c4o:hasContent "A. Soro, G. Brunner, S. Tanner, and R. Wattenhofer, Recognition and repetition counting for complex physical exercises with deep learning, Sensors, 19 (2019), p. 714." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "ACM Transactions on Computer-Human Interaction (TOCHI)" ] ;
+    dcterms:title "Machine learning in mental health: A systematic review of the hci literature to support the development of effective and implementable ml systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Thieme" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Belgrave" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Doherty" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 53 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "A. Thieme, D. Belgrave, and G. Doherty, Machine learning in mental health: A systematic review of the hci literature to support the development of effective and implementable ml systems, ACM Transactions on Computer-Human Interaction (TOCHI), 27 (2020), pp. 1-53." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Sensors Journal" ] ;
+    dcterms:title "A novel deep learning bi-gru-i model for real-time human activity recognition using inertial sensors" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tong" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ma" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "He" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Peng" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 6174 ;
+    bibo:pageStart 6164 ;
+    bibo:volume "22" ;
+    c4o:hasContent "L. Tong, H. Ma, Q. Lin, J. He, and L. Peng, A novel deep learning bi-gru-i model for real-time human activity recognition using inertial sensors, IEEE Sensors Journal, 22 (2022), pp. 6164-6174." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "2016 IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI)" ] ;
+    dcterms:title "Smartwatch-based activity recognition: A machine learning approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Weiss" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Timko" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gallagher" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yoneda" ;
+                    foaf:givenname "K" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Schreiber" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 429 ;
+    bibo:pageStart 426 ;
+    c4o:hasContent "G. M. Weiss, J. L. Timko, C. M. Gallagher, K. Yoneda, and A. J. Schreiber, Smartwatch-based activity recognition: A machine learning approach, in 2016 IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI), IEEE, 2016, pp. 426-429." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "2019 IEEE EMBS International Conference on Biomedical & Health Informatics (BHI)" ] ;
+    dcterms:title "Personalized wellbeing prediction using behavioral, physiological and weather data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yu" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Klerman" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Picard" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sano" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 4 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "H. Yu, E. B. Klerman, R. W. Picard, and A. Sano, Personalized wellbeing prediction using behavioral, physiological and weather data, in 2019 IEEE EMBS International Conference on Biomedical & Health Informatics (BHI), IEEE, 2019, pp. 1-4." .
+
+:BIBREF26 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Deep learning in human activity recognition with wearable sensors: A review on advances" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Shahabi" ;
+                    foaf:givenname "F" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Xia" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Deng" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Alshurafa" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:volume "22" ;
+    c4o:hasContent "S. Zhang, Y. Li, S. Zhang, F. Shahabi, S. Xia, Y. Deng, and N. Alshurafa, Deep learning in human activity recognition with wearable sensors: A review on advances, Sensors, 22 (2022), p. 1476." .
+
+:BIBREF27 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Proceedings of the ACM on Human-Computer Interaction" ] ;
+    dcterms:title "Personalization paradox in behavior change apps: lessons from a social comparison-based personalized app for physical activity" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dallal" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gray" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Villareale" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ontañón" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Forman" ;
+                    foaf:givenname "E" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Arigo" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 21 ;
+    bibo:pageStart 1 ;
+    bibo:volume "5" ;
+    c4o:hasContent "J. Zhu, D. H. Dallal, R. C. Gray, J. Villareale, S. Ontañón, E. M. Forman, and D. Arigo, Personalization paradox in behavior change apps: lessons from a social comparison-based personalized app for physical activity, Proceedings of the ACM on Human-Computer Interaction, 5 (2021), pp. 1-21." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "Identification of risk factors associated with obesity and overweight-a machine learning overview" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chatterjee" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gerdes" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Martinez" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:volume "20" ;
+    c4o:hasContent "A. Chatterjee, M. W. Gerdes, and S. G. Martinez, Identification of risk factors associated with obesity and overweight-a machine learning overview, Sensors, 20 (2020), p. 2734." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Healthcare management forum" ] ;
+    dcterms:title "Artificial intelligence in healthcare: An essential guide for health leaders" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Decary" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 18 ;
+    bibo:pageStart 10 ;
+    bibo:volume "33" ;
+    c4o:hasContent "M. Chen and M. Decary, Artificial intelligence in healthcare: An essential guide for health leaders, in Healthcare manage- ment forum, vol. 33, SAGE Publications Sage CA: Los Angeles, CA, 2020, pp. 10-18." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "2019 IEEE Sensors Applications Symposium (SAS)" ] ;
+    dcterms:title "Lightweight machine learning-based approach for supervision of fitness workout" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Depari" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ferrari" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Flammini" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Rinaldi" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sisinni" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "A. Depari, P. Ferrari, A. Flammini, S. Rinaldi, and E. Sisinni, Lightweight machine learning-based approach for super- vision of fitness workout, in 2019 IEEE Sensors Applications Symposium (SAS), IEEE, 2019, pp. 1-6." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Computational intelligence in healthcare" ] ;
+    dcterms:title "Machine and deep learning algorithms for wearable health monitoring" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fei" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Baig" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 160 ;
+    bibo:pageStart 105 ;
+    c4o:hasContent "C. Fei, R. Liu, Z. Li, T. Wang, and F. N. Baig, Machine and deep learning algorithms for wearable health monitoring, in Computational intelligence in healthcare, Springer, 2021, pp. 105-160." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "2019 international conference on automation, computational and technology management (ICACTM)" ] ;
+    dcterms:title "Strengthening people analytics through wearable iot device for real-time data collection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gaur" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shukla" ;
+                    foaf:givenname "V" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Verma" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 560 ;
+    bibo:pageStart 555 ;
+    c4o:hasContent "B. Gaur, V. K. Shukla, and A. Verma, Strengthening people analytics through wearable iot device for real-time data collection, in 2019 international conference on automation, computational and technology management (ICACTM), IEEE, 2019, pp. 555-560." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Marketing Letters" ] ;
+    dcterms:title "How can machine learning aid behavioral marketing research?" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hagen" ;
+                    foaf:givenname "L" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Sudhir" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Uetake" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "N" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Bollinger" ;
+                    foaf:givenname "B" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Chaney" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Dzyabura" ;
+                    foaf:givenname "D" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Etkin" ;
+                    foaf:givenname "J" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Goldfarb" ;
+                    foaf:givenname "A" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 370 ;
+    bibo:pageStart 361 ;
+    bibo:volume "31" ;
+    c4o:hasContent "L. Hagen, K. Uetake, N. Yang, B. Bollinger, A. J. Chaney, D. Dzyabura, J. Etkin, A. Goldfarb, L. Liu, K. Sudhir, et al., How can machine learning aid behavioral marketing research?, Marketing Letters, 31 (2020), pp. 361-370." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "2015 IEEE international conference on services computing" ] ;
+    dcterms:title "Health monitoring and management using internet-of-things (iot) sensing with cloud-based processing: Opportunities and challenges" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hassanalieragh" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Page" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Soyata" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sharma" ;
+                    foaf:givenname "G" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Aktas" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Mateos" ;
+                    foaf:givenname "G" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Kantarci" ;
+                    foaf:givenname "B" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Andreescu" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 292 ;
+    bibo:pageStart 285 ;
+    c4o:hasContent "M. Hassanalieragh, A. Page, T. Soyata, G. Sharma, M. Aktas, G. Mateos, B. Kantarci, and S. Andreescu, Health monitoring and management using internet-of-things (iot) sensing with cloud-based processing: Opportunities and challenges, in 2015 IEEE international conference on services computing, IEEE, 2015, pp. 285-292." .
+

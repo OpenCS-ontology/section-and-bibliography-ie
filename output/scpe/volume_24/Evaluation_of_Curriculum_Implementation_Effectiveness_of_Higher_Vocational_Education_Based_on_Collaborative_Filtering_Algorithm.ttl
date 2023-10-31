@@ -1,0 +1,745 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Collaborative filtering algorithm"^^xsd:string,
+        "Curriculum implementation"^^xsd:string,
+        "Effectiveness"^^xsd:string,
+        "Higher vocational education"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1 ] ;
+    dcterms:title "Evaluation of Curriculum Implementation Effectiveness of Higher Vocational Education Based on Collaborative Filtering Algorithm"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "The conventional evaluation method for the effectiveness of curriculum implementation mainly focuses on the complete orientation analysis of students’ curriculum content, which does not reflect the value of the educational curriculum and affects the effectiveness of evaluation. Therefore, an evaluation method of curriculum implementation effectiveness of higher vocational education based on a collaborative filtering algorithm is designed. Identify the practical focus of evaluating the implementation of the higher vocational education curriculum and discover the educational curriculum’s significance. Qualitative evaluation of curriculum implementation degree based on collaborative filtering algorithm, find out the hidden characteristics of curriculum implementation evaluation to effectively evaluate higher vocational education curriculum implementation. Using case analysis, it is verified that the method is more effective and can be applied in real life."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 388 ;
+    prism:pageCount 9 ;
+    prism:startingPage 379 ;
+    datacite:doi "10.12694/scpe.v24i3.2274"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2274"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2274> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Li"^^xsd:string ;
+    foaf:givenName "Huiyan"^^xsd:string ;
+    foaf:name "Huiyan Li"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Wang"^^xsd:string ;
+    foaf:givenName "Hao"^^xsd:string ;
+    foaf:name "Hao Wang"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section31 ;
+                    co:nextItem [ co:itemContent :section36 ] ] ] ;
+    po:contains :section0,
+        :section31,
+        :section36 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "School of Health Industry Management, University of Sanya, Sanya, China"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "School of Education, Tianjin University, Tianjin, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel13 a doco:SectionLabel ;
+    c4o:hasContent "1.2." .
+
+:sectionLabel15 a doco:SectionLabel ;
+    c4o:hasContent "1.3." .
+
+:sectionLabel31 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel33 a doco:SectionLabel ;
+    c4o:hasContent "2.2." .
+
+:sectionLabel36 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle13 a doco:SectionTitle ;
+    c4o:hasContent "Determine the functional orientation of curriculum implementation evaluation of higher vocational education." .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "Qualitative evaluation of course implementation based on collaborative filtering algorithm." .
+
+:sectionTitle31 a doco:SectionTitle ;
+    c4o:hasContent "Example analysis." .
+
+:sectionTitle33 a doco:SectionTitle ;
+    c4o:hasContent "Application results." .
+
+:sectionTitle36 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF24 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    co:firstItem [ co:itemContent :section13 ;
+            co:nextItem [ co:itemContent :section15 ] ] ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF2,
+        :referenceToBIBREF21,
+        :referenceToBIBREF4,
+        :referenceToBIBREF7,
+        :section13,
+        :section15,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section13 a doco:Section ;
+    po:contains :referenceToBIBREF13,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF22,
+        :referenceToBIBREF23,
+        :referenceToBIBREF24,
+        :referenceToBIBREF3,
+        :referenceToBIBREF6,
+        :referenceToBIBREF8,
+        :sectionLabel13 ;
+    po:containsAsHeader :sectionTitle13 .
+
+:section15 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF12,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF20,
+        :referenceToBIBREF5,
+        :referenceToBIBREF9,
+        :sectionLabel15 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section31 a doco:Section ;
+    co:firstItem [ co:itemContent :section33 ] ;
+    po:contains :section33,
+        :sectionLabel31 ;
+    po:containsAsHeader :sectionTitle31 .
+
+:section33 a doco:Section ;
+    po:contains :sectionLabel33 ;
+    po:containsAsHeader :sectionTitle33 .
+
+:section36 a doco:Section ;
+    po:contains :sectionLabel36 ;
+    po:containsAsHeader :sectionTitle36 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "An experimental study on the accuracy and efficiency of some similarity measures for collaborative filtering recommender systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Almu" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bello" ;
+                    foaf:givenname "Z" ] ] ;
+    c4o:hasContent "A. Almu and Z. Bello, An experimental study on the accuracy and efficiency of some similarity measures for collaborative filtering recommender systems, (2021)." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of High Speed Networks" ] ;
+    dcterms:title "P2pcf: a collaborative filtering based recommender system for peer to peer social networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Badis" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Amad" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Aïssani" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Abbar" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 31 ;
+    bibo:pageStart 13 ;
+    bibo:volume "27" ;
+    c4o:hasContent "L. Badis, M. Amad, D. Aïssani, and S. Abbar, P2pcf: a collaborative filtering based recommender system for peer to peer social networks, Journal of High Speed Networks, 27 (2021), pp. 13-31." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Education+ Training" ] ;
+    dcterms:title "Does renaming improve public attitudes toward vocational education and training in higher education? evidence from a survey experiment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "S.-Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "-K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:givenname "B" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Lam" ;
+                    foaf:givenname "-H" ] ] ;
+    bibo:pageEnd 359 ;
+    bibo:pageStart 347 ;
+    bibo:volume "64" ;
+    c4o:hasContent "S.-Y. Lee, J. C.-K. Lee, and B. Y.-H. Lam, Does renaming improve public attitudes toward vocational education and training in higher education? evidence from a survey experiment, Education+ Training, 64 (2022), pp. 347-359." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Contemporary Educational Research" ] ;
+    dcterms:title "Current situation and measures to improve the ideological and political education among students in higher vocational institutions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 99 ;
+    bibo:pageStart 96 ;
+    bibo:volume "5" ;
+    c4o:hasContent "X. Li, Current situation and measures to improve the ideological and political education among students in higher vocational institutions, Journal of Contemporary Educational Research, 5 (2021), pp. 96-99." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Knowledge and Data Engineering" ] ;
+    dcterms:title "Ranking-based implicit regularization for one-class collaborative filtering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lian" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zheng" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "E" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 5963 ;
+    bibo:pageStart 5951 ;
+    bibo:volume "34" ;
+    c4o:hasContent "D. Lian, J. Chen, K. Zheng, E. Chen, and X. Zhou, Ranking-based implicit regularization for one-class collaborative filtering, IEEE Transactions on Knowledge and Data Engineering, 34 (2021), pp. 5951-5963." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Contemporary Educational Research" ] ;
+    dcterms:title "Importance of ideological and political education in teaching fine arts education in higher vocational colleges" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 89 ;
+    bibo:pageStart 86 ;
+    bibo:volume "5" ;
+    c4o:hasContent "B. Lin, Importance of ideological and political education in teaching fine arts education in higher vocational colleges, Journal of Contemporary Educational Research, 5 (2021), pp. 86-89." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Contemporary Educational Research" ] ;
+    dcterms:title "Innovative thinking in higher vocational colleges' physical education" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "W" ] ] ;
+    bibo:pageEnd 18 ;
+    bibo:pageStart 14 ;
+    bibo:volume "5" ;
+    c4o:hasContent "W. Lin, Innovative thinking in higher vocational colleges' physical education, Journal of Contemporary Educational Research, 5 (2021), pp. 14-18." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Indonesian Journal of Learning Education and Counseling" ] ;
+    dcterms:title "Psychological impact of online learning during the covid-19 pandemic: A case study on vocational higher education" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Maulana" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 139 ;
+    bibo:pageStart 130 ;
+    bibo:volume "3" ;
+    c4o:hasContent "H. A. Maulana, Psychological impact of online learning during the covid-19 pandemic: A case study on vocational higher education, Indonesian Journal of Learning Education and Counseling, 3 (2021), pp. 130-139." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Acta Educationis Generalis" ] ;
+    dcterms:title "Appearance and development of short-term higher education vocational training in hungary" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Máté-Szabó" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tóth" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 76 ;
+    bibo:pageStart 63 ;
+    bibo:volume "11" ;
+    c4o:hasContent "B. Máté-Szabó and D. A. Tóth, Appearance and development of short-term higher education vocational training in hungary, Acta Educationis Generalis, 11 (2021), pp. 63-76." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Big Data Mining and Analytics" ] ;
+    dcterms:title "Optimal dependence of performance and efficiency of collaborative filtering on random stratified subsampling" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Poudel" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bikdash" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 205 ;
+    bibo:pageStart 192 ;
+    bibo:volume "5" ;
+    c4o:hasContent "S. Poudel and M. Bikdash, Optimal dependence of performance and efficiency of collaborative filtering on random stratified subsampling, Big Data Mining and Analytics, 5 (2022), pp. 192-205." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Physics: Conference Series" ] ;
+    dcterms:title "Collaborative filtering recommendation algorithm based on user behavior and drug semantics" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:volume "1802" ;
+    c4o:hasContent "R. Wang and T. Li, Collaborative filtering recommendation algorithm based on user behavior and drug semantics, in Journal of Physics: Conference Series, vol. 1802, IOP Publishing, 2021, p. 032005." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Complexity" ] ;
+    dcterms:title "Research on hybrid collaborative filtering recommendation algorithm based on the time effect and sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dai" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 11 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "X. Wang, Z. Dai, H. Li, and J. Yang, Research on hybrid collaborative filtering recommendation algorithm based on the time effect and sentiment analysis, Complexity, 2021 (2021), pp. 1-11." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Physics: Conference Series" ] ;
+    dcterms:title "Research on aesthetic thinking and computer courseware design of higher vocational aesthetic education based on information perspective" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bian" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "1744" ;
+    c4o:hasContent "J. Bian, Research on aesthetic thinking and computer courseware design of higher vocational aesthetic education based on information perspective, in Journal of Physics: Conference Series, vol. 1744, IOP Publishing, 2021, p. 032109." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Computer Simulation" ] ;
+    dcterms:title "Performance comparison and analysis of collaborative filtering recommendation algorithms" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Song" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yan" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 440 ;
+    bibo:pageStart 435 ;
+    bibo:volume "39" ;
+    c4o:hasContent "Z. R. Wang, S. W. Song, and H. C. Yan, Performance comparison and analysis of collaborative filtering recommendation algorithms, Computer Simulation, 39 (2022), pp. 435-440." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Physics: Conference Series" ] ;
+    dcterms:title "Research on computer basic teaching in higher vocational education under the background of flipped classroom" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "1738" ;
+    c4o:hasContent "J. Wu, Research on computer basic teaching in higher vocational education under the background of flipped classroom, in Journal of Physics: Conference Series, vol. 1738, IOP Publishing, 2021, p. 012124." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Perception gaps on employable skills between technical and vocational education and training (tvet) teachers and students: the case of the garment sector in ethiopia, Higher Education, Skills and Work-Based Learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yamada" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Otchia" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 213 ;
+    bibo:pageStart 199 ;
+    bibo:volume "11" ;
+    c4o:hasContent "S. Yamada and C. S. Otchia, Perception gaps on employable skills between technical and vocational education and training (tvet) teachers and students: the case of the garment sector in ethiopia, Higher Education, Skills and Work-Based Learning, 11 (2021), pp. 199-213." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Open Journal of Social Sciences" ] ;
+    dcterms:title "Based on the apartment community management mode to explore the education strategy of higher vocational collegestake polus international college as an example" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yu" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 333 ;
+    bibo:pageStart 322 ;
+    bibo:volume "9" ;
+    c4o:hasContent "Y. Yu, Based on the apartment community management mode to explore the education strategy of higher vocational colleges- take polus international college as an example, Open Journal of Social Sciences, 9 (2021), pp. 322-333." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Higher Education Research" ] ;
+    dcterms:title "The application of curriculum ideology and politics in the training of judicial vocational education talents" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 159 ;
+    bibo:pageStart 155 ;
+    bibo:volume "3" ;
+    c4o:hasContent "Y. Zhou, The application of curriculum ideology and politics in the training of judicial vocational education talents, Journal of Higher Education Research, 3 (2022), pp. 155-159." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2001 ;
+    dcterms:publisher [ foaf:name "Journal of Physics: Conference Series" ] ;
+    dcterms:title "Big data: some ways to solve the problems of higher education" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Denisova" ;
+                    foaf:givenname "O" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kunsbaeva" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chiglintsiva" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "O. Denisova, G. Kunsbaeva, and A. Chiglintsiva, Big data: some ways to solve the problems of higher education, in Journal of Physics: Conference Series, vol. 2001, IOP Publishing, 2021, p. 012021." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Research in Comparative and International Education" ] ;
+    dcterms:title "Conditions for cross-border policy transfer and cooperation: Analysing differences between higher education and vocational training" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Graf" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lohse" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 383 ;
+    bibo:pageStart 361 ;
+    bibo:volume "16" ;
+    c4o:hasContent "L. Graf and A. P. Lohse, Conditions for cross-border policy transfer and cooperation: Analysing differences between higher education and vocational training, Research in Comparative and International Education, 16 (2021), pp. 361-383." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Using the beta distribution technique to detect attacked items from collaborative filtering, Intelligent Data Analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hsu" ;
+                    foaf:givenname "P.-Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chung" ;
+                    foaf:givenname "J.-Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "Y.-C" ] ] ;
+    bibo:pageEnd 137 ;
+    bibo:pageStart 121 ;
+    bibo:volume "25" ;
+    c4o:hasContent "P.-Y. Hsu, J.-Y. Chung, and Y.-C. Liu, Using the beta distribution technique to detect attacked items from collaborative filtering, Intelligent Data Analysis, 25 (2021), pp. 121-137." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "International Journal of Information Technology & Decision Making" ] ;
+    dcterms:title "Pointer-based item-to-item collaborative filtering recommendation system using a machine learning model" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Iwendi" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ibeke" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Eggoni" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Velagala" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Srivastava" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 484 ;
+    bibo:pageStart 463 ;
+    bibo:volume "21" ;
+    c4o:hasContent "C. Iwendi, E. Ibeke, H. Eggoni, S. Velagala, and G. Srivastava, Pointer-based item-to-item collaborative filtering recommendation system using a machine learning model, International Journal of Information Technology & Decision Making, 21 (2022), pp. 463-484." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Ekonomika Regiona= Economy of Regions" ] ;
+    dcterms:title "Influence of higher and vocational education on the economic development of the khmao-yugra region" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Karminskaya" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Islamutdinov" ;
+                    foaf:givenname "V" ] ] ;
+    c4o:hasContent "T. D. Karminskaya and V. F. Islamutdinov, Influence of higher and vocational education on the economic development of the khmao-yugra region, Ekonomika Regiona= Economy of Regions, (2021), p. 445." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Role of the kazakhstan-german cooperation in improving scientific tools for evaluation of vocational education programs, Vysshee Obrazovanie v Rossii= Higher Education in Russia" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Karstina" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zechiel" ;
+                    foaf:givenname "O" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Machado" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 143 ;
+    bibo:pageStart 132 ;
+    bibo:volume "30" ;
+    c4o:hasContent "S. Karstina, O. Zechiel, and C. Machado, Role of the kazakhstan-german cooperation in improving scientific tools for evaluation of vocational education programs, Vysshee Obrazovanie v Rossii= Higher Education in Russia, 30 (2021), pp. 132-143." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "Modeling of recommendation system based on emotional information and collaborative filtering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "T.-Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ko" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "S.-H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "H.-D" ] ] ;
+    bibo:volume "21" ;
+    c4o:hasContent "T.-Y. Kim, H. Ko, S.-H. Kim, and H.-D. Kim, Modeling of recommendation system based on emotional information and collaborative filtering, Sensors, 21 (2021), p. 1997." .
+

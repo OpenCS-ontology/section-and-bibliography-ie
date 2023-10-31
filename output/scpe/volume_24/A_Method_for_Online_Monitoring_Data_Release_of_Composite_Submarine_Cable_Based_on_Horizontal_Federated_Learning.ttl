@@ -1,0 +1,990 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Data"^^xsd:string,
+        "Horizontal federal learning"^^xsd:string,
+        "Monitor"^^xsd:string,
+        "On-line"^^xsd:string,
+        "Submarine cable"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2,
+                :author_3,
+                :author_4,
+                :author_5 ] ;
+    dcterms:title "A Method for Online Monitoring Data Release of Composite Submarine Cable Based on Horizontal Federated Learning"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Conventional online composite submarine cable monitoring data release mostly adopts the method and principle of blockchain dynamic zoning consensus. In the data release process, there are omissions, and it takes a long time to complete the task, which reduces the timeliness of online composite submarine cable monitoring data release. Based on this, a new data publishing method is proposed by introducing horizontal federation learning. First, the online monitoring data of composite submarine cables are collected and preprocessed to eliminate the high-frequency capacitive effect of submarine cables. Secondly, manage composite submarine cable data nodes, transform the status relationship of data nodes, and ensure the quality of subsequent data release. A horizontal federation learning model is established to design the online monitoring data release process. The experimental results show that the new data release method is highly feasible. With the increasing online monitoring data of composite submarine cables, the time required for data release is short, and the timeliness is high."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 397 ;
+    prism:pageCount 8 ;
+    prism:startingPage 389 ;
+    datacite:doi "10.12694/scpe.v24i3.2275"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2275"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2275> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Gao"^^xsd:string ;
+    foaf:givenName "Chuanlian"^^xsd:string ;
+    foaf:name "Chuanlian Gao"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Deng"^^xsd:string ;
+    foaf:givenName "Huakun"^^xsd:string ;
+    foaf:name "Huakun Deng"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    pro:holdsRoleInTime :role_2_0 ;
+    foaf:familyName "Wei"^^xsd:string ;
+    foaf:givenName "Yanlei"^^xsd:string ;
+    foaf:name "Yanlei Wei"^^xsd:string .
+
+:author_3 a foaf:Person ;
+    pro:holdsRoleInTime :role_3_0 ;
+    foaf:familyName "Liu"^^xsd:string ;
+    foaf:givenName "Zhenzhong"^^xsd:string ;
+    foaf:name "Zhenzhong Liu"^^xsd:string .
+
+:author_4 a foaf:Person ;
+    pro:holdsRoleInTime :role_4_0 ;
+    foaf:familyName "Lao"^^xsd:string ;
+    foaf:givenName "Xinli"^^xsd:string ;
+    foaf:name "Xinli Lao"^^xsd:string .
+
+:author_5 a foaf:Person ;
+    pro:holdsRoleInTime :role_5_0 ;
+    foaf:familyName "Zhang"^^xsd:string ;
+    foaf:givenName "Jiajian"^^xsd:string ;
+    foaf:name "Jiajian Zhang"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section30 ] ] ;
+    po:contains :section0,
+        :section30 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "CNOOC (China) Limited Zhanjiang Branch, Zhanjiang, 524000 China"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "CNOOC (China) Limited Zhanjiang Branch, Zhanjiang, 524000 China"^^xsd:string .
+
+:org_2_0 a frapo:Organization ;
+    foaf:name "CNOOC (China) Limited Zhanjiang Branch, Zhanjiang, 524000 China"^^xsd:string .
+
+:org_3_0 a frapo:Organization ;
+    foaf:name "CNOOC (China) Limited Zhanjiang Branch, Zhanjiang, 524000 China"^^xsd:string .
+
+:org_4_0 a frapo:Organization ;
+    foaf:name "CNOOC (China) Limited Zhanjiang Branch, Zhanjiang, 524000 China"^^xsd:string .
+
+:org_5_0 a frapo:Organization ;
+    foaf:name "CNOOC (China) Limited Zhanjiang Branch, Zhanjiang, 524000 China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:role_2_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_2_0 ;
+    pro:withRole pro:author .
+
+:role_3_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_3_0 ;
+    pro:withRole pro:author .
+
+:role_4_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_4_0 ;
+    pro:withRole pro:author .
+
+:role_5_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_5_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel15 a doco:SectionLabel ;
+    c4o:hasContent "2.2." .
+
+:sectionLabel19 a doco:SectionLabel ;
+    c4o:hasContent "2.3." .
+
+:sectionLabel22 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionLabel25 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel27 a doco:SectionLabel ;
+    c4o:hasContent "3.3." .
+
+:sectionLabel30 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel7 a doco:SectionLabel ;
+    c4o:hasContent "2.1." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "Composite submarine cable data node management." .
+
+:sectionTitle19 a doco:SectionTitle ;
+    c4o:hasContent "Online monitoring data release based on horizontal federal learning." .
+
+:sectionTitle22 a doco:SectionTitle ;
+    c4o:hasContent "Experiment preparation." .
+
+:sectionTitle25 a doco:SectionTitle ;
+    c4o:hasContent "Result analysis." .
+
+:sectionTitle27 a doco:SectionTitle ;
+    c4o:hasContent "Result discussion." .
+
+:sectionTitle30 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "Composite submarine cable online monitoring data acquisition." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF24 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    co:firstItem [ co:itemContent :section7 ;
+            co:nextItem [ co:itemContent :section15 ;
+                    co:nextItem [ co:itemContent :section19 ;
+                            co:nextItem [ co:itemContent :section22 ;
+                                    co:nextItem [ co:itemContent :section25 ;
+                                            co:nextItem [ co:itemContent :section27 ] ] ] ] ] ] ;
+    po:contains :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF19,
+        :referenceToBIBREF2,
+        :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :referenceToBIBREF3,
+        :referenceToBIBREF5,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :section15,
+        :section19,
+        :section22,
+        :section25,
+        :section27,
+        :section7,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section15 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF18,
+        :referenceToBIBREF22,
+        :referenceToBIBREF23,
+        :referenceToBIBREF6,
+        :sectionLabel15 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section19 a doco:Section ;
+    po:contains :referenceToBIBREF14,
+        :sectionLabel19 ;
+    po:containsAsHeader :sectionTitle19 .
+
+:section22 a doco:Section ;
+    po:contains :sectionLabel22 ;
+    po:containsAsHeader :sectionTitle22 .
+
+:section25 a doco:Section ;
+    po:contains :sectionLabel25 ;
+    po:containsAsHeader :sectionTitle25 .
+
+:section27 a doco:Section ;
+    po:contains :sectionLabel27 ;
+    po:containsAsHeader :sectionTitle27 .
+
+:section30 a doco:Section ;
+    po:contains :sectionLabel30 ;
+    po:containsAsHeader :sectionTitle30 .
+
+:section7 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF15,
+        :referenceToBIBREF24,
+        :referenceToBIBREF4,
+        :sectionLabel7 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Power Electronics" ] ;
+    dcterms:title "Online health monitoring of dc-link capacitors in modular multilevel converters for facts and hvdc applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Asoodar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nahalparvari" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Danielsson" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Söderström" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Nee" ;
+                    foaf:givenname "H.-P" ] ] ;
+    bibo:pageEnd 13503 ;
+    bibo:pageStart 13489 ;
+    bibo:volume "36" ;
+    c4o:hasContent "M. Asoodar, M. Nahalparvari, C. Danielsson, R. Söderström, and H.-P. Nee, Online health monitoring of dc-link capacitors in modular multilevel converters for facts and hvdc applications, IEEE Transactions on Power Electronics, 36 (2021), pp. 13489-13503." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Biotechnology Progress" ] ;
+    dcterms:title "Optimized prodigiosin production with pseudomonas putida kt2440 using parallelized noninvasive online monitoring" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Brehl" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Brass" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lüchtrath" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Böckmann" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ihling" ;
+                    foaf:givenname "N" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Classen" ;
+                    foaf:givenname "T" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Pietruszka" ;
+                    foaf:givenname "J" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Büchs" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "38" ;
+    c4o:hasContent "C. Brehl, H. U. Brass, C. Lüchtrath, L. Böckmann, N. Ihling, T. Classen, J. Pietruszka, and J. Büchs, Optimized prodigiosin production with pseudomonas putida kt2440 using parallelized noninvasive online monitoring, Biotechnology Progress, 38 (2022), p. e3245." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Power Electronics" ] ;
+    dcterms:title "Online condition monitoring of dc-link capacitor for ac/dc/ac pwm converter" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Cong" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Dai" ;
+                    foaf:givenname "X" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Qiu" ;
+                    foaf:givenname "R" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 878 ;
+    bibo:pageStart 865 ;
+    bibo:volume "37" ;
+    c4o:hasContent "T. Li, J. Chen, P. Cong, X. Dai, R. Qiu, and Z. Liu, Online condition monitoring of dc-link capacitor for ac/dc/ac pwm converter, IEEE Transactions on Power Electronics, 37 (2021), pp. 865-878." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Manufacturing Processes" ] ;
+    dcterms:title "Application of improved fireworks algorithm in grinding surface roughness online monitoring" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tian" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 412 ;
+    bibo:pageStart 400 ;
+    bibo:volume "74" ;
+    c4o:hasContent "Y. Li, Y. Liu, Y. Tian, Y. Wang, and J. Wang, Application of improved fireworks algorithm in grinding surface roughness online monitoring, Journal of Manufacturing Processes, 74 (2022), pp. 400-412." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Biochemical Engineering Journal" ] ;
+    dcterms:title "Comparison of noninvasive, in-situ and external monitoring of microbial growth in fed-batch cultivations in corynebacterium glutamicum" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lira-Parada" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tuveri" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Seibold" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Bar" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:volume "170" ;
+    c4o:hasContent "P. A. Lira-Parada, A. Tuveri, G. M. Seibold, and N. Bar, Comparison of noninvasive, in-situ and external monitoring of microbial growth in fed-batch cultivations in corynebacterium glutamicum, Biochemical Engineering Journal, 170 (2021), p. 107989." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Hazardous Materials" ] ;
+    dcterms:title "An online technology for effectively monitoring inorganic condensable particulate matter emitted from industrial plants" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yi" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Deng" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "D" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Huo" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Jiang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "428" ;
+    c4o:hasContent "A. Liu, J. Yi, X. Ding, J. Deng, D. Wu, Y. Huo, J. Jiang, Q. Li, and J. Chen, An online technology for effectively monitoring inorganic condensable particulate matter emitted from industrial plants, Journal of Hazardous Materials, 428 (2022), p. 128221." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Computer Simulation" ] ;
+    dcterms:title "Research on data transmission of wireless sensor network based on feedback cooperation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "Y" ] ] ;
+    c4o:hasContent "F. Liu and Y. Tang, Research on data transmission of wireless sensor network based on feedback cooperation, Computer Simulation, (2022), p. 039." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Power Electronics" ] ;
+    dcterms:title "Effects of converter harmonic voltages on transformer insulation ageing and an online monitoring method for interlayer insulation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lu" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zheng" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 3514 ;
+    bibo:pageStart 3504 ;
+    bibo:volume "37" ;
+    c4o:hasContent "G. Lu, D. Zheng, Q. Zhang, and P. Zhang, Effects of converter harmonic voltages on transformer insulation ageing and an online monitoring method for interlayer insulation, IEEE Transactions on Power Electronics, 37 (2021), pp. 3504-3514." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Publishing authoritative geospatial data to support interlinking of building information models" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mcglinn" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Brennan" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Debruyne" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Meehan" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Mcnerney" ;
+                    foaf:givenname "L" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Clinton" ;
+                    foaf:givenname "E" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Kelly" ;
+                    foaf:givenname "P" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "O'sullivan" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:volume "124" ;
+    c4o:hasContent "K. McGlinn, R. Brennan, C. Debruyne, A. Meehan, L. McNerney, E. Clinton, P. Kelly, and D. O'Sullivan, Pub- lishing authoritative geospatial data to support interlinking of building information models, Automation in Construction, 124 (2021), p. 103534." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Marine Environmental Engineering" ] ;
+    dcterms:title "Protection of submarine optical fibre cables in the strait of malacca" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Muneez" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "M. Muneez, Protection of submarine optical fibre cables in the strait of malacca., Journal of Marine Environmental Engi- neering, 10 (2021)." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "The International Journal of Advanced Manufacturing Technology" ] ;
+    dcterms:title "Online modeling and monitoring of power consumption, aerosol emissions, and surface roughness in wire cut electric discharge machining of ti-6al-4 v" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Rao" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "V" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Prasad" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 18 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "K. V. Rao, Y. P. Kumar, V. K. Singh, and B. S. Prasad, Online modeling and monitoring of power consumption, aerosol emissions, and surface roughness in wire cut electric discharge machining of ti-6al-4 v, The International Journal of Advanced Manufacturing Technology, (2022), pp. 1-18." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Automation in Construction" ] ;
+    dcterms:title "Multi-sensor real-time monitoring of dam behavior using self-adaptive online sequential learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ren" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kong" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ma" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "140" ;
+    c4o:hasContent "Q. Ren, M. Li, T. Kong, and J. Ma, Multi-sensor real-time monitoring of dam behavior using self-adaptive online sequential learning, Automation in Construction, 140 (2022), p. 104365." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Arabian Journal of Geosciences" ] ;
+    dcterms:title "Monitoring method based on gis for submarine cable fault data (retraction of" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cheng" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:volume "14" ;
+    c4o:hasContent "Y. Cheng, Monitoring method based on gis for submarine cable fault data (retraction of vol 14, art no 490, 2021), Arabian Journal of Geosciences, (2021)." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Submarine cable path planning based on weight selection of design considerations" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tahchi" ;
+                    foaf:givenname "E" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zukerman" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 123860 ;
+    bibo:pageStart 123847 ;
+    bibo:volume "9" ;
+    c4o:hasContent "X. Wang, Z. Wang, E. Tahchi, and M. Zukerman, Submarine cable path planning based on weight selection of design considerations, IEEE Access, 9 (2021), pp. 123847-123860." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Sustainable Energy" ] ;
+    dcterms:title "Online monitoring for power cables in dfig-based wind farms using high-frequency resonance analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 390 ;
+    bibo:pageStart 378 ;
+    bibo:volume "13" ;
+    c4o:hasContent "Y. Wu and P. Zhang, Online monitoring for power cables in dfig-based wind farms using high-frequency resonance analysis, IEEE Transactions on Sustainable Energy, 13 (2021), pp. 378-390." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Electron Devices" ] ;
+    dcterms:title "Online monitoring for threshold voltage of sic mosfet considering the coupling impact on bti and junction temperature" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Xin" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Du" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ouyang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wei" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 1777 ;
+    bibo:pageStart 1772 ;
+    bibo:volume "68" ;
+    c4o:hasContent "J. Xin, M. Du, Z. Ouyang, and K. Wei, Online monitoring for threshold voltage of sic mosfet considering the coupling impact on bti and junction temperature, IEEE Transactions on Electron Devices, 68 (2021), pp. 1772-1777." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Power Electronics" ] ;
+    dcterms:title "Online noninvasive technique for condition monitoring of capacitor in linear power supplies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "W" ] ] ;
+    bibo:pageEnd 8773 ;
+    bibo:pageStart 8761 ;
+    bibo:volume "36" ;
+    c4o:hasContent "X. Zhu, D. Zhang, and W. Gao, Online noninvasive technique for condition monitoring of capacitor in linear power supplies, IEEE Transactions on Power Electronics, 36 (2021), pp. 8761-8773." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Environmental Radioactivity" ] ;
+    dcterms:title "Online monitoring of air activation at the china spallation neutron source" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhuang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Qi" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ma" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "L" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "G" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:volume "234" ;
+    c4o:hasContent "S. Zhuang, Q. Wu, Y. Wang, Y. Ma, L. Li, G. Zhang, Y. Chen, Y. Zhang, H. Liu, X. Qi, et al., Online monitoring of air activation at the china spallation neutron source, Journal of Environmental Radioactivity, 234 (2021), p. 106642." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Web Engineering" ] ;
+    dcterms:title "Geospatially partitioning public transit networks for open data publishing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Delva" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rojas" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Colpaert" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Verborgh" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 1026 ;
+    bibo:pageStart 1003 ;
+    c4o:hasContent "H. Delva, J. A. Rojas, P. Colpaert, and R. Verborgh, Geospatially partitioning public transit networks for open data publishing, Journal of Web Engineering, (2021), pp. 1003-1026." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Industrial Electronics" ] ;
+    dcterms:title "An online monitoring scheme of output capacitor's equivalent series resistance for buck converters without current sensors" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Duan" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zou" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Lei" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 10117 ;
+    bibo:pageStart 10107 ;
+    bibo:volume "68" ;
+    c4o:hasContent "X. Duan, J. Zou, B. Li, Z. Wu, and D. Lei, An online monitoring scheme of output capacitor's equivalent series resistance for buck converters without current sensors, IEEE Transactions on Industrial Electronics, 68 (2020), pp. 10107-10117." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Sensors Journal" ] ;
+    dcterms:title "Pattern recognition of optical fiber vibration signal of the submarine cable for its safety" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fouda" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Han" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "An" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 6519 ;
+    bibo:pageStart 6510 ;
+    bibo:volume "21" ;
+    c4o:hasContent "B. M. T. Fouda, B. Yang, D. Han, and B. An, Pattern recognition of optical fiber vibration signal of the submarine cable for its safety, IEEE Sensors Journal, 21 (2020), pp. 6510-6519." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of Damage Mechanics" ] ;
+    dcterms:title "An online monitoring method for creep-fatigue life consumption with real-time damage accumulation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hong" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cai" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 785 ;
+    bibo:pageStart 764 ;
+    bibo:volume "30" ;
+    c4o:hasContent "H. Hong, Z. Cai, W. Wang, and Y. Liu, An online monitoring method for creep-fatigue life consumption with real-time damage accumulation, International Journal of Damage Mechanics, 30 (2021), pp. 764-785." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IT Professional" ] ;
+    dcterms:title "Improved generalization for secure personal data publishing using deviation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Anjum" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Saba" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Rehman" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Tariq" ;
+                    foaf:givenname "U" ] ] ;
+    bibo:pageEnd 80 ;
+    bibo:pageStart 75 ;
+    bibo:volume "23" ;
+    c4o:hasContent "M. S. Khan, A. Anjum, T. Saba, A. Rehman, and U. Tariq, Improved generalization for secure personal data publishing using deviation, IT Professional, 23 (2021), pp. 75-80." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Procedia CIRP" ] ;
+    dcterms:title "Evaluation of the process performance in wire edm based on an online process monitoring system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Küpper" ;
+                    foaf:givenname "U" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Herrig" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Klink" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Welling" ;
+                    foaf:givenname "D" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Bergs" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 365 ;
+    bibo:pageStart 360 ;
+    bibo:volume "95" ;
+    c4o:hasContent "U. Küpper, T. Herrig, A. Klink, D. Welling, and T. Bergs, Evaluation of the process performance in wire edm based on an online process monitoring system, Procedia CIRP, 95 (2020), pp. 360-365." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Process Control" ] ;
+    dcterms:title "Dynamic statistical process monitoring based on online dynamic discriminative feature analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tong" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Lan" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 75 ;
+    bibo:pageStart 67 ;
+    bibo:volume "103" ;
+    c4o:hasContent "S. Li, C. Tong, Y. Chen, and T. Lan, Dynamic statistical process monitoring based on online dynamic discriminative feature analysis, Journal of Process Control, 103 (2021), pp. 67-75." .
+

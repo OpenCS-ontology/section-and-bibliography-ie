@@ -1,0 +1,761 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Commerce and trade"^^xsd:string,
+        "Ideological and political issues"^^xsd:string,
+        "Optimal solution"^^xsd:string,
+        "Swarm intelligence algorithm"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "The Optimal Selection of Ideological and Political Issues in Business Courses Based on Swarm Intelligence Algorithm"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "The current optimal selection matrix for ideological and political issues of business courses is mostly set as a single objective form, and the topic selection is limited in scope, increasing the mutation rate of the optimal selection of topics. Therefore, the design and analysis of the optimal selection method for ideological and political issues of business courses based on the swarm intelligence algorithm is proposed. According to the actual measurement needs and standards, extract the optimal characteristic of ideological and political issues selection of the curriculum, use a multi-level approach to break the limits of issues selection, establish a multi-level swarm intelligence selection matrix, build an optimal selection model for ideological and political issues of business and trade courses based on swarm intelligence accounting, and achieve the optimal selection of issues through group fixed-point optimization. The novelty of this work lies in the design and analysis of the optimal selection method for ideological and political issues in business courses using a swarm intelligence algorithm. This approach introduces a new way of selecting topics by harnessing the power of collective intelligence inspired by the behavior of insects or animals. The final test results show that the mutation rate of the optimal selection of the three topics finally screened using the swarm intelligence algorithm is better controlled below 0.2 through the measurement of five classes, indicating that the topic is more practical, more targeted, and has better discussion value."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 417 ;
+    prism:pageCount 8 ;
+    prism:startingPage 409 ;
+    datacite:doi "10.12694/scpe.v24i3.2283"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2283"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2283> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Yin"^^xsd:string ;
+    foaf:givenName "Xuecai"^^xsd:string ;
+    foaf:name "Xuecai Yin"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section17 ;
+                    co:nextItem [ co:itemContent :section26 ] ] ] ;
+    po:contains :section0,
+        :section17,
+        :section26 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Zhoukou Vocational and Technical College, Zhoukou, 466000, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel10 a doco:SectionLabel ;
+    c4o:hasContent "2.3." .
+
+:sectionLabel13 a doco:SectionLabel ;
+    c4o:hasContent "2.4." .
+
+:sectionLabel17 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel18 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionLabel20 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel26 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel3 a doco:SectionLabel ;
+    c4o:hasContent "2.1." .
+
+:sectionLabel7 a doco:SectionLabel ;
+    c4o:hasContent "2.2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle10 a doco:SectionTitle ;
+    c4o:hasContent "Building the Optimal Selection Model of Ideological and Political Issues for Group Intelligent Accounting Business Courses." .
+
+:sectionTitle13 a doco:SectionTitle ;
+    c4o:hasContent "Group fixed-point optimization to achieve optimal choice of issues." .
+
+:sectionTitle17 a doco:SectionTitle ;
+    c4o:hasContent "Experiment." .
+
+:sectionTitle18 a doco:SectionTitle ;
+    c4o:hasContent "Experiment preparation." .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "Experimental process and result analysis." .
+
+:sectionTitle26 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle3 a doco:SectionTitle ;
+    c4o:hasContent "Extract the optimal characteristics of curriculum ideological and political issues selection." .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "Establishing a Multi level Swarm Intelligence Selection Matrix." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Proceedings of the Institution of Mechanical Engineers, Part C: Journal of Mechanical Engineering Science" ] ;
+    dcterms:title "A global synthesis approach for optimizing the meshing performance of hypoid gears based on a swarm intelligence algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "J.-W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lu" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Xian-Guang" ;
+                    foaf:givenname "S.-Q" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yang" ] ] ;
+    bibo:pageEnd 1388 ;
+    bibo:pageStart 1368 ;
+    bibo:volume "235" ;
+    c4o:hasContent "Wang, J.-w. Lu, G. Xian-guang, and S.-q. Yang, A global synthesis approach for optimizing the meshing performance of hypoid gears based on a swarm intelligence algorithm, Proceedings of the Institution of Mechanical Engineers, Part C: Journal of Mechanical Engineering Science, 235 (2021), pp. 1368-1388." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    co:firstItem [ co:itemContent :section3 ;
+            co:nextItem [ co:itemContent :section7 ;
+                    co:nextItem [ co:itemContent :section10 ;
+                            co:nextItem [ co:itemContent :section13 ] ] ] ] ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF17,
+        :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :section10,
+        :section13,
+        :section3,
+        :section7,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section10 a doco:Section ;
+    po:contains :sectionLabel10 ;
+    po:containsAsHeader :sectionTitle10 .
+
+:section13 a doco:Section ;
+    po:contains :sectionLabel13 ;
+    po:containsAsHeader :sectionTitle13 .
+
+:section17 a doco:Section ;
+    co:firstItem [ co:itemContent :section18 ;
+            co:nextItem [ co:itemContent :section20 ] ] ;
+    po:contains :section18,
+        :section20,
+        :sectionLabel17 ;
+    po:containsAsHeader :sectionTitle17 .
+
+:section18 a doco:Section ;
+    po:contains :sectionLabel18 ;
+    po:containsAsHeader :sectionTitle18 .
+
+:section20 a doco:Section ;
+    po:contains :sectionLabel20 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section26 a doco:Section ;
+    po:contains :sectionLabel26 ;
+    po:containsAsHeader :sectionTitle26 .
+
+:section3 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF16,
+        :referenceToBIBREF18,
+        :referenceToBIBREF23,
+        :referenceToBIBREF3,
+        :sectionLabel3 ;
+    po:containsAsHeader :sectionTitle3 .
+
+:section7 a doco:Section ;
+    po:contains :referenceToBIBREF15,
+        :referenceToBIBREF2,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel7 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Contemporary Educational Research" ] ;
+    dcterms:title "The influence of new media on college students' ideological and political education and the countermeasures" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ai" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 46 ;
+    bibo:pageStart 44 ;
+    bibo:volume "5" ;
+    c4o:hasContent "H. Ai, The influence of new media on college students' ideological and political education and the countermeasures, Journal of Contemporary Educational Research, 5 (2021), pp. 44-46." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "A macroeconomic view of public choice: new political macroeconomics as a separate tradition of public choice" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Almeida" ;
+                    foaf:givenname "R" ] ] ;
+    c4o:hasContent "R. G. d. Almeida, A macroeconomic view of public choice: new political macroeconomics as a separate tradition of public choice, 2021." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Asian Agricultural Research" ] ;
+    dcterms:title "Problems and solutions in ideological and political education under the training mode of excellent and innovative talents in colleges and universities" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jin" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Xi" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Han" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Luo" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Cao" ;
+                    foaf:givenname "R" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Shen" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 57 ;
+    bibo:pageStart 51 ;
+    bibo:volume "14" ;
+    c4o:hasContent "C. Jin, J. Li, Y. Xi, T. Han, S. Liu, Y. Luo, R. Cao, and G. Shen, Problems and solutions in ideological and political education under the training mode of excellent and innovative talents in colleges and universities, Asian Agricultural Research, 14 (2022), pp. 51-57." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Intelligent & Fuzzy Systems" ] ;
+    dcterms:title "Optimization of artificial cnn based on swarm intelligence algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 6173 ;
+    bibo:pageStart 6163 ;
+    bibo:volume "40" ;
+    c4o:hasContent "Q. Li and S. Li, Optimization of artificial cnn based on swarm intelligence algorithm, Journal of Intelligent & Fuzzy Systems, 40 (2021), pp. 6163-6173." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Advanced Theory and Simulations" ] ;
+    dcterms:title "An intelligent tunicate swarm algorithm based mppt control strategy for multiple configurations of pv systems under partial shading conditions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mansoor" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mirza" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Long" ;
+                    foaf:givenname "F" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ling" ;
+                    foaf:givenname "Q" ] ] ;
+    bibo:volume "4" ;
+    c4o:hasContent "M. Mansoor, A. F. Mirza, F. Long, and Q. Ling, An intelligent tunicate swarm algorithm based mppt control strategy for multiple configurations of pv systems under partial shading conditions, Advanced Theory and Simulations, 4 (2021), p. 2100246." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Complexity" ] ;
+    dcterms:title "A multiswarm intelligence algorithm for expensive bound constrained optimization problems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mashwani" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Haider" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Belhaouari" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 18 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "W. K. Mashwani, R. Haider, and S. Brahim Belhaouari, A multiswarm intelligence algorithm for expensive bound constrained optimization problems, Complexity, 2021 (2021), pp. 1-18." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "The ideological and political support for the transformation of the economy and society in the ussr of the 1950-1980s: historical challenges and hidden trends" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nikiforov" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 57 ;
+    bibo:pageStart 50 ;
+    bibo:volume "26" ;
+    c4o:hasContent "Y. Nikiforov, The ideological and political support for the transformation of the economy and society in the ussr of the 1950-1980s: historical challenges and hidden trends, Vestnik of Kostroma State University, 26 (2021), pp. 50-57." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Computers & Operations Research" ] ;
+    dcterms:title "A swarm intelligence graph-based pathfinding algorithm (sigpa) for multi-objective route planning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ntakolia" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Iakovidis" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:volume "133" ;
+    c4o:hasContent "C. Ntakolia and D. K. Iakovidis, A swarm intelligence graph-based pathfinding algorithm (sigpa) for multi-objective route planning, Computers & Operations Research, 133 (2021), p. 105358." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IRO Journal on Sustainable Wireless Systems" ] ;
+    dcterms:title "Novel distance estimation based localization scheme for wireless sensor networks using modified swarm intelligence algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pandian" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 176 ;
+    bibo:pageStart 171 ;
+    bibo:volume "2" ;
+    c4o:hasContent "A. P. Pandian, Novel distance estimation based localization scheme for wireless sensor networks using modified swarm intelligence algorithm, IRO Journal on Sustainable Wireless Systems, 2 (2021), pp. 171-176." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Psychology Research" ] ;
+    dcterms:title "An interpretation of the ideological and political construction of college courses from the perspective of reception aesthetics*" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tan" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 844 ;
+    bibo:pageStart 840 ;
+    bibo:volume "12" ;
+    c4o:hasContent "X. TAN, An interpretation of the ideological and political construction of college courses from the perspective of reception aesthetics*, Psychology Research, 12 (2022), pp. 840-844." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Psychology of China" ] ;
+    dcterms:title "On the ways to improve the affinity of ideological and political education psychology from the perspective of teachers" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shi" ;
+                    foaf:givenname "Q" ] ] ;
+    bibo:pageEnd 655 ;
+    bibo:pageStart 650 ;
+    bibo:volume "3" ;
+    c4o:hasContent "H. Tang and Q. Shi, On the ways to improve the affinity of ideological and political education psychology from the perspective of teachers, Psychology of China, 3 (2021), pp. 650-655." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Int. J. Intell. Eng. Syst" ] ;
+    dcterms:title "A swarm intelligence-based approach for dynamic data replication in a cloud environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Awad" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Salem" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Abdelkader" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Abdsalam" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 284 ;
+    bibo:pageStart 271 ;
+    bibo:volume "14" ;
+    c4o:hasContent "A. Awad, R. Salem, H. Abdelkader, and M. Abdsalam, A swarm intelligence-based approach for dynamic data replication in a cloud environment, Int. J. Intell. Eng. Syst, 14 (2021), pp. 271-284." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Higher Education Research" ] ;
+    dcterms:title "Research on the reform of ideological and political teaching evaluation method of college english course based on \"online and offline\" teaching" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 90 ;
+    bibo:pageStart 87 ;
+    bibo:volume "3" ;
+    c4o:hasContent "X. Wu, Research on the reform of ideological and political teaching evaluation method of college english course based on \"online and offline\" teaching, Journal of Higher Education Research, 3 (2022), pp. 87-90." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International & Comparative Law Quarterly" ] ;
+    dcterms:title "A new solution concerning choice-of-law for the assignment of debts" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 696 ;
+    bibo:pageStart 665 ;
+    bibo:volume "70" ;
+    c4o:hasContent "A. Xu, A new solution concerning choice-of-law for the assignment of debts, International & Comparative Law Quarterly, 70 (2021), pp. 665-696." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Research on ideological and political education of college students from the perspective of system theory" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 17 ;
+    bibo:pageStart 1 ;
+    bibo:volume "2" ;
+    c4o:hasContent "Y. Zhang, Research on ideological and political education of college students from the perspective of system theory, Frontier of Higher Education, 2 (2021), pp. 1-17." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Industrial Electronics" ] ;
+    dcterms:title "Swarm intelligence algorithm-based optimal design of microwave microfluidic sensors" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "W.-S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "B.-X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "D.-W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "You" ;
+                    foaf:givenname "B" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 2087 ;
+    bibo:pageStart 2077 ;
+    bibo:volume "69" ;
+    c4o:hasContent "W.-S. Zhao, B.-X. Wang, D.-W. Wang, B. You, Q. Liu, and G. Wang, Swarm intelligence algorithm-based optimal design of microwave microfluidic sensors, IEEE Transactions on Industrial Electronics, 69 (2021), pp. 2077-2087." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Computational Intelligence and Neuroscience" ] ;
+    dcterms:title "Research on key algorithms of the lung cad system based on cascade feature and hybrid swarm intelligence optimization for mkl-svm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zheng" ;
+                    foaf:givenname "H" ] ] ;
+    c4o:hasContent "J. Chang, Y. Li, and H. Zheng, Research on key algorithms of the lung cad system based on cascade feature and hybrid swarm intelligence optimization for mkl-svm, Computational Intelligence and Neuroscience, 2021 (2021)." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Higher Education Research" ] ;
+    dcterms:title "Research on the dilemma and breakthrough path of ideological and political education in colleges and universities in the era of big data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 206 ;
+    bibo:pageStart 203 ;
+    bibo:volume "3" ;
+    c4o:hasContent "T. Chen, Research on the dilemma and breakthrough path of ideological and political education in colleges and universities in the era of big data, Journal of Higher Education Research, 3 (2022), pp. 203-206." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Higher Education Research" ] ;
+    dcterms:title "On the ideological and political education of material specialty courses under the background of the internet" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cheng" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Niu" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 82 ;
+    bibo:pageStart 79 ;
+    bibo:volume "3" ;
+    c4o:hasContent "P. Cheng, L. Yang, T. Niu, and et al., On the ideological and political education of material specialty courses under the background of the internet, Journal of Higher Education Research, 3 (2022), pp. 79-82." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "China Journal of Stomatology" ] ;
+    dcterms:title "Investigation and analysis of children's choice of environment in oral clinics, Hua xi kou Qiang yi xue za zhi= Huaxi Kouqiang Yixue Zazhi= West" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Diao" ;
+                    foaf:givenname "Y.-N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Han" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zeng" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 187 ;
+    bibo:pageStart 182 ;
+    bibo:volume "39" ;
+    c4o:hasContent "Y.-N. Diao, Y. Han, and X. Zeng, Investigation and analysis of children's choice of environment in oral clinics, Hua xi kou Qiang yi xue za zhi= Huaxi Kouqiang Yixue Zazhi= West China Journal of Stomatology, 39 (2021), pp. 182-187." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Withdrawn: Scaling up detection rate in intrusion detection using self-adaptive swarm intelligence mechanism" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dwivedi" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Vardhan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tripathi" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Shukla" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "S. Dwivedi, M. Vardhan, S. Tripathi, and A. K. Shukla, Withdrawn: Scaling up detection rate in intrusion detection using self-adaptive swarm intelligence mechanism, 2021." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Electronics" ] ;
+    dcterms:title "Multi-objective optimization of joint power and admission control in cognitive radio networks using enhanced swarm intelligence" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "El-Saleh" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shami" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Nordin" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Alias" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Shayea" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "A. A. El-Saleh, T. M. Shami, R. Nordin, M. Y. Alias, and I. Shayea, Multi-objective optimization of joint power and admission control in cognitive radio networks using enhanced swarm intelligence, Electronics, 10 (2021), p. 189." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Expert Systems with Applications" ] ;
+    dcterms:title "A clustering based swarm intelligence optimization technique for the internet of medical things" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "El-Shafeiy" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sallam" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chakrabortty" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Abohany" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "173" ;
+    c4o:hasContent "E. El-shafeiy, K. M. Sallam, R. K. Chakrabortty, and A. A. Abohany, A clustering based swarm intelligence opti- mization technique for the internet of medical things, Expert Systems with Applications, 173 (2021), p. 114648." .
+

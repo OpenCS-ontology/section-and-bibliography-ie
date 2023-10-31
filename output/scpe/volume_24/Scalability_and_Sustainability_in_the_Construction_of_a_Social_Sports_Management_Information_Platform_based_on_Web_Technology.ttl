@@ -1,0 +1,723 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Backend development"^^xsd:string,
+        "Scalable website"^^xsd:string,
+        "Web technology"^^xsd:string,
+        "components of Web technology"^^xsd:string,
+        "frontend development"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2 ] ;
+    dcterms:title "Scalability and Sustainability in the Construction of a Social Sports Management Information Platform based on Web Technology"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Scalability and Sustainability are a major traits that a website requires. Moreover, in Social sports management, information platforms must be reliable. Thus, different tools for developing a platform based on web technology are discussed in an empirical study for the purposes mentioned earlier. For the study, secondary data was analyzed, and qualitative methods were used. In addition, it was noticed that there are some problems related to a web technology-based platform. It was found that an improved development strategy in the beginning aids in traffic management. In addition, an improved tech stack is directly related to the data analysis process of a sports management system. A lack of such factors in the construction process reduced the scalability and sustainability of a social sports management information platform. Thus, a complete discussion aimed at understanding the sustainability and scalability of a web management platform is done."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 498 ;
+    prism:pageCount 11 ;
+    prism:startingPage 487 ;
+    datacite:doi "10.12694/scpe.v24i3.2382"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2382"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2382> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Tang"^^xsd:string ;
+    foaf:givenName "Yueqin"^^xsd:string ;
+    foaf:name "Yueqin Tang"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Hou"^^xsd:string ;
+    foaf:givenName "Yuanyuan"^^xsd:string ;
+    foaf:name "Yuanyuan Hou"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    pro:holdsRoleInTime :role_2_0 ;
+    foaf:familyName "Wu"^^xsd:string ;
+    foaf:givenName "Mengyan"^^xsd:string ;
+    foaf:name "Mengyan Wu"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section7 ;
+                    co:nextItem [ co:itemContent :section9 ;
+                            co:nextItem [ co:itemContent :section12 ;
+                                    co:nextItem [ co:itemContent :section13 ;
+                                            co:nextItem [ co:itemContent :section15 ;
+                                                    co:nextItem [ co:itemContent :section17 ;
+                                                            co:nextItem [ co:itemContent :section19 ;
+                                                                    co:nextItem [ co:itemContent :section21 ;
+                                                                            co:nextItem [ co:itemContent :section22 ;
+                                                                                    co:nextItem [ co:itemContent :section25 ;
+                                                                                            co:nextItem [ co:itemContent :section26 ;
+                                                                                                    co:nextItem [ co:itemContent :section27 ;
+                                                                                                            co:nextItem [ co:itemContent :section28 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section12,
+        :section13,
+        :section15,
+        :section17,
+        :section19,
+        :section21,
+        :section22,
+        :section25,
+        :section26,
+        :section27,
+        :section28,
+        :section7,
+        :section9 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Basic Teaching Department, Suzhou City University, Suzhou, 215104 China "^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "Basic Teaching Department, Suzhou City University, Suzhou, 215104 China"^^xsd:string .
+
+:org_2_0 a frapo:Organization ;
+    foaf:name "Basic Teaching Department, Suzhou City University, Suzhou, 215104 China "^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:role_2_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_2_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel12 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel21 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel25 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel28 a doco:SectionLabel ;
+    c4o:hasContent "7." .
+
+:sectionLabel7 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel9 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "Components of a Web" .
+
+:sectionTitle13 a doco:SectionTitle ;
+    c4o:hasContent "B) JSP" .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "C) Servlet" .
+
+:sectionTitle17 a doco:SectionTitle ;
+    c4o:hasContent "D) EJB" .
+
+:sectionTitle19 a doco:SectionTitle ;
+    c4o:hasContent "E) Web services" .
+
+:sectionTitle21 a doco:SectionTitle ;
+    c4o:hasContent "Process of Web Technology-based Construction." .
+
+:sectionTitle22 a doco:SectionTitle ;
+    c4o:hasContent "A) Frontend Development:" .
+
+:sectionTitle25 a doco:SectionTitle ;
+    c4o:hasContent "Problem Statement." .
+
+:sectionTitle26 a doco:SectionTitle ;
+    c4o:hasContent "Unskilled Overlooking" .
+
+:sectionTitle27 a doco:SectionTitle ;
+    c4o:hasContent "Slow Servers" .
+
+:sectionTitle28 a doco:SectionTitle ;
+    c4o:hasContent "Result." .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "Objectives." .
+
+:sectionTitle9 a doco:SectionTitle ;
+    c4o:hasContent "Methodology." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "An internet of things platform based on microservices and cloud paradigms for livestock" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mateo-Fornés" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pagès-Bernaus" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Plà-Aragonés" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Castells-Gasia" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Babot-Gaspa" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:volume "21" ;
+    c4o:hasContent "J. Mateo-Fornés, A. Pagès-Bernaus, L. M. Plà-Aragonés, J. P. Castells-Gasia, and D. Babot-Gaspa, An internet of things platform based on microservices and cloud paradigms for livestock, Sensors, 21 (2021), p. 5949." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF18 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF2,
+        :referenceToBIBREF8,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section12 a doco:Section ;
+    po:contains :referenceToBIBREF11,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :sectionLabel12 ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section13 a doco:Section ;
+    po:contains :referenceToBIBREF12 ;
+    po:containsAsHeader :sectionTitle13 .
+
+:section15 a doco:Section ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section17 a doco:Section ;
+    po:contains :referenceToBIBREF14 ;
+    po:containsAsHeader :sectionTitle17 .
+
+:section19 a doco:Section ;
+    po:contains :referenceToBIBREF6 ;
+    po:containsAsHeader :sectionTitle19 .
+
+:section21 a doco:Section ;
+    po:contains :sectionLabel21 ;
+    po:containsAsHeader :sectionTitle21 .
+
+:section22 a doco:Section ;
+    po:contains :referenceToBIBREF16 ;
+    po:containsAsHeader :sectionTitle22 .
+
+:section25 a doco:Section ;
+    po:contains :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :sectionLabel25 ;
+    po:containsAsHeader :sectionTitle25 .
+
+:section26 a doco:Section ;
+    po:containsAsHeader :sectionTitle26 .
+
+:section27 a doco:Section ;
+    po:containsAsHeader :sectionTitle27 .
+
+:section28 a doco:Section ;
+    po:contains :sectionLabel28 ;
+    po:containsAsHeader :sectionTitle28 .
+
+:section7 a doco:Section ;
+    po:contains :sectionLabel7 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:section9 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF13,
+        :referenceToBIBREF7,
+        :sectionLabel9 ;
+    po:containsAsHeader :sectionTitle9 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IJCSNS Int. J. Comput. Sci. Netw. Secur" ] ;
+    dcterms:title "Multinomial naive bayes classification model for sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abbas" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Memon" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Jamali" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Memon" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ahmed" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "19" ;
+    c4o:hasContent "M. Abbas, K. A. Memon, A. A. Jamali, S. Memon, and A. Ahmed, Multinomial naive bayes classification model for sentiment analysis, IJCSNS Int. J. Comput. Sci. Netw. Secur, 19 (2019), p. 62." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Communication & Sport" ] ;
+    dcterms:title "Social media in relationship marketing: The perspective of professional sport managers in the mlb, nba, nfl, and nhl" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abeza" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "O'reilly" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Seguin" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 109 ;
+    bibo:pageStart 80 ;
+    bibo:volume "7" ;
+    c4o:hasContent "G. Abeza, N. O'Reilly, and B. Seguin, Social media in relationship marketing: The perspective of professional sport managers in the mlb, nba, nfl, and nhl, Communication & Sport, 7 (2019), pp. 80-109." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2001 ;
+    dcterms:publisher [ foaf:name "Field methods" ] ;
+    dcterms:title "A case in case study methodology" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Meyer" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 352 ;
+    bibo:pageStart 329 ;
+    bibo:volume "13" ;
+    c4o:hasContent "C. B. Meyer, A case in case study methodology, Field methods, 13 (2001), pp. 329-352." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Chaos Theory and Applications" ] ;
+    dcterms:title "A chaos based pseudo-random bit generator using multiple digits comparison" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Moysis" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tutueva" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Christos" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Butusov" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 68 ;
+    bibo:pageStart 58 ;
+    bibo:volume "2" ;
+    c4o:hasContent "L. Moysis, A. Tutueva, K. Christos, and D. Butusov, A chaos based pseudo-random bit generator using multiple digits comparison, Chaos Theory and Applications, 2 (2020), pp. 58-68." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of Computers and Applications" ] ;
+    dcterms:title "Present and future of semantic web technologies: a research statement" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Patel" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jain" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 422 ;
+    bibo:pageStart 413 ;
+    bibo:volume "43" ;
+    c4o:hasContent "A. Patel and S. Jain, Present and future of semantic web technologies: a research statement, International Journal of Computers and Applications, 43 (2021), pp. 413-422." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "International Journal of Research and Review" ] ;
+    dcterms:title "Exploring research methodology" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Patel" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Patel" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 55 ;
+    bibo:pageStart 48 ;
+    bibo:volume "6" ;
+    c4o:hasContent "M. Patel and N. Patel, Exploring research methodology, International Journal of Research and Review, 6 (2019), pp. 48-55." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IOP conference series: materials science and engineering" ] ;
+    dcterms:title "Naïve bayes classifier models for predicting the colon cancer" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Salmi" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rustam" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:volume "546" ;
+    c4o:hasContent "N. Salmi and Z. Rustam, Naïve bayes classifier models for predicting the colon cancer, in IOP conference series: materials science and engineering, vol. 546, IOP Publishing, 2019, p. 052068." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Applied Sciences" ] ;
+    dcterms:title "Digital twin and web-based virtual gaming technologies for online education: A case of construction management and engineering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sepasgozar" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "S. M. Sepasgozar, Digital twin and web-based virtual gaming technologies for online education: A case of construction management and engineering, Applied Sciences, 10 (2020), p. 4678." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Healthcare informatics research" ] ;
+    dcterms:title "Application of blockchain to maintaining patient records in electronic health record for enhanced privacy, scalability, and availability" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tith" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "J.-S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Suzuki" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wijesundara" ;
+                    foaf:givenname "W" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Taira" ;
+                    foaf:givenname "N" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Obi" ;
+                    foaf:givenname "T" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Ohyama" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 12 ;
+    bibo:pageStart 3 ;
+    bibo:volume "26" ;
+    c4o:hasContent "D. Tith, J.-S. Lee, H. Suzuki, W. Wijesundara, N. Taira, T. Obi, and N. Ohyama, Application of blockchain to maintaining patient records in electronic health record for enhanced privacy, scalability, and availability, Healthcare informatics research, 26 (2020), pp. 3-12." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Internet of things 2.0: Concepts, applications, and future directions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Makhdoom" ;
+                    foaf:givenname "I" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shariati" ;
+                    foaf:givenname "N" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Raza" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Keshavarz" ;
+                    foaf:givenname "R" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Lipman" ;
+                    foaf:givenname "J" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Abolhasan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Jamalipour" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 71012 ;
+    bibo:pageStart 70961 ;
+    bibo:volume "9" ;
+    c4o:hasContent "I. Zhou, I. Makhdoom, N. Shariati, M. A. Raza, R. Keshavarz, J. Lipman, M. Abolhasan, and A. Jamalipour, Internet of things 2.0: Concepts, applications, and future directions, IEEE Access, 9 (2021), pp. 70961-71012." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "International Journal of Embedded Systems" ] ;
+    dcterms:title "Secure rgb image steganography based on modified lsb substitution" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Almazaydeh" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 457 ;
+    bibo:pageStart 453 ;
+    bibo:volume "12" ;
+    c4o:hasContent "L. Almazaydeh, Secure rgb image steganography based on modified lsb substitution, International Journal of Embedded Systems, 12 (2020), pp. 453-457." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Applied Science and Technology Trends" ] ;
+    dcterms:title "Classification based on decision tree algorithm for machine learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Charbuty" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Abdulazeez" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 28 ;
+    bibo:pageStart 20 ;
+    bibo:volume "2" ;
+    c4o:hasContent "B. Charbuty and A. Abdulazeez, Classification based on decision tree algorithm for machine learning, Journal of Applied Science and Technology Trends, 2 (2021), pp. 20-28." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "International journal of environmental research and public health" ] ;
+    dcterms:title "Comparison of support vector machine, naïve bayes and logistic regression for assessing the necessity for coronary angiography" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Golpour" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ghayour-Mobarhan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Saki" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Esmaily" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Taghipour" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Tajfard" ;
+                    foaf:givenname "M" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Ghazizadeh" ;
+                    foaf:givenname "H" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Moohebati" ;
+                    foaf:givenname "M" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Ferns" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:volume "17" ;
+    c4o:hasContent "P. Golpour, M. Ghayour-Mobarhan, A. Saki, H. Esmaily, A. Taghipour, M. Tajfard, H. Ghazizadeh, M. Moohebati, and G. A. Ferns, Comparison of support vector machine, naïve bayes and logistic regression for assessing the necessity for coronary angiography, International journal of environmental research and public health, 17 (2020), p. 6449." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Library Hi Tech" ] ;
+    dcterms:title "Research of data mining and web technology in university discipline construction decision support system based on mvc model" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Liang" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 624 ;
+    bibo:pageStart 610 ;
+    bibo:volume "38" ;
+    c4o:hasContent "Z. Huang and Y. Liang, Research of data mining and web technology in university discipline construction decision support system based on mvc model, Library Hi Tech, 38 (2019), pp. 610-624." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "The Journal of Supercomputing" ] ;
+    dcterms:title "Ai-based smart prediction of clinical disease using random forest classifier and naive bayes" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jackins" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Vimal" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kaliappan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 5219 ;
+    bibo:pageStart 5198 ;
+    bibo:volume "77" ;
+    c4o:hasContent "V. Jackins, S. Vimal, M. Kaliappan, and M. Y. Lee, Ai-based smart prediction of clinical disease using random forest classifier and naive bayes, The Journal of Supercomputing, 77 (2021), pp. 5198-5219." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2007 ;
+    dcterms:title "On case study methodology, Open house international" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Johansson" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 54 ;
+    bibo:pageStart 48 ;
+    bibo:volume "32" ;
+    c4o:hasContent "R. Johansson, On case study methodology, Open house international, 32 (2007), pp. 48-54." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Journal of sports sciences" ] ;
+    dcterms:title "Methods of performance analysis in team invasion sports: A systematic review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lord" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pyne" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Welvaert" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Mara" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 2349 ;
+    bibo:pageStart 2338 ;
+    bibo:volume "38" ;
+    c4o:hasContent "F. Lord, D. B. Pyne, M. Welvaert, and J. K. Mara, Methods of performance analysis in team invasion sports: A systematic review, Journal of sports sciences, 38 (2020), pp. 2338-2349." .
+

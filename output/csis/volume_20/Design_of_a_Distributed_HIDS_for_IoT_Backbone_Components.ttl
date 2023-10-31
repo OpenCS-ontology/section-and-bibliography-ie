@@ -1,0 +1,704 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2,
+                :author_3,
+                :author_4,
+                :author_5,
+                :author_6,
+                :author_7,
+                :author_8 ] ;
+    dcterms:title "Design of a Distributed HIDS for IoT Backbone Components"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Nowadays DDoS attacks using IoT devices are frequent and exten-sive. Given that IoT network instances are distributed and deployedover conventional Internet gear, DDoS countermeasures in IoT needto be fully distributed and coordinated allover the components thatform each IoT instance. This paper presents a designed and proto-typed distributed host-based intrusion detection systems (HIDS)that aims to protect the components of IoT network backbones,comprising conventional switches and routers. In our design, a setof the proposed HIDS executes conventional security verifications,like default username and password, known attacks signatures,monitoring the usage of resources, processes, ports and open con-nections, while also interacting with a Controller of the HIDS setto allow the coordination of intrusion detection actions relativeto DDoS attacks allover the IoT instance.The designed distributedHIDS is evaluated in a controlled environment that, although beinga local and isolated network, realistically represents IoT networkinstances."^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 7 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F329"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/329.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/329.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "3rd Workshop on Internet of Things - Enablers, Challenges and Applications"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Alencastro"^^xsd:string ;
+    foaf:givenName "João F. de"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Albuquerque"^^xsd:string ;
+    foaf:givenName "Robson de O."^^xsd:string .
+
+:author_2 a foaf:Person ;
+    foaf:familyName "Kfouri"^^xsd:string ;
+    foaf:givenName "Guilherme de O."^^xsd:string .
+
+:author_3 a foaf:Person ;
+    foaf:familyName "Gonçalves"^^xsd:string ;
+    foaf:givenName "Daniel G. V."^^xsd:string .
+
+:author_4 a foaf:Person ;
+    foaf:familyName "Martins"^^xsd:string ;
+    foaf:givenName "Lucas M. C. e"^^xsd:string .
+
+:author_5 a foaf:Person ;
+    foaf:familyName "Praciano"^^xsd:string ;
+    foaf:givenName "Bruno J. G."^^xsd:string .
+
+:author_6 a foaf:Person ;
+    foaf:familyName "Jr"^^xsd:string ;
+    foaf:givenName "Rafael T. de Sousa"^^xsd:string .
+
+:author_7 a foaf:Person ;
+    foaf:familyName "Filho"^^xsd:string ;
+    foaf:givenName "Francisco L. de Caldas"^^xsd:string .
+
+:author_8 a foaf:Person ;
+    foaf:familyName "Dutra"^^xsd:string ;
+    foaf:givenName "Bruno V."^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section7 ;
+                    co:nextItem [ co:itemContent :section8 ;
+                            co:nextItem [ co:itemContent :section11 ;
+                                    co:nextItem [ co:itemContent :section12 ;
+                                            co:nextItem [ co:itemContent :section13 ;
+                                                    co:nextItem [ co:itemContent :section21 ;
+                                                            co:nextItem [ co:itemContent :section25 ;
+                                                                    co:nextItem [ co:itemContent :section29 ;
+                                                                            co:nextItem [ co:itemContent :section51 ;
+                                                                                    co:nextItem [ co:itemContent :section63 ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section11,
+        :section12,
+        :section13,
+        :section21,
+        :section25,
+        :section29,
+        :section51,
+        :section63,
+        :section7,
+        :section8 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel13 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel21 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel51 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel63 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel7 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle11 a doco:SectionTitle ;
+    c4o:hasContent "B. HIDS" .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "C. Remote IDS" .
+
+:sectionTitle13 a doco:SectionTitle ;
+    c4o:hasContent "SECURITY ISSUES IN IOT BACKBONES" .
+
+:sectionTitle21 a doco:SectionTitle ;
+    c4o:hasContent "DISTRIBUTED HIDS FOR IOT BACKBONE COMPONENTS" .
+
+:sectionTitle25 a doco:SectionTitle ;
+    c4o:hasContent "A. HIDS parameters" .
+
+:sectionTitle29 a doco:SectionTitle ;
+    c4o:hasContent "B. Security Verifications" .
+
+:sectionTitle51 a doco:SectionTitle ;
+    c4o:hasContent "TESTS AND RESULTS" .
+
+:sectionTitle63 a doco:SectionTitle ;
+    c4o:hasContent "CONCLUSION AND FUTURE WORKS" .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "RELATED WORKS" .
+
+:sectionTitle8 a doco:SectionTitle ;
+    c4o:hasContent "A. IDS" .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "88 COMMUNICATION PAPERS" ;
+    c4o:hasContent "88 COMMUNICATION PAPERS. LEIPZIG, 2019" .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF5 ;
+                                            co:nextItem [ co:itemContent :BIBREF6 ;
+                                                    co:nextItem [ co:itemContent :BIBREF7 ;
+                                                            co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF19 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section11 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF5,
+        :referenceToBIBREF9 ;
+    po:containsAsHeader :sectionTitle11 .
+
+:section12 a doco:Section ;
+    po:contains :referenceToBIBREF11 ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section13 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :sectionLabel13 ;
+    po:containsAsHeader :sectionTitle13 .
+
+:section21 a doco:Section ;
+    po:contains :referenceToBIBREF18,
+        :sectionLabel21 ;
+    po:containsAsHeader :sectionTitle21 .
+
+:section25 a doco:Section ;
+    po:containsAsHeader :sectionTitle25 .
+
+:section29 a doco:Section ;
+    po:contains :referenceToBIBREF1 ;
+    po:containsAsHeader :sectionTitle29 .
+
+:section51 a doco:Section ;
+    po:contains :sectionLabel51 ;
+    po:containsAsHeader :sectionTitle51 .
+
+:section63 a doco:Section ;
+    po:contains :sectionLabel63 ;
+    po:containsAsHeader :sectionTitle63 .
+
+:section7 a doco:Section ;
+    po:contains :sectionLabel7 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:section8 a doco:Section ;
+    po:contains :referenceToBIBREF5,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9 ;
+    po:containsAsHeader :sectionTitle8 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:title "DDoS attacks in q1" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kaspersky" ] ] ;
+    c4o:hasContent "Kaspersky. DDoS attacks in q1 2018. [Online]. Available: https: //securelist.com/ddos-report-in-q1-2018/85373/" .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:publisher [ foaf:name "Proceedings of the 26th USENIX Security Symposium" ] ;
+    dcterms:title "Understanding the Mirai Botnet" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Antonakakis" ;
+                    foaf:givenname "M" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Kallitsis" ;
+                    foaf:givenname "M" ] ;
+            rdf:_11 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "D" ] ;
+            rdf:_12 [ a foaf:Person ;
+                    foaf:family_name "Lever" ;
+                    foaf:givenname "C" ] ;
+            rdf:_13 [ a foaf:Person ;
+                    foaf:family_name "Ma" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_14 [ a foaf:Person ;
+                    foaf:family_name "Mason" ;
+                    foaf:givenname "J" ] ;
+            rdf:_15 [ a foaf:Person ;
+                    foaf:family_name "Menscher" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "April" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Bailey" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Bernhard" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Bursztein" ;
+                    foaf:givenname "E" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Cochran" ;
+                    foaf:givenname "J" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Durumeric" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Halderman" ;
+                    foaf:givenname "J" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Invernizzi" ;
+                    foaf:givenname "L" ] ] ;
+    c4o:hasContent "M. Antonakakis, T. April, M. Bailey, M. Bernhard, E. Bursztein, J. Cochran, Z. Durumeric, J. A. Halderman, L. Invernizzi, M. Kallitsis, D. Kumar, C. Lever, Z. Ma, J. Mason, and D. Menscher, \"Understanding the Mirai Botnet,\" in Proceedings of the 26th USENIX Security Sympo- sium." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "Journal of Network and Computer Applications" ] ;
+    dcterms:title "Intrusion detection system: A comprehensive review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liao" ;
+                    foaf:givenname "H.-J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "C.-H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "Y.-C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Tung" ;
+                    foaf:givenname "K.-Y" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 24 ;
+    bibo:pageStart 16 ;
+    bibo:volume "36" ;
+    c4o:hasContent "H.-J. Liao, C.-H. R. Lin, Y.-C. Lin, and K.-Y. Tung, \"Intrusion detection system: A comprehensive review,\" Journal of Network and Computer Applications, vol. 36, no. 1, pp. 16 -24, 2013." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 1998 ;
+    dcterms:publisher [ foaf:name "1998 IEEE Information Technology Conference, Information Environment for the Future (Cat. No.98EX228)" ] ;
+    dcterms:title "Intelligent Agents for Intrusion Detection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Helmer" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wong" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Honavar" ;
+                    foaf:givenname "V" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Miller" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 124 ;
+    bibo:pageStart 121 ;
+    c4o:hasContent "G. G. Helmer, J. S. K. Wong, V. Honavar, and L. Miller, \"Intelligent Agents for Intrusion Detection,\" in 1998 IEEE Information Technology Conference, Information Environment for the Future (Cat. No.98EX228). Syracuse, NY, USA: IEEE, Sep. 1998, pp. 121-124." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Cisco, Tech. Rep" ] ;
+    dcterms:title "Cisco Port Security" ;
+    c4o:hasContent "\"Cisco Port Security,\" Cisco, Tech. Rep., 2018. [Online]. Available: https://www.cisco.com/c/en/us/td/docs/routers/7600/ios/15S/ configuration/guide/7600_15_0s_book/port_sec.html" .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Cisco, Tech. Rep" ] ;
+    dcterms:title "DHCP Snooping" ;
+    c4o:hasContent "\"DHCP Snooping,\" Cisco, Tech. Rep., 2018. [Online]. Avail- able: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ ios/12-2SX/configuration/guide/book/snoodhcp.html" .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2000 ;
+    dcterms:publisher [ foaf:name "Proceedings DARPA Information Survivability Conference and Exposition. DISCEX'00" ] ;
+    dcterms:title "Design and implementation of scalable IDS for the protection of Network infraestructure" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jou" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gong" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sargor" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Chang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 83 ;
+    bibo:pageStart 69 ;
+    bibo:volume "2" ;
+    c4o:hasContent "Y. F. Jou, F. Gong, C. Sargor, X. Wu, S. F. Wu, H. C. Chang, and F. Wang, \"Design and implementation of scalable IDS for the protec- tion of Network infraestructure,\" in Proceedings DARPA Information Survivability Conference and Exposition. DISCEX'00, vol. 2. Hilton Head, SC, USA: IEEE, Jan 2000, pp. 69-83 vol.2." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2008 ;
+    dcterms:publisher [ foaf:name "2008 International Conference on Signal Processing" ] ;
+    dcterms:title "Using Random Forests for Network-based Anomaly detection at Active routers" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Prashanth" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Prashanth" ;
+                    foaf:givenname "V" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Jayashree" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Srinivasan" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 96 ;
+    bibo:pageStart 93 ;
+    c4o:hasContent "G. Prashanth, V. Prashanth, P. Jayashree, and N. Srinivasan, \"Using Ran- dom Forests for Network-based Anomaly detection at Active routers,\" in 2008 International Conference on Signal Processing, Communications and Networking, Chennai, India, Jan 2008, pp. 93-96." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 1991 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 14th National Computer Security Conference" ] ;
+    dcterms:title "DIDS (Distributed Intrusion Detection System)-Motivation, Architecture, and An Early Prototype" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Snapp" ;
+                    foaf:givenname "S" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Grance" ;
+                    foaf:givenname "T" ] ;
+            rdf:_11 [ a foaf:Person ;
+                    foaf:family_name "Teal" ;
+                    foaf:givenname "D" ] ;
+            rdf:_12 [ a foaf:Person ;
+                    foaf:family_name "Mansur" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Brentano" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Dias" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Goan" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Heberlein" ;
+                    foaf:givenname "L" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Ho" ;
+                    foaf:givenname "C.-L" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Levitt" ;
+                    foaf:givenname "K" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Mukherjee" ;
+                    foaf:givenname "B" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Smaha" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 176 ;
+    bibo:pageStart 167 ;
+    c4o:hasContent "S. R. Snapp, J. Brentano, G. V. Dias, T. L. Goan, L. T. Heberlein, C.- L. Ho, K. N. Levitt, B. Mukherjee, S. E. Smaha, T. Grance, D. M. Teal, and D. Mansur, \"DIDS (Distributed Intrusion Detection System)- Motivation, Architecture, and An Early Prototype,\" in Proceedings of the 14th National Computer Security Conference. Washington, DC, USA: NIST, 1991, pp. 167-176." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "2006 International Conference on Software Engineering Advances (ICSEA'06)" ] ;
+    dcterms:title "A Remote IDS Based on Multi-Agent Systems, Web Services and MDA" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Silva" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lopes" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Abdelouahab" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 64 ;
+    bibo:pageStart 64 ;
+    c4o:hasContent "M. Silva, D. Lopes, and Z. Abdelouahab, \"A Remote IDS Based on Multi-Agent Systems, Web Services and MDA,\" in 2006 International Conference on Software Engineering Advances (ICSEA'06), Tahiti, Tahiti, Oct 2006, pp. 64-64." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Actas de las V Jornadas Nacionales de Investigación en Ciberseguridad" ] ;
+    dcterms:title "HIDS by signature for embedded devices in IoT networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dutra" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "De Alencastro" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "De Caldas Filho" ;
+                    foaf:givenname "F" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Martins" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "De Sousa Júnior" ;
+                    foaf:givenname "R" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "De" ;
+                    foaf:givenname "R" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Albuquerque" ;
+                    foaf:givenname "O" ] ] ;
+    bibo:pageEnd 61 ;
+    bibo:pageStart 53 ;
+    c4o:hasContent "B. V. Dutra, J. F. de Alencastro, F. L. de Caldas Filho, L. M. C. e Martins, R. T. de Sousa Júnior, and R. de O. Albuquerque, \"HIDS by signature for embedded devices in IoT networks,\" in Actas de las V Jornadas Nacionales de Investigación en Ciberseguridad (JNIC 2019). Cáceres, Spain: Universidad de Extremadura, Jun 2019, pp. 53-61." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:title "Dyn Analysis Summary Of Friday October 21 Attack" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hilton" ;
+                    foaf:givenname "S" ] ] ;
+    c4o:hasContent "S. Hilton. Dyn Analysis Summary Of Friday Octo- ber 21 Attack. [Online]. Available: https://dyn.com/blog/ dyn-analysis-summary-of-friday-october-21-attack/" .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:title "DDoS in the IoT: Mirai and other botnets" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kolias" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kambourakis" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Stavrou" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Voas" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 84 ;
+    bibo:pageStart 80 ;
+    bibo:volume "50" ;
+    c4o:hasContent "C. Kolias, G. Kambourakis, A. Stavrou, and J. Voas, \"DDoS in the IoT: Mirai and other botnets,\" Computer, vol. 50, no. 7, pp. 80-84, 2017." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:title "State of the Art Intrusion Detection: Technologies, Challenges, and Evaluation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Raju" ;
+                    foaf:givenname "P" ] ] ;
+    c4o:hasContent "P. N. Raju, \"State of the Art Intrusion Detection: Technologies, Challenges, and Evaluation,\" Master's Thesis, Linköping University, Linköping, Sweden, 2005." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2009 ;
+    dcterms:publisher [ foaf:name "Internet Engineering Task Force (IETF), Tech. Rep" ] ;
+    dcterms:title "The Syslog Protocol -RFC 5424" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gerhards" ;
+                    foaf:givenname "R" ] ] ;
+    c4o:hasContent "R. Gerhards, \"The Syslog Protocol -RFC 5424,\" Internet Engineering Task Force (IETF), Tech. Rep., March 2009." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Cluster Computing" ] ;
+    dcterms:title "Security analysis of a proposed internet of things middleware" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ferreira" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "De Sousa" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:givenname "Junior" ] ] ;
+    bibo:pageEnd 660 ;
+    bibo:pageStart 651 ;
+    bibo:volume "20" ;
+    c4o:hasContent "H. G. C. Ferreira and R. T. de Sousa Junior, \"Security analysis of a proposed internet of things middleware,\" Cluster Computing, vol. 20, no. 1, pp. 651-660, Mar 2017." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:title "Intrusion Detection: A Survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lazarevic" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "V" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Srivastava" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 78 ;
+    bibo:pageStart 19 ;
+    c4o:hasContent "A. Lazarevic, V. Kumar, and J. Srivastava, Intrusion Detection: A Survey. Boston, MA, USA: Springer US, 2005, pp. 19-78." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "Information Management & Computer Security" ] ;
+    dcterms:title "A survey of intrusion detection and prevention systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Patel" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Qassim" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wills" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:issue "4" ;
+    bibo:pageEnd 290 ;
+    bibo:pageStart 277 ;
+    bibo:volume "18" ;
+    c4o:hasContent "A. Patel, Q. Qassim, and C. Wills, \"A survey of intrusion detection and prevention systems,\" Information Management & Computer Security, vol. 18, no. 4, pp. 277-290, 2010." .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+

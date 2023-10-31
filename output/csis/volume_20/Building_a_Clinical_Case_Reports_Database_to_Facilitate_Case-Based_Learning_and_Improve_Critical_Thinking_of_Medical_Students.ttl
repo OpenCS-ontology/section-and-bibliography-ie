@@ -1,0 +1,591 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2 ] ;
+    dcterms:title "Building a Clinical Case Reports Database to Facilitate Case-Based Learning and Improve Critical Thinking of Medical Students"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "This paper reports on development of our unified case reports database for medical students. The primary aim was to share professionals' clinical knowledge and skills through one of the most traditional medical experiences sharing form based on modern and anywhere available web services and technologies. Doing so, the clinical case reports that still play an invaluable role in case-based learning and in building of ability of students to think critically, can be used not only to learn and practice theoretical and practical consequences of clinicians' decisions, but also to prepare students for bedside teaching. To develop a generally acceptable system, we had to specify both the structure of education suitable materials and the platform for simple creation and sharing of such electronic outputs. As the result, the database of first clinical case reports was implemented into the information technologies infrastructure at Faculty of medicine in Kosice, Slovakia. It is offered to medical students in the form of web-based portal."^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 3 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F297"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/297.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/297.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "14th Conference on Information Systems Management"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Gonsorčík"^^xsd:string ;
+    foaf:givenName "Jozef"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Jarčuška"^^xsd:string ;
+    foaf:givenName "Peter"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    foaf:familyName "Majerník"^^xsd:string ;
+    foaf:givenName "Jaroslav"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section6 ;
+                    co:nextItem [ co:itemContent :section10 ;
+                            co:nextItem [ co:itemContent :section15 ] ] ] ] ;
+    po:contains :section0,
+        :section10,
+        :section15,
+        :section6 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel10 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel15 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel6 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle10 a doco:SectionTitle ;
+    c4o:hasContent "RESULTS" .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "CONCLUSION" .
+
+:sectionTitle6 a doco:SectionTitle ;
+    c4o:hasContent "MATERIALS AND METHODS" .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF3 ;
+                            co:nextItem [ co:itemContent :BIBREF4 ;
+                                    co:nextItem [ co:itemContent :BIBREF5 ;
+                                            co:nextItem [ co:itemContent :BIBREF6 ;
+                                                    co:nextItem [ co:itemContent :BIBREF7 ;
+                                                            co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF16 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section10 a doco:Section ;
+    po:contains :sectionLabel10 ;
+    po:containsAsHeader :sectionTitle10 .
+
+:section15 a doco:Section ;
+    po:contains :sectionLabel15 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section6 a doco:Section ;
+    po:contains :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16,
+        :sectionLabel6 ;
+    po:containsAsHeader :sectionTitle6 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "International Journal of Nursing Sciences" ] ;
+    dcterms:title "An iterative approach to enhance the clinical learning experience in Macao nursing education" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chan" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tee" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Gu" ;
+                    foaf:givenname "K" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Luo" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Wong" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:doi "['10.1016/j.ijnss.2019.01.005']" ;
+    bibo:pageEnd 220 ;
+    bibo:pageStart 216 ;
+    bibo:volume "6" ;
+    c4o:hasContent "Liu M., Chan Y.M., Tee S., Gu K., Luo Z.M., Wong T.K.S., \"An iterative approach to enhance the clinical learning experience in Macao nursing education\", International Journal of Nursing Sciences, 6, 2019, pp. 216-220, http://dx.doi.org/10.1016/j.ijnss.2019.01.005." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "Complementary Therapies in Medicine" ] ;
+    dcterms:title "Towards improving the reporting quality of clinical case reports in complementary medicine: Assessing and illustrating the need for guideline development" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Van Haselen" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:doi "['10.1016/j.ctim.2015.01.009']" ;
+    bibo:pageEnd 148 ;
+    bibo:pageStart 141 ;
+    bibo:volume "23" ;
+    c4o:hasContent "van Haselen R.A., \"Towards improving the reporting quality of clinical case reports in complementary medicine: Assessing and illustrating the need for guideline development\", Complementary Therapies in Medicine, 23, 2015, pp. 141-148, http://dx.doi.org/10.1016/j.ctim.2015.01.009." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "LNICST" ] ;
+    dcterms:title "Software simulation of CT reconstructions and artifacts" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kubicek" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rehacek" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Penhaker" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Bryjova" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:doi "['10.1007/978-3-319-29236-6_41']" ;
+    bibo:pageEnd 437 ;
+    bibo:pageStart 428 ;
+    bibo:volume "165" ;
+    c4o:hasContent "Kubicek J., Rehacek T., Penhaker M., Bryjova I., \"Software simulation of CT reconstructions and artifacts\", Lecture Notes of the Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering, LNICST, Volume 165, 2016, Pages 428-437, http://dx.doi.org/10.1007/978-3-319-29236-6_41." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Journal of Clinical Epidemiology" ] ;
+    dcterms:title "CARE guidelines for case reports: explanation and elaboration document" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Riley" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:doi "['10.1016/j.jclinepi.2017.04.026']" ;
+    bibo:pageEnd 235 ;
+    bibo:pageStart 218 ;
+    bibo:volume "89" ;
+    c4o:hasContent "Riley D.S. et al., \"CARE guidelines for case reports: explanation and elaboration document\", Journal of Clinical Epidemiology,89, 2017, pp. 218-235, http://dx.doi.org/10.1016/j.jclinepi.2017.04.026." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Health Professions Education" ] ;
+    dcterms:title "Education in Clinical Reasoning: An Experimental Study on Strategies to Foster Novice Medical Students' Engagement in Learning Activities" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Linsena" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Elshout" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Pols" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zwaan" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Mamede" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:doi "['10.1016/j.hpe.2017.03.003']" ;
+    bibo:pageEnd 96 ;
+    bibo:pageStart 86 ;
+    bibo:volume "4" ;
+    c4o:hasContent "Linsena A., Elshout G., Pols D., Zwaan L., Mamede S., \"Education in Clinical Reasoning: An Experimental Study on Strategies to Foster Novice Medical Students' Engagement in Learning Activities\", Health Professions Education, 4, 2018, pp. 86-96, http://dx.doi.org/10.1016/j.hpe.2017.03.003." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Mefanet" ] ;
+    dcterms:title "Repository of Clinical Case Reports" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Majernik" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gonsorcik" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 27 ;
+    bibo:pageStart 26 ;
+    c4o:hasContent "Majernik J., Gonsorcik J. Repository of Clinical Case Reports. Mefanet 2017, Brno, 2017; 26-27." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "Journal of Medical Internet Research" ] ;
+    dcterms:title "Interactive algorithms for teaching and learning acute medicine in the Network of Medical Faculties MEFANET" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Schwarz" ;
+                    foaf:givenname "D" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Štoudek" ;
+                    foaf:givenname "R" ] ;
+            rdf:_11 [ a foaf:Person ;
+                    foaf:family_name "Dušek" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Štourač" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Komenda" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Harazim" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Kosinová" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Gregor" ;
+                    foaf:givenname "J" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Hůlek" ;
+                    foaf:givenname "R" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Smékalová" ;
+                    foaf:givenname "O" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Křikava" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:doi "['10.2196/jmir.2590']" ;
+    bibo:issue "7" ;
+    bibo:volume "15" ;
+    c4o:hasContent "Schwarz D., Štourač P., Komenda M., Harazim H., Kosinová M., Gregor J., Hůlek R., Smékalová O., Křikava I., Štoudek R., Dušek L., \"Interactive algorithms for teaching and learning acute medicine in the Network of Medical Faculties MEFANET\", Journal of Medical Internet Research, 15 (7), 2013, pp. 135, http://dx.doi.org/10.2196/ jmir. 2590." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "PLoS ONE" ] ;
+    dcterms:title "Curriculum Mapping with Academic Analytics in Medical and Healthcare Education" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Komenda" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1371/journal.pone.0143748']" ;
+    bibo:issue "12" ;
+    bibo:volume "10" ;
+    c4o:hasContent "Komenda M. et al., \"Curriculum Mapping with Academic Analytics in Medical and Healthcare Education\", PLoS ONE, 10 (12), 2015, e0143748, http://dx.doi.org/10.1371/journal.pone.0143748." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "International Journal of Medical Informatics" ] ;
+    dcterms:title "iCBLS: An interactive case-based learning system for medical education" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ali" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1016/j.ijmedinf.2017']" ;
+    bibo:pageEnd 69 ;
+    bibo:pageStart 55 ;
+    bibo:volume "109" ;
+    c4o:hasContent "Ali M. et al., \"iCBLS: An interactive case-based learning system for medical education. International Journal of Medical Informatics\", 109, 2018, pp. 55-69, http://dx.doi.org/10.1016/j.ijmedinf.2017. 11.004. 122 COMMUNICATION PAPERS. LEIPZIG, 2019" .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "Global advances in health and medicine" ] ;
+    dcterms:title "The CARE Guidelines: Consensus-based Clinical Case Reporting Guideline Development" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gagnier" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kienle" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Altman" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Moher" ;
+                    foaf:givenname "D" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sox" ;
+                    foaf:givenname "H" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Riley" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 43 ;
+    bibo:pageStart 38 ;
+    bibo:volume "2" ;
+    c4o:hasContent "Gagnier J.J., Kienle G., Altman D.G., Moher D., Sox H. Riley D., \"The CARE Guidelines: Consensus-based Clinical Case Reporting Guideline Development\", Global advances in health and medicine. 2(5), 2013, pp. 38-43." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Journal of Clinical Anesthesia" ] ;
+    dcterms:title "Case reports: Should we do away with them?" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Firat" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Araz" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kayhan" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:doi "['10.1016/j.jclinane.2016.10.006']" ;
+    bibo:pageEnd 76 ;
+    bibo:pageStart 74 ;
+    bibo:volume "37" ;
+    c4o:hasContent "Firat A.C., Araz C., Kayhan Z.. \"Case reports: Should we do away with them?\", Journal of Clinical Anesthesia. 37, 2017, pp. 74-76, http://dx.doi.org/10.1016/j.jclinane.2016.10.006." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Studies in History and Philosophy of Science" ] ;
+    dcterms:title "Narrative constructs in modern clinical case reporting" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hurwitz" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:doi "['10.1016/j.shpsa.2017.03.004']" ;
+    bibo:pageEnd 73 ;
+    bibo:pageStart 65 ;
+    bibo:volume "62" ;
+    c4o:hasContent "Hurwitz B., \"Narrative constructs in modern clinical case reporting\", Studies in History and Philosophy of Science, 62, 2017, pp. 65-73, http://dx.doi.org/10.1016/j.shpsa.2017.03.004." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "International Journal of Surgery" ] ;
+    dcterms:title "The SCARE Statement: Consensus-based surgical case report guidelines" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Agha" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Fowler" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Saetta" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Barai" ;
+                    foaf:givenname "I" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Rajmohan" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Orgill" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:doi "['10.1016/j.ijsu.2016.08.014']" ;
+    bibo:pageEnd 186 ;
+    bibo:pageStart 180 ;
+    bibo:volume "34" ;
+    c4o:hasContent "Agha R.A., Fowler A.J., Saetta A., Barai I., Rajmohan S., Orgill D.P. \"The SCARE Statement: Consensus-based surgical case report guidelines\", International Journal of Surgery, 34, 2016, pp. 180-186, http://dx.doi.org/10.1016/j.ijsu.2016.08.014." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "International Journal of Surgery" ] ;
+    dcterms:title "Impact of the SCARE guideline on the reporting of surgical case reports: A before and after study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Agha" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Farwana" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Borrelli" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Tickunas" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Kusu-Orkar" ;
+                    foaf:givenname "T" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Millip" ;
+                    foaf:givenname "M" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Thavayogan" ;
+                    foaf:givenname "R" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Garner" ;
+                    foaf:givenname "J" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Orgill" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:doi "['10.1016/j.ijsu.2017.07.099']" ;
+    bibo:pageEnd 148 ;
+    bibo:pageStart 144 ;
+    bibo:volume "45" ;
+    c4o:hasContent "Agha R.A., Farwana R., Borrelli M.R., Tickunas T., Kusu-Orkar T., Millip M.C., Thavayogan R., Garner J., Orgill D.P., \"Impact of the SCARE guideline on the reporting of surgical case reports: A before and after study\", International Journal of Surgery, 45, 2017, pp. 144- 148, http://dx.doi.org/10.1016/j.ijsu.2017.07.099." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Complementary Therapies in Medicine" ] ;
+    dcterms:title "Homeopathic clinical case reports: Development of a supplement (HOM-CASE) to the CARE clinical case reporting guideline" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Van Haselen" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:doi "['10.1016/j.ctim.2015.12.019']" ;
+    bibo:pageEnd 85 ;
+    bibo:pageStart 78 ;
+    bibo:volume "25" ;
+    c4o:hasContent "van Haselen R.A., \"Homeopathic clinical case reports: Development of a supplement (HOM-CASE) to the CARE clinical case reporting guideline\", Complementary Therapies in Medicine, 25, 2016, pp. 78- 85, http://dx.doi.org/10.1016/j.ctim.2015.12.019." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Lekar a Technika" ] ;
+    dcterms:title "The manufacturing precision of dental crowns by two different methods is comparable" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Rajťúková" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Poláček" ;
+                    foaf:givenname "I" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tóth" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Živčák" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ižaríková" ;
+                    foaf:givenname "G" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Kovačevič" ;
+                    foaf:givenname "M" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Somoš" ;
+                    foaf:givenname "A" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Hudák" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:issue "4" ;
+    bibo:pageEnd 106 ;
+    bibo:pageStart 102 ;
+    bibo:volume "46" ;
+    c4o:hasContent "Rajťúková V., Poláček I., Tóth T., Živčák J., Ižaríková G., Kovačevič M., Somoš A. Hudák R., \"The manufacturing precision of dental crowns by two different methods is comparable\", Lekar a Technika, 46(4), 2016, pp. 102-106." .
+

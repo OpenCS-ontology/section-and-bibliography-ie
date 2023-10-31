@@ -1,0 +1,686 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Optimization learning"^^xsd:string,
+        "Semi-supervised learning"^^xsd:string,
+        "Sentiment analysis"^^xsd:string,
+        "Sentiment lexicon"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "Design of Sentiment Analysis Framework of Digital Media Short Text Based on Multi-pattern Sentiment Lexicon"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Along the continuous advancement of the network and the rise of digital media, the amount of data produced by the exponential explosion. And how to use these data to provide personalized services for users is one of the current research focuses. To address the issue of insufficient coverage in the current sentiment lexicon and the difficulty of constructing sentiment lexicon in specific fields, this study proposes a multi-modal emotional thesaurus. Semi-supervised learning is used to solve the problem of insufficient coverage of emotional thesaurus, and a semi-supervised classification algorithm is realized by using a large number of unlabeled sample data combined with a small number of labeled sample data. Optimized learning is used to solve the problem of difficult construction of emotional thesaurus in specific fields, the corresponding specific emotional thesaurus is constructed by adaptive adjustment of emotional word score, and finally the improved emotional thesaurus is used to build a digital media short text sentiment analysis framework. For testing, the NLPCC dataset was used in this study, Experiments show that the framework constructed in this study requires 87 iterations, a Recall value of 0.912, a F1 value of 0.753, and an average accuracy of 83.39%, all of which are better than the sentiment analysis framework without the use of multi-pattern sentiment lexicon. In the simulation experiment, the recognition accuracy reached 85.88%, which was 16.85%, 11.57% and 6.72% higher than the test scenarios using a single emotion thesaurus selected in this study. The above results show that the digital media short-text sentiment analysis framework built in this research based on multi-pattern sentiment lexicon can carry out short-text sentiment analysis more accurately and efficiently, so as to accurately analyze users’ needs and provide customized services precisely."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 298 ;
+    prism:pageCount 11 ;
+    prism:startingPage 287 ;
+    datacite:doi "10.12694/scpe.v24i3.2371"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2371"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2371> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Lin"^^xsd:string ;
+    foaf:givenName "Shuqin"^^xsd:string ;
+    foaf:name "Shuqin Lin"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section1 ;
+                    co:nextItem [ co:itemContent :section4 ;
+                            co:nextItem [ co:itemContent :section40 ;
+                                    co:nextItem [ co:itemContent :section45 ] ] ] ] ] ;
+    po:contains :section0,
+        :section1,
+        :section4,
+        :section40,
+        :section45 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "School of Arts & Communication, Xiamen Institute of Technology, Xiamen, 361021, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel1 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel20 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel4 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel40 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel45 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel5 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle1 a doco:SectionTitle ;
+    c4o:hasContent "Related works." .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "The Framework of Digital Media Short Text SA Based on the Optimized Learning SL." .
+
+:sectionTitle4 a doco:SectionTitle ;
+    c4o:hasContent "Digital Media Short Text SA Framework Based on Multi-pattern SL." .
+
+:sectionTitle40 a doco:SectionTitle ;
+    c4o:hasContent "Evaluation of Short Text SA Framework of Digital Media Based on Multi-Pattern SL." .
+
+:sectionTitle45 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle5 a doco:SectionTitle ;
+    c4o:hasContent "A Digital Media Short" .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF11,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF3,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section1 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF16,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF2,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel1 ;
+    po:containsAsHeader :sectionTitle1 .
+
+:section20 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF17,
+        :sectionLabel20 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section4 a doco:Section ;
+    co:firstItem [ co:itemContent :section5 ;
+            co:nextItem [ co:itemContent :section20 ] ] ;
+    po:contains :section20,
+        :section5,
+        :sectionLabel4 ;
+    po:containsAsHeader :sectionTitle4 .
+
+:section40 a doco:Section ;
+    po:contains :sectionLabel40 ;
+    po:containsAsHeader :sectionTitle40 .
+
+:section45 a doco:Section ;
+    po:contains :sectionLabel45 ;
+    po:containsAsHeader :sectionTitle45 .
+
+:section5 a doco:Section ;
+    po:contains :referenceToBIBREF3,
+        :sectionLabel5 ;
+    po:containsAsHeader :sectionTitle5 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal Of The Association Of Information Systems" ] ;
+    dcterms:title "Finding a Needle in the Haystack, Recommending Online Communities on Social Media Platforms Using Network and Design Science" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Velichety" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ram" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 1310 ;
+    bibo:pageStart 1285 ;
+    bibo:volume "22" ;
+    c4o:hasContent "S. Velichety, S. Ram, Finding a Needle in the Haystack, Recommending Online Communities on Social Media Platforms Using Network and Design Science, Journal Of The Association Of Information Systems, 22 (2021) pp. 1285-1310" .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:title "Study of the performance of embedding methods for arabic shorttext sentiment analysis using deep learning approaches" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alwehaibi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bikdash" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Albogmi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Roy" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:volume "34" ;
+    c4o:hasContent "A. Alwehaibi, M. Bikdash, M. Albogmi, and K. A. Roy, Study of the performance of embedding methods for arabic short- text sentiment analysis using deep learning approaches, Journal of King Saud University -Computer and Information Sciences, 34, p. 201." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Computers, Materials, & Continua" ] ;
+    dcterms:title "The construction of malayenglish sentiment lexicon" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mahadzir" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Omar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Nawi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Salameh" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Hussin" ;
+                    foaf:givenname "K" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Melex" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 1805 ;
+    bibo:pageStart 1789 ;
+    bibo:volume "4" ;
+    c4o:hasContent "N. H. Mahadzir, M. F. Omar, M. Nawi, A. A. Salameh, K. C. Hussin, and S. A. MELex, The construction of malay- english sentiment lexicon, Computers, Materials, & Continua, 4 (2022), pp. 1789-1805." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Novel approach for extraction of distinguishing emotions for semantic granularity level sentiment analysis in multilingual context, Recent advances in computer science and communications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Naik" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Vasumathi" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 87 ;
+    bibo:pageStart 77 ;
+    bibo:volume "15" ;
+    c4o:hasContent "M. Naik, D. Vasumathi, and A. P. A. Kumar, Novel approach for extraction of distinguishing emotions for semantic granularity level sentiment analysis in multilingual context, Recent advances in computer science and communications, 15 (2022), pp. 77-87." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:title "Rubio-Manzano, novel approach to the creation of a labelling lexicon for improving emotion analysis in text" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Navarrete" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Martinez-Araneda" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Vidal-Castro" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 201 ;
+    bibo:pageStart 39 ;
+    c4o:hasContent "A. S. Navarrete, C. Martinez-Araneda, C. Vidal-Castro, and C. A. Rubio-Manzano, novel approach to the creation of a labelling lexicon for improving emotion analysis in text, The Electronic Library, 39, p. 201." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Donghua University" ] ;
+    dcterms:title "Sentiment lexicon construction based on improved left-right entropy algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shoujian" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ting" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 71 ;
+    bibo:pageStart 65 ;
+    bibo:volume "39" ;
+    c4o:hasContent "Y. U. Shoujian, B. Wang, and L. U. Ting, Sentiment lexicon construction based on improved left-right entropy algorithm, Journal of Donghua University, 39 (2022), pp. 65-71." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "CAAI Transactions on Intelligence Technology" ] ;
+    dcterms:title "Bayesian estimation-based sentiment word embedding model for sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xue" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hu" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Gong" ;
+                    foaf:givenname "T" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "H" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Xiao" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 155 ;
+    bibo:pageStart 144 ;
+    bibo:volume "7" ;
+    c4o:hasContent "J. Tang, Y. Xue, Z. Wang, S. Hu, T. Gong, Y. Chen, H. Zhao, and L. Xiao, Bayesian estimation-based sentiment word embedding model for sentiment analysis, CAAI Transactions on Intelligence Technology, 7 (2022), pp. 144-155." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Advanced Engineering Informatics" ] ;
+    dcterms:title "Sentiment analysis from customer-generated online videos on product review using topic modeling and multi-attention blstm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chu" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 10159 ;
+    bibo:pageStart 1588 ;
+    bibo:volume "52" ;
+    c4o:hasContent "Z. Wang, P. Gao, and X. Chu, Sentiment analysis from customer-generated online videos on product review using topic modeling and multi-attention blstm, Advanced Engineering Informatics, 52 (2022), pp. 1588-10159." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Natural Language Engineering" ] ;
+    dcterms:title "Improving speech emotion recognition based on acoustic words emotion dictionary" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wei" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cao" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Shen" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Pa" ;
+                    foaf:givenname "W" ] ] ;
+    bibo:pageEnd 761 ;
+    bibo:pageStart 747 ;
+    bibo:volume "27" ;
+    c4o:hasContent "W. Wei, X. Cao, H. Li, L. Shen, and W. PA., Improving speech emotion recognition based on acoustic words emotion dictionary, Natural Language Engineering, 27 (2020), pp. 747-761." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Computational and Cognitive Engineering" ] ;
+    dcterms:title "Research on vehicle automatic driving target perception technology based on improved msrpn algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 151 ;
+    bibo:pageStart 147 ;
+    bibo:volume "1" ;
+    c4o:hasContent "M. Yang, Research on vehicle automatic driving target perception technology based on improved msrpn algorithm, Journal of Computational and Cognitive Engineering, 1 (2022), pp. 147-151." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "The Electronic Library: The International Journal for Minicomputer, Microcomputer, and Software Applications in Libraries" ] ;
+    dcterms:title "Sentiment lexicon construction for chinese book reviews based on ultrashort reviews" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zha" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hu" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shi" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 236 ;
+    bibo:pageStart 221 ;
+    bibo:volume "40" ;
+    c4o:hasContent "M. Zha, C. Hu, and Y. Shi, Sentiment lexicon construction for chinese book reviews based on ultrashort reviews, The Electronic Library: The International Journal for Minicomputer, Microcomputer, and Software Applications in Libraries, 40 (2022), pp. 221-236." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Neurocomputing" ] ;
+    dcterms:title "copying Mechanism, and D. Emotion, Dictionary for generating emotional responses" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ji" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ren" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 312 ;
+    bibo:pageStart 303 ;
+    c4o:hasContent "Q. Zhou, D. Ji, Y. Ren, T. H. D. copying Mechanism, and D. Emotion, Dictionary for generating emotional responses, Neurocomputing, 454 (2021), pp. 303-312." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Natural Language Engineering" ] ;
+    dcterms:title "Improving sentiment analysis with multi-task learning of negation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Barnes" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Velldal" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Vrelid" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 269 ;
+    bibo:pageStart 249 ;
+    bibo:volume "27" ;
+    c4o:hasContent "J. Barnes, E. Velldal, and L. Vrelid, Improving sentiment analysis with multi-task learning of negation, Natural Language Engineering, 27 (2020), pp. 249-269." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Consumer Behaviour" ] ;
+    dcterms:title "media consumption: Using metrics, patterns and dashboards to enhance data-driven decision-making" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chan" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:givenname "U" ] ] ;
+    bibo:pageEnd 91 ;
+    bibo:pageStart 80 ;
+    bibo:volume "21" ;
+    c4o:hasContent "K. Chan and U. M. D. media consumption: Using metrics, patterns and dashboards to enhance data-driven deci- sion-making, Journal of Consumer Behaviour, 21 (2022), pp. 80-91." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Neural computing & applications" ] ;
+    dcterms:title "Verbal aggression detection on twitter comments: convolutional neural network for short-text sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 10818 ;
+    bibo:pageStart 10809 ;
+    bibo:volume "32" ;
+    c4o:hasContent "K. C. Chen, Verbal aggression detection on twitter comments: convolutional neural network for short-text sentiment analysis, Neural computing & applications, 32 (2020), pp. 10809-10818." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Short text sentiment analysis based on multi-channel cnn with multi-head attention mechanism" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Feng" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cheng" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 19863 ;
+    bibo:pageStart 19854 ;
+    bibo:volume "9" ;
+    c4o:hasContent "Y. Feng and Y. Cheng, Short text sentiment analysis based on multi-channel cnn with multi-head attention mechanism, IEEE Access, 9 (2021), pp. 19854-19863." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "ACM transactions on Asian and low-resource language information processing" ] ;
+    dcterms:title "Scalable emotion lexicon for sentiment classification of hindi text" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Garg" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lobiyal" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hindi" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Emotionnet" ] ] ;
+    bibo:pageEnd 35 ;
+    bibo:pageStart 2 ;
+    bibo:volume "19" ;
+    c4o:hasContent "K. Garg and A. Lobiyal D. K. Hindi EmotionNet:, Scalable emotion lexicon for sentiment classification of hindi text, ACM transactions on Asian and low-resource language information processing, 19 (2020), pp. 2-35." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "International Journal of Intelligent Computing and Cybernetics" ] ;
+    dcterms:title "High accuracy offering attention mechanisms based deep learning approach using cnn/bilstm for sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kota" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Munisamy" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 74 ;
+    bibo:pageStart 61 ;
+    bibo:volume "15" ;
+    c4o:hasContent "V. R. Kota and S. D. Munisamy, High accuracy offering attention mechanisms based deep learning approach using cnn/bi- lstm for sentiment analysis, International Journal of Intelligent Computing and Cybernetics, 15 (2022), pp. 61-74." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of Embedded Systems" ] ;
+    dcterms:title "Tweets sentiment analysis using multi-lexicon features and smo" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lijo" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Seetha" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 485 ;
+    bibo:pageStart 476 ;
+    bibo:volume "14" ;
+    c4o:hasContent "V. P. Lijo and H. Seetha, Tweets sentiment analysis using multi-lexicon features and smo, International Journal of Embedded Systems, 14 (2021), pp. 476-485." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Rev. D'Intelligence Artif" ] ;
+    dcterms:title "Research on text sentiment analysis based on neural network and ensemble learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Luo" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gu" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yao" ;
+                    foaf:givenname "X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Fan" ;
+                    foaf:givenname "W" ] ] ;
+    bibo:pageEnd 70 ;
+    bibo:pageStart 63 ;
+    bibo:volume "35" ;
+    c4o:hasContent "S. Luo, Y. Gu, X. Yao, and W. Fan, Research on text sentiment analysis based on neural network and ensemble learning, Rev. D'Intelligence Artif, 35 (2021), pp. 63-70." .
+

@@ -1,0 +1,626 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "ABC algorithm"^^xsd:string,
+        "Artificial fish school algorithm"^^xsd:string,
+        "Cold chain low-carbon logistics"^^xsd:string,
+        "Genetic algorithm"^^xsd:string,
+        "Path optimization"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "Application of Improving ABC in Cold Chain Low Carbon Logistics Path Planning"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "The market has set higher efficiency and environmental requirements for cold chain logistics, and path planning plays an important role. This study proposes a low-carbon cold chain logistics path planning model based on an improved artificial bee colony algorithm (this paragraph refers to ”fusion algorithm”). The study first establishes the fusion algorithm. Then, in response to the shortcomings of this algorithm, the artificial fish swarm algorithm and genetic algorithm are used to improve it. The final results express that the shortest distance for solving Eil51 using this algorithm is 421.38, the longest distance is 448.58, and the average distance is 439.34; The shortest distance for solving Ulysses22 is 72.46, the longest distance is 73.63, and the average distance is 72.84. The average convergence times for Eil51 and Ulysses22 are 133.57 and 7.86, and the optimal performance ratios for relative error are 0.0076 and 0.0051. The robust performance ratios are 0.0362 and 0.0117. The optimal total cost solution and the average value for solving the relevant distribution problem are 47,894.6 yuan and 48,562.7 yuan, respectively. In summary, the model proposed in the study has good application effects in cold chain low-carbon logistics path planning, and has a certain promoting effect on the development of cold chain logistics."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 240 ;
+    prism:pageCount 11 ;
+    prism:startingPage 229 ;
+    datacite:doi "10.12694/scpe.v24i3.2357"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2357"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2357> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Bai"^^xsd:string ;
+    foaf:givenName "Xiazu"^^xsd:string ;
+    foaf:name "Xiazu Bai"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section1 ;
+                    co:nextItem [ co:itemContent :section4 ;
+                            co:nextItem [ co:itemContent :section9 ;
+                                    co:nextItem [ co:itemContent :section29 ;
+                                            co:nextItem [ co:itemContent :section39 ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section1,
+        :section29,
+        :section39,
+        :section4,
+        :section9 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "College of International Business, Lanzhou Petrochemical University of Vocational Technology, Lanzhou 730070, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel1 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel18 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel29 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel30 a doco:SectionLabel ;
+    c4o:hasContent "4.1." .
+
+:sectionLabel34 a doco:SectionLabel ;
+    c4o:hasContent "4.2." .
+
+:sectionLabel39 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel4 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel5 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle1 a doco:SectionTitle ;
+    c4o:hasContent "Related works." .
+
+:sectionTitle18 a doco:SectionTitle ;
+    c4o:hasContent "Construction of CCLCLPP Model Based on AFS-GA-ABC." .
+
+:sectionTitle29 a doco:SectionTitle ;
+    c4o:hasContent "Effect Analysis of AFS-GA-ABC Cold Chain Low Carbon Logistics Path Planning Model." .
+
+:sectionTitle30 a doco:SectionTitle ;
+    c4o:hasContent "Simulation Experiment Analysis of AFS-GA-ABC." .
+
+:sectionTitle34 a doco:SectionTitle ;
+    c4o:hasContent "Analysis of the Application Effect of AFS-ABC Cold Chain Low Carbon Logistics Path" .
+
+:sectionTitle39 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle4 a doco:SectionTitle ;
+    c4o:hasContent "Construction of CCLCLPP model based on improved ABC." .
+
+:sectionTitle5 a doco:SectionTitle ;
+    c4o:hasContent "Construction of CCLCLPP model based on ABC." .
+
+:sectionTitle9 a doco:SectionTitle ;
+    c4o:hasContent "Xiazu Bai" .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF7 ;
+                                                            co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF16 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF11,
+        :referenceToBIBREF2,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section1 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF10,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel1 ;
+    po:containsAsHeader :sectionTitle1 .
+
+:section18 a doco:Section ;
+    po:contains :referenceToBIBREF5,
+        :sectionLabel18 ;
+    po:containsAsHeader :sectionTitle18 .
+
+:section29 a doco:Section ;
+    co:firstItem [ co:itemContent :section30 ;
+            co:nextItem [ co:itemContent :section34 ] ] ;
+    po:contains :section30,
+        :section34,
+        :sectionLabel29 ;
+    po:containsAsHeader :sectionTitle29 .
+
+:section30 a doco:Section ;
+    po:contains :sectionLabel30 ;
+    po:containsAsHeader :sectionTitle30 .
+
+:section34 a doco:Section ;
+    po:contains :sectionLabel34 ;
+    po:containsAsHeader :sectionTitle34 .
+
+:section39 a doco:Section ;
+    po:contains :sectionLabel39 ;
+    po:containsAsHeader :sectionTitle39 .
+
+:section4 a doco:Section ;
+    co:firstItem [ co:itemContent :section5 ] ;
+    po:contains :section5,
+        :sectionLabel4 ;
+    po:containsAsHeader :sectionTitle4 .
+
+:section5 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :sectionLabel5 ;
+    po:containsAsHeader :sectionTitle5 .
+
+:section9 a doco:Section ;
+    co:firstItem [ co:itemContent :section18 ] ;
+    po:contains :section18 ;
+    po:containsAsHeader :sectionTitle9 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "International Journal of Logistics Economics and Globalisation" ] ;
+    dcterms:title "Identification of issues in the cold chain of Indian frozen food" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Arora" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Raju" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 22 ;
+    bibo:pageStart 1 ;
+    bibo:volume "10" ;
+    c4o:hasContent "M. Arora, R. Kumar, and T. B. Raju, Identification of issues in the cold chain of Indian frozen food, International Journal of Logistics Economics and Globalisation, 10 (2023), pp. 1-22." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "International Journal of Logistics Economics and Globalisation" ] ;
+    dcterms:title "Identification of issues in the cold chain of Indian frozen food" ;
+    bibo:pageEnd 22 ;
+    bibo:pageStart 1 ;
+    bibo:volume "10" ;
+    c4o:hasContent "Identification of issues in the cold chain of Indian frozen food, International Journal of Logistics Economics and Globalisation, 10 (2023), pp. 1-22." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Environmental Science and Pollution Research" ] ;
+    dcterms:title "survey of multi-criteria decision-making techniques for green logistics and low-carbon transportation systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tian" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lu" ;
+                    foaf:givenname "W" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Dulebenets" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Aleksandrov" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Fathollahi-Fard" ;
+                    foaf:givenname "A" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Ivanov" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 57301 ;
+    bibo:pageStart 57279 ;
+    bibo:volume "30" ;
+    c4o:hasContent "G. Tian, W. Lu, X. Zhang, M. A. Dulebenets, A. Aleksandrov, A. M. Fathollahi-Fard, and M. A. Ivanov, survey of multi-criteria decision-making techniques for green logistics and low-carbon transportation systems, Environmental Science and Pollution Research, 30 (2023), pp. 57279-57301." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Evolutionary Intelligence" ] ;
+    dcterms:title "A. and, and bibliographic analysis of particle swarm optimization applications in electrical power system: Concepts and variants" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tiwari" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 47 ;
+    bibo:pageStart 23 ;
+    bibo:volume "16" ;
+    c4o:hasContent "S. Tiwari and K. A. A. and, and bibliographic analysis of particle swarm optimization applications in electrical power system: Concepts and variants, Evolutionary Intelligence, 16 (2023), pp. 23-47." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Neural Computing and Applications" ] ;
+    dcterms:title "Parameter optimization of chaotic system using pareto-based triple objective artificial bee colony algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Toktas" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Erkan" ;
+                    foaf:givenname "U" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ustun" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 13223 ;
+    bibo:pageStart 13207 ;
+    bibo:volume "35" ;
+    c4o:hasContent "A. Toktas, U. Erkan, D. Ustun, and X. Wang, Parameter optimization of chaotic system using pareto-based triple objective artificial bee colony algorithm, Neural Computing and Applications, 35 (2023), pp. 13207-13223." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Neural Computing and Applications" ] ;
+    dcterms:title "An improved many-objective artificial bee colony algorithm for cascade reservoir operation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wei" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zeng" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ye" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 13629 ;
+    bibo:pageStart 13613 ;
+    bibo:volume "35" ;
+    c4o:hasContent "H. Wang, S. Wang, Z. Wei, T. Zeng, and T. Ye, An improved many-objective artificial bee colony algorithm for cascade reservoir operation, Neural Computing and Applications, 35 (2023), pp. 13613-13629." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Uncertain multi-objective hazardous materials transport route planning considering resilience and low-carbon" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Jiao" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 26931 ;
+    bibo:pageStart 26921 ;
+    bibo:volume "11" ;
+    c4o:hasContent "Z. Wang, Y. Wang, and Y. Jiao, Uncertain multi-objective hazardous materials transport route planning considering resilience and low-carbon, IEEE Access, 11 (2023), pp. 26921-26931." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Supply Chain Management: An International Journal" ] ;
+    dcterms:title "The role of technology in supply chain decarbonisation: Towards an integrated conceptual framework" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jia" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 824 ;
+    bibo:pageStart 803 ;
+    bibo:volume "28" ;
+    c4o:hasContent "L. Xu, F. Jia, X. Lin, and L. Chen, The role of technology in supply chain decarbonisation: Towards an integrated conceptual framework, Supply Chain Management: An International Journal, 28 (2023), pp. 803-824." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Optical Engineering" ] ;
+    dcterms:title "Solution of fiber raman amplifier model using binary search equation-based adaptive artificial bee colony algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yolcu" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Aydın" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 26105 ;
+    bibo:pageStart 26105 ;
+    bibo:volume "62" ;
+    c4o:hasContent "V. Yolcu, M. Y\"ucel, and D. Aydın, Solution of fiber raman amplifier model using binary search equation-based adaptive artificial bee colony algorithm, Optical Engineering, 62 (2023), pp. 26105-26105." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:title "Robust, imperceptible and optimized watermarking of dicom image using schur decomposition, lwt-dct-svd and its authentication using surf" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Awasthi" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 16589 ;
+    bibo:pageStart 16555 ;
+    bibo:volume "82" ;
+    c4o:hasContent "D. Awasthi and S. V. K. Robust, imperceptible and optimized watermarking of dicom image using schur decomposition, lwt-dct-svd and its authentication using surf, Multimedia Tools and Applications, 82 (2023), pp. 16555-16589." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Environmental Science and Pollution Research" ] ;
+    dcterms:title "Selection of outsourcing logistics providers in the context of low-carbon strategies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cheng" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ren" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 18717 ;
+    bibo:pageStart 18701 ;
+    bibo:volume "30" ;
+    c4o:hasContent "C. Cheng, X. Wang, and X. Ren, Selection of outsourcing logistics providers in the context of low-carbon strategies, Environmental Science and Pollution Research, 30 (2023), pp. 18701-18717." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "International Journal of Production Research" ] ;
+    dcterms:title "Optimizing a stochastic disassembly line balancing problem with task failure via a hybrid variable neighborhood descent-artificial bee colony algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Guo" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ren" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 2321 ;
+    bibo:pageStart 2307 ;
+    bibo:volume "61" ;
+    c4o:hasContent "H. Guo, L. Zhang, Y. Ren, Y. Li, Z. Zhou, and J. Wu, Optimizing a stochastic disassembly line balancing problem with task failure via a hybrid variable neighborhood descent-artificial bee colony algorithm, International Journal of Production Research, 61 (2023), pp. 2307-2321." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Artificial Intelligence Review" ] ;
+    dcterms:title "A review of artificial fish swarm algorithms: Recent advances and applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pourpanah" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lim" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 1903 ;
+    bibo:pageStart 1867 ;
+    bibo:volume "56" ;
+    c4o:hasContent "F. Pourpanah, R. Wang, C. P. Lim, et al., A review of artificial fish swarm algorithms: Recent advances and applications, Artificial Intelligence Review, 56 (2023), pp. 1867-1903." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Information Sciences" ] ;
+    dcterms:title "Artificial bee colony algorithm-based design of discrete-time stable unknown input estimator" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Satoh" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nishizawa" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Nagase" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Saito" ;
+                    foaf:givenname "N" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Saga" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 649 ;
+    bibo:pageStart 621 ;
+    bibo:volume "634" ;
+    c4o:hasContent "T. Satoh, S. Nishizawa, J. Nagase, N. Saito, and N. Saga, Artificial bee colony algorithm-based design of discrete-time stable unknown input estimator, Information Sciences, 634 (2023), pp. 621-649." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:title "Qos-based routing protocol and load balancing in wireless sensor networks using the markov model and the artificial bee colony algorithm, Peer-to-Peer Networking and Applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sefati" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Abdi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ghaffari" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 1512 ;
+    bibo:pageStart 1499 ;
+    bibo:volume "16" ;
+    c4o:hasContent "S. S. Sefati, M. Abdi, and A. Ghaffari, Qos-based routing protocol and load balancing in wireless sensor networks using the markov model and the artificial bee colony algorithm, Peer-to-Peer Networking and Applications, 16 (2023), pp. 1499- 1512." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "International Journal of Low-Carbon Technologies" ] ;
+    dcterms:title "Research on cold chain logistics optimization model considering low-carbon emissions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tao" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yumeng" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Meng" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 366 ;
+    bibo:pageStart 354 ;
+    bibo:volume "18" ;
+    c4o:hasContent "N. Tao, H. Yumeng, and F. Meng, Research on cold chain logistics optimization model considering low-carbon emissions, International Journal of Low-Carbon Technologies, 18 (2023), pp. 354-366." .
+

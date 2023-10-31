@@ -1,0 +1,732 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2,
+                :author_3 ] ;
+    dcterms:title "Improved Virus Optimization algorithm for two-objective tasks Scheduling in Cloud Environment"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue """Cloud computing is increasingly recognized as a new way to use on-demand, computing, storage and network services in a transparent and efficient way. The development of applications in cloud environments is faced with the need to efficiently schedule a large number of tasks and resources.\r
+However, in the most of the time, the resources in cloud are not efficiently utilized due to inadequate scheduling task algorithm in virtual machines. Therefore, task scheduling is one of the most challenging issues in cloud computing. In this paper, we propose two-objective virus optimization algorithm of the\r
+makespan and the cost for mapping tasks to virtual machines in order to meet the needs of cloud service quality and proper assignment of resources. Thus based on genetic algorithm and some parameters of Virus optimization algorithm are redefined to strengthen sorting ability between virus infection strategies.\r
+Using CloudSim simulator, our combined methods aims to improve the performance of scheduling algorithms and outperforms the some existing approaches for task scheduling in Cloud computing."""^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 8 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F63"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/63.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/63.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "14th Conference on Information Systems Management"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Benhammadi"^^xsd:string ;
+    foaf:givenName "Farid"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Bey"^^xsd:string ;
+    foaf:givenName "Kadda Beghdad"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    foaf:familyName "Nacer"^^xsd:string ;
+    foaf:givenName "Hassina"^^xsd:string .
+
+:author_3 a foaf:Person ;
+    foaf:familyName "Bouznad"^^xsd:string ;
+    foaf:givenName "Sofiane"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section4 ;
+                    co:nextItem [ co:itemContent :section5 ;
+                            co:nextItem [ co:itemContent :section22 ;
+                                    co:nextItem [ co:itemContent :section23 ;
+                                            co:nextItem [ co:itemContent :section25 ;
+                                                    co:nextItem [ co:itemContent :section35 ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section22,
+        :section23,
+        :section25,
+        :section35,
+        :section4,
+        :section5 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel22 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel35 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel4 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel5 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle22 a doco:SectionTitle ;
+    c4o:hasContent "PROPOSED META-HEURISTIC APPROACH: MOVOA" .
+
+:sectionTitle23 a doco:SectionTitle ;
+    c4o:hasContent "A. Virus Optimization Algorithm" .
+
+:sectionTitle25 a doco:SectionTitle ;
+    c4o:hasContent "B. Task scheduling based on improved VOA" .
+
+:sectionTitle35 a doco:SectionTitle ;
+    c4o:hasContent "CONCLUSION" .
+
+:sectionTitle4 a doco:SectionTitle ;
+    c4o:hasContent "RELATED WORKS" .
+
+:sectionTitle5 a doco:SectionTitle ;
+    c4o:hasContent "PROBLEM DEFINITION" .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Future Generation Computer Systems" ] ;
+    dcterms:title "Symbiotic Organism Search Optimization Based Task Scheduling in Cloud Computing Environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abdullahi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ngadi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Abdulhamid" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 650 ;
+    bibo:pageStart 640 ;
+    bibo:volume "56" ;
+    c4o:hasContent "M. Abdullahi, M. A. Ngadi, S. M. Abdulhamid, \"Symbiotic Organism Search Optimization Based Task Scheduling in Cloud Computing Environment\". Future Generation Computer Systems, Vol. 56, March 2016, pp. 640-650." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "Journal of Systems and Software" ] ;
+    dcterms:title "ROAR: AQoS-Oriented Modeling Framework for Automated Cloud Resource Allocation and Optimization" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "White" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Eade" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Schmidt" ;
+                    foaf:givenname "D" ] ] ;
+    c4o:hasContent "Y. Sun, J. White, S. Eade, D. C. Schmidt, \"ROAR: AQoS-Oriented Modeling Framework for Automated Cloud Resource Allocation and Optimization\", Journal of Systems and Software, 2015." .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section22 a doco:Section ;
+    po:contains :referenceToBIBREF20,
+        :referenceToBIBREF9,
+        :sectionLabel22 ;
+    po:containsAsHeader :sectionTitle22 .
+
+:section23 a doco:Section ;
+    po:contains :referenceToBIBREF9 ;
+    po:containsAsHeader :sectionTitle23 .
+
+:section25 a doco:Section ;
+    po:contains :referenceToBIBREF23 ;
+    po:containsAsHeader :sectionTitle25 .
+
+:section35 a doco:Section ;
+    po:contains :sectionLabel35 ;
+    po:containsAsHeader :sectionTitle35 .
+
+:section4 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :sectionLabel4 ;
+    po:containsAsHeader :sectionTitle4 .
+
+:section5 a doco:Section ;
+    po:contains :sectionLabel5 ;
+    po:containsAsHeader :sectionTitle5 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2009 ;
+    dcterms:publisher [ foaf:name "Eighth International Symposium on Parallel and Distributed Computing" ] ;
+    dcterms:title "Dynamic job scheduling on heterogeneous clusters" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Barbosa" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Moreira" ;
+                    foaf:givenname "B" ] ] ;
+    c4o:hasContent "J. Barbosa and B. Moreira, \"Dynamic job scheduling on heterogeneous clusters\", Eighth International Symposium on Parallel and Distributed Computing, 2009." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 1977 ;
+    dcterms:publisher [ foaf:name "Journal of the ACM" ] ;
+    dcterms:title "Heuristic algorithms for scheduling independent tasks on non-identical processors" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ibarra" ;
+                    foaf:givenname "O" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 289 ;
+    bibo:pageStart 280 ;
+    bibo:volume "24" ;
+    c4o:hasContent "O.H. Ibarra, C.E. Kim, Heuristic algorithms for scheduling independent tasks on non-identical processors, Journal of the ACM 24 (2) (1977), pp 280-289." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Applications in Heterogeneous Computing Systems" ] ;
+    dcterms:title "A Hybrid Genetic Algorithm for Optimization of Scheduling Workflow" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ahmad" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Liew" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Munir" ;
+                    foaf:givenname "E" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ang" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 90 ;
+    bibo:pageStart 80 ;
+    bibo:volume "87" ;
+    c4o:hasContent "S. G. Ahmad, C. S. Liew, E. U. Munir, T. F. Ang, S. U. Khan, \"A Hybrid Genetic Algorithm for Optimization of Scheduling Workflow\", Applications in Heterogeneous Computing Systems, Vol. 87, January 2016, pp. 80-90." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2012 ;
+    dcterms:publisher [ foaf:name "Proceedings of 8th Int. Conf. on Wireless Communications, Networking and Mobile computing" ] ;
+    dcterms:title "Multi-objective Task Assignment in cloud computing by Particle Swarm Optimization" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Guo" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shao" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 4 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "L. Guo, G. Shao, and S. Zhao, \"Multi-objective Task Assignment in cloud computing by Particle Swarm Optimization\". In Proceedings of 8th Int. Conf. on Wireless Communications, Networking and Mobile computing, 2012, pp 1-4." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "24th IEEE Int'l Conference on Advanced Information Networking and Applications (AINA)" ] ;
+    dcterms:title "A particle swarm optimization based heuristic for scheduling workflow applications in cloud computing environments" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pandey" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Guru" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Buyya" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 407 ;
+    bibo:pageStart 400 ;
+    c4o:hasContent "S. Pandey, L. Wu, S. Guru and R. Buyya, \"A particle swarm optimization based heuristic for scheduling workflow applications in cloud computing environments\". 24th IEEE Int'l Conference on Advanced Information Networking and Applications (AINA), Perth, Australia, 2010, pp. 400-407." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "EURASIP Journal on Wireless Communications and Networking" ] ;
+    dcterms:title "A Novel Energy-Efficient Resource Allocation Algorithm Based on Immune Clonal Optimization for Green Cloud Computing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shu" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "W" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:volume "64" ;
+    c4o:hasContent "W. Shu, W. Wang, Y. Wang, \"A Novel Energy-Efficient Resource Allocation Algorithm Based on Immune Clonal Optimization for Green Cloud Computing\". EURASIP Journal on Wireless Communications and Networking, Vol. 64, December 2014." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:publisher [ foaf:name "International journal of advanced engineering sciences and technologies" ] ;
+    dcterms:title "Task Scheduling optimization for the Cloud Computing Systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "5" ;
+    bibo:pageEnd 115 ;
+    bibo:pageStart 111 ;
+    bibo:volume "201" ;
+    c4o:hasContent "S. Tayal, \"Task Scheduling optimization for the Cloud Computing Systems\", International journal of advanced engineering sciences and technologies, Vol No. 5, Issue No. 2, 201, pp. 111-115." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "12th International Conference on Dependable, Autonomic and Secure Computing" ] ;
+    dcterms:title "Load Balancing Task Scheduling based on Genetic Algorithm in Cloud Computing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Dai" ;
+                    foaf:givenname "X" ] ] ;
+    c4o:hasContent "T. Wang, Z. Liu , Y. Chen, Y. Xu, X. Dai, \"Load Balancing Task Scheduling based on Genetic Algorithm in Cloud Computing\", 12th International Conference on Dependable, Autonomic and Secure Computing, IEEE 2014." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "International Journal of Grid and Distributed Computing" ] ;
+    dcterms:title "Service Cost of Resource Scheduling in Cloud Computing based on an Improved Algorithm Combining Support Vector Machine with Genetic Algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chu" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:issue "6" ;
+    bibo:pageEnd 62 ;
+    bibo:pageStart 51 ;
+    bibo:volume "9" ;
+    c4o:hasContent "H. Chu, \"Service Cost of Resource Scheduling in Cloud Computing based on an Improved Algorithm Combining Support Vector Machine with Genetic Algorithm\", International Journal of Grid and Distributed Computing Vol. 9, No. 6 (2016), pp.51-62." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "Applied Mathematics and Computation" ] ;
+    dcterms:title "Biogeography-Based Optimization for Optimal Job Scheduling in Cloud Computing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Byeon" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yu" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 280 ;
+    bibo:pageStart 266 ;
+    bibo:volume "247" ;
+    c4o:hasContent "S. Kim, J. Byeon, H. Yu and H. Liu, \"Biogeography-Based Optimization for Optimal Job Scheduling in Cloud Computing\", Applied Mathematics and Computation, Elsevier, Vol.247, pp. 266- 280, 2014." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "International Conference on Intelligent Computing, Communication & Convergence" ] ;
+    dcterms:title "Multi-Objective Tasks Scheduling Algorithm for Cloud Computing Throughput Optimization" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lakra" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yadav" ;
+                    foaf:givenname "D" ] ] ;
+    c4o:hasContent "A.V Lakra, and D. K Yadav, \"Multi-Objective Tasks Scheduling Algorithm for Cloud Computing Throughput Optimization\", International Conference on Intelligent Computing, Communication & Convergence, 2015." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "International journal of control theory and applications" ] ;
+    dcterms:title "Task Scheduling Algorithm Using Multi-Objective Functions for Cloud Computing Environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Narwal" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dhingra" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "14" ;
+    bibo:pageEnd 238 ;
+    bibo:pageStart 227 ;
+    bibo:volume "10" ;
+    c4o:hasContent "A. Narwal and S. Dhingra, \"Task Scheduling Algorithm Using Multi- Objective Functions for Cloud Computing Environment\", International journal of control theory and applications, Vol. 10(14), pp. 227-238, 2017." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:title "Comparison of Heuristics for Scheduling Independent Tasks on Heterogeneous Distributed Environments" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Izakian" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Abraham" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Snasel" ;
+                    foaf:givenname "V" ] ] ;
+    c4o:hasContent "H. Izakian, A. Abraham, V. Snasel, \"Comparison of Heuristics for Scheduling Independent Tasks on Heterogeneous Distributed Environments\", In: IWHGA '09: Proceedings of the IEEE International Workshop." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "Procedia Computer Science" ] ;
+    dcterms:title "Cost performance of QoS Driven task scheduling in cloud computing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bansal" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Maurya" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 130 ;
+    bibo:pageStart 126 ;
+    bibo:volume "57" ;
+    c4o:hasContent "N. Bansal, A. Maurya, T. Kumar, et al., \"Cost performance of QoS Driven task scheduling in cloud computing\". Procedia Computer Science, 57, 2015, pp. 126-130." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 1995 ;
+    dcterms:publisher [ foaf:name "workshop on job scheduling strategies for parallel processing" ] ;
+    dcterms:title "Job characteristics of a production parallel scientific workload on the NASA Ames iPSC/860" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Feitelson" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nitzberg" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 360 ;
+    bibo:pageStart 337 ;
+    c4o:hasContent "D. G. Feitelson and B. Nitzberg, \"Job characteristics of a production parallel scientific workload on the NASA Ames iPSC/860\", In: workshop on job scheduling strategies for parallel processing, Springer, 1995, pp. 337-360." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "2nd International Conference on Knowledge-Based Engineering and Innovation (KBEI)" ] ;
+    dcterms:title "Algorithm to improve job scheduling problem in cloud computing environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tareghian" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bornaee" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 688 ;
+    bibo:pageStart 684 ;
+    c4o:hasContent "S. Tareghian, Z. Bornaee, \"Algorithm to improve job scheduling problem in cloud computing environment\", 2nd International Conference on Knowledge-Based Engineering and Innovation (KBEI). IEEE, 2015, pp 684-688." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "International Symposium on Distributed Computing and Applications To Business" ] ;
+    dcterms:title "A Task Scheduling Algorithm Based on Genetic Algorithm and Ant Colony Optimization in Cloud Computing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zou" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 72 ;
+    bibo:pageStart 68 ;
+    c4o:hasContent "C.Y. Liu, C.M. Zou and P. Wu, \"A Task Scheduling Algorithm Based on Genetic Algorithm and Ant Colony Optimization in Cloud Computing\", International Symposium on Distributed Computing and Applications To Business, Engineering and Science. 2014, pp 68-72." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "Journal of Applied Soft Computing" ] ;
+    dcterms:title "CLPS-GA: A case library and Pareto solution-based hybrid genetic algorithm for energy-aware cloud service scheduling" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tao" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Feng" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:issue "6" ;
+    bibo:pageEnd 279 ;
+    bibo:pageStart 264 ;
+    bibo:volume "19" ;
+    c4o:hasContent "F. Tao, Y. Feng, L. Zhang, et al., \"CLPS-GA: A case library and Pareto solution-based hybrid genetic algorithm for energy-aware cloud service scheduling\". Journal of Applied Soft Computing, 2014, 19(6), pp 264- 279." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "IEEE 15th Intl Conf on Scalable Computing and Communications and Its Associated Workshops (UIC-ATCScalCom)" ] ;
+    dcterms:title "An Improved Genetic-Based Approach to Task Scheduling in Inter-cloud Environment[, Ubiquitous Intelligence and Computing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Mi" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 1003 ;
+    bibo:pageStart 997 ;
+    c4o:hasContent "M. Zhang, Y. Yang, Z. Mi, et al., \"An Improved Genetic-Based Approach to Task Scheduling in Inter-cloud Environment[, Ubiquitous Intelligence and Computing\", IEEE 15th Intl Conf on Scalable Computing and Communications and Its Associated Workshops (UIC- ATCScalCom), 2015: 997-1003." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Journal of Systems and Software" ] ;
+    dcterms:title "An improved genetic algorithm for task scheduling in the cloud environments using the priority queues: Formal verification, simulation, and statistical testing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Keshanchi" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Souri" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Navimipour" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 21 ;
+    bibo:pageStart 1 ;
+    bibo:volume "124" ;
+    c4o:hasContent "B. Keshanchi, A. Souri, N.J. Navimipour, \"An improved genetic algorithm for task scheduling in the cloud environments using the priority queues: Formal verification, simulation, and statistical testing\", Journal of Systems and Software, 2017, 124, pp 1-21." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "19th International Conference on Enterprise Information Systems" ] ;
+    dcterms:title "Load Balancing Heuristic for Tasks Scheduling in Cloud Environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bey" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Benhammadi" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Boudaren" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Khamadja" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 29 ;
+    bibo:pageStart 26 ;
+    c4o:hasContent "K. Beghdad Bey, F. Benhammadi, M. Y Boudaren and S. Khamadja, \"Load Balancing Heuristic for Tasks Scheduling in Cloud Environment\", 19th International Conference on Enterprise Information Systems (ICEIS2017), 26-29 April 2017." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Engineering Optimization" ] ;
+    dcterms:title "A novel metaheuristic for continuous optimization problems: Virus optimization algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Juarez" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 93 ;
+    bibo:pageStart 73 ;
+    bibo:volume "48" ;
+    c4o:hasContent "Y.C. Liang and J. R. C. Juarez, \"A novel metaheuristic for continuous optimization problems: Virus optimization algorithm\". In: Engineering Optimization 48.1 (2016), pp.73-93." .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+

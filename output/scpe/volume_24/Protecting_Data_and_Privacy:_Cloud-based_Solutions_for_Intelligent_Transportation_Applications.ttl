@@ -1,0 +1,1324 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Access control"^^xsd:string,
+        "Cloud-based solutions"^^xsd:string,
+        "Confidentiality"^^xsd:string,
+        "Data security"^^xsd:string,
+        "Integrity"^^xsd:string,
+        "Intelligent transportation applications"^^xsd:string,
+        "Privacy protection"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1 ] ;
+    dcterms:title "Protecting Data and Privacy: Cloud-based Solutions for Intelligent Transportation Applications"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "The interaction between transportation networks and intelligent transportation systems has been revolutionized by cloud computing. However, the reliance on cloud-based solutions raises security and privacy concerns. This article examines the challenges of safeguarding data and privacy in intelligent transportation applications and emphasizes the potential of cloud-based solutions to resolve these issues. Organizations can protect sensitive data and user privacy by employing encryption, access controls, threat detection mechanisms, and privacy protection measures. Adopting these cloud-based solutions will encourage the extensive adoption of intelligent transportation applications while infusing users and stakeholders with confidence."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 276 ;
+    prism:pageCount 19 ;
+    prism:startingPage 257 ;
+    datacite:doi "10.12694/scpe.v24i3.2381"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2381"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2381> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Singha"^^xsd:string ;
+    foaf:givenName "Ranjit"^^xsd:string ;
+    foaf:name "Ranjit Singha"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Singha"^^xsd:string ;
+    foaf:givenName "Surjit"^^xsd:string ;
+    foaf:name "Surjit Singha"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section1 ;
+            co:nextItem [ co:itemContent :section6 ;
+                    co:nextItem [ co:itemContent :section16 ;
+                            co:nextItem [ co:itemContent :section19 ;
+                                    co:nextItem [ co:itemContent :section20 ;
+                                            co:nextItem [ co:itemContent :section39 ;
+                                                    co:nextItem [ co:itemContent :section58 ;
+                                                            co:nextItem [ co:itemContent :section67 ;
+                                                                    co:nextItem [ co:itemContent :section69 ;
+                                                                            co:nextItem [ co:itemContent :section71 ;
+                                                                                    co:nextItem [ co:itemContent :section81 ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section1,
+        :section16,
+        :section19,
+        :section20,
+        :section39,
+        :section58,
+        :section6,
+        :section67,
+        :section69,
+        :section71,
+        :section81 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Christ University, Bengaluru, India"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "Kristu Jayanti College (Autonomous), Bengaluru, India"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF26 a deo:Reference ;
+    dcterms:references :BIBREF26 ;
+    c4o:hasContent "[27]" .
+
+:referenceToBIBREF27 a deo:Reference ;
+    dcterms:references :BIBREF27 ;
+    c4o:hasContent "[28]" .
+
+:referenceToBIBREF28 a deo:Reference ;
+    dcterms:references :BIBREF28 ;
+    c4o:hasContent "[29]" .
+
+:referenceToBIBREF29 a deo:Reference ;
+    dcterms:references :BIBREF29 ;
+    c4o:hasContent "[30]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF30 a deo:Reference ;
+    dcterms:references :BIBREF30 ;
+    c4o:hasContent "[31]" .
+
+:referenceToBIBREF31 a deo:Reference ;
+    dcterms:references :BIBREF31 ;
+    c4o:hasContent "[32]" .
+
+:referenceToBIBREF32 a deo:Reference ;
+    dcterms:references :BIBREF32 ;
+    c4o:hasContent "[33]" .
+
+:referenceToBIBREF33 a deo:Reference ;
+    dcterms:references :BIBREF33 ;
+    c4o:hasContent "[34]" .
+
+:referenceToBIBREF35 a deo:Reference ;
+    dcterms:references :BIBREF35 ;
+    c4o:hasContent "[36]" .
+
+:referenceToBIBREF36 a deo:Reference ;
+    dcterms:references :BIBREF36 ;
+    c4o:hasContent "[37]" .
+
+:referenceToBIBREF37 a deo:Reference ;
+    dcterms:references :BIBREF37 ;
+    c4o:hasContent "[38]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel1 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel19 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel20 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel27 a doco:SectionLabel ;
+    c4o:hasContent "6.1." .
+
+:sectionLabel31 a doco:SectionLabel ;
+    c4o:hasContent "6.2." .
+
+:sectionLabel32 a doco:SectionLabel ;
+    c4o:hasContent "6.3." .
+
+:sectionLabel34 a doco:SectionLabel ;
+    c4o:hasContent "6.4." .
+
+:sectionLabel35 a doco:SectionLabel ;
+    c4o:hasContent "6.5." .
+
+:sectionLabel38 a doco:SectionLabel ;
+    c4o:hasContent "6.6." .
+
+:sectionLabel39 a doco:SectionLabel ;
+    c4o:hasContent "7." .
+
+:sectionLabel40 a doco:SectionLabel ;
+    c4o:hasContent "7.1." .
+
+:sectionLabel41 a doco:SectionLabel ;
+    c4o:hasContent "7.2." .
+
+:sectionLabel42 a doco:SectionLabel ;
+    c4o:hasContent "7.3." .
+
+:sectionLabel43 a doco:SectionLabel ;
+    c4o:hasContent "7.4." .
+
+:sectionLabel45 a doco:SectionLabel ;
+    c4o:hasContent "7.5." .
+
+:sectionLabel58 a doco:SectionLabel ;
+    c4o:hasContent "8." .
+
+:sectionLabel81 a doco:SectionLabel ;
+    c4o:hasContent "12." .
+
+:sectionTitle1 a doco:SectionTitle ;
+    c4o:hasContent "Statement of Problem." .
+
+:sectionTitle16 a doco:SectionTitle ;
+    c4o:hasContent "Study Selection." .
+
+:sectionTitle19 a doco:SectionTitle ;
+    c4o:hasContent "Synthesis and Interpretation." .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "The Importance of Data Security." .
+
+:sectionTitle27 a doco:SectionTitle ;
+    c4o:hasContent "Confidentiality." .
+
+:sectionTitle31 a doco:SectionTitle ;
+    c4o:hasContent "Integrity." .
+
+:sectionTitle32 a doco:SectionTitle ;
+    c4o:hasContent "Access Control." .
+
+:sectionTitle34 a doco:SectionTitle ;
+    c4o:hasContent "Threat Detection and Intrusion Prevention." .
+
+:sectionTitle35 a doco:SectionTitle ;
+    c4o:hasContent "Data Storage and Backup." .
+
+:sectionTitle38 a doco:SectionTitle ;
+    c4o:hasContent "Compliance with Regulations." .
+
+:sectionTitle39 a doco:SectionTitle ;
+    c4o:hasContent "Encryption and Access Control." .
+
+:sectionTitle40 a doco:SectionTitle ;
+    c4o:hasContent "Data Storage and Backup." .
+
+:sectionTitle41 a doco:SectionTitle ;
+    c4o:hasContent "Threat Detection and Intrusion Prevention." .
+
+:sectionTitle42 a doco:SectionTitle ;
+    c4o:hasContent "Privacy Protection." .
+
+:sectionTitle43 a doco:SectionTitle ;
+    c4o:hasContent "and Pseudonymisation." .
+
+:sectionTitle45 a doco:SectionTitle ;
+    c4o:hasContent "Privacy by Design." .
+
+:sectionTitle58 a doco:SectionTitle ;
+    c4o:hasContent "Cloud-Based Solutions For Intelligent Transportation Applications." .
+
+:sectionTitle6 a doco:SectionTitle ;
+    c4o:hasContent "Identification of Research Objective and Research" .
+
+:sectionTitle67 a doco:SectionTitle ;
+    c4o:hasContent "Challenges." .
+
+:sectionTitle69 a doco:SectionTitle ;
+    c4o:hasContent "Implementation Strategies." .
+
+:sectionTitle71 a doco:SectionTitle ;
+    c4o:hasContent "Results" .
+
+:sectionTitle81 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:title "Integration challenges of intelligent transportation systems with connected vehicle, cloud computing, and internet of things technologies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Guerrero-Ibanez" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zeadally" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Contreras-Castillo" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 128 ;
+    bibo:pageStart 122 ;
+    bibo:volume "22" ;
+    c4o:hasContent "Guerrero-Ibanez, J. A., Zeadally, S., Contreras-Castillo, J. (2015). Integration challenges of intelligent transportation systems with connected vehicle, cloud computing, and internet of things technologies. IEEE Wireless Communications, 22(6), 122-128." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "A robust and lightweight secure access scheme for cloud based E-healthcare services. Peer-to-peer Networking and Applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Masud" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gaba" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Choudhary" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Alroobaea" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Hossain" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 3057 ;
+    bibo:pageStart 3043 ;
+    bibo:volume "14" ;
+    c4o:hasContent "Masud, M., Gaba, G. S., Choudhary, K., Alroobaea, R., Hossain, M. S. (2021). A robust and lightweight secure access scheme for cloud based E-healthcare services. Peer-to-peer Networking and Applications, 14(5), 3043-3057." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Internet of Things Journal" ] ;
+    dcterms:title "Blockchain for the internet of vehicles towards intelligent transportation systems: A survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mollah" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Niyato" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Guan" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Yuen" ;
+                    foaf:givenname "C" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "6" ;
+    bibo:pageEnd 4185 ;
+    bibo:pageStart 4157 ;
+    bibo:volume "8" ;
+    c4o:hasContent "Mollah, M. B., Zhao, J., Niyato, D., Guan, Y. L., Yuen, C., Sun, S. et al (2020). Blockchain for the internet of vehicles towards intelligent transportation systems: A survey. IEEE Internet of Things Journal, 8(6), 4157-4185." .
+
+:BIBREF34 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "Journal of Transport Literature" ] ;
+    dcterms:title "Recent trends in intelligent transportation systems: a review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gupta" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 34 ;
+    bibo:pageStart 30 ;
+    bibo:volume "9" ;
+    c4o:hasContent "Singh, B., Gupta, A. (2015). Recent trends in intelligent transportation systems: a review. Journal of Transport Literature, 9, 30-34." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Data Mining and Knowledge Discovery" ] ;
+    dcterms:title "Enterprise data breach: causes, challenges, prevention, and future directions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cheng" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yao" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:issue "5" ;
+    bibo:volume "7" ;
+    c4o:hasContent "Cheng, L., Liu, F., Yao, D. (2017). Enterprise data breach: causes, challenges, prevention, and future directions. Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery, 7(5), e1211." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF25 ;
+                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF26 ;
+                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF27 ;
+                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF28 ;
+                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF29 ;
+                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF30 ;
+                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF31 ;
+                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF32 ;
+                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF33 ;
+                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF34 ;
+                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF35 ;
+                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF36 ;
+                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF37 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF26,
+        :BIBREF27,
+        :BIBREF28,
+        :BIBREF29,
+        :BIBREF3,
+        :BIBREF30,
+        :BIBREF31,
+        :BIBREF32,
+        :BIBREF33,
+        :BIBREF34,
+        :BIBREF35,
+        :BIBREF36,
+        :BIBREF37,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section1 a doco:Section ;
+    po:contains :sectionLabel1 ;
+    po:containsAsHeader :sectionTitle1 .
+
+:section16 a doco:Section ;
+    po:containsAsHeader :sectionTitle16 .
+
+:section19 a doco:Section ;
+    po:contains :sectionLabel19 ;
+    po:containsAsHeader :sectionTitle19 .
+
+:section20 a doco:Section ;
+    co:firstItem [ co:itemContent :section27 ;
+            co:nextItem [ co:itemContent :section31 ;
+                    co:nextItem [ co:itemContent :section32 ;
+                            co:nextItem [ co:itemContent :section34 ;
+                                    co:nextItem [ co:itemContent :section35 ;
+                                            co:nextItem [ co:itemContent :section38 ] ] ] ] ] ] ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF17,
+        :referenceToBIBREF19,
+        :referenceToBIBREF7,
+        :section27,
+        :section31,
+        :section32,
+        :section34,
+        :section35,
+        :section38,
+        :sectionLabel20 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section27 a doco:Section ;
+    po:contains :referenceToBIBREF13,
+        :referenceToBIBREF16,
+        :referenceToBIBREF35,
+        :sectionLabel27 ;
+    po:containsAsHeader :sectionTitle27 .
+
+:section31 a doco:Section ;
+    po:contains :referenceToBIBREF21,
+        :sectionLabel31 ;
+    po:containsAsHeader :sectionTitle31 .
+
+:section32 a doco:Section ;
+    po:contains :referenceToBIBREF24,
+        :sectionLabel32 ;
+    po:containsAsHeader :sectionTitle32 .
+
+:section34 a doco:Section ;
+    po:contains :referenceToBIBREF27,
+        :sectionLabel34 ;
+    po:containsAsHeader :sectionTitle34 .
+
+:section35 a doco:Section ;
+    po:contains :referenceToBIBREF15,
+        :sectionLabel35 ;
+    po:containsAsHeader :sectionTitle35 .
+
+:section38 a doco:Section ;
+    po:contains :referenceToBIBREF11,
+        :referenceToBIBREF14,
+        :sectionLabel38 ;
+    po:containsAsHeader :sectionTitle38 .
+
+:section39 a doco:Section ;
+    co:firstItem [ co:itemContent :section40 ;
+            co:nextItem [ co:itemContent :section41 ;
+                    co:nextItem [ co:itemContent :section42 ;
+                            co:nextItem [ co:itemContent :section43 ;
+                                    co:nextItem [ co:itemContent :section45 ] ] ] ] ] ;
+    po:contains :referenceToBIBREF0,
+        :section40,
+        :section41,
+        :section42,
+        :section43,
+        :section45,
+        :sectionLabel39 ;
+    po:containsAsHeader :sectionTitle39 .
+
+:section40 a doco:Section ;
+    po:contains :referenceToBIBREF30,
+        :sectionLabel40 ;
+    po:containsAsHeader :sectionTitle40 .
+
+:section41 a doco:Section ;
+    po:contains :referenceToBIBREF26,
+        :sectionLabel41 ;
+    po:containsAsHeader :sectionTitle41 .
+
+:section42 a doco:Section ;
+    po:contains :sectionLabel42 ;
+    po:containsAsHeader :sectionTitle42 .
+
+:section43 a doco:Section ;
+    po:contains :sectionLabel43 ;
+    po:containsAsHeader :sectionTitle43 .
+
+:section45 a doco:Section ;
+    po:contains :referenceToBIBREF2,
+        :referenceToBIBREF23,
+        :referenceToBIBREF25,
+        :referenceToBIBREF29,
+        :referenceToBIBREF3,
+        :referenceToBIBREF31,
+        :referenceToBIBREF33,
+        :referenceToBIBREF36,
+        :referenceToBIBREF4,
+        :referenceToBIBREF6,
+        :referenceToBIBREF9,
+        :sectionLabel45 ;
+    po:containsAsHeader :sectionTitle45 .
+
+:section58 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF18,
+        :referenceToBIBREF28,
+        :referenceToBIBREF32,
+        :referenceToBIBREF37,
+        :referenceToBIBREF8,
+        :sectionLabel58 ;
+    po:containsAsHeader :sectionTitle58 .
+
+:section6 a doco:Section ;
+    po:containsAsHeader :sectionTitle6 .
+
+:section67 a doco:Section ;
+    po:containsAsHeader :sectionTitle67 .
+
+:section69 a doco:Section ;
+    po:containsAsHeader :sectionTitle69 .
+
+:section71 a doco:Section ;
+    po:containsAsHeader :sectionTitle71 .
+
+:section81 a doco:Section ;
+    po:contains :sectionLabel81 ;
+    po:containsAsHeader :sectionTitle81 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "A robust quasi-quantum walks-based steganography protocol for secure transmission of images on cloud-based E-healthcare platforms" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abd-El-Atty" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Iliyasu" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Alaskar" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "El-Latif" ;
+                    foaf:givenname "Abd" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:givenname "A" ] ] ;
+    bibo:issue "11" ;
+    bibo:volume "20" ;
+    c4o:hasContent "Abd-El-Atty, B., Iliyasu, A. M., Alaskar, H., Abd El-Latif, A. A. (2020). A robust quasi-quantum walks-based steganography protocol for secure transmission of images on cloud-based E-healthcare platforms. Sensors, 20(11), 3108." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Smart Cities" ] ;
+    dcterms:title "Cloud-based IoT applications and their roles in smart cities" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alam" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:issue "3" ;
+    bibo:pageEnd 1219 ;
+    bibo:pageStart 1196 ;
+    bibo:volume "4" ;
+    c4o:hasContent "Alam, T. (2021). Cloud-based IoT applications and their roles in smart cities. Smart Cities, 4(3), 1196-1219" .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Computer Networks" ] ;
+    dcterms:title "Cyber-security on smart grid: Threats and potential solutions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gunduz" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Das" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:volume "169" ;
+    c4o:hasContent "Gunduz, M. Z., Das, R. (2020). Cyber-security on smart grid: Threats and potential solutions. Computer Networks, 169, 107094." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Expert Systems" ] ;
+    dcterms:title "Conceptualising smart city applications: Requirements, architecture, security issues, and emerging trends" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bhushan" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dhiman" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:givenname "G" ] ] ;
+    bibo:issue "5" ;
+    bibo:volume "39" ;
+    c4o:hasContent "A. B., Bhushan, B., Dhiman, G. (2022). Conceptualising smart city applications: Requirements, architecture, security issues, and emerging trends. Expert Systems, 39(5), e12753." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "International Data Privacy Law" ] ;
+    dcterms:title "The problem of 'personal data'in cloud computing: what information is regulated?-the cloud of unknowing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hon" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Millard" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Walden" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:issue "4" ;
+    bibo:pageEnd 228 ;
+    bibo:pageStart 211 ;
+    bibo:volume "1" ;
+    c4o:hasContent "Hon, W. K., Millard, C., Walden, I. (2011). The problem of 'personal data'in cloud computing: what information is regulated?-the cloud of unknowing. International Data Privacy Law, 1(4), 211-228." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Information Communications Technology Law" ] ;
+    dcterms:title "The European Union general data protection regulation: what it is and what it means" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hoofnagle" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Van Der Sloot" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Borgesius" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 98 ;
+    bibo:pageStart 65 ;
+    bibo:volume "28" ;
+    c4o:hasContent "Hoofnagle, C. J., Van Der Sloot, B., Borgesius, F. Z. (2019). The European Union general data protection regulation: what it is and what it means. Information Communications Technology Law, 28(1), 65-98." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Fog and Edge Computing: Principles and Paradigms" ] ;
+    dcterms:title "Fog computing model for evolving smart transportation applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hussain" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Alam" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Beg" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:issue "4" ;
+    bibo:pageEnd 372 ;
+    bibo:pageStart 347 ;
+    bibo:volume "22" ;
+    c4o:hasContent "Hussain, M. M., Alam, M. S., Beg, M. S. (2019). Fog computing model for evolving smart transportation applications. Fog and Edge Computing: Principles and Paradigms, 22(4), 347-372." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:publisher [ foaf:name "IEEE transactions on knowledge and data engineering" ] ;
+    dcterms:title "A generalized temporal role-based access control model" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Joshi" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bertino" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Latif" ;
+                    foaf:givenname "U" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ghafoor" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 23 ;
+    bibo:pageStart 4 ;
+    bibo:volume "17" ;
+    c4o:hasContent "Joshi, J. B., Bertino, E., Latif, U., Ghafoor, A. (2005). A generalized temporal role-based access control model. IEEE transactions on knowledge and data engineering, 17(1), 4-23" .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Smart Cities" ] ;
+    dcterms:title "Implementing data-driven smart city applications for future cities" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kaluarachchi" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 474 ;
+    bibo:pageStart 455 ;
+    bibo:volume "5" ;
+    c4o:hasContent "Kaluarachchi, Y. (2022). Implementing data-driven smart city applications for future cities. Smart Cities, 5(2), 455-474." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Theoretical Computer Science" ] ;
+    dcterms:title "Optimizing Scalability and Availability of Cloud Based Software Services Using Modified Scale Rate Limiting Algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Latha" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Reddy" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Babu" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 240 ;
+    bibo:pageStart 230 ;
+    bibo:volume "943" ;
+    c4o:hasContent "Latha, V. P., Reddy, N. S., Babu, A. S. (2023). Optimizing Scalability and Availability of Cloud Based Software Services Using Modified Scale Rate Limiting Algorithm. Theoretical Computer Science, 943, 230-240." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:title "The Internet of Things (IoT): Applications, investments, and challenges for enterprises" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 440 ;
+    bibo:pageStart 431 ;
+    bibo:volume "58" ;
+    c4o:hasContent "Lee, I., Lee, K. (2015). The Internet of Things (IoT): Applications, investments, and challenges for enterprises. Business Horizons, 58(4), 431-440." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Future Generation Computer Systems" ] ;
+    dcterms:title "Semantics-based privacy by design for Internet of Things applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alkhariji" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "De" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Rana" ;
+                    foaf:givenname "O" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Perera" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 295 ;
+    bibo:pageStart 280 ;
+    bibo:volume "138" ;
+    c4o:hasContent "Alkhariji, L., De, S., Rana, O., and Perera, C. (2023). Semantics-based privacy by design for Internet of Things applications. Future Generation Computer Systems, 138, 280-295." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Computer Communications" ] ;
+    dcterms:title "Blockchain envisioned UAV networks: Challenges, solutions, and comparisons" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mehta" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gupta" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tanwar" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 538 ;
+    bibo:pageStart 518 ;
+    bibo:volume "151" ;
+    c4o:hasContent "Mehta, P., Gupta, R., Tanwar, S. (2020). Blockchain envisioned UAV networks: Challenges, solutions, and comparisons. Computer Communications, 151, 518-538." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Media and Change Management Creating a Path for New Content Formats, Business Models, Consumer Roles, and Business Responsibility" ] ;
+    dcterms:title "Managing change related to consumer privacy laws: targeting and personal data use in a more regulated environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mueller" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Taylor" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Mueller" ;
+                    foaf:givenname "B" ] ] ;
+    c4o:hasContent "Mueller, S., Taylor, C. R., Mueller, B. (2022). Managing change related to consumer privacy laws: targeting and personal data use in a more regulated environment. In Media and Change Management Creating a Path for New Content Formats, Business Models, Consumer Roles, and Business Responsibility. Cham Springer International Publishing" .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Image Systems and Visualisations 3. Multimedia Computing Systems and Virtual Reality" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Narwal" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Duhan" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Bhatia" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 78 ;
+    bibo:pageStart 45 ;
+    c4o:hasContent "Narwal, P., Duhan, N., Bhatia, K. K. (2022). Image Systems and Visualisations 3. Multimedia Computing Systems and Virtual Reality, 45-78." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Information Fusion" ] ;
+    dcterms:title "Towards a data collection methodology for Responsible Artificial Intelligence in health: A prospective and qualitative study in pregnancy" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Oprescu" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mir´o-Amarante" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "García-Díaz" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Rey" ;
+                    foaf:givenname "V" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Chimenea-Toscano" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Martínezmartínez" ;
+                    foaf:givenname "R" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Romero-Ternero" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 78 ;
+    bibo:pageStart 53 ;
+    bibo:volume "83" ;
+    c4o:hasContent "Oprescu, A. M., Mir´o-Amarante, G., García-Díaz, L., Rey, V. E., Chimenea-Toscano, A., MartínezMartínez, R., Romero- Ternero, M. C. (2022). Towards a data collection methodology for Responsible Artificial Intelligence in health: A prospec- tive and qualitative study in pregnancy. Information Fusion, 83, 53-78." .
+
+:BIBREF26 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:title "Anomaly detection system in cloud environment using fuzzy clustering based ANN. Mobile Networks and Applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pandeeswari" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 505 ;
+    bibo:pageStart 494 ;
+    bibo:volume "21" ;
+    c4o:hasContent "Pandeeswari, N., Kumar, G. (2016). Anomaly detection system in cloud environment using fuzzy clustering based ANN. Mobile Networks and Applications, 21, 494-505." .
+
+:BIBREF27 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "Journal of Network and Computer Applications" ] ;
+    dcterms:title "An intrusion detection and prevention system in cloud computing: A systematic review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Patel" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Taghavi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Bakhtiyari" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Júnior" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 41 ;
+    bibo:pageStart 25 ;
+    bibo:volume "36" ;
+    c4o:hasContent "Patel, A., Taghavi, M., Bakhtiyari, K., Júnior, J. C. (2013). An intrusion detection and prevention system in cloud computing: A systematic review. Journal of Network and Computer Applications, 36(1), 25-41." .
+
+:BIBREF28 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Procedia Computer Science" ] ;
+    dcterms:title "A cloud-based 3D real-time inspection platform for industry: a case-study focusing automotive cast iron parts" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pérez" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Léon" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Castilla" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Shahrabadi" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Anjos" ;
+                    foaf:givenname "V" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Ad˜ao" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 344 ;
+    bibo:pageStart 339 ;
+    bibo:volume "219" ;
+    c4o:hasContent "Pérez, J., Léon, J., Castilla, Y., Shahrabadi, S., Anjos, V., Ad˜ao, T., et al (2023). A cloud-based 3D real-time inspection platform for industry: a case-study focusing automotive cast iron parts. Procedia Computer Science, 219, 339-344" .
+
+:BIBREF29 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Journal of Biomedical and Health Informatics" ] ;
+    dcterms:title "Disrupting healthcare silos: Addressing data volume, velocity and variety with a cloud-native healthcare data ingestion service" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ranchal" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bastide" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Gkoulalas-Divanis" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Mehra" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Bakthavachalam" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "11" ;
+    bibo:pageEnd 3188 ;
+    bibo:pageStart 3182 ;
+    bibo:volume "24" ;
+    c4o:hasContent "Ranchal, R., Bastide, P., Wang, X., Gkoulalas-Divanis, A., Mehra, M., Bakthavachalam, S., et al (2020). Disrupting healthcare silos: Addressing data volume, velocity and variety with a cloud-native healthcare data ingestion service. IEEE Journal of Biomedical and Health Informatics, 24(11), 3182-3188." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Symmetry" ] ;
+    dcterms:title "Security and privacy in IoT-cloud-based e-health systems-A comprehensive review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Butpheng" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yeh" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Xiong" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:issue "7" ;
+    bibo:volume "12" ;
+    c4o:hasContent "Butpheng, C., Yeh, K. H., Xiong, H. (2020). Security and privacy in IoT-cloud-based e-health systems-A comprehensive review. Symmetry, 12(7), 1191." .
+
+:BIBREF30 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "Journal of Grid Computing" ] ;
+    dcterms:title "Architectural requirements for cloud computing systems: an enterprise cloud approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Rimal" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jukan" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Katsaros" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Goeleven" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 26 ;
+    bibo:pageStart 3 ;
+    bibo:volume "9" ;
+    c4o:hasContent "Rimal, B. P., Jukan, A., Katsaros, D., Goeleven, Y. (2011). Architectural requirements for cloud computing systems: an enterprise cloud approach. Journal of Grid Computing, 9, 3-26." .
+
+:BIBREF31 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "2020 National Conference on Emerging Trends on Sustainable Technology and Engineering Applications (NCETSTEA)" ] ;
+    dcterms:title "A high-level comparison between the nist cyber security framework and the iso 27001 information security standard" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Roy" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 3 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Roy, P. P. (2020). A high-level comparison between the nist cyber security framework and the iso 27001 information security standard. In 2020 National Conference on Emerging Trends on Sustainable Technology and Engineering Applications (NCETSTEA) (pp. 1-3). IEEE." .
+
+:BIBREF32 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "International Journal of Engineering and Management Research" ] ;
+    dcterms:title "Securing the Cloud: An Empirical Study on Best Practices for Ensuring Data Privacy and Protection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Saranya" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sakthivadivel" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Karthikeyan" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Rajkumar" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 49 ;
+    bibo:pageStart 46 ;
+    bibo:volume "13" ;
+    c4o:hasContent "Saranya, N., Sakthivadivel, M., Karthikeyan, G., Rajkumar, R. (2023). Securing the Cloud: An Empirical Study on Best Practices for Ensuring Data Privacy and Protection. International Journal of Engineering and Management Research, 13(2), 46-49" .
+
+:BIBREF33 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Electronics" ] ;
+    dcterms:title "A systematic literature review on privacy by design in the healthcare sector" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Semantha" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Azam" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yeo" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Shanmugam" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:issue "3" ;
+    bibo:volume "9" ;
+    c4o:hasContent "Semantha, F. H., Azam, S., Yeo, K. C., Shanmugam, B. (2020). A systematic literature review on privacy by design in the healthcare sector. Electronics, 9(3), 452." .
+
+:BIBREF35 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Internet of Things" ] ;
+    dcterms:title "Smart vehicular traffic management: An edge cloud centric IoT based framework" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sood" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:volume "14" ;
+    c4o:hasContent "Sood, S. K. (2021). Smart vehicular traffic management: An edge cloud centric IoT based framework. Internet of Things, 14, 100140." .
+
+:BIBREF36 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "A survey on metaverse: Fundamentals, security, and privacy" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Su" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "N" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Xing" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "D" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Luan" ;
+                    foaf:givenname "T" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Shen" ;
+                    foaf:givenname "X" ] ] ;
+    c4o:hasContent "Wang, Y., Su, Z., Zhang, N., Xing, R., Liu, D., Luan, T. H., Shen, X. (2022). A survey on metaverse: Fundamentals, security, and privacy. IEEE Communications Surveys Tutorials" .
+
+:BIBREF37 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Information Systems and e-Business Management" ] ;
+    dcterms:title "A comprehensive and systematic review of the banking systems based on pay-as-you-go payment fashion and cloud computing in the pandemic era" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Miao" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Naghshbandi" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 29 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Zhao, S., Miao, J., Zhao, J., Naghshbandi, N. (2023). A comprehensive and systematic review of the banking systems based on pay-as-you-go payment fashion and cloud computing in the pandemic era. Information Systems and e-Business Management, 1-29" .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "Identity in the Information Society" ] ;
+    dcterms:title "Privacy by design: the definitive workshop" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cavoukian" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 251 ;
+    bibo:pageStart 247 ;
+    bibo:volume "3" ;
+    c4o:hasContent "Cavoukian, A. (2010). Privacy by design: the definitive workshop. Identity in the Information Society, 3(2), 247-251." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Applied Sciences" ] ;
+    dcterms:title "Privacy-by-Design and Minimization within a Small Electronic Health Record: The Health360 Case Study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Conte" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sansone" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tonacci" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Pala" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:issue "17" ;
+    bibo:volume "12" ;
+    c4o:hasContent "Conte, R., Sansone, F., Tonacci, A., Pala, A. P. (2022). Privacy-by-Design and Minimization within a Small Electronic Health Record: The Health360 Case Study. Applied Sciences, 12(17), 8441" .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "IEEE Internet of Things Journal" ] ;
+    dcterms:title "Blockchain for Intelligent Transportation Systems: Applications, Challenges, and Opportunities" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Das" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Banerjee" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chatterjee" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ghosh" ;
+                    foaf:givenname "U" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Biswas" ;
+                    foaf:givenname "U" ] ] ;
+    c4o:hasContent "Das, D., Banerjee, S., Chatterjee, P., Ghosh, U., Biswas, U. (2023). Blockchain for Intelligent Transportation Systems: Applications, Challenges, and Opportunities. IEEE Internet of Things Journal." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Open Journal of Intelligent Transportation Systems" ] ;
+    dcterms:title "Vehicle classification in intelligent transport systems: An overview, methods and software perspective" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gholamhosseinian" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Seitz" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 194 ;
+    bibo:pageStart 173 ;
+    bibo:volume "2" ;
+    c4o:hasContent "Gholamhosseinian, A., and Seitz, J. (2021). Vehicle classification in intelligent transport systems: An overview, methods and software perspective. IEEE Open Journal of Intelligent Transportation Systems, 2, 173-194" .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Sustainability" ] ;
+    dcterms:title "The role of 5G technologies in a smart city: The case for intelligent transportation system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gohar" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nencioni" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:issue "9" ;
+    bibo:volume "13" ;
+    c4o:hasContent "Gohar, A., and Nencioni, G. (2021). The role of 5G technologies in a smart city: The case for intelligent transportation system. Sustainability, 13(9), 5188." .
+

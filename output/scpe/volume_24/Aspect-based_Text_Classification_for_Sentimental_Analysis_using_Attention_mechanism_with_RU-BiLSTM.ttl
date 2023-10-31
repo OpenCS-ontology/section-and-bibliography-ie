@@ -1,0 +1,1318 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Convolutional Neural Network"^^xsd:string,
+        "aspect level"^^xsd:string,
+        "aspect-based sentiment analysis"^^xsd:string,
+        "attention mechanism"^^xsd:string,
+        "big data"^^xsd:string,
+        "word2vec"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1 ] ;
+    dcterms:title "Aspect-based Text Classification for Sentimental Analysis using Attention mechanism with RU-BiLSTM"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Sentiment analysis has gained increasing attention from an educational and social perspective with the huge expansion of user interactions due to the Web’s significant improvement. The connection between an opinion target’s polarity scores and other aspects of the content is defined by aspect-based sentiment analysis. Identifying aspects and determining their different polarities is quite complicated because they are frequently implicit. To overcome these difficulties, efficient hybrid methods are used in aspect-based text classification in sentiment analysis. The existing process evaluates the aspects of polarity by using a Convolutional neural network, and it does not work with Big data. In this work, aspect-based text classification and attention mechanisms are used to assist in filtering out irrelevant information and quickly locating the essential features in big data. Initially, the data is collected, and then the data is preprocessed by using Tokenization, Stop word removal, Stemming, and Lemmatization. After preprocessing, the features are vectorized and extracted using Bag-of-Words and TF-IDF. Then, the extracted features are given into word embeddings by GloVe and Word2vec. It uses Deep Recurrent based Bidirectional Long Short Term Memory (RUBiLSTM) for aspect-based sentiment analysis. The RU-Bi-LSTM method integrates aspect-based embeddings and an attention mechanism for text classification. The attention mechanism focuses on more crucial aspects and the bidirectional LSTM to maintain context in both ways. Finally, the binary and ternary classification outcomes are obtained using the final dense softmax output layer. The proposed RU-BiLSTM uses four reviews and two Twitter datasets. The results of the studies demonstrate the efficacy of the RU-BiLSTM model, which outperformed aspect-based classifications on lengthy reviews and short tweets in terms of evaluation."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 314 ;
+    prism:pageCount 15 ;
+    prism:startingPage 299 ;
+    datacite:doi "10.12694/scpe.v24i3.2122"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2122"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2122> .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Nellore Geethanjali"^^xsd:string ;
+    foaf:name " Nellore Geethanjali"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Yelisetti"^^xsd:string ;
+    foaf:givenName "Sandeep"^^xsd:string ;
+    foaf:name "Sandeep Yelisetti"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section16 ;
+                    co:nextItem [ co:itemContent :section49 ;
+                            co:nextItem [ co:itemContent :section60 ] ] ] ] ;
+    po:contains :section0,
+        :section16,
+        :section49,
+        :section60 .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "Department of Computer Science Technology, Sri Krishnadevaraya University, Ananthapuram, India"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF26 a deo:Reference ;
+    dcterms:references :BIBREF26 ;
+    c4o:hasContent "[27]" .
+
+:referenceToBIBREF27 a deo:Reference ;
+    dcterms:references :BIBREF27 ;
+    c4o:hasContent "[28]" .
+
+:referenceToBIBREF28 a deo:Reference ;
+    dcterms:references :BIBREF28 ;
+    c4o:hasContent "[29]" .
+
+:referenceToBIBREF29 a deo:Reference ;
+    dcterms:references :BIBREF29 ;
+    c4o:hasContent "[30]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF30 a deo:Reference ;
+    dcterms:references :BIBREF30 ;
+    c4o:hasContent "[31]" .
+
+:referenceToBIBREF32 a deo:Reference ;
+    dcterms:references :BIBREF32 ;
+    c4o:hasContent "[33]" .
+
+:referenceToBIBREF33 a deo:Reference ;
+    dcterms:references :BIBREF33 ;
+    c4o:hasContent "[34]" .
+
+:referenceToBIBREF34 a deo:Reference ;
+    dcterms:references :BIBREF34 ;
+    c4o:hasContent "[35]" .
+
+:referenceToBIBREF35 a deo:Reference ;
+    dcterms:references :BIBREF35 ;
+    c4o:hasContent "[36]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel16 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel19 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel21 a doco:SectionLabel ;
+    c4o:hasContent "3.3.1." .
+
+:sectionLabel24 a doco:SectionLabel ;
+    c4o:hasContent "3.3.2." .
+
+:sectionLabel25 a doco:SectionLabel ;
+    c4o:hasContent "3.3.3." .
+
+:sectionLabel26 a doco:SectionLabel ;
+    c4o:hasContent "3.4." .
+
+:sectionLabel27 a doco:SectionLabel ;
+    c4o:hasContent "3.4.1." .
+
+:sectionLabel39 a doco:SectionLabel ;
+    c4o:hasContent "3.5.2." .
+
+:sectionLabel49 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel54 a doco:SectionLabel ;
+    c4o:hasContent "4.2." .
+
+:sectionLabel6 a doco:SectionLabel ;
+    c4o:hasContent "1.1." .
+
+:sectionLabel60 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel7 a doco:SectionLabel ;
+    c4o:hasContent "1.2." .
+
+:sectionLabel9 a doco:SectionLabel ;
+    c4o:hasContent "1.3." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle16 a doco:SectionTitle ;
+    c4o:hasContent "Proposed Methodology. The proposed method for Aspect-based text classification uses the Attention" .
+
+:sectionTitle19 a doco:SectionTitle ;
+    c4o:hasContent "Data Preprocessing." .
+
+:sectionTitle21 a doco:SectionTitle ;
+    c4o:hasContent "TF-IDF." .
+
+:sectionTitle24 a doco:SectionTitle ;
+    c4o:hasContent "TF-IDF Keyword Table." .
+
+:sectionTitle25 a doco:SectionTitle ;
+    c4o:hasContent "Bag-of-Words." .
+
+:sectionTitle26 a doco:SectionTitle ;
+    c4o:hasContent "Word Embeddings." .
+
+:sectionTitle27 a doco:SectionTitle ;
+    c4o:hasContent "GloVE ." .
+
+:sectionTitle39 a doco:SectionTitle ;
+    c4o:hasContent "Attention mechanism with Bidirectional Network." .
+
+:sectionTitle49 a doco:SectionTitle ;
+    c4o:hasContent "Result Analysis." .
+
+:sectionTitle54 a doco:SectionTitle ;
+    c4o:hasContent "Evaluation results of Long Reviews." .
+
+:sectionTitle6 a doco:SectionTitle ;
+    c4o:hasContent "Motivation." .
+
+:sectionTitle60 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "Objectives of the study." .
+
+:sectionTitle9 a doco:SectionTitle ;
+    c4o:hasContent "Contributions of this study." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF25 ;
+                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF26 ;
+                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF27 ;
+                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF28 ;
+                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF29 ;
+                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF30 ;
+                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF31 ;
+                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF32 ;
+                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF33 ;
+                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF34 ;
+                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF35 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF26,
+        :BIBREF27,
+        :BIBREF28,
+        :BIBREF29,
+        :BIBREF3,
+        :BIBREF30,
+        :BIBREF31,
+        :BIBREF32,
+        :BIBREF33,
+        :BIBREF34,
+        :BIBREF35,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF31 a deo:Reference ;
+    dcterms:references :BIBREF31 ;
+    c4o:hasContent "[32]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:section0 a doco:Section ;
+    co:firstItem [ co:itemContent :section6 ;
+            co:nextItem [ co:itemContent :section7 ;
+                    co:nextItem [ co:itemContent :section9 ] ] ] ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF2,
+        :referenceToBIBREF27,
+        :referenceToBIBREF29,
+        :referenceToBIBREF30,
+        :referenceToBIBREF31,
+        :referenceToBIBREF32,
+        :referenceToBIBREF6,
+        :referenceToBIBREF8,
+        :section6,
+        :section7,
+        :section9,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section16 a doco:Section ;
+    co:firstItem [ co:itemContent :section19 ;
+            co:nextItem [ co:itemContent :section26 ] ] ;
+    po:contains :referenceToBIBREF9,
+        :section19,
+        :section26,
+        :sectionLabel16 ;
+    po:containsAsHeader :sectionTitle16 .
+
+:section19 a doco:Section ;
+    co:firstItem [ co:itemContent :section21 ;
+            co:nextItem [ co:itemContent :section24 ;
+                    co:nextItem [ co:itemContent :section25 ] ] ] ;
+    po:contains :section21,
+        :section24,
+        :section25,
+        :sectionLabel19 ;
+    po:containsAsHeader :sectionTitle19 .
+
+:section21 a doco:Section ;
+    po:contains :sectionLabel21 ;
+    po:containsAsHeader :sectionTitle21 .
+
+:section24 a doco:Section ;
+    po:contains :sectionLabel24 ;
+    po:containsAsHeader :sectionTitle24 .
+
+:section25 a doco:Section ;
+    po:contains :sectionLabel25 ;
+    po:containsAsHeader :sectionTitle25 .
+
+:section26 a doco:Section ;
+    co:firstItem [ co:itemContent :section27 ;
+            co:nextItem [ co:itemContent :section39 ] ] ;
+    po:contains :section27,
+        :section39,
+        :sectionLabel26 ;
+    po:containsAsHeader :sectionTitle26 .
+
+:section27 a doco:Section ;
+    po:contains :sectionLabel27 ;
+    po:containsAsHeader :sectionTitle27 .
+
+:section39 a doco:Section ;
+    po:contains :sectionLabel39 ;
+    po:containsAsHeader :sectionTitle39 .
+
+:section49 a doco:Section ;
+    co:firstItem [ co:itemContent :section54 ] ;
+    po:contains :section54,
+        :sectionLabel49 ;
+    po:containsAsHeader :sectionTitle49 .
+
+:section54 a doco:Section ;
+    po:contains :sectionLabel54 ;
+    po:containsAsHeader :sectionTitle54 .
+
+:section6 a doco:Section ;
+    po:contains :sectionLabel6 ;
+    po:containsAsHeader :sectionTitle6 .
+
+:section60 a doco:Section ;
+    po:contains :sectionLabel60 ;
+    po:containsAsHeader :sectionTitle60 .
+
+:section7 a doco:Section ;
+    po:contains :sectionLabel7 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:section9 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :referenceToBIBREF23,
+        :referenceToBIBREF24,
+        :referenceToBIBREF25,
+        :referenceToBIBREF26,
+        :referenceToBIBREF28,
+        :referenceToBIBREF3,
+        :referenceToBIBREF31,
+        :referenceToBIBREF33,
+        :referenceToBIBREF34,
+        :referenceToBIBREF35,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF7,
+        :referenceToBIBREF9,
+        :sectionLabel9 ;
+    po:containsAsHeader :sectionTitle9 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "A comprehensive survey of arabic sentiment analysis, Information processing & management" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Al-Ayyoub" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Khamaiseh" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Jararweh" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Al-Kabi" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 342 ;
+    bibo:pageStart 320 ;
+    bibo:volume "56" ;
+    c4o:hasContent "M. Al-Ayyoub, A. A. Khamaiseh, Y. Jararweh, and M. N. Al-Kabi, A comprehensive survey of arabic sentiment analysis, Information processing & management, 56 (2019), pp. 320-342." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Computer Communications" ] ;
+    dcterms:title "Social media sentiment analysis through parallel dilated convolutional neural network for smart city applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alam" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Abid" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Guangpei" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yunrong" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 137 ;
+    bibo:pageStart 129 ;
+    bibo:volume "154" ;
+    c4o:hasContent "M. Alam, F. Abid, C. Guangpei, and L. Yunrong, Social media sentiment analysis through parallel dilated convolutional neural network for smart city applications, Computer Communications, 154 (2020), pp. 129-137." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Applied Sciences" ] ;
+    dcterms:title "Short text aspect-based sentiment analysis based on cnn+ bigru" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Luo" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:volume "12" ;
+    c4o:hasContent "Z. Gao, Z. Li, J. Luo, and X. Li, Short text aspect-based sentiment analysis based on cnn+ bigru, Applied Sciences, 12 (2022), p. 2707." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:publisher [ foaf:name "Applied soft computing" ] ;
+    dcterms:title "Topic detection and sentiment analysis in twitter content related to covid-19 from brazil and the usa" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Garcia" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Berton" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:issue "2021" ;
+    bibo:volume "101" ;
+    c4o:hasContent "K. Garcia and L. Berton, Topic detection and sentiment analysis in twitter content related to covid-19 from brazil and the usa, Applied soft computing, 101 (2021), p. 107057." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "The impact of translating resource-rich datasets to low-resource languages through multi-lingual text processing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ghafoor" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Imran" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Daudpota" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kastrati" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Batra" ;
+                    foaf:givenname "R" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Wani" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 124490 ;
+    bibo:pageStart 124478 ;
+    bibo:volume "9" ;
+    c4o:hasContent "A. Ghafoor, A. S. Imran, S. M. Daudpota, Z. Kastrati, R. Batra, M. A. Wani, et al., The impact of translating resource-rich datasets to low-resource languages through multi-lingual text processing, IEEE Access, 9 (2021), pp. 124478- 124490." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Ieee Access" ] ;
+    dcterms:title "Sentiment classification using a single-layered bilstm model" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hameed" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Garcia-Zapirain" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 74001 ;
+    bibo:pageStart 73992 ;
+    bibo:volume "8" ;
+    c4o:hasContent "Z. Hameed and B. Garcia-Zapirain, Sentiment classification using a single-layered bilstm model, Ieee Access, 8 (2020), pp. 73992-74001." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Artificial intelligence review" ] ;
+    dcterms:title "A survey on classification techniques for opinion mining and sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hemmatian" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sohrabi" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 1545 ;
+    bibo:pageStart 1495 ;
+    bibo:volume "52" ;
+    c4o:hasContent "F. Hemmatian and M. K. Sohrabi, A survey on classification techniques for opinion mining and sentiment analysis, Artificial intelligence review, 52 (2019), pp. 1495-1545." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Comput. Sci" ] ;
+    dcterms:title "Chinese ship fault relation extraction method based on bidirectional gru neural network and attention mechanism" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hou" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 158 ;
+    bibo:pageStart 154 ;
+    bibo:volume "48" ;
+    c4o:hasContent "T. Hou and L. Zhou, Chinese ship fault relation extraction method based on bidirectional gru neural network and attention mechanism, Comput. Sci, 48 (2021), pp. 154-158." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "Cross-cultural polarity and emotion detection using sentiment analysis and deep learning on covid-19 related tweets" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Imran" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Daudpota" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kastrati" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Batra" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 181090 ;
+    bibo:pageStart 181074 ;
+    bibo:volume "8" ;
+    c4o:hasContent "A. S. Imran, S. M. Daudpota, Z. Kastrati, and R. Batra, Cross-cultural polarity and emotion detection using sentiment analysis and deep learning on covid-19 related tweets, Ieee Access, 8 (2020), pp. 181074-181090." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Applied Sciences" ] ;
+    dcterms:title "Sentiment analysis of students' feedback with nlp and deep learning: A systematic mapping study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kastrati" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dalipi" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Imran" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Nuci" ;
+                    foaf:givenname "K" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wani" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:volume "11" ;
+    c4o:hasContent "Z. Kastrati, F. Dalipi, A. S. Imran, K. Pireva Nuci, and M. A. Wani, Sentiment analysis of students' feedback with nlp and deep learning: A systematic mapping study, Applied Sciences, 11 (2021), p. 3986." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Textual backdoor attack for the text classification system, Security and Communication Networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kwon" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 11 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "H. Kwon and S. Lee, Textual backdoor attack for the text classification system, Security and Communication Networks, 2021 (2021), pp. 1-11." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Artificial Intelligence Review" ] ;
+    dcterms:title "Systematic reviews in sentiment analysis: a tertiary study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ligthart" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Catal" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tekinerdogan" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 57 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "A. Ligthart, C. Catal, and B. Tekinerdogan, Systematic reviews in sentiment analysis: a tertiary study, Artificial Intelligence Review, (2021), pp. 1-57." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Computers in Biology and Medicine" ] ;
+    dcterms:title "Multi-perspectives systematic review on the applications of sentiment analysis for vaccine hesitancy" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alamoodi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Zaidan" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zaidan" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Al-Masawa" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Taresh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Noman" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Ahmaro" ;
+                    foaf:givenname "I" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Garfan" ;
+                    foaf:givenname "S" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "J" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Ahmed" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:volume "139" ;
+    c4o:hasContent "A. H. Alamoodi, B. Zaidan, M. Al-Masawa, S. M. Taresh, S. Noman, I. Y. Ahmaro, S. Garfan, J. Chen, M. A. Ahmed, A. Zaidan, et al., Multi-perspectives systematic review on the applications of sentiment analysis for vaccine hesitancy, Computers in Biology and Medicine, 139 (2021), p. 104957." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "2017 international conference on intelligent computing and control" ] ;
+    dcterms:title "Identification of artificially ripened fruits using smart phones" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Maheswaran" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sathesh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Priyadharshini" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Vivek" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "S. Maheswaran, S. Sathesh, P. Priyadharshini, and B. Vivek, Identification of artificially ripened fruits using smart phones, in 2017 international conference on intelligent computing and control (I2C2), IEEE, 2017, pp. 1-6." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "2017 International Conference on Intelligent Computing and Control" ] ;
+    dcterms:title "Automated coconut tree climber" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Maheswaran" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sathesh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Saran" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Vivek" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "S. Maheswaran, S. Sathesh, G. Saran, and B. Vivek, Automated coconut tree climber, in 2017 International Conference on Intelligent Computing and Control (I2C2), IEEE, 2017, pp. 1-6." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Discriminative feature spamming technique for roman urdu sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mehmood" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Essam" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shafi" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Malik" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 48002 ;
+    bibo:pageStart 47991 ;
+    bibo:volume "7" ;
+    c4o:hasContent "K. Mehmood, D. Essam, K. Shafi, and M. K. Malik, Discriminative feature spamming technique for roman urdu sentiment analysis, IEEE Access, 7 (2019), pp. 47991-48002." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Gated recurrent unit with multilingual universal sentence encoder for arabic aspect-based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mohammad" ;
+                    foaf:givenname "A.-S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hammad" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sa'ad" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Saja" ;
+                    foaf:givenname "A.-T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Cambria" ;
+                    foaf:givenname "E" ] ] ;
+    c4o:hasContent "A.-S. Mohammad, M. M. Hammad, A. Sa'ad, A.-T. Saja, and E. Cambria, Gated recurrent unit with multilingual universal sentence encoder for arabic aspect-based sentiment analysis, Knowledge-Based Systems, (2021), p. 107540." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Applied Soft Computing" ] ;
+    dcterms:title "Deep learning for arabic subjective sentiment analysis: Challenges and research opportunities" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nassif" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Elnagar" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shahin" ;
+                    foaf:givenname "I" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Henno" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:volume "98" ;
+    c4o:hasContent "A. B. Nassif, A. Elnagar, I. Shahin, and S. Henno, Deep learning for arabic subjective sentiment analysis: Challenges and research opportunities, Applied Soft Computing, 98 (2021), p. 106836." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Arabian Journal for Science and Engineering" ] ;
+    dcterms:title "Deep learning based sentiment analysis using convolution neural network" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Rani" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 3314 ;
+    bibo:pageStart 3305 ;
+    bibo:volume "44" ;
+    c4o:hasContent "S. Rani and P. Kumar, Deep learning based sentiment analysis using convolution neural network, Arabian Journal for Science and Engineering, 44 (2019), pp. 3305-3314." .
+
+:BIBREF26 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "The Journal of Academic Librarianship" ] ;
+    dcterms:title "The role of roman urdu in multilingual information retrieval: A regional study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Safdar" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bajwa" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hussain" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Abdullah" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Safdar" ;
+                    foaf:givenname "K" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Draz" ;
+                    foaf:givenname "U" ] ] ;
+    bibo:volume "46" ;
+    c4o:hasContent "Z. Safdar, R. S. Bajwa, S. Hussain, H. B. Abdullah, K. Safdar, and U. Draz, The role of roman urdu in multilingual information retrieval: A regional study, The Journal of Academic Librarianship, 46 (2020), p. 102258." .
+
+:BIBREF27 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Applied System Innovation" ] ;
+    dcterms:title "An improved model for analyzing textual sentiment based on a deep neural network using multi-head attention mechanism" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sharaf Al-Deen" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zeng" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Al-Sabri" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hekmat" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "4" ;
+    c4o:hasContent "H. S. Sharaf Al-deen, Z. Zeng, R. Al-sabri, and A. Hekmat, An improved model for analyzing textual sentiment based on a deep neural network using multi-head attention mechanism, Applied System Innovation, 4 (2021), p. 85." .
+
+:BIBREF28 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "2018 international conference on intelligent computing and communication for smart World" ] ;
+    dcterms:title "Low-cost raspberry pi oscilloscope" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Vivek" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Maheswaran" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Keerthana" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sathesh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Bringeraj" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Sri" ;
+                    foaf:givenname "R" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Sulthana" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 390 ;
+    bibo:pageStart 386 ;
+    c4o:hasContent "B. Vivek, S. Maheswaran, P. Keerthana, S. Sathesh, S. Bringeraj, R. A. Sri, and S. A. Sulthana, Low-cost raspberry pi oscilloscope, in 2018 international conference on intelligent computing and communication for smart World (I2C2SW), IEEE, 2018, pp. 386-390." .
+
+:BIBREF29 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Journal of Computer Applications" ] ;
+    dcterms:title "Chinese text sentiment analysis based on cnn-bigru network with attention mechanism" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Cai" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Lu" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:volume "39" ;
+    c4o:hasContent "L. Wang, C. Liu, D. CAI, and T. Lu, Chinese text sentiment analysis based on cnn-bigru network with attention mechanism, Journal of Computer Applications, 39 (2019), p. 2841." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Results in physics" ] ;
+    dcterms:title "Time series forecasting of new cases and new deaths rate for covid-19 using deep learning methods" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ayoobi" ;
+                    foaf:givenname "N" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Goni" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sharifrazi" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Alizadehsani" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Shoeibi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Gorriz" ;
+                    foaf:givenname "J" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Moosaei" ;
+                    foaf:givenname "H" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Khosravi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Nahavandi" ;
+                    foaf:givenname "S" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Chofreh" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "27" ;
+    c4o:hasContent "N. Ayoobi, D. Sharifrazi, R. Alizadehsani, A. Shoeibi, J. M. Gorriz, H. Moosaei, A. Khosravi, S. Nahavandi, A. G. Chofreh, F. A. Goni, et al., Time series forecasting of new cases and new deaths rate for covid-19 using deep learning methods, Results in physics, 27 (2021), p. 104495." .
+
+:BIBREF30 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Appl. Res. Comput" ] ;
+    dcterms:title "Text sentiment classification model based on bigru-attention neural network" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Qi" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Meng" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 3564 ;
+    bibo:pageStart 3558 ;
+    bibo:volume "36" ;
+    c4o:hasContent "W. Wang, Y. Sun, Q. Qi, and X. Meng, Text sentiment classification model based on bigru-attention neural network, Appl. Res. Comput, 36 (2019), pp. 3558-3564." .
+
+:BIBREF31 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Artificial Intelligence Review" ] ;
+    dcterms:title "Sentiment analysis using deep learning architectures: a review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yadav" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Vishwakarma" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 4385 ;
+    bibo:pageStart 4335 ;
+    bibo:volume "53" ;
+    c4o:hasContent "A. Yadav and D. K. Vishwakarma, Sentiment analysis using deep learning architectures: a review, Artificial Intelligence Review, 53 (2020), pp. 4335-4385." .
+
+:BIBREF32 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Connection Science" ] ;
+    dcterms:title "A multi-dimension traceable privacy-preserving prevention and control scheme of the covid-19 epidemic based on blockchain" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yao" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jing" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 1677 ;
+    bibo:pageStart 1654 ;
+    bibo:volume "34" ;
+    c4o:hasContent "S. Yao, P. Jing, P. Li, and J. Chen, A multi-dimension traceable privacy-preserving prevention and control scheme of the covid-19 epidemic based on blockchain, Connection Science, 34 (2022), pp. 1654-1677." .
+
+:BIBREF33 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Knowledge and Information Systems" ] ;
+    dcterms:title "A survey of sentiment analysis in social media" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yue" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "W" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zuo" ;
+                    foaf:givenname "W" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Yin" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 663 ;
+    bibo:pageStart 617 ;
+    bibo:volume "60" ;
+    c4o:hasContent "L. Yue, W. Chen, X. Li, W. Zuo, and M. Yin, A survey of sentiment analysis in social media, Knowledge and Information Systems, 60 (2019), pp. 617-663." .
+
+:BIBREF34 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Chinese Journal of Mechanical Engineering" ] ;
+    dcterms:title "Opportunities and challenges: Classification of skin disease based on deep learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Luo" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Ma" ;
+                    foaf:givenname "J" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Ma" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 14 ;
+    bibo:pageStart 1 ;
+    bibo:volume "34" ;
+    c4o:hasContent "B. Zhang, X. Zhou, Y. Luo, H. Zhang, H. Yang, J. Ma, and L. Ma, Opportunities and challenges: Classification of skin disease based on deep learning, Chinese Journal of Mechanical Engineering, 34 (2021), pp. 1-14." .
+
+:BIBREF35 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "J. Vib. Shock" ] ;
+    dcterms:title "Rolling bearing fault mode recognition based on 2d image and cnn-bigru" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 201 ;
+    bibo:pageStart 194 ;
+    bibo:volume "40" ;
+    c4o:hasContent "X. Zhang, M. Zhang, X. Li, et al., Rolling bearing fault mode recognition based on 2d image and cnn-bigru, J. Vib. Shock, 40 (2021), pp. 194-201." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Waves in Random and Complex Media" ] ;
+    dcterms:title "Multi-layer artificial neural network modeling of entropy generation on mhd stagnation point flow of cross-nanofluid" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bala Anki Reddy" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jakeer" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Thameem" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Basha" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Reddy" ;
+                    foaf:givenname "T" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ] ] ;
+    bibo:pageEnd 28 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "P. Bala Anki Reddy, S. Jakeer, H. Thameem Basha, S. R. Reddisekhar Reddy, and T. Mahesh Kumar, Multi-layer artificial neural network modeling of entropy generation on mhd stagnation point flow of cross-nanofluid, Waves in Random and Complex Media, (2022), pp. 1-28." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "A comprehensive survey on sentiment analysis: Approaches, challenges and trends" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Birjali" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kasri" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Beni-Hssane" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "226" ;
+    c4o:hasContent "M. Birjali, M. Kasri, and A. Beni-Hssane, A comprehensive survey on sentiment analysis: Approaches, challenges and trends, Knowledge-Based Systems, 226 (2021), p. 107134." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Applied Sciences" ] ;
+    dcterms:title "Attention-based ru-bilstm sentiment analysis model for roman urdu" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chandio" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Imran" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Bakhtyar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Daudpota" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Baber" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "12" ;
+    c4o:hasContent "B. A. Chandio, A. S. Imran, M. Bakhtyar, S. M. Daudpota, and J. Baber, Attention-based ru-bilstm sentiment analysis model for roman urdu, Applied Sciences, 12 (2022), p. 3641." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Computers in Human Behavior" ] ;
+    dcterms:title "Understanding emotions in text using deep learning and big data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chatterjee" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gupta" ;
+                    foaf:givenname "U" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chinnakotla" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Srikanth" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Galley" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 317 ;
+    bibo:pageStart 309 ;
+    bibo:volume "93" ;
+    c4o:hasContent "A. Chatterjee, U. Gupta, M. K. Chinnakotla, R. Srikanth, M. Galley, and P. Agrawal, Understanding emotions in text using deep learning and big data, Computers in Human Behavior, 93 (2019), pp. 309-317." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "J. Comput. Res. Dev" ] ;
+    dcterms:title "Text sentiment orientation analysis of multi-channels cnn and bigru based on attention mechanism" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cheng" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yao" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Xiang" ;
+                    foaf:givenname "G" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "H" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Feng" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Cai" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 2595 ;
+    bibo:pageStart 2583 ;
+    bibo:volume "57" ;
+    c4o:hasContent "Y. Cheng, L. Yao, G. Zhang, T. Tang, G. Xiang, H. Chen, Y. Feng, and Z. Cai, Text sentiment orientation analysis of multi-channels cnn and bigru based on attention mechanism, J. Comput. Res. Dev, 57 (2020), pp. 2583-2595." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Information Sciences" ] ;
+    dcterms:title "Ensembles of feature selectors for dealing with class-imbalanced datasets: A proposal and comparative study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "De Haro-García" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cerruela-García" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "García-Pedrajas" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 116 ;
+    bibo:pageStart 89 ;
+    bibo:volume "540" ;
+    c4o:hasContent "A. de Haro-García, G. Cerruela-García, and N. García-Pedrajas, Ensembles of feature selectors for dealing with class-imbalanced datasets: A proposal and comparative study, Information Sciences, 540 (2020), pp. 89-116." .
+

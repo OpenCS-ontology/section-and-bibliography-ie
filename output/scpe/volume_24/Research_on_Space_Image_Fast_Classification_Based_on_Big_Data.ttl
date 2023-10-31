@@ -1,0 +1,863 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Big data analysis"^^xsd:string,
+        "Classification accuracy"^^xsd:string,
+        "Classification effect"^^xsd:string,
+        "Convolutional neural network"^^xsd:string,
+        "Image classification"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1 ] ;
+    dcterms:title "Research on Space Image Fast Classification Based on Big Data"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "In order to improve the accuracy and effect of space image classification, the author proposes a space image classification method based on Big data analysis, aiming at the shortcomings of low accuracy and long time of current image classification. First, analyze the current research progress of image classification, find out the shortcomings of different classification methods, then collect aerospace images, preprocess the images, and use big data analysis technology to establish image classifiers, image classification was performed using an image classifier, and finally simulation experiments were conducted with other methods for image classification. The results indicate that: The average classification time of this method for aerospace images is 3.5 minutes, which saves 14 minutes and 29 minutes compared to traditional method 1 and traditional method 2, respectively. This indicates that this method has the shortest image classification time and improves the classification efficiency of aerospace images. This method has been proven to have high accuracy in image classification, the shortest classification time, and significant advantages compared to other image classification methods."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 640 ;
+    prism:pageCount 9 ;
+    prism:startingPage 631 ;
+    datacite:doi "10.12694/scpe.v24i3.2423"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2423"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2423> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Chen"^^xsd:string ;
+    foaf:givenName "Peng"^^xsd:string ;
+    foaf:name "Peng Chen"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Wang"^^xsd:string ;
+    foaf:givenName "Yunyan"^^xsd:string ;
+    foaf:name "Yunyan Wang"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section1 ;
+                    co:nextItem [ co:itemContent :section5 ] ] ] ;
+    po:contains :section0,
+        :section1,
+        :section5 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "School of Electrical and Electronic Engineering, Hubei University of Technology, Wuhan, 430072 China"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "School of Electrical and Electronic Engineering, Hubei University of Technology, Wuhan, 430072 China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel1 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel10 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel31 a doco:SectionLabel ;
+    c4o:hasContent "3.3." .
+
+:sectionLabel39 a doco:SectionLabel ;
+    c4o:hasContent "4.1" .
+
+:sectionLabel5 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel52 a doco:SectionLabel ;
+    c4o:hasContent "4.1." .
+
+:sectionLabel53 a doco:SectionLabel ;
+    c4o:hasContent "4.2." .
+
+:sectionLabel54 a doco:SectionLabel ;
+    c4o:hasContent "4.4" .
+
+:sectionLabel55 a doco:SectionLabel ;
+    c4o:hasContent "4.5." .
+
+:sectionLabel6 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle1 a doco:SectionTitle ;
+    c4o:hasContent "References." .
+
+:sectionTitle10 a doco:SectionTitle ;
+    c4o:hasContent "CNN training process." .
+
+:sectionTitle31 a doco:SectionTitle ;
+    c4o:hasContent "Space image classification process based on Big data analysis." .
+
+:sectionTitle39 a doco:SectionTitle ;
+    c4o:hasContent "Experimental subjects" .
+
+:sectionTitle5 a doco:SectionTitle ;
+    c4o:hasContent "Space image classification method based on" .
+
+:sectionTitle52 a doco:SectionTitle ;
+    c4o:hasContent "Experimental subjects." .
+
+:sectionTitle53 a doco:SectionTitle ;
+    c4o:hasContent "Image classification accuracy." .
+
+:sectionTitle54 a doco:SectionTitle ;
+    c4o:hasContent "Space image classification time" .
+
+:sectionTitle55 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle6 a doco:SectionTitle ;
+    c4o:hasContent "Composition of Convolutional neural network." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 1952 ;
+    dcterms:publisher [ foaf:name "Journal of Physics Conference Series" ] ;
+    dcterms:title "Research on grammar checking system using computer big data and convolutional neural network constructing classification model" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:issue "4" ;
+    c4o:hasContent "Sun, F. , Zhang, J. . (2021). Research on grammar checking system using computer big data and convolutional neural network constructing classification model. Journal of Physics Conference Series, 1952(4), 042097." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section1 a doco:Section ;
+    po:contains :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel1 ;
+    po:containsAsHeader :sectionTitle1 .
+
+:section10 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :sectionLabel10 ;
+    po:containsAsHeader :sectionTitle10 .
+
+:section31 a doco:Section ;
+    po:contains :referenceToBIBREF13,
+        :sectionLabel31 ;
+    po:containsAsHeader :sectionTitle31 .
+
+:section39 a doco:Section ;
+    po:contains :referenceToBIBREF11,
+        :referenceToBIBREF15,
+        :sectionLabel39 ;
+    po:containsAsHeader :sectionTitle39 .
+
+:section5 a doco:Section ;
+    co:firstItem [ co:itemContent :section6 ;
+            co:nextItem [ co:itemContent :section10 ;
+                    co:nextItem [ co:itemContent :section31 ;
+                            co:nextItem [ co:itemContent :section39 ;
+                                    co:nextItem [ co:itemContent :section52 ;
+                                            co:nextItem [ co:itemContent :section53 ;
+                                                    co:nextItem [ co:itemContent :section54 ;
+                                                            co:nextItem [ co:itemContent :section55 ] ] ] ] ] ] ] ] ;
+    po:contains :section10,
+        :section31,
+        :section39,
+        :section52,
+        :section53,
+        :section54,
+        :section55,
+        :section6,
+        :sectionLabel5 ;
+    po:containsAsHeader :sectionTitle5 .
+
+:section52 a doco:Section ;
+    po:contains :referenceToBIBREF16,
+        :sectionLabel52 ;
+    po:containsAsHeader :sectionTitle52 .
+
+:section53 a doco:Section ;
+    po:contains :referenceToBIBREF17,
+        :sectionLabel53 ;
+    po:containsAsHeader :sectionTitle53 .
+
+:section54 a doco:Section ;
+    po:contains :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :sectionLabel54 ;
+    po:containsAsHeader :sectionTitle54 .
+
+:section55 a doco:Section ;
+    po:contains :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :sectionLabel55 ;
+    po:containsAsHeader :sectionTitle55 .
+
+:section6 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :sectionLabel6 ;
+    po:containsAsHeader :sectionTitle6 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Physics: Conference Series" ] ;
+    dcterms:title "Folk song computer big data classification and analysis research based on national style characteristics" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:issue "3" ;
+    bibo:pageEnd 32122 ;
+    bibo:pageStart 32117 ;
+    bibo:volume "1744" ;
+    c4o:hasContent "Yang, J. . (2021). Folk song computer big data classification and analysis research based on national style characteristics. Journal of Physics: Conference Series, 1744(3), 032117 (5pp)." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Interconnection Networks" ] ;
+    dcterms:title "Research on block image texture retrieval method based on depth hash" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 457 ;
+    bibo:pageStart 456 ;
+    bibo:volume "58" ;
+    c4o:hasContent "Ding, J. , Zhao, G. , Huang, J. . (2022). Research on block image texture retrieval method based on depth hash. Journal of Interconnection Networks,58(1),456-457." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IOP Conference Series: Materials Science and Engineering" ] ;
+    dcterms:title "Research on 3d reconstruction method of wear particle dynamic image based on multi contour space mapping" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zuo" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Fei" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Jiang" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:issue "1" ;
+    bibo:volume "1207" ;
+    c4o:hasContent "Wang, H. , Zuo, H. , Liu, Z. , Fei, H. , Liu, Y. , Jiang, Z. . (2021). Research on 3d reconstruction method of wear particle dynamic image based on multi contour space mapping. IOP Conference Series: Materials Science and Engineering, 1207(1), 012017." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Big Data and Cognitive Computing" ] ;
+    dcterms:title "Big remote sensing image classification based on deep learning extraction features and distributed spark frameworks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chebbi" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mellouli" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Farah" ;
+                    foaf:givenname "I" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Lamolle" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:issue "2" ;
+    bibo:volume "5" ;
+    c4o:hasContent "Chebbi, I. , Mellouli, N. , Farah, I. R. , Lamolle, M. . (2021). Big remote sensing image classification based on deep learning extraction features and distributed spark frameworks. Big Data and Cognitive Computing, 5(2), 21." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Hyperspectral image database query based on big data analysis technology" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Qi" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:volume "275" ;
+    c4o:hasContent "Qi, B. . (2021). Hyperspectral image database query based on big data analysis technology. E3S Web of Conferences, 275(1), 03018." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Statistical modeling and simulation of online shopping customer loyalty based on machine learning and big data analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ko" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Fong" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Lai" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "H" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Hsieh" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 52 ;
+    bibo:pageStart 45 ;
+    bibo:volume "748" ;
+    c4o:hasContent "Huang, J. C. , Ko, P. C. , Fong, C. M. , Lai, S. M. , Chen, H. H. , Hsieh, C. T. . (2021). Statistical modeling and simulation of online shopping customer loyalty based on machine learning and big data analysis. Security and Communication Networks,748(1),45-52." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE internet of things journal" ] ;
+    dcterms:title "Fault diagnosis of power iot system based on improved q-kpca-rf using message data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jiang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ge" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:issue "8-11" ;
+    bibo:pageEnd 23 ;
+    bibo:pageStart 17 ;
+    bibo:volume "98" ;
+    c4o:hasContent "Jiang, H. , Chen, K. , Ge, Q. , Wang, Y. , Xu, J. , Li, C. . (2021). Fault diagnosis of power iot system based on improved q-kpca-rf using message data. IEEE internet of things journal,98(8-11),17-23." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Big Data Research" ] ;
+    dcterms:title "A survey on data-driven performance tuning for big data analytics platforms" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Rogério Luís De" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Costa" ;
+                    foaf:givenname "José" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Moreira" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Pintor" ;
+                    foaf:givenname "P" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Santos" ;
+                    foaf:givenname "V" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Sérgio" ;
+                    foaf:givenname "Lifschitz" ] ] ;
+    bibo:issue "8" ;
+    bibo:volume "66" ;
+    c4o:hasContent "Rogério Luís de C. Costa, José Moreira, Pintor, P. , Santos, V. D. , Sérgio Lifschitz. (2021). A survey on data-driven performance tuning for big data analytics platforms. Big Data Research, 66(8),100206." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of E-Health and Medical Communications (IJEHMC)" ] ;
+    dcterms:title "Performance analysis of machine learning algorithms for big data classification: ml and ai-based algorithms for big data analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Punia" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Stephan" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Deverajan" ;
+                    foaf:givenname "G" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Patan" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:issue "1" ;
+    bibo:volume "12" ;
+    c4o:hasContent "Punia, S. K. , Kumar, M. , Stephan, T. , Deverajan, G. G. , Patan, R. . (2021). Performance analysis of machine learning algorithms for big data classification: ml and ai-based algorithms for big data analysis. International Journal of E-Health and Medical Communications (IJEHMC), 12(1),96." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Identification and characterization of production-living-ecological space in a central urban area based on poi data: a case study for wuhan" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fu" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 63 ;
+    bibo:pageStart 58 ;
+    bibo:volume "34" ;
+    c4o:hasContent "Fu, C. , Tu, X. , Huang, A. . (2021). Identification and characterization of production-living-ecological space in a central urban area based on poi data: a case study for wuhan, china. Sustainability,34(14),58-63." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Wireless Communications and Mobile Computing" ] ;
+    dcterms:title "Intelligent recognition and teaching of english fuzzy texts based on fuzzy computing and big data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tsai" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 10 ;
+    bibo:pageStart 1 ;
+    bibo:volume "2021" ;
+    c4o:hasContent "Liu, L. , Tsai, S. B. . (2021). Intelligent recognition and teaching of english fuzzy texts based on fuzzy computing and big data. Wireless Communications and Mobile Computing, 2021(1), 1-10." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Physics: Conference Series" ] ;
+    dcterms:title "Research on anthrax toxin analysis based on big data mining technology" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Jiang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Liang" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 12006 ;
+    bibo:pageStart 12005 ;
+    bibo:volume "1774" ;
+    c4o:hasContent "Chen, J. , Li, H. , Jiang, H. , Liang, T. . (2021). Research on anthrax toxin analysis based on big data mining technology. Journal of Physics: Conference Series, 1774(1), 012005 (6pp)." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Wireless Communications and Mobile Computing" ] ;
+    dcterms:title "Electromagnetic environment portrait based on big data mining" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Guo" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:issue "3" ;
+    bibo:pageEnd 13 ;
+    bibo:pageStart 1 ;
+    bibo:volume "2021" ;
+    c4o:hasContent "Guo, L. , Wang, M. , Lin, Y. . (2021). Electromagnetic environment portrait based on big data mining. Wireless Communi- cations and Mobile Computing, 2021(3), 1-13." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Physics: Conference Series" ] ;
+    dcterms:title "Research on residual current warning technology based on big data analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xia" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhuang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Liao" ;
+                    foaf:givenname "B" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "1" ;
+    bibo:volume "2108" ;
+    c4o:hasContent "Li, Y. , Xia, C. , Zhuang, Y. , Liao, B. , Huang, S. . (2021). Research on residual current warning technology based on big data analysis. Journal of Physics: Conference Series, 2108(1), 012012." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Big Data Research" ] ;
+    dcterms:title "Image classification approach using machine learning and an industrial hadoop based data pipeline" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Koulali" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zaidani" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zaim" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:issue "9" ;
+    bibo:volume "24" ;
+    c4o:hasContent "Koulali, R. , Zaidani, H. , Zaim, M. . (2021). Image classification approach using machine learning and an industrial hadoop based data pipeline. Big Data Research, 24(9), 100184." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Wireless Communications and Mobile Computing" ] ;
+    dcterms:title "Research on the training model of e-commerce professionals based on big data analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xi" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Tsai" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 99 ;
+    bibo:pageStart 96 ;
+    bibo:volume "157" ;
+    c4o:hasContent "Lin, C. Y. , Xi, Z. , Gao, C. , Tsai, S. B. . (2021). Research on the training model of e-commerce professionals based on big data analysis. Wireless Communications and Mobile Computing,157(1),96-99." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of Information and Communication Technology" ] ;
+    dcterms:title "Research on fast de-duplication of text backup information in library database based on big data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ji" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:issue "1" ;
+    bibo:volume "19" ;
+    c4o:hasContent "Ji, L. (2021). Research on fast de-duplication of text backup information in library database based on big data. International Journal of Information and Communication Technology, 19(1), 76." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Technology in Society" ] ;
+    dcterms:title "Research on opinion polarization by big data analytics capabilities in online social networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Xing" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Qiu" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "He" ;
+                    foaf:givenname "W" ] ] ;
+    bibo:issue "8" ;
+    bibo:pageEnd 60 ;
+    bibo:pageStart 59 ;
+    bibo:volume "68" ;
+    c4o:hasContent "Xing, Y. , Wang, X. , Qiu, C. , Li, Y. , He, W. . (2022). Research on opinion polarization by big data analytics capabilities in online social networks. Technology in Society, 68(8),59-60." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Discrete Dynamics in Nature and Society" ] ;
+    dcterms:title "Research on data mining of sports wearable intelligent devices based on big data analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zong" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:issue "33" ;
+    bibo:pageEnd 759 ;
+    bibo:pageStart 749 ;
+    bibo:volume "187" ;
+    c4o:hasContent "Zong, X. , Zhang, C. , Wu, D. . (2022). Research on data mining of sports wearable intelligent devices based on big data analysis. Discrete Dynamics in Nature and Society,187(33),749-759." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Signal Processing" ] ;
+    dcterms:title "Research on classification method based on inaccurate image dataset cleaning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhengwenli" ;
+                    foaf:givenname "Wenjudu" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ninirao" ] ] ;
+    bibo:issue "7" ;
+    bibo:pageEnd 1554 ;
+    bibo:pageStart 1547 ;
+    bibo:volume "38" ;
+    c4o:hasContent "ZhengwenLI, WenjuDU, NiniRAO. (2022). Research on classification method based on inaccurate image dataset cleaning. Journal of Signal Processing, 38(7), 1547-1554." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Physics: Conference Series" ] ;
+    dcterms:title "Research on enterprise employee information system based on big data analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wan" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:issue "3" ;
+    bibo:pageEnd 32026 ;
+    bibo:pageStart 32025 ;
+    bibo:volume "1748" ;
+    c4o:hasContent "Wang, J. , Li, D. , Wang, Z. , Wan, T. . (2021). Research on enterprise employee information system based on big data analysis. Journal of Physics: Conference Series, 1748(3), 032025 (6pp)." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Physics: Conference Series" ] ;
+    dcterms:title "Modeling and algorithm research on identification of wrong wiring power supply region based on classification analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yu" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Su" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Tan" ;
+                    foaf:givenname "H" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:issue "1" ;
+    bibo:volume "2068" ;
+    c4o:hasContent "Li, Z. , Yu, L. , Liu, J. , Su, L. , Tan, H. , Zhao, J. , et al. (2021). Modeling and algorithm research on identification of wrong wiring power supply region based on classification analysis. Journal of Physics: Conference Series, 2068(1), 012036." .
+

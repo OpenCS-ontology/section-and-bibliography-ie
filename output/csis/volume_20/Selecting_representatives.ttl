@@ -1,0 +1,303 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1 ] ;
+    dcterms:title "Selecting representatives"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue """We use representatives to reduce complexity in many areas of life.\r
+Clusters are often replaced with their centre, and then these representatives are used to classify new objects.\r
+If the objects are described as a vector of real numbers, then the centre can be easily calculated.\r
+However, this method is unusable if only a similarity relation is given instead of coordinates of the object or the distances between the objects.\r
+Google can filter and rank relevant pages for a particular question; and here we follow a similar approach.\r
+The difference is that we have an undirected graph while the PageRank algorithm uses a directed one.\r
+In this article we show what conditions we set for our own ranking system. Following the description of the details of this method we demonstrate that it satisfies our criteria and how it selects the (mathematically proven) most typical elements of each cluster.\r
+Finally, we apply this method on several partitions of the natural numbers and on non-transitive tolerance relations to present the representatives of the numbers."""^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 6 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F95"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/95.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/95.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "12th International Workshop on Computational Optimization"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Nagy"^^xsd:string ;
+    foaf:givenName "Dávid"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Aszalós"^^xsd:string ;
+    foaf:givenName "László"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section6 ;
+                    co:nextItem [ co:itemContent :section22 ;
+                            co:nextItem [ co:itemContent :section23 ;
+                                    co:nextItem [ co:itemContent :section34 ;
+                                            co:nextItem [ co:itemContent :section44 ;
+                                                    co:nextItem [ co:itemContent :section48 ;
+                                                            co:nextItem [ co:itemContent :section56 ;
+                                                                    co:nextItem [ co:itemContent :section62 ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section22,
+        :section23,
+        :section34,
+        :section44,
+        :section48,
+        :section56,
+        :section6,
+        :section62 .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel22 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel44 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel6 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel62 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle22 a doco:SectionTitle ;
+    c4o:hasContent "OUR RANKING METHOD" .
+
+:sectionTitle23 a doco:SectionTitle ;
+    c4o:hasContent "A. Social ranking" .
+
+:sectionTitle34 a doco:SectionTitle ;
+    c4o:hasContent "B. Power-method" .
+
+:sectionTitle44 a doco:SectionTitle ;
+    c4o:hasContent "RANKS OF NUMBERS" .
+
+:sectionTitle48 a doco:SectionTitle ;
+    c4o:hasContent "A. Using optimal partition" .
+
+:sectionTitle56 a doco:SectionTitle ;
+    c4o:hasContent "B. Weakening the tolerance relation" .
+
+:sectionTitle6 a doco:SectionTitle ;
+    c4o:hasContent "THE PROPERTIES OF RANKING" .
+
+:sectionTitle62 a doco:SectionTitle ;
+    c4o:hasContent "CONCLUSION AND FURTHER WORK" .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "2015 Conference of the International Fuzzy Systems Association and the European Society for Fuzzy Logic and Technology" ] ;
+    dcterms:title "Rough classification in incomplete databases by correlation clustering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Aszalós" ;
+                    foaf:givenname "László" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mihálydeák" ;
+                    foaf:givenname "Tamás" ] ] ;
+    c4o:hasContent "László Aszalós and Tamás Mihálydeák. Rough classification in incom- plete databases by correlation clustering. In 2015 Conference of the International Fuzzy Systems Association and the European Society for Fuzzy Logic and Technology (IFSA-EUSFLAT-15). Atlantis Press, 2015." .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:section0 a doco:Section ;
+    po:contains :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section22 a doco:Section ;
+    po:contains :sectionLabel22 ;
+    po:containsAsHeader :sectionTitle22 .
+
+:section23 a doco:Section ;
+    po:containsAsHeader :sectionTitle23 .
+
+:section34 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF4 ;
+    po:containsAsHeader :sectionTitle34 .
+
+:section44 a doco:Section ;
+    po:contains :referenceToBIBREF2,
+        :referenceToBIBREF5,
+        :sectionLabel44 ;
+    po:containsAsHeader :sectionTitle44 .
+
+:section48 a doco:Section ;
+    po:contains :referenceToBIBREF2 ;
+    po:containsAsHeader :sectionTitle48 .
+
+:section56 a doco:Section ;
+    po:containsAsHeader :sectionTitle56 .
+
+:section6 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :sectionLabel6 ;
+    po:containsAsHeader :sectionTitle6 .
+
+:section62 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :sectionLabel62 ;
+    po:containsAsHeader :sectionTitle62 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 1992 ;
+    dcterms:publisher [ foaf:name "Dept. Math. Statist., James Cook Univ., North Queensland, Australia, Tech. Rep" ] ;
+    dcterms:title "Comparison of classifiers in high dimensional settings" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Aeberhard" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Coomans" ;
+                    foaf:givenname "O De" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Vel" ] ] ;
+    bibo:issue "02" ;
+    bibo:volume "92" ;
+    c4o:hasContent "S Aeberhard, D Coomans, and O De Vel. Comparison of classifiers in high dimensional settings. Dept. Math. Statist., James Cook Univ., North Queensland, Australia, Tech. Rep, 92(02), 1992." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 6th ACM conference on Electronic commerce" ] ;
+    dcterms:title "Ranking systems: the pagerank axioms" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Altman" ;
+                    foaf:givenname "Alon" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tennenholtz" ;
+                    foaf:givenname "Moshe" ] ] ;
+    bibo:pageEnd 8 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Alon Altman and Moshe Tennenholtz. Ranking systems: the pagerank axioms. In Proceedings of the 6th ACM conference on Electronic commerce, pages 1-8. ACM, 2005." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Indagationes Mathematicae" ] ;
+    dcterms:title "On a correlational clustering of integers" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Aszalós" ;
+                    foaf:givenname "László" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hajdu" ;
+                    foaf:givenname "Lajos" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Pethő" ;
+                    foaf:givenname "Attila" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 191 ;
+    bibo:pageStart 173 ;
+    bibo:volume "27" ;
+    c4o:hasContent "László Aszalós, Lajos Hajdu, and Attila Pethő. On a correlational clustering of integers. Indagationes Mathematicae, 27(1):173-191, 2016." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 1929 ;
+    dcterms:publisher [ foaf:name "ZAMM -Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik" ] ;
+    dcterms:title "Praktische verfahren der gleichungsauflösung" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mises" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pollaczek-Geiringer" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 164 ;
+    bibo:pageStart 152 ;
+    bibo:volume "9" ;
+    c4o:hasContent "R. V. Mises and H. Pollaczek-Geiringer. Praktische verfahren der gleichungsauflösung . ZAMM -Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik, 9(2):152-164, 1929." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2009 ;
+    dcterms:publisher [ foaf:name "Journal of Physics A: Mathematical and Theoretical" ] ;
+    dcterms:title "Correlation clustering on networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Néda" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sumi" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ercsey-Ravasz" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Varga" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Molnár" ;
+                    foaf:givenname "B" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Cseh" ;
+                    foaf:givenname "Gy" ] ] ;
+    bibo:issue "34" ;
+    bibo:volume "42" ;
+    c4o:hasContent "Z. Néda, R. Sumi, M. Ercsey-Ravasz, M. Varga, B. Molnár, and Gy. Cseh. Correlation clustering on networks. Journal of Physics A: Mathematical and Theoretical, 42(34):345003, 2009." .
+

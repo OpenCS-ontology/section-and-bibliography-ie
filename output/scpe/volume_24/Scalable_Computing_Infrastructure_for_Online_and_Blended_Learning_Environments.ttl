@@ -1,0 +1,697 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Basic Facilities"^^xsd:string,
+        "Learning Environment"^^xsd:string,
+        "Online and Blended Learning"^^xsd:string,
+        "Scalable Computing"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "Scalable Computing Infrastructure for Online and Blended Learning Environments"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "With the growing popularity of online learning and blended learning, as well as the rapid development of cloud computing and big data technology, scalable computing infrastructure has become an indispensable part of building a modern education platform. Method: Five experiments were conducted to test the scalability and reliability of computing infrastructure based on online and blended learning environments. The experiments include the performance comparison of online learning platforms based on different virtualization technologies, the performance comparison of online and hybrid learning environments under different loads, the comparison of online learning experiences under different bandwidth constraints, the system stability test under different user numbers, and the comparison of access speeds in different regions. Result: The experimental results showed that on an online learning platform using the KVM (Kernel-based Virtual Machine) interface, when the number of concurrent users is 99, the response time is 100.9ms, and the CPU (Central Processing Unit) utilization rate is 60.9%. Under low load conditions, the concurrent access volume is 200; the response time is 50ms, and the throughput is 10.3. When accessing locally, the latency is 9.19ms; the download speed is 500.3KB/s; the network throughput is 399.8KB/s. Conclusion: Exploring the scalability, reliability, performance, stability, and access speed of online learning platforms is crucial for improving platform competitiveness and ensuring user experience."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 607 ;
+    prism:pageCount 10 ;
+    prism:startingPage 597 ;
+    datacite:doi "10.12694/scpe.v24i3.2293"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2293"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2293> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Xin"^^xsd:string ;
+    foaf:givenName "Liao"^^xsd:string ;
+    foaf:name "Liao Xin"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section2 ;
+                    co:nextItem [ co:itemContent :section27 ;
+                            co:nextItem [ co:itemContent :section28 ;
+                                    co:nextItem [ co:itemContent :section30 ] ] ] ] ] ;
+    po:contains :section0,
+        :section2,
+        :section27,
+        :section28,
+        :section30 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "JingdeZhen University, JingdeZhen, 333000, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel11 a doco:SectionLabel ;
+    c4o:hasContent "3.3." .
+
+:sectionLabel12 a doco:SectionLabel ;
+    c4o:hasContent "3.4." .
+
+:sectionLabel15 a doco:SectionLabel ;
+    c4o:hasContent "3.5." .
+
+:sectionLabel2 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel20 a doco:SectionLabel ;
+    c4o:hasContent "3.6." .
+
+:sectionLabel27 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel28 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel30 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel32 a doco:SectionLabel ;
+    c4o:hasContent "7.1." .
+
+:sectionLabel8 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionLabel9 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle11 a doco:SectionTitle ;
+    c4o:hasContent "Lifetime Machine Learning Algorithm" .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "Nearest neighbor generalization." .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "Adjusting distance matrix." .
+
+:sectionTitle2 a doco:SectionTitle ;
+    c4o:hasContent "Related Work." .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "Task transfer matrix." .
+
+:sectionTitle27 a doco:SectionTitle ;
+    c4o:hasContent "Infrastructure Evaluation Based on Online and Blended Learning Environment." .
+
+:sectionTitle28 a doco:SectionTitle ;
+    c4o:hasContent "Performance Comparison of Online Learning Platforms Based on Different Virtualization" .
+
+:sectionTitle30 a doco:SectionTitle ;
+    c4o:hasContent "Performance Comparison of Online and Blended Learning Environments under Different" .
+
+:sectionTitle32 a doco:SectionTitle ;
+    c4o:hasContent "System Stability Testing under Different User" .
+
+:sectionTitle8 a doco:SectionTitle ;
+    c4o:hasContent "Online and Blended" .
+
+:sectionTitle9 a doco:SectionTitle ;
+    c4o:hasContent "Scalable Computing" .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    po:contains :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section11 a doco:Section ;
+    po:contains :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :sectionLabel11 ;
+    po:containsAsHeader :sectionTitle11 .
+
+:section12 a doco:Section ;
+    po:contains :sectionLabel12 ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section15 a doco:Section ;
+    po:contains :sectionLabel15 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section2 a doco:Section ;
+    co:firstItem [ co:itemContent :section8 ;
+            co:nextItem [ co:itemContent :section9 ;
+                    co:nextItem [ co:itemContent :section11 ;
+                            co:nextItem [ co:itemContent :section12 ;
+                                    co:nextItem [ co:itemContent :section15 ;
+                                            co:nextItem [ co:itemContent :section20 ] ] ] ] ] ] ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :section11,
+        :section12,
+        :section15,
+        :section20,
+        :section8,
+        :section9,
+        :sectionLabel2 ;
+    po:containsAsHeader :sectionTitle2 .
+
+:section20 a doco:Section ;
+    po:contains :sectionLabel20 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section27 a doco:Section ;
+    po:contains :sectionLabel27 ;
+    po:containsAsHeader :sectionTitle27 .
+
+:section28 a doco:Section ;
+    po:contains :sectionLabel28 ;
+    po:containsAsHeader :sectionTitle28 .
+
+:section30 a doco:Section ;
+    co:firstItem [ co:itemContent :section32 ] ;
+    po:contains :section32,
+        :sectionLabel30 ;
+    po:containsAsHeader :sectionTitle30 .
+
+:section32 a doco:Section ;
+    po:contains :sectionLabel32 ;
+    po:containsAsHeader :sectionTitle32 .
+
+:section8 a doco:Section ;
+    po:contains :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel8 ;
+    po:containsAsHeader :sectionTitle8 .
+
+:section9 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :sectionLabel9 ;
+    po:containsAsHeader :sectionTitle9 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Supporting Self-regulated Learning In Online Learning Environments And MOOCs: A Systematic Review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jacqueline" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Baars" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Davis" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Van Der Zee" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Geert-Jan Houben" ;
+                    foaf:givenname "Fred" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Paas" ] ] ;
+    bibo:pageEnd 373 ;
+    bibo:pageStart 356 ;
+    bibo:volume "35" ;
+    c4o:hasContent "Jacqueline, W., Baars, M. & Davis, D. Tim Van Der Zee. Geert-Jan Houben, Fred Paas. \"Supporting Self-regulated Learning In Online Learning Environments And MOOCs: A Systematic Review. 35, 356-373 (2019)" .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:title "Engagement matters: Student perceptions on the importance of engagement strategies in the online learning environment. Online Learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Florence" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bolliger" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 222 ;
+    bibo:pageStart 205 ;
+    bibo:volume "22" ;
+    c4o:hasContent "Florence, M. & Bolliger, D. Engagement matters: Student perceptions on the importance of engagement strategies in the online learning environment. Online Learning. 22, 205-222 (2018)" .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Covid-19 pandemic and online learning: the challenges and opportunities. Interactive Learning Environments" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Babatunde" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Soykan" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:pageEnd 7338 ;
+    bibo:pageStart 7321 ;
+    bibo:volume "31" ;
+    c4o:hasContent "Babatunde, A. & Soykan, E. Covid-19 pandemic and online learning: the challenges and opportunities. Interactive Learning Environments. 31, 7321-7338 (2021)" .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Students' online learning challenges during the pandemic and how they cope with them: The case of the Philippines. Education And Information Technologies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Barrot" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Llenares" ;
+                    foaf:givenname "I" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Del Rosario" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 7338 ;
+    bibo:pageStart 7321 ;
+    bibo:volume "26" ;
+    c4o:hasContent "Barrot, J., Llenares, I. & Del Rosario, L. Students' online learning challenges during the pandemic and how they cope with them: The case of the Philippines. Education And Information Technologies. 26, 7321-7338 (2021)" .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "International Journal Of Engineering Trends And Technology" ] ;
+    dcterms:title "High Availability Of Resource In Cloud Computing Technology: Review,Issues And Challenges" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bibhu Mr" ;
+                    foaf:givenname "&" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yadav" ] ] ;
+    bibo:pageEnd 34 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Bibhu Mr & S. K. Yadav, .. High Availability Of Resource In Cloud Computing Technology: Review,Issues And Challenges. International Journal Of Engineering Trends And Technology. 68 pp. 1-34 (2020)" .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "Development prospects of technologies of grouped cargo containerization. VESTNIK OF ASTRAKHAN STATE TECHNICAL UNIVERSITY SERIES MARINE ENGINEERING AND TECH-NOLOGIES" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Oleg" ;
+                    foaf:givenname "Izotov" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:givenname "Albertovich" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kuznetsov" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 140 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Izotov Oleg Albertovich & A. L. Kuznetsov, .. Development prospects of technologies of grouped cargo containerization. VESTNIK OF ASTRAKHAN STATE TECHNICAL UNIVERSITY SERIES MARINE ENGINEERING AND TECH- NOLOGIES. 2020 pp. 1-140 (2020)" .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "International Journal Of Pattern Recognition And Artificial Intelligence" ] ;
+    dcterms:title "Research on Data Acquisition Algorithms Based on Image Processing and Artificial Intelligence" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hu Shuyu" ;
+                    foaf:givenname "," ] ] ;
+    bibo:volume "34" ;
+    c4o:hasContent "Hu Shuyu, .. Research on Data Acquisition Algorithms Based on Image Processing and Artificial Intelligence. International Journal Of Pattern Recognition And Artificial Intelligence. 34 pp. 06 (2020)" .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "International Journal Of Hydrogen Energy" ] ;
+    dcterms:title "Real-time microscopic monitoring of temperature and strain on the surface of magnesium hydrogen storage tank by high temperature resistant flexible integrated microsensor" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chi Yuan" ;
+                    foaf:givenname "Lee" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shen" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Chiu" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 12815 ;
+    bibo:pageStart 25 ;
+    c4o:hasContent "Lee Chi Yuan, Shen, C., Lee, S., Chiu, C. & Lin, H. Real-time microscopic monitoring of temperature and strain on the surface of magnesium hydrogen storage tank by high temperature resistant flexible integrated microsensor. International Journal Of Hydrogen Energy. 47 pp. 25-12815 (2022)" .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "Experiential learning-a systematic review and revision of Kolb's model. Interactive Learning Environments" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Howard" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 1077 ;
+    bibo:pageStart 1064 ;
+    bibo:volume "28" ;
+    c4o:hasContent "Howard, M. Experiential learning-a systematic review and revision of Kolb's model. Interactive Learning Environments. 28, 1064-1077 (2020)" .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:title "Conceptual definition and comparative analysis. E-learning And Digital Media" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sujit" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wotto" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Belanger" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "E-Learning" ;
+                    foaf:givenname "M-Learning" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:givenname "D-Learning" ] ] ;
+    bibo:pageEnd 216 ;
+    bibo:pageStart 191 ;
+    bibo:volume "15" ;
+    c4o:hasContent "Sujit, K., Wotto, M. & Belanger, P. E-learning, M-learning and D-learning: Conceptual definition and comparative analysis. E-learning And Digital Media. 15, 191-216 (2018)" .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Journal Of Educational Technology Systems" ] ;
+    dcterms:title "Online learning: A panacea in the time of COVID-19 crisis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shivangi" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 22 ;
+    bibo:pageStart 5 ;
+    bibo:volume "49" ;
+    c4o:hasContent "Shivangi, D. Online learning: A panacea in the time of COVID-19 crisis. Journal Of Educational Technology Systems. 49, 5-22 (2020)" .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "American Journal Of Distance Education" ] ;
+    dcterms:title "How many ways can we define online learning? A systematic literature review of definitions of online learning (1988-2018)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Vandana" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Thurman" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 306 ;
+    bibo:pageStart 289 ;
+    bibo:volume "33" ;
+    c4o:hasContent "Vandana, S. & Thurman, A. How many ways can we define online learning? A systematic literature review of definitions of online learning (1988-2018). American Journal Of Distance Education. 33, 289-306 (2019)" .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "International Journal Of Educational Technology In Higher Education" ] ;
+    dcterms:title "Investigating self-directed learning and technology readiness in blending learning environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shuang" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Law" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Niu" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 22 ;
+    bibo:pageStart 1 ;
+    bibo:volume "16" ;
+    c4o:hasContent "Shuang, G., Law, K. & Niu, B. Investigating self-directed learning and technology readiness in blending learning environment. International Journal Of Educational Technology In Higher Education. 16, 1-22 (2019)" .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Predicting student satisfaction and perceived learning within online learning environments. Distance Education" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Emtinan" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 148 ;
+    bibo:pageStart 133 ;
+    bibo:volume "40" ;
+    c4o:hasContent "Emtinan, A. Predicting student satisfaction and perceived learning within online learning environments. Distance Education. 40, 133-148 (2019)" .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Computers & Education" ] ;
+    dcterms:title "Analyzing productive learning behaviors for students using immediate corrective feedback in a blended learning environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chen Xin" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Breslow" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Deboer" ] ] ;
+    bibo:pageEnd 74 ;
+    bibo:pageStart 59 ;
+    bibo:volume "117" ;
+    c4o:hasContent "Chen Xin, L. Breslow J. Deboer, Analyzing productive learning behaviors for students using immediate corrective feedback in a blended learning environment. Computers & Education. 117 pp. 59-74 (2018)" .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 1995 ;
+    dcterms:title "Blended learning to improve quality of primary education among underprivileged school children in India. Education And Information Technologies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Priyadarshini" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bandyopadhyay" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:volume "24" ;
+    c4o:hasContent "Priyadarshini, D. & Bandyopadhyay, S. Blended learning to improve quality of primary education among underprivileged school children in India. Education And Information Technologies. 24, 1995-2016 (2019)" .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal Of Emerging Technologies In Learning (iJET)" ] ;
+    dcterms:title "Analysis of blended learning model application using text mining method" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Omar" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 187 ;
+    bibo:pageStart 172 ;
+    bibo:volume "16" ;
+    c4o:hasContent "Lin, W., Huang, Y. & Omar, M. Analysis of blended learning model application using text mining method. International Journal Of Emerging Technologies In Learning (iJET). 16, 172-187 (2021)" .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Interdisciplinary Journal Of Virtual Learning In Medical Sciences" ] ;
+    dcterms:title "Designing quality e-learning environments for emergency remote teaching in coronavirus crisis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Saida" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Salha" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Khlaif" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 137 ;
+    bibo:pageStart 135 ;
+    bibo:volume "11" ;
+    c4o:hasContent "Saida, A., Salha, S. & Khlaif, Z. Designing quality e-learning environments for emergency remote teaching in coronavirus crisis. Interdisciplinary Journal Of Virtual Learning In Medical Sciences. 11, 135-137 (2020)" .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Review Of Educational Research" ] ;
+    dcterms:title "The role of collaboration, computer use, learning environments, and supporting strategies in CSCL: A meta-analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Juanjuan" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kirschner" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Tsai" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 843 ;
+    bibo:pageStart 799 ;
+    bibo:volume "88" ;
+    c4o:hasContent "Juanjuan, C., Wang, M., Kirschner, P. & Tsai, C. The role of collaboration, computer use, learning environments, and supporting strategies in CSCL: A meta-analysis. Review Of Educational Research. 88, 799-843 (2018)" .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Effectiveness of the ADDIE Model within an E-Learning Environment in Developing Creative Writing in EFL Students. English Language Teaching" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abdullah" ;
+                    foaf:givenname "Almelhi" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 36 ;
+    bibo:pageStart 20 ;
+    bibo:volume "14" ;
+    c4o:hasContent "Almelhi Abdullah, M. Effectiveness of the ADDIE Model within an E-Learning Environment in Developing Creative Writing in EFL Students. English Language Teaching. 14, 20-36 (2021)" .
+

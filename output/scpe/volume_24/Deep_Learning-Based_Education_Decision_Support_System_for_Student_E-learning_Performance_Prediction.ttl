@@ -1,0 +1,1018 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "ETL"^^xsd:string,
+        "OLAP"^^xsd:string,
+        "data mart"^^xsd:string,
+        "decision support system"^^xsd:string,
+        "deep learning"^^xsd:string,
+        "e-learning"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2,
+                :author_3,
+                :author_4 ] ;
+    dcterms:title "Deep Learning-Based Education Decision Support System for Student E-learning Performance Prediction"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Information Technology (IT) and its advancements change the education environment. Conventional classroom education has been transformed into a modernized form. Education field decision-makers are always searching for new technologies that provide fast solutions to support Education Decision Support Systems (EDSS). There is a significant need for an effective decision support system to utilize student data which helps the university in making the right decisions. The Electronic learning system (e-learning) provides a live forum for faculties and students to connect with learning portals and virtually execute educational activities. Even though these modern approaches support the education system, active student participation still needs to be improved. Moreover, accurately measuring student performance using collected attributes remains difficult for parents and teachers. Therefore, this paper seeks to understand and predict student performance using effective data processing and a deep learning-based decision model. The implementation of EDSS starts with data preprocessing, Extraction-Transformation-Load (ETL), a data mart area to store the extracted data with Online Analytical Processing (OLAP) processing, and decision-making using Deep Graph Convolutional Neural Network (DGCNN). The statistical evaluation is based on the student dataset from the Kaggle repository. The analyzed results depict that the proposed EDSS model on an independent data mart with efficient decision support and OLAP provides a better platform to make academic decisions and help educators to make necessary decisions notified to the students."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 338 ;
+    prism:pageCount 11 ;
+    prism:startingPage 327 ;
+    datacite:doi "10.12694/scpe.v24i3.2188"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2188"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2188> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Jakkaladiki"^^xsd:string ;
+    foaf:givenName "Sudha Prathyusha"^^xsd:string ;
+    foaf:name "Sudha Prathyusha Jakkaladiki"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Otčenášková"^^xsd:string ;
+    foaf:givenName "Tereza"^^xsd:string ;
+    foaf:name "Tereza Otčenášková"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    pro:holdsRoleInTime :role_2_0 ;
+    foaf:familyName "Malý"^^xsd:string ;
+    foaf:givenName "Filip"^^xsd:string ;
+    foaf:name "Filip Malý"^^xsd:string .
+
+:author_3 a foaf:Person ;
+    foaf:familyName "Janečková"^^xsd:string ;
+    foaf:givenName "Martina"^^xsd:string ;
+    foaf:name "Martina Janečková"^^xsd:string .
+
+:author_4 a foaf:Person ;
+    pro:holdsRoleInTime :role_4_0 ;
+    foaf:familyName "Krunčík"^^xsd:string ;
+    foaf:givenName "Jan"^^xsd:string ;
+    foaf:name "Jan Krunčík"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section5 ;
+                    co:nextItem [ co:itemContent :section15 ;
+                            co:nextItem [ co:itemContent :section16 ;
+                                    co:nextItem [ co:itemContent :section17 ;
+                                            co:nextItem [ co:itemContent :section19 ;
+                                                    co:nextItem [ co:itemContent :section20 ;
+                                                            co:nextItem [ co:itemContent :section40 ;
+                                                                    co:nextItem [ co:itemContent :section42 ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section15,
+        :section16,
+        :section17,
+        :section19,
+        :section20,
+        :section40,
+        :section42,
+        :section5 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Department of Informatics and Quantitative Methods, Faculty of Informatics and Management, University of Hradec Králové, Hradec Králové, Czech Republic"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "Department of Informatics and Quantitative Methods, Faculty of Informatics and Management, University of Hradec Králové, Hradec Králové, Czech Republic"^^xsd:string .
+
+:org_2_0 a frapo:Organization ;
+    foaf:name "Department of Informatics and Quantitative Methods, Faculty of Informatics and Management, University of Hradec Králové, Hradec Králové, Czech Republic"^^xsd:string .
+
+:org_4_0 a frapo:Organization ;
+    foaf:name "Department of Informatics and Quantitative Methods, Faculty of Informatics and Management, University of Hradec Králové, Hradec Králové, Czech Republic"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF26 a deo:Reference ;
+    dcterms:references :BIBREF26 ;
+    c4o:hasContent "[27]" .
+
+:referenceToBIBREF27 a deo:Reference ;
+    dcterms:references :BIBREF27 ;
+    c4o:hasContent "[28]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:role_2_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_2_0 ;
+    pro:withRole pro:author .
+
+:role_4_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_4_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel15 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel16 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel17 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel26 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionLabel27 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel39 a doco:SectionLabel ;
+    c4o:hasContent "4.1." .
+
+:sectionLabel42 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel5 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "Proposed E-learning Decision Support Methodology." .
+
+:sectionTitle16 a doco:SectionTitle ;
+    c4o:hasContent "Dataset Preparation and Description" .
+
+:sectionTitle17 a doco:SectionTitle ;
+    c4o:hasContent "ETL process" .
+
+:sectionTitle19 a doco:SectionTitle ;
+    c4o:hasContent "• Extraction" .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "• Transform" .
+
+:sectionTitle26 a doco:SectionTitle ;
+    c4o:hasContent "Data Mart (DM) and OLAP." .
+
+:sectionTitle27 a doco:SectionTitle ;
+    c4o:hasContent "Decision-Making using DGCNN." .
+
+:sectionTitle39 a doco:SectionTitle ;
+    c4o:hasContent "Evaluation Metrics." .
+
+:sectionTitle40 a doco:SectionTitle ;
+    c4o:hasContent "Accuracy" .
+
+:sectionTitle42 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion. This paper proposes the development of an efficient Education Decision Support" .
+
+:sectionTitle5 a doco:SectionTitle ;
+    c4o:hasContent "Related Work." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF25 ;
+                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF26 ;
+                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF27 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF26,
+        :BIBREF27,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[25]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF2,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section15 a doco:Section ;
+    po:contains :sectionLabel15 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section16 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :sectionLabel16 ;
+    po:containsAsHeader :sectionTitle16 .
+
+:section17 a doco:Section ;
+    po:contains :sectionLabel17 ;
+    po:containsAsHeader :sectionTitle17 .
+
+:section19 a doco:Section ;
+    po:contains :referenceToBIBREF1 ;
+    po:containsAsHeader :sectionTitle19 .
+
+:section20 a doco:Section ;
+    co:firstItem [ co:itemContent :section26 ;
+            co:nextItem [ co:itemContent :section27 ;
+                    co:nextItem [ co:itemContent :section39 ] ] ] ;
+    po:contains :referenceToBIBREF16,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :section26,
+        :section27,
+        :section39 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section26 a doco:Section ;
+    po:contains :referenceToBIBREF23,
+        :referenceToBIBREF24,
+        :sectionLabel26 ;
+    po:containsAsHeader :sectionTitle26 .
+
+:section27 a doco:Section ;
+    po:contains :sectionLabel27 ;
+    po:containsAsHeader :sectionTitle27 .
+
+:section39 a doco:Section ;
+    po:contains :sectionLabel39 ;
+    po:containsAsHeader :sectionTitle39 .
+
+:section40 a doco:Section ;
+    po:containsAsHeader :sectionTitle40 .
+
+:section42 a doco:Section ;
+    po:contains :sectionLabel42 ;
+    po:containsAsHeader :sectionTitle42 .
+
+:section5 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :referenceToBIBREF23,
+        :referenceToBIBREF24,
+        :referenceToBIBREF25,
+        :referenceToBIBREF26,
+        :referenceToBIBREF27,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel5 ;
+    po:containsAsHeader :sectionTitle5 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Psychology Research and Behavior Management" ] ;
+    dcterms:title "Comparisons of the predictive values of admission criteria for academic achievement among undergraduate students of health and non-health science professions: a longitudinal cohort study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Al-Qahtani" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Alanzi" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "M. F. Al-Qahtani and T. M. Alanzi, Comparisons of the predictive values of admission criteria for academic achievement among undergraduate students of health and non-health science professions: a longitudinal cohort study, Psychology Research and Behavior Management, (2018), pp. 1-6." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Electronics" ] ;
+    dcterms:title "Enhancement of e-learning student's performance based on ensemble techniques" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alsulami" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Al-Ghamdi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ragab" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:volume "12" ;
+    c4o:hasContent "A. A. Alsulami, A. S. A.-M. AL-Ghamdi, and M. Ragab, Enhancement of e-learning student's performance based on ensemble techniques, Electronics, 12 (2023), p. 1508." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Detection and localization of multiple image splicing using mobilenet v1" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kadam" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ahirrao" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kotecha" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sahu" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 162519 ;
+    bibo:pageStart 162499 ;
+    bibo:volume "9" ;
+    c4o:hasContent "K. Kadam, S. Ahirrao, K. Kotecha, and S. Sahu, Detection and localization of multiple image splicing using mobilenet v1, IEEE Access, 9 (2021), pp. 162499-162519." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Intelligent Systems with Applications" ] ;
+    dcterms:title "Towards effective and efficient online exam systems using deep learning-based cheating detection approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kaddoura" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gumaei" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "16" ;
+    c4o:hasContent "S. Kaddoura and A. Gumaei, Towards effective and efficient online exam systems using deep learning-based cheating detection approach, Intelligent Systems with Applications, 16 (2022), p. 200153." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "PeerJ Computer Science" ] ;
+    dcterms:title "A systematic review on machine learning models for online learning and examination systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kaddoura" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Popescu" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hemanth" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "8" ;
+    c4o:hasContent "S. Kaddoura, D. E. Popescu, and J. D. Hemanth, A systematic review on machine learning models for online learning and examination systems, PeerJ Computer Science, 8 (2022), p. e986." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Intelligent Systems" ] ;
+    dcterms:title "Intelligent decision support system approach for predicting the performance of students based on three-level machine learning technique" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Latif" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xianwen" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "L.-L" ] ] ;
+    bibo:pageEnd 749 ;
+    bibo:pageStart 739 ;
+    bibo:volume "30" ;
+    c4o:hasContent "S. Latif, F. XianWen, and L.-l. Wang, Intelligent decision support system approach for predicting the performance of students based on three-level machine learning technique, Journal of Intelligent Systems, 30 (2021), pp. 739-749." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "2017 international conference on intelligent computing and control" ] ;
+    dcterms:title "Identification of artificially ripened fruits using smart phones" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Maheswaran" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sathesh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Priyadharshini" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Vivek" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "S. Maheswaran, S. Sathesh, P. Priyadharshini, and B. Vivek, Identification of artificially ripened fruits using smart phones, in 2017 international conference on intelligent computing and control (I2C2), IEEE, 2017, pp. 1-6." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "2017 International Conference on Intelligent Computing and Control" ] ;
+    dcterms:title "Automated coconut tree climber" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Maheswaran" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sathesh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Saran" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Vivek" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "S. Maheswaran, S. Sathesh, G. Saran, and B. Vivek, Automated coconut tree climber, in 2017 International Conference on Intelligent Computing and Control (I2C2), IEEE, 2017, pp. 1-6." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Future Internet" ] ;
+    dcterms:title "Ensemble classifiers for network intrusion detection using a novel network attack dataset" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mahfouz" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Abuhussein" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Venugopal" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Shiva" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:volume "12" ;
+    c4o:hasContent "A. Mahfouz, A. Abuhussein, D. Venugopal, and S. Shiva, Ensemble classifiers for network intrusion detection using a novel network attack dataset, Future Internet, 12 (2020), p. 180." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "An interrelated decision-making model for an intelligent decision support system in healthcare" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mahiddin" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Othman" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Bakar" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Rahim" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 31676 ;
+    bibo:pageStart 31660 ;
+    bibo:volume "10" ;
+    c4o:hasContent "N. B. Mahiddin, Z. A. Othman, A. A. Bakar, and N. A. A. Rahim, An interrelated decision-making model for an intelligent decision support system in healthcare, IEEE Access, 10 (2022), pp. 31660-31676." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Smart artificial intelligence based online proctoring system, in 2022 IEEE Delhi section conference (DELCON)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Malhotra" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Suri" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Verma" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 5 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "N. Malhotra, R. Suri, P. Verma, and R. Kumar, Smart artificial intelligence based online proctoring system, in 2022 IEEE Delhi section conference (DELCON), IEEE, 2022, pp. 1-5." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "International conference on advanced data mining and applications" ] ;
+    dcterms:title "Smart online exam proctoring assist for cheating detection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Masud" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hayawi" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Mathew" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Michael" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Barachi" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 132 ;
+    bibo:pageStart 118 ;
+    c4o:hasContent "M. M. Masud, K. Hayawi, S. S. Mathew, T. Michael, and M. El Barachi, Smart online exam proctoring assist for cheating detection, in International conference on advanced data mining and applications, Springer, 2022, pp. 118-132." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Machine Learning Mastery" ] ;
+    dcterms:title "How to use power transforms for machine learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Brownlee" ;
+                    foaf:givenname "J" ] ] ;
+    c4o:hasContent "J. Brownlee, How to use power transforms for machine learning, Machine Learning Mastery [Internet], (2020)." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Ieee Access" ] ;
+    dcterms:title "Using data mining techniques to predict student performance to support decision making in university admission systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mengash" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 55470 ;
+    bibo:pageStart 55462 ;
+    bibo:volume "8" ;
+    c4o:hasContent "H. A. Mengash, Using data mining techniques to predict student performance to support decision making in university admission systems, Ieee Access, 8 (2020), pp. 55462-55470." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Currents in Pharmacy Teaching and Learning" ] ;
+    dcterms:title "The impact of proctored online exams on the educational experience" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Milone" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cortese" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Balestrieri" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Pittenger" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 114 ;
+    bibo:pageStart 108 ;
+    bibo:volume "9" ;
+    c4o:hasContent "A. S. Milone, A. M. Cortese, R. L. Balestrieri, and A. L. Pittenger, The impact of proctored online exams on the educational experience, Currents in Pharmacy Teaching and Learning, 9 (2017), pp. 108-114." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Ai-based learning style prediction in online learning for primary education" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pardamean" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Suparyanto" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Cenggoro" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sudigyo" ;
+                    foaf:givenname "D" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Anugrahana" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 35735 ;
+    bibo:pageStart 35725 ;
+    bibo:volume "10" ;
+    c4o:hasContent "B. Pardamean, T. Suparyanto, T. W. Cenggoro, D. Sudigyo, and A. Anugrahana, Ai-based learning style prediction in online learning for primary education, IEEE Access, 10 (2022), pp. 35725-35735." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:title "Data warehousing fundamentals for IT professionals" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ponniah" ;
+                    foaf:givenname "P" ] ] ;
+    c4o:hasContent "P. Ponniah, Data warehousing fundamentals for IT professionals, John Wiley & Sons, 2011." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "Automation in Construction" ] ;
+    dcterms:title "A project-oriented data warehouse for construction" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Rujirayanyong" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shi" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 807 ;
+    bibo:pageStart 800 ;
+    bibo:volume "15" ;
+    c4o:hasContent "T. Rujirayanyong and J. J. Shi, A project-oriented data warehouse for construction, Automation in Construction, 15 (2006), pp. 800-807." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Mathematics" ] ;
+    dcterms:title "Intelligent decision support system for predicting student's e-learning performance using ensemble machine learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Saleem" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ullah" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Fakieh" ;
+                    foaf:givenname "B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kateb" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:volume "9" ;
+    c4o:hasContent "F. Saleem, Z. Ullah, B. Fakieh, and F. Kateb, Intelligent decision support system for predicting student's e-learning performance using ensemble machine learning, Mathematics, 9 (2021), p. 2078." .
+
+:BIBREF26 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE access" ] ;
+    dcterms:title "Teaching machine learning in k-12 classroom: Pedagogical and technological trajectories for artificial intelligence education" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tedre" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Toivonen" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kahila" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Vartiainen" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Valtonen" ;
+                    foaf:givenname "T" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Jormanainen" ;
+                    foaf:givenname "I" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Pears" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 110572 ;
+    bibo:pageStart 110558 ;
+    bibo:volume "9" ;
+    c4o:hasContent "M. Tedre, T. Toivonen, J. Kahila, H. Vartiainen, T. Valtonen, I. Jormanainen, and A. Pears, Teaching machine learning in k-12 classroom: Pedagogical and technological trajectories for artificial intelligence education, IEEE access, 9 (2021), pp. 110558-110572." .
+
+:BIBREF27 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "2018 international conference on intelligent computing and communication for smart World" ] ;
+    dcterms:title "Low-cost raspberry pi oscilloscope" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Vivek" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Maheswaran" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Keerthana" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sathesh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Bringeraj" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Sri" ;
+                    foaf:givenname "R" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Sulthana" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 390 ;
+    bibo:pageStart 386 ;
+    c4o:hasContent "B. Vivek, S. Maheswaran, P. Keerthana, S. Sathesh, S. Bringeraj, R. A. Sri, and S. A. Sulthana, Low-cost raspberry pi oscilloscope, in 2018 international conference on intelligent computing and communication for smart World (I2C2SW), IEEE, 2018, pp. 386-390." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Neural Computing and Applications" ] ;
+    dcterms:title "An efficient xgboost-dnn-based classification model for network intrusion detection system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Devan" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Khare" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 12514 ;
+    bibo:pageStart 12499 ;
+    bibo:volume "32" ;
+    c4o:hasContent "P. Devan and N. Khare, An efficient xgboost-dnn-based classification model for network intrusion detection system, Neural Computing and Applications, 32 (2020), pp. 12499-12514." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Creating a recommender system to support higher education students in the subject enrollment decision" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fernández-García" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rodríguez-Echeverría" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Preciado" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Manzano" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sánchez-Figueroa" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 189088 ;
+    bibo:pageStart 189069 ;
+    bibo:volume "8" ;
+    c4o:hasContent "A. J. Fernández-García, R. Rodríguez-Echeverría, J. C. Preciado, J. M. C. Manzano, and F. Sánchez-Figueroa, Creating a recommender system to support higher education students in the subject enrollment decision, IEEE Access, 8 (2020), pp. 189069-189088." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Proceedings of International Conference on Data Science and Applications: ICDSA 2021" ] ;
+    dcterms:title "Enhancing monitoring in online exams using artificial intelligence" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gopane" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kotecha" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 193 ;
+    bibo:pageStart 183 ;
+    bibo:volume "2" ;
+    c4o:hasContent "S. Gopane and R. Kotecha, Enhancing monitoring in online exams using artificial intelligence, in Proceedings of Interna- tional Conference on Data Science and Applications: ICDSA 2021, Volume 2, Springer, 2022, pp. 183-193." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Neural Computing and Applications" ] ;
+    dcterms:title "A deep learning-based driver distraction identification framework over edge cloud" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gumaei" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Al-Rakhami" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hassan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Alamri" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Alhussein" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Razzaque" ;
+                    foaf:givenname "M" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Fortino" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 16 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "A. Gumaei, M. Al-Rakhami, M. M. Hassan, A. Alamri, M. Alhussein, M. A. Razzaque, and G. Fortino, A deep learning-based driver distraction identification framework over edge cloud, Neural Computing and Applications, (2020), pp. 1-16." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Big Data Research" ] ;
+    dcterms:title "A decision-level fusion method for covid-19 patient health prediction" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gumaei" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ismail" ;
+                    foaf:givenname "W" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hassan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hassan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Mohamed" ;
+                    foaf:givenname "E" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Alelaiwi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Fortino" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:volume "27" ;
+    c4o:hasContent "A. Gumaei, W. N. Ismail, M. R. Hassan, M. M. Hassan, E. Mohamed, A. Alelaiwi, and G. Fortino, A decision-level fusion method for covid-19 patient health prediction, Big Data Research, 27 (2022), p. 100287." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "3rd conference on electrical and computer engineering technology" ] ;
+    dcterms:title "An automatic method for cheating detection in online exams by processing the student's webcam images" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jalali" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Noorbehbahani" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "K. Jalali and F. Noorbehbahani, An automatic method for cheating detection in online exams by processing the student's webcam images, in 3rd conference on electrical and computer engineering technology (E-Tech , Tehran, Iran, 2017, pp. 1-6." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "A review on explainability in multimodal deep neural nets" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Joshi" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Walambe" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kotecha" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 59821 ;
+    bibo:pageStart 59800 ;
+    bibo:volume "9" ;
+    c4o:hasContent "G. Joshi, R. Walambe, and K. Kotecha, A review on explainability in multimodal deep neural nets, IEEE Access, 9 (2021), pp. 59800-59821." .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+

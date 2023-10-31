@@ -1,0 +1,539 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2,
+                :author_3,
+                :author_4 ] ;
+    dcterms:title "Innovative Modular Approach based on Vehicle Routing Problem and Ant Colony Optimization for Order Splitting in Real Warehouses"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "A crucial part to any warehouse workflow is the process of order picking. Orders can significantly vary in the number of items, mass, volume and the total path needed to collect all the items. Some orders can be picked by just one worker, while others are required to be split up and shrunk down, so that they can be assigned to multiple workers. This paper describes the complete process of optimal order splitting. The process consists of evaluating if a given order requires to be split, determining the number of orders it needs to be split into, assigning items for every worker and optimizing the order picking routes. The complete order splitting process can be used both with and without the logistic data (mass and volume), but having logistic data improves the accuracy. Final step of the algorithm is reduction to Vehicle Routing Problem where the total number of vehicles is known beforehand. The process described in this paper is implemented in some of the largest warehouses in Bosnia and Herzegovina."^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 4 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F196"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/196.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/196.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "25th Conference on Knowledge Acquisition and Management"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Tucaković"^^xsd:string ;
+    foaf:givenName "Zlatan"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Delalić"^^xsd:string ;
+    foaf:givenName "Sead"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    foaf:familyName "Beširević"^^xsd:string ;
+    foaf:givenName "Admir"^^xsd:string .
+
+:author_3 a foaf:Person ;
+    foaf:familyName "Hodžić"^^xsd:string ;
+    foaf:givenName "Kerim"^^xsd:string .
+
+:author_4 a foaf:Person ;
+    foaf:familyName "Žunić"^^xsd:string ;
+    foaf:givenName "Emir"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section8 ;
+                    co:nextItem [ co:itemContent :section11 ;
+                            co:nextItem [ co:itemContent :section14 ;
+                                    co:nextItem [ co:itemContent :section15 ;
+                                            co:nextItem [ co:itemContent :section18 ;
+                                                    co:nextItem [ co:itemContent :section29 ;
+                                                            co:nextItem [ co:itemContent :section40 ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section11,
+        :section14,
+        :section15,
+        :section18,
+        :section29,
+        :section40,
+        :section8 .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel11 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel29 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel40 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel8 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle11 a doco:SectionTitle ;
+    c4o:hasContent "CASE STUDY" .
+
+:sectionTitle14 a doco:SectionTitle ;
+    c4o:hasContent "A. Collecting data and distance calculating" .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "B. Determining the number of smaller orders" .
+
+:sectionTitle18 a doco:SectionTitle ;
+    c4o:hasContent "C. Order splitting" .
+
+:sectionTitle29 a doco:SectionTitle ;
+    c4o:hasContent "RESULTS" .
+
+:sectionTitle40 a doco:SectionTitle ;
+    c4o:hasContent "CONCLUSION AND FUTURE WORK" .
+
+:sectionTitle8 a doco:SectionTitle ;
+    c4o:hasContent "RELATED WORK" .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section11 a doco:Section ;
+    po:contains :sectionLabel11 ;
+    po:containsAsHeader :sectionTitle11 .
+
+:section14 a doco:Section ;
+    po:contains :referenceToBIBREF3,
+        :referenceToBIBREF4 ;
+    po:containsAsHeader :sectionTitle14 .
+
+:section15 a doco:Section ;
+    po:contains :referenceToBIBREF0 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section18 a doco:Section ;
+    po:contains :referenceToBIBREF14 ;
+    po:containsAsHeader :sectionTitle18 .
+
+:section29 a doco:Section ;
+    po:contains :referenceToBIBREF5,
+        :sectionLabel29 ;
+    po:containsAsHeader :sectionTitle29 .
+
+:section40 a doco:Section ;
+    po:contains :sectionLabel40 ;
+    po:containsAsHeader :sectionTitle40 .
+
+:section8 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel8 ;
+    po:containsAsHeader :sectionTitle8 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "Enterprise Information Systems" ] ;
+    dcterms:title "The adaptive approach for storage assignment by mining data of warehouse management system for distribution centres" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chiang" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1080/17517575.2010.537784']" ;
+    bibo:issue "2" ;
+    bibo:volume "5" ;
+    c4o:hasContent "D. M. H. Chiang, C. P. Lin and M. C. Chen, \"The adaptive approach for storage assignment by mining data of warehouse management system for distribution centres,\" Enterprise Information Systems 5.2, 2011. https://doi.org/10.1080/17517575.2010.537784" .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2007 ;
+    dcterms:publisher [ foaf:name "Eur. J. Oper. Res" ] ;
+    dcterms:title "Design and control of warehouse order picking: A literature review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Koster" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Le-Duc" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Roodbergen" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:doi "['10.1016/j.ejor.2006.07.009']" ;
+    c4o:hasContent "R. de Koster, T. Le-Duc, and K. J. Roodbergen, \"Design and control of warehouse order picking: A literature review,\" Eur. J. Oper. Res., 2007. https://doi.org/10.1016/j.ejor.2006.07.009" .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "Int Jr. of Mathematical Sciences Applications" ] ;
+    dcterms:title "Vehicle Routing and Scheduling Problems with time window constraints-Optimization Based Models" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Acharya" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "1" ;
+    bibo:volume "3" ;
+    c4o:hasContent "S. Acharya, \"Vehicle Routing and Scheduling Problems with time win- dow constraints-Optimization Based Models,\" Int Jr. of Mathematical Sciences Applications 3.1, 2013." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 1992 ;
+    dcterms:publisher [ foaf:name "Operations research" ] ;
+    dcterms:title "A new optimization algorithm for the vehicle routing problem with time windows" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Desrochers" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Desrosiers" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Solomon" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1287/opre.40.2.342']" ;
+    bibo:issue "2" ;
+    bibo:volume "40" ;
+    c4o:hasContent "M. Desrochers, J. Desrosiers and M. Solomon, \"A new optimization al- gorithm for the vehicle routing problem with time windows,\" Operations research 40.2, 1992. https://doi.org/10.1287/opre.40.2.342" .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2004 ;
+    dcterms:publisher [ foaf:name "Adv. Eng. Informatics" ] ;
+    dcterms:title "Ant colony optimization techniques for the vehicle routing problem" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bell" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mcmullen" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:doi "['10.1016/j.aei.2004.07.001']" ;
+    c4o:hasContent "J. E. Bell and P. R. McMullen, \"Ant colony optimization tech- niques for the vehicle routing problem,\" Adv. Eng. Informatics, 2004. https://doi.org/10.1016/j.aei.2004.07.001" .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2008 ;
+    dcterms:title "Enhancing Warehouse Performance by Efficient Order Picking" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yu" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1287/opre.37.3.404']" ;
+    c4o:hasContent "M. Yu, \"Enhancing Warehouse Performance by Efficient Order Picking,\" 2008. https://doi.org/10.1287/opre.37.3.404" .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 1997 ;
+    dcterms:publisher [ foaf:name "BioSystems" ] ;
+    dcterms:title "Ant colonies for the travelling salesman problem" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dorigo" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gambardella" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:doi "['10.1016/S0303-2647']" ;
+    bibo:pageEnd 1713 ;
+    bibo:pageStart 1708 ;
+    bibo:volume "97" ;
+    c4o:hasContent "M. Dorigo and L. M. Gambardella, \"Ant colonies for the travelling salesman problem,\" BioSystems, 1997. https://doi.org/10.1016/S0303- 2647(97)01708-5" .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "2018 14th Symposium on Neural Networks and Applications, NEUREL 2018" ] ;
+    dcterms:title "Smart Warehouse Management System Concept with Implementation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zunic" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Delalic" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hodzic" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Besirevic" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Hindija" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:doi "['10.1109/NEUREL.2018.8587004']" ;
+    c4o:hasContent "E. Zunic, S. Delalic, K. Hodzic, A. Besirevic, and H. Hindija, \"Smart Warehouse Management System Concept with Implementation,\" in 2018 14th Symposium on Neural Networks and Applications, NEUREL 2018, 2018. https://doi.org/10.1109/NEUREL.2018.8587004" .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "ICAT 2017 -26th International Conference on Information, Communication and Automation Technologies, Proceedings" ] ;
+    dcterms:title "Design of optimization system for warehouse order picking in real environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zunic" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Besirevic" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Skrobo" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hasic" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Hodzic" ;
+                    foaf:givenname "K" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Djedovic" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:doi "['10.1109/ICAT.2017.8171630']" ;
+    c4o:hasContent "E. Zunic, A. Besirevic, R. Skrobo, H. Hasic, K. Hodzic, and A. Djedovic, \"Design of optimization system for warehouse order picking in real environment,\" in ICAT 2017 -26th International Conference on Informa- tion, Communication and Automation Technologies, Proceedings, 2017. https://doi.org/10.1109/ICAT.2017.8171630" .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "2018 41st International Convention on Information and Communication Technology, Electronics and Microelectronics" ] ;
+    dcterms:title "A generic approach for order picking optimization process in different warehouse layouts" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zunic" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Besirevic" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Delalic" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hodzic" ;
+                    foaf:givenname "K" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Hasic" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:doi "['10.23919/MIPRO.2018.8400183']" ;
+    c4o:hasContent "E. Zunic, A. Besirevic, S. Delalic, K. Hodzic, and H. Ha- sic, \"A generic approach for order picking optimization pro- cess in different warehouse layouts,\" in 2018 41st International Convention on Information and Communication Technology, Elec- tronics and Microelectronics, MIPRO 2018 -Proceedings, 2018. https://doi.org/10.23919/MIPRO.2018.8400183" .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "2018 41st International Convention on Information and Communication Technology, Electronics and Microelectronics, MIPRO 2018 -Proceedings" ] ;
+    dcterms:title "Predictive analysis based approach for optimal warehouse product positioning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zunic" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hasic" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hodzic" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Delalic" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Besirevic" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:doi "['10.23919/MIPRO.2018.8400174']" ;
+    c4o:hasContent "E. Zunic, H. Hasic, K. Hodzic, S. Delalic, and A. Besirevic, \"Predictive analysis based approach for optimal warehouse product positioning,\" in 2018 41st International Convention on Information and Communication Technology, Electronics and Microelectronics, MIPRO 2018 -Proceed- ings, 2018. https://doi.org/10.23919/MIPRO.2018.8400174" .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "ICAT 2017 -26th International Conference on Information, Communication and Automation Technologies, Proceedings" ] ;
+    dcterms:title "Application of advanced analysis and predictive algorithm for warehouse picking zone capacity and content prediction" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zunic" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hodzic" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hasic" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Skrobo" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Besirevic" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Donko" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:doi "['10.1109/ICAT.2017.8171629']" ;
+    c4o:hasContent "E. Zunic, K. Hodzic, H. Hasic, R. Skrobo, A. Besirevic, and D. Donko, \"Application of advanced analysis and predictive al- gorithm for warehouse picking zone capacity and content predic- tion,\" in ICAT 2017 -26th International Conference on Informa- tion, Communication and Automation Technologies, Proceedings, 2017. https://doi.org/10.1109/ICAT.2017.8171629" .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "Int. J. Prod. Econ" ] ;
+    dcterms:title "The balanced cargo vehicle routing problem with time windows" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kritikos" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ioannou" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:doi "['10.1016/j.ijpe.2009.07.006']" ;
+    c4o:hasContent "M. N. Kritikos and G. Ioannou, \"The balanced cargo vehicle routing problem with time windows,\" Int. J. Prod. Econ., 2010. https://doi.org/10.1016/j.ijpe.2009.07.006" .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 1993 ;
+    dcterms:publisher [ foaf:name "Annals of operations research" ] ;
+    dcterms:title "Metastrategy simulated annealing and tabu search algorithms for the vehicle routing problem" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Osman" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:doi "['10.1007/BF02023004']" ;
+    bibo:issue "4" ;
+    bibo:volume "41" ;
+    c4o:hasContent "I. H. Osman, \"Metastrategy simulated annealing and tabu search algo- rithms for the vehicle routing problem,\" Annals of operations research 41.4, 1993. https://doi.org/10.1007/BF02023004" .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 1994 ;
+    dcterms:publisher [ foaf:name "Management science" ] ;
+    dcterms:title "A tabu search heuristic for the vehicle routing problem" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gendreau" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hertz" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Laporte" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:doi "['10.1287/mnsc.40.10.1276']" ;
+    bibo:volume "40" ;
+    c4o:hasContent "M. Gendreau, A. Hertz, and G. Laporte, \"A tabu search heuristic for the vehicle routing problem.\" Management science 40.10, 1994. https://doi.org/10.1287/mnsc.40.10.1276" .
+

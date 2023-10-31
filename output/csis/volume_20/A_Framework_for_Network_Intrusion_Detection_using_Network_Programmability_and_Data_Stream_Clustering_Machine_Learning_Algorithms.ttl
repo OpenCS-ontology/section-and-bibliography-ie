@@ -1,0 +1,822 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2 ] ;
+    dcterms:title "A Framework for Network Intrusion Detection using Network Programmability and Data Stream Clustering Machine Learning Algorithms"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Several operational security mechanisms have been developed to mitigate malicious activity in the Internet. However, the most these mechanisms require a signature basis and present the inability to predict new malicious activity. Other anomaly-based mechanisms are inefficient due to the possibility of an attacker simulates legitimate traffic, which causes many false alarms. Thus, to overcome that problem, in this paper we present an anomaly-based framework that uses network programmability and machine learning algorithms over continuous data stream. Our approach overcomes the main challenges that occur when develop an anomaly-based system using machine learning techniques. We have done an experimental evaluation to demonstrate the feasibility of the proposed framework. In the experiments, we use a DDoS attack as network intrusion and we show that the technique attains an Accuracy of 98.98\\%, a Recall of 60\\%, a Precision of 60\\% and an FPR of 0.48\\% for 1\\% DDoS attack on the real normal traffic. This shows the effectiveness of our technique."^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 6 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F87"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/87.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/87.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "Advances in Network Systems and Applications"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Nascimento"^^xsd:string ;
+    foaf:givenName "Anderson Clayton Alves"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Ribeiro"^^xsd:string ;
+    foaf:givenName "Admilson de Ribamar Lima"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    foaf:familyName "Ordonez"^^xsd:string ;
+    foaf:givenName "Edward David Moreno"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section1 ;
+                    co:nextItem [ co:itemContent :section5 ;
+                            co:nextItem [ co:itemContent :section13 ;
+                                    co:nextItem [ co:itemContent :section18 ;
+                                            co:nextItem [ co:itemContent :section21 ;
+                                                    co:nextItem [ co:itemContent :section24 ;
+                                                            co:nextItem [ co:itemContent :section29 ;
+                                                                    co:nextItem [ co:itemContent :section30 ;
+                                                                            co:nextItem [ co:itemContent :section35 ;
+                                                                                    co:nextItem [ co:itemContent :section38 ;
+                                                                                            co:nextItem [ co:itemContent :section41 ;
+                                                                                                    co:nextItem [ co:itemContent :section43 ;
+                                                                                                            co:nextItem [ co:itemContent :section47 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section1,
+        :section13,
+        :section18,
+        :section21,
+        :section24,
+        :section29,
+        :section30,
+        :section35,
+        :section38,
+        :section41,
+        :section43,
+        :section47,
+        :section5 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:sectionLabel13 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel29 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel41 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel5 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION HE HUGE variety of attacks in the Internet combined" .
+
+:sectionTitle1 a doco:SectionTitle ;
+    c4o:hasContent "T" .
+
+:sectionTitle13 a doco:SectionTitle ;
+    c4o:hasContent "CHALLENGES IN ANOMALY-BASED INTRUSION DETECTION SYSTEM" .
+
+:sectionTitle18 a doco:SectionTitle ;
+    c4o:hasContent "A. Overcoming the Category 1 Challenge" .
+
+:sectionTitle21 a doco:SectionTitle ;
+    c4o:hasContent "B. Overcoming the Category 2 Challenge" .
+
+:sectionTitle24 a doco:SectionTitle ;
+    c4o:hasContent "C. Overcoming the Category 3 Challenge" .
+
+:sectionTitle29 a doco:SectionTitle ;
+    c4o:hasContent "FRAMEWORK OVERVIEW" .
+
+:sectionTitle30 a doco:SectionTitle ;
+    c4o:hasContent "A. SDN Architecture" .
+
+:sectionTitle35 a doco:SectionTitle ;
+    c4o:hasContent "B. Data Stream Clustering Algorithms" .
+
+:sectionTitle38 a doco:SectionTitle ;
+    c4o:hasContent "C. Mitigation Technique" .
+
+:sectionTitle41 a doco:SectionTitle ;
+    c4o:hasContent "EXPERIMENTAL EVALUATION" .
+
+:sectionTitle43 a doco:SectionTitle ;
+    c4o:hasContent "A. Data Stream and Processing" .
+
+:sectionTitle47 a doco:SectionTitle ;
+    c4o:hasContent "B. Results and Discussion" .
+
+:sectionTitle5 a doco:SectionTitle ;
+    c4o:hasContent "RELATED WORK" .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF25 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:section0 a doco:Section ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section1 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8 ;
+    po:containsAsHeader :sectionTitle1 .
+
+:section13 a doco:Section ;
+    po:contains :referenceToBIBREF16,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :sectionLabel13 ;
+    po:containsAsHeader :sectionTitle13 .
+
+:section18 a doco:Section ;
+    po:contains :referenceToBIBREF17 ;
+    po:containsAsHeader :sectionTitle18 .
+
+:section21 a doco:Section ;
+    po:contains :referenceToBIBREF8 ;
+    po:containsAsHeader :sectionTitle21 .
+
+:section24 a doco:Section ;
+    po:contains :referenceToBIBREF16,
+        :referenceToBIBREF8 ;
+    po:containsAsHeader :sectionTitle24 .
+
+:section29 a doco:Section ;
+    po:contains :sectionLabel29 ;
+    po:containsAsHeader :sectionTitle29 .
+
+:section30 a doco:Section ;
+    po:contains :referenceToBIBREF18,
+        :referenceToBIBREF19 ;
+    po:containsAsHeader :sectionTitle30 .
+
+:section35 a doco:Section ;
+    po:contains :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :referenceToBIBREF23 ;
+    po:containsAsHeader :sectionTitle35 .
+
+:section38 a doco:Section ;
+    po:containsAsHeader :sectionTitle38 .
+
+:section41 a doco:Section ;
+    po:contains :sectionLabel41 ;
+    po:containsAsHeader :sectionTitle41 .
+
+:section43 a doco:Section ;
+    po:contains :referenceToBIBREF24,
+        :referenceToBIBREF25 ;
+    po:containsAsHeader :sectionTitle43 .
+
+:section47 a doco:Section ;
+    po:containsAsHeader :sectionTitle47 .
+
+:section5 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF9,
+        :sectionLabel5 ;
+    po:containsAsHeader :sectionTitle5 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2007 ;
+    dcterms:publisher [ foaf:name "IEEE Wirel Commun" ] ;
+    dcterms:title "Intrusion detection techniques in mobile ad hoc and wireless sensor networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Osborne" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Xiao" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 63 ;
+    bibo:pageStart 56 ;
+    bibo:volume "14" ;
+    c4o:hasContent "B. Sun, L. Osborne, Y. Xiao, et al. Intrusion detection techniques in mobile ad hoc and wireless sensor networks. IEEE Wirel Commun 2007; 14: 56-63." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 1999 ;
+    dcterms:publisher [ foaf:name "Comput Netw" ] ;
+    dcterms:title "Bro: a system for detecting network intruders in real-time" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Paxson" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:issue "23" ;
+    bibo:pageEnd 2463 ;
+    bibo:pageStart 2435 ;
+    bibo:volume "31" ;
+    c4o:hasContent "V. Paxson. Bro: a system for detecting network intruders in real-time. Comput Netw 1999; 31(23): 2435-2463." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "Advances in Computer Science and Information Technology" ] ;
+    dcterms:title "Outliers Detection as Network Intrusion Detection System Using Multi Layered Framework" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Devarakonda" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pamidi" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kumari" ;
+                    foaf:givenname "V" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Govardhan" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 111 ;
+    bibo:pageStart 101 ;
+    bibo:volume "131" ;
+    c4o:hasContent "N. Devarakonda, S. Pamidi, V. V. Kumari, and A. Govar- dhan,\"Outliers Detection as Network Intrusion Detection System Using Multi Layered Framework,\" in Advances in Computer Science and Information Technology, Communications in Computer and Information Science Vol. 131, 2011, pp. 101-111." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "Advances in Artificial Intelligence" ] ;
+    dcterms:title "Anomaly-based network intrusion detection using outlier subspace analysis: A case study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kershaw" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 239 ;
+    bibo:pageStart 234 ;
+    bibo:volume "6657" ;
+    c4o:hasContent "D. Kershaw, Q. Gao, and H. Wang, \"Anomaly-based network intrusion detection using outlier subspace analysis: A case study,\" in Advances in Artificial Intelligence, Lecture Notes in Computer Science Vol. 6657, 2011, pp. 234-239." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "Proc. 2012 International Conference on Communication, Electronics and Automation Engineering (ICCEAE), Advances in Intelligent Systems and Computing" ] ;
+    dcterms:title "Distributed intrusion detection based on outlier mining" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Da" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ting" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 348 ;
+    bibo:pageStart 343 ;
+    bibo:volume "181" ;
+    c4o:hasContent "W. Da and H. S. Ting, \"Distributed intrusion detection based on outlier mining,\" in Proc. 2012 International Conference on Communication, Electronics and Automation Engineering (ICCEAE), Advances in Intelligent Systems and Computing Vol. 181, 2013, pp. 343-348." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "Intl' conference on Intelligent Systems, Data Mining and Information Technology (ICIDIT'2014)" ] ;
+    dcterms:title "Intrusion Detection Based on Outlier Detection Method" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Manandhar" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Aung" ;
+                    foaf:givenname "Z" ] ] ;
+    c4o:hasContent "P. Manandhar, and Z. Aung. \"Intrusion Detection Based on Outlier Detection Method\". Intl' conference on Intelligent Systems, Data Mining and Information Technology (ICIDIT'2014) April 21-22, 2014 Bangkok (Thailand)" .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "AICT 2017 -The 30th Advanced International Conference on elecommunications" ] ;
+    dcterms:title "Mitigating attacks in the Internet of Things with a Selfprotecting Architecture" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mello" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ribeiro" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Almeida" ;
+                    foaf:givenname "F" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Moreno" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    bibo:volume "1" ;
+    c4o:hasContent "R. M. A. C. Mello; A. R. L. Ribeiro; F. M. Almeida, and E. D. Moreno.\"Mitigating attacks in the Internet of Things with a Self- protecting Architecture\". In: AICT 2017 -The 30th Advanced International Conference on elecommunications, 2017, Venice. Proc. of AICT 2017. Paris: IARIA, v.1. p. 1-6, 2017." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "AICT 2016 -The 12th Advanced International Conference on Telecommunications, Valencia. Proc. of AICT 2016" ] ;
+    dcterms:title "Performance Evaluation of an Artificial Neural Network Multilayer Perceptron with Limited Weights for Detecting Denial of Service Attack on Internet of Things" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Almeida" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ribeiro" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Moreno" ;
+                    foaf:givenname "E" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:givenname ";" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Montesco" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "F. M. Almeida; A. R. L. Ribeiro; E. D. Moreno; and C. A. E. Montesco. . \"Performance Evaluation of an Artificial Neural Network Multilayer Perceptron with Limited Weights for Detecting Denial of Service Attack on Internet of Things\". In: In: AICT 2016 -The 12th Advanced International Conference on Telecommunications, Valencia. Proc. of AICT 2016. Paris, France: IARIA XPS Press, v. 1. p. 1-6, 2016." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2009 ;
+    dcterms:publisher [ foaf:name "ACM Computing Surveys" ] ;
+    dcterms:title "Anomaly Detection: A Survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chandola" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Banerjee" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 72 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "V. Chandola, A. Banerjee and V. Kumar. \"Anomaly Detection: A Survey\", ACM Computing Surveys, pp 1-72, 2009." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2001 ;
+    dcterms:publisher [ foaf:name "Proceedings of the Eighteenth International Conference on Machine Learning" ] ;
+    dcterms:title "A general method for scaling up machine learning algorithms and its application to clustering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Domingos" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hulten" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 113 ;
+    bibo:pageStart 106 ;
+    c4o:hasContent "P. Domingos and G. Hulten. A general method for scaling up ma- chine learning algorithms and its application to clustering. In: Pro- ceedings of the Eighteenth International Conference on Machine Learning, p. 106-113, 2001." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "IEEE Communications Magazine" ] ;
+    dcterms:title "Software-Defined Networking: Management Requirements and Challenges" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wickboldt" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "De Jesus" ;
+                    foaf:givenname "W" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Isolani" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Both" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Rochol" ;
+                    foaf:givenname "J" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Granville" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 285 ;
+    bibo:pageStart 278 ;
+    bibo:volume "53" ;
+    c4o:hasContent "J. A. Wickboldt, W. P. de Jesus, P. H. Isolani, C. B. Both, J. Rochol, and L. Z. Granville, \"Software-Defined Networking: Management Requirements and Challenges,\" IEEE Communications Magazine, vol. 53, no. 1, pp. 278-285, Jan 2015." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:title "Software-Defined Networking: A Comprehensive Survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kreutz" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Veríssimo" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Azodolmolky" ;
+                    foaf:givenname "S" ] ] ;
+    c4o:hasContent "D. Kreutz, P. E. Veríssimo, S. Azodolmolky, \"Software-Defined Net- working: A Comprehensive Survey\", arXiv preprint arXiv:1406.0440, 2014" .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2001 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 2001 IEEE/IFIP international symposium on integrated network management" ] ;
+    dcterms:title "Proactive detection of distributed denial of service attacks using MIB traffic variables-a feasibility study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cabrera" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lewis" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Qin" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 622 ;
+    bibo:pageStart 609 ;
+    c4o:hasContent "J.B. Cabrera, L. Lewis, X. Qin et al. Proactive detection of distributed denial of service attacks using MIB traffic variables-a feasibility study. In: Proceedings of the 2001 IEEE/IFIP international sympo- sium on integrated network management, Seattle, WA, 14-18 May 2001, pp.609-622. New York: IEEE." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "ACM Computing Surveys" ] ;
+    dcterms:title "Data Stream Clustering: A survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Silva" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Faria" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Barros" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hruschka" ;
+                    foaf:givenname "E" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Carvalho" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Gama" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:issue "1" ;
+    bibo:volume "46" ;
+    c4o:hasContent "J. A. Silva, E. R. Faria, R. C. Barros, E. R. Hruschka, A. C. P. L. F. Carvalho and J. Gama, \"Data Stream Clustering: A survey\", ACM Computing Surveys, vol 46, Issue 1, October 2013." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:title "The OutlierDenStream Algorithm" ;
+    c4o:hasContent "\"The OutlierDenStream Algorithm\", https://github.com/anrputina/ OutlierDenStream." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:title "Density-based Clustering over an Evolving Data Stream SIAM Conference Data Mining" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cao" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ester" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Qian" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "F. Cao, M. Ester, W. Qian and A. Zhou, \"Density-based Clustering over an Evolving Data Stream SIAM Conference Data Mining, Bethesda, 2006." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 1996 ;
+    dcterms:publisher [ foaf:name "International Conference on Knowledge Discovery in Databases and Data Mining (KDD-96)" ] ;
+    dcterms:title "A Den-sity-Based Algorithm for Discovering Clusters Spatial Databases with Noise" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ester" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kriegel" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sander" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 231 ;
+    bibo:pageStart 226 ;
+    c4o:hasContent "M. Ester, H. Kriegel, J. Sander and X. Xu, \"A Den-sity-Based Algorithm for Discovering Clusters Spatial Databases with Noise,\" International Conference on Knowledge Discovery in Databases and Data Mining (KDD-96), Portland, pp. 226-231, 1996." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:title "CDMC2018 Dataset: DDoS Attacks Detection for Enterprise Network Security" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ghorbani" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lashkari" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "A. Ghorbani and A. H. Lashkari, CDMC2018 Dataset: DDoS Attacks Detection for Enterprise Network Security, Canadian Institute for Cy- bersecurity, University of New Brunswick, http://www.csmining.org/" .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:publisher [ foaf:name "Pattern Recognition Letters" ] ;
+    dcterms:title "An introduction to ROC analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fawcet" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 874 ;
+    bibo:pageStart 861 ;
+    c4o:hasContent "T. Fawcet, \"An introduction to ROC analysis\", Pattern Recognition Letters, p. 861-874, 2005." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 1999 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 13th USENIX conference on system administration" ] ;
+    dcterms:title "Snort: lightweight intrusion detection for networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Roesch" ;
+                    foaf:givenname "M" ] ] ;
+    c4o:hasContent "M. Roesch. Snort: lightweight intrusion detection for networks. In: Proceedings of the 13th USENIX conference on system administra- tion, Seattle, WA, 7-12 November 1999. Berkeley, CA: USENIX As- sociation." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2002 ;
+    dcterms:publisher [ foaf:name "Proceedings of the IEEE global telecommunications conference, 2002 (GLOBECOM' 02)" ] ;
+    dcterms:title "Use of spectral analysis in defense against DoS attacks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cheng" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kung" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tan" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 2148 ;
+    bibo:pageStart 2143 ;
+    bibo:volume "3" ;
+    c4o:hasContent "C.M. Cheng, H. Kung and K.S. Tan. Use of spectral analysis in de- fense against DoS attacks. In: Proceedings of the IEEE global telecommunications conference, 2002 (GLOBECOM' 02), Taipei, Taiwan, 17-21 November 2002, vol. 3, pp.2143-2148. New York: IEEE." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2003 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 2003 conference on applications, technologies, architectures, and protocols for computer communications" ] ;
+    dcterms:title "A framework for classifying denial of service attacks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hussain" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Heidemann" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Papadopoulos" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 110 ;
+    bibo:pageStart 99 ;
+    c4o:hasContent "A. Hussain, J. Heidemann and C. Papadopoulos. A framework for classifying denial of service attacks. In: Proceedings of the 2003 con- ference on applications, technologies, architectures, and protocols for computer communications, Karlsruhe, 25-29 August 2003, pp.99- 110. New York: ACM." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 25th IEEE international conference on computer communications (INFOCOM 2006)" ] ;
+    dcterms:title "Identification of repeated denial of service attacks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hussain" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Heidemann" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Papadopoulos" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 15 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "A. Hussain, J. Heidemann and C. Papadopoulos. Identification of re- peated denial of service attacks. In: Proceedings of the 25th IEEE in- ternational conference on computer communications (INFOCOM 2006), Barcelona, 23-29 April 2006, pp.1-15. New York: IEEE." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2007 ;
+    dcterms:publisher [ foaf:name "Proc: Workshop on New Security Paradigms" ] ;
+    dcterms:title "Challenging the Anomaly Detection Paradigm: A Provocative Discussion" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gates" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Taylor" ;
+                    foaf:givenname "C" ] ] ;
+    c4o:hasContent "C. Gates and C. Taylor, \"Challenging the Anomaly Detection Paradigm: A Provocative Discussion,\" in Proc: Workshop on New Security Paradigms, 2007." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "Proc. of IEEE Symposium on Security and Privacy" ] ;
+    dcterms:title "Outside the Closed World: On Using Machine Learning for Network Intrusion Detection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sommer" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Paxson" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 316 ;
+    bibo:pageStart 305 ;
+    c4o:hasContent "R. Sommer and V. Paxson, \"Outside the Closed World: On Using Machine Learning for Network Intrusion Detection\", In Proc. of IEEE Symposium on Security and Privacy, pp. 305-316, 2010." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "Proc. 2006 IEEE International Conference on Communications (ICC)" ] ;
+    dcterms:title "Anomaly based network intrusion detection with unsupervised outlier detection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zulkernine" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 2393 ;
+    bibo:pageStart 2388 ;
+    bibo:volume "5" ;
+    c4o:hasContent "J. Zhang and M. Zulkernine, \"Anomaly based network intrusion detection with unsupervised outlier detection,\" in Proc. 2006 IEEE International Conference on Communications (ICC), 2006, vol. 5, pp. 2388-2393." .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+

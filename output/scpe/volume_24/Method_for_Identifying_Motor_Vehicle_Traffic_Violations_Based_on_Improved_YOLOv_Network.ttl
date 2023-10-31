@@ -1,0 +1,491 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "CBAM"^^xsd:string,
+        "OpenCV"^^xsd:string,
+        "SE"^^xsd:string,
+        "YOLOV"^^xsd:string,
+        "motor vehicles"^^xsd:string,
+        "traffic offences"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "Method for Identifying Motor Vehicle Traffic Violations Based on Improved YOLOv Network"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "The use of traditional manual supervision means to deal with motor vehicle traffic safety violations can result in a large amount of wasted manpower and oversight problems. To assist road managers in better directing traffic order and managing traffic situations, the study proposes an improved target tracking network model. Simple online real-time tracking, deep correlation metrics, and cascading open-source computer vision libraries are combined to create a tracking model for motor vehicle traffic infraction recognition. Pursuant to the experimental findings, the Institute’s upgraded target recognition network model had accuracy and recall rates of 95.7% and 99.7%, respectively, with an accuracy rate of 16.6% higher than the model’s historical counterpart. The recognition accuracy of the constructed motor vehicle traffic violation recognition and tracking model regarding the three basic traffic violations was 98.2%, 98.7%, and 97.9%, respectively; the missed detection rate was 2.0%, 0.31%, and 2.1%, respectively; and the false detection rate was 0.17%, 0.31%, and 0%, respectively. It shows that the improved network model of the study is advanced and the motor vehicle traffic offence model has a good recognition rate and stable performance, which can assist traffic managers in their operations to a certain extent."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 228 ;
+    prism:pageCount 11 ;
+    prism:startingPage 217 ;
+    datacite:doi "10.12694/scpe.v24i3.2335"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2335"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2335> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Hao"^^xsd:string ;
+    foaf:givenName "Zhengjun"^^xsd:string ;
+    foaf:name "Zhengjun Hao"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section1 ;
+                    co:nextItem [ co:itemContent :section3 ;
+                            co:nextItem [ co:itemContent :section33 ] ] ] ] ;
+    po:contains :section0,
+        :section1,
+        :section3,
+        :section33 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Department of Traffic Engineering, Henan Police College, Zhengzhou, 450046, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel1 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel23 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel3 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel30 a doco:SectionLabel ;
+    c4o:hasContent "4.1." .
+
+:sectionLabel31 a doco:SectionLabel ;
+    c4o:hasContent "4.2." .
+
+:sectionLabel33 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel4 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle1 a doco:SectionTitle ;
+    c4o:hasContent "Related Works." .
+
+:sectionTitle23 a doco:SectionTitle ;
+    c4o:hasContent "Model Construction of Multi-objective" .
+
+:sectionTitle3 a doco:SectionTitle ;
+    c4o:hasContent "Model Construction for Identification and Detection of Motor Vehicle Traffic Violations." .
+
+:sectionTitle30 a doco:SectionTitle ;
+    c4o:hasContent "Detection and training analysis of optimized models and other models." .
+
+:sectionTitle31 a doco:SectionTitle ;
+    c4o:hasContent "Analysis of weekly peak recognition efficiency test for motor vehicles." .
+
+:sectionTitle33 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle4 a doco:SectionTitle ;
+    c4o:hasContent "Construction of a Motor Vehicle Tracking Recognition Model based on YOLOv5s. YOLOv5" .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 1978 ;
+    dcterms:title "Eal-time Method For Traffic Sign Detection And Recognition Based OnYOLOv" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yao" ;
+                    foaf:givenname "Zhenxin" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Song" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "Lu" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yin" ;
+                    foaf:givenname "Yanhang" ] ] ;
+    bibo:volume "235" ;
+    c4o:hasContent "Zhenxin Yao, X. Song,Lu Zhao,Yanhang Yin. Eal-time Method For Traffic Sign Detection And Recognition Based OnYOLOv. 235, 1978-1991 (0)" .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF2,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section1 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel1 ;
+    po:containsAsHeader :sectionTitle1 .
+
+:section23 a doco:Section ;
+    po:contains :sectionLabel23 ;
+    po:containsAsHeader :sectionTitle23 .
+
+:section3 a doco:Section ;
+    co:firstItem [ co:itemContent :section4 ;
+            co:nextItem [ co:itemContent :section23 ;
+                    co:nextItem [ co:itemContent :section30 ;
+                            co:nextItem [ co:itemContent :section31 ] ] ] ] ;
+    po:contains :section23,
+        :section30,
+        :section31,
+        :section4,
+        :sectionLabel3 ;
+    po:containsAsHeader :sectionTitle3 .
+
+:section30 a doco:Section ;
+    po:contains :sectionLabel30 ;
+    po:containsAsHeader :sectionTitle30 .
+
+:section31 a doco:Section ;
+    po:contains :sectionLabel31 ;
+    po:containsAsHeader :sectionTitle31 .
+
+:section33 a doco:Section ;
+    po:contains :sectionLabel33 ;
+    po:containsAsHeader :sectionTitle33 .
+
+:section4 a doco:Section ;
+    po:contains :sectionLabel4 ;
+    po:containsAsHeader :sectionTitle4 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:title "Toward a Self-Supervised Architecture for Semen Quality Prediction Using Environmental and Lifestyle Factors//Artificial Intelligence and Applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nsugbe" ;
+                    foaf:givenname "E" ] ] ;
+    c4o:hasContent "Nsugbe, E. Toward a Self-Supervised Architecture for Semen Quality Prediction Using Environmental and Lifestyle Fac- tors//Artificial Intelligence and Applications. 2023. (0)" .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:title "management system for smart road networks reserved for self-driving cars" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Febbraro" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Angela & Davide" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:volume "14" ;
+    c4o:hasContent "Febbraro, D., Angela & Davide, N. management system for smart road networks reserved for self-driving cars. ET Intelligent Transport Systems. 14, 2020 (0)" .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 1952 ;
+    dcterms:publisher [ foaf:name "Journal Of Physics: Conference Series" ] ;
+    dcterms:title "Multi-target Tracking Based on Deep Sort in Traffic Scene" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Duan" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 2208 ;
+    bibo:pageStart 22074 ;
+    c4o:hasContent "Duan, C. & Li, X. Multi-target Tracking Based on Deep Sort in Traffic Scene. Journal Of Physics: Conference Series. 1952, 22074-02208 (2021)" .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:title "Real-time Multi-vehicle Tracking Framework In Intelligent Vehicular Networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fu" ;
+                    foaf:givenname "Huiyuan" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Guan" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Jing" ;
+                    foaf:givenname "Feng" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Chuanming" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ma" ;
+                    foaf:givenname "Huadong" ] ] ;
+    bibo:pageEnd 99 ;
+    bibo:pageStart 89 ;
+    bibo:volume "18" ;
+    c4o:hasContent "Huiyuan Fu, J. Guan,Feng Jing,Chuanming Wang,Huadong Ma. Real-time Multi-vehicle Tracking Framework In Intelligent Vehicular Networks. 18, 89-99 (0)" .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:publisher [ foaf:name "Ngineering Applications Of Artificial Intelligence: The International Journal Of Intelligent Real-Time Automation" ] ;
+    dcterms:title "lightweight vehicles detection network model based on YOLOv5" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dong" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shuai" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:issue "0" ;
+    bibo:volume "11" ;
+    c4o:hasContent "Dong, Y. & Shuai, C. lightweight vehicles detection network model based on YOLOv5. Ngineering Applications Of Artificial Intelligence: The International Journal Of Intelligent Real-Time Automation. 11, 2022 (0)" .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:title "Eal-time Automatic Helmet Detection Of Motorcyclists In Urban Traffic Using Improved YOLOv" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wei Jia" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "Zhen" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Liang" ;
+                    foaf:givenname "Yang" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "Hai" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Min" ;
+                    foaf:givenname "Shujie" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Ye" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Yu" ] ] ;
+    bibo:pageEnd 3637 ;
+    bibo:pageStart 3623 ;
+    bibo:volume "15" ;
+    c4o:hasContent "Wei Jia, S. Xu,Zhen Liang,Yang Zhao,Hai Min,Shujie Li,Ye Yu. Eal-time Automatic Helmet Detection Of Motorcyclists In Urban Traffic Using Improved YOLOv. 15, 3623-3637 (0)" .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:publisher [ foaf:name "Process Safety and Environmental Protection" ] ;
+    dcterms:title "Intelligent Operational Supervision System for Operability and Reliability Analysis of Operators Manual Actions in Task Implementation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "You" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hongxing" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:issue "0" ;
+    bibo:volume "2022" ;
+    c4o:hasContent "X. Yang, M. You, and Hongxing, M. Intelligent Operational Supervision System for Operability and Reliability Analysis of Operators Manual Actions in Task Implementation. Process Safety and Environmental Protection, Part B, 2022, 158(0)." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Onvergence Of Stereo Vision-Based Multimodal YOLOs For FasterDetection Of Potholes" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sungan Yoon" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cho" ] ] ;
+    bibo:pageEnd 2834 ;
+    bibo:pageStart 2821 ;
+    c4o:hasContent "Sungan Yoon, J. Cho. Onvergence Of Stereo Vision-Based Multimodal YOLOs For FasterDetection Of Potholes. 2022 pp. 2821-2834 (0)" .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:publisher [ foaf:name "Ournal Of Sensors" ] ;
+    dcterms:title "Optimization of Intelligent Logistics Supply Chain Management System Based on Wireless Sensor Network and RFID Technology" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Changhong Pan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "Guolong" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shi" ] ] ;
+    bibo:issue "0" ;
+    bibo:pageEnd 81119 ;
+    bibo:pageStart 3 ;
+    bibo:volume "2021" ;
+    c4o:hasContent "Changhong Pan, M. Liu,Guolong Shi.Optimization of Intelligent Logistics Supply Chain Management System Based on Wireless Sensor Network and RFID Technology. Ournal Of Sensors. 2021, 3-81119 (0)" .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:title "Isk Factors For Unsafe Events Involving A Motor Vehicle For Group Riders (cyclists): A Naturalistic Case-crossover Study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fraser" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Meuleners" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 10575 ;
+    bibo:pageStart 3 ;
+    bibo:volume "146" ;
+    c4o:hasContent "Fraser, M. & Meuleners, L. B. Isk Factors For Unsafe Events Involving A Motor Vehicle For Group Riders (cyclists): A Naturalistic Case-crossover Study. 146, 3-10575 (0)" .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:title "Etecting Small Chinese Traffic Signs Via Improved YOLOv" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Guili" ;
+                    foaf:givenname "Chenchen" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lin" ] ] ;
+    bibo:pageEnd 88265 ;
+    bibo:pageStart 4 ;
+    bibo:volume "2021" ;
+    c4o:hasContent "Zhang, W., Guili & Chenchen Lin. Etecting Small Chinese Traffic Signs Via Improved YOLOv. 2021, 4-88265 (0)" .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "A. real-time vehicle detection and a novel vehicle tracking systems for estimatingand monitoring traffic flow on highways. Dvanced Engineering Informatics" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Azimjonov" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ozmen" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 402 ;
+    bibo:pageStart 393 ;
+    c4o:hasContent "Azimjonov, J. & Ozmen A.., A. real-time vehicle detection and a novel vehicle tracking systems for estimatingand monitoring traffic flow on highways. Dvanced Engineering Informatics. 2021 pp. 393-402 (0)" .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:title "Op View Multiple People Tracking By Detection Using Deep SORT And YOLOv" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ahmed" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Misbah Gwanggil" ] ] ;
+    bibo:pageEnd 3067 ;
+    bibo:pageStart 3053 ;
+    bibo:volume "12" ;
+    c4o:hasContent "Ahmed, A. & Misbah Gwanggil. Op View Multiple People Tracking By Detection Using Deep SORT And YOLOv. 12, 3053-3067 (0)" .
+

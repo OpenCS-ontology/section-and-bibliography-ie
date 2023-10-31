@@ -1,0 +1,824 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2 ] ;
+    dcterms:title "Efficient Production Monitoring on the Basis of Domain Ontologies by Utilizing IoT"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "The Internet-of-Things (IoT) technologies and cyber-physical systems has facilitated production monitoring and control. However, researches and applications still lack a standardized framework and an integrated technological solution that can maximize the leverage of real-time monitoring. This can be achieved through enabling data transfer and exchange between all entities/organizations in supply chains and accordingly utilizing the monitored data. This paper introduces a framework for production monitoring that utilizes and integrates ontological model, which implements and integrates Semantic Sensor Network (SSN) ontology with production monitoring services. In addition, Complex Event Processing is integrated in the proposed model to enable event patterns identification and undertake the appropriate (pro-active) action accordingly. The framework is constructed based on ISA-95 and SCOR standards. The utility, applicability and efficacy of the proposed framework is validated by its application on a real-life large-scale case study in the domain of laser cutting machines."^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 7 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F228"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/228.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/228.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "17th Conference on Advanced Information Technologies for Management"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Riad"^^xsd:string ;
+    foaf:givenName "Maha"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Elzanfaly"^^xsd:string ;
+    foaf:givenName "Doaa"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    foaf:familyName "Elgammal"^^xsd:string ;
+    foaf:givenName "Amal"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section3 ;
+                    co:nextItem [ co:itemContent :section4 ;
+                            co:nextItem [ co:itemContent :section5 ;
+                                    co:nextItem [ co:itemContent :section7 ;
+                                            co:nextItem [ co:itemContent :section12 ;
+                                                    co:nextItem [ co:itemContent :section17 ;
+                                                            co:nextItem [ co:itemContent :section20 ;
+                                                                    co:nextItem [ co:itemContent :section21 ;
+                                                                            co:nextItem [ co:itemContent :section30 ;
+                                                                                    co:nextItem [ co:itemContent :section31 ;
+                                                                                            co:nextItem [ co:itemContent :section32 ;
+                                                                                                    co:nextItem [ co:itemContent :section33 ;
+                                                                                                            co:nextItem [ co:itemContent :section34 ;
+                                                                                                                    co:nextItem [ co:itemContent :section35 ;
+                                                                                                                            co:nextItem [ co:itemContent :section36 ;
+                                                                                                                                    co:nextItem [ co:itemContent :section39 ;
+                                                                                                                                            co:nextItem [ co:itemContent :section41 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :section42 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :section43 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :section44 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section12,
+        :section17,
+        :section20,
+        :section21,
+        :section3,
+        :section30,
+        :section31,
+        :section32,
+        :section33,
+        :section34,
+        :section35,
+        :section36,
+        :section39,
+        :section4,
+        :section41,
+        :section42,
+        :section43,
+        :section44,
+        :section5,
+        :section7 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[9]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel17 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel3 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel36 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel43 a doco:SectionLabel ;
+    c4o:hasContent "7." .
+
+:sectionLabel44 a doco:SectionLabel ;
+    c4o:hasContent "8." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "B. Ontological Models for Production/Manufacturing" .
+
+:sectionTitle17 a doco:SectionTitle ;
+    c4o:hasContent "CASE STUDY" .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "A. Data Collection Layer" .
+
+:sectionTitle21 a doco:SectionTitle ;
+    c4o:hasContent "B. Data Storage & Management Layer" .
+
+:sectionTitle3 a doco:SectionTitle ;
+    c4o:hasContent "BACKGROUND" .
+
+:sectionTitle30 a doco:SectionTitle ;
+    c4o:hasContent "Domain Specific Ontology:" .
+
+:sectionTitle31 a doco:SectionTitle ;
+    c4o:hasContent "Application Representation Ontology:" .
+
+:sectionTitle32 a doco:SectionTitle ;
+    c4o:hasContent "Data Exchange between different entities using blueprints:" .
+
+:sectionTitle33 a doco:SectionTitle ;
+    c4o:hasContent "A. Complex Event Processing" .
+
+:sectionTitle34 a doco:SectionTitle ;
+    c4o:hasContent "B. Analytical Layer" .
+
+:sectionTitle35 a doco:SectionTitle ;
+    c4o:hasContent "C. Presentation Layer" .
+
+:sectionTitle36 a doco:SectionTitle ;
+    c4o:hasContent "IMPLEMENTATION AND EVALUATION" .
+
+:sectionTitle39 a doco:SectionTitle ;
+    c4o:hasContent "B. Ability of Reading and Writing Instances (Manipulating Blueprints)" .
+
+:sectionTitle4 a doco:SectionTitle ;
+    c4o:hasContent "A. Internet-of-Things" .
+
+:sectionTitle41 a doco:SectionTitle ;
+    c4o:hasContent "C. Used Scenario and Instances for Simulation" .
+
+:sectionTitle42 a doco:SectionTitle ;
+    c4o:hasContent "D. Discussion" .
+
+:sectionTitle43 a doco:SectionTitle ;
+    c4o:hasContent "CONCLUSION AND FUTURE WORK" .
+
+:sectionTitle44 a doco:SectionTitle ;
+    c4o:hasContent "ACKNOWLEDGEMENT" .
+
+:sectionTitle5 a doco:SectionTitle ;
+    c4o:hasContent "B. Ontologies and Semantic Sensor Network Ontology" .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "A. Integration of Production Monitoring Systems and IoT" .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "CIRP J. Manuf. Sci. Technol" ] ;
+    dcterms:title "Collaborative on-demand Product-Service Systems customization" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Papazoglou" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Elgammal" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Krämer" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:doi "['10.1016/j.cirpj.2018.08.003']" ;
+    c4o:hasContent "M. P. Papazoglou, A. Elgammal, and B. J. Krämer, \"Collaborative on-demand Product-Service Systems customization,\" CIRP J. Manuf. Sci. Technol., 2018. DOI: https://doi.org/10.1016/j.cirpj.2018.08.003" .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF6 ;
+                                                    co:nextItem [ co:itemContent :BIBREF7 ;
+                                                            co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF25 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section12 a doco:Section ;
+    po:contains :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF20 ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section17 a doco:Section ;
+    po:contains :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :sectionLabel17 ;
+    po:containsAsHeader :sectionTitle17 .
+
+:section20 a doco:Section ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section21 a doco:Section ;
+    po:contains :referenceToBIBREF22 ;
+    po:containsAsHeader :sectionTitle21 .
+
+:section3 a doco:Section ;
+    po:contains :sectionLabel3 ;
+    po:containsAsHeader :sectionTitle3 .
+
+:section30 a doco:Section ;
+    po:containsAsHeader :sectionTitle30 .
+
+:section31 a doco:Section ;
+    po:containsAsHeader :sectionTitle31 .
+
+:section32 a doco:Section ;
+    po:containsAsHeader :sectionTitle32 .
+
+:section33 a doco:Section ;
+    po:contains :referenceToBIBREF10 ;
+    po:containsAsHeader :sectionTitle33 .
+
+:section34 a doco:Section ;
+    po:containsAsHeader :sectionTitle34 .
+
+:section35 a doco:Section ;
+    po:containsAsHeader :sectionTitle35 .
+
+:section36 a doco:Section ;
+    po:contains :referenceToBIBREF18,
+        :referenceToBIBREF24,
+        :sectionLabel36 ;
+    po:containsAsHeader :sectionTitle36 .
+
+:section39 a doco:Section ;
+    po:containsAsHeader :sectionTitle39 .
+
+:section4 a doco:Section ;
+    po:contains :referenceToBIBREF3 ;
+    po:containsAsHeader :sectionTitle4 .
+
+:section41 a doco:Section ;
+    po:containsAsHeader :sectionTitle41 .
+
+:section42 a doco:Section ;
+    po:containsAsHeader :sectionTitle42 .
+
+:section43 a doco:Section ;
+    po:contains :referenceToBIBREF22,
+        :referenceToBIBREF25,
+        :sectionLabel43 ;
+    po:containsAsHeader :sectionTitle43 .
+
+:section44 a doco:Section ;
+    po:contains :sectionLabel44 ;
+    po:containsAsHeader :sectionTitle44 .
+
+:section5 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11 ;
+    po:containsAsHeader :sectionTitle5 .
+
+:section7 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:title "Manufacturing Quality Control: The Difference Between Product and Process Audits" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Foster" ;
+                    foaf:givenname "P" ] ] ;
+    c4o:hasContent "P. Foster, \"Manufacturing Quality Control: The Difference Between Product and Process Audits,\" Beacon Quality, 2018. [Online]. Available: https://www.beaconquality.com/blog/manufacturing- quality-control-the-difference-between-product-and-process-audits. [Accessed: 23-Apr-2019]." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Int. J. Prod. Res" ] ;
+    dcterms:title "The role of digital technologies for the service transformation of industrial companies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ardolino" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1080/00207543.2017.1324224']" ;
+    bibo:volume "7543" ;
+    c4o:hasContent "M. Ardolino et al., \"The role of digital technologies for the service transformation of industrial companies,\" Int. J. Prod. Res., vol. 7543, no. May, 2017. DOI: https://doi.org/10.1080/00207543.2017.1324224" .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:title "Introducing Complex Event Processing (CEP) with Apache Flink" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Rohrmann" ;
+                    foaf:givenname "T" ] ] ;
+    c4o:hasContent "T. Rohrmann, \"Introducing Complex Event Processing (CEP) with Apache Flink.\" 2016." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Spatial Data on the Web Working Group" ] ;
+    dcterms:title "Semantic Sensor Network Ontology" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "W3c" ] ] ;
+    c4o:hasContent "W3C, \"Semantic Sensor Network Ontology.\" Spatial Data on the Web Working Group, 2017." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Robot. Comput. Manuf" ] ;
+    dcterms:title "RFID-enabled social manufacturing system for inter-enterprise monitoring and dispatching of integrated production and transportation tasks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jiang" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Su" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:doi "['10.1016/j.rcim.2017.06.009']" ;
+    bibo:pageEnd 133 ;
+    bibo:pageStart 120 ;
+    bibo:volume "49" ;
+    c4o:hasContent "K. Ding, P. Jiang, and S. Su, \"RFID-enabled social manufacturing system for inter-enterprise monitoring and dispatching of integrated production and transportation tasks,\" Robot. Comput. Manuf., vol. 49, no. 2018, pp. 120-133, 2017. DOI: https://doi.org/10.1016/j.rcim.2017.06.009" .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "The 24th CIRP Conference on Life Cycle Engineering Methodology" ] ;
+    dcterms:title "Methodology for Monitoring Manufacturing Environment by Using Wireless Sensor Networks ( WSN ) and the Internet of Things ( IoT )" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kara" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:doi "['10.1016/j.procir.2016.11.182']" ;
+    bibo:pageEnd 328 ;
+    bibo:pageStart 323 ;
+    bibo:volume "61" ;
+    c4o:hasContent "W. Li and S. Kara, \"Methodology for Monitoring Manufacturing Environment by Using Wireless Sensor Networks ( WSN ) and the Internet of Things ( IoT ),\" in The 24th CIRP Conference on Life Cycle Engineering Methodology, 2017, vol. 61, pp. 323-328. DOI: http://dx.doi.org/10.1016/j.procir.2016.11.182" .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE/CAA J. Autom. Sin" ] ;
+    dcterms:title "RFID-based Production Data Analysis in an IoT-enabled Smart Job-shop" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "Kai" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jiang" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:doi "['10.1109/JAS.2017.7510418']" ;
+    bibo:issue "1" ;
+    bibo:pageEnd 11 ;
+    bibo:pageStart 1 ;
+    bibo:volume "5" ;
+    c4o:hasContent "Kai Ding and P. Jiang, \"RFID-based Production Data Analysis in an IoT-enabled Smart Job-shop,\" IEEE/CAA J. Autom. Sin., vol. 5, no. 1, pp. 1-11, 2018. DOI: https://doi.org/10.1109/JAS.2017.7510418" .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "Implementation of Cyber-Physical Production Systems for Quality Prediction and Operation Control" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Do" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Noh" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Kang" ] ] ;
+    bibo:doi "['10.3390/s18051428']" ;
+    bibo:issue "1428" ;
+    bibo:volume "18" ;
+    c4o:hasContent "J. Lee, S. Do Noh, H. Kim, and Y. Kang, \"Implementation of Cyber- Physical Production Systems for Quality Prediction and Operation Control,\" Sensors, vol. 18, no. 1428, 2018. DOI: 10.3390/s18051428" .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Wirel. Commun. Mob. Comput" ] ;
+    dcterms:title "Analyzing Critical Failures in a Production Process : Is Industrial IoT the Solution ?" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ahmad" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Badwelan" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ghaleb" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Qamhan" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sharaf" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1155/2018/6951318']" ;
+    bibo:volume "2018" ;
+    c4o:hasContent "S. Ahmad, A. Badwelan, A. M. Ghaleb, A. Qamhan, and M. Sharaf, \"Analyzing Critical Failures in a Production Process : Is Industrial IoT the Solution ?,\" Wirel. Commun. Mob. Comput., vol. 2018, 2018. DOI: https://doi.org/10.1155/2018/6951318" .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Procedia Manufacturing" ] ;
+    dcterms:title "Towards a Core Ontology for Condition Monitoring" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cao" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Reich" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Afonso" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:doi "['10.1016/j.promfg.2018.12.029']" ;
+    bibo:pageEnd 182 ;
+    bibo:pageStart 177 ;
+    bibo:volume "28" ;
+    c4o:hasContent "Q. Cao, C. Reich, and P. Afonso, \"Towards a Core Ontology for Condition Monitoring,\" in Procedia Manufacturing, 2019, vol. 28, pp. 177-182. DOI: https://doi.org/10.1016/j.promfg.2018.12.029" .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Ontology Development 101: A Guide to Creating Your First Ontology" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Noy" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mcguinness" ;
+                    foaf:givenname "Deborah" ] ] ;
+    c4o:hasContent "N. F. Noy and Deborah L. McGuinness, \"Ontology Development 101: A Guide to Creating Your First Ontology.\" [Online]. Available: https://protege.stanford.edu/publications/ontology_development/onto logy101-noy-mcguinness.html. [Accessed: 25-Apr-2019]." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE Internet Things J" ] ;
+    dcterms:title "Ontology-based framework enabling smart Product-Service Systems : Application of sensing systems for machine health monitoring" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Maleki" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:doi "['10.1109/JIOT.2018.2831279']" ;
+    bibo:issue "4662" ;
+    bibo:volume "2327" ;
+    c4o:hasContent "E. Maleki et al., \"Ontology-based framework enabling smart Product-Service Systems : Application of sensing systems for machine health monitoring,\" IEEE Internet Things J., vol. 2327, no. 4662, 2018. DOI: https://doi.org/10.1109/JIOT.2018.2831279" .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "2017 International Conference on Wireless Communications, Signal Processing and Networking" ] ;
+    dcterms:title "Automatic visual inspection of printed circuit board for defect detection and classification Automatic Visual Inspection of Printed Circuit Board for Defect Detection and Classification" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chaudhary" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dave" ;
+                    foaf:givenname "I" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Upla" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:doi "['10.1109/WiSPNET.2017.8299858']" ;
+    c4o:hasContent "V. Chaudhary, I. R. Dave, and K. P. Upla, \"Automatic visual inspection of printed circuit board for defect detection and classification Automatic Visual Inspection of Printed Circuit Board for Defect Detection and Classification,\" in 2017 International Conference on Wireless Communications, Signal Processing and Networking (WiSPNET), 2017. DOI: https://doi.org/10.1109/WiSPNET.2017.8299858" .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Cybern. Syst. an Int. J" ] ;
+    dcterms:title "Smart Condition Monitoring for Industry 4 . 0 Manufacturing Processes : An Ontology-Based Approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cao" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Giustozzi" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zanni-Merk" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "De" ;
+                    foaf:givenname "F" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Reich" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:doi "['10.1080/01969722.2019.1565118']" ;
+    c4o:hasContent "Q. Cao, F. Giustozzi, C. Zanni-merk, F. D. B. De, and C. Reich, \"Smart Condition Monitoring for Industry 4 . 0 Manufacturing Processes : An Ontology-Based Approach,\" Cybern. Syst. an Int. J., 2019. DOI: https://doi.org/10.1080/01969722.2019.1565118" .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Int. J. Prod. Econ" ] ;
+    dcterms:title "Mitigating risks of perishable products in the cyber-physical systems based on the extended MRP model" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bogataj" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bogataj" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hudoklin" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:doi "['10.1016/j.ijpe.2017.06.028']" ;
+    bibo:pageEnd 62 ;
+    bibo:pageStart 51 ;
+    bibo:volume "193" ;
+    c4o:hasContent "D. Bogataj, M. Bogataj, and D. Hudoklin, \"Mitigating risks of perishable products in the cyber-physical systems based on the extended MRP model,\" Int. J. Prod. Econ., vol. 193, no. April 2016, pp. 51-62, 2017. DOI: https://doi.org/10.1016/j.ijpe.2017.06.028" .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "23rd ICE/IEEE International Technology Management Conference" ] ;
+    dcterms:title "The Manufacturing Blueprint Environment : Bringing Intelligence into Manufacturing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Papazoglou" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:givenname "A" ] ] ;
+    bibo:doi "['10.1109/ICE.2017.8279960']" ;
+    bibo:pageEnd 781 ;
+    bibo:pageStart 772 ;
+    c4o:hasContent "M. P. Papazoglou and A. Elgammal, \"The Manufacturing Blueprint Environment : Bringing Intelligence into Manufacturing,\" in 23rd ICE/IEEE International Technology Management Conference, 2017, pp. 772-781. DOI: 10.1109/ICE.2017.8279960" .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:title "Protégé" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bmir" ] ] ;
+    c4o:hasContent "BMIR, \"Protégé.\" [Online]. Available: https://protege.stanford.edu/." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2008 ;
+    dcterms:publisher [ foaf:name "LEIPZIG" ] ;
+    dcterms:title "Enterprise-Control" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Isa" ] ] ;
+    bibo:pageEnd 165 ;
+    bibo:pageStart 1 ;
+    bibo:volume "100" ;
+    c4o:hasContent "ISA, \"ISA-95.00.01-CDV3 Enterprise-Control,\" pp. 1-165, 2008. 100 COMMUNICATION PAPERS. LEIPZIG, 2019" .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "2018 IEEE International Conference on Engineering, Technology and Innovation (ICE/ITMC)" ] ;
+    dcterms:title "Efficient Management of Perishable Inventory by Utilizing IoT" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Riad" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Elgammal" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Elzanfaly" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:doi "['10.1109/ICE.2018.8436267']" ;
+    c4o:hasContent "M. Riad, A. Elgammal, and D. ElZanfaly, \"Efficient Management of Perishable Inventory by Utilizing IoT,\" in 2018 IEEE International Conference on Engineering, Technology and Innovation (ICE/ITMC), 2018. DOI: https://doi.org/10.1109/ICE.2018.8436267" .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "80 Mind-Blowing IoT Statistics (Infographic)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bera" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "A. Bera, \"80 Mind-Blowing IoT Statistics (Infographic),\" 2019. [Online]. Available: https://safeatlast.co/blog/iot-statistics/." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:title "Unlocking the business value of IoT in operations" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Capgemini" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Institute" ] ] ;
+    c4o:hasContent "Capgemini D. T. Institute, \"Unlocking the business value of IoT in operations,\" 2018." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "IoTBD 2016 -International Conference on Internet of Things and Big Data" ] ;
+    dcterms:title "Bringing Dynamics to IoT Services with Cloud and Semantic Technologies An Innovative Approach for Enhancing IoT based Services" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dupont" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Achour" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Deru" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Matskanis" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:doi "['10.5220/0005933001850190']" ;
+    bibo:pageEnd 190 ;
+    bibo:pageStart 185 ;
+    c4o:hasContent "S. Dupont, A. Achour, L. Deru, and N. Matskanis, \"Bringing Dynamics to IoT Services with Cloud and Semantic Technologies An Innovative Approach for Enhancing IoT based Services,\" in IoTBD 2016 -International Conference on Internet of Things and Big Data, 2016, pp. 185-190. DOI: https://doi.org/10.5220/0005933001850190" .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "42nd IEEE Industrial Electronics Conference" ] ;
+    dcterms:title "Ontologies and Semantic Web for the Internet of Things -A Survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Szilagyi" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wira" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:doi "['10.1109/IECON.2016.7793744']" ;
+    c4o:hasContent "I. Szilagyi and P. Wira, \"Ontologies and Semantic Web for the Internet of Things -A Survey,\" in 42nd IEEE Industrial Electronics Conference, 2016. DOI: https://doi.org/10.1109/IECON.2016.7793744" .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "2016 IEEE First International Conference on Internet-of-Things Design and Implementation" ] ;
+    dcterms:title "Semantic technologies for the IoT -an Inter-IoT perspective" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ganzha" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Paprzycki" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Pawłowski" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Szmeja" ;
+                    foaf:givenname "P" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wasielewska" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:doi "['10.1109/IoTDI.2015.22']" ;
+    c4o:hasContent "M. Ganzha, M. Paprzycki, W. Pawłowski, P. Szmeja, and K. Wasielewska, \"Semantic technologies for the IoT -an Inter-IoT perspective,\" in 2016 IEEE First International Conference on Internet-of-Things Design and Implementation (IoTDI), 2016. DOI: https://doi.org/10.1109/IoTDI.2015.22" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[10]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[22]" .
+

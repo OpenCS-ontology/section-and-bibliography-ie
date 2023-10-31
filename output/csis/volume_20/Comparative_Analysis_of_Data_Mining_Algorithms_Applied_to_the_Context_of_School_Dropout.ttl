@@ -1,0 +1,957 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2,
+                :author_3 ] ;
+    dcterms:title "Comparative Analysis of Data Mining Algorithms Applied to the Context of School Dropout"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Students' dropout is certainly one of the major problems that afflict educational institutions, the losses caused by the student's abandonment are social, academic and economic waste. The quest for its causes has been subject of work and educational research around the world. Several organizations seek strategic decisions to control the dropout rate. This work's goal is to evaluate the effectiveness of the most used data mining algorithms in the education area. An``in vivo'' controlled experiment was planned and performed to compare the efficacy selected classifiers. The Random Forest and SVM algorithms have stood out in this context, having, statistically similar accuracy (80.36\\%, 81.18\\%), precision (80.79\\%, 80.25\\%), recall (76.50\\%, 77.51\\%) and f-measure (78.86\\%, 78.81\\%) averages. The results showed evidence of significant differences between the algorithms, and also showed that, although the SVM had the best metric of accuracy and recall, it results were statistically similar with Random Forest results."^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 7 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F265"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/265.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/265.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "14th International Symposium Advances in Artificial Intelligence and Applications"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Júnior"^^xsd:string ;
+    foaf:givenName "Methanias Colaço"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Silva"^^xsd:string ;
+    foaf:givenName "Victor Matheus da"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    foaf:familyName "Vasconcelos"^^xsd:string ;
+    foaf:givenName "Nathanael Oliveira"^^xsd:string .
+
+:author_3 a foaf:Person ;
+    foaf:familyName "Almeida"^^xsd:string ;
+    foaf:givenName "Thiago S."^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section6 ;
+                    co:nextItem [ co:itemContent :section18 ;
+                            co:nextItem [ co:itemContent :section23 ;
+                                    co:nextItem [ co:itemContent :section27 ;
+                                            co:nextItem [ co:itemContent :section28 ;
+                                                    co:nextItem [ co:itemContent :section29 ;
+                                                            co:nextItem [ co:itemContent :section36 ;
+                                                                    co:nextItem [ co:itemContent :section40 ;
+                                                                            co:nextItem [ co:itemContent :section42 ;
+                                                                                    co:nextItem [ co:itemContent :section46 ;
+                                                                                            co:nextItem [ co:itemContent :section61 ;
+                                                                                                    co:nextItem [ co:itemContent :section62 ;
+                                                                                                            co:nextItem [ co:itemContent :section63 ;
+                                                                                                                    co:nextItem [ co:itemContent :section67 ;
+                                                                                                                            co:nextItem [ co:itemContent :section71 ;
+                                                                                                                                    co:nextItem [ co:itemContent :section74 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section18,
+        :section23,
+        :section27,
+        :section28,
+        :section29,
+        :section36,
+        :section40,
+        :section42,
+        :section46,
+        :section6,
+        :section61,
+        :section62,
+        :section63,
+        :section67,
+        :section71,
+        :section74 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF26 a deo:Reference ;
+    dcterms:references :BIBREF26 ;
+    c4o:hasContent "[27]" .
+
+:referenceToBIBREF27 a deo:Reference ;
+    dcterms:references :BIBREF27 ;
+    c4o:hasContent "[28]" .
+
+:referenceToBIBREF28 a deo:Reference ;
+    dcterms:references :BIBREF28 ;
+    c4o:hasContent "[29]" .
+
+:referenceToBIBREF29 a deo:Reference ;
+    dcterms:references :BIBREF29 ;
+    c4o:hasContent "[30]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF31 a deo:Reference ;
+    dcterms:references :BIBREF31 ;
+    c4o:hasContent "[32]" .
+
+:referenceToBIBREF33 a deo:Reference ;
+    dcterms:references :BIBREF33 ;
+    c4o:hasContent "[34]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel18 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel27 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel6 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel67 a doco:SectionLabel ;
+    c4o:hasContent "7." .
+
+:sectionLabel74 a doco:SectionLabel ;
+    c4o:hasContent "8." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle18 a doco:SectionTitle ;
+    c4o:hasContent "METHODOLOGY" .
+
+:sectionTitle23 a doco:SectionTitle ;
+    c4o:hasContent "Author" .
+
+:sectionTitle27 a doco:SectionTitle ;
+    c4o:hasContent "CONCEPTUAL BASE" .
+
+:sectionTitle28 a doco:SectionTitle ;
+    c4o:hasContent "A. Data Classification" .
+
+:sectionTitle29 a doco:SectionTitle ;
+    c4o:hasContent "B. Matrix of Confusion" .
+
+:sectionTitle36 a doco:SectionTitle ;
+    c4o:hasContent "C. Quality Metrics" .
+
+:sectionTitle40 a doco:SectionTitle ;
+    c4o:hasContent "recall = T P T P + F N" .
+
+:sectionTitle42 a doco:SectionTitle ;
+    c4o:hasContent "precision =" .
+
+:sectionTitle46 a doco:SectionTitle ;
+    c4o:hasContent "A. Goal Setting" .
+
+:sectionTitle6 a doco:SectionTitle ;
+    c4o:hasContent "RELATED WORKS" .
+
+:sectionTitle61 a doco:SectionTitle ;
+    c4o:hasContent "A. Preparation" .
+
+:sectionTitle62 a doco:SectionTitle ;
+    c4o:hasContent "B. Execution" .
+
+:sectionTitle63 a doco:SectionTitle ;
+    c4o:hasContent "C. Data Validation" .
+
+:sectionTitle67 a doco:SectionTitle ;
+    c4o:hasContent "RESULTS" .
+
+:sectionTitle71 a doco:SectionTitle ;
+    c4o:hasContent "A. Threats to Validity" .
+
+:sectionTitle74 a doco:SectionTitle ;
+    c4o:hasContent "FINAL CONSIDERATIONS" .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF25 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF26 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF27 ;
+                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF28 ;
+                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF29 ;
+                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF31 ;
+                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF32 ;
+                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF33 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF26,
+        :BIBREF27,
+        :BIBREF28,
+        :BIBREF29,
+        :BIBREF3,
+        :BIBREF31,
+        :BIBREF32,
+        :BIBREF33,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF9 .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF32 a deo:Reference ;
+    dcterms:references :BIBREF32 ;
+    c4o:hasContent "[33]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF13,
+        :referenceToBIBREF21,
+        :referenceToBIBREF26,
+        :referenceToBIBREF31,
+        :referenceToBIBREF7,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section18 a doco:Section ;
+    po:contains :referenceToBIBREF15,
+        :referenceToBIBREF21,
+        :referenceToBIBREF23,
+        :referenceToBIBREF24,
+        :referenceToBIBREF27,
+        :referenceToBIBREF28,
+        :referenceToBIBREF3,
+        :referenceToBIBREF32,
+        :referenceToBIBREF33,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :sectionLabel18 ;
+    po:containsAsHeader :sectionTitle18 .
+
+:section23 a doco:Section ;
+    po:contains :referenceToBIBREF14,
+        :referenceToBIBREF16,
+        :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :referenceToBIBREF9 ;
+    po:containsAsHeader :sectionTitle23 .
+
+:section27 a doco:Section ;
+    po:contains :sectionLabel27 ;
+    po:containsAsHeader :sectionTitle27 .
+
+:section28 a doco:Section ;
+    po:contains :referenceToBIBREF10 ;
+    po:containsAsHeader :sectionTitle28 .
+
+:section29 a doco:Section ;
+    po:contains :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF2 ;
+    po:containsAsHeader :sectionTitle29 .
+
+:section36 a doco:Section ;
+    po:containsAsHeader :sectionTitle36 .
+
+:section40 a doco:Section ;
+    po:containsAsHeader :sectionTitle40 .
+
+:section42 a doco:Section ;
+    po:contains :referenceToBIBREF32 ;
+    po:containsAsHeader :sectionTitle42 .
+
+:section46 a doco:Section ;
+    po:contains :referenceToBIBREF2,
+        :referenceToBIBREF25 ;
+    po:containsAsHeader :sectionTitle46 .
+
+:section6 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF13,
+        :referenceToBIBREF16,
+        :referenceToBIBREF19,
+        :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :referenceToBIBREF9,
+        :sectionLabel6 ;
+    po:containsAsHeader :sectionTitle6 .
+
+:section61 a doco:Section ;
+    po:containsAsHeader :sectionTitle61 .
+
+:section62 a doco:Section ;
+    po:containsAsHeader :sectionTitle62 .
+
+:section63 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF14,
+        :referenceToBIBREF17,
+        :referenceToBIBREF29 ;
+    po:containsAsHeader :sectionTitle63 .
+
+:section67 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :sectionLabel67 ;
+    po:containsAsHeader :sectionTitle67 .
+
+:section71 a doco:Section ;
+    po:containsAsHeader :sectionTitle71 .
+
+:section74 a doco:Section ;
+    po:contains :referenceToBIBREF21,
+        :referenceToBIBREF9,
+        :sectionLabel74 ;
+    po:containsAsHeader :sectionTitle74 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Procedia Computer Science" ] ;
+    dcterms:title "Using data mining to predict instructor performance" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ahmed" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rizaner" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ulusoy" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 142 ;
+    bibo:pageStart 137 ;
+    bibo:volume "102" ;
+    c4o:hasContent "A. M. Ahmed, A. Rizaner, and A. H. Ulusoy. Using data mining to predict instructor performance. Procedia Computer Science, 102:137- 142, 2016." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2009 ;
+    dcterms:title "Análise de variância" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Anjos" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "A. Anjos. Análise de variância. Universidade Federal do Paraná, Departamento de Estatística -UFPR, Curitiba, page Capítulo 7, 2009." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:title "Data Mining: Concepts, models and techniques" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gorunescu" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:volume "12" ;
+    c4o:hasContent "F. Gorunescu. Data Mining: Concepts, models and techniques, vol- ume 12. Springer Science & Business Media, 2011." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:title "Data mining: concepts and techniques" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Han" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pei" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kamber" ;
+                    foaf:givenname "M" ] ] ;
+    c4o:hasContent "J. Han, J. Pei, and M. Kamber. Data mining: concepts and techniques. Elsevier, 2011." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2001 ;
+    dcterms:title "Principles of data mining" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hand" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mannila" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Smyth" ;
+                    foaf:givenname "P" ] ] ;
+    c4o:hasContent "D. J. Hand, H. Mannila, and P. Smyth. Principles of data mining. MIT press, 2001." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "International Journal of Machine Learning and Cybernetics" ] ;
+    dcterms:title "Improved student dropout prediction in thai university using ensemble of mixed-type data clusterings" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Iam-On" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Boongoen" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 510 ;
+    bibo:pageStart 497 ;
+    bibo:volume "8" ;
+    c4o:hasContent "N. Iam-On and T. Boongoen. Improved student dropout prediction in thai university using ensemble of mixed-type data clusterings. International Journal of Machine Learning and Cybernetics, 8(2):497-510, 2017." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:title "IBM SPSS Statistics for Windows" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ibm" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Spss" ] ] ;
+    c4o:hasContent "IBM. Spss. IBM SPSS Statistics for Windows, Version 25.0. Armonk, NY: IBM Corp, 2017." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2001 ;
+    dcterms:title "Software engineering experimentation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Juristo" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Moreno" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "N. Juristo and A. Moreno. Software engineering experimentation. 2001." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Brazilian Symposium on Computers in Education" ] ;
+    dcterms:title "Predição da evasão em cursos de graduação em instituições públicas" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kantorski" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Flores" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Schmitt" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hoffmann" ;
+                    foaf:givenname "I" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Barbosa" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:volume "27" ;
+    c4o:hasContent "G. Kantorski, E. G. Flores, J. Schmitt, I. Hoffmann, and F. Barbosa. Predição da evasão em cursos de graduação em instituições públicas. In Brazilian Symposium on Computers in Education (Simpósio Brasileiro de Informática na Educação-SBIE), volume 27, page 906, 2016." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 1960 ;
+    dcterms:publisher [ foaf:name "International Journal of Machine Learning and Cybernetics" ] ;
+    dcterms:title "Robust tests for equality of variances" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Levene" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 292 ;
+    bibo:pageStart 278 ;
+    c4o:hasContent "H. Levene. Robust tests for equality of variances. International Journal of Machine Learning and Cybernetics, pages 278-292, 1960." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:title "Estudo bibliométrico em mineração de dados e evasão escolar" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Machado" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nara" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Schreiber" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Schwingel" ;
+                    foaf:givenname "G" ] ] ;
+    c4o:hasContent "R. D. Machado, E. O. B. Nara, J. N. C. Schreiber, and G. A. Schwingel. Estudo bibliométrico em mineração de dados e evasão escolar. XI Congresso Nacional de Excelência em Gestão, 2015." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 1983 ;
+    dcterms:title "A methodology for collecting valid software engineering data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Basili" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Weiss" ;
+                    foaf:givenname "D" ] ] ;
+    c4o:hasContent "V. R. Basili and D. M. Weiss. A methodology for collecting valid software engineering data. Technical report, NAVAL RESEARCH LAB WASHINGTON DC, 1983." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2012 ;
+    dcterms:title "Identificação dos fatores que influenciam a evasão em cursos de graduação através de sistemas baseados em mineração de dados: Uma abordagem quantitativa" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Manhães" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cruz" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Costa" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zavaleta" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zimbrão" ;
+                    foaf:givenname "G" ] ] ;
+    c4o:hasContent "L. M. B. Manhães, S. Cruz, R. J. M. Costa, J. Zavaleta, and G. Zim- brão. Identificação dos fatores que influenciam a evasão em cursos de graduação através de sistemas baseados em mineração de dados: Uma abordagem quantitativa. Anais do VIII Simpósio Brasileiro de Sistemas de Informação, São Paulo, 2012." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "IEEE Revista Iberoamericana de Tecnologias del Aprendizaje" ] ;
+    dcterms:title "Predicting school failure and dropout by using data mining techniques" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Márquez-Vera" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Morales" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Soto" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 14 ;
+    bibo:pageStart 7 ;
+    bibo:volume "8" ;
+    c4o:hasContent "C. Márquez-Vera, C. R. Morales, and S. V. Soto. Predicting school failure and dropout by using data mining techniques. IEEE Revista Iberoamericana de Tecnologias del Aprendizaje, 8(1):7-14, 2013." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:title "Introdução à análise estatística utilizando o spss 13.0. cadernos de matemática e estatística série b" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mundstock" ;
+                    foaf:givenname "E" ] ] ;
+    c4o:hasContent "E. Mundstock. Introdução à análise estatística utilizando o spss 13.0. cadernos de matemática e estatística série b. 2006." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2002 ;
+    dcterms:title "Chapter data mining tasks and Methods: Classication: Neural network approaches" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nürnberger" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pedrycz" ;
+                    foaf:givenname "W" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kruse" ;
+                    foaf:givenname "R" ] ] ;
+    c4o:hasContent "A. Nürnberger, W. Pedrycz, and R. Kruse. Handbook of data mining and knowledge discovery. Chapter data mining tasks and Methods: Classi- cation: Neural network approaches. New York, NY, USA: Oxford University Press, 2002." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:title "Identificação de padrões para a análise da evasão em cursos de graduação usando mineração de dados educacionais" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Oliveira Júnior" ;
+                    foaf:givenname "J" ] ] ;
+    c4o:hasContent "J. G. d. Oliveira Júnior et al. Identificação de padrões para a análise da evasão em cursos de graduação usando mineração de dados educa- cionais. Master's thesis, Universidade Tecnológica Federal do Paraná, 2015." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:title "Analytics, data mining software used" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Poll" ;
+                    foaf:givenname "K" ] ] ;
+    c4o:hasContent "K. S. Poll. Analytics, data mining software used. https://www.kdnuggets.com/polls/2015/analytics-data-mining-data- science-software-used.html, 2015." .
+
+:BIBREF26 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "Soft-Computing and Networks Security (ICSNS), 2015 International Conference on" ] ;
+    dcterms:title "Students dropout factor prediction using edm techniques" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pradeep" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Das" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kizhekkethottam" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 7 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "A. Pradeep, S. Das, and J. J. Kizhekkethottam. Students dropout factor prediction using edm techniques. In Soft-Computing and Networks Security (ICSNS), 2015 International Conference on, pages 1-7. IEEE, 2015." .
+
+:BIBREF27 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:title "Artificial intelligence: a modern approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Russell" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Norvig" ;
+                    foaf:givenname "P" ] ] ;
+    c4o:hasContent "S. J. Russell and P. Norvig. Artificial intelligence: a modern approach. Malaysia; Pearson Education Limited\" 2016." .
+
+:BIBREF28 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:title "Metodologia do trabalho científico" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Severino" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "A. J. Severino. Metodologia do trabalho científico. Cortez editora, 2017." .
+
+:BIBREF29 a deo:BibliographicReference ;
+    dcterms:issued 1965 ;
+    dcterms:publisher [ foaf:name "International Journal of Machine Learning and Cybernetics" ] ;
+    dcterms:title "An analysis of variance test for normality (complete samples)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shapiro" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wilk" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 611 ;
+    bibo:pageStart 591 ;
+    bibo:volume "52" ;
+    c4o:hasContent "S. Shapiro and M. Wilk. An analysis of variance test for normality (complete samples). International Journal of Machine Learning and Cybernetics, 52:591-611, 1965." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2001 ;
+    dcterms:title "Machine learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Breiman" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 32 ;
+    bibo:pageStart 5 ;
+    c4o:hasContent "L. Breiman. Machine learning. Kluwer Academic Publishers, pages 5-32, 2001." .
+
+:BIBREF31 a deo:BibliographicReference ;
+    dcterms:issued 2007 ;
+    dcterms:publisher [ foaf:name "Cadernos de pesquisa" ] ;
+    dcterms:title "A evasão no ensino superior brasileiro" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Silva Filho" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Motejunas" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hipólito" ;
+                    foaf:givenname "O" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Lobo" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:issue "132" ;
+    bibo:pageEnd 659 ;
+    bibo:pageStart 641 ;
+    bibo:volume "37" ;
+    c4o:hasContent "R. L. L. Silva Filho, P. R. Motejunas, O. Hipólito, and M. Lobo. A evasão no ensino superior brasileiro. Cadernos de pesquisa, 37(132):641-659, 2007." .
+
+:BIBREF32 a deo:BibliographicReference ;
+    dcterms:issued 2012 ;
+    dcterms:title "Experimentation in software engineering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wohlin" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Runeson" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Höst" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ohlsson" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Regnell" ;
+                    foaf:givenname "B" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Wesslén" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "C. Wohlin, P. Runeson, M. Höst, M. C. Ohlsson, B. Regnell, and A. Wesslén. Experimentation in software engineering. Springer Science & Business Media, 2012." .
+
+:BIBREF33 a deo:BibliographicReference ;
+    dcterms:issued 2008 ;
+    dcterms:publisher [ foaf:name "Knowledge and information systems" ] ;
+    dcterms:title "Top 10 algorithms in data mining" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Philip" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "V" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Quinlan" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ghosh" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Motoda" ;
+                    foaf:givenname "H" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Mclachlan" ;
+                    foaf:givenname "G" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Ng" ;
+                    foaf:givenname "A" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 37 ;
+    bibo:pageStart 1 ;
+    bibo:volume "14" ;
+    c4o:hasContent "X. Wu, V. Kumar, J. R. Quinlan, J. Ghosh, Q. Yang, H. Motoda, G. J. McLachlan, A. Ng, B. Liu, S. Y. Philip, et al. Top 10 algorithms in data mining. Knowledge and information systems, 14(1):1-37, 2008. 10 COMMUNICATION PAPERS. LEIPZIG, 2019" .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 1984 ;
+    dcterms:title "Classication and regression trees" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Breiman" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Friedman" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Olshen" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Stone" ;
+                    foaf:givenname "C" ] ] ;
+    c4o:hasContent "L. Breiman, J. Friedman, R. Olshen, and C. Stone. Classication and regression trees. Monterey, CA: Wadsworth and Brooks, 1984." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Data Mining and Knowledge Discovery" ] ;
+    dcterms:title "On the evaluation of unsupervised outlier detection: measures, datasets, and an empirical study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Campos" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zimek" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sander" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Campello" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Micenková" ;
+                    foaf:givenname "B" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Schubert" ;
+                    foaf:givenname "E" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Assent" ;
+                    foaf:givenname "I" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Houle" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:issue "4" ;
+    bibo:pageEnd 927 ;
+    bibo:pageStart 891 ;
+    bibo:volume "30" ;
+    c4o:hasContent "G. O. Campos, A. Zimek, J. Sander, R. J. G. B. Campello, B. Micenková, E. Schubert, I. Assent, and M. E. Houle. On the evaluation of unsupervised outlier detection: measures, datasets, and an empirical study. Data Mining and Knowledge Discovery, 30(4):891-927, Jul 2016." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 1995 ;
+    dcterms:title "Support-vector networks. machine learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cortes" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Vapnik" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 297 ;
+    bibo:pageStart 273 ;
+    bibo:volume "20" ;
+    c4o:hasContent "C. Cortes and V. Vapnik. Support-vector networks. machine learning, 20. pages 273-297, 1995." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:title "de Estudos e Pesquisas Educacionais Anísio Teixeira -Inep. Censo da educação superior" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:givenname "I" ] ] ;
+    c4o:hasContent "I. N. de Estudos e Pesquisas Educacionais Anísio Teixeira -Inep. Censo da educação superior 2015. 2015." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2009 ;
+    dcterms:publisher [ foaf:name "Proceedings of the International Conference on Educational Data Mining" ] ;
+    dcterms:title "Predicting students drop out: A case study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 50 ;
+    bibo:pageStart 41 ;
+    c4o:hasContent "D. G., P. M., and V. J. Predicting students drop out: A case study. Pro- ceedings of the International Conference on Educational Data Mining, pages 41-50, 2009." .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+

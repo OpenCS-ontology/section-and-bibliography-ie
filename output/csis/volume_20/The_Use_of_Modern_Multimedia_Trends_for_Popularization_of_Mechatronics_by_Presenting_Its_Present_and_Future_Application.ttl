@@ -1,0 +1,531 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2,
+                :author_3,
+                :author_4 ] ;
+    dcterms:title "The Use of Modern Multimedia Trends for Popularization of Mechatronics by Presenting Its Present and Future Application"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Mechatronics belongs to the modern fields of the science and technology. Modern mechatronics combines mechanics, electronics, automation and informatics. However, young people often understand mechatronics as a combination of mechanics and electronics. This erroneous paradigm brings many problems in education and industry. Actual trend in the industry is Industry 4.0 - also called as fourth industrial revolution. It is a collective name for current automation, exchanging of data and manufacturing technologies. Today's industry (digital factories) is full of information and communication technologies such as Internet of Things, virtual / mixed reality, cloud computing, etc. Unfortunately, only small amount of high school pupils would like to study mechatronics because young generation is influenced by the outdated perception of this field and does not perceive some of its new aspects. They do not see modern technologies in this field. The authors of the paper decided to present mechatronics as a modern branch in an original way - by a fanfilm inspired by Avengers: Infinity War."^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 5 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F182"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/182.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/182.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "12th International Symposium on Multimedia Applications and Processing"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Kučera"^^xsd:string ;
+    foaf:givenName "Erik"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Leskovský"^^xsd:string ;
+    foaf:givenName "Roman"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    foaf:familyName "Drahoš"^^xsd:string ;
+    foaf:givenName "Peter"^^xsd:string .
+
+:author_3 a foaf:Person ;
+    foaf:familyName "Matišák"^^xsd:string ;
+    foaf:givenName "Jakub"^^xsd:string .
+
+:author_4 a foaf:Person ;
+    foaf:familyName "Haffner"^^xsd:string ;
+    foaf:givenName "Oto"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section5 ;
+                    co:nextItem [ co:itemContent :section12 ;
+                            co:nextItem [ co:itemContent :section19 ;
+                                    co:nextItem [ co:itemContent :section20 ;
+                                            co:nextItem [ co:itemContent :section21 ;
+                                                    co:nextItem [ co:itemContent :section22 ;
+                                                            co:nextItem [ co:itemContent :section23 ;
+                                                                    co:nextItem [ co:itemContent :section24 ;
+                                                                            co:nextItem [ co:itemContent :section25 ;
+                                                                                    co:nextItem [ co:itemContent :section26 ;
+                                                                                            co:nextItem [ co:itemContent :section27 ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section12,
+        :section19,
+        :section20,
+        :section21,
+        :section22,
+        :section23,
+        :section24,
+        :section25,
+        :section26,
+        :section27,
+        :section5 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel12 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel19 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel26 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel27 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel5 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "PREPRODUCTION OF FANFILM" .
+
+:sectionTitle19 a doco:SectionTitle ;
+    c4o:hasContent "FANFILM ANALYSIS" .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "A. Introduction in space" .
+
+:sectionTitle21 a doco:SectionTitle ;
+    c4o:hasContent "C. Electronics Stone" .
+
+:sectionTitle22 a doco:SectionTitle ;
+    c4o:hasContent "D. Mechanics Stone" .
+
+:sectionTitle23 a doco:SectionTitle ;
+    c4o:hasContent "E. Informatics Stone" .
+
+:sectionTitle24 a doco:SectionTitle ;
+    c4o:hasContent "F. Automation Stone" .
+
+:sectionTitle25 a doco:SectionTitle ;
+    c4o:hasContent "G. Smart Technologies Stone" .
+
+:sectionTitle26 a doco:SectionTitle ;
+    c4o:hasContent "CRITICAL RESPONSE" .
+
+:sectionTitle27 a doco:SectionTitle ;
+    c4o:hasContent "CONCLUSION" .
+
+:sectionTitle5 a doco:SectionTitle ;
+    c4o:hasContent "POPULARIZATION OF MECHATRONICS USING MULTIMEDIA" .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "2018 Cybernetics & Informatics (K&I)" ] ;
+    dcterms:title "Research and education for industry 4.0: Present development" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kozak" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ruzicky" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Stefanovic" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Schindler" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 7 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "S. Kozak, E. Ruzicky, J. Stefanovic, and F. Schindler, \"Research and education for industry 4.0: Present development,\" in 2018 Cybernetics & Informatics (K&I), Feb 2018, pp. 1-7." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "2017 Federated Conference on Computer Science and Information Systems (FedCSIS)" ] ;
+    dcterms:title "Design and implementation of fire safety education system on campus based on virtual reality technology" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Suo" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:doi "['10.15439/2017F376']" ;
+    c4o:hasContent "K. Zhang, J. Suo, J. Chen, X. Liu, and L. Gao, \"Design and implemen- tation of fire safety education system on campus based on virtual reality technology,\" in 2017 Federated Conference on Computer Science and Information Systems (FedCSIS). IEEE, 2017. doi: 10.15439/2017F376" .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section12 a doco:Section ;
+    po:contains :sectionLabel12 ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section19 a doco:Section ;
+    po:contains :sectionLabel19 ;
+    po:containsAsHeader :sectionTitle19 .
+
+:section20 a doco:Section ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section21 a doco:Section ;
+    po:containsAsHeader :sectionTitle21 .
+
+:section22 a doco:Section ;
+    po:containsAsHeader :sectionTitle22 .
+
+:section23 a doco:Section ;
+    po:contains :referenceToBIBREF9 ;
+    po:containsAsHeader :sectionTitle23 .
+
+:section24 a doco:Section ;
+    po:containsAsHeader :sectionTitle24 .
+
+:section25 a doco:Section ;
+    po:containsAsHeader :sectionTitle25 .
+
+:section26 a doco:Section ;
+    po:contains :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16,
+        :sectionLabel26 ;
+    po:containsAsHeader :sectionTitle26 .
+
+:section27 a doco:Section ;
+    po:contains :sectionLabel27 ;
+    po:containsAsHeader :sectionTitle27 .
+
+:section5 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :sectionLabel5 ;
+    po:containsAsHeader :sectionTitle5 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:title "Web technologies in industry hmi" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lojka" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Satala" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Mocnej" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zolotová" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:doi "['10.1109/INES.2015.7329647']" ;
+    bibo:pageEnd 106 ;
+    bibo:pageStart 103 ;
+    c4o:hasContent "T. Lojka, P. Satala, J. Mocnej, and I. Zolotová, \"Web technologies in industry hmi,\" 09 2015. doi: 10.1109/INES.2015.7329647 pp. 103-106." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "27th International Conference on Flexible Automation and Intelligent Manufacturing" ] ;
+    dcterms:title "Requirements for education and qualification of people in industry 4.0" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Benešová" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tupa" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:doi "['10.1016/j.promfg.2017.07.366']" ;
+    bibo:pageEnd 2202 ;
+    bibo:pageStart 2195 ;
+    bibo:volume "11" ;
+    c4o:hasContent "A. Benešová and J. Tupa, \"Requirements for education and qualification of people in industry 4.0,\" Procedia Manufacturing, vol. 11, pp. 2195 -2202, 2017. doi: https://doi.org/10.1016/j.promfg.2017.07.366 27th International Conference on Flexible Automation and Intelligent Manufacturing, FAIM2017, 27-30 June 2017, Modena, Italy. [Online]. Available: http://www.sciencedirect.com/science/article/pii/ S2351978917305747" .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "2017 Federated Conference on Computer Science and Information Systems (FedCSIS)" ] ;
+    dcterms:title "Creating an interactive and storytelling educational physics app for mobile devices" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Szklanny" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Homoncik" ;
+                    foaf:givenname "Ł" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wichrowski" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wieczorkowska" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:doi "['10.15439/2017F95']" ;
+    bibo:pageEnd 1273 ;
+    bibo:pageStart 1269 ;
+    c4o:hasContent "K. Szklanny, Ł. Homoncik, M. Wichrowski, and A. Wieczorkowska, \"Creating an interactive and storytelling educational physics app for mobile devices,\" in 2017 Federated Conference on Computer Science and Information Systems (FedCSIS), Sep. 2017. doi: 10.15439/2017F95 pp. 1269-1273." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "2016 Federated Conference on Computer Science and Information Systems (FedCSIS)" ] ;
+    dcterms:title "Pitfalls of e-education: From multimedia to digital dementia" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gajewski" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 920 ;
+    bibo:pageStart 913 ;
+    c4o:hasContent "R. R. Gajewski, \"Pitfalls of e-education: From multimedia to digital dementia?\" in 2016 Federated Conference on Computer Science and Information Systems (FedCSIS), Sep. 2016, pp. 913-920." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:title "Avengers: Infinity war" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Marvel" ] ] ;
+    c4o:hasContent "Marvel. (2018) Avengers: Infinity war. [Online]. Available: https: //www.marvel.com/movies/avengers-infinity-war" .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Stu students want to convince that their field is not as boring as many think: You will see the video, you will be amazed! (in slovak)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Galajdová" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "A. Galajdová. (2019) Stu students want to convince that their field is not as boring as many think: You will see the video, you will be amazed! (in slovak). [Online]. Available: https://www.cas.sk/clanok/ 811257/studenti-z-stu-chcu-presvedcit" .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Slovak students shooted a film inspired by the avengers (in slovak)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Paulík" ;
+                    foaf:givenname "J" ] ] ;
+    c4o:hasContent "J. Paulík. (2019) Slovak students shooted a film inspired by the avengers (in slovak). [Online]. Available: https://filmkult.refresher.sk/ 13207-Slovenski-vysokoskolaci-natocili-film-inspirovany-Avengers" .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Slovak students shooted a short film inspired by the avengers for almost zero costs" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Andorová" ;
+                    foaf:givenname "V" ] ] ;
+    c4o:hasContent "V. Andorová. (2019) Slovak students shooted a short film inspired by the avengers for almost zero costs (in slovak). [Online]. Available: https://bit.ly/2vZ48qm" .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Avengers: Five mechatronics stones or marvel's competition in bratislava" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hanuš" ;
+                    foaf:givenname "D" ] ] ;
+    c4o:hasContent "D. Hanuš. (2019) Avengers: Five mechatronics stones or marvel's competition in bratislava (in czech). [Online]. Available: https: //bit.ly/30gx37f" .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "2016 International Conference on Emerging eLearning Technologies and Applications (ICETA)" ] ;
+    dcterms:title "From e-learning to industry 4.0" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Huba" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kozák" ;
+                    foaf:givenname "Š" ] ] ;
+    bibo:doi "['10.1109/ICETA.2016.7802083']" ;
+    bibo:pageEnd 108 ;
+    bibo:pageStart 103 ;
+    c4o:hasContent "M. Huba and Š.. Kozák, \"From e-learning to industry 4.0,\" in 2016 International Conference on Emerging eLearning Technologies and Applications (ICETA), Nov 2016. doi: 10.1109/ICETA.2016.7802083 pp. 103-108." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:title "What industry 4.0 means for manufacturers" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Melanson" ;
+                    foaf:givenname "T" ] ] ;
+    c4o:hasContent "T. Melanson. (2018) What industry 4.0 means for manufacturers. [Online]. Available: https://aethon.com/mobile-robots-and-industry4-0/" .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:title "Wolf of but" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Balík" ;
+                    foaf:givenname "M" ] ] ;
+    c4o:hasContent "M. Balík and et al. (2014) Wolf of but (in czech). [Online]. Available: https://youtu.be/cCNpNpni6rY" .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:title "Join the fei stu (in slovak)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Seewald" ;
+                    foaf:givenname "J" ] ] ;
+    c4o:hasContent "J. Seewald and et al. (2017) Join the fei stu (in slovak). [Online]. Available: https://youtu.be/xrF6L3Uc1Ik" .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:title "Application of didactic principles in the use of videoconferencing in e-learning (in slovak)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Filanova" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 7 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "J. Filanova, \"Application of didactic principles in the use of videocon- ferencing in e-learning (in slovak),\" in Innovation process in e-learning. EKONOM, March 2013. ISBN 978-80-225-3610-3 pp. 1-7." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "2017 Federated Conference on Computer Science and Information Systems (FedCSIS)" ] ;
+    dcterms:title "Integration of virtual patients in education of veterinary medicine" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Majernik" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Madar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Mojzisova" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:doi "['10.15439/2017F134']" ;
+    c4o:hasContent "J. Majernik, M. Madar, and J. Mojzisova, \"Integration of virtual patients in education of veterinary medicine,\" in 2017 Federated Conference on Computer Science and Information Systems (FedCSIS). IEEE, 2017. doi: 10.15439/2017F134" .
+

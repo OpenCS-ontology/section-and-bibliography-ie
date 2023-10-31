@@ -1,0 +1,1198 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1 ] ;
+    dcterms:title "A roadmap for a comparison framework for an adaptable software process improvement framework in small software companies"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Poor software quality due to failure to organize development processes using SPI is visible in small software companies, although these companies are significant to industry and world economy; the challenge of quality needs much more attention. The development of different frameworks to sort the development process in SSC continues to leave a lot to be desired. This work leads us to the development of a comparison framework which will ultimately end with an adaptable SPA and SPI framework for SSC. From a SLR to identify the factors affecting SSC and mapping them to the specific processes in which they occur, we analyze the software development environment and identify SPI frameworks that have registered success in similar environments of SSC to help us adopt best practices from which comparison is made to generate requirements for an adaptable SPI framework within context for small companies."^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 8 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F253"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/253.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/253.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "Joint 39th IEEE Software Engineering Workshop (SEW-39) and 6th International Workshop on Cyber-Physical Systems (IWCPS-6)"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Tuape"^^xsd:string ;
+    foaf:givenName "Micheal"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Ayalew"^^xsd:string ;
+    foaf:givenName "Yirsaw"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section1 ;
+                    co:nextItem [ co:itemContent :section4 ;
+                            co:nextItem [ co:itemContent :section8 ;
+                                    co:nextItem [ co:itemContent :section9 ;
+                                            co:nextItem [ co:itemContent :section10 ;
+                                                    co:nextItem [ co:itemContent :section12 ;
+                                                            co:nextItem [ co:itemContent :section14 ;
+                                                                    co:nextItem [ co:itemContent :section15 ;
+                                                                            co:nextItem [ co:itemContent :section16 ;
+                                                                                    co:nextItem [ co:itemContent :section18 ;
+                                                                                            co:nextItem [ co:itemContent :section19 ;
+                                                                                                    co:nextItem [ co:itemContent :section20 ;
+                                                                                                            co:nextItem [ co:itemContent :section23 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section1,
+        :section10,
+        :section12,
+        :section14,
+        :section15,
+        :section16,
+        :section18,
+        :section19,
+        :section20,
+        :section23,
+        :section4,
+        :section8,
+        :section9 .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF26 a deo:Reference ;
+    dcterms:references :BIBREF26 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF27 a deo:Reference ;
+    dcterms:references :BIBREF27 ;
+    c4o:hasContent "[27]" .
+
+:referenceToBIBREF28 a deo:Reference ;
+    dcterms:references :BIBREF28 ;
+    c4o:hasContent "[28]" .
+
+:referenceToBIBREF29 a deo:Reference ;
+    dcterms:references :BIBREF29 ;
+    c4o:hasContent "[29]" .
+
+:referenceToBIBREF30 a deo:Reference ;
+    dcterms:references :BIBREF30 ;
+    c4o:hasContent "[30]" .
+
+:referenceToBIBREF31 a deo:Reference ;
+    dcterms:references :BIBREF31 ;
+    c4o:hasContent "[31]" .
+
+:referenceToBIBREF32 a deo:Reference ;
+    dcterms:references :BIBREF32 ;
+    c4o:hasContent "[32]" .
+
+:referenceToBIBREF33 a deo:Reference ;
+    dcterms:references :BIBREF33 ;
+    c4o:hasContent "[33]" .
+
+:referenceToBIBREF34 a deo:Reference ;
+    dcterms:references :BIBREF34 ;
+    c4o:hasContent "[34]" .
+
+:referenceToBIBREF35 a deo:Reference ;
+    dcterms:references :BIBREF35 ;
+    c4o:hasContent "[35]" .
+
+:referenceToBIBREF36 a deo:Reference ;
+    dcterms:references :BIBREF36 ;
+    c4o:hasContent "[36]" .
+
+:referenceToBIBREF37 a deo:Reference ;
+    dcterms:references :BIBREF37 ;
+    c4o:hasContent "[37]" .
+
+:referenceToBIBREF38 a deo:Reference ;
+    dcterms:references :BIBREF38 ;
+    c4o:hasContent "[38]" .
+
+:referenceToBIBREF39 a deo:Reference ;
+    dcterms:references :BIBREF39 ;
+    c4o:hasContent "[39]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF40 a deo:Reference ;
+    dcterms:references :BIBREF40 ;
+    c4o:hasContent "[40]" .
+
+:referenceToBIBREF41 a deo:Reference ;
+    dcterms:references :BIBREF41 ;
+    c4o:hasContent "[41]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel19 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel23 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle1 a doco:SectionTitle ;
+    c4o:hasContent "A. Comparing SPI frameworks" .
+
+:sectionTitle10 a doco:SectionTitle ;
+    c4o:hasContent "B. Analysis of different frameworks and how they are used in different environment" .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "4) RAPID (Rapid Assessment or Process Improvement for software Development)" .
+
+:sectionTitle14 a doco:SectionTitle ;
+    c4o:hasContent "5) SPINI (An approach for SPI Initiation)" .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "7) MECA" .
+
+:sectionTitle16 a doco:SectionTitle ;
+    c4o:hasContent "1) Analysis" .
+
+:sectionTitle18 a doco:SectionTitle ;
+    c4o:hasContent "B. Assessment of proposed framework" .
+
+:sectionTitle19 a doco:SectionTitle ;
+    c4o:hasContent "OUR OWN ANALYSIS" .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "TABLE III. A COMPARISON OF CHARACTERISTICS OF PROPOSED COMPARISON FRAMEWORK TO OTHER COMPARISON FRAMEWORK" .
+
+:sectionTitle23 a doco:SectionTitle ;
+    c4o:hasContent "CONCLUSION AND FUTURE WORK" .
+
+:sectionTitle4 a doco:SectionTitle ;
+    c4o:hasContent "2) Framework Mapping Comparison Method" .
+
+:sectionTitle8 a doco:SectionTitle ;
+    c4o:hasContent "A. Overview" .
+
+:sectionTitle9 a doco:SectionTitle ;
+    c4o:hasContent "A-Process B-Process Areas C-Frequency of factors affecting SSC by process area D-Frequency of factors affecting SSC by process Fig 2. Percentile representation of factors affecting SSC against process areas Fig 3. Graph representing frequencies of factors affecting SSC in specific processes" .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:publisher [ foaf:name "International Conference on Software Development (SWDCREK 2005)" ] ;
+    dcterms:title "Initiating SPI in Small Enterprises: Experiments with CETIC's Micro-Evaluation Framework" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bamba" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Renault" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Habra" ] ] ;
+    c4o:hasContent "Bamba, A. Renault, and N. Habra, \"Initiating SPI in Small Enterprises: Experiments with CETIC's Micro-Evaluation Framework,\" International Conference on Software Development (SWDCREK 2005) Reykjavik, Iceland, 2005. 140 COMMUNICATION PAPERS. LEIPZIG, 2019" .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF25 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF26 ;
+                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF27 ;
+                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF28 ;
+                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF29 ;
+                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF30 ;
+                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF31 ;
+                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF32 ;
+                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF33 ;
+                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF34 ;
+                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF35 ;
+                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF36 ;
+                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF37 ;
+                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF38 ;
+                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF39 ;
+                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF40 ;
+                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF41 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF26,
+        :BIBREF27,
+        :BIBREF28,
+        :BIBREF29,
+        :BIBREF3,
+        :BIBREF30,
+        :BIBREF31,
+        :BIBREF32,
+        :BIBREF33,
+        :BIBREF34,
+        :BIBREF35,
+        :BIBREF36,
+        :BIBREF37,
+        :BIBREF38,
+        :BIBREF39,
+        :BIBREF4,
+        :BIBREF40,
+        :BIBREF41,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8 .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section1 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF5 ;
+    po:containsAsHeader :sectionTitle1 .
+
+:section10 a doco:Section ;
+    po:contains :referenceToBIBREF19,
+        :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :referenceToBIBREF23,
+        :referenceToBIBREF24,
+        :referenceToBIBREF25,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6 ;
+    po:containsAsHeader :sectionTitle10 .
+
+:section12 a doco:Section ;
+    po:contains :referenceToBIBREF26,
+        :referenceToBIBREF27,
+        :referenceToBIBREF28,
+        :referenceToBIBREF29,
+        :referenceToBIBREF6 ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section14 a doco:Section ;
+    po:contains :referenceToBIBREF14,
+        :referenceToBIBREF6 ;
+    po:containsAsHeader :sectionTitle14 .
+
+:section15 a doco:Section ;
+    po:contains :referenceToBIBREF3,
+        :referenceToBIBREF5 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section16 a doco:Section ;
+    po:contains :referenceToBIBREF5 ;
+    po:containsAsHeader :sectionTitle16 .
+
+:section18 a doco:Section ;
+    po:containsAsHeader :sectionTitle18 .
+
+:section19 a doco:Section ;
+    po:contains :referenceToBIBREF14,
+        :referenceToBIBREF30,
+        :referenceToBIBREF31,
+        :sectionLabel19 ;
+    po:containsAsHeader :sectionTitle19 .
+
+:section20 a doco:Section ;
+    po:contains :referenceToBIBREF32,
+        :referenceToBIBREF33,
+        :referenceToBIBREF34,
+        :referenceToBIBREF35,
+        :referenceToBIBREF36,
+        :referenceToBIBREF37,
+        :referenceToBIBREF38,
+        :referenceToBIBREF39,
+        :referenceToBIBREF40,
+        :referenceToBIBREF41,
+        :referenceToBIBREF8 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section23 a doco:Section ;
+    po:contains :sectionLabel23 ;
+    po:containsAsHeader :sectionTitle23 .
+
+:section4 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF13,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17 ;
+    po:containsAsHeader :sectionTitle4 .
+
+:section8 a doco:Section ;
+    po:contains :referenceToBIBREF18 ;
+    po:containsAsHeader :sectionTitle8 .
+
+:section9 a doco:Section ;
+    po:containsAsHeader :sectionTitle9 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2007 ;
+    dcterms:publisher [ foaf:name "International Conference on Software Quality-ICSQ" ] ;
+    dcterms:title "A framework to compare SPAt methods dedicated to small and very small organizations" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zarour" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Desharnais" ;
+                    foaf:givenname "J.-M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Abran" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 17 ;
+    bibo:pageStart 16 ;
+    c4o:hasContent "M. Zarour, J.-M. Desharnais, and A. Abran, \"A framework to compare SPAt methods dedicated to small and very small organizations,\" International Conference on Software Quality- ICSQ, 2007, pp. 16-17." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2001 ;
+    dcterms:publisher [ foaf:name "European Workshop on Software Process Technology" ] ;
+    dcterms:title "A taxonomy to compare SPI frameworks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Halvorsen" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Conradi" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:doi "['10.1007/3-540-45752-6_17']" ;
+    bibo:pageEnd 235 ;
+    bibo:pageStart 217 ;
+    c4o:hasContent "C. P. Halvorsen and R. Conradi, \"A taxonomy to compare SPI frameworks,\" European Workshop on Software Process Technology, 2001, pp. 217-235. http://dx.doi.org/10.1007/3- 540-45752-6_17" .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2009 ;
+    dcterms:title "About software engineering frameworks and methodologies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mnkandla" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:doi "['10.1109/afrcon.2009.5308117']" ;
+    bibo:pageEnd 5 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "E. Mnkandla, \"About software engineering frameworks and methodologies,\" in AFRICON 2009, 2009, pp. 1-5. http://dx.doi.org/ 10.1109/afrcon.2009.5308117" .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "International Conference on Product-Focused SPI" ] ;
+    dcterms:title "Hybrid Software and Systems Development in Practice: Perspectives from Sweden and Uganda" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nakatumba-Nabende" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kanagwa" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hebig" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Heldal" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Knauss" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:doi "['10.1007/978-3-319-69926-4_30']" ;
+    bibo:pageEnd 419 ;
+    bibo:pageStart 413 ;
+    c4o:hasContent "J. Nakatumba-Nabende, B. Kanagwa, R. Hebig, R. Heldal, and E. Knauss, \"Hybrid Software and Systems Development in Practice: Perspectives from Sweden and Uganda,\" International Conference on Product-Focused SPI, 2017, pp. 413-419. http://dx.doi.org/10.1007/ 978-3-319-69926-4_30" .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 1996 ;
+    dcterms:title "Comparing ISO 9000, Malcolm Balbridge, and the SEI CMM for Software: A Reference and Selection Guide" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tingey" ;
+                    foaf:givenname "M" ] ] ;
+    c4o:hasContent "M. O. Tingey, Comparing ISO 9000, Malcolm Balbridge, and the SEI CMM for Software: A Reference and Selection Guide: Prentice Hall PTR, 1996." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2008 ;
+    dcterms:publisher [ foaf:name "European Conference on SPI" ] ;
+    dcterms:title "A software engineering lifecycle standard for very small enterprises" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Laporte" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Alexandre" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "O'connor" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:doi "['10.1007/978-3-540-85936-9_12']" ;
+    bibo:pageEnd 141 ;
+    bibo:pageStart 129 ;
+    c4o:hasContent "C. Y. Laporte, S. Alexandre, and R. V. O'Connor, \"A software engineering lifecycle standard for very small enterprises,\" European Conference on SPI, 2008, pp. 129-141. http://dx.doi.org/10.1007/978- 3-540-85936-9_12" .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:publisher [ foaf:name "International Conference on Product Focused SPI" ] ;
+    dcterms:title "Improving the express process appraisal method" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mccaffery" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mcfall" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wilkie" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:doi "['10.1007/11497455']" ;
+    c4o:hasContent "F. McCaffery, D. McFall, and F. G. Wilkie, \"Improving the express process appraisal method,\" International Conference on Product Focused SPI, 2005, pp. 286-298. http://dx.doi.org/10.1007/ 11497455_24" .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 1995 ;
+    dcterms:publisher [ foaf:name "IEEE software" ] ;
+    dcterms:title "How ISO 9001 compares with the CMM" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Paulk" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1109/52.363163']" ;
+    bibo:pageEnd 83 ;
+    bibo:pageStart 74 ;
+    bibo:volume "12" ;
+    c4o:hasContent "M. C. Paulk, \"How ISO 9001 compares with the CMM,\" IEEE software, vol. 12, pp. 74-83, 1995. http://dx.doi.org/10.1109/ 52.363163" .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 1997 ;
+    dcterms:title "SPICE: The theory and practice of SPI and capability determination" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Emam" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Melo" ;
+                    foaf:givenname "W" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Drouin" ;
+                    foaf:givenname "J.-N" ] ] ;
+    c4o:hasContent "K. E. Emam, W. Melo, and J.-N. Drouin, SPICE: The theory and practice of SPI and capability determination: IEEE Computer Society Press, 1997." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE/ACM Symposium on Software Engineering in Africa (SEiA)" ] ;
+    dcterms:title "Factors affecting development process in small software companies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tuape" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ayalew" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:doi "['10.1109/SEiA.2019.00011']" ;
+    bibo:pageEnd 25 ;
+    bibo:pageStart 16 ;
+    c4o:hasContent "M. Tuape and Y. Ayalew \"Factors affecting development process in small software companies,\" IEEE/ACM Symposium on Software Engineering in Africa (SEiA) 2019. pp. 16-25 http://dx.doi.org/10.1109/SEiA.2019.00011" .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "Clei Electronic Journal" ] ;
+    dcterms:title "From MoProSoft Level 2 to ISO/IEC 29110 Basic Profile: Bridging the Gap" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Morales-Trujillo" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Oktaba" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ventura" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Torres" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:doi "['10.19153/cleiej.16.1.2']" ;
+    bibo:volume "16" ;
+    c4o:hasContent "M. E. Morales-Trujillo, H. Oktaba, T. Ventura, and R. Torres, \"From MoProSoft Level 2 to ISO/IEC 29110 Basic Profile: Bridging the Gap,\" Clei Electronic Journal, vol. 16, 2013. http://dx.doi.org/ 10.19153/cleiej.16.1.2" .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Journal of SE" ] ;
+    dcterms:title "SPI frameworks as alternative of CMMI for SMEs: a literature review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Al-Ashmori" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rad" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Suhaimi" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:doi "['10.3923/jse.2017.123.133']" ;
+    bibo:pageEnd 133 ;
+    bibo:pageStart 123 ;
+    bibo:volume "11" ;
+    c4o:hasContent "A. M. AL-Ashmori, B. B. Rad, and I. Suhaimi, \"SPI frameworks as alternative of CMMI for SMEs: a literature review,\" Journal of SE, vol. 11, pp. 123-133, 2017. http://dx.doi.org/10.3923/jse.2017.123.133" .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 11 th International Conference on Product Focused Software" ] ;
+    dcterms:title "Process assessment issues of the ISO/IEC 29110 emerging standard" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ribaud" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Saliou" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:doi "['10.1145/1961258.1961264']" ;
+    bibo:pageEnd 27 ;
+    bibo:pageStart 24 ;
+    c4o:hasContent "V. Ribaud and P. Saliou, \"Process assessment issues of the ISO/IEC 29110 emerging standard,\" in Proceedings of the 11 th International Conference on Product Focused Software, 2010, pp. 24-27. http://dx.doi.org/10.1145/1961258.1961264" .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "IEEE software" ] ;
+    dcterms:title "Helping small companies assess software processes" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wangenheim" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Anacleto" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Salviano" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:doi "['10.1109/ms.2006.13']" ;
+    bibo:pageEnd 98 ;
+    bibo:pageStart 91 ;
+    bibo:volume "23" ;
+    c4o:hasContent "C. G. von Wangenheim, A. Anacleto, and C. F. Salviano, \"Helping small companies assess software processes,\" IEEE software, vol. 23, pp. 91-98, 2006. https://doi.org/10.1109/ms.2006.13" .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "Information and Software Technology" ] ;
+    dcterms:title "Assessment methodology for SPI in small organizations" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pino" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pardo" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "García" ;
+                    foaf:givenname "F" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Piattini" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1016/j.infsof.2010.04.004']" ;
+    bibo:pageEnd 1061 ;
+    bibo:pageStart 1044 ;
+    bibo:volume "52" ;
+    c4o:hasContent "F. J. Pino, C. Pardo, F. García, and M. Piattini, \"Assessment methodology for SPI in small organizations,\" Information and Software Technology, vol. 52, pp. 1044-1061, 2010. https://doi.org/10.1016/j.infsof.2010.04.004" .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "Malaysian Conference in Software Engineering" ] ;
+    dcterms:title "An application tool to support the implementation of integrated SPIt for Malaysia's SME" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ali" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ibrahim" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:doi "['10.1109/mysec.2011.6140665']" ;
+    bibo:pageEnd 182 ;
+    bibo:pageStart 177 ;
+    c4o:hasContent "R. Z. R. M. Ali and S. Ibrahim, \"An application tool to support the implementation of integrated SPIt for Malaysia's SME,\" Malaysian Conference in Software Engineering, 2011, pp. 177-182. https:// doi.org/10.1109/mysec.2011.6140665" .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2009 ;
+    dcterms:publisher [ foaf:name "Postgraduate Annual Research Seminar (PARS) in UTM Skudai" ] ;
+    dcterms:title "An Integrated SPA for Malaysia's SME" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ali" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ibrahim" ;
+                    foaf:givenname "S" ] ] ;
+    c4o:hasContent "R. Ali and S. Ibrahim, \"An Integrated SPA for Malaysia's SME,\" Postgraduate Annual Research Seminar (PARS) in UTM Skudai, 2009." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "2nd International Conference on Software Engineering and Data Mining" ] ;
+    dcterms:title "An iSPA model evaluation based on critical success factors and selected criteria to support Malaysia's SME environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zurina" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ali" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ibrahim" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 230 ;
+    bibo:pageStart 225 ;
+    c4o:hasContent "R. Zurina, R. M. Ali, and S. Ibrahim, \"An iSPA model evaluation based on critical success factors and selected criteria to support Malaysia's SME environment,\" 2nd International Conference on Software Engineering and Data Mining, 2010, pp. 225-230." .
+
+:BIBREF26 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "Information and Software Technology" ] ;
+    dcterms:title "Process improvement for small firms: An evaluation of the RAPID assessment-based method" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cater-Steel" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Toleman" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Rout" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:doi "['10.1016/j.infsof.2005.09.012']" ;
+    bibo:pageEnd 334 ;
+    bibo:pageStart 323 ;
+    bibo:volume "48" ;
+    c4o:hasContent "A. Cater-Steel, M. Toleman, and T. Rout, \"Process improvement for small firms: An evaluation of the RAPID assessment-based method,\" Information and Software Technology, vol. 48, pp. 323-334, 2006. https://doi.org/10.1016/j.infsof.2005.09.012" .
+
+:BIBREF27 a deo:BibliographicReference ;
+    dcterms:issued 2002 ;
+    dcterms:publisher [ foaf:name "Encyclopedia of Software Engineering" ] ;
+    dcterms:title "ISO/IEC 15504 and Spice" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Rout" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:doi "['10.1002/0471028959.sof171']" ;
+    c4o:hasContent "T. P. Rout, \"ISO/IEC 15504 and Spice,\" Encyclopedia of Software Engineering, 2002. https://doi.org/10.1002/0471028959.sof171" .
+
+:BIBREF28 a deo:BibliographicReference ;
+    dcterms:issued 2000 ;
+    dcterms:publisher [ foaf:name "1 st International Conference on SPI and Capability Determination, Limmerick, Ireland" ] ;
+    dcterms:title "Evolving SPICE-the Future for ISO 15504" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Rout" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 8 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "T. Rout, \"Evolving SPICE-the Future for ISO 15504,\" 1 st International Conference on SPI and Capability Determination, Limmerick, Ireland, 2000, pp. 1-8." .
+
+:BIBREF29 a deo:BibliographicReference ;
+    dcterms:issued 2008 ;
+    dcterms:title "SPI for Small and Medium Enterprises: Techniques and Case Studies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Oktaba" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Piattini" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.4018/978-1-59904-906-9']" ;
+    c4o:hasContent "H. Oktaba and M. Piattini, \"SPI for Small and Medium Enterprises: Techniques and Case Studies,\" 2008. https://doi.org/10.4018/978-1- 59904-906-9" .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "International Conference on Information and Emerging Technologies" ] ;
+    dcterms:title "MECA: SPI for small organizations" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khokhar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mansoor" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Muhammad Nadeem" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ur" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Rauf" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:doi "['10.1109/iciet.2010.5625678']" ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "M. N. Khokhar, A. Mansoor, K. Muhammad Nadeem, R. Shafiq Ur, and A. Rauf, \"MECA: SPI for small organizations,\" International Conference on Information and Emerging Technologies, 2010, pp. 1-6. http://dx.doi.org/10.1109/iciet.2010.5625678" .
+
+:BIBREF30 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Empirical Software Engineering" ] ;
+    dcterms:title "Software engineering in start-up companies: An analysis of 88 experience reports" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Klotins" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Unterkalmsteiner" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gorschek" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:doi "['10.1007/s10664-018-9620-y']" ;
+    bibo:pageEnd 102 ;
+    bibo:pageStart 68 ;
+    bibo:volume "24" ;
+    c4o:hasContent "E. Klotins, M. Unterkalmsteiner, and T. Gorschek, \"Software engineering in start-up companies: An analysis of 88 experience reports,\" Empirical Software Engineering, vol. 24, pp. 68-102, 2019. https://doi.org/10.1007/s10664-018-9620-y" .
+
+:BIBREF31 a deo:BibliographicReference ;
+    dcterms:issued 2002 ;
+    dcterms:publisher [ foaf:name "Empirical Software Engineering" ] ;
+    dcterms:title "Enabling SPIt: an investigation of the importance of organizational issues" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dybå" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:doi "['10.1023/a:1020535725648']" ;
+    bibo:pageEnd 390 ;
+    bibo:pageStart 387 ;
+    bibo:volume "7" ;
+    c4o:hasContent "T. Dybå, \"Enabling SPIt: an investigation of the importance of organizational issues,\" Empirical Software Engineering, vol. 7, pp. 387-390, 2002. https://doi.org/10.1023/a:1020535725648" .
+
+:BIBREF32 a deo:BibliographicReference ;
+    dcterms:issued 2008 ;
+    dcterms:publisher [ foaf:name "South African Institute of Computer Scientists and Information Technologists on IT research in developing countries: riding the wave of technology" ] ;
+    dcterms:title "Agile systems development and stakeholder satisfaction: a South African empirical study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ferreira" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cohen" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:doi "['10.1145/1456659.1456666']" ;
+    bibo:pageEnd 55 ;
+    bibo:pageStart 48 ;
+    c4o:hasContent "C. Ferreira and J. Cohen, \"Agile systems development and stakeholder satisfaction: a South African empirical study,\" South African Institute of Computer Scientists and Information Technologists on IT research in developing countries: riding the wave of technology, 2008, pp. 48- 55. https://doi.org/10.1145/1456659.1456666" .
+
+:BIBREF33 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "South African Journal of Industrial Engineering" ] ;
+    dcterms:title "An evaluation of software project risk management in South Africa" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wet" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Visser" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:doi "['10.7166/24-1-497']" ;
+    bibo:pageEnd 29 ;
+    bibo:pageStart 14 ;
+    bibo:volume "24" ;
+    c4o:hasContent "B. De Wet and J. Visser, \"An evaluation of software project risk management in South Africa,\" South African Journal of Industrial Engineering, vol. 24, pp. 14-29, 2013. https://doi.org/10.7166/24-1- 497" .
+
+:BIBREF34 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:title "Requirements engineering process improvement challenges faced by software SMEs in Uganda" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kabaale" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kituyi" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Mbarika" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:doi "['10.5120/15349-3690']" ;
+    c4o:hasContent "E. Kabaale, G. Mayoka Kituyi, and I. Mbarika, \"Requirements engineering process improvement challenges faced by software SMEs in Uganda,\" 2014. https://doi.org/10.5120/15349-3690" .
+
+:BIBREF35 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "International Conference on Computational Science and Computational Intelligence (CSCI)" ] ;
+    dcterms:title "An Ambiguity Minimization Technique during Requirements Elicitation Phase" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Balikuddembe" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tuape" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1109/csci.2017.164']" ;
+    bibo:pageEnd 950 ;
+    bibo:pageStart 945 ;
+    c4o:hasContent "J. K. Balikuddembe and M. Tuape, \"An Ambiguity Minimization Technique during Requirements Elicitation Phase,\" International Conference on Computational Science and Computational Intelligence (CSCI), 2017, pp. 945-950 https://doi.org/10.1109/csci.2017.164." .
+
+:BIBREF36 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "14th International Conference on Computational Science and Its Applications" ] ;
+    dcterms:title "Software Process Practices in Small Software Companies in Botswana" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ayalew" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Motlhala" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:doi "['10.1109/iccsa.2014.20']" ;
+    bibo:pageEnd 57 ;
+    bibo:pageStart 49 ;
+    c4o:hasContent "Y. Ayalew and K. Motlhala, \"Software Process Practices in Small Software Companies in Botswana,\" 14th International Conference on Computational Science and Its Applications, 2014, pp. 49-57. https://doi.org/10.1109/iccsa.2014.20" .
+
+:BIBREF37 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "ACM SIGAPP Applied Computing Review" ] ;
+    dcterms:title "Understanding SPIt in global software development: a theoretical framework of human factors" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Keung" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hussain" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Niazi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Tamimy" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1145/3131080.3131081']" ;
+    bibo:pageEnd 15 ;
+    bibo:pageStart 5 ;
+    bibo:volume "17" ;
+    c4o:hasContent "A. A. Khan, J. Keung, S. Hussain, M. Niazi, and M. M. I. Tamimy, \"Understanding SPIt in global software development: a theoretical framework of human factors,\" ACM SIGAPP Applied Computing Review, vol. 17, pp. 5-15, 2017. https://doi.org/10.1145/ 3131080.3131081" .
+
+:BIBREF38 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE Software" ] ;
+    dcterms:title "What we know about software test maturity and test process improvement" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Garousi" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Felderer" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hacaloğlu" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:doi "['10.1109/ms.2017.4541043']" ;
+    bibo:pageEnd 92 ;
+    bibo:pageStart 84 ;
+    bibo:volume "35" ;
+    c4o:hasContent "V. Garousi, M. Felderer, and T. Hacaloğlu, \"What we know about software test maturity and test process improvement,\" IEEE Software, vol. 35, pp. 84-92, 2018. https://doi.org/10.1109/ms.2017.4541043" .
+
+:BIBREF39 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "IEEE Software" ] ;
+    dcterms:title "Helping small companies assess software processes" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wangenheim" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Anacleto" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Salviano" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:doi "['10.1109/ms.2006.13']" ;
+    bibo:pageEnd 98 ;
+    bibo:pageStart 91 ;
+    bibo:volume "23" ;
+    c4o:hasContent "C. G. v. Wangenheim, A. Anacleto, and C. F. Salviano, \"Helping small companies assess software processes,\" IEEE Software, vol. 23, pp. 91-98, 2006. https://doi.org/10.1109/ms.2006.13" .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 1988 ;
+    dcterms:publisher [ foaf:name "Journal of software: Evolution and Process" ] ;
+    dcterms:title "GSEPIM: A roadmap for SPA and SPI in the domain of global software development" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Keung" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Niazi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hussain" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Shameem" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1002/smr.1988']" ;
+    bibo:volume "31" ;
+    c4o:hasContent "A. A. Khan, J. Keung, M. Niazi, S. Hussain, and M. Shameem, \"GSEPIM: A roadmap for SPA and SPI in the domain of global software development,\" Journal of software: Evolution and Process, vol. 31, p. e1988, 2019. http://dx.doi.org/10.1002/smr.1988" .
+
+:BIBREF40 a deo:BibliographicReference ;
+    dcterms:issued 2001 ;
+    dcterms:publisher [ foaf:name "Australian Software Engineering Conference" ] ;
+    dcterms:title "Process improvement in four small software companies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cater" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Steel" ] ] ;
+    bibo:doi "['10.1109/aswec.2001.948520']" ;
+    bibo:pageEnd 272 ;
+    bibo:pageStart 262 ;
+    c4o:hasContent "A. P. Cater-Steel, \"Process improvement in four small software companies,\" Australian Software Engineering Conference, 2001, pp. 262-272. https://doi.org/10.1109/aswec.2001.948520" .
+
+:BIBREF41 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "11 th International Conference on Product Focused Software" ] ;
+    dcterms:title "Two case studies on small enterprise motivation and readiness for CMMI" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Staples" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Niazi" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1145/1961258.1961274']" ;
+    c4o:hasContent "M. Staples and M. Niazi, \"Two case studies on small enterprise motivation and readiness for CMMI,\" 11 th International Conference on Product Focused Software, Limerick, Ireland, 2010. https://doi.org/ 10.1145/1961258.1961274" .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2004 ;
+    dcterms:title "A method for process assessment in small software companies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Anacleto" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Von Wangenheim" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Salviano" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Savi" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Brasil" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Brasil" ;
+                    foaf:givenname "C" ] ] ;
+    c4o:hasContent "R. Anacleto, C. G. Von Wangenheim, C. F. Salviano, R. Savi, S. Brasil, and C. S. Brasil, \"A method for process assessment in small software companies,\" 2004." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:title "Mares-a methodology for software process assessment in small software companies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wangenheim" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Anacleto" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Salviano" ;
+                    foaf:givenname "C" ] ] ;
+    c4o:hasContent "C. G. von Wangenheim, A. Anacleto, and C. F. Salviano, \"Mares-a methodology for software process assessment in small software companies,\" Technical Report LPQS0012004." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "IEEE Software" ] ;
+    dcterms:title "Software process improvement in very small organizations" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Larrucea" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "O'connor" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Colomo-Palacios" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Laporte" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:doi "['10.1109/ms.2016.42']" ;
+    bibo:pageEnd 89 ;
+    bibo:pageStart 85 ;
+    bibo:volume "33" ;
+    c4o:hasContent "X. Larrucea, R. V. O'Connor, R. Colomo-Palacios, and C. Y. Laporte, \"Software process improvement in very small organizations,\" IEEE Software, vol. 33, pp. 85-89, 2016. http://dx.doi.org/ 10.1109/ms.2016.42" .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Informatica Software Engineering Journal" ] ;
+    dcterms:title "A systematic mapping study on software measurement programs in SMEs" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tahir" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rasool" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Noman" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1109/icacs.2018.8333491']" ;
+    bibo:volume "12" ;
+    c4o:hasContent "T. Tahir, G. Rasool, and M. Noman, \"A systematic mapping study on software measurement programs in SMEs,\" e- Informatica Software Engineering Journal, vol. 12, 2018. http://dx.doi.org/ 10.1109/icacs.2018.8333491" .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+

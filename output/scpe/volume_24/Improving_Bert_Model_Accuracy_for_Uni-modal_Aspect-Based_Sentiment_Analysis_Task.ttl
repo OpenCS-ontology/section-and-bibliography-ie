@@ -1,0 +1,917 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Natural Language Processing"^^xsd:string,
+        "aspect-based sentiment analysis"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1 ] ;
+    dcterms:title "Improving Bert Model Accuracy for Uni-modal Aspect-Based Sentiment Analysis Task"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Techniques and methods for examining users’ feelings, emotions, and views in text or other media are known as ”sentiment analysis,” this phrase is used frequently. In many areas, including marketing and online social media, analysis of user and consumer opinions has always been essential to decision-making processes. The development of new methodologies that concentrate on analysing the sentiment associated with specific product characteristics, such as aspect-based sentiment analysis (ABSA), was prompted by the need for a deeper understanding of these opinions. Despite the growing interest in this field, some misunderstanding exists about ABSA’s core ideas. Even though sentiment, affect, emotion, and opinion refer to various ideas, they are frequently used synonymously. This ambiguity commonly causes user opinions to be analysed incorrectly. This work provides an overview of ABSA and the issue of overfitting. Following this analysis, we improved the model by enhancing the accuracy and F1 score of the existing model by fine-tuning the technique. Our model outperformed the others, achieving the best results for the restaurant dataset with an 85.02 accuracy and a 79.19 F1 score, respectively."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 286 ;
+    prism:pageCount 9 ;
+    prism:startingPage 277 ;
+    datacite:doi "10.12694/scpe.v24i3.2444"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2444"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2444> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Chauhan"^^xsd:string ;
+    foaf:givenName "Amit"^^xsd:string ;
+    foaf:name "Amit Chauhan"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Mohana"^^xsd:string ;
+    foaf:givenName "Rajni"^^xsd:string ;
+    foaf:name "Rajni Mohana"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section7 ;
+                    co:nextItem [ co:itemContent :section8 ;
+                            co:nextItem [ co:itemContent :section20 ;
+                                    co:nextItem [ co:itemContent :section24 ;
+                                            co:nextItem [ co:itemContent :section41 ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section20,
+        :section24,
+        :section41,
+        :section7,
+        :section8 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Jaypee University of Information Technology, Waknaghat Solan, Himachal Pradesh, India"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "Jaypee University of Information Technology, Waknaghat Solan, Himachal Pradesh, India "^^xsd:string .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[20]",
+        "[Wu et al 2022]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF26 a deo:Reference ;
+    dcterms:references :BIBREF26 ;
+    c4o:hasContent "[26]",
+        "[Zhao et al 2022]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]",
+        "[Dai et al 2022]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel11 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionLabel24 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel39 a doco:SectionLabel ;
+    c4o:hasContent "5.2." .
+
+:sectionLabel41 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel7 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel8 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle11 a doco:SectionTitle ;
+    c4o:hasContent "Aspect-Based Sentiment Analysis (ABSA)." .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "BERT(S)" .
+
+:sectionTitle24 a doco:SectionTitle ;
+    c4o:hasContent "Experimental Setup." .
+
+:sectionTitle39 a doco:SectionTitle ;
+    c4o:hasContent "Model Comparison. A comparison of the proposed model (BERTSPC with K fold cross-validation) and (baseline research work" .
+
+:sectionTitle41 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "Related Work." .
+
+:sectionTitle8 a doco:SectionTitle ;
+    c4o:hasContent "Sentiment Analysis." .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Taqs: An arabic question similarity system using transfer learning of bert with bilstm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alshammari" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Alhumoud" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 91523 ;
+    bibo:pageStart 91509 ;
+    bibo:volume "10" ;
+    c4o:hasContent "W. T. Alshammari and S. AlHumoud, Taqs: An arabic question similarity system using transfer learning of bert with bilstm, IEEE Access, 10 (2022), pp. 91509-91523." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Neural collaborative embedding from reviews for recommendation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Feng" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zeng" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 103274 ;
+    bibo:pageStart 103263 ;
+    bibo:volume "7" ;
+    c4o:hasContent "X. Feng and Y. Zeng, Neural collaborative embedding from reviews for recommendation, IEEE Access, 7 (2019), pp. 103263- 103274." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "International Conference on Neural Networks, Information, and Communication Engineering (NNICE)" ] ;
+    dcterms:title "Research on deep neural network model construction and overfitting" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Fan" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Liu" ] ] ;
+    bibo:pageEnd 93 ;
+    bibo:pageStart 88 ;
+    bibo:volume "12258" ;
+    c4o:hasContent "Li, H. Zhang, L. Fan, H. Wang, and Q. Liu, Research on deep neural network model construction and overfitting, in International Conference on Neural Networks, Information, and Communication Engineering (NNICE), vol. 12258, SPIE, 2022, pp. 88-93." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Enhancing bert representation with context-aware embedding for aspect-based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Fu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Jin" ;
+                    foaf:givenname "L" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Xiang" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 46876 ;
+    bibo:pageStart 46868 ;
+    bibo:volume "8" ;
+    c4o:hasContent "X. Li, X. Fu, G. Xu, Y. Yang, J. Wang, L. Jin, Q. Liu, and T. Xiang, Enhancing bert representation with context-aware embedding for aspect-based sentiment analysis, IEEE Access, 8 (2020), pp. 46868-46876." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Journal of Statistics and Management Systems" ] ;
+    dcterms:title "Sentiment analysis from travellers' reviews using enhanced conjunction rule based approach for feature-specific evaluation of hotels" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Maity" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ghosh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Karfa" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Mukhopadhyay" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Pal" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Pramanik" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 997 ;
+    bibo:pageStart 983 ;
+    bibo:volume "23" ;
+    c4o:hasContent "A. Maity, S. Ghosh, S. Karfa, M. Mukhopadhyay, S. Pal, and P. K. D. Pramanik, Sentiment analysis from travellers' reviews using enhanced conjunction rule based approach for feature-specific evaluation of hotels, Journal of Statistics and Management Systems, 23 (2020), pp. 983-997." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 8th International Workshop on Semantic Evaluation" ] ;
+    dcterms:title "SemEval-2014 task 4: Aspect based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pontiki" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Galanis" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Pavlopoulos" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Papageorgiou" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Androutsopoulos" ;
+                    foaf:givenname "I" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Manandhar" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 35 ;
+    bibo:pageStart 27 ;
+    c4o:hasContent "M. Pontiki, D. Galanis, J. Pavlopoulos, H. Papageorgiou, I. Androutsopoulos, and S. Manandhar, SemEval-2014 task 4: Aspect based sentiment analysis, in Proceedings of the 8th International Workshop on Semantic Evaluation (SemEval 2014), Dublin, Ireland, Aug. 2014, Association for Computational Linguistics, pp. 27-35." .
+
+:BIBREF28 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Communications in statistics-simulation and computation" ] ;
+    dcterms:title "Nested cross-validation with ensemble feature selection and classification model for high-dimensional biological data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhong" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chalise" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "He" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 125 ;
+    bibo:pageStart 110 ;
+    bibo:volume "52" ;
+    c4o:hasContent "Y. Zhong, P. Chalise, and J. He, Nested cross-validation with ensemble feature selection and classification model for high-dimensional biological data, Communications in statistics-simulation and computation, 52 (2023), pp. 110-125." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Empirical Software Engineering" ] ;
+    dcterms:title "Can pre-trained code embeddings improve model performance? revisiting the use of code embeddings in software engineering tasks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shang" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "T.-H" ] ] ;
+    bibo:volume "27" ;
+    c4o:hasContent "Z. Ding, H. Li, W. Shang, and T.-H. P. Chen, Can pre-trained code embeddings improve model performance? revisiting the use of code embeddings in software engineering tasks, Empirical Software Engineering, 27 (2022), p. 63." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Cross validation voting for improving cnn classification in grocery products" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Domingo" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Aparicio" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Rodrigo" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 20925 ;
+    bibo:pageStart 20913 ;
+    bibo:volume "10" ;
+    c4o:hasContent "J. D. Domingo, R. M. Aparicio, and L. M. G. Rodrigo, Cross validation voting for improving cnn classification in grocery products, IEEE Access, 10 (2022), pp. 20913-20925." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Scientific Reports" ] ;
+    dcterms:title "A conditional gan-based approach for enhancing transfer learning performance in few-shot hcr tasks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Elaraby" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Barakat" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Rezk" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "12" ;
+    c4o:hasContent "N. Elaraby, S. Barakat, and A. Rezk, A conditional gan-based approach for enhancing transfer learning performance in few-shot hcr tasks, Scientific Reports, 12 (2022), p. 16271." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF25 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF26 ;
+                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF27 ;
+                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF28 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF26,
+        :BIBREF27,
+        :BIBREF28,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF27 a deo:Reference ;
+    dcterms:references :BIBREF27 ;
+    c4o:hasContent "[27]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF24,
+        :referenceToBIBREF25,
+        :referenceToBIBREF27,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section11 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF19,
+        :referenceToBIBREF21,
+        :referenceToBIBREF23,
+        :sectionLabel11 ;
+    po:containsAsHeader :sectionTitle11 .
+
+:section20 a doco:Section ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section24 a doco:Section ;
+    co:firstItem [ co:itemContent :section39 ] ;
+    po:contains :section39,
+        :sectionLabel24 ;
+    po:containsAsHeader :sectionTitle24 .
+
+:section39 a doco:Section ;
+    po:contains :referenceToBIBREF27,
+        :sectionLabel39 ;
+    po:containsAsHeader :sectionTitle39 .
+
+:section41 a doco:Section ;
+    po:contains :sectionLabel41 ;
+    po:containsAsHeader :sectionTitle41 .
+
+:section7 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF13,
+        :referenceToBIBREF20,
+        :referenceToBIBREF22,
+        :referenceToBIBREF26,
+        :referenceToBIBREF3,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :sectionLabel7 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:section8 a doco:Section ;
+    co:firstItem [ co:itemContent :section11 ] ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF2,
+        :referenceToBIBREF6,
+        :section11,
+        :sectionLabel8 ;
+    po:containsAsHeader :sectionTitle8 .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "2022 Seventh International Conference on Parallel, Distributed and Grid Computing (PDGC)" ] ;
+    dcterms:title "Implementing lda topic modelling technique to study user reviews in tourism" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chauhan" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mohana" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 360 ;
+    bibo:pageStart 357 ;
+    c4o:hasContent "A. Chauhan and R. Mohana, Implementing lda topic modelling technique to study user reviews in tourism, in 2022 Seventh International Conference on Parallel, Distributed and Grid Computing (PDGC), IEEE, 2022, pp. 357-360." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Knowledge-Based Systems" ] ;
+    dcterms:title "Aspect-based sentiment analysis with attention-assisted graph and variational sentence representation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Feng" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ouyang" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "258" ;
+    c4o:hasContent "S. Feng, B. Wang, Z. Yang, and J. Ouyang, Aspect-based sentiment analysis with attention-assisted graph and variational sentence representation, Knowledge-Based Systems, 258 (2022), p. 109975." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "A local and global context focus multilingual learning model for aspect-based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "He" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wumaier" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kadeer" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "W" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Xin" ;
+                    foaf:givenname "X" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Zheng" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 84146 ;
+    bibo:pageStart 84135 ;
+    bibo:volume "10" ;
+    c4o:hasContent "J. He, A. Wumaier, Z. Kadeer, W. Sun, X. Xin, and L. Zheng, A local and global context focus multilingual learning model for aspect-based sentiment analysis, IEEE Access, 10 (2022), pp. 84135-84146." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Affective Computing" ] ;
+    dcterms:title "Meta-based self-training and re-weighting for aspect-based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "He" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mao" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gong" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Cambria" ;
+                    foaf:givenname "E" ] ] ;
+    c4o:hasContent "K. He, R. Mao, T. Gong, C. Li, and E. Cambria, Meta-based self-training and re-weighting for aspect-based sentiment analysis, IEEE Transactions on Affective Computing, (2022)." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Artificial Intelligence Review" ] ;
+    dcterms:title "Aspect extraction in sentiment analysis: comparative analysis and survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Rana" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cheah" ;
+                    foaf:givenname "Y.-N" ] ] ;
+    bibo:pageEnd 483 ;
+    bibo:pageStart 459 ;
+    bibo:volume "46" ;
+    c4o:hasContent "T. A. Rana and Y.-N. Cheah, Aspect extraction in sentiment analysis: comparative analysis and survey, Artificial Intelli- gence Review, 46 (2016), pp. 459-483." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Futuristic Trends in Networks and Computing Technologies: Second International Conference, FTNCT 2019" ] ;
+    dcterms:title "Sybil account detection in online social networks using statistical feature selection techniques" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chauhan" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sood" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 618 ;
+    bibo:pageStart 605 ;
+    bibo:volume "2" ;
+    c4o:hasContent "A. Chauhan and M. Sood, Sybil account detection in online social networks using statistical feature selection techniques, in Futuristic Trends in Networks and Computing Technologies: Second International Conference, FTNCT 2019, Chandigarh, India, November 22-23, 2019, Revised Selected Papers 2, Springer, 2020, pp. 605-618." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Knowledge-Based Systems" ] ;
+    dcterms:title "Phrase dependency relational graph attention network for aspect-based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shi" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Song" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:volume "236" ;
+    c4o:hasContent "H. Wu, Z. Zhang, S. Shi, Q. Wu, and H. Song, Phrase dependency relational graph attention network for aspect-based sentiment analysis, Knowledge-Based Systems, 236 (2022), p. 107736." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE/ACM Transactions on Audio, Speech, and Language Processing" ] ;
+    dcterms:title "Revisiting aspect-sentiment-opinion triplet extraction: Detailed analyses towards a simple and effective span-based model" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Xie" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ji" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 2927 ;
+    bibo:pageStart 2918 ;
+    bibo:volume "30" ;
+    c4o:hasContent "K. Xu, F. Li, D. Xie, and D. Ji, Revisiting aspect-sentiment-opinion triplet extraction: Detailed analyses towards a simple and effective span-based model, IEEE/ACM Transactions on Audio, Speech, and Language Processing, 30 (2022), pp. 2918-2927." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Information Processing & Management" ] ;
+    dcterms:title "Cross-modal multitask transformer for end-to-end multimodal aspect-based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Na" ;
+                    foaf:givenname "J.-C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yu" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "59" ;
+    c4o:hasContent "L. Yang, J.-C. Na, and J. Yu, Cross-modal multitask transformer for end-to-end multimodal aspect-based sentiment analysis, Information Processing & Management, 59 (2022), p. 103038." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Affective knowledge augmented interactive graph convolutional network for chinese-oriented aspect-based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kadeer" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gu" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "W" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wumaier" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 130698 ;
+    bibo:pageStart 130686 ;
+    bibo:volume "10" ;
+    c4o:hasContent "Q. Yang, Z. Kadeer, W. Gu, W. Sun, and A. Wumaier, Affective knowledge augmented interactive graph convolutional network for chinese-oriented aspect-based sentiment analysis, IEEE Access, 10 (2022), pp. 130686-130698." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:title "Sgpt: Semantic graphs based pre-training for aspect-based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yong" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Xiao" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 14 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Q. Yong, C. Chen, Z. Wang, R. Xiao, and H. Tang, Sgpt: Semantic graphs based pre-training for aspect-based sentiment analysis, World Wide Web, (2023), pp. 1-14." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Knowledge-Based Systems" ] ;
+    dcterms:title "Aspect-based sentiment analysis via multitask learning for online reviews" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Luo" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Qian" ;
+                    foaf:givenname "X" ] ] ;
+    c4o:hasContent "G. Zhao, Y. Luo, Q. Chen, and X. Qian, Aspect-based sentiment analysis via multitask learning for online reviews, Knowledge-Based Systems, (2023), p. 110326." .
+
+:BIBREF26 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Neurocomputing" ] ;
+    dcterms:title "Graph convolutional network with multiple weight mechanisms for aspect-based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 134 ;
+    bibo:pageStart 124 ;
+    bibo:volume "500" ;
+    c4o:hasContent "Z. Zhao, M. Tang, W. Tang, C. Wang, and X. Chen, Graph convolutional network with multiple weight mechanisms for aspect-based sentiment analysis, Neurocomputing, 500 (2022), pp. 124-134." .
+
+:BIBREF27 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Knowledge and Data Engineering" ] ;
+    dcterms:title "Knowledge graph augmented network towards multiview representation learning for aspect-based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhong" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Du" ;
+                    foaf:givenname "B" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Jin" ;
+                    foaf:givenname "H" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Tao" ;
+                    foaf:givenname "D" ] ] ;
+    c4o:hasContent "Q. Zhong, L. Ding, J. Liu, B. Du, H. Jin, and D. Tao, Knowledge graph augmented network towards multiview represen- tation learning for aspect-based sentiment analysis, IEEE Transactions on Knowledge and Data Engineering, (2023)." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "International Journal of Data Science and Analytics" ] ;
+    dcterms:title "Learning from word semantics to sentence syntax by graph convolutional networks for aspect-based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dai" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Nie" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 26 ;
+    bibo:pageStart 17 ;
+    bibo:volume "14" ;
+    c4o:hasContent "A. Dai, X. Hu, J. Nie, and J. Chen, Learning from word semantics to sentence syntax by graph convolutional networks for aspect-based sentiment analysis, International Journal of Data Science and Analytics, 14 (2022), pp. 17-26." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Concurrency and Computation: Practice and Experience" ] ;
+    dcterms:title "Drug review sentimental analysis based on modular lexicon generation and a fusion of bidirectional threshold weighted mapping cnn-rnn" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dubey" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sheoran" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Dhand" ;
+                    foaf:givenname "G" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Malik" ;
+                    foaf:givenname "P" ] ] ;
+    c4o:hasContent "G. Dubey, H. P. Singh, K. Sheoran, G. Dhand, and P. Malik, Drug review sentimental analysis based on modular lexicon generation and a fusion of bidirectional threshold weighted mapping cnn-rnn, Concurrency and Computation: Practice and Experience, (2023), p. e7512." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Artificial Intelligence Review" ] ;
+    dcterms:title "Knowmis-absa: an overview and a reference model for applications of sentiment analysis and aspect-based sentiment analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "D'aniello" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gaeta" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Rocca" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:pageEnd 5574 ;
+    bibo:pageStart 5543 ;
+    bibo:volume "55" ;
+    c4o:hasContent "G. D'Aniello, M. Gaeta, and I. La Rocca, Knowmis-absa: an overview and a reference model for applications of sentiment analysis and aspect-based sentiment analysis, Artificial Intelligence Review, 55 (2022), pp. 5543-5574." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Artificial Intelligence Review" ] ;
+    dcterms:title "Knowmis-absa: an overview and a reference model for applications of sentiment analysis and aspect-based sentiment analysis" ;
+    bibo:pageEnd 5574 ;
+    bibo:pageStart 5543 ;
+    bibo:volume "55" ;
+    c4o:hasContent "Knowmis-absa: an overview and a reference model for applications of sentiment analysis and aspect-based sentiment analysis, Artificial Intelligence Review, 55 (2022), pp. 5543-5574." .
+

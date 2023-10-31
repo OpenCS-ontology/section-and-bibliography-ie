@@ -1,0 +1,758 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1 ] ;
+    dcterms:title "Exact and approximation algorithms for joint routing and flow rate optimization"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "This paper addresses comparison of algorithms for a version of the NUM problem. The joint formulation of routing and transmission rate control within the multi-user and single-path setting is assumed within the NUM. Since problem is NP-hard, the efficient heuristics are designed, implemented and compared experimentally with other existing heuristics and exact linear programming solver. The linear approximation is applied for nonlinear utility function. The results of experiments demonstrate a trade-off between computing time and precision of goal value."^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 7 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F85"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/85.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/85.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "12th International Workshop on Computational Optimization"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Junosza-Szaniawski"^^xsd:string ;
+    foaf:givenName "Konstanty"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Nogalski"^^xsd:string ;
+    foaf:givenName "Dariusz"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section5 ;
+                    co:nextItem [ co:itemContent :section6 ;
+                            co:nextItem [ co:itemContent :section7 ;
+                                    co:nextItem [ co:itemContent :section8 ;
+                                            co:nextItem [ co:itemContent :section10 ;
+                                                    co:nextItem [ co:itemContent :section11 ;
+                                                            co:nextItem [ co:itemContent :section12 ;
+                                                                    co:nextItem [ co:itemContent :section13 ;
+                                                                            co:nextItem [ co:itemContent :section50 ;
+                                                                                    co:nextItem [ co:itemContent :section56 ;
+                                                                                            co:nextItem [ co:itemContent :section58 ;
+                                                                                                    co:nextItem [ co:itemContent :section71 ;
+                                                                                                            co:nextItem [ co:itemContent :section85 ;
+                                                                                                                    co:nextItem [ co:itemContent :section86 ;
+                                                                                                                            co:nextItem [ co:itemContent :section92 ;
+                                                                                                                                    co:nextItem [ co:itemContent :section96 ;
+                                                                                                                                            co:nextItem [ co:itemContent :section98 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :section111 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :section117 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :section118 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section10,
+        :section11,
+        :section111,
+        :section117,
+        :section118,
+        :section12,
+        :section13,
+        :section5,
+        :section50,
+        :section56,
+        :section58,
+        :section6,
+        :section7,
+        :section71,
+        :section8,
+        :section85,
+        :section86,
+        :section92,
+        :section96,
+        :section98 .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[6]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel118 a doco:SectionLabel ;
+    c4o:hasContent "7." .
+
+:sectionLabel13 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel50 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle10 a doco:SectionTitle ;
+    c4o:hasContent "E. Fairness and Efficiency" .
+
+:sectionTitle11 a doco:SectionTitle ;
+    c4o:hasContent "F. Multicommodity flow problem and its heuristics" .
+
+:sectionTitle111 a doco:SectionTitle ;
+    c4o:hasContent "C. Performance of LPBestPathNum and IterativeLPBestPath-Num heuristics" .
+
+:sectionTitle117 a doco:SectionTitle ;
+    c4o:hasContent "D. Performance of MilpNum solver" .
+
+:sectionTitle118 a doco:SectionTitle ;
+    c4o:hasContent "CONCLUSIONS" .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "G. Heuristics for NUM with single-path routing" .
+
+:sectionTitle13 a doco:SectionTitle ;
+    c4o:hasContent "MAIN RESULTS" .
+
+:sectionTitle5 a doco:SectionTitle ;
+    c4o:hasContent "A. The complexity of various versions of network utility maximization problem" .
+
+:sectionTitle50 a doco:SectionTitle ;
+    c4o:hasContent "ALGORITHMS" .
+
+:sectionTitle56 a doco:SectionTitle ;
+    c4o:hasContent "A. MST based NUM" .
+
+:sectionTitle58 a doco:SectionTitle ;
+    c4o:hasContent "B. Iterative MST based NUM" .
+
+:sectionTitle6 a doco:SectionTitle ;
+    c4o:hasContent "B. Distributed models" .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "C. Centralized control in SDN networks" .
+
+:sectionTitle71 a doco:SectionTitle ;
+    c4o:hasContent "C. Linear program relaxation and rounding NUM" .
+
+:sectionTitle8 a doco:SectionTitle ;
+    c4o:hasContent "D. Importance of single-path routing" .
+
+:sectionTitle85 a doco:SectionTitle ;
+    c4o:hasContent "D. LP Best Path NUM" .
+
+:sectionTitle86 a doco:SectionTitle ;
+    c4o:hasContent "E. Iterative LP Best Path NUM" .
+
+:sectionTitle92 a doco:SectionTitle ;
+    c4o:hasContent "F. Mixed integer linear program NUM" .
+
+:sectionTitle96 a doco:SectionTitle ;
+    c4o:hasContent "A. Experiment Setup" .
+
+:sectionTitle98 a doco:SectionTitle ;
+    c4o:hasContent "1) Verification of algorithm performance for different network structure and size:" .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "IEEE/ACM Transactions on Networking" ] ;
+    dcterms:title "Applicationoriented flow control: Fundamentals, algorithms and fairness" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Palaniswami" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Low" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:doi "['10.1109/TNET.2006.886318.36COMMUNICATIONPAPERS.LEIPZIG']" ;
+    bibo:issue "6" ;
+    bibo:pageEnd 1291 ;
+    bibo:pageStart 1282 ;
+    bibo:volume "14" ;
+    c4o:hasContent "W. Wang, M. Palaniswami, and S. H. Low. Application- oriented flow control: Fundamentals, algorithms and fairness. IEEE/ACM Transactions on Networking, 14(6):1282-1291, Dec 2006. 10.1109/TNET.2006.886318. 36 COMMUNICATION PAPERS. LEIPZIG, 2019" .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF3 ;
+                            co:nextItem [ co:itemContent :BIBREF4 ;
+                                    co:nextItem [ co:itemContent :BIBREF5 ;
+                                            co:nextItem [ co:itemContent :BIBREF6 ;
+                                                    co:nextItem [ co:itemContent :BIBREF7 ;
+                                                            co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF19 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[9]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF13,
+        :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :referenceToBIBREF3,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section10 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF14,
+        :referenceToBIBREF3 ;
+    po:containsAsHeader :sectionTitle10 .
+
+:section11 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7 ;
+    po:containsAsHeader :sectionTitle11 .
+
+:section111 a doco:Section ;
+    po:containsAsHeader :sectionTitle111 .
+
+:section117 a doco:Section ;
+    po:containsAsHeader :sectionTitle117 .
+
+:section118 a doco:Section ;
+    po:contains :sectionLabel118 ;
+    po:containsAsHeader :sectionTitle118 .
+
+:section12 a doco:Section ;
+    po:contains :referenceToBIBREF18,
+        :referenceToBIBREF4 ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section13 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF18,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :sectionLabel13 ;
+    po:containsAsHeader :sectionTitle13 .
+
+:section5 a doco:Section ;
+    po:contains :referenceToBIBREF4,
+        :referenceToBIBREF5 ;
+    po:containsAsHeader :sectionTitle5 .
+
+:section50 a doco:Section ;
+    po:contains :sectionLabel50 ;
+    po:containsAsHeader :sectionTitle50 .
+
+:section56 a doco:Section ;
+    po:contains :referenceToBIBREF4 ;
+    po:containsAsHeader :sectionTitle56 .
+
+:section58 a doco:Section ;
+    po:contains :referenceToBIBREF16 ;
+    po:containsAsHeader :sectionTitle58 .
+
+:section6 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF3 ;
+    po:containsAsHeader :sectionTitle6 .
+
+:section7 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF8 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:section71 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF4 ;
+    po:containsAsHeader :sectionTitle71 .
+
+:section8 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF13,
+        :referenceToBIBREF16,
+        :referenceToBIBREF18,
+        :referenceToBIBREF3,
+        :referenceToBIBREF8 ;
+    po:containsAsHeader :sectionTitle8 .
+
+:section85 a doco:Section ;
+    po:contains :referenceToBIBREF18 ;
+    po:containsAsHeader :sectionTitle85 .
+
+:section86 a doco:Section ;
+    po:containsAsHeader :sectionTitle86 .
+
+:section92 a doco:Section ;
+    po:contains :referenceToBIBREF13 ;
+    po:containsAsHeader :sectionTitle92 .
+
+:section96 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF9 ;
+    po:containsAsHeader :sectionTitle96 .
+
+:section98 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF9 ;
+    po:containsAsHeader :sectionTitle98 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Network and Service Management" ] ;
+    dcterms:title "Flow-based management for energy efficient campus networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Amokrane" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Langar" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Boutaba" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Pujolle" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:doi "['10.1109/TNSM.2015.2501398']" ;
+    bibo:issue "4" ;
+    bibo:pageEnd 579 ;
+    bibo:pageStart 565 ;
+    bibo:volume "12" ;
+    c4o:hasContent "A. Amokrane, R. Langar, R. Boutaba, and G. Pujolle. Flow-based management for energy efficient campus networks. IEEE Transac- tions on Network and Service Management, 12(4):565-579, Dec 2015. 10.1109/TNSM.2015.2501398." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:title "Grida: Green distributed algorithm for energy-efficient ip backbone networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bianzino" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chiaraviglio" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Mellia" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Rougier" ;
+                    foaf:givenname "J" ] ] ;
+    c4o:hasContent "A.P. Bianzino, L. Chiaraviglio, M. Mellia, and J.L. Rougier. Grida: Green distributed algorithm for energy-efficient ip backbone net- works." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 1998 ;
+    dcterms:publisher [ foaf:name "Journal of the Operational Research Society" ] ;
+    dcterms:title "Rate control for communication networks: shadow prices, proportional fairness and stability" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kelly" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Maulloo" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tan" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:doi "['10.1057/palgrave.jors.2600523']" ;
+    bibo:issue "3" ;
+    bibo:pageEnd 252 ;
+    bibo:pageStart 237 ;
+    bibo:volume "49" ;
+    c4o:hasContent "F.P. Kelly, A.K. Maulloo, and D.K.H. Tan. Rate control for commu- nication networks: shadow prices, proportional fairness and stability. Journal of the Operational Research Society, 49(3):237-252, March 1998. https://doi.org/10.1057/palgrave.jors.2600523." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "IEEE Communications Letters" ] ;
+    dcterms:title "Jointly optimal congestion and contention control based on network utility maximization" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chiang" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Calderbank" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:doi "['10.1109/LCOMM.2006.1603389']" ;
+    bibo:issue "3" ;
+    bibo:pageEnd 218 ;
+    bibo:pageStart 216 ;
+    bibo:volume "10" ;
+    c4o:hasContent "J.W. Lee, M. Chiang, and R. A. Calderbank. Jointly optimal con- gestion and contention control based on network utility maximiza- tion. IEEE Communications Letters, 10(3):216-218, March 2006. 10.1109/LCOMM.2006.1603389." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 1999 ;
+    dcterms:publisher [ foaf:name "Journal of the ACM" ] ;
+    dcterms:title "Multicommodity max-flow min-cut theorems and their use in designing approximation algorithms" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Leighton" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rao" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "6" ;
+    bibo:pageEnd 832 ;
+    bibo:pageStart 787 ;
+    bibo:volume "46" ;
+    c4o:hasContent "T. Leighton and S. Rao. Multicommodity max-flow min-cut theorems and their use in designing approximation algorithms. Journal of the ACM, 46(6):787-832, November 1999." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "Ad Hoc Networks" ] ;
+    dcterms:title "Comparison of qos-aware singlepath vs. multi-path routing protocols for image transmission in wireless multimedia sensor networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Macit" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gungor" ;
+                    foaf:givenname "V" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tuna" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:doi "['10.1016/j.adhoc.2014.02.008']" ;
+    bibo:pageEnd 141 ;
+    bibo:pageStart 132 ;
+    bibo:volume "19" ;
+    c4o:hasContent "M. Macit, V. C. Gungor, and G. Tuna. Comparison of qos-aware single- path vs. multi-path routing protocols for image transmission in wireless multimedia sensor networks. Ad Hoc Networks, 19:132 -141, 2014. https://doi.org/10.1016/j.adhoc.2014.02.008." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2000 ;
+    dcterms:publisher [ foaf:name "IEEE/ACM Transactions on Networking" ] ;
+    dcterms:title "Fair end-to-end window-based congestion control" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mo" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Walrand" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:doi "['10.1109/90.879343']" ;
+    bibo:issue "5" ;
+    bibo:pageEnd 567 ;
+    bibo:pageStart 556 ;
+    bibo:volume "8" ;
+    c4o:hasContent "J. Mo and J. Walrand. Fair end-to-end window-based congestion control. IEEE/ACM Transactions on Networking, 8(5):556-567, Oct 2000. 10.1109/90.879343." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "Lecture Notes. Zuse Institute Berlin" ] ;
+    dcterms:title "Multicommodity flows and column generation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pfetsch" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Liebchen" ;
+                    foaf:givenname "Ch" ] ] ;
+    c4o:hasContent "M. E. Pfetsch and Ch. Liebchen. Multicommodity flows and column generation. In Lecture Notes. Zuse Institute Berlin, 2006." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "2016 International Conference on Recent Advances and Innovations in Engineering (ICRAIE)" ] ;
+    dcterms:title "Review on single-path multi-path routing protocol in manet: A study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Satav" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jawandhiya" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:doi "['10.1109/ICRAIE.2016.7939514']" ;
+    bibo:pageEnd 7 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "P. R. Satav and P. M. Jawandhiya. Review on single-path multi-path routing protocol in manet: A study. In 2016 International Conference on Recent Advances and Innovations in Engineering (ICRAIE), pages 1-7, Dec 2016. 10.1109/ICRAIE.2016.7939514." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:publisher [ foaf:name "IEEE/ACM Transactions on Networking" ] ;
+    dcterms:title "Cross-layer optimization in tcp/ip networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Low" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Doyle" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:doi "['10.1109/TNET.2005.850219']" ;
+    bibo:issue "3" ;
+    bibo:pageEnd 595 ;
+    bibo:pageStart 582 ;
+    bibo:volume "13" ;
+    c4o:hasContent "J. Wang, L. Li, S.H. Low, and J.C. Doyle. Cross-layer optimization in tcp/ip networks. IEEE/ACM Transactions on Networking, 13(3):582 - 595, June 2005. 10.1109/TNET.2005.850219." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "IEEE/ACM Transactions on Networking" ] ;
+    dcterms:title "Cost of not splitting in routing: Characterization and estimation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tan" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:doi "['10.1109/TNET.2011.2150761']" ;
+    bibo:issue "6" ;
+    bibo:pageEnd 1859 ;
+    bibo:pageStart 1849 ;
+    bibo:volume "19" ;
+    c4o:hasContent "M. Wang, C. W. Tan, W. Xu, and A. Tang. Cost of not splitting in routing: Characterization and estimation. IEEE/ACM Transactions on Networking, 19(6):1849-1859, Dec 2011. 10.1109/TNET.2011.2150761." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2007 ;
+    dcterms:publisher [ foaf:name "Proceedings of the IEEE" ] ;
+    dcterms:title "Layering as optimization decomposition: A mathematical theory of network architectures" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chiang" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Low" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Calderbank" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Doyle" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:doi "['10.1109/JPROC.2006.887322']" ;
+    bibo:issue "1" ;
+    bibo:pageEnd 312 ;
+    bibo:pageStart 255 ;
+    bibo:volume "95" ;
+    c4o:hasContent "M. Chiang, S. H. Low, A. R. Calderbank, and J. C. Doyle. Layering as optimization decomposition: A mathematical theory of network architectures. Proceedings of the IEEE, 95(1):255-312, Jan 2007. 10.1109/JPROC.2006.887322." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "Progress in Systems Engineering: Proceedings of the Twenty-Third International Conference on Systems Engineering" ] ;
+    dcterms:title "Approximation algorithms for utility-maximizing network design problem" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1007/978-3-319-08422-0-60']" ;
+    bibo:volume "366" ;
+    c4o:hasContent "M. Drwal. Approximation algorithms for utility-maximizing network design problem. In Henry Selvaraj et al., editor, Progress in Systems Engineering: Proceedings of the Twenty-Third International Conference on Systems Engineering, volume 366 of Advances in Intelligent Sys- tems and Computing. Springer International Publishing, Cham, 2015. https://doi.org/10.1007/978-3-319-08422-0-60." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 1975 ;
+    dcterms:publisher [ foaf:name "16th Annual Symposium on Foundations of Computer Science 13-15 October" ] ;
+    dcterms:title "On the complexity of time table and multi-commodity flow problems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Even" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Itai" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shamir" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:doi "['10.1109/SFCS.1975.21']" ;
+    c4o:hasContent "S. Even, A. Itai, and A. Shamir. On the complexity of time table and multi-commodity flow problems. In IEEE, editor, 16th Annual Symposium on Foundations of Computer Science 13-15 October 1975, October 1975. 10.1109/SFCS.1975.21." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 1999 ;
+    dcterms:publisher [ foaf:name "40th Annual Symposium on Foundations of Computer Science" ] ;
+    dcterms:title "Approximating fractional multicommodity flow independent of the number of commodities" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fleischer" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:doi "['10.1109/SFFCS.1999.814573']" ;
+    bibo:pageEnd 31 ;
+    bibo:pageStart 24 ;
+    c4o:hasContent "L. K. Fleischer. Approximating fractional multicommodity flow inde- pendent of the number of commodities. In 40th Annual Symposium on Foundations of Computer Science (Cat. No.99CB37039), pages 24-31, Oct 1999. 10.1109/SFFCS.1999.814573." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 1998 ;
+    dcterms:publisher [ foaf:name "Proceedings 39th Annual Symposium on Foundations of Computer Science (Cat. No.98CB36280)" ] ;
+    dcterms:title "Faster and simpler algorithms for multicommodity flow and other fractional packing problems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Garg" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Konemann" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:doi "['10.1109/SFCS.1998.743463']" ;
+    bibo:pageEnd 309 ;
+    bibo:pageStart 300 ;
+    c4o:hasContent "N. Garg and J. Konemann. Faster and simpler algorithms for multicommodity flow and other fractional packing problems. In Proceedings 39th Annual Symposium on Foundations of Com- puter Science (Cat. No.98CB36280), pages 300-309, Nov 1998. 10.1109/SFCS.1998.743463." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Utility-optimized flow-level bandwidth allocation in hybrid sdns" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yuan" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ma" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1109/ACCESS.2018.2820682']" ;
+    bibo:pageEnd 20290 ;
+    bibo:pageStart 20279 ;
+    bibo:volume "6" ;
+    c4o:hasContent "X. Huang, T. Yuan, and M. Ma. Utility-optimized flow-level band- width allocation in hybrid sdns. IEEE Access, 6:20279-20290, 2018. 10.1109/ACCESS.2018.2820682." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "International Journal of Applied Mathematics and Computer Science" ] ;
+    dcterms:title "Simultaneous routing and flow rate optimization in energy-aware computer networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jaskóła" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Arabas" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Karbowski" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:doi "['10.1515/amcs-2016-0016']" ;
+    bibo:issue "1" ;
+    bibo:pageEnd 243 ;
+    bibo:pageStart 231 ;
+    bibo:volume "26" ;
+    c4o:hasContent "P. Jaskóła, P. Arabas, and A. Karbowski. Simultaneous routing and flow rate optimization in energy-aware computer networks. International Journal of Applied Mathematics and Computer Science, 26(1):231-243, 2016. 10.1515/amcs-2016-0016." .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[10]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[4]" .
+

@@ -1,0 +1,617 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Internet of Things"^^xsd:string,
+        "cost"^^xsd:string,
+        "dynamic demand"^^xsd:string,
+        "path optimization"^^xsd:string,
+        "time windows"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "Time Window Oriented IoT Vehicle Pathway Study for the Dynamically Changing Needs of E-Commerce Customers"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "The main dynamic truck routing problem also presents a significant difficulty in the logistics sector, which is an unavoidable development trend of the contemporary technological changing society. A dynamic vehicle routing problem with time window model is suggested by the study in order to establish an effective and low-energy dynamic response method. The fundamental concept is to disrupt the conventional strategy of static dynamic consumers responding in time slots by dividing the dynamic time window into a static time window with several time slice intervals. The study makes use of cutting-edge ideas including dynamic attitude, before-and-after time slicing, and continuous optimisation while proposing a new method for model solution to optimise dynamic vehicle route issues effectively and affordably. The study employs the Solomon optimisation dataset and runs simulation studies on the Java platform to confirm its efficacy. The experimental findings demonstrated that the optimisation technique employed in the study reduced the cost of travelling by 83.8 miles while also considerably increasing the average vehicle utilisation by 3.6%. Because driving distance cost and vehicle number cost are typically positively connected with dynamic attitude, the study employs solutions that can increase dynamic response efficiency and save money. As a result, their robustness is higher."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 255 ;
+    prism:pageCount 14 ;
+    prism:startingPage 241 ;
+    datacite:doi "10.12694/scpe.v24i3.2372"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2372"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2372> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Chen"^^xsd:string ;
+    foaf:givenName "Xin"^^xsd:string ;
+    foaf:name "Xin Chen"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section2 ;
+                    co:nextItem [ co:itemContent :section5 ;
+                            co:nextItem [ co:itemContent :section45 ;
+                                    co:nextItem [ co:itemContent :section48 ] ] ] ] ] ;
+    po:contains :section0,
+        :section2,
+        :section45,
+        :section48,
+        :section5 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Information Engineering College, Xinxiang Vocational and Technical College, Xinxiang, 453000, China"^^xsd:string .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel2 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel36 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel45 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel48 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel5 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel6 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle2 a doco:SectionTitle ;
+    c4o:hasContent "Related works." .
+
+:sectionTitle36 a doco:SectionTitle ;
+    c4o:hasContent "Improvement of Tabu Search Algorithm Based on Dynamic PO and Other" .
+
+:sectionTitle45 a doco:SectionTitle ;
+    c4o:hasContent "Experiments on the Performance of a TS-based System for Optimizing Dynamic Vehicle" .
+
+:sectionTitle48 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle5 a doco:SectionTitle ;
+    c4o:hasContent "One-stage DD-based Vehicle Path Study with TW." .
+
+:sectionTitle6 a doco:SectionTitle ;
+    c4o:hasContent "Vehicle Path Modeling for IoT Customer DD." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section2 a doco:Section ;
+    po:contains :referenceToBIBREF11,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :sectionLabel2 ;
+    po:containsAsHeader :sectionTitle2 .
+
+:section36 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel36 ;
+    po:containsAsHeader :sectionTitle36 .
+
+:section45 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF5,
+        :sectionLabel45 ;
+    po:containsAsHeader :sectionTitle45 .
+
+:section48 a doco:Section ;
+    po:contains :sectionLabel48 ;
+    po:containsAsHeader :sectionTitle48 .
+
+:section5 a doco:Section ;
+    co:firstItem [ co:itemContent :section6 ;
+            co:nextItem [ co:itemContent :section36 ] ] ;
+    po:contains :section36,
+        :section6,
+        :sectionLabel5 ;
+    po:containsAsHeader :sectionTitle5 .
+
+:section6 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF9,
+        :sectionLabel6 ;
+    po:containsAsHeader :sectionTitle6 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Management Analysis" ] ;
+    dcterms:title "A two-stage metaheuristic algorithm for the dynamic vehicle routing problem in industry 4.0 approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abdirad" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Krishnan" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gupta" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 83 ;
+    bibo:pageStart 69 ;
+    bibo:volume "8" ;
+    c4o:hasContent "M. Abdirad, K. Krishnan, D. Gupta, and X. Li., A two-stage metaheuristic algorithm for the dynamic vehicle routing problem in industry 4.0 approach, Journal of Management Analysis, 8 (2021), pp. 69-83." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Special issue of networks: New network models and approaches for logistics and transportation, Networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ambrosino" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Paolucci" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 228 ;
+    bibo:pageStart 227 ;
+    bibo:volume "78" ;
+    c4o:hasContent "D. Ambrosino and M. Paolucci, Special issue of networks: New network models and approaches for logistics and trans- portation, Networks, 78 (2021), pp. 227-228." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "European Journal of Operational Research" ] ;
+    dcterms:title "Scheduling activities with time-dependent durations and resource consumptions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pottel" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Goel" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 457 ;
+    bibo:pageStart 445 ;
+    bibo:volume "301" ;
+    c4o:hasContent "S. Pottel and A. Goel, Scheduling activities with time-dependent durations and resource consumptions, European Journal of Operational Research, 301 (2022), pp. 445-457." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Transportation Research Part B Methodological" ] ;
+    dcterms:title "The electric vehicle routing problem with time windows and synchronised mobile battery swapping" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Raeesi" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kg" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 129 ;
+    bibo:pageStart 101 ;
+    c4o:hasContent "R. Raeesi and Z. KG., The electric vehicle routing problem with time windows and synchronised mobile battery swapping, Transportation Research Part B Methodological, 140 (2020), pp. 101-129." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "European Journal of Operational Research" ] ;
+    dcterms:title "Coordinated routing of electric commercial vehicles with intra-route recharging and en-route battery swapping" ;
+    bibo:pageEnd 109 ;
+    bibo:pageStart 82 ;
+    bibo:volume "301" ;
+    c4o:hasContent "Coordinated routing of electric commercial vehicles with intra-route recharging and en-route battery swapping, Euro- pean Journal of Operational Research, 301 (2022), pp. 82-109." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Procedia Computer Science" ] ;
+    dcterms:title "A real-time decision support system for big data analytic: A case of dynamic vehicle routing problems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sbai" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Krichen" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 947 ;
+    bibo:pageStart 938 ;
+    bibo:volume "176" ;
+    c4o:hasContent "I. Sbai and S. Krichen, A real-time decision support system for big data analytic: A case of dynamic vehicle routing problems, Procedia Computer Science, 176 (2020), pp. 938-947." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of Production Economics" ] ;
+    dcterms:title "The quality-driven vehicle routing problem: Model and application to a case of cooperative logistics" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Stellingwerf" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lhc" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Laporte" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Behdani" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "231" ;
+    c4o:hasContent "H. M. Stellingwerf, G. Lhc, G. Laporte, and A. K. B. Behdani, The quality-driven vehicle routing problem: Model and application to a case of cooperative logistics, International Journal of Production Economics, 231 (2021), p. 109." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Transportation Research Part E: Logistics and Transportation Review" ] ;
+    dcterms:title "Augmented lagrangian relaxation approach for logistics vehicle routing problem with mixed backhauls and time windows" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ning" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shang" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Tong" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:volume "135" ;
+    c4o:hasContent "S. Yang, L. Ning, P. Shang, and L. C. Tong, Augmented lagrangian relaxation approach for logistics vehicle routing problem with mixed backhauls and time windows, Transportation Research Part E: Logistics and Transportation Review, 135 (2020), p. 101." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "European Journal of Operational Research" ] ;
+    dcterms:title "A branch-and-cut algorithm for the vehicle routing problem with two-dimensional loading constraints" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gendreau" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Langevin" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 269 ;
+    bibo:pageStart 259 ;
+    bibo:volume "302" ;
+    c4o:hasContent "X. Zhang, L. Chen, M. Gendreau, and A. Langevin, A branch-and-cut algorithm for the vehicle routing problem with two-dimensional loading constraints, European Journal of Operational Research, 302 (2022), pp. 259-269." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Computer Modeling in Engineering and Science" ] ;
+    dcterms:title "Agile satellite mission planning via task clustering and double-layer tabu algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Du" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 257 ;
+    bibo:pageStart 235 ;
+    bibo:volume "122" ;
+    c4o:hasContent "Y. Zhao, B. Du, and S. Li, Agile satellite mission planning via task clustering and double-layer tabu algorithm, Computer Modeling in Engineering and Science, 122 (2020), pp. 235-257." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Microprocessors and Microsystems" ] ;
+    dcterms:title "Optimal logistics transportation and route planning based on fpga processor real-time system and machine learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dai" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:volume "80" ;
+    c4o:hasContent "X. Dai, M. Chen, and Y. Zhou, Optimal logistics transportation and route planning based on fpga processor real-time system and machine learning, Microprocessors and Microsystems, 80 (2021), p. 107." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Transportation Research Part B: Methodological" ] ;
+    dcterms:title "The vehicle routing problem of intercity ride-sharing between two cities" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Guo" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Long" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yuan" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 139 ;
+    bibo:pageStart 113 ;
+    bibo:volume "158" ;
+    c4o:hasContent "J. Guo, J. Long, X. Xu, and M. Y. Yuan, The vehicle routing problem of intercity ride-sharing between two cities, Transportation Research Part B: Methodological, 158 (2022), pp. 113-139." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Networks" ] ;
+    dcterms:title "Primal column generation framework for vehicle and crew scheduling problems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Himmich" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hallaoui" ;
+                    foaf:givenname "I" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Soumis" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 252 ;
+    bibo:pageStart 238 ;
+    bibo:volume "75" ;
+    c4o:hasContent "I. Himmich, I. E. Hallaoui, and F. Soumis, Primal column generation framework for vehicle and crew scheduling problems, Networks, 75 (2020), pp. 238-252." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Complex System Modeling and Simulation" ] ;
+    dcterms:title "A discrete artificial bee colony algorithm for stochastic vehicle scheduling" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shen" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 252 ;
+    bibo:pageStart 238 ;
+    bibo:volume "2" ;
+    c4o:hasContent "Y. Li, Y. Shen, and J. Li, A discrete artificial bee colony algorithm for stochastic vehicle scheduling, Complex System Modeling and Simulation, 2 (2022), pp. 238-252." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Assembly Automation" ] ;
+    dcterms:title "An automated guided logistics robot for pallet transportation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 54 ;
+    bibo:pageStart 45 ;
+    bibo:volume "41" ;
+    c4o:hasContent "R. Lin, H. Huang, and M. Li, An automated guided logistics robot for pallet transportation, Assembly Automation, 41 (2020), pp. 45-54." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "International Journal of E-Services and Mobile Applications" ] ;
+    dcterms:title "The significance of blockchain technology in digital transformation of logistics and transportation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Merka" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Perkov" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Bonin" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 20 ;
+    bibo:pageStart 1 ;
+    bibo:volume "12" ;
+    c4o:hasContent "Z. Merka, D. Perkov, and V. Bonin, The significance of blockchain technology in digital transformation of logistics and transportation, International Journal of E-Services and Mobile Applications, 12 (2020), pp. 1-20." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "European Journal of Operational Research" ] ;
+    dcterms:title "A variable neighborhood search based matheuristic for a waste cooking oil collection network design problem" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Olmez" ;
+                    foaf:givenname "O" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gultekin" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Balcik" ;
+                    foaf:givenname "B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ozener" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 202 ;
+    bibo:pageStart 187 ;
+    bibo:volume "302" ;
+    c4o:hasContent "O. B. Olmez, C. Gultekin, B. Balcik, and A. E. Ozener, A variable neighborhood search based matheuristic for a waste cooking oil collection network design problem, European Journal of Operational Research, 302 (2022), pp. 187-202." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Concurrency and computation: practice and experience" ] ;
+    dcterms:title "Hybrid whale tabu algorithm optimized convolutional neural network architecture for intrusion detection in big data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ponmalar" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dhanakoti" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 7052 ;
+    bibo:pageStart 7038 ;
+    bibo:volume "34" ;
+    c4o:hasContent "A. Ponmalar and V. Dhanakoti, Hybrid whale tabu algorithm optimized convolutional neural network architecture for intrusion detection in big data, Concurrency and computation: practice and experience, 34 (2022), pp. 7038-7052." .
+

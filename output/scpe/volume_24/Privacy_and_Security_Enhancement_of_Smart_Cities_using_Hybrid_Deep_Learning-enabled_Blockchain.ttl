@@ -1,0 +1,2832 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Blockchain"^^xsd:string,
+        "Convolutional neural network"^^xsd:string,
+        "Deep Learning"^^xsd:string,
+        "Internet of Things"^^xsd:string,
+        "Intrusion detection"^^xsd:string,
+        "Principal Component Analysis"^^xsd:string,
+        "Privacy and security"^^xsd:string,
+        "Sensor technology"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2,
+                :author_3,
+                :author_4 ] ;
+    dcterms:title "Privacy and Security Enhancement of Smart Cities using Hybrid Deep Learning-enabled Blockchain"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "The emergence of the Internet of Things (IoT) accelerated the implementation of various smart city applications and initiatives. The rapid adoption of IoT-powered smart cities is faced by a number of security and privacy challenges that hindered their application in areas such as critical infrastructure. One of the most crucial elements of any smart city is safety. Without the right safeguards, bad actors can quickly exploit weak systems to access networks or sensitive data. Security issues are a big worry for smart cities in addition to safety issues. Smart cities become easy targets for attackers attempting to steal data or disrupt services if they are not adequately protected against cyberthreats like malware or distributed denial-of-service (DDoS) attacks. Therefore, in order to safeguard their systems from potential threats, businesses must employ strong security protocols including encryption, authentication, and access control measures. In order to ensure that their network traffic remains secure, organizations should implement powerful network firewalls and intrusion detection systems (IDS). This article proposes a blockchain-supported hybrid Convolutional Neural Network (CNN) with Kernel Principal Component Analysis (KPCA) to provide privacy and security for smart city users and systems. Blockchain is used to provide trust, and CNN enabled with KPCA is used for classifying threats. The proposed solution comprises three steps, preprocessing, feature selection, and classification. The standard features of the datasets used are converted to a numeric format during the preprocessing stage, and the result is sent to KPCA for feature extraction. Feature extraction reduces the dimensionality of relevant features before it passes the resulting dataset to the CNN to classify and detect malicious activities. Two prominent datasets namely ToN-IoT and BoT-IoT were used to measure the performance of this anticipated method compared to its best rivals in the literature. Experimental evaluation results show an improved performance in terms of threat prediction accuracy, and hence, increased security, privacy, and maintainability of IoT-enabled smart cities."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 584 ;
+    prism:pageCount 23 ;
+    prism:startingPage 561 ;
+    datacite:doi "10.12694/scpe.v24i3.2272"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2272"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2272> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Awotunde"^^xsd:string ;
+    foaf:givenName "Joseph Bamidele"^^xsd:string ;
+    foaf:name "Joseph Bamidele Awotunde"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Gaber"^^xsd:string ;
+    foaf:givenName "Tarek"^^xsd:string ;
+    foaf:name "Tarek Gaber"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    pro:holdsRoleInTime :role_2_0 ;
+    foaf:familyName "Lalitha"^^xsd:string ;
+    foaf:givenName "Vuyyuru Lakshmi"^^xsd:string ;
+    foaf:name "Vuyyuru Lakshmi Lalitha"^^xsd:string .
+
+:author_3 a foaf:Person ;
+    foaf:familyName "Folorunso"^^xsd:string ;
+    foaf:givenName "Sakinat Oluwabukonla"^^xsd:string ;
+    foaf:name "Sakinat Oluwabukonla Folorunso"^^xsd:string .
+
+:author_4 a foaf:Person ;
+    pro:holdsRoleInTime :role_4_0 ;
+    foaf:familyName "Prasad"^^xsd:string ;
+    foaf:givenName "L V Narasimha"^^xsd:string ;
+    foaf:name "L V Narasimha Prasad"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section9 ;
+            co:nextItem [ co:itemContent :section15 ;
+                    co:nextItem [ co:itemContent :section23 ;
+                            co:nextItem [ co:itemContent :section31 ;
+                                    co:nextItem [ co:itemContent :section78 ;
+                                            co:nextItem [ co:itemContent :section101 ] ] ] ] ] ] ;
+    po:contains :section101,
+        :section15,
+        :section23,
+        :section31,
+        :section78,
+        :section9 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Department of Computer Science, Faculty of Information and Communication Sciences, University of Ilorin, Ilorin 240003, Nigeria. Artificial Intelligent Systems Research Group (ArISRG), Department of Mathematical Sciences, Olabisi Onabanjo University, Ago-Iwoye, Nigeria"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "Faculty of Computers and Informatics, Suez Canal University, Ismailia 41522, Egypt. School of Science, Engineering, and Environment, University of Salford, Manchester M5 4WT, UK"^^xsd:string .
+
+:org_2_0 a frapo:Organization ;
+    foaf:name "Koneru Lakshmaiah Education Foundation, India"^^xsd:string .
+
+:org_4_0 a frapo:Organization ;
+    foaf:name "Department of CSE, Institute of Aeronautical Engineering, Hyderabad, India"^^xsd:string .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF26 a deo:Reference ;
+    dcterms:references :BIBREF26 ;
+    c4o:hasContent "[27]" .
+
+:referenceToBIBREF32 a deo:Reference ;
+    dcterms:references :BIBREF32 ;
+    c4o:hasContent "[33]" .
+
+:referenceToBIBREF35 a deo:Reference ;
+    dcterms:references :BIBREF35 ;
+    c4o:hasContent "[36]" .
+
+:referenceToBIBREF36 a deo:Reference ;
+    dcterms:references :BIBREF36 ;
+    c4o:hasContent "[37]" .
+
+:referenceToBIBREF38 a deo:Reference ;
+    dcterms:references :BIBREF38 ;
+    c4o:hasContent "[39]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF40 a deo:Reference ;
+    dcterms:references :BIBREF40 ;
+    c4o:hasContent "[41]" .
+
+:referenceToBIBREF41 a deo:Reference ;
+    dcterms:references :BIBREF41 ;
+    c4o:hasContent "[42]" .
+
+:referenceToBIBREF42 a deo:Reference ;
+    dcterms:references :BIBREF42 ;
+    c4o:hasContent "[43]" .
+
+:referenceToBIBREF43 a deo:Reference ;
+    dcterms:references :BIBREF43 ;
+    c4o:hasContent "[44]" .
+
+:referenceToBIBREF44 a deo:Reference ;
+    dcterms:references :BIBREF44 ;
+    c4o:hasContent "[45]" .
+
+:referenceToBIBREF46 a deo:Reference ;
+    dcterms:references :BIBREF46 ;
+    c4o:hasContent "[47]" .
+
+:referenceToBIBREF47 a deo:Reference ;
+    dcterms:references :BIBREF47 ;
+    c4o:hasContent "[48]" .
+
+:referenceToBIBREF48 a deo:Reference ;
+    dcterms:references :BIBREF48 ;
+    c4o:hasContent "[49]" .
+
+:referenceToBIBREF49 a deo:Reference ;
+    dcterms:references :BIBREF49 ;
+    c4o:hasContent "[50]" .
+
+:referenceToBIBREF50 a deo:Reference ;
+    dcterms:references :BIBREF50 ;
+    c4o:hasContent "[51]" .
+
+:referenceToBIBREF51 a deo:Reference ;
+    dcterms:references :BIBREF51 ;
+    c4o:hasContent "[52]" .
+
+:referenceToBIBREF52 a deo:Reference ;
+    dcterms:references :BIBREF52 ;
+    c4o:hasContent "[53]" .
+
+:referenceToBIBREF53 a deo:Reference ;
+    dcterms:references :BIBREF53 ;
+    c4o:hasContent "[54]" .
+
+:referenceToBIBREF55 a deo:Reference ;
+    dcterms:references :BIBREF55 ;
+    c4o:hasContent "[56]" .
+
+:referenceToBIBREF56 a deo:Reference ;
+    dcterms:references :BIBREF56 ;
+    c4o:hasContent "[57]" .
+
+:referenceToBIBREF58 a deo:Reference ;
+    dcterms:references :BIBREF58 ;
+    c4o:hasContent "[59]" .
+
+:referenceToBIBREF59 a deo:Reference ;
+    dcterms:references :BIBREF59 ;
+    c4o:hasContent "[60]" .
+
+:referenceToBIBREF60 a deo:Reference ;
+    dcterms:references :BIBREF60 ;
+    c4o:hasContent "[61]" .
+
+:referenceToBIBREF61 a deo:Reference ;
+    dcterms:references :BIBREF61 ;
+    c4o:hasContent "[62]" .
+
+:referenceToBIBREF62 a deo:Reference ;
+    dcterms:references :BIBREF62 ;
+    c4o:hasContent "[63]" .
+
+:referenceToBIBREF63 a deo:Reference ;
+    dcterms:references :BIBREF63 ;
+    c4o:hasContent "[64]" .
+
+:referenceToBIBREF64 a deo:Reference ;
+    dcterms:references :BIBREF64 ;
+    c4o:hasContent "[65]" .
+
+:referenceToBIBREF65 a deo:Reference ;
+    dcterms:references :BIBREF65 ;
+    c4o:hasContent "[66]" .
+
+:referenceToBIBREF66 a deo:Reference ;
+    dcterms:references :BIBREF66 ;
+    c4o:hasContent "[67]" .
+
+:referenceToBIBREF67 a deo:Reference ;
+    dcterms:references :BIBREF67 ;
+    c4o:hasContent "[68]" .
+
+:referenceToBIBREF68 a deo:Reference ;
+    dcterms:references :BIBREF68 ;
+    c4o:hasContent "[69]" .
+
+:referenceToBIBREF69 a deo:Reference ;
+    dcterms:references :BIBREF69 ;
+    c4o:hasContent "[70]" .
+
+:referenceToBIBREF70 a deo:Reference ;
+    dcterms:references :BIBREF70 ;
+    c4o:hasContent "[71]" .
+
+:referenceToBIBREF71 a deo:Reference ;
+    dcterms:references :BIBREF71 ;
+    c4o:hasContent "[72]" .
+
+:referenceToBIBREF72 a deo:Reference ;
+    dcterms:references :BIBREF72 ;
+    c4o:hasContent "[73]" .
+
+:referenceToBIBREF73 a deo:Reference ;
+    dcterms:references :BIBREF73 ;
+    c4o:hasContent "[74]" .
+
+:referenceToBIBREF74 a deo:Reference ;
+    dcterms:references :BIBREF74 ;
+    c4o:hasContent "[75]" .
+
+:referenceToBIBREF75 a deo:Reference ;
+    dcterms:references :BIBREF75 ;
+    c4o:hasContent "[76]" .
+
+:referenceToBIBREF76 a deo:Reference ;
+    dcterms:references :BIBREF76 ;
+    c4o:hasContent "[77]" .
+
+:referenceToBIBREF77 a deo:Reference ;
+    dcterms:references :BIBREF77 ;
+    c4o:hasContent "[78]" .
+
+:referenceToBIBREF78 a deo:Reference ;
+    dcterms:references :BIBREF78 ;
+    c4o:hasContent "[79]" .
+
+:referenceToBIBREF79 a deo:Reference ;
+    dcterms:references :BIBREF79 ;
+    c4o:hasContent "[80]" .
+
+:referenceToBIBREF80 a deo:Reference ;
+    dcterms:references :BIBREF80 ;
+    c4o:hasContent "[81]" .
+
+:referenceToBIBREF81 a deo:Reference ;
+    dcterms:references :BIBREF81 ;
+    c4o:hasContent "[82]" .
+
+:referenceToBIBREF90 a deo:Reference ;
+    dcterms:references :BIBREF90 ;
+    c4o:hasContent "[91]" .
+
+:referenceToBIBREF93 a deo:Reference ;
+    dcterms:references :BIBREF93 ;
+    c4o:hasContent "[94]" .
+
+:referenceToBIBREF94 a deo:Reference ;
+    dcterms:references :BIBREF94 ;
+    c4o:hasContent "[95]" .
+
+:referenceToBIBREF95 a deo:Reference ;
+    dcterms:references :BIBREF95 ;
+    c4o:hasContent "[96]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:role_2_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_2_0 ;
+    pro:withRole pro:author .
+
+:role_4_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_4_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel101 a doco:SectionLabel ;
+    c4o:hasContent "7." .
+
+:sectionLabel15 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel23 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel31 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel36 a doco:SectionLabel ;
+    c4o:hasContent "5.1." .
+
+:sectionLabel39 a doco:SectionLabel ;
+    c4o:hasContent "5.2." .
+
+:sectionLabel56 a doco:SectionLabel ;
+    c4o:hasContent "5.3." .
+
+:sectionLabel73 a doco:SectionLabel ;
+    c4o:hasContent "5.4." .
+
+:sectionLabel74 a doco:SectionLabel ;
+    c4o:hasContent "5.4.1." .
+
+:sectionLabel76 a doco:SectionLabel ;
+    c4o:hasContent "5.4.2." .
+
+:sectionLabel77 a doco:SectionLabel ;
+    c4o:hasContent "5.5." .
+
+:sectionLabel78 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel79 a doco:SectionLabel ;
+    c4o:hasContent "6.1." .
+
+:sectionLabel80 a doco:SectionLabel ;
+    c4o:hasContent "6.2." .
+
+:sectionLabel82 a doco:SectionLabel ;
+    c4o:hasContent "6.3." .
+
+:sectionLabel85 a doco:SectionLabel ;
+    c4o:hasContent "6.4." .
+
+:sectionLabel9 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel95 a doco:SectionLabel ;
+    c4o:hasContent "6.5." .
+
+:sectionTitle101 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "Artificial Intelligence enabled Intrusion Detection for IoT in Smart" .
+
+:sectionTitle23 a doco:SectionTitle ;
+    c4o:hasContent "Related Work." .
+
+:sectionTitle31 a doco:SectionTitle ;
+    c4o:hasContent "Methods and Materials." .
+
+:sectionTitle36 a doco:SectionTitle ;
+    c4o:hasContent "Pre-processing." .
+
+:sectionTitle39 a doco:SectionTitle ;
+    c4o:hasContent "Feature Extraction." .
+
+:sectionTitle56 a doco:SectionTitle ;
+    c4o:hasContent "The Convolutional Neural Network." .
+
+:sectionTitle73 a doco:SectionTitle ;
+    c4o:hasContent "Datasets." .
+
+:sectionTitle74 a doco:SectionTitle ;
+    c4o:hasContent "The ToN-IoT Dataset. The dataset is freely available established by UNSW Canberra Cyber" .
+
+:sectionTitle76 a doco:SectionTitle ;
+    c4o:hasContent "The BoT-IoT Dataset." .
+
+:sectionTitle77 a doco:SectionTitle ;
+    c4o:hasContent "Performance analysis." .
+
+:sectionTitle78 a doco:SectionTitle ;
+    c4o:hasContent "Results and Discussion" .
+
+:sectionTitle79 a doco:SectionTitle ;
+    c4o:hasContent "The proposed model for security and privacy process." .
+
+:sectionTitle80 a doco:SectionTitle ;
+    c4o:hasContent "Trust Management Process." .
+
+:sectionTitle82 a doco:SectionTitle ;
+    c4o:hasContent "The intrusion detection process experiments results." .
+
+:sectionTitle85 a doco:SectionTitle ;
+    c4o:hasContent "Using Existing Techniques to" .
+
+:sectionTitle9 a doco:SectionTitle ;
+    c4o:hasContent "The Blockchain-enabled with Artificial Intelligence in the Internet of Things for Smart" .
+
+:sectionTitle95 a doco:SectionTitle ;
+    c4o:hasContent "The benefits and challenges related to deploying the CloudBlock-EdgeBlock architecture in a real-world smart city environment." .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Sustainability" ] ;
+    dcterms:title "The role of Internet of Things (IoT) in smart cities: Technology roadmap-oriented approaches" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Park" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Del Pobil" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kwon" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "Park, E., Del Pobil, A. & Kwon, S. The role of Internet of Things (IoT) in smart cities: Technology roadmap-oriented approaches. Sustainability. 10, 1388 (2018)" .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Habitat International" ] ;
+    dcterms:title "The trends, promises and challenges of urbanisation in the world" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 252 ;
+    bibo:pageStart 241 ;
+    c4o:hasContent "Zhang, X. The trends, promises and challenges of urbanisation in the world. Habitat International. 54 pp. 241-252 (2016)" .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "Internet of Things (IoT) and the digital business environment: a standpoint inclusive cyber space, cyber crimes, and cybersecurity. The Evolution Of Business In The Cyber Age" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nayyar" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rameshwar" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Solanki" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 9780429276484 ;
+    c4o:hasContent "Nayyar, A., Rameshwar, R. & Solanki, A. Internet of Things (IoT) and the digital business environment: a standpoint inclu- sive cyber space, cyber crimes, and cybersecurity. The Evolution Of Business In The Cyber Age. 10 pp. 9780429276484-6 (2020)" .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Machine learning, IoT, and blockchain integration for improving process management application security. Blockchain Applications In The Smart Era" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ogundokun" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Arowolo" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Misra" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Awotunde" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 252 ;
+    bibo:pageStart 237 ;
+    c4o:hasContent "Ogundokun, R., Arowolo, M., Misra, S. & Awotunde, J. Machine learning, IoT, and blockchain integration for improving process management application security. Blockchain Applications In The Smart Era. pp. 237-252 (2022)" .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "An Efficient Blockchain-Based IoT System Using Improved KNN Machine Learning Classifier. Blockchain Based Internet Of Things" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ogundokun" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Arowolo" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Misra" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Damasevicius" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 180 ;
+    bibo:pageStart 171 ;
+    c4o:hasContent "Ogundokun, R., Arowolo, M., Misra, S. & Damasevicius, R. An Efficient Blockchain-Based IoT System Using Improved KNN Machine Learning Classifier. Blockchain Based Internet Of Things. pp. 171-180 (2022)" .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Communications Surveys and Tutorials" ] ;
+    dcterms:title "Network intrusion detection for IoT security based on learning techniques" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chaabouni" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mosbah" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zemmari" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sauvignac" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Faruki" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 2701 ;
+    bibo:pageStart 2671 ;
+    bibo:volume "21" ;
+    c4o:hasContent "Chaabouni, N., Mosbah, M., Zemmari, A., Sauvignac, C. & Faruki, P. Network intrusion detection for IoT security based on learning techniques. IEEE Communications Surveys and Tutorials. 21, 2671-2701 (2019)" .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Journal Of Systems Architecture" ] ;
+    dcterms:title "A survey on intrusion detection and prevention in wireless ad-hoc networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mehmood" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Iqbal" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Mashwani" ;
+                    foaf:givenname "W" ] ] ;
+    c4o:hasContent "Khan, K., Mehmood, A., Khan, S., Khan, M., Iqbal, Z. & Mashwani, W. A survey on intrusion detection and prevention in wireless ad-hoc networks. Journal Of Systems Architecture. 105 pp. 101701 (2020)" .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "A secured smart healthcare monitoring systems using Blockchain Technology. Intelligent Internet Of Things For Healthcare And Industry" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Awotunde" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chakraborty" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Folorunso" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 143 ;
+    bibo:pageStart 127 ;
+    c4o:hasContent "Awotunde, J., Chakraborty, C. & Folorunso, S. A secured smart healthcare monitoring systems using Blockchain Technology. Intelligent Internet Of Things For Healthcare And Industry. pp. 127-143 (2022)" .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Privacy and security concerns in IoT-based healthcare systems. The Fusion Of Internet Of Things, Artificial Intelligence, And Cloud Computing In Health Care" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Awotunde" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jimoh" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Folorunso" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Adeniyi" ;
+                    foaf:givenname "E" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Abiodun" ;
+                    foaf:givenname "K" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Banjo" ;
+                    foaf:givenname "O" ] ] ;
+    bibo:pageEnd 134 ;
+    bibo:pageStart 105 ;
+    c4o:hasContent "Awotunde, J., Jimoh, R., Folorunso, S., Adeniyi, E., Abiodun, K. & Banjo, O. Privacy and security concerns in IoT-based healthcare systems. The Fusion Of Internet Of Things, Artificial Intelligence, And Cloud Computing In Health Care. pp. 105-134 (2021)" .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Internet of Things: A survey on machine learning-based intrusion detection approaches" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Da Costa" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Papa" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lisboa" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Munoz" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Albuquerque" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 157 ;
+    bibo:pageStart 147 ;
+    c4o:hasContent "Da Costa, K., Papa, J., Lisboa, C., Munoz, R. & Albuquerque, V. Internet of Things: A survey on machine learning-based intrusion detection approaches. Computer Networks. 151 pp. 147-157 (2019)" .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "Convergence of blockchain and artificial intelligence in IoT network for the sustainable smart city" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sharma" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yoon" ;
+                    foaf:givenname "B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Shojafar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Cho" ;
+                    foaf:givenname "G" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Ra" ;
+                    foaf:givenname "I" ] ] ;
+    c4o:hasContent "Singh, S., Sharma, P., Yoon, B., Shojafar, M., Cho, G. & Ra, I. Convergence of blockchain and artificial intelligence in IoT network for the sustainable smart city. Sustainable Cities And Society. 63 pp. 102364 (2020)" .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Privacy preservation in blockchain based IoT systems: Integration issues, prospects, challenges, and future research directions. Future Generation Computer Systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hassan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rehmani" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 529 ;
+    bibo:pageStart 512 ;
+    c4o:hasContent "Hassan, M., Rehmani, M. and Chen, J. Privacy preservation in blockchain based IoT systems: Integration issues, prospects, challenges, and future research directions. Future Generation Computer Systems. 97 pp. 512-529 (2019)" .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Journal Of Cloud Computing" ] ;
+    dcterms:title "Intrusion detection systems for IoT-based smart environments: a survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Elrawy" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Awad" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hamed" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 20 ;
+    bibo:pageStart 1 ;
+    bibo:volume "7" ;
+    c4o:hasContent "Elrawy, M., Awad, A. & Hamed, H. Intrusion detection systems for IoT-based smart environments: a survey. Journal Of Cloud Computing. 7, 1-20 (2018)" .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "The Journal Of Supercomputing" ] ;
+    dcterms:title "A comprehensive study on APT attacks and countermeasures for future networks and communications: challenges and solutions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sharma" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Moon" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Moon" ;
+                    foaf:givenname "D" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Park" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 4574 ;
+    bibo:pageStart 4543 ;
+    c4o:hasContent "Singh, S., Sharma, P., Moon, S., Moon, D. & Park, J. A comprehensive study on APT attacks and countermeasures for future networks and communications: challenges and solutions. The Journal Of Supercomputing. 75 pp. 4543-4574 (2019)" .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "False data injection attacks in internet of things. Performability In Internet Of Things" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bostami" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ahmed" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Choudhury" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 58 ;
+    bibo:pageStart 47 ;
+    c4o:hasContent "Bostami, B., Ahmed, M. & Choudhury, S. False data injection attacks in internet of things. Performability In Internet Of Things. pp. 47-58 (2019)" .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "ACM Computing Surveys (CSUR)" ] ;
+    dcterms:title "Detecting malicious data injections in wireless sensor networks: A survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Illiano" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lupu" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:pageEnd 33 ;
+    bibo:pageStart 1 ;
+    bibo:volume "48" ;
+    c4o:hasContent "Illiano, V. & Lupu, E. Detecting malicious data injections in wireless sensor networks: A survey. ACM Computing Surveys (CSUR). 48, 1-33 (2015)" .
+
+:BIBREF27 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "International Journal Of Fuzzy Systems" ] ;
+    dcterms:title "Secure cloud storage for medical IoT data using adaptive neuro-fuzzy inference system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mohiyuddin" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Javed" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chakraborty" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Rizwan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Shabbir" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Nebhen" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 1215 ;
+    bibo:pageStart 1203 ;
+    bibo:volume "24" ;
+    c4o:hasContent "Mohiyuddin, A., Javed, A., Chakraborty, C., Rizwan, M., Shabbir, M. & Nebhen, J. Secure cloud storage for medical IoT data using adaptive neuro-fuzzy inference system. International Journal Of Fuzzy Systems. 24, 1203-1215 (2022)" .
+
+:BIBREF28 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "5th International Conference On Signal Processing And Integrated Networks (SPIN)" ] ;
+    dcterms:title "Deep Neural Network Architecture for Anomaly Based Intrusion Detection System" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Behera" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pradhan" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Dash" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 274 ;
+    bibo:pageStart 270 ;
+    c4o:hasContent "Behera, S., Pradhan, A. & Dash, R. Deep Neural Network Architecture for Anomaly Based Intrusion Detection System. 2018 5th International Conference On Signal Processing And Integrated Networks (SPIN). pp. 270-274 (2018)" .
+
+:BIBREF29 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "BIFM: Big-data driven intelligent forecasting model for COVID-19" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dash" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chakraborty" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Giri" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Pani" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Frnda" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 97517 ;
+    bibo:pageStart 97505 ;
+    c4o:hasContent "Dash, S., Chakraborty, C., Giri, S., Pani, S. & Frnda, J. BIFM: Big-data driven intelligent forecasting model for COVID-19. IEEE Access. 9 pp. 97505-97517 (2021)" .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "International Conference On Advances In Computing And Communication Engineering (ICACCE)" ] ;
+    dcterms:title "Survey of smart city initiatives towards urbanization" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tabane" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ngwira" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zuva" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 440 ;
+    bibo:pageStart 437 ;
+    c4o:hasContent "Tabane, E., Ngwira, S. & Zuva, T. Survey of smart city initiatives towards urbanization. 2016 International Conference On Advances In Computing And Communication Engineering (ICACCE). pp. 437-440 (2016)" .
+
+:BIBREF30 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Procedia Computer Science" ] ;
+    dcterms:title "Random forest modeling for network intrusion detection system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Farnaaz" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jabbar" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 217 ;
+    bibo:pageStart 213 ;
+    bibo:volume "89" ;
+    c4o:hasContent "Farnaaz, N. & Jabbar, M. Random forest modeling for network intrusion detection system. Procedia Computer Science. 89 pp. 213-217 (2016)" .
+
+:BIBREF33 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "A new distributed architecture for evaluating AI-based security systems at the edge: Network T ON I oT datasets" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Moustafa" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:volume "72" ;
+    c4o:hasContent "Moustafa, N. A new distributed architecture for evaluating AI-based security systems at the edge: Network T ON I oT datasets. Sustainable Cities And Society. 72 pp. 102994 (2021)" .
+
+:BIBREF34 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Artificial Intelligence For Cyber Security: Methods, Issues And Possible Horizons Or Opportunities" ] ;
+    dcterms:title "Application of machine learning for ransomware detection in IoT devices" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ogundokun" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Awotunde" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Misra" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Abikoye" ;
+                    foaf:givenname "O" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Folarin" ;
+                    foaf:givenname "O" ] ] ;
+    bibo:pageEnd 420 ;
+    bibo:pageStart 393 ;
+    c4o:hasContent "Ogundokun, R., Awotunde, J., Misra, S., Abikoye, O. & Folarin, O. Application of machine learning for ransomware detection in IoT devices. Artificial Intelligence For Cyber Security: Methods, Issues And Possible Horizons Or Opportunities. pp. 393-420 (2021)" .
+
+:BIBREF37 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Information Security Journal: A Global Perspective" ] ;
+    dcterms:title "Network intrusion detection based on deep learning model optimized with rule-based hybrid feature selection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ayo" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Folorunso" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Abayomi-Alli" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Adekunle" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Awotunde" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 283 ;
+    bibo:pageStart 267 ;
+    bibo:volume "29" ;
+    c4o:hasContent "Ayo, F., Folorunso, S., Abayomi-Alli, A., Adekunle, A. & Awotunde, J. Network intrusion detection based on deep learning model optimized with rule-based hybrid feature selection. Information Security Journal: A Global Perspective. 29, 267-283 (2020)" .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "A Prediction Model for Bitcoin Cryptocurrency Prices. Blockchain Applications In The Smart Era" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Arowolo" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ayegba" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yusuff" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Misra" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 146 ;
+    bibo:pageStart 127 ;
+    c4o:hasContent "Arowolo, M., Ayegba, P., Yusuff, S. & Misra, S. A Prediction Model for Bitcoin Cryptocurrency Prices. Blockchain Appli- cations In The Smart Era. pp. 127-146 (2022)" .
+
+:BIBREF54 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Machine learning and deep learning algorithms for smart cities: a start-of-the-art review. IoT And IoE Driven Smart Cities" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Oladipo" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Abdulraheem" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Awotunde" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Bhoi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Adeniyi" ;
+                    foaf:givenname "E" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Abiodun" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 162 ;
+    bibo:pageStart 143 ;
+    c4o:hasContent "Oladipo, I., AbdulRaheem, M., Awotunde, J., Bhoi, A., Adeniyi, E. & Abiodun, M. Machine learning and deep learning algorithms for smart cities: a start-of-the-art review. IoT And IoE Driven Smart Cities. pp. 143-162 (2021)" .
+
+:BIBREF57 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Deep learning-based sewer defect classification for highly imbalanced dataset. Computers and Industrial Engineering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kyeong" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Nguyen" ;
+                    foaf:givenname "T" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Moon" ;
+                    foaf:givenname "H" ] ] ;
+    c4o:hasContent "Dang, L., Kyeong, S., Li, Y., Wang, H., Nguyen, T. and Moon, H. Deep learning-based sewer defect classification for highly imbalanced dataset. Computers and Industrial Engineering. 161 pp. 107630 (2021)" .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Machine Learning For Critical Internet Of Medical Things: Applications And Use Cases" ] ;
+    dcterms:title "AiIoMT: IoMT-based system-enabled artificial intelligence for enhanced smart healthcare systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Awotunde" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Folorunso" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ajagbe" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Garg" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ajamu" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 254 ;
+    bibo:pageStart 229 ;
+    c4o:hasContent "Awotunde, J., Folorunso, S., Ajagbe, S., Garg, J. & Ajamu, G. AiIoMT: IoMT-based system-enabled artificial intelligence for enhanced smart healthcare systems. Machine Learning For Critical Internet Of Medical Things: Applications And Use Cases. pp. 229-254 (2022)" .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Computers And Electrical Engineering" ] ;
+    dcterms:title "Privacy-preserving aware data aggregation for IoT-based healthcare with green computing technologies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Othman" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Almalki" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chakraborty" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sakli" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:volume "101" ;
+    c4o:hasContent "Othman, S., Almalki, F., Chakraborty, C. & Sakli, H. Privacy-preserving aware data aggregation for IoT-based healthcare with green computing technologies. Computers And Electrical Engineering. 101 pp. 108025 (2022)" .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "Application and assessment of internet of things toward the sustainability of energy systems: Challenges and issues" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khatua" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ramachandaramurthy" ;
+                    foaf:givenname "V" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kasinathan" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yong" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Pasupuleti" ;
+                    foaf:givenname "J" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Rajagopalan" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "Khatua, P., Ramachandaramurthy, V., Kasinathan, P., Yong, J., Pasupuleti, J. & Rajagopalan, A. Application and assess- ment of internet of things toward the sustainability of energy systems: Challenges and issues. Sustainable Cities And Society. 53 pp. 101957 (2020)" .
+
+:BIBREF82 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:publisher [ foaf:name "Proceedings Of The 43rd Annual Southeast Regional Conference" ] ;
+    dcterms:title "Decision tree classifier for network intrusion detection with GA-based feature selection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Stein" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hua" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 141 ;
+    bibo:pageStart 136 ;
+    bibo:volume "2" ;
+    c4o:hasContent "Stein, G., Chen, B., Wu, A. & Hua, K. Decision tree classifier for network intrusion detection with GA-based feature selection. Proceedings Of The 43rd Annual Southeast Regional Conference-Volume 2. pp. 136-141 (2005)" .
+
+:BIBREF83 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:title "A feature cluster taxonomy based feature selection technique. Expert Systems With Applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Goswami" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Das" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chakrabarti" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Chakraborty" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 89 ;
+    bibo:pageStart 76 ;
+    c4o:hasContent "Goswami, S., Das, A., Chakrabarti, A. & Chakraborty, B. A feature cluster taxonomy based feature selection technique. Expert Systems With Applications. 79 pp. 76-89 (2017)" .
+
+:BIBREF84 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Neural Computing And Applications" ] ;
+    dcterms:title "A hybrid method consisting of GA and SVM for intrusion detection system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Aslahi-Shahri" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rahmani" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chizari" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Maralani" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Eslami" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Golkar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Ebrahimi" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 1676 ;
+    bibo:pageStart 1669 ;
+    c4o:hasContent "Aslahi-Shahri, B., Rahmani, R., Chizari, M., Maralani, A., Eslami, M., Golkar, M. & Ebrahimi, A. A hybrid method consisting of GA and SVM for intrusion detection system. Neural Computing And Applications. 27 pp. 1669-1676 (2016)" .
+
+:BIBREF85 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Wireless Internet: 11th EAI International Conference" ] ;
+    dcterms:title "Using long-short-term memory based convolutional neural networks for network intrusion detection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hsu" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hsieh" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Prakosa" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Azhari" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Leu" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 94 ;
+    bibo:pageStart 86 ;
+    bibo:volume "11" ;
+    c4o:hasContent "Hsu, C., Hsieh, H., Prakosa, S., Azhari, M. & Leu, J. Using long-short-term memory based convolutional neural networks for network intrusion detection. Wireless Internet: 11th EAI International Conference, WiCON 2018, Taipei, Taiwan, October 15-16, 2018, Proceedings 11. pp. 86-94 (2019)" .
+
+:BIBREF86 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Science China Information Sciences" ] ;
+    dcterms:title "SecBCS: a secure and privacy-preserving blockchain-based crowdsourcing system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "He" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zeadally" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "N" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Choo" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 14 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Lin, C., He, D., Zeadally, S., Kumar, N. & Choo, K. SecBCS: a secure and privacy-preserving blockchain-based crowdsourcing system. Science China Information Sciences. 63 pp. 1-14 (2020)" .
+
+:BIBREF87 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Trust management in a blockchain based fog computing platform with trustless smart oracles. Future Generation Computer Systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kochovski" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gec" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Stankovski" ;
+                    foaf:givenname "V" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Bajec" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Drobintsev" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 759 ;
+    bibo:pageStart 747 ;
+    c4o:hasContent "Kochovski, P., Gec, S., Stankovski, V., Bajec, M. & Drobintsev, P. Trust management in a blockchain based fog computing platform with trustless smart oracles. Future Generation Computer Systems. 101 pp. 747-759 (2019)" .
+
+:BIBREF88 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "Blockchain-based framework for data storage in peer-to-peer scheme using interplanetary file system. Handbook Of Research On Blockchain Technology" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tripathi" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 59 ;
+    bibo:pageStart 35 ;
+    c4o:hasContent "Kumar, R. & Tripathi, R. Blockchain-based framework for data storage in peer-to-peer scheme using interplanetary file system. Handbook Of Research On Blockchain Technology. pp. 35-59 (2020)" .
+
+:BIBREF89 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions On Sustainable Computing" ] ;
+    dcterms:title "An integrated framework for privacy-preserving based anomaly detection for cyber-physical systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Keshk" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sitnikova" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Moustafa" ;
+                    foaf:givenname "N" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Khalil" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:pageEnd 79 ;
+    bibo:pageStart 66 ;
+    bibo:volume "6" ;
+    c4o:hasContent "Keshk, M., Sitnikova, E., Moustafa, N., Hu, J. & Khalil, I. An integrated framework for privacy-preserving based anomaly detection for cyber-physical systems. IEEE Transactions On Sustainable Computing. 6, 66-79 (2019)" .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:title "Towards sustainable smart cities: A review of trends, architectures, components, and open challenges in smart cities" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Silva" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Han" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 713 ;
+    bibo:pageStart 697 ;
+    bibo:volume "38" ;
+    c4o:hasContent "Silva, B., Khan, M. & Han, K. Towards sustainable smart cities: A review of trends, architectures, components, and open challenges in smart cities. Sustainable Cities And Society. 38 pp. 697-713 (2018)" .
+
+:BIBREF91 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Electronics" ] ;
+    dcterms:title "Towards a lightweight detection system for cyber attacks in the IoT environment using corresponding features" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Soe" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Feng" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Santosa" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hartanto" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sakurai" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:volume "9" ;
+    c4o:hasContent "Soe, Y., Feng, Y., Santosa, P., Hartanto, R. & Sakurai, K. Towards a lightweight detection system for cyber attacks in the IoT environment using corresponding features. Electronics. 9, 144 (2020)" .
+
+:BIBREF92 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal Of Systems Architecture" ] ;
+    dcterms:title "TP2SF: A Trustworthy Privacy-Preserving Secured Framework for sustainable smart cities by leveraging blockchain and machine learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gupta" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tripathi" ;
+                    foaf:givenname "R" ] ] ;
+    c4o:hasContent "Kumar, P., Gupta, G. and Tripathi, R. TP2SF: A Trustworthy Privacy-Preserving Secured Framework for sustainable smart cities by leveraging blockchain and machine learning. Journal Of Systems Architecture. 115 pp. 101954 (2021)" .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF25 ;
+                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF26 ;
+                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF27 ;
+                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF28 ;
+                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF29 ;
+                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF30 ;
+                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF31 ;
+                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF32 ;
+                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF33 ;
+                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF34 ;
+                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF35 ;
+                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF36 ;
+                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF37 ;
+                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF38 ;
+                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF39 ;
+                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF40 ;
+                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF41 ;
+                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF42 ;
+                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF43 ;
+                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF44 ;
+                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF45 ;
+                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF46 ;
+                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF47 ;
+                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF48 ;
+                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF49 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF50 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF51 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF52 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF53 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF54 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF55 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF56 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF57 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF58 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF59 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF60 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF61 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF62 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF63 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF64 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF65 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF66 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF67 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF68 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF69 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF70 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF71 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF72 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF73 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF74 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF75 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF76 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF77 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF78 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF79 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF80 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF81 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF82 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF83 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF84 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF85 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF86 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF87 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF88 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF89 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF90 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF91 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF92 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF93 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF94 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF95 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF26,
+        :BIBREF27,
+        :BIBREF28,
+        :BIBREF29,
+        :BIBREF3,
+        :BIBREF30,
+        :BIBREF31,
+        :BIBREF32,
+        :BIBREF33,
+        :BIBREF34,
+        :BIBREF35,
+        :BIBREF36,
+        :BIBREF37,
+        :BIBREF38,
+        :BIBREF39,
+        :BIBREF4,
+        :BIBREF40,
+        :BIBREF41,
+        :BIBREF42,
+        :BIBREF43,
+        :BIBREF44,
+        :BIBREF45,
+        :BIBREF46,
+        :BIBREF47,
+        :BIBREF48,
+        :BIBREF49,
+        :BIBREF5,
+        :BIBREF50,
+        :BIBREF51,
+        :BIBREF52,
+        :BIBREF53,
+        :BIBREF54,
+        :BIBREF55,
+        :BIBREF56,
+        :BIBREF57,
+        :BIBREF58,
+        :BIBREF59,
+        :BIBREF6,
+        :BIBREF60,
+        :BIBREF61,
+        :BIBREF62,
+        :BIBREF63,
+        :BIBREF64,
+        :BIBREF65,
+        :BIBREF66,
+        :BIBREF67,
+        :BIBREF68,
+        :BIBREF69,
+        :BIBREF7,
+        :BIBREF70,
+        :BIBREF71,
+        :BIBREF72,
+        :BIBREF73,
+        :BIBREF74,
+        :BIBREF75,
+        :BIBREF76,
+        :BIBREF77,
+        :BIBREF78,
+        :BIBREF79,
+        :BIBREF8,
+        :BIBREF80,
+        :BIBREF81,
+        :BIBREF82,
+        :BIBREF83,
+        :BIBREF84,
+        :BIBREF85,
+        :BIBREF86,
+        :BIBREF87,
+        :BIBREF88,
+        :BIBREF89,
+        :BIBREF9,
+        :BIBREF90,
+        :BIBREF91,
+        :BIBREF92,
+        :BIBREF93,
+        :BIBREF94,
+        :BIBREF95 .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF39 a deo:Reference ;
+    dcterms:references :BIBREF39 ;
+    c4o:hasContent "[40]" .
+
+:referenceToBIBREF45 a deo:Reference ;
+    dcterms:references :BIBREF45 ;
+    c4o:hasContent "[46]" .
+
+:section101 a doco:Section ;
+    po:contains :sectionLabel101 ;
+    po:containsAsHeader :sectionTitle101 .
+
+:section15 a doco:Section ;
+    po:contains :referenceToBIBREF19,
+        :referenceToBIBREF39,
+        :referenceToBIBREF49,
+        :referenceToBIBREF50,
+        :referenceToBIBREF51,
+        :referenceToBIBREF52,
+        :referenceToBIBREF53,
+        :referenceToBIBREF55,
+        :referenceToBIBREF56,
+        :referenceToBIBREF58,
+        :referenceToBIBREF59,
+        :referenceToBIBREF60,
+        :referenceToBIBREF61,
+        :referenceToBIBREF62,
+        :referenceToBIBREF63,
+        :referenceToBIBREF64,
+        :sectionLabel15 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section23 a doco:Section ;
+    po:contains :referenceToBIBREF19,
+        :referenceToBIBREF31,
+        :referenceToBIBREF65,
+        :referenceToBIBREF66,
+        :referenceToBIBREF67,
+        :referenceToBIBREF68,
+        :referenceToBIBREF69,
+        :referenceToBIBREF70,
+        :referenceToBIBREF71,
+        :referenceToBIBREF72,
+        :referenceToBIBREF73,
+        :referenceToBIBREF74,
+        :referenceToBIBREF75,
+        :referenceToBIBREF76,
+        :referenceToBIBREF77,
+        :referenceToBIBREF78,
+        :sectionLabel23 ;
+    po:containsAsHeader :sectionTitle23 .
+
+:section31 a doco:Section ;
+    co:firstItem [ co:itemContent :section36 ;
+            co:nextItem [ co:itemContent :section39 ;
+                    co:nextItem [ co:itemContent :section56 ;
+                            co:nextItem [ co:itemContent :section73 ;
+                                    co:nextItem [ co:itemContent :section77 ] ] ] ] ] ;
+    po:contains :referenceToBIBREF79,
+        :section36,
+        :section39,
+        :section56,
+        :section73,
+        :section77,
+        :sectionLabel31 ;
+    po:containsAsHeader :sectionTitle31 .
+
+:section36 a doco:Section ;
+    po:contains :sectionLabel36 ;
+    po:containsAsHeader :sectionTitle36 .
+
+:section39 a doco:Section ;
+    po:contains :sectionLabel39 ;
+    po:containsAsHeader :sectionTitle39 .
+
+:section56 a doco:Section ;
+    po:contains :referenceToBIBREF45,
+        :sectionLabel56 ;
+    po:containsAsHeader :sectionTitle56 .
+
+:section73 a doco:Section ;
+    co:firstItem [ co:itemContent :section74 ;
+            co:nextItem [ co:itemContent :section76 ] ] ;
+    po:contains :section74,
+        :section76,
+        :sectionLabel73 ;
+    po:containsAsHeader :sectionTitle73 .
+
+:section74 a doco:Section ;
+    po:contains :referenceToBIBREF25,
+        :referenceToBIBREF26,
+        :sectionLabel74 ;
+    po:containsAsHeader :sectionTitle74 .
+
+:section76 a doco:Section ;
+    po:contains :referenceToBIBREF31,
+        :sectionLabel76 ;
+    po:containsAsHeader :sectionTitle76 .
+
+:section77 a doco:Section ;
+    po:contains :referenceToBIBREF80,
+        :sectionLabel77 ;
+    po:containsAsHeader :sectionTitle77 .
+
+:section78 a doco:Section ;
+    co:firstItem [ co:itemContent :section79 ;
+            co:nextItem [ co:itemContent :section80 ;
+                    co:nextItem [ co:itemContent :section82 ;
+                            co:nextItem [ co:itemContent :section85 ;
+                                    co:nextItem [ co:itemContent :section95 ] ] ] ] ] ;
+    po:contains :referenceToBIBREF81,
+        :section79,
+        :section80,
+        :section82,
+        :section85,
+        :section95,
+        :sectionLabel78 ;
+    po:containsAsHeader :sectionTitle78 .
+
+:section79 a doco:Section ;
+    po:contains :sectionLabel79 ;
+    po:containsAsHeader :sectionTitle79 .
+
+:section80 a doco:Section ;
+    po:contains :sectionLabel80 ;
+    po:containsAsHeader :sectionTitle80 .
+
+:section82 a doco:Section ;
+    po:contains :sectionLabel82 ;
+    po:containsAsHeader :sectionTitle82 .
+
+:section85 a doco:Section ;
+    po:contains :referenceToBIBREF31,
+        :referenceToBIBREF32,
+        :referenceToBIBREF90,
+        :referenceToBIBREF93,
+        :referenceToBIBREF94,
+        :referenceToBIBREF95,
+        :sectionLabel85 ;
+    po:containsAsHeader :sectionTitle85 .
+
+:section9 a doco:Section ;
+    po:contains :referenceToBIBREF35,
+        :referenceToBIBREF36,
+        :referenceToBIBREF38,
+        :referenceToBIBREF39,
+        :referenceToBIBREF40,
+        :referenceToBIBREF41,
+        :referenceToBIBREF42,
+        :referenceToBIBREF43,
+        :referenceToBIBREF44,
+        :referenceToBIBREF45,
+        :referenceToBIBREF46,
+        :referenceToBIBREF47,
+        :referenceToBIBREF48,
+        :sectionLabel9 ;
+    po:containsAsHeader :sectionTitle9 .
+
+:section95 a doco:Section ;
+    po:contains :referenceToBIBREF18,
+        :referenceToBIBREF4,
+        :sectionLabel95 ;
+    po:containsAsHeader :sectionTitle95 .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE International Conference On Cloud Engineering (IC2E)" ] ;
+    dcterms:title "& Others Double-blind consent-driven data sharing on blockchain" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bhaskaran" ;
+                    foaf:givenname "K" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Ramakrishna" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ilfrich" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Liffman" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Vecchiola" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Jayachandran" ;
+                    foaf:givenname "P" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "A" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Lim" ;
+                    foaf:givenname "F" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Nandakumar" ;
+                    foaf:givenname "K" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Qin" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 391 ;
+    bibo:pageStart 385 ;
+    c4o:hasContent "Bhaskaran, K., Ilfrich, P., Liffman, D., Vecchiola, C., Jayachandran, P., Kumar, A., Lim, F., Nandakumar, K., Qin, Z., Ramakrishna, V. & Others Double-blind consent-driven data sharing on blockchain. 2018 IEEE International Conference On Cloud Engineering (IC2E). pp. 385-391 (2018)" .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Wireless Communications And Mobile Computing" ] ;
+    dcterms:title "Intrusion detection in industrial internet of things network-based on deep learning model with rule-based feature selection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Awotunde" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chakraborty" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Adeniyi" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 17 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Awotunde, J., Chakraborty, C. & Adeniyi, A. Intrusion detection in industrial internet of things network-based on deep learning model with rule-based feature selection. Wireless Communications And Mobile Computing. 2021 pp. 1-17 (2021)" .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Journal Of Network And Computer Applications" ] ;
+    dcterms:title "Trust models of internet of smart things: A survey, open issues, and future directions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Altaf" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Abbas" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Iqbal" ;
+                    foaf:givenname "F" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Derhab" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 111 ;
+    bibo:pageStart 93 ;
+    bibo:volume "137" ;
+    c4o:hasContent "Altaf, A., Abbas, H., Iqbal, F. & Derhab, A. Trust models of internet of smart things: A survey, open issues, and future directions. Journal Of Network And Computer Applications. 137 pp. 93-111 (2019)" .
+
+:BIBREF26 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Hybrid cloud/Fog environment for healthcare: an exploratory study, opportunities, challenges, and future prospects. Hybrid Artificial Intelligence And IoT In Healthcare" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Awotunde" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bhoi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Barsocchi" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 20 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Awotunde, J., Bhoi, A. and Barsocchi, P. Hybrid cloud/Fog environment for healthcare: an exploratory study, opportunities, challenges, and future prospects. Hybrid Artificial Intelligence And IoT In Healthcare. pp. 1-20 (2021)" .
+
+:BIBREF31 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Towards the development of realistic botnet dataset in the internet of things for network forensic analytics: Bot-iot dataset. Future Generation Computer Systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Koroniotis" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Moustafa" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sitnikova" ;
+                    foaf:givenname "E" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Turnbull" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 796 ;
+    bibo:pageStart 779 ;
+    c4o:hasContent "Koroniotis, N., Moustafa, N., Sitnikova, E. & Turnbull, B. Towards the development of realistic botnet dataset in the internet of things for network forensic analytics: Bot-iot dataset. Future Generation Computer Systems. 100 pp. 779-796 (2019)" .
+
+:BIBREF32 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "FGMC-HADS: Fuzzy Gaussian mixture-based correntropy models for detecting zero-day attacks from linux systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Haider" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Moustafa" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Keshk" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Fernandez" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Choo" ;
+                    foaf:givenname "K" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Wahab" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "Haider, W., Moustafa, N., Keshk, M., Fernandez, A., Choo, K. & Wahab, A. FGMC-HADS: Fuzzy Gaussian mixture-based correntropy models for detecting zero-day attacks from linux systems. Computers and Security. 96 pp. 101906 (2020)" .
+
+:BIBREF35 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "Deployment and integration of smart sensors with IoT devices detecting fire disasters in huge forest environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cui" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 827 ;
+    bibo:pageStart 818 ;
+    c4o:hasContent "Cui, F. Deployment and integration of smart sensors with IoT devices detecting fire disasters in huge forest environment. Computer Communications. 150 pp. 818-827 (2020)" .
+
+:BIBREF36 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "International Journal Of Environmental Research And Public Health" ] ;
+    dcterms:title "Artificial intelligence and big data in public health" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Benke" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Benke" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:volume "15" ;
+    c4o:hasContent "Benke, K. & Benke, G. Artificial intelligence and big data in public health. International Journal Of Environmental Research And Public Health. 15, 2796 (2018)" .
+
+:BIBREF38 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE Communications Surveys and Tutorials" ] ;
+    dcterms:title "Deep learning for IoT big data and streaming analytics: A survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mohammadi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Al-Fuqaha" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sorour" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Guizani" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 2960 ;
+    bibo:pageStart 2923 ;
+    bibo:volume "20" ;
+    c4o:hasContent "Mohammadi, M., Al-Fuqaha, A., Sorour, S. and Guizani, M. Deep learning for IoT big data and streaming analytics: A survey. IEEE Communications Surveys and Tutorials. 20, 2923-2960 (2018)" .
+
+:BIBREF39 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "Blockiotintelligence: A blockchain-enabled intelligent IoT architecture with artificial intelligence. Future Generation Computer Systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rathore" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Park" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 743 ;
+    bibo:pageStart 721 ;
+    c4o:hasContent "Singh, S., Rathore, S. & Park, J. Blockiotintelligence: A blockchain-enabled intelligent IoT architecture with artificial intelligence. Future Generation Computer Systems. 110 pp. 721-743 (2020)" .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions On Industrial Informatics" ] ;
+    dcterms:title "Blockchain for cybersecurity in smart grid: A comprehensive survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhuang" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zamir" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Liang" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 19 ;
+    bibo:pageStart 3 ;
+    bibo:volume "17" ;
+    c4o:hasContent "Zhuang, P., Zamir, T. & Liang, H. Blockchain for cybersecurity in smart grid: A comprehensive survey. IEEE Transactions On Industrial Informatics. 17, 3-19 (2020)" .
+
+:BIBREF40 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Computer Science Review" ] ;
+    dcterms:title "Leveraging Deep Learning and IoT big data analytics to support the smart cities development: Review and future directions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Atitallah" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Driss" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Boulila" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ghézala" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:volume "38" ;
+    c4o:hasContent "Atitallah, S., Driss, M., Boulila, W. & Ghézala, H. Leveraging Deep Learning and IoT big data analytics to support the smart cities development: Review and future directions. Computer Science Review. 38 pp. 100303 (2020)" .
+
+:BIBREF41 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Proceedings Of The Second International Conference On Internet-of-Things Design And Implementation" ] ;
+    dcterms:title "Towards an optimized blockchain for IoT" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dorri" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kanhere" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Jurdak" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 178 ;
+    bibo:pageStart 173 ;
+    c4o:hasContent "Dorri, A., Kanhere, S. & Jurdak, R. Towards an optimized blockchain for IoT. Proceedings Of The Second International Conference On Internet-of-Things Design And Implementation. pp. 173-178 (2017)" .
+
+:BIBREF42 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "Blockchain and iot integration: A systematic survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Panarello" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tapas" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Merlino" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Longo" ;
+                    foaf:givenname "F" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Puliafito" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "18" ;
+    c4o:hasContent "Panarello, A., Tapas, N., Merlino, G., Longo, F. & Puliafito, A. Blockchain and iot integration: A systematic survey. Sensors. 18, 2575 (2018)" .
+
+:BIBREF43 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE 9th Annual Information Technology, Electronics And Mobile Communication Conference (IEMCON)" ] ;
+    dcterms:title "Integrating blockchain, smart contract-tokens, and IoT to design a food traceability solution" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hilton" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Burks" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Reyes" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 340 ;
+    bibo:pageStart 335 ;
+    c4o:hasContent "Kim, M., Hilton, B., Burks, Z. & Reyes, J. Integrating blockchain, smart contract-tokens, and IoT to design a food trace- ability solution. 2018 IEEE 9th Annual Information Technology, Electronics And Mobile Communication Conference (IEMCON). pp. 335-340 (2018)" .
+
+:BIBREF44 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Sustainable smart cities: convergence of artificial intelligence and blockchain. Sustainability" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sharma" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Podoplelova" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shapovalov" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Tselykh" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Tselykh" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "13" ;
+    c4o:hasContent "Sharma, A., Podoplelova, E., Shapovalov, G., Tselykh, A. & Tselykh, A. Sustainable smart cities: convergence of artificial intelligence and blockchain. Sustainability. 13, 13076 (2021)" .
+
+:BIBREF45 a deo:BibliographicReference ;
+    dcterms:issued 2012 ;
+    dcterms:publisher [ foaf:name "Sixth International Conference On Next Generation Mobile Applications, Services And Technologies" ] ;
+    dcterms:title "Enabling technologies for smart city services and applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Balakrishna" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 227 ;
+    bibo:pageStart 223 ;
+    c4o:hasContent "Balakrishna, C. Enabling technologies for smart city services and applications. 2012 Sixth International Conference On Next Generation Mobile Applications, Services And Technologies. pp. 223-227 (2012)" .
+
+:BIBREF46 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:title "Smart cities and homes: Key enabling technologies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Obaidat" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nicopolitidis" ;
+                    foaf:givenname "P" ] ] ;
+    c4o:hasContent "Obaidat, M. & Nicopolitidis, P. Smart cities and homes: Key enabling technologies. (Morgan Kaufmann,2016)" .
+
+:BIBREF47 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Technological Forecasting And Social Change" ] ;
+    dcterms:title "Towards the smart city 2.0: Empirical evidence of using smartness as a tool for tackling social challenges" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Trencher" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 128 ;
+    bibo:pageStart 117 ;
+    c4o:hasContent "Trencher, G. Towards the smart city 2.0: Empirical evidence of using smartness as a tool for tackling social challenges. Technological Forecasting And Social Change. 142 pp. 117-128 (2019)" .
+
+:BIBREF48 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal Of Urban Technology" ] ;
+    dcterms:title "Critical Perspectives on the Smart City: Efficiency Objectives vs Inclusion Ideals" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chib" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Alvarez" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Todorovic" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 99 ;
+    bibo:pageStart 83 ;
+    bibo:volume "29" ;
+    c4o:hasContent "Chib, A., Alvarez, K. & Todorovic, T. Critical Perspectives on the Smart City: Efficiency Objectives vs Inclusion Ideals. Journal Of Urban Technology. 29, 83-99 (2022)" .
+
+:BIBREF49 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Next Generation Technology . JNxtGenTech" ] ;
+    dcterms:title "SwarnaSudha Detecting Website Defacement using Machine Learning Techniques" ;
+    bibo:pageEnd 55 ;
+    bibo:pageStart 47 ;
+    bibo:volume "1" ;
+    c4o:hasContent "SwarnaSudha Detecting Website Defacement using Machine Learning Techniques. Journal of Next Generation Technology . JNxtGenTech. 1, 47-55 (2021)" .
+
+:BIBREF50 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Asian Journal Of Research In Computer Science" ] ;
+    dcterms:title "State of art survey for iot effects on smart city technology: challenges, opportunities, and solutions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hassan" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zeebaree" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ameen" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kak" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sadeeq" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Ageed" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Al-Zebari" ;
+                    foaf:givenname "A" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Salih" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 48 ;
+    bibo:pageStart 32 ;
+    bibo:volume "8" ;
+    c4o:hasContent "Hassan, R., Zeebaree, S., Ameen, S., Kak, S., Sadeeq, M., Ageed, Z., AL-Zebari, A. & Salih, A. State of art survey for iot effects on smart city technology: challenges, opportunities, and solutions. Asian Journal Of Research In Computer Science. 8, 32-48 (2021)" .
+
+:BIBREF51 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "TENCON" ] ;
+    dcterms:title "An IoT ecosystem for the implementation of scalable wireless home automation systems at smart city level" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lohokare" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dani" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Rajurkar" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Apte" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 1508 ;
+    bibo:pageStart 1503 ;
+    c4o:hasContent "Lohokare, J., Dani, R., Rajurkar, A. and Apte, A. An IoT ecosystem for the implementation of scalable wireless home automation systems at smart city level. TENCON 2017-2017 IEEE Region 10 Conference. pp. 1503-1508 (2017)" .
+
+:BIBREF52 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Journal Of Cleaner Production" ] ;
+    dcterms:title "Legislative support for improving sustainable and smart electricity consumption in polish residential sector" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Grycan" ;
+                    foaf:givenname "W" ] ] ;
+    bibo:volume "266" ;
+    c4o:hasContent "Grycan, W. Legislative support for improving sustainable and smart electricity consumption in polish residential sector. Journal Of Cleaner Production. 266 pp. 121995 (2020)" .
+
+:BIBREF53 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IoT And IoE Driven Smart Cities" ] ;
+    dcterms:title "A framework for the actualization of green cloud-based design for smart cities" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abiodun" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Adeniyi" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Awotunde" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Bhoi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Abdulraheem" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Oladipo" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:pageEnd 182 ;
+    bibo:pageStart 163 ;
+    c4o:hasContent "Abiodun, M., Adeniyi, E., Awotunde, J., Bhoi, A., AbdulRaheem, M. and Oladipo, I. A framework for the actualization of green cloud-based design for smart cities. IoT And IoE Driven Smart Cities. pp. 163-182 (2021)" .
+
+:BIBREF55 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Future (post-COVID) digital, smart and sustainable cities in the wake of 6G: Digital twins, immersive realities and new urban economies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Allam" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jones" ;
+                    foaf:givenname "D" ] ] ;
+    c4o:hasContent "Allam, Z. & Jones, D. Future (post-COVID) digital, smart and sustainable cities in the wake of 6G: Digital twins, immersive realities and new urban economies. Land Use Policy. 101 pp. 105201 (2021)" .
+
+:BIBREF56 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Applied Informatics: Fourth International Conference, ICAI 2021" ] ;
+    dcterms:title "An enhanced lightweight speck system for cloud-based smart healthcare" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abdulraheem" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Balogun" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Abiodun" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Taofeek-Ibrahim" ;
+                    foaf:givenname "F" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Tomori" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Oladipo" ;
+                    foaf:givenname "I" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Awotunde" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 376 ;
+    bibo:pageStart 363 ;
+    bibo:volume "4" ;
+    c4o:hasContent "AbdulRaheem, M., Balogun, G., Abiodun, M., Taofeek-Ibrahim, F., Tomori, A., Oladipo, I. & Awotunde, J. An enhanced lightweight speck system for cloud-based smart healthcare. Applied Informatics: Fourth International Conference, ICAI 2021, Buenos Aires, Argentina, October 28-30, 2021, Proceedings 4. pp. 363-376 (2021)" .
+
+:BIBREF58 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Cyber security in smart cities: a review of deep learning-based applications and case studies" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wawrzynski" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lv" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:volume "66" ;
+    c4o:hasContent "Chen, D., Wawrzynski, P. & Lv, Z. Cyber security in smart cities: a review of deep learning-based applications and case studies. Sustainable Cities And Society. 66 pp. 102655 (2021)" .
+
+:BIBREF59 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Symmetry" ] ;
+    dcterms:title "Feature selection and ensemble-based intrusion detection system: an efficient and comprehensive approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jaw" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:volume "13" ;
+    c4o:hasContent "Jaw, E. & Wang, X. Feature selection and ensemble-based intrusion detection system: an efficient and comprehensive approach. Symmetry. 13, 1764 (2021)" .
+
+:BIBREF60 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Information Sciences" ] ;
+    dcterms:title "Fusion of heterogeneous attention mechanisms in multi-view convolutional neural network for text classification" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Guo" ;
+                    foaf:givenname "B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yu" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zheng" ;
+                    foaf:givenname "X" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Samtani" ;
+                    foaf:givenname "S" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Zeng" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 312 ;
+    bibo:pageStart 295 ;
+    c4o:hasContent "Liang, Y., Li, H., Guo, B., Yu, Z., Zheng, X., Samtani, S. & Zeng, D. Fusion of heterogeneous attention mechanisms in multi-view convolutional neural network for text classification. Information Sciences. 548 pp. 295-312 (2021)" .
+
+:BIBREF61 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Electronics" ] ;
+    dcterms:title "A machine learning approach for anomaly detection in industrial control systems based on measurement data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mokhtari" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Abbaspour" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yen" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sargolzaei" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "Mokhtari, S., Abbaspour, A., Yen, K. & Sargolzaei, A. A machine learning approach for anomaly detection in industrial control systems based on measurement data. Electronics. 10, 407 (2021)" .
+
+:BIBREF62 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions On Network And Service Management" ] ;
+    dcterms:title "On the performance of GRASP-based feature selection for CPS intrusion detection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Quincozes" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mossé" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Passos" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Albuquerque" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ochi" ;
+                    foaf:givenname "L" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Santos" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 626 ;
+    bibo:pageStart 614 ;
+    bibo:volume "19" ;
+    c4o:hasContent "Quincozes, S., Mossé, D., Passos, D., Albuquerque, C., Ochi, L. & Santos, V. On the performance of GRASP-based feature selection for CPS intrusion detection. IEEE Transactions On Network And Service Management. 19, 614-626 (2021)" .
+
+:BIBREF63 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "PeerJ Computer Science" ] ;
+    dcterms:title "Multiresolution dendritic cell algorithm for network anomaly detection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Limon-Cantu" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Alarcon-Aquino" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pages "7--e749" ;
+    c4o:hasContent "Limon-Cantu, D. & Alarcon-Aquino, V. Multiresolution dendritic cell algorithm for network anomaly detection. PeerJ Computer Science. 7 pp. e749 (2021)" .
+
+:BIBREF64 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Deep learning-based security behaviour analysis in IoT environments: A survey. Security And Communication Networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yue" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Legg" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 13 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Yue, Y., Li, S., Legg, P. & Li, F. Deep learning-based security behaviour analysis in IoT environments: A survey. Security And Communication Networks. 2021 pp. 1-13 (2021)" .
+
+:BIBREF65 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Journal Of Ambient Intelligence And Humanized Computing" ] ;
+    dcterms:title "Trust architecture and reputation evaluation for internet of things" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tian" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Cui" ;
+                    foaf:givenname "X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yin" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:issue "10" ;
+    bibo:pageEnd 3107 ;
+    bibo:pageStart 3099 ;
+    c4o:hasContent "Chen, J., Tian, Z., Cui, X., Yin, L. & Wang, X. Trust architecture and reputation evaluation for internet of things. Journal Of Ambient Intelligence And Humanized Computing. 10 pp. 3099-3107 (2019)" .
+
+:BIBREF66 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE" ] ;
+    dcterms:title "Trust management in blockchain and iot supported supply chains" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Malik" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dedeoglu" ;
+                    foaf:givenname "V" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kanhere" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Jurdak" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Trustchain" ] ] ;
+    bibo:pageEnd 193 ;
+    bibo:pageStart 184 ;
+    c4o:hasContent "Malik, S., Dedeoglu, V., Kanhere, S. & Jurdak, R. Trustchain: Trust management in blockchain and iot supported supply chains. 2019 IEEE International Conference On Blockchain (Blockchain). pp. 184-193 (2019)" .
+
+:BIBREF67 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Proof-of-reputation based-consortium blockchain for trust resource sharing in internet of vehicles" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chai" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Leng" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Mao" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 175757 ;
+    bibo:pageStart 175744 ;
+    c4o:hasContent "Chai, H., Leng, S., Zhang, K. & Mao, S. Proof-of-reputation based-consortium blockchain for trust resource sharing in internet of vehicles. IEEE Access. 7 pp. 175744-175757 (2019)" .
+
+:BIBREF68 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Proceedings Of The 1st International Electronics Communication Conference" ] ;
+    dcterms:title "Proof of reputation: A reputation-based consensus protocol for blockchain based systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhuang" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ai" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 138 ;
+    bibo:pageStart 131 ;
+    c4o:hasContent "Zhuang, Q., Liu, Y., Chen, L. & Ai, Z. Proof of reputation: A reputation-based consensus protocol for blockchain based systems. Proceedings Of The 1st International Electronics Communication Conference. pp. 131-138 (2019)" .
+
+:BIBREF69 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE/WIC/ACM International Conference On Web Intelligence (WI)" ] ;
+    dcterms:title "Reputation management in multi-agent systems using permissioned blockchain technology" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Calvaresi" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mattioli" ;
+                    foaf:givenname "V" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Dubovitskaya" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Dragoni" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Schumacher" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 725 ;
+    bibo:pageStart 719 ;
+    c4o:hasContent "Calvaresi, D., Mattioli, V., Dubovitskaya, A., Dragoni, A. & Schumacher, M. Reputation management in multi-agent systems using permissioned blockchain technology. 2018 IEEE/WIC/ACM International Conference On Web Intelligence (WI). pp. 719-725 (2018)" .
+
+:BIBREF70 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Internet Of Things Journal" ] ;
+    dcterms:title "A deep blockchain framework-enabled collaborative intrusion detection for protecting IoT and cloud networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alkadi" ;
+                    foaf:givenname "O" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Moustafa" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Turnbull" ;
+                    foaf:givenname "B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Choo" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 9472 ;
+    bibo:pageStart 9463 ;
+    bibo:volume "8" ;
+    c4o:hasContent "Alkadi, O., Moustafa, N., Turnbull, B. & Choo, K. A deep blockchain framework-enabled collaborative intrusion detection for protecting IoT and cloud networks. IEEE Internet Of Things Journal. 8, 9463-9472 (2020)" .
+
+:BIBREF71 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "IEEE Communications Surveys and Tutorials" ] ;
+    dcterms:title "Intrusion detection in 802.11 networks: Empirical evaluation of threats and a public dataset" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kolias" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kambourakis" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Stavrou" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Gritzalis" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 208 ;
+    bibo:pageStart 184 ;
+    bibo:volume "18" ;
+    c4o:hasContent "Kolias, C., Kambourakis, G., Stavrou, A. and Gritzalis, S. Intrusion detection in 802.11 networks: Empirical evaluation of threats and a public dataset. IEEE Communications Surveys and Tutorials. 18, 184-208 (2015)" .
+
+:BIBREF72 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Proceedings Of The 2019 ACM Symposium On SDN Research" ] ;
+    dcterms:title "Detecting volumetric attacks on lot devices via sdn-based monitoring of mud activity" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hamza" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gharakheili" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Benson" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sivaraman" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 48 ;
+    bibo:pageStart 36 ;
+    c4o:hasContent "Hamza, A., Gharakheili, H., Benson, T. & Sivaraman, V. Detecting volumetric attacks on lot devices via sdn-based moni- toring of mud activity. Proceedings Of The 2019 ACM Symposium On SDN Research. pp. 36-48 (2019)" .
+
+:BIBREF73 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Identification of malicious code variants based on image visualization. Computers and Electrical Engineering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Naeem" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Guo" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Naeem" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ullah" ;
+                    foaf:givenname "F" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Aldabbas" ;
+                    foaf:givenname "H" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Javed" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 237 ;
+    bibo:pageStart 225 ;
+    c4o:hasContent "Naeem, H., Guo, B., Naeem, M., Ullah, F., Aldabbas, H. and Javed, M. Identification of malicious code variants based on image visualization. Computers and Electrical Engineering. 76 pp. 225-237 (2019)" .
+
+:BIBREF74 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "th IFIP International Conference On New Technologies, Mobility And Security (NTMS)" ] ;
+    dcterms:title "Malware classification with deep convolutional neural networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kalash" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rochan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Mohammed" ;
+                    foaf:givenname "N" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Bruce" ;
+                    foaf:givenname "N" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Iqbal" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 5 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Kalash, M., Rochan, M., Mohammed, N., Bruce, N., Wang, Y. & Iqbal, F. Malware classification with deep convolutional neural networks. 2018 9th IFIP International Conference On New Technologies, Mobility And Security (NTMS). pp. 1-5 (2018)" .
+
+:BIBREF75 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Proceedings Of The 2018 International Conference On Computing And Artificial Intelligence" ] ;
+    dcterms:title "Malicious Code Detection Based on Image Processing Using Deep Learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xiaosong" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ahad" ;
+                    foaf:givenname "I" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 85 ;
+    bibo:pageStart 81 ;
+    c4o:hasContent "Kumar, R., Xiaosong, Z., Khan, R., Ahad, I. & Kumar, J. Malicious Code Detection Based on Image Processing Using Deep Learning. Proceedings Of The 2018 International Conference On Computing And Artificial Intelligence. pp. 81-85 (2018)" .
+
+:BIBREF76 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Electronics" ] ;
+    dcterms:title "Botnet attack detection using local global best bat algorithm for industrial internet of things" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alharbi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Alosaimi" ;
+                    foaf:givenname "W" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Alyami" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Rauf" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Damaševičius" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "Alharbi, A., Alosaimi, W., Alyami, H., Rauf, H. & Damaševičius, R. Botnet attack detection using local global best bat algorithm for industrial internet of things. Electronics. 10, 1341 (2021)" .
+
+:BIBREF77 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Informatics" ] ;
+    dcterms:title "Windows PE malware detection using ensemble learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Azeez" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Odufuwa" ;
+                    foaf:givenname "O" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Misra" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Oluranti" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Damaševičius" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:volume "8" ;
+    c4o:hasContent "Azeez, N., Odufuwa, O., Misra, S., Oluranti, J. & Damaševičius, R. Windows PE malware detection using ensemble learning. Informatics. 8, 10 (2021)" .
+
+:BIBREF78 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Electronics" ] ;
+    dcterms:title "A novel approach for network intrusion detection using multistage deep learning image recognition" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Toldinas" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Venčkauskas" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Damaševičius" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Grigaliūnas" ;
+                    foaf:givenname "Š" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Morkevičius" ;
+                    foaf:givenname "N" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Baranauskas" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "Toldinas, J., Venčkauskas, A., Damaševičius, R., Grigaliūnas, Š., Morkevičius, N. & Baranauskas, E. A novel approach for network intrusion detection using multistage deep learning image recognition. Electronics. 10, 1854 (2021)" .
+
+:BIBREF79 a deo:BibliographicReference ;
+    dcterms:issued 2009 ;
+    dcterms:publisher [ foaf:name "Geoforum" ] ;
+    dcterms:title "The work of environmental governance networks: Traceability, credibility and certification by the Forest Stewardship Council" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Eden" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 394 ;
+    bibo:pageStart 383 ;
+    bibo:volume "40" ;
+    c4o:hasContent "Eden, S. The work of environmental governance networks: Traceability, credibility and certification by the Forest Stewardship Council. Geoforum. 40, 383-394 (2009)" .
+
+:BIBREF80 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "A safe and secured iris template using steganography and cryptography. Multimedia Tools And Applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abikoye" ;
+                    foaf:givenname "O" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ojo" ;
+                    foaf:givenname "U" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Awotunde" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ogundokun" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 23506 ;
+    bibo:pageStart 23483 ;
+    c4o:hasContent "Abikoye, O., Ojo, U., Awotunde, J. & Ogundokun, R. A safe and secured iris template using steganography and cryptography. Multimedia Tools And Applications. 79 pp. 23483-23506 (2020)" .
+
+:BIBREF81 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "The Journal Of Machine Learning Research" ] ;
+    dcterms:title "Others Scikit-learn: Machine learning in Python" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pedregosa" ;
+                    foaf:givenname "F" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Dubourg" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Varoquaux" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gramfort" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Michel" ;
+                    foaf:givenname "V" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Thirion" ;
+                    foaf:givenname "B" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Grisel" ;
+                    foaf:givenname "O" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Blondel" ;
+                    foaf:givenname "M" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Prettenhofer" ;
+                    foaf:givenname "P" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Weiss" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 2830 ;
+    bibo:pageStart 2825 ;
+    c4o:hasContent "Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V. & Others Scikit-learn: Machine learning in Python. The Journal Of Machine Learning Research. 12 pp. 2825-2830 (2011)" .
+
+:BIBREF90 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:title "Benjamin Turnbull Privacy-preserving big data analytics for cyber-physical systems. Wireless Networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Keshk" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Moustafa" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sitnikova" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:pageEnd 1249 ;
+    bibo:pageStart 1241 ;
+    c4o:hasContent "Keshk, M., Moustafa, N., Sitnikova, E. & Benjamin Turnbull Privacy-preserving big data analytics for cyber-physical systems. Wireless Networks. 28 pp. 1241-1249 (2018)" .
+
+:BIBREF93 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Electronics" ] ;
+    dcterms:title "A novel PCA-firefly based XGBoost classification model for intrusion detection in networks using GPU" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bhattacharya" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Maddikunta" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kaluri" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Gadekallu" ;
+                    foaf:givenname "T" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Alazab" ;
+                    foaf:givenname "M" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Tariq" ;
+                    foaf:givenname "U" ] ] ;
+    bibo:volume "9" ;
+    c4o:hasContent "Bhattacharya, S., Maddikunta, P., Kaluri, R., Singh, S., Gadekallu, T., Alazab, M. and Tariq, U. A novel PCA-firefly based XGBoost classification model for intrusion detection in networks using GPU. Electronics. 9, 219 (2020)" .
+
+:BIBREF94 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "Selection of effective machine learning algorithm and Bot-IoT attacks traffic identification for internet of things in smart city. Future Generation Computer Systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shafiq" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tian" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Du" ;
+                    foaf:givenname "X" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Guizani" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 442 ;
+    bibo:pageStart 433 ;
+    c4o:hasContent "Shafiq, M., Tian, Z., Sun, Y., Du, X. and Guizani, M. Selection of effective machine learning algorithm and Bot-IoT attacks traffic identification for internet of things in smart city. Future Generation Computer Systems. 107 pp. 433-442 (2020)" .
+
+:BIBREF95 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "IoT malicious traffic identification using wrapper-based feature selection mechanisms. Computers and Security" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shafiq" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tian" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Bashir" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Du" ;
+                    foaf:givenname "X" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Guizani" ;
+                    foaf:givenname "M" ] ] ;
+    c4o:hasContent "Shafiq, M., Tian, Z., Bashir, A., Du, X. and Guizani, M. IoT malicious traffic identification using wrapper-based feature selection mechanisms. Computers and Security. 94 pp. 101863 (2020)" .
+
+:referenceToBIBREF31 a deo:Reference ;
+    dcterms:references :BIBREF31 ;
+    c4o:hasContent "[32]" .
+

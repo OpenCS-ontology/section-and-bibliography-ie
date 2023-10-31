@@ -1,0 +1,795 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Android malware detection"^^xsd:string,
+        "Feature extraction"^^xsd:string,
+        "Feature selection"^^xsd:string,
+        "Set classification algorithm"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "Computer Malicious Code Signal Detection based on Big Data Technology"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "The article addresses the challenges modelled by the inadequacy of traditional detection methods in effectively handling the substantial volume of software behavior samples, particularly in big data. A novel approach is proposed for leveraging big data technology to detect malicious computer code signals. Additionally, it seeks to attack the issues associated with machine learning-based mobile malware detection, namely the presence of a large number of features, low accuracy in detection, and imbalanced data distribution. To resolve these challenges, this paper presents a multifaceted methodology. First, it introduces a feature selection technique based on mean and variance analysis to eliminate irrelevant features hindering classification accuracy. Next, a comprehensive classification method is implemented, utilizing various feature extraction techniques such as principal component analysis (PCA), Kaehunen-Loeve transform (KLT), and independent component analysis (ICA). These techniques collectively contribute to enhancing the Precision of the detection process. Recognizing the issue of unbalanced data distribution among software samples, the study proposes a multi-level classification integration model grounded in decision trees. In response, the research focuses on enhancing accuracy and mitigating the impact of data imbalance through a combination of feature selection, extraction techniques, and a multi-level classification model. The empirical results highlight the effectiveness of the proposed methodologies, showcasing notable accuracy improvements ranging from 3.36% to 6.41% across different detection methods on the Android platform. The introduced malware detection technology, grounded in source code analysis, demonstrates a promising capacity to identify Android malware effectively."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 530 ;
+    prism:pageCount 9 ;
+    prism:startingPage 521 ;
+    datacite:doi "10.12694/scpe.v24i3.2163"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2163"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2163> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Liu"^^xsd:string ;
+    foaf:givenName "Xiaoteng"^^xsd:string ;
+    foaf:name "Xiaoteng Liu"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section8 ;
+                    co:nextItem [ co:itemContent :section56 ] ] ] ;
+    po:contains :section0,
+        :section56,
+        :section8 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Xinxiang vocational and technical college, Xinxiang Henan, 453000, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel17 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel30 a doco:SectionLabel ;
+    c4o:hasContent "3.2.1." .
+
+:sectionLabel41 a doco:SectionLabel ;
+    c4o:hasContent "3.3." .
+
+:sectionLabel46 a doco:SectionLabel ;
+    c4o:hasContent "4.1." .
+
+:sectionLabel51 a doco:SectionLabel ;
+    c4o:hasContent "4.2." .
+
+:sectionLabel56 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel8 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle17 a doco:SectionTitle ;
+    c4o:hasContent "Feature extraction-based malware detection algorithm." .
+
+:sectionTitle30 a doco:SectionTitle ;
+    c4o:hasContent "Set classifier based on extreme learning machine." .
+
+:sectionTitle41 a doco:SectionTitle ;
+    c4o:hasContent "Multi-level integration-based algorithm for mobile malware detection." .
+
+:sectionTitle46 a doco:SectionTitle ;
+    c4o:hasContent "Data sets and evaluation indicators." .
+
+:sectionTitle51 a doco:SectionTitle ;
+    c4o:hasContent "Performance comparison of various classifiers." .
+
+:sectionTitle56 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle8 a doco:SectionTitle ;
+    c4o:hasContent "Proposed Methodology." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Novel meta-heuristic algorithm for feature selection, unconstrained functions and engineering problems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "El-Kenawy" ;
+                    foaf:givenname "E.-S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mirjalili" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Alassery" ;
+                    foaf:givenname "F" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "Y.-D" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Eid" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "El-Mashad" ;
+                    foaf:givenname "S" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Aloyaydi" ;
+                    foaf:givenname "B" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Ibrahim" ;
+                    foaf:givenname "A" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Abdelhamid" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 40555 ;
+    bibo:pageStart 40536 ;
+    bibo:volume "10" ;
+    c4o:hasContent "E.-S. M. El-Kenawy, S. Mirjalili, F. Alassery, Y.-D. Zhang, M. M. Eid, S. Y. El-Mashad, B. A. Aloyaydi, A. Ibrahim, and A. A. Abdelhamid, Novel meta-heuristic algorithm for feature selection, unconstrained functions and engineering problems, IEEE Access, 10 (2022), pp. 40536-40555." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF17,
+        :referenceToBIBREF2,
+        :referenceToBIBREF4,
+        :referenceToBIBREF6,
+        :referenceToBIBREF9,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section17 a doco:Section ;
+    co:firstItem [ co:itemContent :section30 ] ;
+    po:contains :section30,
+        :sectionLabel17 ;
+    po:containsAsHeader :sectionTitle17 .
+
+:section30 a doco:Section ;
+    po:contains :referenceToBIBREF15,
+        :sectionLabel30 ;
+    po:containsAsHeader :sectionTitle30 .
+
+:section41 a doco:Section ;
+    po:contains :referenceToBIBREF18,
+        :referenceToBIBREF7,
+        :sectionLabel41 ;
+    po:containsAsHeader :sectionTitle41 .
+
+:section46 a doco:Section ;
+    po:contains :referenceToBIBREF19,
+        :sectionLabel46 ;
+    po:containsAsHeader :sectionTitle46 .
+
+:section51 a doco:Section ;
+    po:contains :sectionLabel51 ;
+    po:containsAsHeader :sectionTitle51 .
+
+:section56 a doco:Section ;
+    po:contains :sectionLabel56 ;
+    po:containsAsHeader :sectionTitle56 .
+
+:section8 a doco:Section ;
+    co:firstItem [ co:itemContent :section17 ;
+            co:nextItem [ co:itemContent :section41 ;
+                    co:nextItem [ co:itemContent :section46 ;
+                            co:nextItem [ co:itemContent :section51 ] ] ] ] ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF12,
+        :referenceToBIBREF16,
+        :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :referenceToBIBREF5,
+        :referenceToBIBREF8,
+        :section17,
+        :section41,
+        :section46,
+        :section51,
+        :sectionLabel8 ;
+    po:containsAsHeader :sectionTitle8 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Paired: An explainable lightweight android malware detection system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alani" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Awad" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 73228 ;
+    bibo:pageStart 73214 ;
+    bibo:volume "10" ;
+    c4o:hasContent "M. M. Alani and A. I. Awad, Paired: An explainable lightweight android malware detection system, IEEE Access, 10 (2022), pp. 73214-73228." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Journal of Cybersecurity" ] ;
+    dcterms:title "Limiting the undesired impact of cyber weapons: technical requirements and policy implications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bellovin" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Landau" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 68 ;
+    bibo:pageStart 59 ;
+    bibo:volume "3" ;
+    c4o:hasContent "S. M. Bellovin, S. Landau, and H. S. Lin, Limiting the undesired impact of cyber weapons: technical requirements and policy implications, Journal of Cybersecurity, 3 (2017), pp. 59-68." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Information" ] ;
+    dcterms:title "A comprehensive survey on machine learning techniques for android malware detection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kouliaridis" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kambourakis" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:volume "12" ;
+    c4o:hasContent "V. Kouliaridis and G. Kambourakis, A comprehensive survey on machine learning techniques for android malware detection, Information, 12 (2021), p. 185." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Soft Computing" ] ;
+    dcterms:title "Scalable malware detection system using big data and distributed machine learning approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 4003 ;
+    bibo:pageStart 3987 ;
+    bibo:volume "26" ;
+    c4o:hasContent "M. Kumar, Scalable malware detection system using big data and distributed machine learning approach, Soft Computing, 26 (2022), pp. 3987-4003." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "A bayesian probability model for android malware detection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mat" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ab Razak" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kahar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Arif" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Firdaus" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 431 ;
+    bibo:pageStart 424 ;
+    bibo:volume "8" ;
+    c4o:hasContent "S. R. T. Mat, M. F. Ab Razak, M. N. M. Kahar, J. M. Arif, and A. Firdaus, A bayesian probability model for android malware detection, ICT Express, 8 (2022), pp. 424-431." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Iraqi Journal For Computer Science and Mathematics" ] ;
+    dcterms:title "The significance of machine learning and deep learning techniques in cybersecurity: A comprehensive review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mijwil" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Salem" ;
+                    foaf:givenname "I" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ismaeel" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 101 ;
+    bibo:pageStart 87 ;
+    bibo:volume "4" ;
+    c4o:hasContent "M. Mijwil, I. E. Salem, and M. M. Ismaeel, The significance of machine learning and deep learning techniques in cybersecurity: A comprehensive review, Iraqi Journal For Computer Science and Mathematics, 4 (2023), pp. 87-101." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Computer Communications" ] ;
+    dcterms:title "Impact on blockchain-based ai/ml-enabled big data analytics for cognitive internet of things environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mitra" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bera" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Das" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Jamal" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "You" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:pageEnd 185 ;
+    bibo:pageStart 173 ;
+    bibo:volume "197" ;
+    c4o:hasContent "A. Mitra, B. Bera, A. K. Das, S. S. Jamal, and I. You, Impact on blockchain-based ai/ml-enabled big data analytics for cognitive internet of things environment, Computer Communications, 197 (2023), pp. 173-185." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Information Sciences" ] ;
+    dcterms:title "Feature selection for label distribution learning via feature similarity and label correlation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Qian" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xiong" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Shu" ;
+                    foaf:givenname "W" ] ] ;
+    bibo:pageEnd 59 ;
+    bibo:pageStart 38 ;
+    bibo:volume "582" ;
+    c4o:hasContent "W. Qian, Y. Xiong, J. Yang, and W. Shu, Feature selection for label distribution learning via feature similarity and label correlation, Information Sciences, 582 (2022), pp. 38-59." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Cybernetics" ] ;
+    dcterms:title "Cyber code intelligence for android malware detection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Qiu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Han" ;
+                    foaf:givenname "Q.-L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Luo" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Pan" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Nepal" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Xiang" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 627 ;
+    bibo:pageStart 617 ;
+    bibo:volume "53" ;
+    c4o:hasContent "J. Qiu, Q.-L. Han, W. Luo, L. Pan, S. Nepal, J. Zhang, and Y. Xiang, Cyber code intelligence for android malware detection, IEEE Transactions on Cybernetics, 53 (2022), pp. 617-627." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "International Journal of Production Research" ] ;
+    dcterms:title "Big data analytics in manufacturing: a bibliometric analysis of research in the field of business management" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sahoo" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 6821 ;
+    bibo:pageStart 6793 ;
+    bibo:volume "60" ;
+    c4o:hasContent "S. Sahoo, Big data analytics in manufacturing: a bibliometric analysis of research in the field of business management, International Journal of Production Research, 60 (2022), pp. 6793-6821." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Connection Science" ] ;
+    dcterms:title "A swish rnn based customer churn prediction for the telecom industry with a novel feature selection strategy" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sudharsan" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ganesh" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:pageEnd 1876 ;
+    bibo:pageStart 1855 ;
+    bibo:volume "34" ;
+    c4o:hasContent "R. Sudharsan and E. Ganesh, A swish rnn based customer churn prediction for the telecom industry with a novel feature selection strategy, Connection Science, 34 (2022), pp. 1855-1876." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Artificial Intelligence Review" ] ;
+    dcterms:title "A survey on intrusion detection system: feature selection, model, performance measures, application perspective, challenges, and future research directions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Thakkar" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lohiya" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 563 ;
+    bibo:pageStart 453 ;
+    bibo:volume "55" ;
+    c4o:hasContent "A. Thakkar and R. Lohiya, A survey on intrusion detection system: feature selection, model, performance measures, application perspective, challenges, and future research directions, Artificial Intelligence Review, 55 (2022), pp. 453-563." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "Computers & Security" ] ;
+    dcterms:title "Feature representation and selection in malicious code detection methods based on static system calls" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yuan" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Dong" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "An" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 524 ;
+    bibo:pageStart 514 ;
+    bibo:volume "30" ;
+    c4o:hasContent "Y. Ding, X. Yuan, D. Zhou, L. Dong, and Z. An, Feature representation and selection in malicious code detection methods based on static system calls, Computers & Security, 30 (2011), pp. 514-524." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "IET Information Security" ] ;
+    dcterms:title "Learning flow-and graph-based behaviours for android malware detection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shi" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zeng" ;
+                    foaf:givenname "D" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "C" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:givenname "Deepcatra" ] ] ;
+    bibo:pageEnd 130 ;
+    bibo:pageStart 118 ;
+    bibo:volume "17" ;
+    c4o:hasContent "Y. Wu, J. Shi, P. Wang, D. Zeng, and C. Sun, Deepcatra: Learning flow-and graph-based behaviours for android malware detection, IET Information Security, 17 (2023), pp. 118-130." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Computational Intelligence" ] ;
+    dcterms:title "A two-stage deep learning framework for image-based android malware detection and variant classification" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yadav" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Menon" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ravi" ;
+                    foaf:givenname "V" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Vishvanathan" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Pham" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 1771 ;
+    bibo:pageStart 1748 ;
+    bibo:volume "38" ;
+    c4o:hasContent "P. Yadav, N. Menon, V. Ravi, S. Vishvanathan, and T. D. Pham, A two-stage deep learning framework for image-based android malware detection and variant classification, Computational Intelligence, 38 (2022), pp. 1748-1771." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "International Journal of Information Security" ] ;
+    dcterms:title "Security issues in cloud environments: a survey" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fernandes" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Soares" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gomes" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Freire" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Inácio" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 170 ;
+    bibo:pageStart 113 ;
+    bibo:volume "13" ;
+    c4o:hasContent "D. A. Fernandes, L. F. Soares, J. V. Gomes, M. M. Freire, and P. R. Inácio, Security issues in cloud environments: a survey, International Journal of Information Security, 13 (2014), pp. 113-170." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "International Journal of Machine Learning and Cybernetics" ] ;
+    dcterms:title "Ensemble of feature selection algorithms: a multi-criteria decision-making approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hashemi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dowlatshahi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Nezamabadi-Pour" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 69 ;
+    bibo:pageStart 49 ;
+    bibo:volume "13" ;
+    c4o:hasContent "A. Hashemi, M. B. Dowlatshahi, and H. Nezamabadi-pour, Ensemble of feature selection algorithms: a multi-criteria decision-making approach, International Journal of Machine Learning and Cybernetics, 13 (2022), pp. 49-69." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:title "Feature representation and selection in malicious code detection methods based on static system calls" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gong" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Luo" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zhu" ;
+                    foaf:givenname "Q" ] ] ;
+    bibo:pageEnd 3060 ;
+    bibo:pageStart 3055 ;
+    c4o:hasContent "C. Huang, J. Chen, S. Gong, Q. Luo, and Q. Zhu, Feature representation and selection in malicious code detection methods based on static system calls, Journal of Central South University(Science and Technology), 45 (2014), pp. 3055-3060." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of King Saud University-Computer and Information Sciences" ] ;
+    dcterms:title "Stability of feature selection algorithm: A review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khaire" ;
+                    foaf:givenname "U" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dhanalakshmi" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 1073 ;
+    bibo:pageStart 1060 ;
+    bibo:volume "34" ;
+    c4o:hasContent "U. M. Khaire and R. Dhanalakshmi, Stability of feature selection algorithm: A review, Journal of King Saud University- Computer and Information Sciences, 34 (2022), pp. 1060-1073." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "International Journal of Information Security" ] ;
+    dcterms:title "Mapas: a practical deep learning-based android malware detection system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ban" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ko" ;
+                    foaf:givenname "E" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Cho" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Yi" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 738 ;
+    bibo:pageStart 725 ;
+    bibo:volume "21" ;
+    c4o:hasContent "J. Kim, Y. Ban, E. Ko, H. Cho, and J. H. Yi, Mapas: a practical deep learning-based android malware detection system, International Journal of Information Security, 21 (2022), pp. 725-738." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Information Forensics and Security" ] ;
+    dcterms:title "A multimodal deep learning method for android malware detection using various features" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kang" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Rho" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sezer" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Im" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:pageEnd 788 ;
+    bibo:pageStart 773 ;
+    bibo:volume "14" ;
+    c4o:hasContent "T. Kim, B. Kang, M. Rho, S. Sezer, and E. G. Im, A multimodal deep learning method for android malware detection using various features, IEEE Transactions on Information Forensics and Security, 14 (2018), pp. 773-788." .
+

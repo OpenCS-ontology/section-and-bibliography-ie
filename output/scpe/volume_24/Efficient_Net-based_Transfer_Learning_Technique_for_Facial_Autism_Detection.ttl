@@ -1,0 +1,1042 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Autism spectrum disorder"^^xsd:string,
+        "Convolutional Neural Network (CNN)"^^xsd:string,
+        "EfficientNet"^^xsd:string,
+        "Facial Images"^^xsd:string,
+        "Transfer Learning"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "Efficient Net-based Transfer Learning Technique for Facial Autism Detection"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Autism Spectrum Disorder is a neurological disorder in which an individual faces life-long effects in communication and interaction with others. Nowadays, the Autism Spectrum disorder ratio is increasing drastically more than ever before. Autism can be identified at all developmental levels as a ”behavioural condition,” and its symptoms often arise between the ages of two and four. The ASD issue starts during puberty and persists through adolescence and adulthood. Children with ASD use both nonverbal and verbal behaviour to communicate, and they struggle with joint attention and social reciprocity. Children with autism are frequently socially isolated as a result of these problems. Through very expensive and time-consuming screening exams, autism spectrum features can be identified. As one of the possible mirrors of the brain, children’s faces can be utilised as a biomarker and as a quick and convenient technique for the early identification of ASD. An effective, genuine, and automatic method of face-based spectrum disorder identification is required. In this study we compare the transfer learning approach used for autism identification with the convolutional neural network (CNN)-based efficient-net strategy to identify autistic children using facial images. We used an open-source Kaggle dataset and evaluated the model performance in terms of accuracy, confusion matrix, precision, recall, and F1 measure. Efficient shows an accuracy of 97% on the benchmark dataset and beats the baseline technique of transfer learning-based approaches. This study can be used to help medical professionals validate their initial screening procedures for finding youngsters with ASD disease."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 560 ;
+    prism:pageCount 9 ;
+    prism:startingPage 551 ;
+    datacite:doi "10.12694/scpe.v24i3.2233"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2233"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2233> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Saeed Mian"^^xsd:string ;
+    foaf:givenName "Tariq"^^xsd:string ;
+    foaf:name "Tariq Saeed Mian"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section10 ;
+                    co:nextItem [ co:itemContent :section14 ] ] ] ;
+    po:contains :section0,
+        :section10,
+        :section14 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Department of IS, College of Computer Science and Engineering Taibah University, Madinah Almunwarah, Saudi Arabia"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[27]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[28]" .
+
+:referenceToBIBREF26 a deo:Reference ;
+    dcterms:references :BIBREF26 ;
+    c4o:hasContent "[29]" .
+
+:referenceToBIBREF27 a deo:Reference ;
+    dcterms:references :BIBREF27 ;
+    c4o:hasContent "[30]" .
+
+:referenceToBIBREF28 a deo:Reference ;
+    dcterms:references :BIBREF28 ;
+    c4o:hasContent "[31]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[10]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[11]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel1 a doco:SectionLabel ;
+    c4o:hasContent "1.1." .
+
+:sectionLabel10 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel11 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionLabel12 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel13 a doco:SectionLabel ;
+    c4o:hasContent "3.3." .
+
+:sectionLabel15 a doco:SectionLabel ;
+    c4o:hasContent "3.4." .
+
+:sectionLabel16 a doco:SectionLabel ;
+    c4o:hasContent "3.5." .
+
+:sectionLabel18 a doco:SectionLabel ;
+    c4o:hasContent "3.7." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction" .
+
+:sectionTitle1 a doco:SectionTitle ;
+    c4o:hasContent "Motivation. ASD (ASD" .
+
+:sectionTitle10 a doco:SectionTitle ;
+    c4o:hasContent "Proposed Methodology." .
+
+:sectionTitle11 a doco:SectionTitle ;
+    c4o:hasContent "Dataset Description. Dataset Description. In this paper, we use the open-source dataset available on Kaggle [1]" .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "Pre-processing." .
+
+:sectionTitle13 a doco:SectionTitle ;
+    c4o:hasContent "Feature Extraction and Classification." .
+
+:sectionTitle14 a doco:SectionTitle ;
+    c4o:hasContent "• Max Pooling Layer" .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "Method of Instruction." .
+
+:sectionTitle16 a doco:SectionTitle ;
+    c4o:hasContent "Rate of Learning." .
+
+:sectionTitle18 a doco:SectionTitle ;
+    c4o:hasContent "Loss Function." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Detecting autism from facial image" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jahanara" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Padmanabhan" ;
+                    foaf:givenname "S" ] ] ;
+    c4o:hasContent "S. Jahanara and S. Padmanabhan, Detecting autism from facial image, (2021)." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF25 ;
+                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF26 ;
+                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF27 ;
+                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF28 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF26,
+        :BIBREF27,
+        :BIBREF28,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    co:firstItem [ co:itemContent :section1 ] ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF21,
+        :referenceToBIBREF25,
+        :referenceToBIBREF4,
+        :referenceToBIBREF6,
+        :section1,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section1 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF2,
+        :referenceToBIBREF20,
+        :referenceToBIBREF22,
+        :referenceToBIBREF23,
+        :referenceToBIBREF24,
+        :referenceToBIBREF26,
+        :referenceToBIBREF27,
+        :referenceToBIBREF3,
+        :referenceToBIBREF5,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :sectionLabel1 ;
+    po:containsAsHeader :sectionTitle1 .
+
+:section10 a doco:Section ;
+    co:firstItem [ co:itemContent :section11 ;
+            co:nextItem [ co:itemContent :section12 ;
+                    co:nextItem [ co:itemContent :section13 ] ] ] ;
+    po:contains :section11,
+        :section12,
+        :section13,
+        :sectionLabel10 ;
+    po:containsAsHeader :sectionTitle10 .
+
+:section11 a doco:Section ;
+    po:contains :sectionLabel11 ;
+    po:containsAsHeader :sectionTitle11 .
+
+:section12 a doco:Section ;
+    po:contains :sectionLabel12 ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section13 a doco:Section ;
+    po:contains :sectionLabel13 ;
+    po:containsAsHeader :sectionTitle13 .
+
+:section14 a doco:Section ;
+    co:firstItem [ co:itemContent :section15 ;
+            co:nextItem [ co:itemContent :section16 ;
+                    co:nextItem [ co:itemContent :section18 ] ] ] ;
+    po:contains :referenceToBIBREF28,
+        :section15,
+        :section16,
+        :section18 ;
+    po:containsAsHeader :sectionTitle14 .
+
+:section15 a doco:Section ;
+    po:contains :sectionLabel15 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section16 a doco:Section ;
+    po:contains :sectionLabel16 ;
+    po:containsAsHeader :sectionTitle16 .
+
+:section18 a doco:Section ;
+    po:contains :sectionLabel18 ;
+    po:containsAsHeader :sectionTitle18 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Computational and Mathematical Methods in Medicine" ] ;
+    dcterms:title "Facial features detection system to identify children with autism spectrum disorder: deep learning models" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ahmed" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Al-Madani" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Aldhyani" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Jadhav" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Alzahrani" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Alzahrani" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Althobaiti" ;
+                    foaf:givenname "M" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Alassery" ;
+                    foaf:givenname "F" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Alshaflut" ;
+                    foaf:givenname "A" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Alzahrani" ;
+                    foaf:givenname "N" ] ] ;
+    c4o:hasContent "Z. A. Ahmed, T. H. Aldhyani, M. E. Jadhav, M. Y. Alzahrani, M. E. Alzahrani, M. M. Althobaiti, F. Alassery, A. Alshaflut, N. M. Alzahrani, and A. M. Al-Madani, Facial features detection system to identify children with autism spectrum disorder: deep learning models, Computational and Mathematical Methods in Medicine, 2022 (2022)." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Computational Intelligence and Neuroscience" ] ;
+    dcterms:title "Classification and detection of autism spectrum disorder based on deep learning algorithms" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alsaade" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Alzahrani" ;
+                    foaf:givenname "M" ] ] ;
+    c4o:hasContent "F. W. Alsaade and M. S. Alzahrani, Classification and detection of autism spectrum disorder based on deep learning algorithms, Computational Intelligence and Neuroscience, 2022 (2022)." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "Human brain mapping" ] ;
+    dcterms:title "Identification of infants at high-risk for autism spectrum disorder using multiparameter multiscale white matter connectivity networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jin" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wee" ;
+                    foaf:givenname "C.-Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shi" ;
+                    foaf:givenname "F" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Thung" ;
+                    foaf:givenname "K.-H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ni" ;
+                    foaf:givenname "D" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Yap" ;
+                    foaf:givenname "P.-T" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Shen" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 4896 ;
+    bibo:pageStart 4880 ;
+    bibo:volume "36" ;
+    c4o:hasContent "Y. Jin, C.-Y. Wee, F. Shi, K.-H. Thung, D. Ni, P.-T. Yap, and D. Shen, Identification of infants at high-risk for autism spectrum disorder using multiparameter multiscale white matter connectivity networks, Human brain mapping, 36 (2015), pp. 4880-4896." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Diagnostics" ] ;
+    dcterms:title "Ensemble model for diagnostic classification of alzheimer's disease based on brain anatomical magnetic resonance imaging" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kaushik" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chowdhary" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Srivastava" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:volume "12" ;
+    c4o:hasContent "Y. F. Khan, B. Kaushik, C. L. Chowdhary, and G. Srivastava, Ensemble model for diagnostic classification of alzheimer's disease based on brain anatomical magnetic resonance imaging, Diagnostics, 12 (2022), p. 3193." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Computers in Biology and Medicine" ] ;
+    dcterms:title "Deep learning for neuroimaging-based diagnosis and rehabilitation of autism spectrum disorder: a review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khodatars" ;
+                    foaf:givenname "M" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Kong" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shoeibi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sadeghi" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ghaasemi" ;
+                    foaf:givenname "N" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Jafari" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Moridian" ;
+                    foaf:givenname "P" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Khadem" ;
+                    foaf:givenname "A" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Alizadehsani" ;
+                    foaf:givenname "R" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Zare" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "139" ;
+    c4o:hasContent "M. Khodatars, A. Shoeibi, D. Sadeghi, N. Ghaasemi, M. Jafari, P. Moridian, A. Khadem, R. Alizadehsani, A. Zare, Y. Kong, et al., Deep learning for neuroimaging-based diagnosis and rehabilitation of autism spectrum disorder: a review, Computers in Biology and Medicine, 139 (2021), p. 104949." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "2021 IEEE International Conference on Computation System and Information Technology for Sustainable Solutions (CSITSS)" ] ;
+    dcterms:title "Detection of autistic individuals using facial images and deep learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khosla" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ramachandra" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chaitra" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 5 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Y. Khosla, P. Ramachandra, and N. Chaitra, Detection of autistic individuals using facial images and deep learning, in 2021 IEEE International Conference on Computation System and Information Technology for Sustainable Solutions (CSITSS), IEEE, 2021, pp. 1-5." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "2019 IEEE International Conference on Image Processing" ] ;
+    dcterms:title "A facial affect analysis system for autism spectrum disorder" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mehta" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Aneja" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Foster" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ventola" ;
+                    foaf:givenname "P" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Shic" ;
+                    foaf:givenname "F" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Shapiro" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 4553 ;
+    bibo:pageStart 4549 ;
+    c4o:hasContent "B. Li, S. Mehta, D. Aneja, C. Foster, P. Ventola, F. Shic, and L. Shapiro, A facial affect analysis system for autism spectrum disorder, in 2019 IEEE International Conference on Image Processing (ICIP), IEEE, 2019, pp. 4549-4553." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Brain sciences" ] ;
+    dcterms:title "The neurochemistry of autism" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Marotta" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Risoleo" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Messina" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Parisi" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Carotenuto" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Vetri" ;
+                    foaf:givenname "L" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Roccella" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "R. Marotta, M. C. Risoleo, G. Messina, L. Parisi, M. Carotenuto, L. Vetri, and M. Roccella, The neurochemistry of autism, Brain sciences, 10 (2020), p. 163." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Seminars in Pediatric Neurology" ] ;
+    dcterms:title "Early detection and diagnosis of autism spectrum disorder: why is it so difficult?" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mccarty" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Frye" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:volume "35" ;
+    c4o:hasContent "P. McCarty and R. E. Frye, Early detection and diagnosis of autism spectrum disorder: why is it so difficult?, in Seminars in Pediatric Neurology, vol. 35, Elsevier, 2020, p. 100831." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "2021 8th international conference on smart computing and communications (icscc)" ] ;
+    dcterms:title "Autism spectrum disorder detection using surface morphometric feature of smri in machine learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mishra" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pati" ;
+                    foaf:givenname "U" ] ] ;
+    bibo:pageEnd 20 ;
+    bibo:pageStart 17 ;
+    c4o:hasContent "M. Mishra and U. C. Pati, Autism spectrum disorder detection using surface morphometric feature of smri in machine learning, in 2021 8th international conference on smart computing and communications (icscc), IEEE, 2021, pp. 17-20." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Molecular psychiatry" ] ;
+    dcterms:title "Autism spectrum heterogeneity: fact or artifact?" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mottron" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bzdok" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 3185 ;
+    bibo:pageStart 3178 ;
+    bibo:volume "25" ;
+    c4o:hasContent "L. Mottron and D. Bzdok, Autism spectrum heterogeneity: fact or artifact?, Molecular psychiatry, 25 (2020), pp. 3178- 3185." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Brain Sciences" ] ;
+    dcterms:title "Identification of autism in children using static facial features and deep neural networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mujeeb Rahman" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Subashini" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:volume "12" ;
+    c4o:hasContent "K. Mujeeb Rahman and M. M. Subashini, Identification of autism in children using static facial features and deep neural networks, Brain Sciences, 12 (2022), p. 94." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Deepmist: Towards deep learning assisted mist computing framework for managing healthcare big data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bebortta" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tripathy" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Basheer" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Chowdhary" ;
+                    foaf:givenname "C" ] ] ;
+    c4o:hasContent "S. Bebortta, S. S. Tripathy, S. Basheer, and C. L. Chowdhary, Deepmist: Towards deep learning assisted mist computing framework for managing healthcare big data, IEEE Access, (2023)." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "Journal of Child Psychology and Psychiatry" ] ;
+    dcterms:title "Advancing early detection of autism spectrum disorder by applying an integrated two-stage screening approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Oosterling" ;
+                    foaf:givenname "I" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Buitelaar" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wensing" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Swinkels" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Van Der" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Gaag" ;
+                    foaf:givenname "J" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Visser" ;
+                    foaf:givenname "T" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Woudenberg" ;
+                    foaf:givenname "R" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Minderaa" ;
+                    foaf:givenname "M.-P" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Steenhuis" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 258 ;
+    bibo:pageStart 250 ;
+    bibo:volume "51" ;
+    c4o:hasContent "I. J. Oosterling, M. Wensing, S. H. Swinkels, R. J. Van Der Gaag, J. C. Visser, T. Woudenberg, R. Minderaa, M.- P. Steenhuis, and J. K. Buitelaar, Advancing early detection of autism spectrum disorder by applying an integrated two-stage screening approach, Journal of Child Psychology and Psychiatry, 51 (2010), pp. 250-258." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "An efficient and privacy-preserving scheme for disease prediction in modern healthcare systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Padinjappurathu Gopalan" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chowdhary" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Iwendi" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Farid" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ramasamy" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:volume "22" ;
+    c4o:hasContent "S. Padinjappurathu Gopalan, C. L. Chowdhary, C. Iwendi, M. A. Farid, and L. K. Ramasamy, An efficient and privacy-preserving scheme for disease prediction in modern healthcare systems, Sensors, 22 (2022), p. 5574." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Medical image analysis" ] ;
+    dcterms:title "Disease prediction using graph convolutional networks: application to autism spectrum disorder and alzheimer's disease" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Parisot" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ktena" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ferrante" ;
+                    foaf:givenname "E" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Guerrero" ;
+                    foaf:givenname "R" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Glocker" ;
+                    foaf:givenname "B" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Rueckert" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 130 ;
+    bibo:pageStart 117 ;
+    bibo:volume "48" ;
+    c4o:hasContent "S. Parisot, S. I. Ktena, E. Ferrante, M. Lee, R. Guerrero, B. Glocker, and D. Rueckert, Disease prediction using graph convolutional networks: application to autism spectrum disorder and alzheimer's disease, Medical image analysis, 48 (2018), pp. 117-130." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "2022 International Joint Conference on Neural Networks (IJCNN)" ] ;
+    dcterms:title "Deep learning approach for classification and interpretation of autism spectrum disorder" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Prasad" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Khare" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Dadi" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Vinod" ;
+                    foaf:givenname "P" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Surampudi" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 8 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "P. K. C. Prasad, Y. Khare, K. Dadi, P. Vinod, and B. R. Surampudi, Deep learning approach for classification and interpretation of autism spectrum disorder, in 2022 International Joint Conference on Neural Networks (IJCNN), IEEE, 2022, pp. 1-8." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "Developmental Medicine & Child Neurology" ] ;
+    dcterms:title "Melatonin in autism spectrum disorders: a systematic review and meta-analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Rossignol" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Frye" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 792 ;
+    bibo:pageStart 783 ;
+    bibo:volume "53" ;
+    c4o:hasContent "D. A. Rossignol and R. E. Frye, Melatonin in autism spectrum disorders: a systematic review and meta-analysis, Devel- opmental Medicine & Child Neurology, 53 (2011), pp. 783-792." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Cognitive Computation" ] ;
+    dcterms:title "Autism ai: a new autism screening system based on artificial intelligence" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shahamiri" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Thabtah" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 777 ;
+    bibo:pageStart 766 ;
+    bibo:volume "12" ;
+    c4o:hasContent "S. R. Shahamiri and F. Thabtah, Autism ai: a new autism screening system based on artificial intelligence, Cognitive Computation, 12 (2020), pp. 766-777." .
+
+:BIBREF26 a deo:BibliographicReference ;
+    dcterms:title "Src: Superior robustness of covid-19 detection from noisy cough data using gfcc" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Swain" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chowdhary" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Alsaeedi" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "B. K. Swain, M. Z. Khan, C. L. Chowdhary, and A. Alsaeedi, Src: Superior robustness of covid-19 detection from noisy cough data using gfcc." .
+
+:BIBREF27 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Journal of Autism and Developmental Disorders" ] ;
+    dcterms:title "Understanding hong kong chinese families' experiences of an autism/asd diagnosis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tait" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Fung" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hu" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sweller" ;
+                    foaf:givenname "N" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "W" ] ] ;
+    bibo:pageEnd 1183 ;
+    bibo:pageStart 1164 ;
+    bibo:volume "46" ;
+    c4o:hasContent "K. Tait, F. Fung, A. Hu, N. Sweller, and W. Wang, Understanding hong kong chinese families' experiences of an autism/asd diagnosis, Journal of Autism and Developmental Disorders, 46 (2016), pp. 1164-1183." .
+
+:BIBREF28 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "International conference on machine learning" ] ;
+    dcterms:title "Rethinking model scaling for convolutional neural networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Le" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:givenname "Efficientnet" ] ] ;
+    bibo:pageEnd 6114 ;
+    bibo:pageStart 6105 ;
+    c4o:hasContent "M. Tan and Q. Le, Efficientnet: Rethinking model scaling for convolutional neural networks, in International conference on machine learning, PMLR, 2019, pp. 6105-6114." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Disability & Society" ] ;
+    dcterms:title "autism is me\": an investigation of how autistic individuals make sense of autism and stigma" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Botha" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dibb" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Frost" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 453 ;
+    bibo:pageStart 427 ;
+    bibo:volume "37" ;
+    c4o:hasContent "M. Botha, B. Dibb, and D. M. Frost, \" autism is me\": an investigation of how autistic individuals make sense of autism and stigma, Disability & Society, 37 (2022), pp. 427-453." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "The Journal of Pediatrics" ] ;
+    dcterms:title "Use of a digital modified checklist for autism in toddlers-revised with follow-up to improve quality of screening for autism" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Campbell" ;
+                    foaf:givenname "K" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Baker" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Carpenter" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Espinosa" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hashemi" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Qiu" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Tepper" ;
+                    foaf:givenname "M" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Calderbank" ;
+                    foaf:givenname "R" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Sapiro" ;
+                    foaf:givenname "G" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Egger" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 139 ;
+    bibo:pageStart 133 ;
+    bibo:volume "183" ;
+    c4o:hasContent "K. Campbell, K. L. Carpenter, S. Espinosa, J. Hashemi, Q. Qiu, M. Tepper, R. Calderbank, G. Sapiro, H. L. Egger, J. P. Baker, et al., Use of a digital modified checklist for autism in toddlers-revised with follow-up to improve quality of screening for autism, The Journal of Pediatrics, 183 (2017), pp. 133-139." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "Brain sciences" ] ;
+    dcterms:title "Epidemiology of autism spectrum disorders: a review of worldwide prevalence estimates since" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chiarotti" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Venerosi" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "F. Chiarotti and A. Venerosi, Epidemiology of autism spectrum disorders: a review of worldwide prevalence estimates since 2014, Brain sciences, 10 (2020), p. 274." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Artificial intelligence and internet of things in screening and management of autism spectrum disorder" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ghosh" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Al Banna" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Rahman" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kaiser" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Mahmud" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Hosen" ;
+                    foaf:givenname "A" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Cho" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:volume "74" ;
+    c4o:hasContent "T. Ghosh, M. H. Al Banna, M. S. Rahman, M. S. Kaiser, M. Mahmud, A. S. Hosen, and G. H. Cho, Artificial intelligence and internet of things in screening and management of autism spectrum disorder, Sustainable Cities and Society, 74 (2021), p. 103189." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "2018 IEEE 9th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)" ] ;
+    dcterms:title "A facial expression recognition approach using dcnn for autistic children to identify emotions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Haque" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Valles" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 551 ;
+    bibo:pageStart 546 ;
+    c4o:hasContent "M. I. U. Haque and D. Valles, A facial expression recognition approach using dcnn for autistic children to identify emotions, in 2018 IEEE 9th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON), IEEE, 2018, pp. 546-551." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Frontiers in Computational Neuroscience" ] ;
+    dcterms:title "Deep learning for autism diagnosis and facial analysis in children" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hosseini" ;
+                    foaf:givenname "M.-P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Beary" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hadsell" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Messersmith" ;
+                    foaf:givenname "R" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Soltanian-Zadeh" ;
+                    foaf:givenname "H" ] ] ;
+    c4o:hasContent "M.-P. Hosseini, M. Beary, A. Hadsell, R. Messersmith, and H. Soltanian-Zadeh, Deep learning for autism diagnosis and facial analysis in children, Frontiers in Computational Neuroscience, (2022), p. 119." .
+

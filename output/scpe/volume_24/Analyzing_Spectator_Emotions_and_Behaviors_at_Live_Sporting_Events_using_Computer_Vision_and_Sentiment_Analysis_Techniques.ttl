@@ -1,0 +1,652 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Audience"^^xsd:string,
+        "Computerized analysis"^^xsd:string,
+        "Facial expression"^^xsd:string,
+        "emotions and behaviours"^^xsd:string,
+        "sentiment analysis techniques"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "Analyzing Spectator Emotions and Behaviors at Live Sporting Events using Computer Vision and Sentiment Analysis Techniques"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "It makes the reflection of humans’ emotions and intentions from watching live sports events. Watching the event keeps people entertained and changes their mindset from being stressed to joyful. Watching sports events encourages the athletes and the sports persons to participate. Reflection of the live sports event consists of many crowds as the event’s audience. This crowd’s emotions and intentions directly impact the changes in the event’s performance. It provides positive energy to the demotivated sports participants, making them perform better in the event. This study reflects the understanding of the facial emotions of the spectators from the live event. Then, they are decoded in the computer programming language, and an outcome is provided. It understands the emotions and sentiments of the people that affect the event’s environment. The representation by the computer analysis makes the understanding of the changes provided by the spectators of the live event. The effect of the audience’s emotions and behaviors in the crowd are computed by the utilization of computer software analysis and the effect of those reactions in the event. The collection of data is taken from the secondary sources of data collection, including the collection of information from the article and the journal based on the topic. The gathered data is analyzed by comparing them with their reaction and expressions in the live sports event."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 486 ;
+    prism:pageCount 11 ;
+    prism:startingPage 475 ;
+    datacite:doi "10.12694/scpe.v24i3.2342"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2342"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2342> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Xu"^^xsd:string ;
+    foaf:givenName "Yang"^^xsd:string ;
+    foaf:name "Yang Xu"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section1 ;
+            co:nextItem [ co:itemContent :section3 ;
+                    co:nextItem [ co:itemContent :section7 ;
+                            co:nextItem [ co:itemContent :section12 ;
+                                    co:nextItem [ co:itemContent :section13 ;
+                                            co:nextItem [ co:itemContent :section15 ;
+                                                    co:nextItem [ co:itemContent :section18 ;
+                                                            co:nextItem [ co:itemContent :section20 ;
+                                                                    co:nextItem [ co:itemContent :section21 ;
+                                                                            co:nextItem [ co:itemContent :section26 ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section1,
+        :section12,
+        :section13,
+        :section15,
+        :section18,
+        :section20,
+        :section21,
+        :section26,
+        :section3,
+        :section7 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "School of Physical Education, University of Sanya, Sanya, 572000 China"^^xsd:string .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel1 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel13 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel15 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel18 a doco:SectionLabel ;
+    c4o:hasContent "7." .
+
+:sectionLabel20 a doco:SectionLabel ;
+    c4o:hasContent "8." .
+
+:sectionLabel21 a doco:SectionLabel ;
+    c4o:hasContent "9." .
+
+:sectionLabel26 a doco:SectionLabel ;
+    c4o:hasContent "11." .
+
+:sectionLabel3 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel7 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionTitle1 a doco:SectionTitle ;
+    c4o:hasContent "Enhancing Viewer Experience: Emotion recognition enables event organizers, broadcasters, and content creators to tailor their offerings based on the audience's emotional responses" .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "Necessity" .
+
+:sectionTitle13 a doco:SectionTitle ;
+    c4o:hasContent "Impact of crowd intention in making changes in the live sports event." .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "Challenges faced due to the changes in emotions and expression of the crowd in the live sports event." .
+
+:sectionTitle18 a doco:SectionTitle ;
+    c4o:hasContent "Computer-based facial expression analysis for examining the event's audience intentions." .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "Methods of computer analysis for the examination of the facial expression, emotion and intention of Human." .
+
+:sectionTitle21 a doco:SectionTitle ;
+    c4o:hasContent "Impact of computer face expression analysis on making crucial changes in the environment" .
+
+:sectionTitle26 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle3 a doco:SectionTitle ;
+    c4o:hasContent "Entertainment and Sports: In live sports events, emotion recognition can be used to gauge audience reactions to different game situations, players' performances, and overall event dynamics" .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "Encouragement by the crowd in the sports event." .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "European Sport Management Quarterly" ] ;
+    dcterms:title "Service quality and its effects on consumer outcomes: a meta-analytic review in spectator sport" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Biscaia" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yoshida" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 921 ;
+    bibo:pageStart 897 ;
+    bibo:volume "23" ;
+    c4o:hasContent "R. Biscaia, M. Yoshida, and Y. Kim, Service quality and its effects on consumer outcomes: a meta-analytic review in spectator sport, European Sport Management Quarterly, 23 (2023), pp. 897-921." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "International Journal of Sports Marketing and Sponsorship" ] ;
+    dcterms:title "The transformative impact of big data applications in sport marketing: Current and future directions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mamo" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Su" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Andrew" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 611 ;
+    bibo:pageStart 594 ;
+    bibo:volume "23" ;
+    c4o:hasContent "Y. Mamo, Y. Su, and D. P. Andrew, The transformative impact of big data applications in sport marketing: Current and future directions, International Journal of Sports Marketing and Sponsorship, 23 (2022), pp. 594-611." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Communication & Sport" ] ;
+    dcterms:title "Twitter-based birging: Big data analysis of english national team fans during the 2018 fifa world cup" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Billings" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yu" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 345 ;
+    bibo:pageStart 317 ;
+    bibo:volume "8" ;
+    c4o:hasContent "M. Fan, A. Billings, X. Zhu, and P. Yu, Twitter-based birging: Big data analysis of english national team fans during the 2018 fifa world cup, Communication & Sport, 8 (2020), pp. 317-345." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "PalArch's Journal of Archaeology of Egypt/Egyptology" ] ;
+    dcterms:title "analysis of opinionated texts on ipl 2020 matches using social media data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kumaresh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shah" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sathyanarayan" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 12577 ;
+    bibo:pageStart 12564 ;
+    bibo:volume "17" ;
+    c4o:hasContent "S. Kumaresh, M. Shah, and S. Sathyanarayan, analysis of opinionated texts on ipl 2020 matches using social media data, PalArch's Journal of Archaeology of Egypt/Egyptology, 17 (2020), pp. 12564-12577." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:section1 a doco:Section ;
+    po:contains :sectionLabel1 ;
+    po:containsAsHeader :sectionTitle1 .
+
+:section12 a doco:Section ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section13 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF3,
+        :referenceToBIBREF7,
+        :sectionLabel13 ;
+    po:containsAsHeader :sectionTitle13 .
+
+:section15 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF16,
+        :referenceToBIBREF4,
+        :sectionLabel15 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section18 a doco:Section ;
+    po:contains :referenceToBIBREF3,
+        :referenceToBIBREF8,
+        :sectionLabel18 ;
+    po:containsAsHeader :sectionTitle18 .
+
+:section20 a doco:Section ;
+    po:contains :referenceToBIBREF11,
+        :referenceToBIBREF6,
+        :sectionLabel20 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section21 a doco:Section ;
+    po:contains :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF17,
+        :sectionLabel21 ;
+    po:containsAsHeader :sectionTitle21 .
+
+:section26 a doco:Section ;
+    po:contains :sectionLabel26 ;
+    po:containsAsHeader :sectionTitle26 .
+
+:section3 a doco:Section ;
+    po:contains :sectionLabel3 ;
+    po:containsAsHeader :sectionTitle3 .
+
+:section7 a doco:Section ;
+    po:contains :referenceToBIBREF15,
+        :referenceToBIBREF2,
+        :sectionLabel7 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of Environmental Research and Public Health" ] ;
+    dcterms:title "Exploring the emerging domain of research on video game live streaming in web of science: State of the art, changes and trends" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cabeza-Ramírez" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Fuentes-Garcia" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Muñoz-Fernandez" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:volume "18" ;
+    c4o:hasContent "L. J. Cabeza-Ramírez, F. J. Fuentes-Garcia, and G. A. Muñoz-Fernandez, Exploring the emerging domain of research on video game live streaming in web of science: State of the art, changes and trends, International Journal of Environmental Research and Public Health, 18 (2021), p. 2917." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Human-Machine Systems" ] ;
+    dcterms:title "Designing wearable systems for sports: a review of trends and opportunities in human-computer interaction" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mencarini" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rapp" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tirabeni" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zancanaro" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 325 ;
+    bibo:pageStart 314 ;
+    bibo:volume "49" ;
+    c4o:hasContent "E. Mencarini, A. Rapp, L. Tirabeni, and M. Zancanaro, Designing wearable systems for sports: a review of trends and opportunities in human-computer interaction, IEEE Transactions on Human-Machine Systems, 49 (2019), pp. 314-325." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "ISPRS International Journal of Geo-Information" ] ;
+    dcterms:title "Can live streaming save the tourism industry from a pandemic? a study of social media" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Qiu" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zuo" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "Q. Qiu, Y. Zuo, and M. Zhang, Can live streaming save the tourism industry from a pandemic? a study of social media, ISPRS International Journal of Geo-Information, 10 (2021), p. 595." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "A survey on yogic posture recognition" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Rajendran" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sethuraman" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 11223 ;
+    bibo:pageStart 11183 ;
+    bibo:volume "11" ;
+    c4o:hasContent "A. K. Rajendran and S. C. Sethuraman, A survey on yogic posture recognition, IEEE Access, 11 (2023), pp. 11183-11223." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal Yang Xu of Exercise and Health Science" ] ;
+    dcterms:title "Modelling cyber-aggression of basketball spectators (dematel technique)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shariati Feizabadi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mousavi" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 52 ;
+    bibo:pageStart 35 ;
+    bibo:volume "1" ;
+    c4o:hasContent "M. Shariati Feizabadi and N. Mousavi, Modelling cyber-aggression of basketball spectators (dematel technique), Journal Yang Xu of Exercise and Health Science, 1 (2021), pp. 35-52." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Internet Research" ] ;
+    dcterms:title "Digital athletics in analogue stadiums: Comparing gratifications for engagement between live attendance and online esports spectating" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sjöblom" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Macey" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hamari" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 735 ;
+    bibo:pageStart 713 ;
+    bibo:volume "30" ;
+    c4o:hasContent "M. Sjöblom, J. Macey, and J. Hamari, Digital athletics in analogue stadiums: Comparing gratifications for engagement between live attendance and online esports spectating, Internet Research, 30 (2020), pp. 713-735." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "The impact of online sports watching atmosphere on viewers' continuous watching intention" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Du" ;
+                    foaf:givenname "Z" ] ] ;
+    c4o:hasContent "T. Wang and Z. Du, The impact of online sports watching atmosphere on viewers' continuous watching intention, (2022)." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "European Sport Management Quarterly" ] ;
+    dcterms:title "Identifying critical factors in sport consumption decision making of millennial sport fans: mixed-methods approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yim" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Byon" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Baker" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 503 ;
+    bibo:pageStart 484 ;
+    bibo:volume "21" ;
+    c4o:hasContent "B. H. Yim, K. K. Byon, T. A. Baker, and J. J. Zhang, Identifying critical factors in sport consumption decision making of millennial sport fans: mixed-methods approach, European Sport Management Quarterly, 21 (2021), pp. 484-503." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Theoretical and Applied Electronic Commerce Research" ] ;
+    dcterms:title "Virtual reality experience of mega sports events: A technology acceptance study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Capasa" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zulauf" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wagner" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 703 ;
+    bibo:pageStart 686 ;
+    bibo:volume "17" ;
+    c4o:hasContent "L. Capasa, K. Zulauf, and R. Wagner, Virtual reality experience of mega sports events: A technology acceptance study, Journal of Theoretical and Applied Electronic Commerce Research, 17 (2022), pp. 686-703." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems" ] ;
+    dcterms:title "iball: Augmenting basketball videos with gazemoderated embedded visualizations" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shan" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Beyer" ;
+                    foaf:givenname "J" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Xia" ;
+                    foaf:givenname "H" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Pfister" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 18 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Z. Chen, Q. Yang, J. Shan, T. Lin, J. Beyer, H. Xia, and H. Pfister, iball: Augmenting basketball videos with gaze- moderated embedded visualizations, in Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems, 2023, pp. 1-18." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Research, Society and Development" ] ;
+    dcterms:title "Let's play a new game: the drivers of esports consumption" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Santos" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Petroll" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Boeing" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Scussel" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pages "40710515188--e40710515188" ;
+    bibo:volume "10" ;
+    c4o:hasContent "R. L. dos Santos, M. d. L. M. Petroll, R. Boeing, and F. Scussel, Let's play a new game: the drivers of esports consumption, Research, Society and Development, 10 (2021), pp. e40710515188-e40710515188." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Sport Management" ] ;
+    dcterms:title "Do consumer perceptions of tanking impact attendance at national basketball association games? a sentiment analysis approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gong" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Watanabe" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Soebbing" ;
+                    foaf:givenname "B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Brown" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Nagel" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 265 ;
+    bibo:pageStart 254 ;
+    bibo:volume "35" ;
+    c4o:hasContent "H. Gong, N. M. Watanabe, B. P. Soebbing, M. T. Brown, and M. S. Nagel, Do consumer perceptions of tanking impact attendance at national basketball association games? a sentiment analysis approach, Journal of Sport Management, 35 (2021), pp. 254-265." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Technium Soc. Sci. J" ] ;
+    dcterms:title "Behavioral analysis of personality, branding and emotional state in e-sports" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Halkiopoulos" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gkintoni" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Antonopoulou" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Skouroliakos" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:volume "24" ;
+    c4o:hasContent "C. Halkiopoulos, E. Gkintoni, H. Antonopoulou, and L. Skouroliakos, Behavioral analysis of personality, branding and emotional state in e-sports, Technium Soc. Sci. J., 24 (2021), p. 434." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Sustainability" ] ;
+    dcterms:title "Professional clubs as platforms in multi-sided markets in times of covid-19: the role of spectators and atmosphere in live football" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Herold" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Boronczyk" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Breuer" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:volume "13" ;
+    c4o:hasContent "E. Herold, F. Boronczyk, and C. Breuer, Professional clubs as platforms in multi-sided markets in times of covid-19: the role of spectators and atmosphere in live football, Sustainability, 13 (2021), p. 2312." .
+

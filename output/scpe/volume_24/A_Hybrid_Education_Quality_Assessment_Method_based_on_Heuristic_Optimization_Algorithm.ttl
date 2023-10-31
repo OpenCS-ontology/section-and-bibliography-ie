@@ -1,0 +1,1073 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Hybrid education"^^xsd:string,
+        "digital education"^^xsd:string,
+        "educational infrastructure"^^xsd:string,
+        "heuristic optimization model"^^xsd:string,
+        "smart learning"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1 ] ;
+    dcterms:title "A Hybrid Education Quality Assessment Method based on Heuristic Optimization Algorithm"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Hybrid education is the most effective process of education, which is the mixture of two education processes that help increase the student’s understanding level. In the study, it has been discussed that the intelligent learning environment influences the education style, which allows the students and the educator to understand the topic correctly. Also, from the study, a good bond between the teacher and the students increases the achievement rate in an education system. Therefore, the professional life of the students is also more developed. The study aims to consider the disadvantages of the modern or hybrid education system, and the communication gap is one of the significant disadvantages of education."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 462 ;
+    prism:pageCount 13 ;
+    prism:startingPage 449 ;
+    datacite:doi "10.12694/scpe.v24i3.2339"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2339"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2339> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Cui"^^xsd:string ;
+    foaf:givenName "Lan"^^xsd:string ;
+    foaf:name "Lan Cui"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Zhi"^^xsd:string ;
+    foaf:givenName "Yuefen"^^xsd:string ;
+    foaf:name "Yuefen Zhi"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section9 ;
+                    co:nextItem [ co:itemContent :section10 ;
+                            co:nextItem [ co:itemContent :section11 ;
+                                    co:nextItem [ co:itemContent :section12 ;
+                                            co:nextItem [ co:itemContent :section13 ;
+                                                    co:nextItem [ co:itemContent :section14 ;
+                                                            co:nextItem [ co:itemContent :section20 ;
+                                                                    co:nextItem [ co:itemContent :section30 ;
+                                                                            co:nextItem [ co:itemContent :section36 ;
+                                                                                    co:nextItem [ co:itemContent :section37 ;
+                                                                                            co:nextItem [ co:itemContent :section38 ;
+                                                                                                    co:nextItem [ co:itemContent :section39 ;
+                                                                                                            co:nextItem [ co:itemContent :section40 ;
+                                                                                                                    co:nextItem [ co:itemContent :section45 ;
+                                                                                                                            co:nextItem [ co:itemContent :section46 ;
+                                                                                                                                    co:nextItem [ co:itemContent :section51 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section10,
+        :section11,
+        :section12,
+        :section13,
+        :section14,
+        :section20,
+        :section30,
+        :section36,
+        :section37,
+        :section38,
+        :section39,
+        :section40,
+        :section45,
+        :section46,
+        :section51,
+        :section9 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Shanxi Institute of Economics and Business,Taiyuan, 030024, China"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "Shanxi Institute of Economics and Business,Taiyuan, 030024, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF26 a deo:Reference ;
+    dcterms:references :BIBREF26 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF27 a deo:Reference ;
+    dcterms:references :BIBREF27 ;
+    c4o:hasContent "[27]" .
+
+:referenceToBIBREF28 a deo:Reference ;
+    dcterms:references :BIBREF28 ;
+    c4o:hasContent "[28]" .
+
+:referenceToBIBREF29 a deo:Reference ;
+    dcterms:references :BIBREF29 ;
+    c4o:hasContent "[29]" .
+
+:referenceToBIBREF30 a deo:Reference ;
+    dcterms:references :BIBREF30 ;
+    c4o:hasContent "[30]" .
+
+:referenceToBIBREF31 a deo:Reference ;
+    dcterms:references :BIBREF31 ;
+    c4o:hasContent "[31]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel14 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel20 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel36 a doco:SectionLabel ;
+    c4o:hasContent "7." .
+
+:sectionLabel51 a doco:SectionLabel ;
+    c4o:hasContent "11." .
+
+:sectionLabel9 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle10 a doco:SectionTitle ;
+    c4o:hasContent "Factors of the Assesment Benefit in the Education Digital technology" .
+
+:sectionTitle11 a doco:SectionTitle ;
+    c4o:hasContent "The individual style of learning" .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "Teacher students relationship" .
+
+:sectionTitle13 a doco:SectionTitle ;
+    c4o:hasContent "Flexible education style" .
+
+:sectionTitle14 a doco:SectionTitle ;
+    c4o:hasContent "Importance of Hybrid Quality Assesment Method." .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "Advantages and the Disadvantages of the HQAM." .
+
+:sectionTitle30 a doco:SectionTitle ;
+    c4o:hasContent "Advantages Disadvantages" .
+
+:sectionTitle36 a doco:SectionTitle ;
+    c4o:hasContent "Process of the Application of the HQAM on HOM." .
+
+:sectionTitle37 a doco:SectionTitle ;
+    c4o:hasContent "Process" .
+
+:sectionTitle38 a doco:SectionTitle ;
+    c4o:hasContent "Smart classroom" .
+
+:sectionTitle39 a doco:SectionTitle ;
+    c4o:hasContent "Reviews and polling process" .
+
+:sectionTitle40 a doco:SectionTitle ;
+    c4o:hasContent "Increasing the search capability" .
+
+:sectionTitle45 a doco:SectionTitle ;
+    c4o:hasContent "Issues of HQAM Solution process" .
+
+:sectionTitle46 a doco:SectionTitle ;
+    c4o:hasContent "Communication issues" .
+
+:sectionTitle51 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle9 a doco:SectionTitle ;
+    c4o:hasContent "Objectives. The objectives of the research are:" .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Renewable Energy" ] ;
+    dcterms:title "A novel wind power probabilistic forecasting approach based on joint quantile regression and multi-objective optimization" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 164 ;
+    bibo:pageStart 141 ;
+    bibo:volume "149" ;
+    c4o:hasContent "J. Hu, J. Tang, and Y. Lin, A novel wind power probabilistic forecasting approach based on joint quantile regression and multi-objective optimization, Renewable Energy, 149 (2020), pp. 141-164." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "A path planning method based on the particle swarm optimization trained fuzzy neural network algorithm, Cluster Computing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zhu" ] ] ;
+    bibo:pageEnd 15 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Liu, D. Zhang, J. Zhang, T. Zhang, and H. Zhu, A path planning method based on the particle swarm optimization trained fuzzy neural network algorithm, Cluster Computing, (2021), pp. 1-15." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF25 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF26 ;
+                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF27 ;
+                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF28 ;
+                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF29 ;
+                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF30 ;
+                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF31 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF26,
+        :BIBREF27,
+        :BIBREF28,
+        :BIBREF29,
+        :BIBREF3,
+        :BIBREF30,
+        :BIBREF31,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF12,
+        :referenceToBIBREF15,
+        :referenceToBIBREF23,
+        :referenceToBIBREF24,
+        :referenceToBIBREF28,
+        :referenceToBIBREF29,
+        :referenceToBIBREF6,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section10 a doco:Section ;
+    po:containsAsHeader :sectionTitle10 .
+
+:section11 a doco:Section ;
+    po:containsAsHeader :sectionTitle11 .
+
+:section12 a doco:Section ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section13 a doco:Section ;
+    po:contains :referenceToBIBREF25,
+        :referenceToBIBREF31 ;
+    po:containsAsHeader :sectionTitle13 .
+
+:section14 a doco:Section ;
+    po:contains :referenceToBIBREF2,
+        :referenceToBIBREF27,
+        :sectionLabel14 ;
+    po:containsAsHeader :sectionTitle14 .
+
+:section20 a doco:Section ;
+    po:contains :referenceToBIBREF11,
+        :referenceToBIBREF14,
+        :referenceToBIBREF22,
+        :referenceToBIBREF3,
+        :referenceToBIBREF7,
+        :sectionLabel20 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section30 a doco:Section ;
+    po:contains :referenceToBIBREF16,
+        :referenceToBIBREF18,
+        :referenceToBIBREF30,
+        :referenceToBIBREF5 ;
+    po:containsAsHeader :sectionTitle30 .
+
+:section36 a doco:Section ;
+    po:contains :referenceToBIBREF17,
+        :sectionLabel36 ;
+    po:containsAsHeader :sectionTitle36 .
+
+:section37 a doco:Section ;
+    po:containsAsHeader :sectionTitle37 .
+
+:section38 a doco:Section ;
+    po:contains :referenceToBIBREF0 ;
+    po:containsAsHeader :sectionTitle38 .
+
+:section39 a doco:Section ;
+    po:containsAsHeader :sectionTitle39 .
+
+:section40 a doco:Section ;
+    po:contains :referenceToBIBREF21,
+        :referenceToBIBREF26,
+        :referenceToBIBREF4,
+        :referenceToBIBREF6,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9 ;
+    po:containsAsHeader :sectionTitle40 .
+
+:section45 a doco:Section ;
+    po:containsAsHeader :sectionTitle45 .
+
+:section46 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF3 ;
+    po:containsAsHeader :sectionTitle46 .
+
+:section51 a doco:Section ;
+    po:contains :sectionLabel51 ;
+    po:containsAsHeader :sectionTitle51 .
+
+:section9 a doco:Section ;
+    po:contains :sectionLabel9 ;
+    po:containsAsHeader :sectionTitle9 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Neural Computing and Applications" ] ;
+    dcterms:title "An intelligent feature selection approach based on moth flame optimization for medical diagnosis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khurmaa" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Aljarah" ;
+                    foaf:givenname "I" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sharieh" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 7204 ;
+    bibo:pageStart 7165 ;
+    bibo:volume "33" ;
+    c4o:hasContent "R. Abu Khurmaa, I. Aljarah, and A. Sharieh, An intelligent feature selection approach based on moth flame optimization for medical diagnosis, Neural Computing and Applications, 33 (2021), pp. 7165-7204." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Neural Computing and Applications" ] ;
+    dcterms:title "A comprehensive survey of the grasshopper optimization algorithm: results, variants, and applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abualigah" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Diabat" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 15556 ;
+    bibo:pageStart 15533 ;
+    bibo:volume "32" ;
+    c4o:hasContent "L. Abualigah and A. Diabat, A comprehensive survey of the grasshopper optimization algorithm: results, variants, and applications, Neural Computing and Applications, 32 (2020), pp. 15533-15556." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Journal of Bionic Engineering" ] ;
+    dcterms:title "A novel method based on nonlinear binary grasshopper whale optimization algorithm for feature selection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Liang" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 252 ;
+    bibo:pageStart 237 ;
+    bibo:volume "20" ;
+    c4o:hasContent "L. Fang and X. Liang, A novel method based on nonlinear binary grasshopper whale optimization algorithm for feature selection, Journal of Bionic Engineering, 20 (2023), pp. 237-252." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Network and Service Management" ] ;
+    dcterms:title "A hybrid deep learning-based model for anomaly detection in cloud datacenter networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Garg" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kaur" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "N" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kaddoum" ;
+                    foaf:givenname "G" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zomaya" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Ranjan" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 935 ;
+    bibo:pageStart 924 ;
+    bibo:volume "16" ;
+    c4o:hasContent "S. Garg, K. Kaur, N. Kumar, G. Kaddoum, A. Y. Zomaya, and R. Ranjan, A hybrid deep learning-based model for anomaly detection in cloud datacenter networks, IEEE Transactions on Network and Service Management, 16 (2019), pp. 924-935." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "An integrated approach based on artificial intelligence and novel meta-heuristic algorithms to predict demand for dairy products: a case study, Network: computation in neural systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Goli" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Khademi-Zare" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tavakkoli-Moghaddam" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sadeghieh" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sasanian" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Kordestanizadeh" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 35 ;
+    bibo:pageStart 1 ;
+    bibo:volume "32" ;
+    c4o:hasContent "A. Goli, H. Khademi-Zare, R. Tavakkoli-Moghaddam, A. Sadeghieh, M. Sasanian, and R. Malekalipour Ko- rdestanizadeh, An integrated approach based on artificial intelligence and novel meta-heuristic algorithms to predict demand for dairy products: a case study, Network: computation in neural systems, 32 (2021), pp. 1-35." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Proceedings of Integrated Intelligence Enable Networks and Computing: IIENC 2020" ] ;
+    dcterms:title "Hybrid deep learning approach for aspect detection on reviews" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hung" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Semwal" ;
+                    foaf:givenname "V" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gaud" ;
+                    foaf:givenname "N" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Bijalwan" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 999 ;
+    bibo:pageStart 991 ;
+    c4o:hasContent "B. T. Hung, V. B. Semwal, N. Gaud, and V. Bijalwan, Hybrid deep learning approach for aspect detection on reviews, in Proceedings of Integrated Intelligence Enable Networks and Computing: IIENC 2020, Springer, 2021, pp. 991-999." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Education+ Training" ] ;
+    dcterms:title "Utilizing mobile-learning and cap (e) lesson framework in improving the productive skills of learners in a hybrid environment" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ironsi" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bostancı" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 252 ;
+    bibo:pageStart 232 ;
+    bibo:volume "65" ;
+    c4o:hasContent "C. S. Ironsi and H. B. Bostancı, Utilizing mobile-learning and cap (e) lesson framework in improving the productive skills of learners in a hybrid environment, Education+ Training, 65 (2022), pp. 232-252." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Developed approach based on equilibrium optimizer for optimal design of hybrid pv/wind/diesel/battery microgrid in dakhla, morocco" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kharrich" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kamel" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Abdeen" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Mohammed" ;
+                    foaf:givenname "O" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Akherraz" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Khurshaid" ;
+                    foaf:givenname "T" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Rhee" ;
+                    foaf:givenname "S.-B" ] ] ;
+    bibo:pageEnd 13670 ;
+    bibo:pageStart 13655 ;
+    bibo:volume "9" ;
+    c4o:hasContent "M. Kharrich, S. Kamel, M. Abdeen, O. H. Mohammed, M. Akherraz, T. Khurshaid, and S.-B. Rhee, Developed approach based on equilibrium optimizer for optimal design of hybrid pv/wind/diesel/battery microgrid in dakhla, morocco, IEEE Access, 9 (2021), pp. 13655-13670." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Aging state prediction for supercapacitors based on heuristic kalman filter optimization extreme learning machine" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:volume "250" ;
+    c4o:hasContent "D. Li, S. Li, S. Zhang, J. Sun, L. Wang, and K. Wang, Aging state prediction for supercapacitors based on heuristic kalman filter optimization extreme learning machine, Energy, 250 (2022), p. 123773." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Engineering Computations" ] ;
+    dcterms:title "A new path plan method based on hybrid algorithm of reinforcement learning and particle swarm optimization" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 1019 ;
+    bibo:pageStart 993 ;
+    bibo:volume "39" ;
+    c4o:hasContent "X. Liu, D. Zhang, T. Zhang, J. Zhang, and J. Wang, A new path plan method based on hybrid algorithm of reinforcement learning and particle swarm optimization, Engineering Computations, 39 (2022), pp. 993-1019." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "A novel feature selection method for data mining tasks using hybrid sine cosine algorithm and genetic algorithm, Cluster Computing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abualigah" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dulaimi" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 2176 ;
+    bibo:pageStart 2161 ;
+    bibo:volume "24" ;
+    c4o:hasContent "L. Abualigah and A. J. Dulaimi, A novel feature selection method for data mining tasks using hybrid sine cosine algorithm and genetic algorithm, Cluster Computing, 24 (2021), pp. 2161-2176." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Applied Soft Computing" ] ;
+    dcterms:title "Optimal path planning approach based on q-learning algorithm for mobile robots" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Maoudj" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hentout" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "A. Maoudj and A. Hentout, Optimal path planning approach based on q-learning algorithm for mobile robots, Applied Soft Computing, 97 (2020), p. 106796." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Agricultural Water Management" ] ;
+    dcterms:title "Modeling daily reference evapotranspiration via a novel approach based on support vector regression coupled with whale optimization algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mohammadi" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mehdizadeh" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:volume "237" ;
+    c4o:hasContent "B. Mohammadi and S. Mehdizadeh, Modeling daily reference evapotranspiration via a novel approach based on support vector regression coupled with whale optimization algorithm, Agricultural Water Management, 237 (2020), p. 106145." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Journal of Ambient Intelligence and Humanized Computing" ] ;
+    dcterms:title "A novel hybrid wrapper-filter approach based on genetic algorithm, particle swarm optimization for feature subset selection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Moslehi" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Haeri" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 1127 ;
+    bibo:pageStart 1105 ;
+    bibo:volume "11" ;
+    c4o:hasContent "F. Moslehi and A. Haeri, A novel hybrid wrapper-filter approach based on genetic algorithm, particle swarm optimization for feature subset selection, Journal of Ambient Intelligence and Humanized Computing, 11 (2020), pp. 1105-1127." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Engineering Applications of Artificial Intelligence" ] ;
+    dcterms:title "A hybrid feature selection method based on information theory and binary butterfly optimization algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sadeghian" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Akbari" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Nematzadeh" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:volume "97" ;
+    c4o:hasContent "Z. Sadeghian, E. Akbari, and H. Nematzadeh, A hybrid feature selection method based on information theory and binary butterfly optimization algorithm, Engineering Applications of Artificial Intelligence, 97 (2021), p. 104079." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Scientific reports" ] ;
+    dcterms:title "A hybrid gene selection method based on relieff and ant colony optimization algorithm for tumor classification" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kong" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Xue" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zhai" ;
+                    foaf:givenname "R" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:volume "9" ;
+    c4o:hasContent "L. Sun, X. Kong, J. Xu, Z. Xue, R. Zhai, and S. Zhang, A hybrid gene selection method based on relieff and ant colony optimization algorithm for tumor classification, Scientific reports, 9 (2019), p. 8978." .
+
+:BIBREF26 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Knowledge and Data Engineering" ] ;
+    dcterms:title "A hybrid e-learning recommendation approach based on learners' influence propagation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wan" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Niu" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 840 ;
+    bibo:pageStart 827 ;
+    bibo:volume "32" ;
+    c4o:hasContent "S. Wan and Z. Niu, A hybrid e-learning recommendation approach based on learners' influence propagation, IEEE Transac- tions on Knowledge and Data Engineering, 32 (2019), pp. 827-840." .
+
+:BIBREF27 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Energy" ] ;
+    dcterms:title "Short-term forecasting of natural gas prices by using a novel hybrid method based on a combination of the ceemdan-se-and the pso-als-optimized gru network" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cao" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yuan" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Cheng" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:volume "233" ;
+    c4o:hasContent "J. Wang, J. Cao, S. Yuan, and M. Cheng, Short-term forecasting of natural gas prices by using a novel hybrid method based on a combination of the ceemdan-se-and the pso-als-optimized gru network, Energy, 233 (2021), p. 121082." .
+
+:BIBREF28 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Cells" ] ;
+    dcterms:title "A hybrid prediction method for plant lncrna-protein interaction" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wekesa" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Luan" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Meng" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "8" ;
+    c4o:hasContent "J. S. Wekesa, Y. Luan, M. Chen, and J. Meng, A hybrid prediction method for plant lncrna-protein interaction, Cells, 8 (2019), p. 521." .
+
+:BIBREF29 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Biomedical Signal Processing and Control" ] ;
+    dcterms:title "New brain tumor classification method based on an improved version of whale optimization algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yin" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Abza" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:volume "56" ;
+    c4o:hasContent "B. Yin, C. Wang, and F. Abza, New brain tumor classification method based on an improved version of whale optimization algorithm, Biomedical Signal Processing and Control, 56 (2020), p. 101728." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Advances in meta-heuristic optimization algorithms in big data text clustering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abualigah" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gandomi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Elaziz" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hamad" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Omari" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Alshinwan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Khasawneh" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "L. Abualigah, A. H. Gandomi, M. A. Elaziz, H. A. Hamad, M. Omari, M. Alshinwan, and A. M. Khasawneh, Advances in meta-heuristic optimization algorithms in big data text clustering, Electronics, 10 (2021), p. 101." .
+
+:BIBREF30 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Applied Soft Computing" ] ;
+    dcterms:title "A novel case adaptation method based on differential evolution algorithm for disaster emergency" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "W.-X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:volume "92" ;
+    c4o:hasContent "X. Yu, C. Li, W.-X. Zhao, and H. Chen, A novel case adaptation method based on differential evolution algorithm for disaster emergency, Applied Soft Computing, 92 (2020), p. 106306." .
+
+:BIBREF31 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Computer Methods in Applied Mechanics and Engineering" ] ;
+    dcterms:title "Hybrid and enhanced pso: Novel first order reliability method-based hybrid intelligent approaches" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhu" ;
+                    foaf:givenname "S.-P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Keshtegar" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Seghier" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zio" ;
+                    foaf:givenname "E" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Taylan" ;
+                    foaf:givenname "O" ] ] ;
+    bibo:volume "393" ;
+    c4o:hasContent "S.-P. Zhu, B. Keshtegar, M. E. A. B. Seghier, E. Zio, and O. Taylan, Hybrid and enhanced pso: Novel first order reliability method-based hybrid intelligent approaches, Computer Methods in Applied Mechanics and Engineering, 393 (2022), p. 114730." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IET Generation, Transmission & Distribution" ] ;
+    dcterms:title "Mid-term electricity load forecasting by a new composite method based on optimal learning mlp algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Askari" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Keynia" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 852 ;
+    bibo:pageStart 845 ;
+    bibo:volume "14" ;
+    c4o:hasContent "M. Askari and F. Keynia, Mid-term electricity load forecasting by a new composite method based on optimal learning mlp algorithm, IET Generation, Transmission & Distribution, 14 (2020), pp. 845-852." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Scientia Iranica" ] ;
+    dcterms:title "Modeling and optimization of the electrical discharge machining process based on a combined artificial neural network and particle swarm optimization algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Moghaddam" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kolahan" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 1217 ;
+    bibo:pageStart 1206 ;
+    bibo:volume "27" ;
+    c4o:hasContent "M. Azadi Moghaddam and F. Kolahan, Modeling and optimization of the electrical discharge machining process based on a combined artificial neural network and particle swarm optimization algorithm, Scientia Iranica, 27 (2020), pp. 1206-1217." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Neural Processing Letters" ] ;
+    dcterms:title "Hdl-psr: Modelling spatio-temporal features using hybrid deep learning approach for post-stroke rehabilitation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bijalwan" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Semwal" ;
+                    foaf:givenname "V" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 298 ;
+    bibo:pageStart 279 ;
+    bibo:volume "55" ;
+    c4o:hasContent "V. Bijalwan, V. B. Semwal, G. Singh, and T. K. Mandal, Hdl-psr: Modelling spatio-temporal features using hybrid deep learning approach for post-stroke rehabilitation, Neural Processing Letters, 55 (2023), pp. 279-298." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Journal of safety research" ] ;
+    dcterms:title "A hybrid decision-making approach based on fcm and moora for occupational health and safety risk analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dabbagh" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yousefi" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 123 ;
+    bibo:pageStart 111 ;
+    bibo:volume "71" ;
+    c4o:hasContent "R. Dabbagh and S. Yousefi, A hybrid decision-making approach based on fcm and moora for occupational health and safety risk analysis, Journal of safety research, 71 (2019), pp. 111-123." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Neurocomputing" ] ;
+    dcterms:title "Hybrid of human learning optimization algorithm and particle swarm optimization algorithm with scheduling strategies for the flexible job-shop scheduling problem" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gu" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 332 ;
+    bibo:pageStart 313 ;
+    bibo:volume "414" ;
+    c4o:hasContent "H. Ding and X. Gu, Hybrid of human learning optimization algorithm and particle swarm optimization algorithm with scheduling strategies for the flexible job-shop scheduling problem, Neurocomputing, 414 (2020), pp. 313-332." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Applied Soft Computing" ] ;
+    dcterms:title "Electrical load forecasting: A deep learning approach based on k-nearest neighbors" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dong" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ma" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Fu" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:volume "99" ;
+    c4o:hasContent "Y. Dong, X. Ma, and T. Fu, Electrical load forecasting: A deep learning approach based on k-nearest neighbors, Applied Soft Computing, 99 (2021), p. 106900." .
+

@@ -1,0 +1,496 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2 ] ;
+    dcterms:title "Positioning Improving of RSU Devices Used in V2I Communication in Intelligent Transportation System"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "In this work we present solutions which aim at enhancement of the localization precision of the road side unit (RSU) devices which will participate in vehicle-to-infrastructure (V2I) communication in future autonomous driving and intelligent transportation systems (ITS). Currently used localization techniques suffer from limited accuracy which is due to various factors, including noise, delays caused by environmental conditions (e.g. temperature variation) and differences in elevation between devices communicating with each other in the road environment. In case of application of the ITS, these factors can be the source of significant discrepancies between real positions of the RSUs and their estimated values provided by the V2I system. The proposed techniques, based on various approximation techniques, as well as linear and nonlinear filters, allow to improve the localization accuracy, reducing the positioning errors by more than 90 \\%."^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 6 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F288"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/288.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/288.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "3rd Workshop on Internet of Things - Enablers, Challenges and Applications"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Długosz"^^xsd:string ;
+    foaf:givenName "Rafał"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Banach"^^xsd:string ;
+    foaf:givenName "Marzena"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    foaf:familyName "Kubiak"^^xsd:string ;
+    foaf:givenName "Katarzyna"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section7 ;
+                    co:nextItem [ co:itemContent :section8 ;
+                            co:nextItem [ co:itemContent :section12 ;
+                                    co:nextItem [ co:itemContent :section15 ;
+                                            co:nextItem [ co:itemContent :section17 ;
+                                                    co:nextItem [ co:itemContent :section22 ;
+                                                            co:nextItem [ co:itemContent :section37 ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section12,
+        :section15,
+        :section17,
+        :section22,
+        :section37,
+        :section7,
+        :section8 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[10]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[9]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel17 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel37 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel7 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "B. Applications of the RTLSs -desired parameters" .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "C. RTLS-based solutions in Intelligent Transportation Systems" .
+
+:sectionTitle17 a doco:SectionTitle ;
+    c4o:hasContent "ENHANCEMENT OF THE RSU POSITIONING -PROPOSED SOLUTIONS" .
+
+:sectionTitle22 a doco:SectionTitle ;
+    c4o:hasContent "A. Steps of the proposed enhancement algorithm" .
+
+:sectionTitle37 a doco:SectionTitle ;
+    c4o:hasContent "CONCLUSIONS" .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "STATE-OF-THE ART STUDY" .
+
+:sectionTitle8 a doco:SectionTitle ;
+    c4o:hasContent "A. Towards automotive TSR systems of the 2 nd generation" .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section12 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9 ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section15 a doco:Section ;
+    po:contains :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section17 a doco:Section ;
+    po:contains :sectionLabel17 ;
+    po:containsAsHeader :sectionTitle17 .
+
+:section22 a doco:Section ;
+    po:contains :referenceToBIBREF15 ;
+    po:containsAsHeader :sectionTitle22 .
+
+:section37 a doco:Section ;
+    po:contains :sectionLabel37 ;
+    po:containsAsHeader :sectionTitle37 .
+
+:section7 a doco:Section ;
+    po:contains :referenceToBIBREF2,
+        :sectionLabel7 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:section8 a doco:Section ;
+    po:contains :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5 ;
+    po:containsAsHeader :sectionTitle8 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "th International Conference on Computer Engineering & Systems (ICCES)" ] ;
+    dcterms:title "Vehicle Localization System based on IR-UWB for V2I Applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hassan" ;
+                    foaf:givenname "O" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Adly" ;
+                    foaf:givenname "I" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shehata" ;
+                    foaf:givenname "K" ] ] ;
+    c4o:hasContent "O. Hassan, I. Adly, K.A. Shehata, \"Vehicle Localization System based on IR-UWB for V2I Applications\", 8th International Conference on Computer Engineering & Systems (ICCES), Nov. 2013." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "IEEE International Conference on Electro/Information Technology" ] ;
+    dcterms:title "A Comparison Between UWB and TDOA Systems for Smart Space Localization" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "Lianlin" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Psota" ;
+                    foaf:givenname "Eric" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Pérez" ;
+                    foaf:givenname "Lance" ] ] ;
+    bibo:pageEnd 193 ;
+    bibo:pageStart 179 ;
+    c4o:hasContent "Lianlin Zhao, Eric T. Psota, Lance C. Pérez, \"A Comparison Between UWB and TDOA Systems for Smart Space Localization\", IEEE In- ternational Conference on Electro/Information Technology (EIT), 2014, pp.179-193." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "2015 International Conference on Indoor Positioning and Indoor Navigation (IPIN)" ] ;
+    dcterms:title "Evaluation of Indoor Real Time Localization Systems on the UWB Based System Case" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Karbownik" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Krukar" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shaporova" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "P. Karbownik, G. Krukar, A. Shaporova, et al., \"Evaluation of Indoor Real Time Localization Systems on the UWB Based System Case\", 2015 International Conference on Indoor Positioning and Indoor Navigation (IPIN), Banff, Alberta, Canada, Oct. 2015." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "th International Conference on Logistics (LOGISTIQUA)" ] ;
+    dcterms:title "Analysis of UWB-OFDM system for Vehicle to Infrastructure communication" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kabil" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Essaid" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ait Ouahman" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 331 ;
+    bibo:pageStart 319 ;
+    bibo:volume "4" ;
+    c4o:hasContent "S. Kabil, B. Ait Essaid, A. Ait Ouahman, et al., \"Analysis of UWB- OFDM system for Vehicle to Infrastructure communication\", 4 th In- ternational Conference on Logistics (LOGISTIQUA), June 2011, pp. 319-331." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Mobile Information Systems" ] ;
+    dcterms:title "High-Accuracy Tracking Using Ultrawideband Signals for Enhanced Safety of Cyclists" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dardari" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Decarli" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:volume "2017" ;
+    c4o:hasContent "D. Dardari, N. Decarli, et al., \"High-Accuracy Tracking Using Ultraw- ideband Signals for Enhanced Safety of Cyclists\" Mobile Information Systems, Vol. 2017, Article ID 8149348, 2017." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:publisher [ foaf:name "Journal of Computer Science" ] ;
+    dcterms:title "Orthogonal Frequency-Division Multiplexing Ultra Wide Band System in Real Environment for Vehicle to Infrastructure Application" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kabil" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Elassali" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Elbahhar" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:doi "['10.3844/jcssp.2013.1305.1317']" ;
+    bibo:issue "10" ;
+    bibo:pageEnd 1317 ;
+    bibo:pageStart 1305 ;
+    bibo:volume "9" ;
+    c4o:hasContent "S. Kabil, R. Elassali, F. Elbahhar, et al., \"Orthogonal Frequency-Division Multiplexing Ultra Wide Band System in Real Environment for Vehicle to Infrastructure Application\", Journal of Computer Science, Vol. 9, Iss. 10, DOI : 10.3844/jcssp.2013.1305.1317, pp.1305-1317." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "A Tightly-Coupled GPS/INS/UWB Cooperative Positioning Sensors System Supported by V2I Communication" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Meng" ;
+                    foaf:givenname "X" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Hancock" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:doi "['10.3390/s16070944']" ;
+    bibo:issue "7" ;
+    bibo:volume "16" ;
+    c4o:hasContent "J. Wang, Y. Gao, Z. Li, X. Meng, C. M. Hancock, \"A Tightly-Coupled GPS/INS/UWB Cooperative Positioning Sensors System Supported by V2I Communication\", Sensors, 16(7), 944; doi:10.3390/s16070944, 2016." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "SAE International Journal Passengers Cars -Electronic and Electrical Systems" ] ;
+    dcterms:title "Design and Optimization of Hardware-Efficient Filters for Active Safety Algorithms" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dlugosz" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Szulc" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kolasa" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.4271/2015-01-0152']" ;
+    bibo:issue "1" ;
+    bibo:volume "8" ;
+    c4o:hasContent "R. Dlugosz, M. Szulc, M. Kolasa, et al., \"Design and Optimization of Hardware-Efficient Filters for Active Safety Algorithms,\" SAE Interna- tional Journal Passengers Cars -Electronic and Electrical Systems, 8(1):2015, doi:10.4271/2015-01-0152, 2015." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:title "Euro New Car Assessment Program (NCAP) -Safety Assist" ;
+    c4o:hasContent "Euro New Car Assessment Program (NCAP) -Safety As- sist: https://www.euroncap.com/en/vehicle-safety/the-ratings-explained/ safety-assist/" .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:title "Transmission system for wireless electronic traffic sign and position" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mingyao" ;
+                    foaf:givenname "Lin" ] ] ;
+    c4o:hasContent "Lin Mingyao, \"Transmission system for wireless electronic traffic sign and position\", Patent CN1841411 (A) -2006-10-04." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:title "Traffic sign wireless broadcasting system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hu" ;
+                    foaf:givenname "Jianguo" ] ] ;
+    c4o:hasContent "Hu Jianguo, \"Traffic sign wireless broadcasting system\", Patent CN203070537 (U) -2013-07-17." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:title "Traffic sign wireless broadcast device" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hsiao-Chen" ;
+                    foaf:givenname "Kuo" ] ] ;
+    c4o:hasContent "Kuo Hsiao-Chen, \"Traffic sign wireless broadcast device\", Patent TW201104632 (A) -2011-02-01" .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "Novel Applications of the UWB Technologies" ] ;
+    dcterms:title "High-Precision Time-of-Arrival Estimation for UWB Localizers in Indoor Multipath Channels" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dashti" ;
+                    foaf:givenname "Marzieh" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ghoraishi" ;
+                    foaf:givenname "Mir" ] ] ;
+    c4o:hasContent "Marzieh Dashti, Mir Ghoraishi, et al., \"High-Precision Time-of-Arrival Estimation for UWB Localizers in Indoor Multipath Channels\", Novel Applications of the UWB Technologies, edited by Boris Lembrikov, ISBN 978-953-307-324-8, Aug., 2011." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "Karlsruher Institut für Technologie (KIT)" ] ;
+    dcterms:title "Realization Limits of Impulse-Radio UWB Indoor Localization Systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zwirełło" ;
+                    foaf:givenname "Ł" ] ] ;
+    c4o:hasContent "Ł. Zwirełło, Realization Limits of Impulse-Radio UWB Indoor Local- ization Systems, Dissertation, Karlsruher Institut für Technologie (KIT), Fakultät für Elektrotechnik und Informationstechnik, 2013." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "A study of Vicon system positioning performance" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Merriaux" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dupuis" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Boutteau" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Vasseur" ;
+                    foaf:givenname "P" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Savatier" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:doi "['10.3390/s17071591']" ;
+    bibo:issue "7" ;
+    bibo:volume "17" ;
+    c4o:hasContent "P. Merriaux, Y. Dupuis, R. Boutteau, P. Vasseur, X. Savatier, \"A study of Vicon system positioning performance\", Sensors, 17(7), 1591, doi: 10.3390/s17071591, 2017." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "Machine Graphics and Vision" ] ;
+    dcterms:title "New Trends in Motion Capture Systems for Human Gait Analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Długosz" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pauk" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Farine" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 331 ;
+    bibo:pageStart 319 ;
+    bibo:volume "20" ;
+    c4o:hasContent "R. Długosz, J. Pauk, P.A. Farine \"New Trends in Motion Capture Systems for Human Gait Analysis\", Machine Graphics and Vision, vol. 20, no. 3, 2011, pp. 319-331." .
+

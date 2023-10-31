@@ -1,0 +1,1432 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "A mixed-methods measurement and evaluation methodology for mobile application usability studies"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Low usability of mobile application is thought to diminish the perceived level of the quality by a user whose experiences substantially determines its market success or failure. However, while a single method of measurement employed to study usability may produce an unreliable or incomplete evaluation outcome, in this paper, contrarily we propose to take advantage of both qualitative and quantitative methods adequate to collect data, that would describe all usability attributes. In particular, in the scope of mobile application usability studies, this paper (i) depicts the main assumptions of elaborated M4MAUME methodology, (ii) describes the self-developed software tool (RVDA) for retrospective video data analysis, (iii) specifies the experimental setup, and (iv) discusses the preliminary results obtained from 20 experiments performed on four different groups of  mobile applications. Eventually our findings lead us to the conclusion that mixing different methods have produced reliable and valuable outcomes which may be used to improve and manage usability in current and future projects, as well as to enhance existing software quality assurance (SQA) programs."^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 5 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F299"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/299.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/299.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "17th Conference on Advanced Information Technologies for Management"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Weichbroth"^^xsd:string ;
+    foaf:givenName "Paweł"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section4 ;
+                    co:nextItem [ co:itemContent :section17 ;
+                            co:nextItem [ co:itemContent :section21 ;
+                                    co:nextItem [ co:itemContent :section26 ;
+                                            co:nextItem [ co:itemContent :section28 ;
+                                                    co:nextItem [ co:itemContent :section30 ;
+                                                            co:nextItem [ co:itemContent :section31 ;
+                                                                    co:nextItem [ co:itemContent :section34 ;
+                                                                            co:nextItem [ co:itemContent :section39 ;
+                                                                                    co:nextItem [ co:itemContent :section41 ;
+                                                                                            co:nextItem [ co:itemContent :section42 ;
+                                                                                                    co:nextItem [ co:itemContent :section43 ;
+                                                                                                            co:nextItem [ co:itemContent :section45 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section17,
+        :section21,
+        :section26,
+        :section28,
+        :section30,
+        :section31,
+        :section34,
+        :section39,
+        :section4,
+        :section41,
+        :section42,
+        :section43,
+        :section45 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF26 a deo:Reference ;
+    dcterms:references :BIBREF26 ;
+    c4o:hasContent "[27]" .
+
+:referenceToBIBREF27 a deo:Reference ;
+    dcterms:references :BIBREF27 ;
+    c4o:hasContent "[28]" .
+
+:referenceToBIBREF28 a deo:Reference ;
+    dcterms:references :BIBREF28 ;
+    c4o:hasContent "[29]" .
+
+:referenceToBIBREF29 a deo:Reference ;
+    dcterms:references :BIBREF29 ;
+    c4o:hasContent "[30]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF30 a deo:Reference ;
+    dcterms:references :BIBREF30 ;
+    c4o:hasContent "[31]" .
+
+:referenceToBIBREF31 a deo:Reference ;
+    dcterms:references :BIBREF31 ;
+    c4o:hasContent "[32]" .
+
+:referenceToBIBREF32 a deo:Reference ;
+    dcterms:references :BIBREF32 ;
+    c4o:hasContent "[33]" .
+
+:referenceToBIBREF33 a deo:Reference ;
+    dcterms:references :BIBREF33 ;
+    c4o:hasContent "[34]" .
+
+:referenceToBIBREF34 a deo:Reference ;
+    dcterms:references :BIBREF34 ;
+    c4o:hasContent "[35]" .
+
+:referenceToBIBREF35 a deo:Reference ;
+    dcterms:references :BIBREF35 ;
+    c4o:hasContent "[36]" .
+
+:referenceToBIBREF37 a deo:Reference ;
+    dcterms:references :BIBREF37 ;
+    c4o:hasContent "[38]" .
+
+:referenceToBIBREF38 a deo:Reference ;
+    dcterms:references :BIBREF38 ;
+    c4o:hasContent "[39]" .
+
+:referenceToBIBREF39 a deo:Reference ;
+    dcterms:references :BIBREF39 ;
+    c4o:hasContent "[40]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF40 a deo:Reference ;
+    dcterms:references :BIBREF40 ;
+    c4o:hasContent "[41]" .
+
+:referenceToBIBREF41 a deo:Reference ;
+    dcterms:references :BIBREF41 ;
+    c4o:hasContent "[42]" .
+
+:referenceToBIBREF42 a deo:Reference ;
+    dcterms:references :BIBREF42 ;
+    c4o:hasContent "[43]" .
+
+:referenceToBIBREF43 a deo:Reference ;
+    dcterms:references :BIBREF43 ;
+    c4o:hasContent "[44]" .
+
+:referenceToBIBREF44 a deo:Reference ;
+    dcterms:references :BIBREF44 ;
+    c4o:hasContent "[45]" .
+
+:referenceToBIBREF46 a deo:Reference ;
+    dcterms:references :BIBREF46 ;
+    c4o:hasContent "[50]" .
+
+:referenceToBIBREF47 a deo:Reference ;
+    dcterms:references :BIBREF47 ;
+    c4o:hasContent "[51]" .
+
+:referenceToBIBREF48 a deo:Reference ;
+    dcterms:references :BIBREF48 ;
+    c4o:hasContent "[52]" .
+
+:referenceToBIBREF49 a deo:Reference ;
+    dcterms:references :BIBREF49 ;
+    c4o:hasContent "[53]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF50 a deo:Reference ;
+    dcterms:references :BIBREF50 ;
+    c4o:hasContent "[54]" .
+
+:referenceToBIBREF51 a deo:Reference ;
+    dcterms:references :BIBREF51 ;
+    c4o:hasContent "[55]" .
+
+:referenceToBIBREF52 a deo:Reference ;
+    dcterms:references :BIBREF52 ;
+    c4o:hasContent "[56]" .
+
+:referenceToBIBREF53 a deo:Reference ;
+    dcterms:references :BIBREF53 ;
+    c4o:hasContent "[57]" .
+
+:referenceToBIBREF54 a deo:Reference ;
+    dcterms:references :BIBREF54 ;
+    c4o:hasContent "[58]" .
+
+:referenceToBIBREF55 a deo:Reference ;
+    dcterms:references :BIBREF55 ;
+    c4o:hasContent "[59]" .
+
+:referenceToBIBREF56 a deo:Reference ;
+    dcterms:references :BIBREF56 ;
+    c4o:hasContent "[60]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel34 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel39 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel4 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel43 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel45 a doco:SectionLabel ;
+    c4o:hasContent "7." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle17 a doco:SectionTitle ;
+    c4o:hasContent "Theoretical background" .
+
+:sectionTitle21 a doco:SectionTitle ;
+    c4o:hasContent "Main assumptions" .
+
+:sectionTitle26 a doco:SectionTitle ;
+    c4o:hasContent "Task no 1. Data collection" .
+
+:sectionTitle28 a doco:SectionTitle ;
+    c4o:hasContent "Task no 2. Data analysis" .
+
+:sectionTitle30 a doco:SectionTitle ;
+    c4o:hasContent "Task no. 3. Information visualization" .
+
+:sectionTitle31 a doco:SectionTitle ;
+    c4o:hasContent "Task no 4. Usability evaluation" .
+
+:sectionTitle34 a doco:SectionTitle ;
+    c4o:hasContent "THE RVDA TOOL" .
+
+:sectionTitle39 a doco:SectionTitle ;
+    c4o:hasContent "EXPERIMENTAL SETUP" .
+
+:sectionTitle4 a doco:SectionTitle ;
+    c4o:hasContent "DEFINITIONS, MEASURES, AND METHODS" .
+
+:sectionTitle41 a doco:SectionTitle ;
+    c4o:hasContent "Hardware apparatus" .
+
+:sectionTitle42 a doco:SectionTitle ;
+    c4o:hasContent "Software apparatus" .
+
+:sectionTitle43 a doco:SectionTitle ;
+    c4o:hasContent "METHODOLOGY TESTING AND VALIDATION" .
+
+:sectionTitle45 a doco:SectionTitle ;
+    c4o:hasContent "CONCLUSIONS" .
+
+:BIBREF57 a deo:BibliographicReference ;
+    dcterms:issued 2003 ;
+    dcterms:publisher [ foaf:name "Behaviour & information technology" ] ;
+    dcterms:title "Retrospective vs. concurrent think-aloud protocols: testing the usability of an online library catalogue" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Van Den Haak" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "De" ;
+                    foaf:givenname "Jong" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Schellens" ;
+                    foaf:givenname "Jan" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:givenname "P" ] ] ;
+    bibo:issue "5" ;
+    bibo:pageEnd 351 ;
+    bibo:pageStart 339 ;
+    bibo:volume "22" ;
+    c4o:hasContent "Van Den Haak, M., De Jong, M., & Jan Schellens, P. (2003). Retrospective vs. concurrent think-aloud protocols: testing the usability of an online library catalogue. Behaviour & information technology, 22(5), 339-351." .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF25 ;
+                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF26 ;
+                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF27 ;
+                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF28 ;
+                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF29 ;
+                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF30 ;
+                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF31 ;
+                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF32 ;
+                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF33 ;
+                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF34 ;
+                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF35 ;
+                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF37 ;
+                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF38 ;
+                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF39 ;
+                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF40 ;
+                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF41 ;
+                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF42 ;
+                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF43 ;
+                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF44 ;
+                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF46 ;
+                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF47 ;
+                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF48 ;
+                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF49 ;
+                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF50 ;
+                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF51 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF52 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF53 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF54 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF55 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF56 ;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF57 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF26,
+        :BIBREF27,
+        :BIBREF28,
+        :BIBREF29,
+        :BIBREF3,
+        :BIBREF30,
+        :BIBREF31,
+        :BIBREF32,
+        :BIBREF33,
+        :BIBREF34,
+        :BIBREF35,
+        :BIBREF37,
+        :BIBREF38,
+        :BIBREF39,
+        :BIBREF4,
+        :BIBREF40,
+        :BIBREF41,
+        :BIBREF42,
+        :BIBREF43,
+        :BIBREF44,
+        :BIBREF46,
+        :BIBREF47,
+        :BIBREF48,
+        :BIBREF49,
+        :BIBREF5,
+        :BIBREF50,
+        :BIBREF51,
+        :BIBREF52,
+        :BIBREF53,
+        :BIBREF54,
+        :BIBREF55,
+        :BIBREF56,
+        :BIBREF57,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[25]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF2,
+        :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :referenceToBIBREF23,
+        :referenceToBIBREF24,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section17 a doco:Section ;
+    po:contains :referenceToBIBREF46,
+        :referenceToBIBREF47,
+        :referenceToBIBREF48,
+        :referenceToBIBREF49,
+        :referenceToBIBREF50,
+        :referenceToBIBREF51,
+        :referenceToBIBREF52,
+        :referenceToBIBREF53,
+        :referenceToBIBREF54,
+        :referenceToBIBREF55,
+        :referenceToBIBREF56 ;
+    po:containsAsHeader :sectionTitle17 .
+
+:section21 a doco:Section ;
+    po:containsAsHeader :sectionTitle21 .
+
+:section26 a doco:Section ;
+    po:containsAsHeader :sectionTitle26 .
+
+:section28 a doco:Section ;
+    po:containsAsHeader :sectionTitle28 .
+
+:section30 a doco:Section ;
+    po:containsAsHeader :sectionTitle30 .
+
+:section31 a doco:Section ;
+    po:containsAsHeader :sectionTitle31 .
+
+:section34 a doco:Section ;
+    po:contains :sectionLabel34 ;
+    po:containsAsHeader :sectionTitle34 .
+
+:section39 a doco:Section ;
+    po:contains :sectionLabel39 ;
+    po:containsAsHeader :sectionTitle39 .
+
+:section4 a doco:Section ;
+    po:contains :referenceToBIBREF24,
+        :referenceToBIBREF25,
+        :referenceToBIBREF26,
+        :referenceToBIBREF27,
+        :referenceToBIBREF28,
+        :referenceToBIBREF29,
+        :referenceToBIBREF30,
+        :referenceToBIBREF31,
+        :referenceToBIBREF32,
+        :referenceToBIBREF33,
+        :referenceToBIBREF34,
+        :referenceToBIBREF35,
+        :referenceToBIBREF37,
+        :referenceToBIBREF38,
+        :referenceToBIBREF39,
+        :referenceToBIBREF40,
+        :referenceToBIBREF41,
+        :referenceToBIBREF42,
+        :referenceToBIBREF43,
+        :referenceToBIBREF44,
+        :sectionLabel4 ;
+    po:containsAsHeader :sectionTitle4 .
+
+:section41 a doco:Section ;
+    po:containsAsHeader :sectionTitle41 .
+
+:section42 a doco:Section ;
+    po:containsAsHeader :sectionTitle42 .
+
+:section43 a doco:Section ;
+    po:contains :sectionLabel43 ;
+    po:containsAsHeader :sectionTitle43 .
+
+:section45 a doco:Section ;
+    po:contains :sectionLabel45 ;
+    po:containsAsHeader :sectionTitle45 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2004 ;
+    dcterms:publisher [ foaf:name "Proceedings of the Human Factors and Ergonomics Society Annual Meeting" ] ;
+    dcterms:title "Understanding the usability construct: User-perceived usability" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mcgee" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rich" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Dumas" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 911 ;
+    bibo:pageStart 907 ;
+    c4o:hasContent "McGee, M., Rich, A., & Dumas, J. (2004). Understanding the usability construct: User-perceived usability. In: Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 907-911." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "International Journal of Human Computer Interaction" ] ;
+    dcterms:title "Toward a more robust usability concept with perceived enjoyment in the context of mobile multimedia service" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sung" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yun" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 32 ;
+    bibo:pageStart 12 ;
+    bibo:volume "1" ;
+    c4o:hasContent "Sung, J., & Yun, Y. (2010). Toward a more robust usability concept with perceived enjoyment in the context of mobile multimedia service. International Journal of Human Computer Interaction, 1(2), 12-32." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:title "Ten usability heuristics" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nielsen" ;
+                    foaf:givenname "J" ] ] ;
+    c4o:hasContent "Nielsen, J. (2005). Ten usability heuristics." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "11th International Conference on Information Technology: New Generations" ] ;
+    dcterms:title "Usability heuristics for transactional web sites" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Paz" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Paz" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Pow-Sang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Collantes" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 628 ;
+    bibo:pageStart 627 ;
+    c4o:hasContent "Paz, F., Paz, F. A., Pow-Sang, J. A., & Collantes, L. (2014). Usability heuristics for transactional web sites. 11th International Conference on Information Technology: New Generations, 627-628. IEEE." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "International Journal of Software Engineering and Knowledge Engineering" ] ;
+    dcterms:title "Delivering Usability in IT Products: Empirical Lessons from the Field" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Weichbroth" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:issue "07" ;
+    bibo:pageEnd 1045 ;
+    bibo:pageStart 1027 ;
+    bibo:volume "28" ;
+    c4o:hasContent "Weichbroth, P. (2018). Delivering Usability in IT Products: Empirical Lessons from the Field. International Journal of Software Engineering and Knowledge Engineering, 28(07), 1027-1045." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "Computing in a Mobile World" ] ;
+    dcterms:title "Software Revolution, Part IV" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Manchester" ;
+                    foaf:givenname "J" ] ] ;
+    c4o:hasContent "Manchester, J. (2013). Software Revolution, Part IV: Computing in a Mobile World. https://www.forbes.com/sites/truebridge/2013/10/22/ software-revolution-part-iv-computing-in-a-mobile- world/#325625c71cd5 [2019-05-14]." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:title "China saw a massive shift from desktop to mobile computing in" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Truong" ;
+                    foaf:givenname "A" ] ] ;
+    c4o:hasContent "Truong, A. (2016). China saw a massive shift from desktop to mobile computing in 2015. https://qz.com/622543/china-saw-a-massive- shift-from-desktop-to-mobile-computing-in-2015/ [2019-05-14]." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2003 ;
+    dcterms:publisher [ foaf:name "International Journal of Mobile Communications" ] ;
+    dcterms:title "Issues, requirements and support for locationintensive mobile commerce applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Varshney" ;
+                    foaf:givenname "U" ] ] ;
+    bibo:issue "3" ;
+    bibo:pageEnd 263 ;
+    bibo:pageStart 247 ;
+    bibo:volume "1" ;
+    c4o:hasContent "Varshney, U. (2003). Issues, requirements and support for location- intensive mobile commerce applications. International Journal of Mobile Communications, 1(3), 247-263." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "FoSER" ] ;
+    dcterms:title "Software engineering issues for mobile application development" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wasserman" ;
+                    foaf:givenname "T" ] ] ;
+    c4o:hasContent "Wasserman, T. (2010). Software engineering issues for mobile application development. FoSER 2010." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "Sixth IEEE International Conference on Advanced Learning Technologies (ICALT'06)" ] ;
+    dcterms:title "A study of design requirements for mobile learning environments" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Parsons" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ryu" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Cranshaw" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 100 ;
+    bibo:pageStart 96 ;
+    c4o:hasContent "Parsons, D., Ryu, H., & Cranshaw, M. (2006, July). A study of design requirements for mobile learning environments. In Sixth IEEE International Conference on Advanced Learning Technologies (ICALT'06), 96-100. IEEE." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2009 ;
+    dcterms:publisher [ foaf:name "Advances in engineering software" ] ;
+    dcterms:title "Design patterns for user interface for mobile applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nilsson" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:issue "12" ;
+    bibo:pageEnd 1328 ;
+    bibo:pageStart 1318 ;
+    bibo:volume "40" ;
+    c4o:hasContent "Nilsson, E. G. (2009). Design patterns for user interface for mobile applications. Advances in engineering software, 40(12), 1318-1328." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2004 ;
+    dcterms:publisher [ foaf:name "Journal-Communications Network" ] ;
+    dcterms:title "An overview of mobile ad hoc networks: applications and challenges" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hoebeke" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Moerman" ;
+                    foaf:givenname "I" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Dhoedt" ;
+                    foaf:givenname "B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Demeester" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:issue "3" ;
+    bibo:pageEnd 66 ;
+    bibo:pageStart 60 ;
+    bibo:volume "3" ;
+    c4o:hasContent "Hoebeke, J., Moerman, I., Dhoedt, B., & Demeester, P. (2004). An overview of mobile ad hoc networks: applications and challenges. Journal-Communications Network, 3(3), 60-66." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2004 ;
+    dcterms:publisher [ foaf:name "Informing Science: International Journal of an Emerging Transdiscipline" ] ;
+    dcterms:title "Expanding the concept of usability" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Koohang" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 141 ;
+    bibo:pageStart 129 ;
+    bibo:volume "7" ;
+    c4o:hasContent "Koohang, A. (2004). Expanding the concept of usability. Informing Science: International Journal of an Emerging Transdiscipline, 7, 129-141." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2007 ;
+    dcterms:publisher [ foaf:name "Wireless Personal Communications" ] ;
+    dcterms:title "Context awareness in mobile computing environments" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Anagnostopoulos" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tsounis" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hadjiefthymiades" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "3" ;
+    bibo:pageEnd 464 ;
+    bibo:pageStart 445 ;
+    bibo:volume "42" ;
+    c4o:hasContent "Anagnostopoulos, C. B., Tsounis, A., & Hadjiefthymiades, S. (2007). Context awareness in mobile computing environments. Wireless Personal Communications, 42(3), 445-464." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 15th international conference on Human-computer interaction with mobile devices and services" ] ;
+    dcterms:title "Does size matter?: investigating the impact of mobile phone screen size on users' perceived usability, effectiveness and efficiency" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Raptis" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tselios" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kjeldskov" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Skov" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 136 ;
+    bibo:pageStart 127 ;
+    c4o:hasContent "Raptis, D., Tselios, N., Kjeldskov, J., & Skov, M. B. (2013, August). Does size matter?: investigating the impact of mobile phone screen size on users' perceived usability, effectiveness and efficiency. In Proceedings of the 15th international conference on Human-computer interaction with mobile devices and services, 127-136. ACM." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "IST-Africa Conference Proceedings" ] ;
+    dcterms:title "Improving the capacity, reliability & life of mobile devices with Cloud Computing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nkosi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mekuria" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 9 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Nkosi, M., & Mekuria, F. (2011). Improving the capacity, reliability & life of mobile devices with Cloud Computing. In 2011 IST-Africa Conference Proceedings, 1-9. IEEE." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Mobile App Performance Testing: CheckList, Tools (Andriod & iOS" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wajahat" ;
+                    foaf:givenname "N" ] ] ;
+    c4o:hasContent "Wajahat, N. (2019). Mobile App Performance Testing: CheckList, Tools (Andriod & iOS). https://www.guru99.com/mobile-app- performance-testing-strategy-tools.html [2019-05-17]." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:title "Usability of mobile applications: a systematic literature study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Weichbroth" ;
+                    foaf:givenname "P" ] ] ;
+    c4o:hasContent "Weichbroth, P. (2019). Usability of mobile applications: a systematic literature study (in print)." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:publisher [ foaf:name "Part" ] ;
+    dcterms:title "Ergonomics of human-system interaction" ;
+    bibo:volume "11" ;
+    c4o:hasContent "ISO 9241-11:2018(en). Ergonomics of human-system interaction. Part 11: Usability: Definitions and concepts." .
+
+:BIBREF26 a deo:BibliographicReference ;
+    dcterms:issued 2013 ;
+    dcterms:publisher [ foaf:name "Journal of Interaction Science" ] ;
+    dcterms:title "Usability of mobile applications: literature review and rationale for a new usability model" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Harrison" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Flood" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Duce" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:issue "1" ;
+    bibo:volume "1" ;
+    c4o:hasContent "Harrison, R., Flood, D., & Duce, D. (2013). Usability of mobile applications: literature review and rationale for a new usability model. Journal of Interaction Science, 1(1)." .
+
+:BIBREF27 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "International Symposium on Computer Science and Software Engineering Conference (CSSE)" ] ;
+    dcterms:title "A quantitative evaluation of usability in mobile applications: An empirical study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ghazizadeh" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Vafadar" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Ghazizadeh, F. Z., & Vafadar, S. (2017). A quantitative evaluation of usability in mobile applications: An empirical study. International Symposium on Computer Science and Software Engineering Conference (CSSE), 1-6. IEEE." .
+
+:BIBREF28 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "2017 8th IEEE International Conference on Software Engineering and Service Science (ICSESS)" ] ;
+    dcterms:title "Discovering knowledge from mobile application users for usability improvement: A fuzzy association rule mining approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kabir" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Salem" ;
+                    foaf:givenname "O" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Rehman" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 129 ;
+    bibo:pageStart 126 ;
+    c4o:hasContent "Kabir, M. A., Salem, O. A., & Rehman, M. U. (2017). Discovering knowledge from mobile application users for usability improvement: A fuzzy association rule mining approach. In 2017 8th IEEE International Conference on Software Engineering and Service Science (ICSESS), 126-129. IEEE." .
+
+:BIBREF29 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Asian Conference on Intelligent Information and Database Systems" ] ;
+    dcterms:title "Usability Testing of a Responsive Web System for a School for Disabled Children" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Krzewińska" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Indyka-Piasecka" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kopel" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kukla" ;
+                    foaf:givenname "E" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Telec" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Trawiński" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 716 ;
+    bibo:pageStart 705 ;
+    c4o:hasContent "Krzewińska, J., Indyka-Piasecka, A., Kopel, M., Kukla, E., Telec, Z., & Trawiński, B. (2018). Usability Testing of a Responsive Web System for a School for Disabled Children. In Asian Conference on Intelligent Information and Database Systems, 705-716. Springer." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 1992 ;
+    dcterms:publisher [ foaf:name "ACM SIGCHI Bulletin" ] ;
+    dcterms:title "Usability testing vs. heuristic evaluation: was there a contest?" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jeffries" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Desurvire" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:issue "4" ;
+    bibo:pageEnd 41 ;
+    bibo:pageStart 39 ;
+    bibo:volume "24" ;
+    c4o:hasContent "Jeffries, R., & Desurvire, H. (1992). Usability testing vs. heuristic evaluation: was there a contest? ACM SIGCHI Bulletin, 24(4), 39-41." .
+
+:BIBREF30 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "International Conference on Information Technology Systems and Innovation" ] ;
+    dcterms:title "Usability evaluation of online transportation' user interface" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Widyanti" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ainizzamani" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 86 ;
+    bibo:pageStart 82 ;
+    c4o:hasContent "Widyanti, A., & Ainizzamani, S. A. Q. (2017). Usability evaluation of online transportation' user interface. International Conference on Information Technology Systems and Innovation, 82-86. IEEE." .
+
+:BIBREF31 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 2017 International Conference on Software and e-Business" ] ;
+    dcterms:title "Evaluating usability for mobile application: a MAUEM approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Saleh" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ismail" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Fabil" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 77 ;
+    bibo:pageStart 71 ;
+    c4o:hasContent "Saleh, A., Ismail, R., & Fabil, N. (2017). Evaluating usability for mobile application: a MAUEM approach. Proceedings of the 2017 International Conference on Software and e-Business, 71-77. ACM." .
+
+:BIBREF32 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:title "Lessons learned from evaluating a mobile app out in the field. 4 th International Conference on User Science and Engineering (i-USEr)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mcdonald" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Abell" ;
+                    foaf:givenname "W" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Smith" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Gibbs" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 10 ;
+    bibo:pageStart 5 ;
+    c4o:hasContent "McDonald, K., Abell, W., Smith, C., & Gibbs, S. (2016). Lessons learned from evaluating a mobile app out in the field. 4 th International Conference on User Science and Engineering (i-USEr), 5-10. IEEE." .
+
+:BIBREF33 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "International Conference of Design, User Experience, and Usability" ] ;
+    dcterms:title "A Process-Based Approach to Test Usability of Multi-platform Mobile Applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Do Nascimento Mendes" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Dias-Neto" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 468 ;
+    bibo:pageStart 456 ;
+    c4o:hasContent "do Nascimento Mendes, I., & Dias-Neto, A. C. (2016). A Process- Based Approach to Test Usability of Multi-platform Mobile Applications. International Conference of Design, User Experience, and Usability, 456-468. Springer." .
+
+:BIBREF34 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "International Conf. On Learning and Collaboration Technologies" ] ;
+    dcterms:title "A guidance and evaluation approach for mHealth education applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Aljaber" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gordon" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 340 ;
+    bibo:pageStart 330 ;
+    c4o:hasContent "Aljaber, T., & Gordon, N. (2017). A guidance and evaluation approach for mHealth education applications. International Conf. On Learning and Collaboration Technologies, 330-340. Springer." .
+
+:BIBREF35 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Computers & Education" ] ;
+    dcterms:title "A framework for cooperative and interactive mobile learning to improve online information evaluation skills" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Parsazadeh" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ali" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Rezaei" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 89 ;
+    bibo:pageStart 75 ;
+    bibo:volume "120" ;
+    c4o:hasContent "Parsazadeh, N., Ali, R., & Rezaei, M. (2018). A framework for cooperative and interactive mobile learning to improve online information evaluation skills. Computers & Education, 120, 75-89." .
+
+:BIBREF37 a deo:BibliographicReference ;
+    dcterms:issued 1991 ;
+    dcterms:publisher [ foaf:name "Cognition and instruction" ] ;
+    dcterms:title "Evidence for cognitive load theory" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sweller" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chandler" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:issue "4" ;
+    bibo:pageEnd 362 ;
+    bibo:pageStart 351 ;
+    bibo:volume "8" ;
+    c4o:hasContent "Sweller, J., & Chandler, P. (1991). Evidence for cognitive load theory. Cognition and instruction, 8(4), 351-362." .
+
+:BIBREF38 a deo:BibliographicReference ;
+    dcterms:issued 2012 ;
+    dcterms:publisher [ foaf:name "Asian Conf. On Intelligent Information and Database Systems" ] ;
+    dcterms:title "Using eyetracking in a mobile applications usability testing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chynał" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Szymański" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sobecki" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 186 ;
+    bibo:pageStart 178 ;
+    c4o:hasContent "Chynał, P., Szymański, J. M., & Sobecki, J. (2012). Using eyetracking in a mobile applications usability testing. Asian Conf. On Intelligent Information and Database Systems, 178-186. Springer." .
+
+:BIBREF39 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:publisher [ foaf:name "Proceedings of the Twenty-eighth Australasian Conf" ] ;
+    dcterms:title "The effect of context and application type on mobile usability: an empirical study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ryan" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gonsalves" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 124 ;
+    bibo:pageStart 115 ;
+    bibo:volume "38" ;
+    c4o:hasContent "Ryan, C., & Gonsalves, A. (2005). The effect of context and application type on mobile usability: an empirical study. Proceedings of the Twenty-eighth Australasian Conf. 38, 115-124." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 1999 ;
+    dcterms:publisher [ foaf:name "Empirical Software Engineering" ] ;
+    dcterms:title "Perspective-based usability inspection: An empirical validation of efficacy" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Basili" ;
+                    foaf:givenname "V" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shneiderman" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 69 ;
+    bibo:pageStart 43 ;
+    bibo:volume "4" ;
+    c4o:hasContent "Zhang, Z., Basili, V., & Shneiderman, B. (1999). Perspective-based usability inspection: An empirical validation of efficacy. Empirical Software Engineering, 4(1), 43-69." .
+
+:BIBREF40 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "AICS" ] ;
+    dcterms:title "Building High Usability Consumeroriented Linked Data Mobile Apps" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Brennan" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 307 ;
+    bibo:pageStart 295 ;
+    c4o:hasContent "Wang, Y., & Brennan, R. (2017). Building High Usability Consumer- oriented Linked Data Mobile Apps. AICS, 295-307." .
+
+:BIBREF41 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "Quality & Quantity" ] ;
+    dcterms:title "Usability and functionality factors of the social network site application users from the perspective of uses and gratification theory" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Korhan" ;
+                    foaf:givenname "O" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ersoy" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:issue "4" ;
+    bibo:pageEnd 1816 ;
+    bibo:pageStart 1799 ;
+    bibo:volume "50" ;
+    c4o:hasContent "Korhan, O., & Ersoy, M. (2016). Usability and functionality factors of the social network site application users from the perspective of uses and gratification theory. Quality & Quantity, 50(4), 1799-1816." .
+
+:BIBREF42 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "Journal of Systems and Software" ] ;
+    dcterms:title "Exploring the benefits of the combination of a software architecture analysis and a usability evaluation of a mobile application" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Biel" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Grill" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gruhn" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:issue "11" ;
+    bibo:pageEnd 2044 ;
+    bibo:pageStart 2031 ;
+    bibo:volume "83" ;
+    c4o:hasContent "Biel, B., Grill, T., & Gruhn, V. (2010). Exploring the benefits of the combination of a software architecture analysis and a usability evaluation of a mobile application. Journal of Systems and Software, 83(11), 2031-2044." .
+
+:BIBREF43 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "International Conference of Design, User Experience, and Usability" ] ;
+    dcterms:title "Building a quality mobile application: A user-centered study focusing on design thinking, user experience and usability" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "De Paula" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Menezes" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Araújo" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 322 ;
+    bibo:pageStart 313 ;
+    c4o:hasContent "de Paula, D. F., Menezes, B. H., & Araújo, C. C. (2014). Building a quality mobile application: A user-centered study focusing on design thinking, user experience and usability. In International Conference of Design, User Experience, and Usability, 313-322. Springer." .
+
+:BIBREF44 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "International Conference on Learning and Collaboration Technologies" ] ;
+    dcterms:title "Usability Evaluation of a Mobile Graphing Calculator Application Using Eye Tracking" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tomaschko" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hohenwarter" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 190 ;
+    bibo:pageStart 180 ;
+    c4o:hasContent "Tomaschko, M., & Hohenwarter, M. (2018). Usability Evaluation of a Mobile Graphing Calculator Application Using Eye Tracking. In International Conference on Learning and Collaboration Technologies, 180-190. Springer." .
+
+:BIBREF46 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:title "The research act: A theoretical introduction to sociological methods" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Denzin" ;
+                    foaf:givenname "N" ] ] ;
+    c4o:hasContent "Denzin, N. K. (2017). The research act: A theoretical introduction to sociological methods. Routledge." .
+
+:BIBREF47 a deo:BibliographicReference ;
+    dcterms:issued 2001 ;
+    dcterms:publisher [ foaf:name "Journal of nursing scholarship" ] ;
+    dcterms:title "The point of triangulation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Thurmond" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:issue "3" ;
+    bibo:pageEnd 258 ;
+    bibo:pageStart 253 ;
+    bibo:volume "33" ;
+    c4o:hasContent "Thurmond, V. A. (2001). The point of triangulation. Journal of nursing scholarship, 33(3), 253-258." .
+
+:BIBREF48 a deo:BibliographicReference ;
+    dcterms:issued 2008 ;
+    dcterms:publisher [ foaf:name "Canadian Journal for New Scholars in Education" ] ;
+    dcterms:title "A review of the literature on case study research" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Brown" ;
+                    foaf:givenname "P" ] ] ;
+    c4o:hasContent "Brown, P. A. (2008). A review of the literature on case study research. Canadian Journal for New Scholars in Education." .
+
+:BIBREF49 a deo:BibliographicReference ;
+    dcterms:issued 2002 ;
+    dcterms:publisher [ foaf:name "Quality and quantity" ] ;
+    dcterms:title "Revisiting the quantitative-qualitative debate: Implications for mixed-methods research" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sale" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lohfeld" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Brazil" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 53 ;
+    bibo:pageStart 43 ;
+    bibo:volume "36" ;
+    c4o:hasContent "Sale, J. E., Lohfeld, L. H., & Brazil, K. (2002). Revisiting the quantitative-qualitative debate: Implications for mixed-methods research. Quality and quantity, 36(1), 43-53." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2003 ;
+    dcterms:title "Eye tracking in usability evaluation: A practitioner's guide. The Mind's Eye" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Goldberg" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wichansky" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 516 ;
+    bibo:pageStart 493 ;
+    c4o:hasContent "Goldberg, J. H., & Wichansky, A. M. (2003). Eye tracking in usability evaluation: A practitioner's guide. The Mind's Eye, 493-516." .
+
+:BIBREF50 a deo:BibliographicReference ;
+    dcterms:issued 1994 ;
+    dcterms:publisher [ foaf:name "Handbook of Qualitative Research" ] ;
+    dcterms:title "Criteria for assessing interpretive validity in qualitative research" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Altheide" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Johnson" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 499 ;
+    bibo:pageStart 485 ;
+    c4o:hasContent "Altheide, D. L. & Johnson, J. M. (1994). Criteria for assessing interpretive validity in qualitative research. In: Denzin, N. K. & Lincoln, Y. S. (Eds), Handbook of Qualitative Research. Thousand Oaks, CA: Sage Publications, 485-499." .
+
+:BIBREF51 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:title "Popper was not a Positivist: Why Critical Rationalism Could be an Epistemology for Qualitative as well as Quantitative Social Scientific Research" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Holtz" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Odağ" ;
+                    foaf:givenname "Ö" ] ] ;
+    bibo:pageEnd 24 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Holtz, P., & Odağ, Ö. (2018). Popper was not a Positivist: Why Critical Rationalism Could be an Epistemology for Qualitative as well as Quantitative Social Scientific Research. Qualitative Research in Psychology, 1-24." .
+
+:BIBREF52 a deo:BibliographicReference ;
+    dcterms:issued 2005 ;
+    dcterms:title "Qualitative research methods: A data collector's field guide" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mack" ;
+                    foaf:givenname "N" ] ] ;
+    c4o:hasContent "Mack, N. (2005). Qualitative research methods: A data collector's field guide." .
+
+:BIBREF53 a deo:BibliographicReference ;
+    dcterms:issued 2003 ;
+    dcterms:title "The A-Z of social research: a dictionary of key social science research concepts" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Miller" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Brewer" ] ] ;
+    c4o:hasContent "Miller, R. L., & Brewer, J. D. (Eds.). (2003). The A-Z of social research: a dictionary of key social science research concepts. Sage." .
+
+:BIBREF54 a deo:BibliographicReference ;
+    dcterms:issued 1998 ;
+    dcterms:publisher [ foaf:name "Tesol Quarterly" ] ;
+    dcterms:title "Analysing verbal protocols" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kasper" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 362 ;
+    bibo:pageStart 358 ;
+    bibo:volume "32" ;
+    c4o:hasContent "Kasper, G. (1998). Analysing verbal protocols. Tesol Quarterly, 32(2), 358-362." .
+
+:BIBREF55 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "International Review of Education" ] ;
+    dcterms:title "Different reasons for one significant choice: Factors influencing homeschooling choice in Israel" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Guterman" ;
+                    foaf:givenname "O" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Neuman" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:issue "3" ;
+    bibo:pageEnd 318 ;
+    bibo:pageStart 303 ;
+    bibo:volume "63" ;
+    c4o:hasContent "Guterman, O., & Neuman, A. (2017). Different reasons for one significant choice: Factors influencing homeschooling choice in Israel. International Review of Education, 63(3), 303-318." .
+
+:BIBREF56 a deo:BibliographicReference ;
+    dcterms:issued 2009 ;
+    dcterms:title "Influencing interaction: development of the design with intent method" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lockton" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Harrison" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Holley" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Stanton" ;
+                    foaf:givenname "N" ] ] ;
+    c4o:hasContent "Lockton, D., Harrison, D., Holley, T., & Stanton, N. A. (2009). Influencing interaction: development of the design with intent method. 4th International Conf. on Persuasive Technology, ACM." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 1986 ;
+    dcterms:title "User centered system design: New perspectives on human-computer interaction" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Norman" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Draper" ;
+                    foaf:givenname "S" ] ] ;
+    c4o:hasContent "Norman, D. A., & Draper, S. W. (1986). User centered system design: New perspectives on human-computer interaction. CRC Press." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2007 ;
+    dcterms:publisher [ foaf:name "International journal of design" ] ;
+    dcterms:title "Framework of product experience" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Desmet" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hekkert" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 66 ;
+    bibo:pageStart 57 ;
+    bibo:volume "1" ;
+    c4o:hasContent "Desmet, P. M., & Hekkert, P. (2007). Framework of product experience. International journal of design, 1(1), 57-66." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:title "Design thinking: understand-improve-apply" ;
+    c4o:hasContent "Plattner, H., Meinel, C., & Leifer, L. (Eds.). (2010). Design thinking: understand-improve-apply. Springer Science & Business Media." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 1997 ;
+    dcterms:publisher [ foaf:name "Web Review" ] ;
+    dcterms:title "Usability heuristics for the Web" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Instone" ;
+                    foaf:givenname "K" ] ] ;
+    c4o:hasContent "Instone, K. (1997). Usability heuristics for the Web. Web Review, October." .
+

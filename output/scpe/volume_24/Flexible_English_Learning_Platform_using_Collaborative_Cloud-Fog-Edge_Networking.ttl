@@ -1,0 +1,728 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Cloud-fog-edge collaboration"^^xsd:string,
+        "Fuzzy AHP"^^xsd:string,
+        "adaptive language learning"^^xsd:string,
+        "collaborative interaction"^^xsd:string,
+        "cooperative networks"^^xsd:string,
+        "m-grammar learning"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1 ] ;
+    dcterms:title "Flexible English Learning Platform using Collaborative Cloud-Fog-Edge Networking"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "In the modern age, developing practical online learning tools for English language learners is challenging due to existing systems’ shortcomings. These systems often need proper instructional design, are well-connected to motivational theories, and have limited infrastructure for data sharing, leading to poor learning outcomes and low motivation. To tackle these issues, a new approach called OAELT has been proposed in this paper. OAELT is an Online Assisted English Learning Tool that uses the Fuzzy Analytical Hierarchy Process (FAHP) and collaborative cloud-fog-edge networking to create a flexible learning design that adapts to the needs and preferences of individual learners. Using the FAHP approach, OAELT provides an improved learning experience by tailoring its design to each learner’s unique needs. The collaborative cloud-fog-edge networking approach uses each computing layer’s strengths to deliver a personalized and seamless learning experience. OAELT employs adaptive and dynamic approaches within a flexible instructional paradigm to ensure effective instructional design. This paradigm facilitates collective learning data exchange across cloud, fog, and edge computing layers. The effectiveness of OAELT was evaluated using a descriptive statistics approach, which included a five-dimension questionnaire for students covering cognition, emotion, action, cooperation, and literacy. The results demonstrated that OAELT could enhance learning effectiveness and motivation while providing a flexible and seamless learning experience. According to the experimental data of the proposed model, 46.8% of learners often read English magazines and newspapers to improve their flexibility in English learning. Additionally, 50.4% classified and memorized English according to their categories, while 59% of learners often used context to memorize. These findings suggest that the traditional methods for flexible English learning are not adequate, and the average score of the student’s methods and strategies is mediocre. However, after using OAELT, some students have been able to use different learning curricular reading. Overall, OAELT’s integration of cloud-fog-edge computing with a flexible English learning design can create a more effective and personalized learning system that addresses the challenges of modern learning."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 354 ;
+    prism:pageCount 15 ;
+    prism:startingPage 339 ;
+    datacite:doi "10.12694/scpe.v24i3.2224"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2224"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2224> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Tang"^^xsd:string ;
+    foaf:givenName "Linqiang"^^xsd:string ;
+    foaf:name "Linqiang Tang"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Chen"^^xsd:string ;
+    foaf:givenName "Sian"^^xsd:string ;
+    foaf:name "Sian Chen"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section7 ;
+                    co:nextItem [ co:itemContent :section18 ;
+                            co:nextItem [ co:itemContent :section35 ;
+                                    co:nextItem [ co:itemContent :section45 ;
+                                            co:nextItem [ co:itemContent :section55 ;
+                                                    co:nextItem [ co:itemContent :section66 ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section18,
+        :section35,
+        :section45,
+        :section55,
+        :section66,
+        :section7 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Zhejiang Institute of Communications，Hangzhou，China"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "Zhejiang Institute of Communications, Hangzhou, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel18 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel21 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel43 a doco:SectionLabel ;
+    c4o:hasContent "3.3." .
+
+:sectionLabel55 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel63 a doco:SectionLabel ;
+    c4o:hasContent "4.2." .
+
+:sectionLabel66 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel7 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle18 a doco:SectionTitle ;
+    c4o:hasContent "OAELT System" .
+
+:sectionTitle21 a doco:SectionTitle ;
+    c4o:hasContent "FAHP." .
+
+:sectionTitle35 a doco:SectionTitle ;
+    c4o:hasContent "Algorithm 1: Fuzzy AHP analysis" .
+
+:sectionTitle43 a doco:SectionTitle ;
+    c4o:hasContent "Collaborative Cloud-Fog-Edge (CCFE)." .
+
+:sectionTitle45 a doco:SectionTitle ;
+    c4o:hasContent "Algorithm 2: Fog-edge-cloud communication" .
+
+:sectionTitle55 a doco:SectionTitle ;
+    c4o:hasContent "Results and experiments." .
+
+:sectionTitle63 a doco:SectionTitle ;
+    c4o:hasContent "Experiment of Flexible English learning using OAELT." .
+
+:sectionTitle66 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "Literature Review." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF11,
+        :referenceToBIBREF13,
+        :referenceToBIBREF15,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section18 a doco:Section ;
+    co:firstItem [ co:itemContent :section21 ] ;
+    po:contains :section21,
+        :sectionLabel18 ;
+    po:containsAsHeader :sectionTitle18 .
+
+:section21 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :sectionLabel21 ;
+    po:containsAsHeader :sectionTitle21 .
+
+:section35 a doco:Section ;
+    co:firstItem [ co:itemContent :section43 ] ;
+    po:contains :section43 ;
+    po:containsAsHeader :sectionTitle35 .
+
+:section43 a doco:Section ;
+    po:contains :sectionLabel43 ;
+    po:containsAsHeader :sectionTitle43 .
+
+:section45 a doco:Section ;
+    po:containsAsHeader :sectionTitle45 .
+
+:section55 a doco:Section ;
+    co:firstItem [ co:itemContent :section63 ] ;
+    po:contains :referenceToBIBREF9,
+        :section63,
+        :sectionLabel55 ;
+    po:containsAsHeader :sectionTitle55 .
+
+:section63 a doco:Section ;
+    po:contains :sectionLabel63 ;
+    po:containsAsHeader :sectionTitle63 .
+
+:section66 a doco:Section ;
+    po:contains :sectionLabel66 ;
+    po:containsAsHeader :sectionTitle66 .
+
+:section7 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :sectionLabel7 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "An overview of fog computing and edge computing security and privacy issues" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alwakeel" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "21" ;
+    c4o:hasContent "A. M. Alwakeel, An overview of fog computing and edge computing security and privacy issues, Sensors, 21 (2021), p. 8226." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Evolutionary Intelligence" ] ;
+    dcterms:title "Feedback-based fuzzy resource management in iot using fog computing" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Reddy" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Venkata" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:givenname "Krishna" ] ] ;
+    bibo:pageEnd 681 ;
+    bibo:pageStart 669 ;
+    bibo:volume "14" ;
+    c4o:hasContent "D. Arunkumar Reddy and P. Venkata Krishna, Feedback-based fuzzy resource management in iot using fog computing, Evolutionary Intelligence, 14 (2021), pp. 669-681." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Proceedings of the 2020 ACM conference on innovation and technology in computer science education" ] ;
+    dcterms:title "Introducing a paper-based programming language for computing education in classrooms" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mehrotra" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Giang" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Duruz" ;
+                    foaf:givenname "N" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Dedelley" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Mussati" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Skweres" ;
+                    foaf:givenname "M" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Mondada" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 186 ;
+    bibo:pageStart 180 ;
+    c4o:hasContent "A. Mehrotra, C. Giang, N. Duruz, J. Dedelley, A. Mussati, M. Skweres, and F. Mondada, Introducing a paper-based programming language for computing education in classrooms, in Proceedings of the 2020 ACM conference on innovation and technology in computer science education, 2020, pp. 180-186." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "Resource management techniques for cloud/fog and edge computing: An evaluation framework and classification" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mijuskovic" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chiumento" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Bemthuis" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Aldea" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Havinga" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:volume "21" ;
+    c4o:hasContent "A. Mijuskovic, A. Chiumento, R. Bemthuis, A. Aldea, and P. Havinga, Resource management techniques for cloud/fog and edge computing: An evaluation framework and classification, Sensors, 21 (2021), p. 1832." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:title "Prioritizing barriers of e-learning for effective teaching-learning using fuzzy analytic hierarchy process (fahp)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Naveed" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Qureshi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Alsayed" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Muhammad" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sanober" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Shah" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 8 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Q. N. Naveed, M. R. N. Qureshi, A. O. Alsayed, A. Muhammad, S. Sanober, and A. Shah, Prioritizing barriers of e-learning for effective teaching-learning using fuzzy analytic hierarchy process (fahp), in 2017 4th IEEE international conference on engineering technologies and applied sciences (ICETAS), IEEE, 2017, pp. 1-8." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Evaluating and ranking cloud-based e-learning critical success factors (csfs) using combinatorial approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Naveed" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Qureshi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shaikh" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Alsayed" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sanober" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Mohiuddin" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 157157 ;
+    bibo:pageStart 157145 ;
+    bibo:volume "7" ;
+    c4o:hasContent "Q. N. Naveed, M. R. N. M. Qureshi, A. Shaikh, A. O. Alsayed, S. Sanober, and K. Mohiuddin, Evaluating and ranking cloud-based e-learning critical success factors (csfs) using combinatorial approach, IEEE Access, 7 (2019), pp. 157145- 157157." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "Journal of Physics: Conference Series" ] ;
+    dcterms:title "Design of web-based lightweight interactive multimedia for distance learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Prasetya" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wibawa" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ahmar" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "1028" ;
+    c4o:hasContent "D. D. Prasetya, A. P. Wibawa, and A. S. Ahmar, Design of web-based lightweight interactive multimedia for distance learning, in Journal of Physics: Conference Series, vol. 1028, IOP Publishing, 2018, p. 012059." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Matt: a mobile assisted tense tool for flexible m-grammar learning based on cloud-fog-edge collaborative networking" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Refat" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rahman" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Asyhari" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kassim" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Kurniawan" ;
+                    foaf:givenname "I" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Rahman" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 66084 ;
+    bibo:pageStart 66074 ;
+    bibo:volume "8" ;
+    c4o:hasContent "N. Refat, M. A. Rahman, A. T. Asyhari, H. Kassim, I. F. Kurniawan, and M. Rahman, Matt: a mobile assisted tense tool for flexible m-grammar learning based on cloud-fog-edge collaborative networking, IEEE Access, 8 (2020), pp. 66074-66084." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Interactive learning experience-driven smart communications networks for cognitive load management in grammar learning context" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Refat" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rahman" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Asyhari" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kurniawan" ;
+                    foaf:givenname "I" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Bhuiyan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Kassim" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 64557 ;
+    bibo:pageStart 64545 ;
+    bibo:volume "7" ;
+    c4o:hasContent "N. Refat, M. A. Rahman, A. T. Asyhari, I. F. Kurniawan, M. Z. A. Bhuiyan, and H. Kassim, Interactive learning experience-driven smart communications networks for cognitive load management in grammar learning context, IEEE Access, 7 (2019), pp. 64545-64557." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Intelligent Systems and Internet of Things" ] ;
+    dcterms:title "Autism spectrum diagnosis using adaptive learning algorithm for multiple mlp classifier" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Safara" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 33 ;
+    bibo:pageStart 33 ;
+    bibo:volume "2" ;
+    c4o:hasContent "F. Safara et al., Autism spectrum diagnosis using adaptive learning algorithm for multiple mlp classifier, Journal of Intelligent Systems and Internet of Things, 2 (2021), pp. 33-3." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Healthcare Engineering" ] ;
+    dcterms:title "The role of three-dimensional reconstruction of medical images and virtual reality in nursing experimental teaching" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhu" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "X" ] ] ;
+    c4o:hasContent "M. Zhu, C. Li, S. Zhao, L. Chen, X. Zhao, et al., The role of three-dimensional reconstruction of medical images and virtual reality in nursing experimental teaching, Journal of Healthcare Engineering, 2022 (2022)." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "Aggregation strategy on federated machine learning algorithm for collaborative predictive maintenance" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bemani" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Björsell" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:volume "22" ;
+    c4o:hasContent "A. Bemani and N. Björsell, Aggregation strategy on federated machine learning algorithm for collaborative predictive maintenance, Sensors, 22 (2022), p. 6252." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Electronics" ] ;
+    dcterms:title "Open-source drone programming course for distance engineering education" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cañas" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Martín-Martín" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Arias" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Vega" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Roldán-Álvarez" ;
+                    foaf:givenname "D" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "García-Pérez" ;
+                    foaf:givenname "L" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Fernández-Conde" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "9" ;
+    c4o:hasContent "J. M. Cañas, D. Martín-Martín, P. Arias, J. Vega, D. Roldán-Álvarez, L. García-Pérez, and J. Fernández-Conde, Open-source drone programming course for distance engineering education, Electronics, 9 (2020), p. 2163." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "European journal of teacher education" ] ;
+    dcterms:title "Covid-19 and teacher education: a literature review of online teaching and learning practices" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Carrillo" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Flores" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 487 ;
+    bibo:pageStart 466 ;
+    bibo:volume "43" ;
+    c4o:hasContent "C. Carrillo and M. A. Flores, Covid-19 and teacher education: a literature review of online teaching and learning practices, European journal of teacher education, 43 (2020), pp. 466-487." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2014 ;
+    dcterms:publisher [ foaf:name "Cognition, technology & work" ] ;
+    dcterms:title "Controversy in human factors constructs and the explosive use of the nasa-tlx: a measurement perspective" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Winter" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 297 ;
+    bibo:pageStart 289 ;
+    bibo:volume "16" ;
+    c4o:hasContent "J. C. de Winter, Controversy in human factors constructs and the explosive use of the nasa-tlx: a measurement perspective, Cognition, technology & work, 16 (2014), pp. 289-297." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Internet of Things Journal" ] ;
+    dcterms:title "Edge intelligence: The confluence of edge computing and artificial intelligence" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Deng" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Fang" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yin" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Dustdar" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Zomaya" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 7469 ;
+    bibo:pageStart 7457 ;
+    bibo:volume "7" ;
+    c4o:hasContent "S. Deng, H. Zhao, W. Fang, J. Yin, S. Dustdar, and A. Y. Zomaya, Edge intelligence: The confluence of edge computing and artificial intelligence, IEEE Internet of Things Journal, 7 (2020), pp. 7457-7469." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Network Science and Engineering" ] ;
+    dcterms:title "Towards workload balancing in fog computing empowered iot" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fan" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ansari" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 262 ;
+    bibo:pageStart 253 ;
+    bibo:volume "7" ;
+    c4o:hasContent "Q. Fan and N. Ansari, Towards workload balancing in fog computing empowered iot, IEEE Transactions on Network Science and Engineering, 7 (2018), pp. 253-262." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "The difference between emergency remote teaching and online learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hodges" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Moore" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lockee" ;
+                    foaf:givenname "B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Trust" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Bond" ;
+                    foaf:givenname "M" ] ] ;
+    c4o:hasContent "C. B. Hodges, S. Moore, B. B. Lockee, T. Trust, and M. A. Bond, The difference between emergency remote teaching and online learning, (2020)." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Adaptive learning model of english vocabulary based on blockchain and deep learning, Mobile Information Systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "J" ] ] ;
+    c4o:hasContent "J. Li, Adaptive learning model of english vocabulary based on blockchain and deep learning, Mobile Information Systems, 2022 (2022)." .
+

@@ -1,0 +1,864 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Motion recovery structure (SFM)"^^xsd:string,
+        "Pixel"^^xsd:string,
+        "Space mission"^^xsd:string,
+        "Three-dimensional reconstruction"^^xsd:string,
+        "Topology modeling"^^xsd:string,
+        "Visual interaction"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2 ] ;
+    dcterms:title "Application of Data Visualization Interaction Technology in Aerospace Data Processing"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "A visualization and interactive network topology model are studied based on real-time features generated during spaceflight. Start by establishing a consistent set of data and logical interaction interfaces. This paper presents a method of scenario model construction and application programming based on virtual reality technology. The scene elements are extracted into two types of primitives, namely logical type and simulated object type. This provides a unified architecture for the editing and processing of graphic elements. This system can realize the automatic creation of the scene. Then the point cloud data obtained by sparse reconstruction of SFM is reconstructed to the Poisson surface. You get a dense, uniform grid. Experiments show that the proposed algorithm can realize the 3D reconstruction of non-cooperative objects. The spatial feature points obtained in the spatial positioning of non-cooperative objects can provide necessary technical support for its orbit positioning. The model can quickly generate new model scenario pages according to the characteristics of the task. This method changes the display mode, which can only be static or limited dynamic before. It has also improved the efficiency of space mission preparation. "^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 650 ;
+    prism:pageCount 9 ;
+    prism:startingPage 641 ;
+    datacite:doi "10.12694/scpe.v24i3.2438"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2438"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2438> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Lin"^^xsd:string ;
+    foaf:givenName "Jia"^^xsd:string ;
+    foaf:name "Jia Lin"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Chen"^^xsd:string ;
+    foaf:givenName "Zhijian"^^xsd:string ;
+    foaf:name "Zhijian Chen"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    pro:holdsRoleInTime :role_2_0 ;
+    foaf:familyName "Zheng"^^xsd:string ;
+    foaf:givenName "Bigerng"^^xsd:string ;
+    foaf:name "Bigerng Zheng"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section2 ;
+            co:nextItem [ co:itemContent :section38 ] ] ;
+    po:contains :section2,
+        :section38 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "School of Artificial Intelligence, Zhuhai City Polytechnic, Zhuhai 519090, China"^^xsd:string .
+
+:org_2_0 a frapo:Organization ;
+    foaf:name "School of Electronic Information Engineering, Jingchu University of Technology, Jingmen 448000, China"^^xsd:string .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_2_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_2_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel10 a doco:SectionLabel ;
+    c4o:hasContent "2.3." .
+
+:sectionLabel13 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionLabel14 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel15 a doco:SectionLabel ;
+    c4o:hasContent "3.3." .
+
+:sectionLabel16 a doco:SectionLabel ;
+    c4o:hasContent "4.1." .
+
+:sectionLabel2 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel22 a doco:SectionLabel ;
+    c4o:hasContent "4.2." .
+
+:sectionLabel34 a doco:SectionLabel ;
+    c4o:hasContent "5.1." .
+
+:sectionLabel35 a doco:SectionLabel ;
+    c4o:hasContent "5.2." .
+
+:sectionLabel38 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel8 a doco:SectionLabel ;
+    c4o:hasContent "2.2." .
+
+:sectionTitle10 a doco:SectionTitle ;
+    c4o:hasContent "Flow chart of the visual interactive modeling system." .
+
+:sectionTitle13 a doco:SectionTitle ;
+    c4o:hasContent "Build a primary model development platform." .
+
+:sectionTitle14 a doco:SectionTitle ;
+    c4o:hasContent "Task Resource Configuration Tool." .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "Creation of graphics meta component." .
+
+:sectionTitle16 a doco:SectionTitle ;
+    c4o:hasContent "Sparse point cloud reconstruction." .
+
+:sectionTitle2 a doco:SectionTitle ;
+    c4o:hasContent "Development of network model construction system for visual interaction." .
+
+:sectionTitle22 a doco:SectionTitle ;
+    c4o:hasContent "Poisson reconstruction." .
+
+:sectionTitle34 a doco:SectionTitle ;
+    c4o:hasContent "Experimental Data." .
+
+:sectionTitle35 a doco:SectionTitle ;
+    c4o:hasContent "Result Analysis." .
+
+:sectionTitle38 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle8 a doco:SectionTitle ;
+    c4o:hasContent "\"Plug-in\" function in the spatial model." .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Vehicular Technology" ] ;
+    dcterms:title "Machine learning aided air traffic flow analysis based on aviation big data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gui" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "F" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:issue "5" ;
+    bibo:pageEnd 4826 ;
+    bibo:pageStart 4817 ;
+    bibo:volume "69" ;
+    c4o:hasContent "Gui, G., Zhou, Z., Wang, J., Liu, F., & Sun, J. (2020). Machine learning aided air traffic flow analysis based on aviation big data. IEEE Transactions on Vehicular Technology, 69(5), 4817-4826." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Business Strategy and the Environment" ] ;
+    dcterms:title "Green aviation industry sustainable development towards an integrated support system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Qiu" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hou" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Meng" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 2452 ;
+    bibo:pageStart 2441 ;
+    bibo:volume "30" ;
+    c4o:hasContent "Qiu, R., Hou, S., Chen, X., & Meng, Z. (2021). Green aviation industry sustainable development towards an integrated support system. Business Strategy and the Environment, 30(5), 2441-2452." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Professional Communication" ] ;
+    dcterms:title "Designing threedimensional augmented reality weather visualizations to enhance general aviation weather education" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Meister" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Miller" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Dorneich" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Winer" ;
+                    foaf:givenname "E" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Brown" ;
+                    foaf:givenname "L" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Whitehurst" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 336 ;
+    bibo:pageStart 321 ;
+    bibo:volume "65" ;
+    c4o:hasContent "Meister, P., Miller, J., Wang, K., Dorneich, M. C., Winer, E., Brown, L. J., & Whitehurst, G. (2022). Designing three- dimensional augmented reality weather visualizations to enhance general aviation weather education. IEEE Transactions on Professional Communication, 65(2), 321-336." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "The R Journal" ] ;
+    dcterms:title "openSkies-Integration of Aviation Data into the R Ecosystem" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ayala" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ayala Hernández" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sellés" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Vidal" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ruiz Cortés" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 599 ;
+    bibo:pageStart 590 ;
+    bibo:volume "13" ;
+    c4o:hasContent "Ayala, R., Ayala Hernández, D., Sellés Vidal, L., & Ruiz Cortés, D. (2021). openSkies-Integration of Aviation Data into the R Ecosystem. The R Journal, 13 (2), 590-599." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Human-Machine Systems" ] ;
+    dcterms:title "A survey of eye tracking in automobile and aviation studies: Implications for eye-tracking studies in marine operations" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mao" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hildre" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 98 ;
+    bibo:pageStart 87 ;
+    bibo:volume "51" ;
+    c4o:hasContent "Mao, R., Li, G., Hildre, H. P., & Zhang, H. (2021). A survey of eye tracking in automobile and aviation studies: Implications for eye-tracking studies in marine operations. IEEE Transactions on Human-Machine Systems, 51(2), 87-98." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Industrial Informatics" ] ;
+    dcterms:title "An AR-assisted deep learning-based approach for automatic inspection of aviation connectors" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zheng" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zheng" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:issue "3" ;
+    bibo:pageEnd 1731 ;
+    bibo:pageStart 1721 ;
+    bibo:volume "17" ;
+    c4o:hasContent "Li, S., Zheng, P., & Zheng, L. (2020). An AR-assisted deep learning-based approach for automatic inspection of aviation connectors. IEEE Transactions on Industrial Informatics, 17(3), 1721-1731." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Journal of Aerospace Information Systems" ] ;
+    dcterms:title "Identification of instantaneous anomalies in general aviation operations using energy metrics" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Puranik" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mavris" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 65 ;
+    bibo:pageStart 51 ;
+    bibo:volume "17" ;
+    c4o:hasContent "Puranik, T. G., & Mavris, D. N. (2020). Identification of instantaneous anomalies in general aviation operations using energy metrics. Journal of Aerospace Information Systems, 17(1), 51-65." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section10 a doco:Section ;
+    po:contains :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel10 ;
+    po:containsAsHeader :sectionTitle10 .
+
+:section13 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :sectionLabel13 ;
+    po:containsAsHeader :sectionTitle13 .
+
+:section14 a doco:Section ;
+    po:contains :referenceToBIBREF11,
+        :sectionLabel14 ;
+    po:containsAsHeader :sectionTitle14 .
+
+:section15 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :sectionLabel15 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section16 a doco:Section ;
+    po:contains :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :sectionLabel16 ;
+    po:containsAsHeader :sectionTitle16 .
+
+:section2 a doco:Section ;
+    co:firstItem [ co:itemContent :section8 ;
+            co:nextItem [ co:itemContent :section10 ;
+                    co:nextItem [ co:itemContent :section13 ;
+                            co:nextItem [ co:itemContent :section14 ;
+                                    co:nextItem [ co:itemContent :section15 ;
+                                            co:nextItem [ co:itemContent :section16 ;
+                                                    co:nextItem [ co:itemContent :section22 ;
+                                                            co:nextItem [ co:itemContent :section34 ;
+                                                                    co:nextItem [ co:itemContent :section35 ] ] ] ] ] ] ] ] ] ;
+    po:contains :section10,
+        :section13,
+        :section14,
+        :section15,
+        :section16,
+        :section22,
+        :section34,
+        :section35,
+        :section8,
+        :sectionLabel2 ;
+    po:containsAsHeader :sectionTitle2 .
+
+:section22 a doco:Section ;
+    po:contains :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :sectionLabel22 ;
+    po:containsAsHeader :sectionTitle22 .
+
+:section34 a doco:Section ;
+    po:contains :referenceToBIBREF19,
+        :sectionLabel34 ;
+    po:containsAsHeader :sectionTitle34 .
+
+:section35 a doco:Section ;
+    po:contains :referenceToBIBREF20,
+        :referenceToBIBREF21,
+        :sectionLabel35 ;
+    po:containsAsHeader :sectionTitle35 .
+
+:section38 a doco:Section ;
+    po:contains :sectionLabel38 ;
+    po:containsAsHeader :sectionTitle38 .
+
+:section8 a doco:Section ;
+    po:contains :sectionLabel8 ;
+    po:containsAsHeader :sectionTitle8 .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Engineering Management" ] ;
+    dcterms:title "Applying systems modeling language in an aviation maintenance system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Elakramine" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jaradat" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hossain" ;
+                    foaf:givenname "N" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Banghart" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Kerr" ;
+                    foaf:givenname "C" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "El Amrani" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "6" ;
+    bibo:pageEnd 4018 ;
+    bibo:pageStart 4006 ;
+    bibo:volume "69" ;
+    c4o:hasContent "Elakramine, F., Jaradat, R., Hossain, N. U. I., Banghart, M., Kerr, C., & El Amrani, S. (2021). Applying systems modeling language in an aviation maintenance system. IEEE Transactions on Engineering Management, 69(6), 4006-4018." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Eurasian Journal of Business and Economics" ] ;
+    dcterms:title "Financial distress in Indian aviation industry: Investigation using bankruptcy prediction models" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shome" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Verma" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:issue "25" ;
+    bibo:pageEnd 109 ;
+    bibo:pageStart 91 ;
+    bibo:volume "13" ;
+    c4o:hasContent "Shome, S., & Verma, S. (2020). Financial distress in Indian aviation industry: Investigation using bankruptcy prediction models. Eurasian Journal of Business and Economics, 13(25), 91-109." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Sandwich Structures & Materials" ] ;
+    dcterms:title "Investigating the effects aviation fluids have on the flatwise compressive strength of Nomex® honeycomb core material" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sterkenburg" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 382 ;
+    bibo:pageStart 365 ;
+    bibo:volume "23" ;
+    c4o:hasContent "Kim, G., & Sterkenburg, R. (2021). Investigating the effects aviation fluids have on the flatwise compressive strength of Nomex® honeycomb core material. Journal of Sandwich Structures & Materials, 23(1), 365-382." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "IEICE TRANSACTIONS on Information and Systems" ] ;
+    dcterms:title "GAN-SR Anomaly Detection Model Based on Imbalanced Data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sui" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:issue "7" ;
+    bibo:pageEnd 1218 ;
+    bibo:pageStart 1209 ;
+    bibo:volume "106" ;
+    c4o:hasContent "WANG, S., CHEN, H., DING, L., SUI, H., & DING, J. (2023). GAN-SR Anomaly Detection Model Based on Imbalanced Data. IEICE TRANSACTIONS on Information and Systems, 106(7), 1209-1218." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Journal of Aircraft" ] ;
+    dcterms:title "Aircraft performance model calibration and validation for general aviation safety analysis" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Puranik" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Harrison" ;
+                    foaf:givenname "E" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chakraborty" ;
+                    foaf:givenname "I" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Mavris" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:issue "4" ;
+    bibo:pageEnd 688 ;
+    bibo:pageStart 678 ;
+    bibo:volume "57" ;
+    c4o:hasContent "Puranik, T., Harrison, E., Chakraborty, I., & Mavris, D. (2020). Aircraft performance model calibration and validation for general aviation safety analysis. Journal of Aircraft, 57(4), 678-688." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of Reliability, Risk and Safety: Theory and Application" ] ;
+    dcterms:title "Prediction of Failure Time and Remaining Useful Life in Aviation Systems: Predictors, models, and challenges" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Babaee" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gheidar-Kheljani" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Khazaee" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Karbasian" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 106 ;
+    bibo:pageStart 97 ;
+    bibo:volume "4" ;
+    c4o:hasContent "Babaee, M., Gheidar-Kheljani, J., Khazaee, M., & Karbasian, M. (2021). Prediction of Failure Time and Remaining Useful Life in Aviation Systems: Predictors, models, and challenges. International Journal of Reliability, Risk and Safety: Theory and Application, 4(2), 97-106." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Big Data Analytics" ] ;
+    dcterms:title "Software architectures for big data: a systematic literature review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Avci" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tekinerdogan" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Athanasiadis" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 53 ;
+    bibo:pageStart 1 ;
+    bibo:volume "5" ;
+    c4o:hasContent "Avci, C., Tekinerdogan, B., & Athanasiadis, I. N. (2020). Software architectures for big data: a systematic literature review. Big Data Analytics, 5(1), 1-53." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of Hospitality and Tourism Systems" ] ;
+    dcterms:title "The impact of service quality on passenger satisfaction and loyalty in the Indian aviation industry" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Walia" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sharma" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Mathur" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 143 ;
+    bibo:pageStart 136 ;
+    bibo:volume "14" ;
+    c4o:hasContent "Walia, S., Sharma, D., & Mathur, A. (2021). The impact of service quality on passenger satisfaction and loyalty in the Indian aviation industry. International Journal of Hospitality and Tourism Systems, 14(2), 136-143." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Internet of Things Journal" ] ;
+    dcterms:title "Spatial-temporal graph data mining for iot-enabled air mobility prediction" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jiang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Niu" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "B" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "C" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "D" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Song" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:issue "12" ;
+    bibo:pageEnd 9240 ;
+    bibo:pageStart 9232 ;
+    bibo:volume "9" ;
+    c4o:hasContent "Jiang, Y., Niu, S., Zhang, K., Chen, B., Xu, C., Liu, D., & Song, H. (2021). Spatial-temporal graph data mining for iot-enabled air mobility prediction. IEEE Internet of Things Journal, 9(12), 9232-9240." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Surgical Education" ] ;
+    dcterms:title "Surgeons are not pilots: is the aviation safety paradigm relevant to modern surgical practice?" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gogalniceanu" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Calder" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Callaghan" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sevdalis" ;
+                    foaf:givenname "N" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Mamode" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:issue "5" ;
+    bibo:pageEnd 1399 ;
+    bibo:pageStart 1393 ;
+    bibo:volume "78" ;
+    c4o:hasContent "Gogalniceanu, P., Calder, F., Callaghan, C., Sevdalis, N., & Mamode, N. (2021). Surgeons are not pilots: is the aviation safety paradigm relevant to modern surgical practice?. Journal of Surgical Education, 78(5), 1393-1399." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Adam Academy Journal of Social Sciences" ] ;
+    dcterms:title "From Descriptive to Prescriptive Analytics: Turkish Airlines Case Study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Akpinar" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hiziroğlu" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Codal" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 125 ;
+    bibo:pageStart 99 ;
+    bibo:volume "13" ;
+    c4o:hasContent "AKPINAR, M. T., HIZIROĞLU, K., & CODAL, K. S. (2023). From Descriptive to Prescriptive Analytics: Turkish Airlines Case Study. Adam Academy Journal of Social Sciences, 13(1), 99-125." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Visualization and Computer Graphics" ] ;
+    dcterms:title "Data visceralization: Enabling deeper understanding of data using virtual reality" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Brown" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hurter" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Drucker" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Dwyer" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 1105 ;
+    bibo:pageStart 1095 ;
+    bibo:volume "27" ;
+    c4o:hasContent "Lee, B., Brown, D., Lee, B., Hurter, C., Drucker, S., & Dwyer, T. (2020). Data visceralization: Enabling deeper understanding of data using virtual reality. IEEE Transactions on Visualization and Computer Graphics, 27(2), 1095-1105." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Neural Computing and Applications" ] ;
+    dcterms:title "Deep learning models for forecasting aviation demand time series" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kanavos" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kounelis" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Iliadis" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Makris" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:issue "23" ;
+    bibo:pageEnd 16343 ;
+    bibo:pageStart 16329 ;
+    bibo:volume "33" ;
+    c4o:hasContent "Kanavos, A., Kounelis, F., Iliadis, L., & Makris, C. (2021). Deep learning models for forecasting aviation demand time series. Neural Computing and Applications, 33(23), 16329-16343." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Aerospace Information Systems" ] ;
+    dcterms:title "Multiclass Anomaly Detection in Flight Data Using Semi-Supervised Explainable Deep Learning Model" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Memarzadeh" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Matthews" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Templin" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 97 ;
+    bibo:pageStart 83 ;
+    bibo:volume "19" ;
+    c4o:hasContent "Memarzadeh, M., Matthews, B., & Templin, T. (2022). Multiclass Anomaly Detection in Flight Data Using Semi-Supervised Explainable Deep Learning Model. Journal of Aerospace Information Systems, 19(2), 83-97." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Vehicular Technology Magazine" ] ;
+    dcterms:title "Aviation data lake: Using side information to enhance future air-ground vehicle networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gui" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sari" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Gacanin" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Adachi" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:issue "1" ;
+    bibo:pageEnd 48 ;
+    bibo:pageStart 40 ;
+    bibo:volume "16" ;
+    c4o:hasContent "Sun, J., Gui, G., Sari, H., Gacanin, H., & Adachi, F. (2020). Aviation data lake: Using side information to enhance future air-ground vehicle networks. IEEE Vehicular Technology Magazine, 16(1), 40-48." .
+

@@ -1,0 +1,886 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "equivalent circuit"^^xsd:string,
+        "insulation condition monitoring"^^xsd:string,
+        "photoelectric composite submarine cable"^^xsd:string,
+        "thermoelectric coupling model"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2,
+                :author_3,
+                :author_4,
+                :author_5 ] ;
+    dcterms:title "Real-time Monitoring Method of Insulation Status of Photoelectric Composite Submarine Cable based on Thermoelectric Coupling"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "The existing approach for monitoring the insulation state of photoelectric composite submarine cables primarily relies on detecting the current of the cable protection layer. However, this conventional method suffers from limited monitoring accuracy due to the absence of parameter identification processing for the cable. As a result, there is a need to improve the monitoring methodology by incorporating robust parameter identification techniques to enhance the accuracy of insulation state evaluation. In this regard, a real-time monitoring method based on thermoelectric coupling is proposed to monitor the insulation status of the photoelectric composite submarine cable. By constructing an equivalent composite circuit model and a thermodynamic function, a thermoelectric coupling model is constructed and used to identify the parameters of the submarine cable; by extracting the frequency extremes in the spectral values of the submarine cable current signal, an equivalent insulation characteristic function is constructed to realize the determination of the insulation state. The proposed method is verified for the insulation state monitoring effect in the experiment. The experimental results show that when the proposed method is used to monitor the insulation state of the photoelectric composite submarine cable, the calculated partial discharge quantity has a small error, and the monitoring accuracy is high."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 407 ;
+    prism:pageCount 8 ;
+    prism:startingPage 399 ;
+    datacite:doi "10.12694/scpe.v24i3.2282"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2282"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2282> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Gao"^^xsd:string ;
+    foaf:givenName "Chuanlian"^^xsd:string ;
+    foaf:name "Chuanlian Gao"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Deng"^^xsd:string ;
+    foaf:givenName "Huakun"^^xsd:string ;
+    foaf:name "Huakun Deng"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    pro:holdsRoleInTime :role_2_0 ;
+    foaf:familyName "Wei"^^xsd:string ;
+    foaf:givenName "Yanlei"^^xsd:string ;
+    foaf:name "Yanlei Wei"^^xsd:string .
+
+:author_3 a foaf:Person ;
+    pro:holdsRoleInTime :role_3_0 ;
+    foaf:familyName "Liu"^^xsd:string ;
+    foaf:givenName "Zhenzhong"^^xsd:string ;
+    foaf:name "Zhenzhong Liu"^^xsd:string .
+
+:author_4 a foaf:Person ;
+    pro:holdsRoleInTime :role_4_0 ;
+    foaf:familyName "Lao"^^xsd:string ;
+    foaf:givenName "Xinli"^^xsd:string ;
+    foaf:name "Xinli Lao"^^xsd:string .
+
+:author_5 a foaf:Person ;
+    pro:holdsRoleInTime :role_5_0 ;
+    foaf:familyName "Zhang"^^xsd:string ;
+    foaf:givenName "Jiajian"^^xsd:string ;
+    foaf:name "Jiajian Zhang"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section2 ;
+                    co:nextItem [ co:itemContent :section3 ;
+                            co:nextItem [ co:itemContent :section4 ;
+                                    co:nextItem [ co:itemContent :section12 ;
+                                            co:nextItem [ co:itemContent :section18 ;
+                                                    co:nextItem [ co:itemContent :section26 ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section12,
+        :section18,
+        :section2,
+        :section26,
+        :section3,
+        :section4 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "CNOOC (China) Limited Zhanjiang Branch, Zhanjiang, 524000 China"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "CNOOC (China) Limited Zhanjiang Branch, Zhanjiang, 524000 China"^^xsd:string .
+
+:org_2_0 a frapo:Organization ;
+    foaf:name "CNOOC (China) Limited Zhanjiang Branch, Zhanjiang, 524000 China"^^xsd:string .
+
+:org_3_0 a frapo:Organization ;
+    foaf:name "CNOOC (China) Limited Zhanjiang Branch, Zhanjiang, 524000 China"^^xsd:string .
+
+:org_4_0 a frapo:Organization ;
+    foaf:name "CNOOC (China) Limited Zhanjiang Branch, Zhanjiang, 524000 China"^^xsd:string .
+
+:org_5_0 a frapo:Organization ;
+    foaf:name "CNOOC (China) Limited Zhanjiang Branch, Zhanjiang, 524000 China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:role_2_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_2_0 ;
+    pro:withRole pro:author .
+
+:role_3_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_3_0 ;
+    pro:withRole pro:author .
+
+:role_4_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_4_0 ;
+    pro:withRole pro:author .
+
+:role_5_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_5_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel12 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel18 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel2 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel21 a doco:SectionLabel ;
+    c4o:hasContent "5.1." .
+
+:sectionLabel24 a doco:SectionLabel ;
+    c4o:hasContent "5.2." .
+
+:sectionLabel26 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionLabel3 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction" .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "Optical composite submarine cable insulation eigen function extreme frequency extraction." .
+
+:sectionTitle18 a doco:SectionTitle ;
+    c4o:hasContent "Optical composite submarine cable insulation state identification." .
+
+:sectionTitle2 a doco:SectionTitle ;
+    c4o:hasContent "Submarine cables must be designed to accommodate high transmission capacities to meet the growing demand for data and communication services across continents and undersea regions" .
+
+:sectionTitle21 a doco:SectionTitle ;
+    c4o:hasContent "Experimental preparation." .
+
+:sectionTitle24 a doco:SectionTitle ;
+    c4o:hasContent "Analysis of test results." .
+
+:sectionTitle26 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle3 a doco:SectionTitle ;
+    c4o:hasContent "Photoelectric composite submarine cable parameter identification based on thermoelectric coupling model." .
+
+:sectionTitle4 a doco:SectionTitle ;
+    c4o:hasContent "Fig. 2.1: Thermoelectric coupling framework" .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF16,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section12 a doco:Section ;
+    po:contains :referenceToBIBREF11,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :sectionLabel12 ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section18 a doco:Section ;
+    co:firstItem [ co:itemContent :section21 ;
+            co:nextItem [ co:itemContent :section24 ] ] ;
+    po:contains :referenceToBIBREF18,
+        :section21,
+        :section24,
+        :sectionLabel18 ;
+    po:containsAsHeader :sectionTitle18 .
+
+:section2 a doco:Section ;
+    po:contains :sectionLabel2 ;
+    po:containsAsHeader :sectionTitle2 .
+
+:section21 a doco:Section ;
+    po:contains :sectionLabel21 ;
+    po:containsAsHeader :sectionTitle21 .
+
+:section24 a doco:Section ;
+    po:contains :sectionLabel24 ;
+    po:containsAsHeader :sectionTitle24 .
+
+:section26 a doco:Section ;
+    po:contains :sectionLabel26 ;
+    po:containsAsHeader :sectionTitle26 .
+
+:section3 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF6,
+        :sectionLabel3 ;
+    po:containsAsHeader :sectionTitle3 .
+
+:section4 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF12,
+        :referenceToBIBREF15,
+        :referenceToBIBREF17,
+        :referenceToBIBREF5,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9 ;
+    po:containsAsHeader :sectionTitle4 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Instrumentation and Measurement" ] ;
+    dcterms:title "System and method of quasi-distributed fiber bragg gratings monitoring brittle fracture process of composite insulators" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cao" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hao" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wei" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 10 ;
+    bibo:pageStart 1 ;
+    bibo:volume "70" ;
+    c4o:hasContent "H. Cao, Y. Hao, Z. Zhang, J. Wei, and L. Yang, System and method of quasi-distributed fiber bragg gratings monitoring brittle fracture process of composite insulators, IEEE Transactions on Instrumentation and Measurement, 70 (2021), pp. 1-10." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Analytical and Bioanalytical Chemistry" ] ;
+    dcterms:title "Real-time fluorometric monitoring of monophenolase activity using a matrix-matched calibration curve" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Du" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Guo" ;
+                    foaf:givenname "N" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Shang" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "W" ] ] ;
+    bibo:pageEnd 647 ;
+    bibo:pageStart 635 ;
+    bibo:volume "413" ;
+    c4o:hasContent "D. Du, N. Guo, L. Zhang, Y. Wu, Q. Shang, and W. Liu, Real-time fluorometric monitoring of monophenolase activity using a matrix-matched calibration curve, Analytical and Bioanalytical Chemistry, 413 (2021), pp. 635-647." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Marine Environmental Engineering" ] ;
+    dcterms:title "Protection of submarine optical fibre cables in the strait of malacca" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Muneez" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "M. Muneez, Protection of submarine optical fibre cables in the strait of malacca., Journal of Marine Environmental Engi- neering, 10 (2021)." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions on Electron Devices" ] ;
+    dcterms:title "Approximate analytical solution to the temperature field in annular thermoelectric generator made of temperature-dependent material" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Niu" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cao" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hu" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "F" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Shi" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 6392 ;
+    bibo:pageStart 6386 ;
+    bibo:volume "68" ;
+    c4o:hasContent "W. Niu, X. Cao, Y. Hu, F. Wang, and J. Shi, Approximate analytical solution to the temperature field in annular thermoelectric generator made of temperature-dependent material, IEEE Transactions on Electron Devices, 68 (2021), pp. 6386-6392." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Geophysics" ] ;
+    dcterms:title "Distributed acoustic sensing for near-surface imaging using submarine telecommunication cable: A case study in the trondheimsfjord, norway" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Taweesintananon" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Landrø" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Brenne" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Haukanes" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pages "303--B320" ;
+    bibo:volume "86" ;
+    c4o:hasContent "K. Taweesintananon, M. Landrø, J. K. Brenne, and A. Haukanes, Distributed acoustic sensing for near-surface imaging using submarine telecommunication cable: A case study in the trondheimsfjord, norway, Geophysics, 86 (2021), pp. B303- B320." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "The Lancet" ] ;
+    dcterms:title "Comparing real-time and intermittently scanned continuous glucose monitoring in adults with type 1 diabetes (alertt1): a 6-month, prospective, multicentre, randomised controlled trial" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Visser" ;
+                    foaf:givenname "M" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Myngheer" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Charleer" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Fieuws" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Block" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Hilbrands" ;
+                    foaf:givenname "R" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Van Huffel" ;
+                    foaf:givenname "L" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Maes" ;
+                    foaf:givenname "T" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Vanhaverbeke" ;
+                    foaf:givenname "G" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Dirinck" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:pageEnd 2283 ;
+    bibo:pageStart 2275 ;
+    bibo:volume "397" ;
+    c4o:hasContent "M. M. Visser, S. Charleer, S. Fieuws, C. De Block, R. Hilbrands, L. Van Huffel, T. Maes, G. Vanhaverbeke, E. Dirinck, N. Myngheer, et al., Comparing real-time and intermittently scanned continuous glucose monitoring in adults with type 1 diabetes (alertt1): a 6-month, prospective, multicentre, randomised controlled trial, The Lancet, 397 (2021), pp. 2275-2283." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Computational Methods in Sciences and Engineering" ] ;
+    dcterms:title "A wireless real-time monitoring system on intelligent underwater pollution cleaning robot" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "He" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 1060 ;
+    bibo:pageStart 1051 ;
+    bibo:volume "21" ;
+    c4o:hasContent "X. Wu, S. Wang, X. Wang, and G. He, A wireless real-time monitoring system on intelligent underwater pollution cleaning robot, Journal of Computational Methods in Sciences and Engineering, 21 (2021), pp. 1051-1060." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "RSC advances" ] ;
+    dcterms:title "Visible-light-responsive reduced graphene oxide/gc 3 n 4/tio 2 composite nanocoating for photoelectric stimulation of neuronal and osteoblastic differentiation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yan" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Shao" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Shen" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Xie" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Zheng" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 8888 ;
+    bibo:pageStart 8878 ;
+    bibo:volume "12" ;
+    c4o:hasContent "Z. Yan, K. Li, D. Shao, Q. Shen, Y. Ding, S. Huang, Y. Xie, and X. Zheng, Visible-light-responsive reduced graphene oxide/gc 3 n 4/tio 2 composite nanocoating for photoelectric stimulation of neuronal and osteoblastic differentiation, RSC advances, 12 (2022), pp. 8878-8888." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Indoor and Built Environment" ] ;
+    dcterms:title "Real-time monitoring of changes in building tilt angle using double square artificial marks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hu" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Lei" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 786 ;
+    bibo:pageStart 777 ;
+    bibo:volume "30" ;
+    c4o:hasContent "G. Yang, J. Wu, Q. Hu, and D. Lei, Real-time monitoring of changes in building tilt angle using double square artificial marks, Indoor and Built Environment, 30 (2021), pp. 777-786." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "ACS Applied Materials & Interfaces" ] ;
+    dcterms:title "High-performance and stable (ag, cd)-containing znsb thermoelectric compounds" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Deng" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Qiu" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Xing" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Cheng" ;
+                    foaf:givenname "J" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Jin" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "P" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Shi" ;
+                    foaf:givenname "X" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 26670 ;
+    bibo:pageStart 26662 ;
+    bibo:volume "14" ;
+    c4o:hasContent "S. Yang, T. Deng, P. Qiu, T. Xing, J. Cheng, Z. Jin, P. Li, X. Shi, and L. Chen, High-performance and stable (ag, cd)-containing znsb thermoelectric compounds, ACS Applied Materials & Interfaces, 14 (2022), pp. 26662-26670." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Computer Simulation" ] ;
+    dcterms:title "Design and simulation of remote sensing monitoring method for water pollution" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lv" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "Y" ] ] ;
+    c4o:hasContent "L. Zhang, D. Lv, Y. Gao, and et al., Design and simulation of remote sensing monitoring method for water pollution, Computer Simulation, 2022 (2022), pp. 289-292, 312." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Chemistry of Materials" ] ;
+    dcterms:title "Exceptional thermoelectric performance enabled by high carrier mobility and intrinsically low lattice thermal conductivity in phosphide cd3p2" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Fan" ;
+                    foaf:givenname "L" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Peng" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yan" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ran" ;
+                    foaf:givenname "C" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Han" ;
+                    foaf:givenname "G" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "B" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Lu" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 1626 ;
+    bibo:pageStart 1620 ;
+    bibo:volume "34" ;
+    c4o:hasContent "L. Fan, K. Peng, Z. Zhou, Y. Yan, C. Ran, H. Wang, G. Han, B. Zhang, X. Lu, G. Wang, et al., Exceptional thermoelectric performance enabled by high carrier mobility and intrinsically low lattice thermal conductivity in phosphide cd3p2, Chemistry of Materials, 34 (2022), pp. 1620-1626." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "ACS Energy Letters" ] ;
+    dcterms:title "Solution-processed hole-doped snse thermoelectric thin-film devices for low-temperature power generation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Heo" ;
+                    foaf:givenname "S" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Mun" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yoo" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Jang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Jo" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Cho" ;
+                    foaf:givenname "J" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Baek" ;
+                    foaf:givenname "S" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Gu" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 2101 ;
+    bibo:pageStart 2092 ;
+    bibo:volume "7" ;
+    c4o:hasContent "S. H. Heo, J. Yoo, H. Lee, H. Jang, S. Jo, J. Cho, S. Baek, S. E. Yang, D. H. Gu, H. J. Mun, et al., Solution-processed hole-doped snse thermoelectric thin-film devices for low-temperature power generation, ACS Energy Letters, 7 (2022), pp. 2092-2101." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "The Journal of Physical Chemistry Letters" ] ;
+    dcterms:title "Size-sensitive thermoelectric properties of electrolyte-based nanofluidic systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jin" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tao" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Luo" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 1149 ;
+    bibo:pageStart 1144 ;
+    bibo:volume "12" ;
+    c4o:hasContent "Y. Jin, R. Tao, S. Luo, and Z. Li, Size-sensitive thermoelectric properties of electrolyte-based nanofluidic systems, The Journal of Physical Chemistry Letters, 12 (2021), pp. 1144-1149." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Cyber defense across the ocean floor. the geopolitics of submarine cable security. washington, dc: Atlantic council" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kullik" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sherman" ;
+                    foaf:givenname "Justin" ] ] ;
+    c4o:hasContent "J. Kullik, Justin sherman: Cyber defense across the ocean floor. the geopolitics of submarine cable security. washington, dc: Atlantic council, september 2021, 2022." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Annals of the Romanian Society for Cell Biology" ] ;
+    dcterms:title "Real-time heart rate monitoring system using least squaremethod" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mohammad" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Dileep" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 16308 ;
+    bibo:pageStart 16302 ;
+    bibo:volume "25" ;
+    c4o:hasContent "P. R. Kumar, G. B. Mohammad, and P. Dileep, Real-time heart rate monitoring system using least squaremethod, Annals of the Romanian Society for Cell Biology, 25 (2021), pp. 16302-16308." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Energy Reports" ] ;
+    dcterms:title "Study on internal overvoltages of 220 kv submarine cable transmission system of the offshore oil-gas field group" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yu" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Deng" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 386 ;
+    bibo:pageStart 377 ;
+    bibo:volume "8" ;
+    c4o:hasContent "H. Li, P. Yu, S. Li, and J. Deng, Study on internal overvoltages of 220 kv submarine cable transmission system of the offshore oil-gas field group, Energy Reports, 8 (2022), pp. 377-386." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Colloid and Interface Science" ] ;
+    dcterms:title "Carbon dots dominated photoelectric surface in titanium dioxide nanotube/nitrogen-doped carbon dot/gold nanocomposites for improved photoelectrochemical water splitting" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liao" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shi" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Dang" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Kang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Shao" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 1283 ;
+    bibo:pageStart 1274 ;
+    bibo:volume "606" ;
+    c4o:hasContent "F. Liao, Y. Shi, Q. Dang, H. Yang, H. Huang, Z. Kang, and M. Shao, Carbon dots dominated photoelectric surface in titanium dioxide nanotube/nitrogen-doped carbon dot/gold nanocomposites for improved photoelectrochemical water splitting, Journal of Colloid and Interface Science, 606 (2022), pp. 1274-1283." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Carbon" ] ;
+    dcterms:title "Optimized photoelectric catalysis with enhanced durability in rgo-interconnected nanocarbon-confined cobalt nanoparticles" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liao" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "W" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Cui" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zuo" ;
+                    foaf:givenname "X" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Jin" ;
+                    foaf:givenname "S" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 570 ;
+    bibo:pageStart 561 ;
+    bibo:volume "189" ;
+    c4o:hasContent "W. Liao, W. Wang, D. Sun, Q. Cui, X. Zuo, Q. Yang, H. Tang, S. Jin, and G. Li, Optimized photoelectric catalysis with enhanced durability in rgo-interconnected nanocarbon-confined cobalt nanoparticles, Carbon, 189 (2022), pp. 561-570." .
+

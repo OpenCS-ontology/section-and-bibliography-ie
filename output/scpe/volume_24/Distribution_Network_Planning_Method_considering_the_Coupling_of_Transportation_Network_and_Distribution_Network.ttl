@@ -1,0 +1,792 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "distribution network coupling"^^xsd:string,
+        "linear programming"^^xsd:string,
+        "planning methods"^^xsd:string,
+        "transportation networks"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2,
+                :author_3 ] ;
+    dcterms:title "Distribution Network Planning Method considering the Coupling of Transportation Network and Distribution Network"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "This paper introduces a novel distribution network planning method that addresses the limitations of conventional approaches. The existing methods primarily focus on optimizing component objectives using reliability analysis, which results in inadequate operational power control performance due to neglecting the coupling degree analysis of distribution network subprojects. To overcome this limitation, the proposed method incorporates the coupling of the traffic and distribution networks into the planning process. The method involves modeling the transportation network and analyzing the coupling characteristics of the planning items. Specifically, the energy efficiency coupling degree is calculated to assess the degree of coupling. Based on this analysis, the planning nodes are strategically deployed, and a comprehensive planning model is constructed. The model is then subjected to constraints and solved to obtain an optimal distribution network planning scheme. To evaluate the effectiveness of the proposed method, experiments are conducted to assess its operational power control capability. The experimental results demonstrate that when the proposed method is employed for distribution network planning, it reduces operating power and achieves a more desirable planning outcome. The novelty of this work lies in integrating the coupling analysis of the traffic network and the distribution network into the planning process. Considering the interdependencies between these networks, the proposed method enables a more comprehensive and efficient distribution network planning scheme. This approach enhances operational power control performance and improves the overall effectiveness of distribution network planning."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 438 ;
+    prism:pageCount 9 ;
+    prism:startingPage 429 ;
+    datacite:doi "10.12694/scpe.v24i3.2288"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2288"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2288> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Lu"^^xsd:string ;
+    foaf:givenName "Sichen"^^xsd:string ;
+    foaf:name "Sichen Lu"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Li"^^xsd:string ;
+    foaf:givenName "Jianfeng"^^xsd:string ;
+    foaf:name "Jianfeng Li"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    pro:holdsRoleInTime :role_2_0 ;
+    foaf:familyName "Song"^^xsd:string ;
+    foaf:givenName "Zhuoran"^^xsd:string ;
+    foaf:name "Zhuoran Song"^^xsd:string .
+
+:author_3 a foaf:Person ;
+    pro:holdsRoleInTime :role_3_0 ;
+    foaf:familyName "Jiang"^^xsd:string ;
+    foaf:givenName "Tao"^^xsd:string ;
+    foaf:name "Tao Jiang"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section4 ;
+                    co:nextItem [ co:itemContent :section18 ;
+                            co:nextItem [ co:itemContent :section31 ;
+                                    co:nextItem [ co:itemContent :section46 ] ] ] ] ] ;
+    po:contains :section0,
+        :section18,
+        :section31,
+        :section4,
+        :section46 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "State Grid Liaoning Electric Power Supply Co., Ltd, Shenyang, 110006, China"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "State Grid Liaoning Electric Power Supply Co., Ltd, Shenyang, 110006, China"^^xsd:string .
+
+:org_2_0 a frapo:Organization ;
+    foaf:name "State Grid Liaoning Electric Power Supply Co., Ltd,Shenyang,110006, China"^^xsd:string .
+
+:org_3_0 a frapo:Organization ;
+    foaf:name "State Grid Liaoning Electric Power Supply Co., Ltd, Shenyang,110006, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:role_2_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_2_0 ;
+    pro:withRole pro:author .
+
+:role_3_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_3_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel18 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel31 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel4 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel42 a doco:SectionLabel ;
+    c4o:hasContent "5.1." .
+
+:sectionLabel44 a doco:SectionLabel ;
+    c4o:hasContent "5.2." .
+
+:sectionLabel46 a doco:SectionLabel ;
+    c4o:hasContent "6." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle18 a doco:SectionTitle ;
+    c4o:hasContent "Distribution network project planning node deployment." .
+
+:sectionTitle31 a doco:SectionTitle ;
+    c4o:hasContent "Distribution network planning model construction." .
+
+:sectionTitle4 a doco:SectionTitle ;
+    c4o:hasContent "Traffic network model construction and planning project benefit coupling degree calculation." .
+
+:sectionTitle42 a doco:SectionTitle ;
+    c4o:hasContent "Experimental preparation." .
+
+:sectionTitle44 a doco:SectionTitle ;
+    c4o:hasContent "Analysis of test results." .
+
+:sectionTitle46 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF16,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section18 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF16,
+        :referenceToBIBREF7,
+        :sectionLabel18 ;
+    po:containsAsHeader :sectionTitle18 .
+
+:section31 a doco:Section ;
+    co:firstItem [ co:itemContent :section42 ;
+            co:nextItem [ co:itemContent :section44 ] ] ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF15,
+        :section42,
+        :section44,
+        :sectionLabel31 ;
+    po:containsAsHeader :sectionTitle31 .
+
+:section4 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :sectionLabel4 ;
+    po:containsAsHeader :sectionTitle4 .
+
+:section42 a doco:Section ;
+    po:contains :sectionLabel42 ;
+    po:containsAsHeader :sectionTitle42 .
+
+:section44 a doco:Section ;
+    po:contains :sectionLabel44 ;
+    po:containsAsHeader :sectionTitle44 .
+
+:section46 a doco:Section ;
+    po:contains :sectionLabel46 ;
+    po:containsAsHeader :sectionTitle46 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Technology & Applied Science Research" ] ;
+    dcterms:title "Examination of the chance constrained optimal wt penetration level in distorted distribution network with wind speed and load uncertainties, Engineering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Barutcu" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:pageEnd 7320 ;
+    bibo:pageStart 7311 ;
+    bibo:volume "11" ;
+    c4o:hasContent "I. C. Barutcu, Examination of the chance constrained optimal wt penetration level in distorted distribution network with wind speed and load uncertainties, Engineering, Technology & Applied Science Research, 11 (2021), pp. 7311-7320." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Renewable Energy Focus" ] ;
+    dcterms:title "Harmonics mitigated multi-objective energy optimization in pv integrated rural distribution network using modified tlbo algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bhatt" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 22 ;
+    bibo:pageStart 13 ;
+    bibo:volume "40" ;
+    c4o:hasContent "P. Bhatt, Harmonics mitigated multi-objective energy optimization in pv integrated rural distribution network using modified tlbo algorithm, Renewable Energy Focus, 40 (2022), pp. 13-22." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Alexandria Engineering Journal" ] ;
+    dcterms:title "Optimal integration of dstatcom using improved bacterial search algorithm for distribution network optimization" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Redae" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gidey" ;
+                    foaf:givenname "E" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Mahela" ;
+                    foaf:givenname "O" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Taha" ;
+                    foaf:givenname "I" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Hussien" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 5555 ;
+    bibo:pageStart 5539 ;
+    c4o:hasContent "B. Khan, K. Redae, E. Gidey, O. P. Mahela, I. B. Taha, and M. G. Hussien, Optimal integration of dstatcom using improved bacterial search algorithm for distribution network optimization, Alexandria Engineering Journal, 61 (2022), pp. 5539-5555." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Energy Reports" ] ;
+    dcterms:title "Aoi research on pmu cloud side cooperative system of active distribution network" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xia" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Qi" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 686 ;
+    bibo:pageStart 677 ;
+    bibo:volume "8" ;
+    c4o:hasContent "W. Lin, B. Xia, Y. Tang, T. Zhang, and Y. Qi, Aoi research on pmu cloud side cooperative system of active distribution network, Energy Reports, 8 (2022), pp. 677-686." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Computer Simulation" ] ;
+    dcterms:title "Distributed power supply access distribution network planning with timing characteristics" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "Y.-J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Jing" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Cao" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Bai" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 55 ;
+    bibo:pageStart 51 ;
+    bibo:volume "39" ;
+    c4o:hasContent "Y.-J. Lin, C. Jing, C. Cao, and K. Bai, Distributed power supply access distribution network planning with timing characteristics, Computer Simulation, 39 (2022), pp. 51-55." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Aquatic Conservation: Marine and Freshwater Ecosystems" ] ;
+    dcterms:title "Distribution of demersal fish assemblages along the west coast of st lucia: Implications for planning no-take marine reserves" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mitchell" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bolam" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Close" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Garcia" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Monk" ;
+                    foaf:givenname "J" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Alliji" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 1366 ;
+    bibo:pageStart 1354 ;
+    bibo:volume "31" ;
+    c4o:hasContent "P. J. Mitchell, S. G. Bolam, H. L. Close, C. Garcia, J. Monk, and K. Alliji, Distribution of demersal fish assemblages along the west coast of st lucia: Implications for planning no-take marine reserves, Aquatic Conservation: Marine and Freshwater Ecosystems, 31 (2021), pp. 1354-1366." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Susceptibility of carbon pipeline steels operated in natural gas distribution network to hydrogen-induced cracking" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nykyforchyn" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Unigovskyi" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zvirko" ;
+                    foaf:givenname "O" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hredil" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Krechkovska" ;
+                    foaf:givenname "H" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Student" ;
+                    foaf:givenname "O" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Tsyrulnyk" ;
+                    foaf:givenname "O" ] ] ;
+    bibo:pageEnd 312 ;
+    bibo:pageStart 306 ;
+    bibo:volume "36" ;
+    c4o:hasContent "H. Nykyforchyn, L. Unigovskyi, O. Zvirko, M. Hredil, H. Krechkovska, O. Student, and O. Tsyrulnyk, Suscep- tibility of carbon pipeline steels operated in natural gas distribution network to hydrogen-induced cracking, Procedia Structural Integrity, 36 (2022), pp. 306-312." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Information Sciences" ] ;
+    dcterms:title "A goal-reference-point decision-making method based on normal cloud model and its application in distribution network planning evaluation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Song" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhu" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 898 ;
+    bibo:pageStart 883 ;
+    bibo:volume "577" ;
+    c4o:hasContent "W. Song and J. Zhu, A goal-reference-point decision-making method based on normal cloud model and its application in distribution network planning evaluation, Information Sciences, 577 (2021), pp. 883-898." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IOP Conference Series: Earth and Environmental Science" ] ;
+    dcterms:title "Equivalent model of active distribution network considering uncertainties of wind turbines, photovoltaics and loads" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wei" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zheng" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "Q" ] ] ;
+    bibo:volume "645" ;
+    c4o:hasContent "Q. Wei, J. Zheng, W. Tang, and Q. Wu, Equivalent model of active distribution network considering uncertainties of wind turbines, photovoltaics and loads, in IOP Conference Series: Earth and Environmental Science, vol. 645, IOP Publishing, 2021, p. 012086." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Energy Reports" ] ;
+    dcterms:title "State estimation of distribution network based on hybrid measurement combined with multi-source asynchronous data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ye" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Liao" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "S" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 1783 ;
+    bibo:pageStart 1778 ;
+    bibo:volume "8" ;
+    c4o:hasContent "Z. Wu, L. Ye, P. Liao, C. Li, Z. Zhou, S. Li, and J. Sun, State estimation of distribution network based on hybrid measurement combined with multi-source asynchronous data, Energy Reports, 8 (2022), pp. 1778-1783." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Energy Reports" ] ;
+    dcterms:title "Maximum openable capacity optimization method of active distribution network considering multiple users access" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "R" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "G" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Jin" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "X" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "W" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Feng" ;
+                    foaf:givenname "X" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 50 ;
+    bibo:pageStart 43 ;
+    bibo:volume "8" ;
+    c4o:hasContent "R. Xu, C. Chen, D. Chen, G. Zhou, Y. Jin, X. Wu, W. Wang, X. Feng, S. Liu, and Z. Lin, Maximum openable capacity optimization method of active distribution network considering multiple users access, Energy Reports, 8 (2022), pp. 43-50." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Energy Reports" ] ;
+    dcterms:title "A novel pet model based volt/var control of ac-dc hybrid distribution network" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yu" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xue" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gu" ;
+                    foaf:givenname "F" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hua" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Yuan" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Q" ] ] ;
+    bibo:pageEnd 2685 ;
+    bibo:pageStart 2672 ;
+    bibo:volume "8" ;
+    c4o:hasContent "K. Yu, B. Xue, F. Gu, H. Hua, Y. Yuan, and Q. Li, A novel pet model based volt/var control of ac-dc hybrid distribution network, Energy Reports, 8 (2022), pp. 2672-2685." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Energy Reports" ] ;
+    dcterms:title "Demand response and dispatchable generation as ancillary services to support the low voltage distribution network operation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Canizes" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Silveira" ;
+                    foaf:givenname "V" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Vale" ;
+                    foaf:givenname "Z" ] ] ;
+    bibo:pageEnd 15 ;
+    bibo:pageStart 7 ;
+    bibo:volume "8" ;
+    c4o:hasContent "B. Canizes, V. Silveira, and Z. Vale, Demand response and dispatchable generation as ancillary services to support the low voltage distribution network operation, Energy Reports, 8 (2022), pp. 7-15." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Active Electrical Distribution Network" ] ;
+    dcterms:title "Mitigation of nonlinear load influence on the power quality of the low-voltage distribution network using dstatcom" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chawda" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 241 ;
+    bibo:pageStart 229 ;
+    c4o:hasContent "G. S. Chawda and P. Kumar, Mitigation of nonlinear load influence on the power quality of the low-voltage distribution network using dstatcom, in Active Electrical Distribution Network, Elsevier, 2022, pp. 229-241." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Energy Reports" ] ;
+    dcterms:title "Three-phase power cooperative management of distribution network with high distributed energy resources penetration" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Cheng" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Deng" ;
+                    foaf:givenname "W" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "An" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 250 ;
+    bibo:pageStart 239 ;
+    bibo:volume "8" ;
+    c4o:hasContent "R. Cheng, Q. Li, Y. Zhang, W. Deng, Y. An, and M. Chen, Three-phase power cooperative management of distribution network with high distributed energy resources penetration, Energy Reports, 8 (2022), pp. 239-250." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Energy Reports" ] ;
+    dcterms:title "A distribution network solid-state dc circuit breaker with current limiting function" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nie" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 994 ;
+    bibo:pageStart 986 ;
+    bibo:volume "8" ;
+    c4o:hasContent "C. Ding, T. Nie, and Y. Chen, A distribution network solid-state dc circuit breaker with current limiting function, Energy Reports, 8 (2022), pp. 986-994." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Energy Reports" ] ;
+    dcterms:title "A full time scale resilience improvement strategy of distribution network under extreme weather" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ding" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lu" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Lu" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 1025 ;
+    bibo:pageStart 1019 ;
+    bibo:volume "8" ;
+    c4o:hasContent "Y. Ding, T. Lu, Z. Wang, H. Wu, and X. Lu, A full time scale resilience improvement strategy of distribution network under extreme weather, Energy Reports, 8 (2022), pp. 1019-1025." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Energy Reports" ] ;
+    dcterms:title "A protection scheme for active distribution network based on the cooperative control of inverterinterfaced distributed generators" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Guo" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 352 ;
+    bibo:pageStart 342 ;
+    bibo:volume "8" ;
+    c4o:hasContent "W. Guo and H. Wang, A protection scheme for active distribution network based on the cooperative control of inverter- interfaced distributed generators, Energy Reports, 8 (2022), pp. 342-352." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IET Gener. Transm. Distrib" ] ;
+    dcterms:title "Quantifying the effects of mv-lv distribution network constraints and der reactive power capabilities on aggregators" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gutierrez-Lagos" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Petrou" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ochoa" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 2032 ;
+    bibo:pageStart 2019 ;
+    bibo:volume "15" ;
+    c4o:hasContent "L. Gutierrez-Lagos, K. Petrou, and L. Ochoa, Quantifying the effects of mv-lv distribution network constraints and der reactive power capabilities on aggregators, IET Gener. Transm. Distrib, 15 (2021), pp. 2019-2032." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Engineering and Sustainable Development" ] ;
+    dcterms:title "Congestion mitigation in distribution network by integrated distributed generations for improving voltage profiles and minimizing the losses" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jawad" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Majeed" ;
+                    foaf:givenname "W" ] ] ;
+    bibo:pageEnd 87 ;
+    bibo:pageStart 78 ;
+    bibo:volume "25" ;
+    c4o:hasContent "I. M. Jawad and W. S. Majeed, Congestion mitigation in distribution network by integrated distributed generations for improving voltage profiles and minimizing the losses, Journal of Engineering and Sustainable Development, 25 (2021), pp. 78-87." .
+

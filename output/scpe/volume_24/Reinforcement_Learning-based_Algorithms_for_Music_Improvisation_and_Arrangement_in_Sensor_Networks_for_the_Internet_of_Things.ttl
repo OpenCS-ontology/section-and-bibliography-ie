@@ -1,0 +1,578 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Learning-Based Algorithms"^^xsd:string,
+        "Machine Learning"^^xsd:string,
+        "Music Improvisation"^^xsd:string,
+        "Sensor Networks"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "Reinforcement Learning-based Algorithms for Music Improvisation and Arrangement in Sensor Networks for the Internet of Things"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "The process of learning any new technology requires acquiring the best knowledge about the information of that technology. The better the knowledge humans get about digital technology, the more they become efficient in implementing technological development. In developing the musical rhythm and tuning, the application of programming technologies helps improve the quality. In constructing networking sites and sensing technologies, algorithmic learning processes help in effective development. This development occurs by making the systematic process of transforming a data processing language and data interpreter. Thus, it helps in performing programming effectively in the present as well as future purposes. Therefore, it reflects all the benefits of machine learning. Thus, the preference for machine learning increases technological impact. This development of the programming used in the computer makes humans learn about something easily and get the best information. The effectiveness of the technological development by the algorithm used in the data processing implements the best way to improve the technological language transformation from human language to computer operating language. There is a transnational perspective of the average beat commonness of each part of the music. “Reinforcement algorithms-based learning” incorporated with sensor networks has proposed compelling opportunities for improving “music improvisation” and interpretation."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 510 ;
+    prism:pageCount 11 ;
+    prism:startingPage 499 ;
+    datacite:doi "10.12694/scpe.v24i3.2390"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2390"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2390> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Hu"^^xsd:string ;
+    foaf:givenName "Xiaoling"^^xsd:string ;
+    foaf:name "Xiaoling Hu"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section1 ;
+                    co:nextItem [ co:itemContent :section2 ;
+                            co:nextItem [ co:itemContent :section5 ;
+                                    co:nextItem [ co:itemContent :section17 ;
+                                            co:nextItem [ co:itemContent :section20 ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section1,
+        :section17,
+        :section2,
+        :section20,
+        :section5 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Public Discipline Department, Nanchang Medical College, Nanchang, 333000, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel1 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel10 a doco:SectionLabel ;
+    c4o:hasContent "2.3." .
+
+:sectionLabel12 a doco:SectionLabel ;
+    c4o:hasContent "2.5." .
+
+:sectionLabel14 a doco:SectionLabel ;
+    c4o:hasContent "2.6." .
+
+:sectionLabel16 a doco:SectionLabel ;
+    c4o:hasContent "2.7." .
+
+:sectionLabel17 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel2 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel20 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel3 a doco:SectionLabel ;
+    c4o:hasContent "2.1." .
+
+:sectionLabel6 a doco:SectionLabel ;
+    c4o:hasContent "2.2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction" .
+
+:sectionTitle1 a doco:SectionTitle ;
+    c4o:hasContent "To elaborate on the concept of algorithm-based learning 2" .
+
+:sectionTitle10 a doco:SectionTitle ;
+    c4o:hasContent "Challenges in the Handling of Sensor Networks in IoT." .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "Examine the Impact of Machine" .
+
+:sectionTitle14 a doco:SectionTitle ;
+    c4o:hasContent "Factors in Machine-based Learning used in the Sensing Networks of the Musical Development." .
+
+:sectionTitle16 a doco:SectionTitle ;
+    c4o:hasContent "Problem Statement." .
+
+:sectionTitle17 a doco:SectionTitle ;
+    c4o:hasContent "Result Analysis." .
+
+:sectionTitle2 a doco:SectionTitle ;
+    c4o:hasContent "Proposed Methodology." .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle3 a doco:SectionTitle ;
+    c4o:hasContent "Concept of Algorithm-based Learning." .
+
+:sectionTitle5 a doco:SectionTitle ;
+    c4o:hasContent "Process of algorithmic learning" .
+
+:sectionTitle6 a doco:SectionTitle ;
+    c4o:hasContent "Importance of Algorithm-based Learning in Musical Development." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:section0 a doco:Section ;
+    po:contains :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section1 a doco:Section ;
+    po:contains :sectionLabel1 ;
+    po:containsAsHeader :sectionTitle1 .
+
+:section10 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :sectionLabel10 ;
+    po:containsAsHeader :sectionTitle10 .
+
+:section12 a doco:Section ;
+    po:contains :referenceToBIBREF6,
+        :referenceToBIBREF9,
+        :sectionLabel12 ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section14 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :sectionLabel14 ;
+    po:containsAsHeader :sectionTitle14 .
+
+:section16 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF2,
+        :sectionLabel16 ;
+    po:containsAsHeader :sectionTitle16 .
+
+:section17 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :sectionLabel17 ;
+    po:containsAsHeader :sectionTitle17 .
+
+:section2 a doco:Section ;
+    co:firstItem [ co:itemContent :section3 ] ;
+    po:contains :section3,
+        :sectionLabel2 ;
+    po:containsAsHeader :sectionTitle2 .
+
+:section20 a doco:Section ;
+    po:contains :sectionLabel20 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section3 a doco:Section ;
+    po:contains :referenceToBIBREF4,
+        :sectionLabel3 ;
+    po:containsAsHeader :sectionTitle3 .
+
+:section5 a doco:Section ;
+    co:firstItem [ co:itemContent :section6 ;
+            co:nextItem [ co:itemContent :section10 ;
+                    co:nextItem [ co:itemContent :section12 ;
+                            co:nextItem [ co:itemContent :section14 ;
+                                    co:nextItem [ co:itemContent :section16 ] ] ] ] ] ;
+    po:contains :referenceToBIBREF3,
+        :section10,
+        :section12,
+        :section14,
+        :section16,
+        :section6 ;
+    po:containsAsHeader :sectionTitle5 .
+
+:section6 a doco:Section ;
+    po:contains :referenceToBIBREF2,
+        :referenceToBIBREF5,
+        :sectionLabel6 ;
+    po:containsAsHeader :sectionTitle6 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE access" ] ;
+    dcterms:title "Iot-enabled smart energy grid: Applications and challenges" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abir" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Anwar" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Choi" ;
+                    foaf:givenname "J" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kayes" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 50981 ;
+    bibo:pageStart 50961 ;
+    bibo:volume "9" ;
+    c4o:hasContent "S. A. A. Abir, A. Anwar, J. Choi, and A. Kayes, Iot-enabled smart energy grid: Applications and challenges, IEEE access, 9 (2021), pp. 50961-50981." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:publisher [ foaf:name "Electronics" ] ;
+    dcterms:title "Review of time domain electronic medical record taxonomies in the application of machine learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ali" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Niazi" ;
+                    foaf:givenname "I" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Russell" ;
+                    foaf:givenname "B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Crofts" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Madanian" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "White" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:volume "12" ;
+    c4o:hasContent "H. Ali, I. K. Niazi, B. K. Russell, C. Crofts, S. Madanian, and D. White, Review of time domain electronic medical record taxonomies in the application of machine learning, Electronics, 12 (2023), p. 554." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2016 ;
+    dcterms:publisher [ foaf:name "CMU Ph. D. thesis" ] ;
+    dcterms:title "Expressive collaborative music performance via machine learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Xia" ;
+                    foaf:givenname "G" ] ] ;
+    c4o:hasContent "G. G. Xia, Expressive collaborative music performance via machine learning, CMU Ph. D. thesis, (2016)." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Computational Intelligence and Neuroscience" ] ;
+    dcterms:title "A lightweight deep learning-based approach for jazz music generation in midi format" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yadav" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Khan" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Garg" ;
+                    foaf:givenname "P" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "R" ] ] ;
+    c4o:hasContent "P. S. Yadav, S. Khan, Y. V. Singh, P. Garg, R. S. Singh, et al., A lightweight deep learning-based approach for jazz music generation in midi format, Computational Intelligence and Neuroscience (2022)." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Energies" ] ;
+    dcterms:title "Artificial intelligence methodologies in smart grid-integrated doubly fed induction generator design optimization and reliability assessment: A review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Behara" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Saha" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "15" ;
+    c4o:hasContent "R. K. Behara and A. K. Saha, Artificial intelligence methodologies in smart grid-integrated doubly fed induction generator design optimization and reliability assessment: A review, Energies, 15 (2022), p. 7164." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "3rd International Conference on Integrated Intelligent Computing Communication & Security (ICIIC 2021)" ] ;
+    dcterms:title "Automated transcription for raga recognition and classification in indian classical music using machine learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gowrishankar" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nagappa" ;
+                    foaf:givenname "U" ] ] ;
+    bibo:pageEnd 217 ;
+    bibo:pageStart 211 ;
+    c4o:hasContent "B. Gowrishankar and U. B. Nagappa, Automated transcription for raga recognition and classification in indian classical music using machine learning, in 3rd International Conference on Integrated Intelligent Computing Communication & Security (ICIIC 2021), Atlantis Press, 2021, pp. 211-217." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Delimitated anti jammer scheme for internet of vehicle: Machine learning based security approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Singh" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kaiwartya" ;
+                    foaf:givenname "O" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Cao" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 113323 ;
+    bibo:pageStart 113311 ;
+    bibo:volume "7" ;
+    c4o:hasContent "S. Kumar, K. Singh, S. Kumar, O. Kaiwartya, Y. Cao, and H. Zhou, Delimitated anti jammer scheme for internet of vehicle: Machine learning based security approach, IEEE Access, 7 (2019), pp. 113311-113323." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Research and analysis of sport medical data processing algorithms based on deep learning and internet of things" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ma" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pang" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 118849 ;
+    bibo:pageStart 118839 ;
+    bibo:volume "7" ;
+    c4o:hasContent "H. Ma and X. Pang, Research and analysis of sport medical data processing algorithms based on deep learning and internet of things, IEEE Access, 7 (2019), pp. 118839-118849." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "A brief survey on breast cancer diagnostic with deep learning schemes using multi-image modalities" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mahmood" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Pei" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Akhtar" ;
+                    foaf:givenname "F" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Imran" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Rehman" ;
+                    foaf:givenname "K" ] ] ;
+    bibo:pageEnd 165809 ;
+    bibo:pageStart 165779 ;
+    bibo:volume "8" ;
+    c4o:hasContent "T. Mahmood, J. Li, Y. Pei, F. Akhtar, A. Imran, and K. U. Rehman, A brief survey on breast cancer diagnostic with deep learning schemes using multi-image modalities, IEEE Access, 8 (2020), pp. 165779-165809." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Biosensors" ] ;
+    dcterms:title "Artificial intelligence (ai) and internet of medical things (iomt) assisted biomedical systems for intelligent healthcare" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Manickam" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mariappan" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Murugesan" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hansda" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Kaushik" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Shinde" ;
+                    foaf:givenname "R" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Thipperudraswamy" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:volume "12" ;
+    c4o:hasContent "P. Manickam, S. A. Mariappan, S. M. Murugesan, S. Hansda, A. Kaushik, R. Shinde, and S. Thipperudraswamy, Artificial intelligence (ai) and internet of medical things (iomt) assisted biomedical systems for intelligent healthcare, Biosensors, 12 (2022), p. 562." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2023 ;
+    dcterms:title "Music deep learning: Deep learning methods for music signal processing-a review of the state-of-the-art" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Moysis" ;
+                    foaf:givenname "L" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Goudos" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Iliadis" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sotiroudis" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Boursianis" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Papadopoulou" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Kokkinidis" ;
+                    foaf:givenname "K.-I" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Volos" ;
+                    foaf:givenname "C" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Sarigiannidis" ;
+                    foaf:givenname "P" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Nikolaidis" ;
+                    foaf:givenname "S" ] ] ;
+    c4o:hasContent "L. Moysis, L. A. Iliadis, S. P. Sotiroudis, A. D. Boursianis, M. S. Papadopoulou, K.-I. D. Kokkinidis, C. Volos, P. Sarigiannidis, S. Nikolaidis, and S. K. Goudos, Music deep learning: Deep learning methods for music signal processing-a review of the state-of-the-art, IEEE Access, (2023)." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "IEEE Internet of Things Journal" ] ;
+    dcterms:title "Digital twins from a networking perspective" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Vaezi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Noroozi" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Todd" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "D" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Karakostas" ;
+                    foaf:givenname "G" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "H" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Shen" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 23544 ;
+    bibo:pageStart 23525 ;
+    bibo:volume "9" ;
+    c4o:hasContent "M. Vaezi, K. Noroozi, T. D. Todd, D. Zhao, G. Karakostas, H. Wu, and X. Shen, Digital twins from a networking perspective, IEEE Internet of Things Journal, 9 (2022), pp. 23525-23544." .
+

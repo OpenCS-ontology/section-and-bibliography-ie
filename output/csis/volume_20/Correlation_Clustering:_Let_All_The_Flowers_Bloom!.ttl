@@ -1,0 +1,488 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1 ] ;
+    dcterms:title "Correlation Clustering: Let All The Flowers Bloom!"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue """Correlation clustering is a NP-hard problem, and for large signed graphs finding even just a good approximation of the optimal solution is a hard task.\r
+In this article we examine the effect of ranking of the nodes and process them in order of ranks.\r
+We present that based on the rate of positive edges in the graph we should use different optimization methods.\r
+We show that all the building blocks of our methods are needed under certain circumstances."""^^xsd:string ] ;
+    frbr:realization :Conference_Paper ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Conference_Paper a fabio:ConferencePaper ;
+    prism:pageCount 7 ;
+    prism:publicationDate "2019-09-20"^^xsd:date ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    datacite:doi "http://dx.doi.org/10.15439/2019F93"^^xsd:string ;
+    fabio:hasURL "https://annals-csis.org/Volume_20/drp/93.html"^^xsd:anyURI ;
+    frbr:partOf :Conference_Proceedings ;
+    owl:sameAs <https://annals-csis.org/Volume_20/drp/93.html> .
+
+:Conference_Proceedings a fabio:ConferenceProceedings ;
+    foaf:name "12th International Workshop on Computational Optimization"^^xsd:string .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Bakó"^^xsd:string ;
+    foaf:givenName "Mária"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    foaf:familyName "Aszalós"^^xsd:string ;
+    foaf:givenName "László"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section7 ;
+                    co:nextItem [ co:itemContent :section14 ;
+                            co:nextItem [ co:itemContent :section18 ;
+                                    co:nextItem [ co:itemContent :section23 ;
+                                            co:nextItem [ co:itemContent :section26 ;
+                                                    co:nextItem [ co:itemContent :section31 ;
+                                                            co:nextItem [ co:itemContent :section41 ;
+                                                                    co:nextItem [ co:itemContent :section49 ] ] ] ] ] ] ] ] ] ;
+    po:contains :section0,
+        :section14,
+        :section18,
+        :section23,
+        :section26,
+        :section31,
+        :section41,
+        :section49,
+        :section7 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel41 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel49 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "INTRODUCTION" .
+
+:sectionTitle14 a doco:SectionTitle ;
+    c4o:hasContent "B. Optimization methods" .
+
+:sectionTitle18 a doco:SectionTitle ;
+    c4o:hasContent "C. Alternative implementations of the motion step" .
+
+:sectionTitle23 a doco:SectionTitle ;
+    c4o:hasContent "D. Alternative implementations of the merging step" .
+
+:sectionTitle26 a doco:SectionTitle ;
+    c4o:hasContent "A. Overall results" .
+
+:sectionTitle31 a doco:SectionTitle ;
+    c4o:hasContent "B. Detailed results" .
+
+:sectionTitle41 a doco:SectionTitle ;
+    c4o:hasContent "DISCUSSION" .
+
+:sectionTitle49 a doco:SectionTitle ;
+    c4o:hasContent "CONCLUSION AND FURTHER WORK" .
+
+:sectionTitle7 a doco:SectionTitle ;
+    c4o:hasContent "A. Tolerance and equivalence relation" .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF2,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section14 a doco:Section ;
+    po:contains :referenceToBIBREF2 ;
+    po:containsAsHeader :sectionTitle14 .
+
+:section18 a doco:Section ;
+    po:contains :referenceToBIBREF3 ;
+    po:containsAsHeader :sectionTitle18 .
+
+:section23 a doco:Section ;
+    po:containsAsHeader :sectionTitle23 .
+
+:section26 a doco:Section ;
+    po:contains :referenceToBIBREF2 ;
+    po:containsAsHeader :sectionTitle26 .
+
+:section31 a doco:Section ;
+    po:containsAsHeader :sectionTitle31 .
+
+:section41 a doco:Section ;
+    po:contains :sectionLabel41 ;
+    po:containsAsHeader :sectionTitle41 .
+
+:section49 a doco:Section ;
+    po:contains :sectionLabel49 ;
+    po:containsAsHeader :sectionTitle49 .
+
+:section7 a doco:Section ;
+    po:contains :referenceToBIBREF6 ;
+    po:containsAsHeader :sectionTitle7 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2008 ;
+    dcterms:publisher [ foaf:name "The European Physical Journal B" ] ;
+    dcterms:title "Modularity-maximizing graph communities via mathematical programming" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Agarwal" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kempe" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:issue "3" ;
+    bibo:pageEnd 418 ;
+    bibo:pageStart 409 ;
+    bibo:volume "66" ;
+    c4o:hasContent "Agarwal, G., Kempe, D.: Modularity-maximizing graph communities via mathematical programming. The European Physical Journal B 66(3), 409-418 (2008)" .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:publisher [ foaf:name "Hungarian)" ] ;
+    dcterms:title "Advanced search methods" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Aszalós" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bakó" ;
+                    foaf:givenname "M" ] ] ;
+    c4o:hasContent "Aszalós, L., Bakó, M.: Advanced search methods (in Hungar- ian). http://www.tankonyvtar.hu/hu/tartalom/tamop412A/2011-0103" .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "Proceedings of the seventeenth annual ACM-SIAM symposium on Discrete algorithm" ] ;
+    dcterms:title "Correlation clustering with a fixed number of clusters" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Giotis" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Guruswami" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 1176 ;
+    bibo:pageStart 1167 ;
+    c4o:hasContent "Giotis, I., Guruswami, V.: Correlation clustering with a fixed number of clusters. In: Proceedings of the seventeenth annual ACM-SIAM symposium on Discrete algorithm, pp. 1167-1176. Society for Industrial and Applied Mathematics (2006)" .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "Physica A: Statistical Mechanics and its Applications" ] ;
+    dcterms:title "Phase transition in an optimal clusterization model" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Néda" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Florian" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ravasz" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Libál" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Györgyi" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:doi "['10.1016/j.physa.2005.08.008']" ;
+    bibo:issue "2" ;
+    bibo:pageEnd 368 ;
+    bibo:pageStart 357 ;
+    bibo:volume "362" ;
+    c4o:hasContent "Néda, Z., Florian, R., Ravasz, M., Libál, A., Györgyi, G.: Phase transition in an optimal clusterization model. Physica A: Statistical Mechanics and its Applications 362(2), 357-368 (2006). DOI 10.1016/j. physa.2005.08.008. URL http://dx.doi.org/10.1016/j.physa.2005.08.008" .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2000 ;
+    dcterms:publisher [ foaf:name "Departmental Papers" ] ;
+    dcterms:title "Normalized cuts and image segmentation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shi" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Malik" ;
+                    foaf:givenname "J" ] ] ;
+    c4o:hasContent "Shi, J., Malik, J.: Normalized cuts and image segmentation. Departmen- tal Papers (CIS) p. 107 (2000)" .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 1964 ;
+    dcterms:publisher [ foaf:name "Journal of the Society for Industrial & Applied Mathematics" ] ;
+    dcterms:title "Approximating symmetric relations by equivalence relations" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zahn" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:doi "['10.1137/0112071']" ;
+    bibo:issue "4" ;
+    bibo:pageEnd 847 ;
+    bibo:pageStart 840 ;
+    bibo:volume "12" ;
+    c4o:hasContent "Zahn Jr, C.: Approximating symmetric relations by equivalence rela- tions. Journal of the Society for Industrial & Applied Mathematics 12(4), 840-847 (1964). DOI 10.1137/0112071. URL http://dx.doi.org/ 10.1137/0112071" .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "Recent Advances in Computational Optimization" ] ;
+    dcterms:title "Contraction methods for correlation clustering: The order is important" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Aszalós" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bakó" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 13 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Aszalós, L., Bakó, M.: Contraction methods for correlation clustering: The order is important. In: Recent Advances in Computational Opti- mization, pp. 1-13. Springer (2019)" .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "International Joint Conference on Rough Sets" ] ;
+    dcterms:title "Iterative set approximations based on tolerance relation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Aszalós" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Nagy" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 88 ;
+    bibo:pageStart 76 ;
+    c4o:hasContent "Aszalós, L., Nagy, D.: Iterative set approximations based on tolerance relation. In: International Joint Conference on Rough Sets, pp. 76-88. Springer (2019)" .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2011 ;
+    dcterms:publisher [ foaf:name "Coping with complexity" ] ;
+    dcterms:title "Combinatorial optimization methods for correlation clustering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bakó" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Aszalós" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 12 ;
+    bibo:pageStart 2 ;
+    c4o:hasContent "Bakó, M., Aszalós, L.: Combinatorial optimization methods for correla- tion clustering. In: D. Dumitrescu, R.I. Lung, L. Cremene (eds.) Coping with complexity, pp. 2-12. Casa Cartii de Stiinta, Cluj-Napoca (2011)" .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2004 ;
+    dcterms:publisher [ foaf:name "Machine Learning" ] ;
+    dcterms:title "Correlation clustering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bansal" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Blum" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chawla" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:doi "['10.1023/B:MACH.0000033116.57574.95']" ;
+    bibo:issue "1-3" ;
+    bibo:pageEnd 113 ;
+    bibo:pageStart 89 ;
+    bibo:volume "56" ;
+    c4o:hasContent "Bansal, N., Blum, A., Chawla, S.: Correlation clustering. Machine Learning 56(1-3), 89-113 (2004). DOI 10.1023/B:MACH.0000033116. 57574.95. URL http://dx.doi.org/10.1023/B:MACH.0000033116.57574. 95" .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2010 ;
+    dcterms:publisher [ foaf:name "Probability and Mathematical Statistics" ] ;
+    dcterms:title "Improved bounds on bell numbers and on moments of sums of random variables" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Berend" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Tassa" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:issue "2" ;
+    bibo:pageEnd 205 ;
+    bibo:pageStart 185 ;
+    bibo:volume "30" ;
+    c4o:hasContent "Berend, D., Tassa, T.: Improved bounds on bell numbers and on moments of sums of random variables. Probability and Mathematical Statistics 30(2), 185-205 (2010)" .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2015 ;
+    dcterms:publisher [ foaf:name "ACM Transactions on Knowledge Discovery from Data (TKDD)" ] ;
+    dcterms:title "Chromatic correlation clustering" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bonchi" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gionis" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Gullo" ;
+                    foaf:givenname "F" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Tsourakakis" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ukkonen" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:issue "4" ;
+    bibo:volume "9" ;
+    c4o:hasContent "Bonchi, F., Gionis, A., Gullo, F., Tsourakakis, C.E., Ukkonen, A.: Chromatic correlation clustering. ACM Transactions on Knowledge Discovery from Data (TKDD) 9(4), 34 (2015)" .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2006 ;
+    dcterms:publisher [ foaf:name "Theoretical Computer Science" ] ;
+    dcterms:title "Correlation clustering in general weighted graphs" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Demaine" ;
+                    foaf:givenname "E" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Emanuel" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Fiat" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Immorlica" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:issue "2-3" ;
+    bibo:pageEnd 187 ;
+    bibo:pageStart 172 ;
+    bibo:volume "361" ;
+    c4o:hasContent "Demaine, E.D., Emanuel, D., Fiat, A., Immorlica, N.: Correlation clustering in general weighted graphs. Theoretical Computer Science 361(2-3), 172-187 (2006)" .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2003 ;
+    dcterms:publisher [ foaf:name "European Symposium on Algorithms" ] ;
+    dcterms:title "Correlation clustering-minimizing disagreements on arbitrary weighted graphs" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Emanuel" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Fiat" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 220 ;
+    bibo:pageStart 208 ;
+    c4o:hasContent "Emanuel, D., Fiat, A.: Correlation clustering-minimizing disagreements on arbitrary weighted graphs. In: European Symposium on Algorithms, pp. 208-220. Springer (2003)" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+

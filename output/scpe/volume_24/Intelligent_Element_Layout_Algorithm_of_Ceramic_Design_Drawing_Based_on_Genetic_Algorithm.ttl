@@ -1,0 +1,867 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Ceramics"^^xsd:string,
+        "Design chart"^^xsd:string,
+        "Genetic algorithm"^^xsd:string,
+        "Intelligence"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2 ] ;
+    dcterms:title "Intelligent Element Layout Algorithm of Ceramic Design Drawing Based on Genetic Algorithm"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Conventional intelligent layout algorithm of ceramic design drawing elements mainly uses density distribution method to obtain ceramic design drawing element units, which is vulnerable to the influence of pattern density, resulting in a low distribution balance of design drawing elements. Therefore, a new intelligent layout algorithm for ceramic design drawing elements needs to be designed based on a genetic algorithm. That is, combining the characteristics of ceramic design drawing elements, the intelligent parting structure of ceramic design drawing elements is constructed, and then the brilliant layout model of ceramic design drawing elements is designed using genetic algorithm. The experimental results show that the developed intelligent layout algorithm of ceramic design elements has a high distribution balance, which proves that the designed intelligent layout algorithm of ceramic design elements has good performance, reliability, and certain application value, and has made specific contributions to improving the aesthetic quality of ceramic design drawings."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 428 ;
+    prism:pageCount 9 ;
+    prism:startingPage 419 ;
+    datacite:doi "10.12694/scpe.v24i3.2284"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2284"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2284> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "He"^^xsd:string ;
+    foaf:givenName "Qin"^^xsd:string ;
+    foaf:name "Qin He"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Li"^^xsd:string ;
+    foaf:givenName "Xinqing"^^xsd:string ;
+    foaf:name "Xinqing Li"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    pro:holdsRoleInTime :role_2_0 ;
+    foaf:familyName "Li"^^xsd:string ;
+    foaf:givenName "Juan"^^xsd:string ;
+    foaf:name "Juan Li"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section21 ;
+                    co:nextItem [ co:itemContent :section37 ] ] ] ;
+    po:contains :section0,
+        :section21,
+        :section37 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Academy of Fine Arts, Jingdezhen Ceramic University, Jingdezhen, 333403, China"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "Academy of Fine Arts, Jingdezhen Ceramic University, Jingdezhen, 333403, China"^^xsd:string .
+
+:org_2_0 a frapo:Organization ;
+    foaf:name "School of Information and Engineering, Jingdezhen Ceramic University, Jingdezhen, 333403, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF24 a deo:Reference ;
+    dcterms:references :BIBREF24 ;
+    c4o:hasContent "[25]" .
+
+:referenceToBIBREF25 a deo:Reference ;
+    dcterms:references :BIBREF25 ;
+    c4o:hasContent "[26]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:role_2_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_2_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel10 a doco:SectionLabel ;
+    c4o:hasContent "2.2." .
+
+:sectionLabel21 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel22 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionLabel34 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel37 a doco:SectionLabel ;
+    c4o:hasContent "4." .
+
+:sectionLabel6 a doco:SectionLabel ;
+    c4o:hasContent "2.1." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle10 a doco:SectionTitle ;
+    c4o:hasContent "Design of intelligent layout model of ceramic design drawing elements based on genetic algorithm." .
+
+:sectionTitle21 a doco:SectionTitle ;
+    c4o:hasContent "Experiment." .
+
+:sectionTitle22 a doco:SectionTitle ;
+    c4o:hasContent "Preparation." .
+
+:sectionTitle34 a doco:SectionTitle ;
+    c4o:hasContent "Experimental results and discussion" .
+
+:sectionTitle37 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle6 a doco:SectionTitle ;
+    c4o:hasContent "Build intelligent parting structure of ceramic design drawing elements." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "ISPRS International Journal of Geo-Information" ] ;
+    dcterms:title "Practical efficient regional land-use planning using constrained multi-objective genetic algorithm optimization" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pan" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Su" ;
+                    foaf:givenname "F" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Lyne" ;
+                    foaf:givenname "V" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Cheng" ;
+                    foaf:givenname "F" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Xiao" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:volume "10" ;
+    c4o:hasContent "T. Pan, Y. Zhang, F. Su, V. Lyne, F. Cheng, and H. Xiao, Practical efficient regional land-use planning using constrained multi-objective genetic algorithm optimization, ISPRS International Journal of Geo-Information, 10 (2021), p. 100." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ;
+                                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF24 ;
+                                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF25 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF24,
+        :BIBREF25,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:section0 a doco:Section ;
+    co:firstItem [ co:itemContent :section6 ;
+            co:nextItem [ co:itemContent :section10 ] ] ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF11,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF17,
+        :referenceToBIBREF25,
+        :referenceToBIBREF6,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :section10,
+        :section6,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section10 a doco:Section ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF16,
+        :referenceToBIBREF19,
+        :referenceToBIBREF2,
+        :referenceToBIBREF20,
+        :referenceToBIBREF24,
+        :sectionLabel10 ;
+    po:containsAsHeader :sectionTitle10 .
+
+:section21 a doco:Section ;
+    co:firstItem [ co:itemContent :section22 ;
+            co:nextItem [ co:itemContent :section34 ] ] ;
+    po:contains :section22,
+        :section34,
+        :sectionLabel21 ;
+    po:containsAsHeader :sectionTitle21 .
+
+:section22 a doco:Section ;
+    po:contains :sectionLabel22 ;
+    po:containsAsHeader :sectionTitle22 .
+
+:section34 a doco:Section ;
+    po:contains :sectionLabel34 ;
+    po:containsAsHeader :sectionTitle34 .
+
+:section37 a doco:Section ;
+    po:contains :sectionLabel37 ;
+    po:containsAsHeader :sectionTitle37 .
+
+:section6 a doco:Section ;
+    po:contains :referenceToBIBREF21,
+        :referenceToBIBREF22,
+        :referenceToBIBREF23,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :sectionLabel6 ;
+    po:containsAsHeader :sectionTitle6 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Membranes" ] ;
+    dcterms:title "Model based simulation and genetic algorithm based optimisation of spiral wound membrane ro process for improved dimethylphenol rejection from wastewater" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Al-Obaidi" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ruiz-García" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hassan" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "J.-P" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Kara-Zaïtri" ;
+                    foaf:givenname "C" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Nuez" ;
+                    foaf:givenname "I" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Mujtaba" ;
+                    foaf:givenname "I" ] ] ;
+    bibo:volume "11" ;
+    c4o:hasContent "M. A. Al-Obaidi, A. Ruiz-García, G. Hassan, J.-P. Li, C. Kara-Zaïtri, I. Nuez, and I. M. Mujtaba, Model based simulation and genetic algorithm based optimisation of spiral wound membrane ro process for improved dimethylphenol rejection from wastewater, Membranes, 11 (2021), p. 595." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Computers, Materials & Continua" ] ;
+    dcterms:title "Motion-based activities monitoring through biometric sensors using genetic algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Alshehri" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sharma" ;
+                    foaf:givenname "P" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Sharma" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Alfarraj" ;
+                    foaf:givenname "O" ] ] ;
+    c4o:hasContent "M. Alshehri, P. Sharma, R. Sharma, and O. ALfarraj, Motion-based activities monitoring through biometric sensors using genetic algorithm., Computers, Materials & Continua, 66 (2021)." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Physics: Conference Series" ] ;
+    dcterms:title "Planning of vehicle routing with mixed time windows based on the improved genetic algorithm (iga)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jiang" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:volume "1952" ;
+    c4o:hasContent "Y. Jiang, Planning of vehicle routing with mixed time windows based on the improved genetic algorithm (iga), in Journal of Physics: Conference Series, vol. 1952, IOP Publishing, 2021, p. 042003." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Proceedings of the Institution of Mechanical Engineers, Part C: Journal of Mechanical Engineering Science" ] ;
+    dcterms:title "The design and development of a diesel engine electromechanical egr cooling system based on machine learning-genetic algorithm prediction models to reduce emission and fuel consumption" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kaleli" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Akolaş" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 1902 ;
+    bibo:pageStart 1888 ;
+    bibo:volume "236" ;
+    c4o:hasContent "A. Kaleli and H. İ. Akolaş, The design and development of a diesel engine electromechanical egr cooling system based on machine learning-genetic algorithm prediction models to reduce emission and fuel consumption, Proceedings of the Institution of Mechanical Engineers, Part C: Journal of Mechanical Engineering Science, 236 (2022), pp. 1888-1902." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IOP Conference Series: Earth and Environmental Science" ] ;
+    dcterms:title "Power grid environment and inductor design for power loss optimization with boost converter by genetic algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Liang" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:volume "706" ;
+    c4o:hasContent "D. Liang and F. Yang, Power grid environment and inductor design for power loss optimization with boost converter by genetic algorithm, in IOP Conference Series: Earth and Environmental Science, vol. 706, IOP Publishing, 2021, p. 012022." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2017 ;
+    dcterms:publisher [ foaf:name "2017 International Conference on Intelligent Computing and Control" ] ;
+    dcterms:title "Automated coconut tree climber" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Maheswaran" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sathesh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Saran" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Vivek" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "S. Maheswaran, S. Sathesh, G. Saran, and B. Vivek, Automated coconut tree climber, in 2017 International Conference on Intelligent Computing and Control (I2C2), IEEE, 2017, pp. 1-6." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Manufacturing Technology" ] ;
+    dcterms:title "Optimization of material removal rate and surface roughness of aisi 316l under dry turning process using genetic algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Martowibowo" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kemala" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Damanik" ] ] ;
+    bibo:pageEnd 380 ;
+    bibo:pageStart 373 ;
+    bibo:volume "21" ;
+    c4o:hasContent "S. Y. Martowibowo, B. Kemala Damanik, et al., Optimization of material removal rate and surface roughness of aisi 316l under dry turning process using genetic algorithm, Manufacturing Technology, 21 (2021), pp. 373-380." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of Computer Applications" ] ;
+    dcterms:title "Genetic algorithm and fisher discriminant analysis based wavelet thresholding for speckle noise filtering in ultrasound images" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mia" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Reza" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Rahman" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 18 ;
+    bibo:pageStart 13 ;
+    bibo:volume "174" ;
+    c4o:hasContent "S. Mia, M. Reza, and M. M. Rahman, Genetic algorithm and fisher discriminant analysis based wavelet thresholding for speckle noise filtering in ultrasound images, International Journal of Computer Applications, 174 (2021), pp. 13-18." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Acta Polytech. Hungarica" ] ;
+    dcterms:title "A genetic algorithm for the minimum vertex cover problem with interval-valued fitness" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nagy" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Szokol" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 123 ;
+    bibo:pageStart 105 ;
+    bibo:volume "18" ;
+    c4o:hasContent "B. Nagy and P. Szokol, A genetic algorithm for the minimum vertex cover problem with interval-valued fitness, Acta Polytech. Hungarica, 18 (2021), pp. 105-123." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "international journal of hydrogen energy" ] ;
+    dcterms:title "Energy analysis and optimization of a biosensor-based microfluidic microbial fuel cell using both genetic algorithm and neural network pso" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Nasrabadi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Moghimi" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 4867 ;
+    bibo:pageStart 4854 ;
+    bibo:volume "47" ;
+    c4o:hasContent "A. M. Nasrabadi and M. Moghimi, Energy analysis and optimization of a biosensor-based microfluidic microbial fuel cell using both genetic algorithm and neural network pso, international journal of hydrogen energy, 47 (2022), pp. 4854-4867." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Science and Applicative Technology" ] ;
+    dcterms:title "Linear array thinning with cavity backed u-slot patch antenna using genetic algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Pertiwi" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Akbar" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Setijadi" ;
+                    foaf:givenname "E" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hendrantoro" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 16 ;
+    bibo:pageStart 9 ;
+    bibo:volume "5" ;
+    c4o:hasContent "N. Pertiwi, F. S. Akbar, E. Setijadi, and G. Hendrantoro, Linear array thinning with cavity backed u-slot patch antenna using genetic algorithm, Journal of Science and Applicative Technology, 5 (2021), pp. 9-16." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Review on Modelling and Simulations" ] ;
+    dcterms:title "Intelligent adaptive fuzzy logic genetic algorithm controller for anti-lock braking system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Batayneh" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Bataineh" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Jaradat" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 44 ;
+    bibo:pageStart 44 ;
+    bibo:volume "14" ;
+    c4o:hasContent "W. Batayneh, A. Bataineh, and M. Jaradat, Intelligent adaptive fuzzy logic genetic algorithm controller for anti-lock braking system, International Review on Modelling and Simulations, 14 (2021), pp. 44-44." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Modification of the genetic algorithm for comprehensive topological optimization of the synchronous motors rotor, Power engineering: research, equipment, technology" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Petrov" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 79 ;
+    bibo:pageStart 70 ;
+    bibo:volume "23" ;
+    c4o:hasContent "T. Petrov, Modification of the genetic algorithm for comprehensive topological optimization of the synchronous motors rotor, Power engineering: research, equipment, technology, 23 (2021), pp. 70-79." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Proceedings of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering" ] ;
+    dcterms:title "Multi-objective optimization of the cascade parameters of a torque converter based on cfd and a genetic algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ran" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ma" ;
+                    foaf:givenname "W" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 2323 ;
+    bibo:pageStart 2311 ;
+    bibo:volume "235" ;
+    c4o:hasContent "Z. Ran, W. Ma, C. Liu, and J. Li, Multi-objective optimization of the cascade parameters of a torque converter based on cfd and a genetic algorithm, Proceedings of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering, 235 (2021), pp. 2311-2323." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Proceedings of the Institution of Mechanical Engineers, Part M: Journal of Engineering for the Maritime Environment" ] ;
+    dcterms:title "Minimization of total trim loss occurring in pipe cutting in shipbuilding with genetic algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Türk" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Saral" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Özkök" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Köse" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:pageEnd 704 ;
+    bibo:pageStart 695 ;
+    bibo:volume "235" ;
+    c4o:hasContent "A. Türk, D. Saral, M. Özkök, and E. Köse, Minimization of total trim loss occurring in pipe cutting in shipbuilding with genetic algorithm, Proceedings of the Institution of Mechanical Engineers, Part M: Journal of Engineering for the Maritime Environment, 235 (2021), pp. 695-704." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2018 ;
+    dcterms:publisher [ foaf:name "2018 international conference on intelligent computing and communication for smart World" ] ;
+    dcterms:title "Low-cost raspberry pi oscilloscope" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Vivek" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Maheswaran" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Keerthana" ;
+                    foaf:givenname "P" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Sathesh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Bringeraj" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Sri" ;
+                    foaf:givenname "R" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Sulthana" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 390 ;
+    bibo:pageStart 386 ;
+    c4o:hasContent "B. Vivek, S. Maheswaran, P. Keerthana, S. Sathesh, S. Bringeraj, R. A. Sri, and S. A. Sulthana, Low-cost raspberry pi oscilloscope, in 2018 international conference on intelligent computing and communication for smart World (I2C2SW), IEEE, 2018, pp. 386-390." .
+
+:BIBREF24 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Sensors & Materials" ] ;
+    dcterms:title "Genetic-algorithm-based convolutional neural network for robust time series classification with unreliable data" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ji" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "S" ] ] ;
+    c4o:hasContent "J. Wu, Y. Ji, and S. Li, Genetic-algorithm-based convolutional neural network for robust time series classification with unreliable data., Sensors & Materials, 33 (2021)." .
+
+:BIBREF25 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Proceedings of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering" ] ;
+    dcterms:title "Shift quality optimization control of power shift transmission based on particle swarm optimization-genetic algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Xia" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:pageEnd 892 ;
+    bibo:pageStart 872 ;
+    bibo:volume "236" ;
+    c4o:hasContent "G. Xia, J. Chen, X. Tang, L. Zhao, and B. Sun, Shift quality optimization control of power shift transmission based on particle swarm optimization-genetic algorithm, Proceedings of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering, 236 (2022), pp. 872-892." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of Materials Engineering Innovation" ] ;
+    dcterms:title "Evaluation of magnesium recovery in al-mg alloys produced by modified stir casting method using genetic algorithm optimisation technique" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Behera" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Samal" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Panigrahi" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Muduli" ;
+                    foaf:givenname "K" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Mohamed" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Samal" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 148 ;
+    bibo:pageStart 134 ;
+    bibo:volume "12" ;
+    c4o:hasContent "R. K. Behera, B. P. Samal, S. C. Panigrahi, K. Muduli, A. Mohamed, and A. Samal, Evaluation of magnesium recovery in al-mg alloys produced by modified stir casting method using genetic algorithm optimisation technique, International Journal of Materials Engineering Innovation, 12 (2021), pp. 134-148." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Intelligent & Fuzzy Systems" ] ;
+    dcterms:title "A novel genetic algorithm-based improvement model for online communities and trust networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bekmezci" ;
+                    foaf:givenname "I" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ermis" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Cimen" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:pageEnd 1608 ;
+    bibo:pageStart 1597 ;
+    bibo:volume "40" ;
+    c4o:hasContent "I. Bekmezci, M. Ermis, and E. B. Cimen, A novel genetic algorithm-based improvement model for online communities and trust networks, Journal of Intelligent & Fuzzy Systems, 40 (2021), pp. 1597-1608." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Review of Scientific Instruments" ] ;
+    dcterms:title "Combining application of wavelet analysis and genetic algorithm in wind tunnel simulation of unidirectional natural wind field near a sand ground surface" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bo" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xiaosi" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yuxin" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Bin" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Z" ] ] ;
+    c4o:hasContent "Z. Bo, Z. Xiaosi, L. Yuxin, Y. Bin, and Z. Yang, Combining application of wavelet analysis and genetic algorithm in wind tunnel simulation of unidirectional natural wind field near a sand ground surface, Review of Scientific Instruments, 92 (2021)." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Fresenius Environmental Bulletin" ] ;
+    dcterms:title "Location and path optimization of green cold chain logistics based on improved genetic algorithm from the perspective of low carbon and environmental protection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 5973 ;
+    bibo:pageStart 5961 ;
+    bibo:volume "30" ;
+    c4o:hasContent "Y. Chen, Location and path optimization of green cold chain logistics based on improved genetic algorithm from the perspective of low carbon and environmental protection, Fresenius Environmental Bulletin, 30 (2021), pp. 5961-5973." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Simulation" ] ;
+    dcterms:title "Evolving convolutional neural network parameters through the genetic algorithm for the breast cancer classification problem" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Davoudi" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Thulasiraman" ;
+                    foaf:givenname "P" ] ] ;
+    bibo:pageEnd 527 ;
+    bibo:pageStart 511 ;
+    c4o:hasContent "K. Davoudi and P. Thulasiraman, Evolving convolutional neural network parameters through the genetic algorithm for the breast cancer classification problem, Simulation, 97 (2021), pp. 511-527." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Zeitschrift für Naturforschung A" ] ;
+    dcterms:title "Genetic algorithm (ga)-based delay feedback control of chaotic behavior in the voltage mode controlled direct current (dc) drive system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Emiroglu" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Uyaroglu" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 21 ;
+    bibo:pageStart 13 ;
+    bibo:volume "76" ;
+    c4o:hasContent "S. Emiroglu and Y. Uyaroglu, Genetic algorithm (ga)-based delay feedback control of chaotic behavior in the voltage mode controlled direct current (dc) drive system, Zeitschrift für Naturforschung A, 76 (2021), pp. 13-21." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "The Journal of Physical Chemistry A" ] ;
+    dcterms:title "Pareto optimization of oligomer polarizability and dipole moment using a genetic algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hiener" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hutchison" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 2760 ;
+    bibo:pageStart 2750 ;
+    bibo:volume "126" ;
+    c4o:hasContent "D. C. Hiener and G. R. Hutchison, Pareto optimization of oligomer polarizability and dipole moment using a genetic algorithm, The Journal of Physical Chemistry A, 126 (2022), pp. 2750-2760." .
+

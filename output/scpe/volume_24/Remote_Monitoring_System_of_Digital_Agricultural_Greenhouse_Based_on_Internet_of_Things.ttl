@@ -1,0 +1,939 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Agricultural greenhouses"^^xsd:string,
+        "Digitization"^^xsd:string,
+        "Internet of Things"^^xsd:string,
+        "Monitor"^^xsd:string,
+        "System"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0 ] ;
+    dcterms:title "Remote Monitoring System of Digital Agricultural Greenhouse Based on Internet of Things"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "In the actual operation process of the conventional digital agricultural greenhouse monitoring system, there are problems such as limited monitoring scope and large deviation between the monitoring results and the actual situation of the greenhouse. To solve this problem, a new remote monitoring system is proposed by introducing the technology of the Internet of Things. On the basis of the completion of the hardware design of the remote monitoring system, the optimal fusion data value of the remote monitoring of the digital agricultural greenhouse is obtained by establishing the monitoring data fusion model. The particle swarm optimization fuzzy control algorithm is designed to optimize the adaptive remote monitoring process of the system dynamically. The Internet of Things technology is used to deploy the remote monitoring system of digital agricultural greenhouses online to fully ensure the quality and timeliness of the remote monitoring system. The test results show that the new system can significantly improve the greenhouse remote monitoring deviation, and the monitoring value is close to the actual value."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 447 ;
+    prism:pageCount 8 ;
+    prism:startingPage 439 ;
+    datacite:doi "10.12694/scpe.v24i3.2318"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2318"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2318> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Lu"^^xsd:string ;
+    foaf:givenName "Lu"^^xsd:string ;
+    foaf:name "Lu Lu"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section4 ;
+                    co:nextItem [ co:itemContent :section25 ] ] ] ;
+    po:contains :section0,
+        :section25,
+        :section4 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "School of Finance and Economics, Hainan Vocational University of Science and Technology, Haikou, 571126, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF20 a deo:Reference ;
+    dcterms:references :BIBREF20 ;
+    c4o:hasContent "[21]" .
+
+:referenceToBIBREF21 a deo:Reference ;
+    dcterms:references :BIBREF21 ;
+    c4o:hasContent "[22]" .
+
+:referenceToBIBREF22 a deo:Reference ;
+    dcterms:references :BIBREF22 ;
+    c4o:hasContent "[23]" .
+
+:referenceToBIBREF23 a deo:Reference ;
+    dcterms:references :BIBREF23 ;
+    c4o:hasContent "[24]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel12 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionLabel14 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel20 a doco:SectionLabel ;
+    c4o:hasContent "3.3." .
+
+:sectionLabel22 a doco:SectionLabel ;
+    c4o:hasContent "4.1." .
+
+:sectionLabel23 a doco:SectionLabel ;
+    c4o:hasContent "4.2." .
+
+:sectionLabel25 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel4 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle12 a doco:SectionTitle ;
+    c4o:hasContent "Establish monitoring data fusion model." .
+
+:sectionTitle14 a doco:SectionTitle ;
+    c4o:hasContent "Design system particle swarm optimization fuzzy control algorithm." .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "Online deployment based on the Internet of Things." .
+
+:sectionTitle22 a doco:SectionTitle ;
+    c4o:hasContent "Test preparation." .
+
+:sectionTitle23 a doco:SectionTitle ;
+    c4o:hasContent "Test results." .
+
+:sectionTitle25 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle4 a doco:SectionTitle ;
+    c4o:hasContent "Hardware design of digital agricultural greenhouse remote monitoring system." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ;
+                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF20 ;
+                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF21 ;
+                                                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF22 ;
+                                                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF23 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF20,
+        :BIBREF21,
+        :BIBREF22,
+        :BIBREF23,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section12 a doco:Section ;
+    po:contains :referenceToBIBREF21,
+        :referenceToBIBREF9,
+        :sectionLabel12 ;
+    po:containsAsHeader :sectionTitle12 .
+
+:section14 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF22,
+        :referenceToBIBREF6,
+        :sectionLabel14 ;
+    po:containsAsHeader :sectionTitle14 .
+
+:section20 a doco:Section ;
+    po:contains :sectionLabel20 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section22 a doco:Section ;
+    po:contains :sectionLabel22 ;
+    po:containsAsHeader :sectionTitle22 .
+
+:section23 a doco:Section ;
+    po:contains :sectionLabel23 ;
+    po:containsAsHeader :sectionTitle23 .
+
+:section25 a doco:Section ;
+    po:contains :sectionLabel25 ;
+    po:containsAsHeader :sectionTitle25 .
+
+:section4 a doco:Section ;
+    co:firstItem [ co:itemContent :section12 ;
+            co:nextItem [ co:itemContent :section14 ;
+                    co:nextItem [ co:itemContent :section20 ;
+                            co:nextItem [ co:itemContent :section22 ;
+                                    co:nextItem [ co:itemContent :section23 ] ] ] ] ] ;
+    po:contains :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF12,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :referenceToBIBREF2,
+        :referenceToBIBREF20,
+        :referenceToBIBREF23,
+        :referenceToBIBREF3,
+        :section12,
+        :section14,
+        :section20,
+        :section22,
+        :section23,
+        :sectionLabel4 ;
+    po:containsAsHeader :sectionTitle4 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Environmental Radioactivity" ] ;
+    dcterms:title "An investigation on the 133xe global network coverage for the international monitoring system of the comprehensive nuclear-test-ban treaty" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Abdollahnejad" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ochbelagh" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Azadi" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:volume "237" ;
+    c4o:hasContent "H. Abdollahnejad, D. R. Ochbelagh, and M. Azadi, An investigation on the 133xe global network coverage for the international monitoring system of the comprehensive nuclear-test-ban treaty, Journal of Environmental Radioactivity, 237 (2021), p. 106701." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Renewable Energy" ] ;
+    dcterms:title "Effect of active solar heating system on microclimate, development, yield and fruit quality in greenhouse tomato production" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bazgaou" ;
+                    foaf:givenname "A" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Bekkaoui" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Fatnassi" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Bouharroud" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ezzaeri" ;
+                    foaf:givenname "K" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Gourdo" ;
+                    foaf:givenname "L" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Wifaya" ;
+                    foaf:givenname "A" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Demrati" ;
+                    foaf:givenname "H" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Elame" ;
+                    foaf:givenname "F" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Carreño-Ortega" ;
+                    foaf:givenname "Á" ] ] ;
+    bibo:pageEnd 250 ;
+    bibo:pageStart 237 ;
+    bibo:volume "165" ;
+    c4o:hasContent "A. Bazgaou, H. Fatnassi, R. Bouharroud, K. Ezzaeri, L. Gourdo, A. Wifaya, H. Demrati, F. Elame, Á. Carreño- Ortega, A. Bekkaoui, et al., Effect of active solar heating system on microclimate, development, yield and fruit quality in greenhouse tomato production, Renewable Energy, 165 (2021), pp. 237-250." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Remote Sensing" ] ;
+    dcterms:title "Investigating the potential of a newly developed uav-mounted vnir/swir imaging system for monitoring crop traits-a case study for winter wheat" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Jenal" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Hüging" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ahrends" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Bolten" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Bongartz" ;
+                    foaf:givenname "J" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Bareth" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:volume "13" ;
+    c4o:hasContent "A. Jenal, H. Hüging, H. E. Ahrends, A. Bolten, J. Bongartz, and G. Bareth, Investigating the potential of a newly developed uav-mounted vnir/swir imaging system for monitoring crop traits-a case study for winter wheat, Remote Sensing, 13 (2021), p. 1697." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Internet of water things: A remote raw water monitoring and control system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Júnior" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Munoz" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Quezada" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Neto" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Hassan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "De Albuquerque" ;
+                    foaf:givenname "V" ] ] ;
+    bibo:pageEnd 35800 ;
+    bibo:pageStart 35790 ;
+    bibo:volume "9" ;
+    c4o:hasContent "A. C. D. S. Júnior, R. Munoz, M. D. L. Á. Quezada, A. V. L. Neto, M. M. Hassan, and V. H. C. De Albuquerque, Internet of water things: A remote raw water monitoring and control system, IEEE Access, 9 (2021), pp. 35790-35800." .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Manufacturing Systems" ] ;
+    dcterms:title "Sound-based remote real-time multi-device operational monitoring system using a convolutional neural network (cnn)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Jeong" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ahn" ;
+                    foaf:givenname "S.-H" ] ] ;
+    bibo:pageEnd 441 ;
+    bibo:pageStart 431 ;
+    bibo:volume "58" ;
+    c4o:hasContent "J. Kim, H. Lee, S. Jeong, and S.-H. Ahn, Sound-based remote real-time multi-device operational monitoring system using a convolutional neural network (cnn), Journal of Manufacturing Systems, 58 (2021), pp. 431-441." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Energies" ] ;
+    dcterms:title "Design of a novel remote monitoring system for smart greenhouses using the internet of things and deep convolutional neural networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mellit" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Benghanem" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Herrak" ;
+                    foaf:givenname "O" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Messalaoui" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "14" ;
+    c4o:hasContent "A. Mellit, M. Benghanem, O. Herrak, and A. Messalaoui, Design of a novel remote monitoring system for smart greenhouses using the internet of things and deep convolutional neural networks, Energies, 14 (2021), p. 5045." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Japanese Railway Engineering" ] ;
+    dcterms:title "Remote monitoring of railway facilities using lpwa communication" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Okada" ;
+                    foaf:givenname "Y" ] ] ;
+    c4o:hasContent "Y. Okada, Remote monitoring of railway facilities using lpwa communication, Japanese Railway Engineering, (2022), p. 62." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Sensors" ] ;
+    dcterms:title "Sensor node network for remote moisture measurement in timber based on bluetooth low energy and web-based monitoring system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Saban" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Medus" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Casans" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Aghzout" ;
+                    foaf:givenname "O" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Rosado" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:volume "21" ;
+    c4o:hasContent "M. Saban, L. D. Medus, S. Casans, O. Aghzout, and A. Rosado, Sensor node network for remote moisture measurement in timber based on bluetooth low energy and web-based monitoring system, Sensors, 21 (2021), p. 491." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Cleaner Production" ] ;
+    dcterms:title "Assessment of regional greenhouse gas emissions from spring wheat cropping system: A case study of saskatchewan in canada" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shi" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "G" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "An" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Yin" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "301" ;
+    c4o:hasContent "Y. Shi, G. Huang, C. An, Y. Zhou, and J. Yin, Assessment of regional greenhouse gas emissions from spring wheat cropping system: A case study of saskatchewan in canada, Journal of Cleaner Production, 301 (2021), p. 126917." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "International Journal of Ambient Energy" ] ;
+    dcterms:title "An efficient lora-based smart agriculture management and monitoring system using wireless sensor networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Prasad" ;
+                    foaf:givenname "S" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Sadasivuni" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Thangatamilan" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Suresh" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Panchal" ;
+                    foaf:givenname "H" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Rajan" ;
+                    foaf:givenname "C" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Sagana" ;
+                    foaf:givenname "C" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Gunapriya" ;
+                    foaf:givenname "B" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Sharma" ;
+                    foaf:givenname "A" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Panchal" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:pageEnd 5450 ;
+    bibo:pageStart 5447 ;
+    bibo:volume "43" ;
+    c4o:hasContent "S. Suji Prasad, M. Thangatamilan, M. Suresh, H. Panchal, C. A. Rajan, C. Sagana, B. Gunapriya, A. Sharma, T. Panchal, and K. K. Sadasivuni, An efficient lora-based smart agriculture management and monitoring system using wireless sensor networks, International Journal of Ambient Energy, 43 (2022), pp. 5447-5450." .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Disaster Research" ] ;
+    dcterms:title "Development of dam safety remote monitoring and evaluation system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Suwatthikul" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Vanijjirattikhan" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Supakchukul" ;
+                    foaf:givenname "U" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Suksomboon" ;
+                    foaf:givenname "K" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Nuntawattanasirichai" ;
+                    foaf:givenname "R" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Phontip" ;
+                    foaf:givenname "J" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Lewlomphaisarl" ;
+                    foaf:givenname "U" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Tangpimolrut" ;
+                    foaf:givenname "K" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Samranyoodee" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 617 ;
+    bibo:pageStart 607 ;
+    bibo:volume "16" ;
+    c4o:hasContent "J. Suwatthikul, R. Vanijjirattikhan, U. Supakchukul, K. Suksomboon, R. Nuntawattanasirichai, J. Phontip, U. Lewlomphaisarl, K. Tangpimolrut, and S. Samranyoodee, Development of dam safety remote monitoring and evaluation system, Journal of Disaster Research, 16 (2021), pp. 607-617." .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of Greenhouse Gas Control" ] ;
+    dcterms:title "Feasibility of using the p-cable highresolution 3d seismic system in detecting and monitoring co2 leakage" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Waage" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Singhroha" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Bünz" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Planke" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Waghorn" ;
+                    foaf:givenname "K" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Bellwald" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:volume "106" ;
+    c4o:hasContent "M. Waage, S. Singhroha, S. Bünz, S. Planke, K. A. Waghorn, and B. Bellwald, Feasibility of using the p-cable high- resolution 3d seismic system in detecting and monitoring co2 leakage, International Journal of Greenhouse Gas Control, 106 (2021), p. 103240." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal of Industrial Ecology" ] ;
+    dcterms:title "Symbiosis opportunities between food and energy system: The potential of manure-based biogas as heating source for greenhouse production" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Burg" ;
+                    foaf:givenname "V" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Golzar" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Bowman" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hellweg" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Roshandel" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 662 ;
+    bibo:pageStart 648 ;
+    bibo:volume "25" ;
+    c4o:hasContent "V. Burg, F. Golzar, G. Bowman, S. Hellweg, and R. Roshandel, Symbiosis opportunities between food and energy system: The potential of manure-based biogas as heating source for greenhouse production, Journal of Industrial Ecology, 25 (2021), pp. 648-662." .
+
+:BIBREF20 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Renewable Energy" ] ;
+    dcterms:title "Periodic theory of greenhouse integrated semi-transparent photovoltaic thermal (gispvt) system integrated with earth air heat exchanger (eahe)" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yadav" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Panda" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Tiwari" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Al-Helal" ;
+                    foaf:givenname "I" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Hachem-Vermette" ;
+                    foaf:givenname "C" ] ] ;
+    bibo:pageEnd 55 ;
+    bibo:pageStart 45 ;
+    bibo:volume "184" ;
+    c4o:hasContent "S. Yadav, S. Panda, G. Tiwari, I. M. Al-Helal, and C. Hachem-Vermette, Periodic theory of greenhouse integrated semi-transparent photovoltaic thermal (gispvt) system integrated with earth air heat exchanger (eahe), Renewable Energy, 184 (2022), pp. 45-55." .
+
+:BIBREF21 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Renewable Energy" ] ;
+    dcterms:title "Energy cost and efficiency analysis of greenhouse heating system enhancement using phase change material: An experimental study" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yan" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Fazilati" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Toghraie" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Khalili" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Karimipour" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 140 ;
+    bibo:pageStart 133 ;
+    bibo:volume "170" ;
+    c4o:hasContent "S. Yan, M. A. Fazilati, D. Toghraie, M. Khalili, and A. Karimipour, Energy cost and efficiency analysis of greenhouse heating system enhancement using phase change material: An experimental study, Renewable Energy, 170 (2021), pp. 133-140." .
+
+:BIBREF22 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Computer Simulation" ] ;
+    dcterms:title "Data collection and processing framework for operation monitoring based on big data technology" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zeng" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:volume "38" ;
+    c4o:hasContent "L. Zeng, C. Sun, L. Zhang, and et al., Data collection and processing framework for operation monitoring based on big data technology, Computer Simulation, 38 (2021), p. 8." .
+
+:BIBREF23 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Science of The Total Environment" ] ;
+    dcterms:title "Spatial patterns of net greenhouse gas balance and intensity in chinese orchard system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "B" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "W" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Cui" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:volume "779" ;
+    c4o:hasContent "C. Zhao, B. Gao, L. Wang, W. Huang, S. Xu, and S. Cui, Spatial patterns of net greenhouse gas balance and intensity in chinese orchard system, Science of The Total Environment, 779 (2021), p. 146250." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Science of the Total Environment" ] ;
+    dcterms:title "Evaluation of greenhouse gas emissions and the feed-in tariff system of waste-to-energy facilities using a system dynamics model" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "Y.-C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "H.-M" ] ] ;
+    bibo:volume "792" ;
+    c4o:hasContent "Y.-C. Chen and H.-M. Liu, Evaluation of greenhouse gas emissions and the feed-in tariff system of waste-to-energy facilities using a system dynamics model, Science of the Total Environment, 792 (2021), p. 148445." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Internet of uavs based remote health monitoring: An online ehealth system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Dong" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "X" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ning" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Obaidat" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 21 ;
+    bibo:pageStart 15 ;
+    bibo:volume "28" ;
+    c4o:hasContent "P. Dong, X. Wang, S. Wang, Y. Wang, Z. Ning, and M. S. Obaidat, Internet of uavs based remote health monitoring: An online ehealth system, IEEE Wireless Communications, 28 (2021), pp. 15-21." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Machine learning-based remote monitoring and predictive analytics system for crop and livestock" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Goel" ;
+                    foaf:givenname "N" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kaur" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kumar" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 407 ;
+    bibo:pageStart 395 ;
+    c4o:hasContent "N. Goel, S. Kaur, and Y. Kumar, Machine learning-based remote monitoring and predictive analytics system for crop and livestock, in AI, Edge and IoT-based Smart Agriculture, Elsevier, 2022, pp. 395-407." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal of Environmental Radioactivity" ] ;
+    dcterms:title "Analysis of radionuclide detection events on the international monitoring system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Goodwin" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chester" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Britton" ;
+                    foaf:givenname "R" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Davies" ;
+                    foaf:givenname "A" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Border" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "242" ;
+    c4o:hasContent "M. A. Goodwin, D. L. Chester, R. Britton, A. V. Davies, and J. Border, Analysis of radionuclide detection events on the international monitoring system, Journal of Environmental Radioactivity, 242 (2022), p. 106789." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Sensor array for wireless remote monitoring of carbon dioxide and methane near carbon sequestration and oil recovery sites" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Honeycutt" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ley" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Materer" ;
+                    foaf:givenname "N" ] ] ;
+    bibo:pageEnd 6984 ;
+    bibo:pageStart 6972 ;
+    bibo:volume "11" ;
+    c4o:hasContent "W. T. Honeycutt, T. Kim, M. T. Ley, and N. F. Materer, Sensor array for wireless remote monitoring of carbon dioxide and methane near carbon sequestration and oil recovery sites, RSC advances, 11 (2021), pp. 6972-6984." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Self-powered 5g nb-iot system for remote monitoring applications" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hu" ;
+                    foaf:givenname "G" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yi" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lu" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zhai" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "B" ] ] ;
+    bibo:volume "87" ;
+    c4o:hasContent "G. Hu, Z. Yi, L. Lu, Y. Huang, Y. Zhai, J. Liu, and B. Yang, Self-powered 5g nb-iot system for remote monitoring applications, Nano Energy, 87 (2021), p. 106140." .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal of Greenhouse Gas Control" ] ;
+    dcterms:title "An automated system for continuous monitoring of co2 geosequestration using multiwell offset vsp with permanent seismic sources and receivers: Stage 3 of the co2crc otway project" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Isaenkov" ;
+                    foaf:givenname "R" ] ;
+            rdf:_10 [ a foaf:Person ;
+                    foaf:family_name "Freifeld" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Pevzner" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Glubokovskikh" ;
+                    foaf:givenname "S" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yavuz" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Yurikov" ;
+                    foaf:givenname "A" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Tertyshnikov" ;
+                    foaf:givenname "K" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Gurevich" ;
+                    foaf:givenname "B" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Correa" ;
+                    foaf:givenname "J" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Wood" ;
+                    foaf:givenname "T" ] ] ;
+    bibo:volume "108" ;
+    c4o:hasContent "R. Isaenkov, R. Pevzner, S. Glubokovskikh, S. Yavuz, A. Yurikov, K. Tertyshnikov, B. Gurevich, J. Correa, T. Wood, B. Freifeld, et al., An automated system for continuous monitoring of co2 geosequestration using multi- well offset vsp with permanent seismic sources and receivers: Stage 3 of the co2crc otway project, International Journal of Greenhouse Gas Control, 108 (2021), p. 103317." .
+

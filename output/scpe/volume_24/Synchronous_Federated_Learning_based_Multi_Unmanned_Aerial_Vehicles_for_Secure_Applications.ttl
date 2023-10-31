@@ -1,0 +1,715 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Accuracy"^^xsd:string,
+        "CNN"^^xsd:string,
+        "FL"^^xsd:string,
+        "ML"^^xsd:string,
+        "Security"^^xsd:string,
+        "Training"^^xsd:string,
+        "UAV"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2,
+                :author_3 ] ;
+    dcterms:title "Synchronous Federated Learning based Multi Unmanned Aerial Vehicles for Secure Applications"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "Unmanned Aerial Vehicles (UAVs), also known as drones, have rapidly gained popularity due to their widely employed applications in various industries and fields, including search and rescue, agriculture, industry, military operations, safety, and more. Additionally, drones assist with tasks such as search and rescue efforts, pandemic virus containment, crisis management, and other critical operations. Due to their unique capabilities in image, video, and information collection, a multi-UAV system plays a crucial role in these activities. However, such images and video data involve individual privacy. Therefore, such multi-UAV applications have an indigenous tradeoff of privacy preservation. We have proposed a Federated Learning (FL) based approach for ensuring privacy in multi-UAV applications. The proposed methodology utilizes a synchronous FL approach and the Convolutional Neural Network (CNN) to ensure security. The model parameters are protected by using a secure aggregation. Results demonstrate that the proposed approach outperforms existing techniques in terms of accuracy and precision."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 201 ;
+    prism:pageCount 10 ;
+    prism:startingPage 191 ;
+    datacite:doi "10.12694/scpe.v24i3.2136"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2136"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2136> .
+
+:author_0 a foaf:Person ;
+    foaf:familyName "Askar"^^xsd:string ;
+    foaf:givenName "Shavan"^^xsd:string ;
+    foaf:name "Shavan Askar"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Mishra"^^xsd:string ;
+    foaf:givenName "Ashutosh"^^xsd:string ;
+    foaf:name "Ashutosh Mishra"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    pro:holdsRoleInTime :role_2_0 ;
+    foaf:familyName "Gupta"^^xsd:string ;
+    foaf:givenName "Sachin Kumar"^^xsd:string ;
+    foaf:name "Sachin Kumar Gupta"^^xsd:string .
+
+:author_3 a foaf:Person ;
+    pro:holdsRoleInTime :role_3_0 ;
+    foaf:familyName "Sharma"^^xsd:string ;
+    foaf:givenName "Itika"^^xsd:string ;
+    foaf:name "Itika Sharma"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section14 ;
+                    co:nextItem [ co:itemContent :section38 ] ] ] ;
+    po:contains :section0,
+        :section14,
+        :section38 .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "School of Integrated Technology, Yonsei, University, South Korea, and the Department of Electronics & Communication Engineering, Graphic Era Deemed to be University, Dehradun 248002, Uttarakhand, India "^^xsd:string .
+
+:org_2_0 a frapo:Organization ;
+    foaf:name "Department of Electronics and Communication Engineering, Central University of Jammu, Samba, UT of J&K, 181143 India and School of Electronics and Communication Engineering, Shri Mata Vaishno Devi University, Katra-182320, (UT of J&K), India"^^xsd:string .
+
+:org_3_0 a frapo:Organization ;
+    foaf:name "School of Electronics and Communication Engineering, Shri Mata Vaishno Devi University, Kakryal-182320, Katra, (Jammu and Kashmir), UT, India"^^xsd:string .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:role_2_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_2_0 ;
+    pro:withRole pro:author .
+
+:role_3_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_3_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel14 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel15 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionLabel20 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel23 a doco:SectionLabel ;
+    c4o:hasContent "3.3." .
+
+:sectionLabel24 a doco:SectionLabel ;
+    c4o:hasContent "3.4." .
+
+:sectionLabel26 a doco:SectionLabel ;
+    c4o:hasContent "3.5." .
+
+:sectionLabel3 a doco:SectionLabel ;
+    c4o:hasContent "1.1." .
+
+:sectionLabel31 a doco:SectionLabel ;
+    c4o:hasContent "3.6." .
+
+:sectionLabel38 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction" .
+
+:sectionTitle14 a doco:SectionTitle ;
+    c4o:hasContent "FL:" .
+
+:sectionTitle15 a doco:SectionTitle ;
+    c4o:hasContent "Proposed Model." .
+
+:sectionTitle20 a doco:SectionTitle ;
+    c4o:hasContent "Role of FL in UAVs." .
+
+:sectionTitle23 a doco:SectionTitle ;
+    c4o:hasContent "Role of CNN Model." .
+
+:sectionTitle24 a doco:SectionTitle ;
+    c4o:hasContent "Homomorphic Encryption." .
+
+:sectionTitle26 a doco:SectionTitle ;
+    c4o:hasContent "Practical Applications of Federated Learning in UAV." .
+
+:sectionTitle3 a doco:SectionTitle ;
+    c4o:hasContent "Key Contributions." .
+
+:sectionTitle31 a doco:SectionTitle ;
+    c4o:hasContent "Core Challenges of the Federated Learning Process." .
+
+:sectionTitle38 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion and Future Work." .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8 .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:section0 a doco:Section ;
+    co:firstItem [ co:itemContent :section3 ] ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF13,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :section3,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section14 a doco:Section ;
+    co:firstItem [ co:itemContent :section15 ;
+            co:nextItem [ co:itemContent :section20 ;
+                    co:nextItem [ co:itemContent :section23 ;
+                            co:nextItem [ co:itemContent :section24 ;
+                                    co:nextItem [ co:itemContent :section26 ;
+                                            co:nextItem [ co:itemContent :section31 ] ] ] ] ] ] ;
+    po:contains :section15,
+        :section20,
+        :section23,
+        :section24,
+        :section26,
+        :section31,
+        :sectionLabel14 ;
+    po:containsAsHeader :sectionTitle14 .
+
+:section15 a doco:Section ;
+    po:contains :sectionLabel15 ;
+    po:containsAsHeader :sectionTitle15 .
+
+:section20 a doco:Section ;
+    po:contains :sectionLabel20 ;
+    po:containsAsHeader :sectionTitle20 .
+
+:section23 a doco:Section ;
+    po:contains :sectionLabel23 ;
+    po:containsAsHeader :sectionTitle23 .
+
+:section24 a doco:Section ;
+    po:contains :sectionLabel24 ;
+    po:containsAsHeader :sectionTitle24 .
+
+:section26 a doco:Section ;
+    po:contains :sectionLabel26 ;
+    po:containsAsHeader :sectionTitle26 .
+
+:section3 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF16,
+        :referenceToBIBREF17,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :sectionLabel3 ;
+    po:containsAsHeader :sectionTitle3 .
+
+:section31 a doco:Section ;
+    po:contains :sectionLabel31 ;
+    po:containsAsHeader :sectionTitle31 .
+
+:section38 a doco:Section ;
+    po:contains :sectionLabel38 ;
+    po:containsAsHeader :sectionTitle38 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "15th International Wireless Communications and Mobile Computing Conference" ] ;
+    dcterms:title "Audio Based Drone Detection and Identification using Deep Learning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Al-Emadi" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Al-Ali" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Mohammad" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Al-Ali" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:doi "['10.1109/IWCMC.2019.8766732']" ;
+    bibo:pageEnd 464 ;
+    bibo:pageStart 459 ;
+    c4o:hasContent "S. Al-Emadi, A. Al-Ali, A. Mohammad, and A. Al-Ali, Audio Based Drone Detection and Identification us- ing Deep Learning,15th International Wireless Communications and Mobile Computing Conference, 2019, 459-464, doi:10.1109/IWCMC.2019.8766732." .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Federated Learning for UAVs-Enabled Wireless Networks: Use Cases, Challenges, and Open Problems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Brik" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Ksentini" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Bouaziz" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1109/ACCESS.2020.2981430']" ;
+    bibo:pageEnd 53849 ;
+    bibo:pageStart 53841 ;
+    bibo:volume "8" ;
+    c4o:hasContent "B. Brik, A. Ksentini and M. Bouaziz, Federated Learning for UAVs-Enabled Wireless Networks: Use Cases, Challenges, and Open Problems, IEEE Access, 8, 53841-53849, 2020, doi: 10.1109/ACCESS.2020.2981430." .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Federated learning privacy-preserving computing model applied to 5G-V2X, Security and Communication Networks, Hindawi" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "C" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Ji" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Xiao" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "T" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Ma" ;
+                    foaf:givenname "N" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Asynchronous" ;
+                    foaf:givenname "An" ] ] ;
+    bibo:doi "['10.1155/2022/9334943']" ;
+    bibo:pageEnd 11 ;
+    bibo:pageStart 1 ;
+    bibo:volume "2022" ;
+    c4o:hasContent "J. Huang, C. Xu, Z. Ji, S. Xiao, T. Liu, N. Ma, and Q. Zhou, An asynchronous, Federated learning privacy-preserving computing model applied to 5G-V2X, Security and Communication Networks, Hindawi, 2022, 1-11, March 2022, doi:https://doi.org/10.1155/2022/9334943." .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "A Multi-Objective Hybrid Collision-free Optimal Path Finder for Autonomous Robots in Known Static Environments, Scalable Computing: Practice and Experience" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Neeraja" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Narsimha" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:doi "['10.12694/scpe.v23i4.2049']" ;
+    bibo:pageEnd 402 ;
+    bibo:pageStart 389 ;
+    bibo:volume "23" ;
+    c4o:hasContent "K. Neeraja, and G. Narsimha, A Multi-Objective Hybrid Collision-free Optimal Path Finder for Autonomous Robots in Known Static Environments, Scalable Computing: Practice and Experience, 23(4), 389-402, 2022, https://doi.org/10.12694/scpe.v23i4.2049." .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2019 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Machine Learning-Based Drone Detection and Classification: State-of-the-Art in Research" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Taha" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shoufan" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:doi "['10.1109/ACCESS.2019.2942944']" ;
+    bibo:volume "7" ;
+    c4o:hasContent "B. Taha, and A. Shoufan, Machine Learning-Based Drone Detection and Classification: State-of-the-Art in Research, IEEE Access, 7, 138669-138682, 2019, doi:10.1109/ACCESS.2019.2942944." .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Neural Computer and Application" ] ;
+    dcterms:title "Deep learning techniques to classify agricultural crops through UAV imagery: a review" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Bouguettaya" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zarzour" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kechida" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 9536 ;
+    bibo:pageStart 9511 ;
+    bibo:volume "34" ;
+    c4o:hasContent "A. Bouguettaya, and H. Zarzour, A. Kechida, Deep learning techniques to classify agricultural crops through UAV imagery: a review, Neural Computer and Application, Springer, 34, 9511-9536, 2022." .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Applications of Federated Learning; Taxonomy, Challenges, and Research Trends" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shaheen" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Farooq" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Umer" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "B.-S" ] ] ;
+    bibo:doi "['10.3390/electronics11040670']" ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    bibo:volume "11" ;
+    c4o:hasContent "M. Shaheen, M. S. Farooq, T. Umer, and B.-S. Kim, Applications of Federated Learning; Taxonomy, Challenges, and Research Trends, Electronics, MDPI, 11(4), 1-6, February 2022, https://doi.org/10.3390/electronics11040670." .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Sensors, MDPI" ] ;
+    dcterms:title "In-Cabin Monitoring System for Autonomous Vehicles" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mishra" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Lee" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "D" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:doi "['10.3390/s22124360']" ;
+    bibo:volume "22" ;
+    c4o:hasContent "A. Mishra, S. Lee, D. Kim, and S. Kim, In-Cabin Monitoring System for Autonomous Vehicles, Sensors, MDPI, 1-21, 2022, 22, 4360. https://doi.org/10.3390/s22124360." .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Computational Intelligence and Neuroscience" ] ;
+    dcterms:title "Privacy-Preserved In-Cabin Monitoring System for Autonomous Vehicles, Deep Learning for Intelligent Surveillance Systems" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mishra" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cha" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:doi "['10.1155/2022/5389359']" ;
+    c4o:hasContent "A. Mishra, J. Cha, and S. Kim, Privacy-Preserved In-Cabin Monitoring System for Autonomous Vehicles, Deep Learn- ing for Intelligent Surveillance Systems, Computational Intelligence and Neuroscience, Hindawi, 1-15, 2022, 5389359, https://doi.org/10.1155/2022/5389359." .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Scalable Computing: Practice and Experience" ] ;
+    dcterms:title "Mitigating Malicious Insider Attacks in the Internet of Things using Supervised Machine Learning Techniques" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Ahmad" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shah" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:doi "['10.12694/scpe.v22i1.1818']" ;
+    bibo:issue "1" ;
+    bibo:pageEnd 28 ;
+    bibo:pageStart 13 ;
+    bibo:volume "22" ;
+    c4o:hasContent "M. S. Ahmad, and S. M. Shah, Mitigating Malicious Insider Attacks in the Internet of Things using Su- pervised Machine Learning Techniques, Scalable Computing: Practice and Experience, 22(1), 13-28, 2021, https://doi.org/10.12694/scpe.v22i1.1818." .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "Towards federated learning in UAV-enabled Internet of Vehicles: A multi-dimensional contact-matching approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Lim" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Huang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Xiong" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Kang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Niyato" ;
+                    foaf:givenname "D" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Hua" ;
+                    foaf:givenname "X.-S" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Leung" ;
+                    foaf:givenname "C" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Leung" ;
+                    foaf:givenname "C" ] ;
+            rdf:_9 [ a foaf:Person ;
+                    foaf:family_name "Miao" ;
+                    foaf:givenname "C" ] ] ;
+    c4o:hasContent "W. Y. B. Lim, J. Huang, Z. Xiong, J. Kang, D. Niyato, X.-S. Hua, C. Leung, C. Leung, and C. Miao, Towards federated learning in UAV-enabled Internet of Vehicles: A multi-dimensional contact-matching approach, CoRR abs/2004.03877, 2020." .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Journal on Selected Areas in Communications" ] ;
+    dcterms:title "Privacy-Preserving Federated Learning for UAV-Enabled Networks: Learning-Based Joint Scheduling and Resource Management" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Xiong" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Lam" ;
+                    foaf:givenname "K. -Y" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Sun" ;
+                    foaf:givenname "S" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Xiao" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:doi "['10.1109/JSAC.2021.3088655']" ;
+    bibo:issue "10" ;
+    bibo:pageEnd 3159 ;
+    bibo:pageStart 3144 ;
+    bibo:volume "39" ;
+    c4o:hasContent "H. Yang, J. Zhao, Z. Xiong, K. -Y. Lam, S. Sun, and L. Xiao, Privacy-Preserving Federated Learning for UAV-Enabled Networks: Learning-Based Joint Scheduling and Resource Management, IEEE Journal on Selected Areas in Communi- cations, 39(10), 3144-3159, Oct. 2021, doi:10.1109/JSAC.2021.3088655." .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Acess" ] ;
+    dcterms:title "Energy Efficient Federated Learning Over Wireless Communication Networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Saad" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Hong" ;
+                    foaf:givenname "C" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Bahai" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:doi "['10.1109/TWC.2020.3037554']" ;
+    bibo:issue "99" ;
+    bibo:pageEnd 1 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Z. Yang, M. Chen, W. Saad, C. S. Hong, and M. S. Bahai, Energy Efficient Federated Learning Over Wireless Commu- nication Networks, IEEE Acess, Nov 2020, (99):1-1 doi: 10.1109/TWC.2020.3037554." .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Global Communications Conference" ] ;
+    dcterms:title "Federated Learning for Cellular-Connected UAVs: Radio Mapping and Path Planning" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Khamidehi" ;
+                    foaf:givenname "B" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Sousa" ;
+                    foaf:givenname "E" ] ] ;
+    bibo:doi "['10.1109/GLOBECOM42002.2020.9322349']" ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "B. Khamidehi, and E. S. Sousa, Federated Learning for Cellular-Connected UAVs: Radio Mapping and Path Planning, IEEE Global Communications Conference, 2020, pp. 1-6, doi: 10.1109/GLOBECOM42002.2020.9322349." .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Adhoc Networks" ] ;
+    dcterms:title "Federated Learning for Drone Authentication" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yazdinejad" ;
+                    foaf:givenname "A" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Parizi" ;
+                    foaf:givenname "R" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Dehghantanha" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Karimipour" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:doi "['10.1016/j.adhoc.2021.102574']" ;
+    bibo:volume "120" ;
+    c4o:hasContent "A. Yazdinejad, R. M. Parizi, A. Dehghantanha, and H. Karimipour, Federated Learning for Drone Authentication, Adhoc Networks, Elsevier, 120, 1-6, 102574, 2021, doi:10.1016/j.adhoc.2021.102574." .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Physical Communication" ] ;
+    dcterms:title "Battery constrained federated edge learning in UAV-enabled IoT for B5G/6G networks" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhou" ;
+                    foaf:givenname "W" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Lai" ;
+                    foaf:givenname "L" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Xia" ;
+                    foaf:givenname "J" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Fan" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:doi "['10.1016/j.phycom.2021.101381']" ;
+    bibo:pageEnd 6 ;
+    bibo:pageStart 1 ;
+    bibo:volume "47" ;
+    c4o:hasContent "S. Tang, W. Zhou, L. Chen, L. Lai, J. Xia, and L. Fan, Battery constrained federated edge learn- ing in UAV-enabled IoT for B5G/6G networks, Physical Communication, Elsevier, 47, 1-6, August 2021, https://doi.org/10.1016/j.phycom.2021.101381." .
+

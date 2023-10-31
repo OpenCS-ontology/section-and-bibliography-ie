@@ -1,0 +1,808 @@
+@prefix : <https://w3id.org/ocs/ont/papers/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix co: <http://purl.org/co/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a fabio:ResearchPaper ;
+    prism:keyword "Energy Conservation"^^xsd:string,
+        "Firefly Algorithm"^^xsd:string,
+        "Regenerative Braking"^^xsd:string,
+        "Scheduling Optimization"^^xsd:string,
+        "Urban Rail Transit"^^xsd:string ;
+    dcterms:created "2023-09-10"^^xsd:date ;
+    dcterms:creator [ :hasItem :author_0,
+                :author_1,
+                :author_2,
+                :author_3 ] ;
+    dcterms:title "Optimization Algorithm for Urban Rail Transit Operation Scheduling based on Linear Programming"^^xsd:string ;
+    datacite:hasDescription [ datacite:hasDescriptionType datacite:abstract ;
+            literal:hasLiteralValue "At present, the traditional urban public transportation system cannot meet people’s daily travel needs. Urban Rail Transit (URT) has been rapidly promoted in major cities due to its advantages such as low energy consumption, high frequency, and large traffic volume. To achieve a more excellent and energy-saving operation scheduling strategy, the research first combines the train dynamics model and the energy consumption model. Since the optimization problem of URT is a linear problem, the attraction model of the Firefly algorithm can determine the calculation time consumed by the algorithm, which is very suitable for the complex optimization problem of URT. Therefore, the FA based optimization algorithm for urban rail transit operation scheduling (FURTOSO) based on the Firefly algorithm is studied and designed. Therefore, based on the study of the four working conditions of traction, cruise, coasting, and braking, a Firefly Algorithm for Urban Rail Transit Operation Scheduling (FURTOSO) was designed. Finally, the study optimizes the operation scheduling of Chengdu Metro Line 8 from two aspects: driving strategy and train schedule. The research demonstrates that the FURTOSO algorithm only needs 76 iterations to reach a stable state, with a fitness value of 0.6827. In practical applications, the utilization rate of train RBE is 30.1%, the total energy consumption (TEC) is 2.661 * 1011J, and the energy saving rate is 13.03%. In summary, the FURTOSO algorithm proposed in the study has excellent performance and has better energy-saving effects in Chengdu Metro Line 8."^^xsd:string ] ;
+    frbr:realization :Journal_Article ;
+    po:contains :back_matter,
+        :body_matter .
+
+:Journal a fabio:Journal ;
+    frbr:part :Journal_Volume .
+
+:Journal_Article a fabio:JournalArticle ;
+    prism:endingPage 216 ;
+    prism:pageCount 13 ;
+    prism:startingPage 203 ;
+    datacite:doi "10.12694/scpe.v24i3.2245"^^xsd:string ;
+    fabio:hasURL "https://www.scpe.org/index.php/scpe/article/view/2245"^^xsd:anyURI ;
+    frbr:partOf :Journal_Issue ;
+    owl:sameAs <https://www.scpe.org/index.php/scpe/article/view/2245> .
+
+:author_0 a foaf:Person ;
+    pro:holdsRoleInTime :role_0_0 ;
+    foaf:familyName "Sun"^^xsd:string ;
+    foaf:givenName "Yifeng"^^xsd:string ;
+    foaf:name "Yifeng Sun"^^xsd:string .
+
+:author_1 a foaf:Person ;
+    pro:holdsRoleInTime :role_1_0 ;
+    foaf:familyName "Yao"^^xsd:string ;
+    foaf:givenName "Tong"^^xsd:string ;
+    foaf:name "Tong Yao"^^xsd:string .
+
+:author_2 a foaf:Person ;
+    pro:holdsRoleInTime :role_2_0 ;
+    foaf:familyName "Wu"^^xsd:string ;
+    foaf:givenName "Jinlong"^^xsd:string ;
+    foaf:name "Jinlong Wu"^^xsd:string .
+
+:author_3 a foaf:Person ;
+    pro:holdsRoleInTime :role_3_0 ;
+    foaf:familyName "Wu"^^xsd:string ;
+    foaf:givenName "Shuang"^^xsd:string ;
+    foaf:name "Shuang Wu"^^xsd:string .
+
+:back_matter a doco:BackMatter ;
+    co:firstItem [ co:itemContent :bibliography ] ;
+    po:contains :bibliography .
+
+:body_matter a doco:BodyMatter ;
+    co:firstItem [ co:itemContent :section0 ;
+            co:nextItem [ co:itemContent :section2 ;
+                    co:nextItem [ co:itemContent :section3 ;
+                            co:nextItem [ co:itemContent :section33 ] ] ] ] ;
+    po:contains :section0,
+        :section2,
+        :section3,
+        :section33 .
+
+:org_0_0 a frapo:Organization ;
+    foaf:name "Suzhou Sip Ourlead Indudtrial Equipment Co., Ltd, Suzhou 215000, China"^^xsd:string .
+
+:org_1_0 a frapo:Organization ;
+    foaf:name "School of economics and management, Sichuan Tourism University, Chengdu 610100, China"^^xsd:string .
+
+:org_2_0 a frapo:Organization ;
+    foaf:name "Department of Transportation Engineering, Yangzhou Polytechnic Institute, Yangzhou 225000, China"^^xsd:string .
+
+:org_3_0 a frapo:Organization ;
+    foaf:name "Department of Transportation Engineering, Yangzhou Polytechnic Institute, Yangzhou 225000, China"^^xsd:string .
+
+:referenceToBIBREF0 a deo:Reference ;
+    dcterms:references :BIBREF0 ;
+    c4o:hasContent "[1]" .
+
+:referenceToBIBREF1 a deo:Reference ;
+    dcterms:references :BIBREF1 ;
+    c4o:hasContent "[2]" .
+
+:referenceToBIBREF10 a deo:Reference ;
+    dcterms:references :BIBREF10 ;
+    c4o:hasContent "[11]" .
+
+:referenceToBIBREF11 a deo:Reference ;
+    dcterms:references :BIBREF11 ;
+    c4o:hasContent "[12]" .
+
+:referenceToBIBREF12 a deo:Reference ;
+    dcterms:references :BIBREF12 ;
+    c4o:hasContent "[13]" .
+
+:referenceToBIBREF13 a deo:Reference ;
+    dcterms:references :BIBREF13 ;
+    c4o:hasContent "[14]" .
+
+:referenceToBIBREF14 a deo:Reference ;
+    dcterms:references :BIBREF14 ;
+    c4o:hasContent "[15]" .
+
+:referenceToBIBREF15 a deo:Reference ;
+    dcterms:references :BIBREF15 ;
+    c4o:hasContent "[16]" .
+
+:referenceToBIBREF16 a deo:Reference ;
+    dcterms:references :BIBREF16 ;
+    c4o:hasContent "[17]" .
+
+:referenceToBIBREF17 a deo:Reference ;
+    dcterms:references :BIBREF17 ;
+    c4o:hasContent "[18]" .
+
+:referenceToBIBREF18 a deo:Reference ;
+    dcterms:references :BIBREF18 ;
+    c4o:hasContent "[19]" .
+
+:referenceToBIBREF19 a deo:Reference ;
+    dcterms:references :BIBREF19 ;
+    c4o:hasContent "[20]" .
+
+:referenceToBIBREF2 a deo:Reference ;
+    dcterms:references :BIBREF2 ;
+    c4o:hasContent "[3]" .
+
+:referenceToBIBREF3 a deo:Reference ;
+    dcterms:references :BIBREF3 ;
+    c4o:hasContent "[4]" .
+
+:referenceToBIBREF4 a deo:Reference ;
+    dcterms:references :BIBREF4 ;
+    c4o:hasContent "[5]" .
+
+:referenceToBIBREF6 a deo:Reference ;
+    dcterms:references :BIBREF6 ;
+    c4o:hasContent "[7]" .
+
+:referenceToBIBREF7 a deo:Reference ;
+    dcterms:references :BIBREF7 ;
+    c4o:hasContent "[8]" .
+
+:referenceToBIBREF8 a deo:Reference ;
+    dcterms:references :BIBREF8 ;
+    c4o:hasContent "[9]" .
+
+:referenceToBIBREF9 a deo:Reference ;
+    dcterms:references :BIBREF9 ;
+    c4o:hasContent "[10]" .
+
+:role_0_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_0_0 ;
+    pro:withRole pro:author .
+
+:role_1_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_1_0 ;
+    pro:withRole pro:author .
+
+:role_2_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_2_0 ;
+    pro:withRole pro:author .
+
+:role_3_0 a pro:RoleInTime ;
+    pro:relatesToOrganization :org_3_0 ;
+    pro:withRole pro:author .
+
+:sectionLabel0 a doco:SectionLabel ;
+    c4o:hasContent "1." .
+
+:sectionLabel16 a doco:SectionLabel ;
+    c4o:hasContent "3.2." .
+
+:sectionLabel2 a doco:SectionLabel ;
+    c4o:hasContent "2." .
+
+:sectionLabel3 a doco:SectionLabel ;
+    c4o:hasContent "3." .
+
+:sectionLabel30 a doco:SectionLabel ;
+    c4o:hasContent "4.1." .
+
+:sectionLabel33 a doco:SectionLabel ;
+    c4o:hasContent "5." .
+
+:sectionLabel4 a doco:SectionLabel ;
+    c4o:hasContent "3.1." .
+
+:sectionTitle0 a doco:SectionTitle ;
+    c4o:hasContent "Introduction." .
+
+:sectionTitle16 a doco:SectionTitle ;
+    c4o:hasContent "Design of Optimal Algorithm for Urban Rail Transit Operation Scheduling Based on FA." .
+
+:sectionTitle2 a doco:SectionTitle ;
+    c4o:hasContent "Related Work." .
+
+:sectionTitle3 a doco:SectionTitle ;
+    c4o:hasContent "Optimization of UTR Train Operation Scheduling" .
+
+:sectionTitle30 a doco:SectionTitle ;
+    c4o:hasContent "Performance Analysis of the FURTOSO Algorithm." .
+
+:sectionTitle33 a doco:SectionTitle ;
+    c4o:hasContent "Conclusion." .
+
+:sectionTitle4 a doco:SectionTitle ;
+    c4o:hasContent "Construction of Train Dynamics" .
+
+:Journal_Issue a fabio:JournalIssue ;
+    frbr:partOf :Journal_Volume .
+
+:Journal_Volume a fabio:JournalVolume ;
+    prism:volume "24"^^xsd:string ;
+    frbr:part :Journal_Issue ;
+    frbr:partOf :Journal .
+
+:bibliography a doco:Bibliography ;
+    co:firstItem [ co:itemContent :BIBREF0 ;
+            co:nextItem [ co:itemContent :BIBREF1 ;
+                    co:nextItem [ co:itemContent :BIBREF2 ;
+                            co:nextItem [ co:itemContent :BIBREF3 ;
+                                    co:nextItem [ co:itemContent :BIBREF4 ;
+                                            co:nextItem [ co:itemContent :BIBREF5 ;
+                                                    co:nextItem [ co:itemContent :BIBREF6 ;
+                                                            co:nextItem [ co:itemContent :BIBREF7 ;
+                                                                    co:nextItem [ co:itemContent :BIBREF8 ;
+                                                                            co:nextItem [ co:itemContent :BIBREF9 ;
+                                                                                    co:nextItem [ co:itemContent :BIBREF10 ;
+                                                                                            co:nextItem [ co:itemContent :BIBREF11 ;
+                                                                                                    co:nextItem [ co:itemContent :BIBREF12 ;
+                                                                                                            co:nextItem [ co:itemContent :BIBREF13 ;
+                                                                                                                    co:nextItem [ co:itemContent :BIBREF14 ;
+                                                                                                                            co:nextItem [ co:itemContent :BIBREF15 ;
+                                                                                                                                    co:nextItem [ co:itemContent :BIBREF16 ;
+                                                                                                                                            co:nextItem [ co:itemContent :BIBREF17 ;
+                                                                                                                                                    co:nextItem [ co:itemContent :BIBREF18 ;
+                                                                                                                                                            co:nextItem [ co:itemContent :BIBREF19 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+    po:contains :BIBREF0,
+        :BIBREF1,
+        :BIBREF10,
+        :BIBREF11,
+        :BIBREF12,
+        :BIBREF13,
+        :BIBREF14,
+        :BIBREF15,
+        :BIBREF16,
+        :BIBREF17,
+        :BIBREF18,
+        :BIBREF19,
+        :BIBREF2,
+        :BIBREF3,
+        :BIBREF4,
+        :BIBREF5,
+        :BIBREF6,
+        :BIBREF7,
+        :BIBREF8,
+        :BIBREF9 .
+
+:referenceToBIBREF5 a deo:Reference ;
+    dcterms:references :BIBREF5 ;
+    c4o:hasContent "[6]" .
+
+:section0 a doco:Section ;
+    po:contains :referenceToBIBREF0,
+        :referenceToBIBREF1,
+        :referenceToBIBREF2,
+        :referenceToBIBREF3,
+        :sectionLabel0 ;
+    po:containsAsHeader :sectionTitle0 .
+
+:section16 a doco:Section ;
+    po:contains :referenceToBIBREF16,
+        :sectionLabel16 ;
+    po:containsAsHeader :sectionTitle16 .
+
+:section2 a doco:Section ;
+    po:contains :referenceToBIBREF10,
+        :referenceToBIBREF11,
+        :referenceToBIBREF4,
+        :referenceToBIBREF5,
+        :referenceToBIBREF6,
+        :referenceToBIBREF7,
+        :referenceToBIBREF8,
+        :referenceToBIBREF9,
+        :sectionLabel2 ;
+    po:containsAsHeader :sectionTitle2 .
+
+:section3 a doco:Section ;
+    co:firstItem [ co:itemContent :section4 ;
+            co:nextItem [ co:itemContent :section16 ;
+                    co:nextItem [ co:itemContent :section30 ] ] ] ;
+    po:contains :section16,
+        :section30,
+        :section4,
+        :sectionLabel3 ;
+    po:containsAsHeader :sectionTitle3 .
+
+:section30 a doco:Section ;
+    po:contains :referenceToBIBREF17,
+        :referenceToBIBREF18,
+        :referenceToBIBREF19,
+        :sectionLabel30 ;
+    po:containsAsHeader :sectionTitle30 .
+
+:section33 a doco:Section ;
+    po:contains :sectionLabel33 ;
+    po:containsAsHeader :sectionTitle33 .
+
+:section4 a doco:Section ;
+    po:contains :referenceToBIBREF12,
+        :referenceToBIBREF13,
+        :referenceToBIBREF14,
+        :referenceToBIBREF15,
+        :referenceToBIBREF5,
+        :sectionLabel4 ;
+    po:containsAsHeader :sectionTitle4 .
+
+:BIBREF0 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Journal Of Information Technology Research" ] ;
+    dcterms:title "Design of a Public Vehicle Tracking Service Using Long-Range (LoRa) and Intelligent Transportation System Architecture" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Salazar-Cabrera" ;
+                    foaf:givenname "R" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Cruz" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Molina" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 166 ;
+    bibo:pageStart 147 ;
+    bibo:volume "14" ;
+    c4o:hasContent "Salazar-Cabrera, R., Cruz, L. & Molina, J. Design of a Public Vehicle Tracking Service Using Long-Range (LoRa) and Intelligent Transportation System Architecture. Journal Of Information Technology Research. 14, 147-166 (2021)" .
+
+:BIBREF1 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Breast Cancer Online" ] ;
+    dcterms:title "Efficacy of a stewardship intervention focused on reducing unnecessary use of non-Clostridioides difficile antibiotics in patients with Clostridioides difficile infection" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Hecker" ;
+                    foaf:givenname "M" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Son" ;
+                    foaf:givenname "A" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wilson" ;
+                    foaf:givenname "B" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wiest" ;
+                    foaf:givenname "P" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Donskey" ;
+                    foaf:givenname "C" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Alhmidi" ;
+                    foaf:givenname "H" ] ] ;
+    bibo:pageEnd 218 ;
+    bibo:pageStart 216 ;
+    bibo:volume "41" ;
+    c4o:hasContent "Hecker, M., Son, A., Wilson, B., Wiest, P., Donskey, C. & Alhmidi, H. Efficacy of a stewardship intervention focused on reducing unnecessary use of non-Clostridioides difficile antibiotics in patients with Clostridioides difficile infection. Breast Cancer Online. 41, 216-218 (2020)" .
+
+:BIBREF10 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Transportation Research Part B: Methodological" ] ;
+    dcterms:title "Joint optimization of train scheduling and maintenance planning in a railway network: A heuristic algorithm using Lagrangian relaxation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "C" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Qi" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:volume "134" ;
+    c4o:hasContent "Zhang, C., Gao, Y., Yang, L., Gao, Z. & Qi, J. Joint optimization of train scheduling and maintenance planning in a railway network: A heuristic algorithm using Lagrangian relaxation[J]. Transportation Research Part B: Methodological. 134 (2020)" .
+
+:BIBREF11 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:title "Optimal Broadcast Scheduling Method For VANETs: An Adaptive Discrete Firefly Approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Christy" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Rekha" ;
+                    foaf:givenname "D" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Vijayakuma" ;
+                    foaf:givenname "V" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Carvalho G H S" ] ] ;
+    bibo:pageEnd 8137 ;
+    bibo:pageStart 8125 ;
+    bibo:volume "39" ;
+    c4o:hasContent "Christy, J., Rekha, D. & Vijayakuma, V. Carvalho G H S. Optimal Broadcast Scheduling Method For VANETs: An Adaptive Discrete Firefly Approach. 39, 8125-8137 (2020)" .
+
+:BIBREF12 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions On Industrial Electronics" ] ;
+    dcterms:title "Full-Scale Physical Simulator of All SiC Traction Motor Drive with Onboard Supercapacitor ESS for Light-Rail Public Transportation" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yldrm" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Akit" ;
+                    foaf:givenname "M" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yolaan" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Pul" ;
+                    foaf:givenname "T" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Ermi" ;
+                    foaf:givenname "C" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Aghdam" ;
+                    foaf:givenname "B" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Adrc" ;
+                    foaf:givenname "I" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Ermi" ;
+                    foaf:givenname "M" ] ] ;
+    bibo:pageEnd 6301 ;
+    bibo:pageStart 6290 ;
+    bibo:volume "67" ;
+    c4o:hasContent "Yldrm, D., Akit, M., Yolaan, C., Pul, T., Ermi, C., Aghdam, B., Adrc, I. & Ermi, M. Full-Scale Physical Simulator of All SiC Traction Motor Drive with Onboard Supercapacitor ESS for Light-Rail Public Transportation. IEEE Transactions On Industrial Electronics. 67, 6290-6301 (2020)" .
+
+:BIBREF13 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Environmental Science And Technology" ] ;
+    dcterms:title "Constraining Urban CO 2 Emissions Using Mobile Observations from a Light Rail Public Transit Platform" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Mallia" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Mitchell" ;
+                    foaf:givenname "L" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Kunik" ;
+                    foaf:givenname "L" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Fasoli" ;
+                    foaf:givenname "B" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "J" ] ] ;
+    bibo:pageEnd 15621 ;
+    bibo:pageStart 15613 ;
+    bibo:volume "54" ;
+    c4o:hasContent "Mallia, D., Mitchell, L., Kunik, L., Fasoli, B. & Lin, J. Constraining Urban CO 2 Emissions Using Mobile Observations from a Light Rail Public Transit Platform. Environmental Science And Technology. 54, 15613-15621 (2020)" .
+
+:BIBREF14 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:publisher [ foaf:name "Journal Of Transportation Technologies" ] ;
+    dcterms:title "High-Speed Rail Station Interconnectivity and Ridership" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Teng" ;
+                    foaf:givenname "H" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Toughrai" ;
+                    foaf:givenname "T" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Yu" ;
+                    foaf:givenname "T" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ozawa" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 208 ;
+    bibo:pageStart 193 ;
+    bibo:volume "12" ;
+    c4o:hasContent "Teng, H., Toughrai, T., Yu, T. & Ozawa, R. High-Speed Rail Station Interconnectivity and Ridership. Journal Of Transporta- tion Technologies. 12, 193-208 (2022)" .
+
+:BIBREF15 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Nanoscale" ] ;
+    dcterms:title "carbon dot-based tandem luminescent solar concentrator" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zdrail" ;
+                    foaf:givenname "L" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kalytchuk" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hola" ;
+                    foaf:givenname "K" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Petr" ;
+                    foaf:givenname "M" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Zboril" ;
+                    foaf:givenname "R" ] ] ;
+    bibo:pageEnd 6672 ;
+    bibo:pageStart 6664 ;
+    bibo:volume "12" ;
+    c4o:hasContent "Zdrail, L., Kalytchuk, S., Hola, K., Petr, M. & Zboril, R. carbon dot-based tandem luminescent solar concentrator. Nanoscale. 12, 6664-6672 (2020)" .
+
+:BIBREF16 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:title "Impacts of Light Rail Transit on Labor Participation and Housing Affordability in the U. S.: Longitudinal Analysis Using Propensity Score Matching" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Kim" ;
+                    foaf:givenname "K" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Park" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Nelson" ;
+                    foaf:givenname "A" ] ] ;
+    bibo:pageEnd 431 ;
+    bibo:pageStart 419 ;
+    bibo:volume "2675" ;
+    c4o:hasContent "Kim, K., Park, K. & Nelson, A. Impacts of Light Rail Transit on Labor Participation and Housing Affordability in the U. S.: Longitudinal Analysis Using Propensity Score Matching. 2675, 419-431 (2021)" .
+
+:BIBREF17 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "International Journal Of Grid And Utility Computing" ] ;
+    dcterms:title "BFO-based firefly algorithm for multi-objective optimal allocation of generation by integrating renewable energy sources" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Sarkar" ;
+                    foaf:givenname "D" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Banerjee" ;
+                    foaf:givenname "S" ] ] ;
+    bibo:pageEnd 80 ;
+    bibo:pageStart 67 ;
+    bibo:volume "12" ;
+    c4o:hasContent "Sarkar, D. & Banerjee, S. BFO-based firefly algorithm for multi-objective optimal allocation of generation by integrating renewable energy sources. International Journal Of Grid And Utility Computing. 12, 67-80 (2021)" .
+
+:BIBREF18 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Journal Of Inverse And Ill-posed Problems" ] ;
+    dcterms:title "An inverse problem of triple-thickness parameters determination for thermal protective clothing with Stephan-Boltzmann interface conditions" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "T" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Kabanikhin" ;
+                    foaf:givenname "S" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Nakamura" ;
+                    foaf:givenname "G" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "F" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 424 ;
+    bibo:pageStart 411 ;
+    bibo:volume "28" ;
+    c4o:hasContent "Li, T., Kabanikhin, S., Nakamura, G., Wang, F. & Xu, D. An inverse problem of triple-thickness parameters determination for thermal protective clothing with Stephan-Boltzmann interface conditions. Journal Of Inverse And Ill-posed Problems. 28, 411-424 (2020)" .
+
+:BIBREF19 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IET Intelligent Transport Systems" ] ;
+    dcterms:title "Evolution test by improved genetic algorithm with application to performance limit evaluation of automatic parallel parking system" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "F" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Han" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 764 ;
+    bibo:pageStart 754 ;
+    bibo:volume "15" ;
+    c4o:hasContent "Gao, F., Zhang, Q., Han, Z. & Yang, Y. Evolution test by improved genetic algorithm with application to performance limit evaluation of automatic parallel parking system. IET Intelligent Transport Systems. 15, 754-764 (2021)" .
+
+:BIBREF2 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "and mobility in metro station areas on a 3D pedestrian network. Environment And Planning B: Urban Analytics And City Science" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Chan" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Chen" ;
+                    foaf:givenname "A" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "And" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 1335 ;
+    bibo:pageStart 1331 ;
+    bibo:volume "49" ;
+    c4o:hasContent "Xu, Y., Chan, H., Chen, A. & And, L. and mobility in metro station areas on a 3D pedestrian network. Environment And Planning B: Urban Analytics And City Science. 49, 1331-1335 (2022)" .
+
+:BIBREF3 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "Canada. International Journal Of STD & AIDS" ] ;
+    dcterms:title "viral load trajectories of women living with HIV in Metro Vancouver" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Duff" ;
+                    foaf:givenname "P" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Shannon" ;
+                    foaf:givenname "K" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Braschel" ;
+                    foaf:givenname "M" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Ranville" ;
+                    foaf:givenname "F" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Kester" ;
+                    foaf:givenname "M" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Martin" ;
+                    foaf:givenname "R" ] ;
+            rdf:_7 [ a foaf:Person ;
+                    foaf:family_name "Krusi" ;
+                    foaf:givenname "A" ] ;
+            rdf:_8 [ a foaf:Person ;
+                    foaf:family_name "Hiv" ;
+                    foaf:givenname "D" ] ] ;
+    bibo:pageEnd 330 ;
+    bibo:pageStart 322 ;
+    bibo:volume "32" ;
+    c4o:hasContent "Duff, P., Shannon, K., Braschel, M., Ranville, F., Kester, M., Martin, R., Krusi, A. & Hiv, D. viral load trajectories of women living with HIV in Metro Vancouver, Canada. International Journal Of STD & AIDS. 32, 322-330 (2021)" .
+
+:BIBREF4 a deo:BibliographicReference ;
+    dcterms:issued 2022 ;
+    dcterms:title "Train Operational Plan Optimization for Urban Rail Transit Lines Considering Circulation Balance. Sustainability" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Zhao" ;
+                    foaf:givenname "S" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wu" ;
+                    foaf:givenname "J" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Meng" ;
+                    foaf:givenname "G" ] ] ;
+    bibo:pageEnd 5237 ;
+    bibo:pageStart 5226 ;
+    bibo:volume "14" ;
+    c4o:hasContent "Zhao, S., Wu, J., Li, Z. & Meng, G. Train Operational Plan Optimization for Urban Rail Transit Lines Considering Circulation Balance. Sustainability. 14, 5226-5237 (2022)" .
+
+:BIBREF5 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Access" ] ;
+    dcterms:title "Passenger Travel Behavior in Public Transport Corridor After the Operation of Urban Rail Transit: A Random Forest Algorithm Approach" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Gao" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Zhang" ;
+                    foaf:givenname "H" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Liao" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 21131 ;
+    bibo:pageStart 11303 ;
+    bibo:volume "8" ;
+    c4o:hasContent "Li, X., Gao, Y., Zhang, H. & Liao, Y. Passenger Travel Behavior in Public Transport Corridor After the Operation of Urban Rail Transit: A Random Forest Algorithm Approach. IEEE Access. 8, 11303-21131 (2020)" .
+
+:BIBREF6 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "Journal Of Advanced Transportation" ] ;
+    dcterms:title "Integrated Optimization on Energy Saving and Quality of Service of Urban Rail Transit System" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "W" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Peng" ;
+                    foaf:givenname "Q" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Wen" ;
+                    foaf:givenname "C" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Li" ;
+                    foaf:givenname "S" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Yan" ;
+                    foaf:givenname "X" ] ;
+            rdf:_6 [ a foaf:Person ;
+                    foaf:family_name "Xu" ;
+                    foaf:givenname "X" ] ] ;
+    bibo:pageEnd 22 ;
+    bibo:pageStart 1 ;
+    c4o:hasContent "Li, W., Peng, Q., Wen, C., Li, S., Yan, X. & Xu, X. Integrated Optimization on Energy Saving and Quality of Service of Urban Rail Transit System. Journal Of Advanced Transportation. 2020 pp. 1-22 (2020)" .
+
+:BIBREF7 a deo:BibliographicReference ;
+    dcterms:issued 2021 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions On Intelligent Transportation Systems" ] ;
+    dcterms:title "Data-Driven Timetable Optimization of Urban Bus Line Based on Multi-Objective Genetic Algorithm" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Tang" ;
+                    foaf:givenname "J" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Y" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Hao" ;
+                    foaf:givenname "W" ] ;
+            rdf:_4 [ a foaf:Person ;
+                    foaf:family_name "Liu" ;
+                    foaf:givenname "F" ] ;
+            rdf:_5 [ a foaf:Person ;
+                    foaf:family_name "Wang" ;
+                    foaf:givenname "Y" ] ] ;
+    bibo:pageEnd 2429 ;
+    bibo:pageStart 2417 ;
+    bibo:volume "22" ;
+    c4o:hasContent "Tang, J., Yang, Y., Hao, W., Liu, F. & Wang, Y. Data-Driven Timetable Optimization of Urban Bus Line Based on Multi- Objective Genetic Algorithm. IEEE Transactions On Intelligent Transportation Systems. 22, 2417-2429 (2021)" .
+
+:BIBREF8 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions On Transportation Electrification" ] ;
+    dcterms:title "Utilization of Urban Rail Transit Regenerative Braking Energy based on the Bypass DC Loop" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Shen" ;
+                    foaf:givenname "X" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Wei" ;
+                    foaf:givenname "H" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "And" ;
+                    foaf:givenname "L" ] ] ;
+    bibo:pageEnd 1711 ;
+    bibo:pageStart 1699 ;
+    bibo:volume "7" ;
+    c4o:hasContent "Shen, X., Wei, H. & And, L. and Utilization of Urban Rail Transit Regenerative Braking Energy based on the Bypass DC Loop. IEEE Transactions On Transportation Electrification. 7, 1699-1711 (2020)" .
+
+:BIBREF9 a deo:BibliographicReference ;
+    dcterms:issued 2020 ;
+    dcterms:publisher [ foaf:name "IEEE Transactions On Intelligent Transportation Systems" ] ;
+    dcterms:title "Deep-Reinforcement-Learning-Based Energy Management Strategy for Supercapacitor Energy Storage Systems in Urban Rail Transit" ;
+    bibo:authorList [ a rdf:Seq ;
+            rdf:_1 [ a foaf:Person ;
+                    foaf:family_name "Yang" ;
+                    foaf:givenname "Z" ] ;
+            rdf:_2 [ a foaf:Person ;
+                    foaf:family_name "Zhu" ;
+                    foaf:givenname "F" ] ;
+            rdf:_3 [ a foaf:Person ;
+                    foaf:family_name "Lin" ;
+                    foaf:givenname "F" ] ] ;
+    bibo:pageEnd 1160 ;
+    bibo:pageStart 1150 ;
+    bibo:volume "22" ;
+    c4o:hasContent "Yang, Z., Zhu, F. & Lin, F. Deep-Reinforcement-Learning-Based Energy Management Strategy for Supercapacitor Energy Storage Systems in Urban Rail Transit. IEEE Transactions On Intelligent Transportation Systems. 22, 1150-1160 (2020)" .
+
