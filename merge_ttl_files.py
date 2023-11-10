@@ -1,14 +1,49 @@
-from rdflib import Graph
+from rdflib import Graph, RDF, Namespace, URIRef, BNode, Literal
 import os
+import re
 
 
-def merge_ttl(ttl_file_1, ttl_file_2):
+def merge_ttl(ttl_file_org, ttl_file_add):
     g1 = Graph()
     g2 = Graph()
 
-    g1.parse(ttl_file_1, format="ttl")
-    g2.parse(ttl_file_2, format="ttl")
+    g1.parse(ttl_file_org, format="ttl")
+    g2.parse(ttl_file_add, format="ttl")
 
+    fabio = Namespace("http://purl.org/spar/fabio/")
+    bn = Namespace("https://w3id.org/ocs/ont/papers/")
+    g1.bind("fabio", fabio)
+    g1.bind("bn", bn)
+    g2.bind("fabio", fabio)
+    g2.bind("", bn)
+
+
+    paper_org = g1.value(predicate=RDF.type, object=fabio.ResearchPaper)
+    paper_add = URIRef(bn+"paper")
+
+    id_ = re.search(r'[a-zA-Z0-9]{9}$', str(paper_org)).group(0)
+
+    for s,p,o in g2.triples((None, None, None)):
+        new_s = s
+        new_o = o
+        
+        if s == paper_add:
+            new_s = paper_org
+            
+        elif not isinstance(s, BNode):
+            sub = str(s)
+            sub = sub + "_" + id_
+            new_s = (URIRef(sub))
+                    
+
+        if not isinstance(o, (Literal, BNode)):
+            obj = str(o)
+            obj = obj + "_" + id_
+            new_o = (URIRef(obj))
+        
+        g2.remove((s,p,o))
+        g2.add((new_s, p, new_o))
+            
     for prefix, namespace in g2.namespaces():
         g1.namespace_manager.bind(prefix, namespace)
 
