@@ -68,25 +68,21 @@ if __name__ == "__main__":
             dir_path = os.path.join(root_dir, dir)
             if os.path.isdir(dir_path):
                 for ttl_file in os.listdir(dir_path):
-                    try:
-                        final_out_path = os.path.join(output_path, archive, dir)
-                        final_output_ttl = ttl_file
-                        for out_ttl in os.listdir(final_out_path):
-                            if ttl_file.lower() == out_ttl.lower():
-                                final_out_path = out_ttl
+                    final_out_path = os.path.join(output_path, archive, dir)
+                    final_output_ttl = ttl_file
+                    for out_ttl in os.listdir(final_out_path):
+                        if ttl_file.lower() == out_ttl.lower():
+                            final_out_path = out_ttl
 
-                        g = merge_ttl(
-                            ttl_file_1=os.path.join(dir_path, ttl_file),
-                            ttl_file_2=os.path.join(
-                                output_path, archive, dir, final_out_path
-                            ),
-                        )
-                        with open(os.path.join(dir_path, ttl_file), "wb") as file:
-                            if isinstance(g, str):
-                                g = g.encode()
-                            file.write(g)
-                        print(f"File {ttl_file} merged")
-                    except:
-                        print(
-                            f"Can not scrape more information from {ttl_file} file, final turtle in this step file will be created based only on input information for this pipeline step"
-                        )
+                    g = merge_ttl(
+                        ttl_file_org=os.path.join(dir_path, ttl_file),
+                        ttl_file_add=os.path.join(
+                            output_path, archive, dir, final_out_path
+                        ),
+                    )
+                    with open(os.path.join(dir_path, ttl_file), "wb") as file:
+                        if isinstance(g, str):
+                            g = g.encode()
+                        file.write(g)
+                    print(f"File {ttl_file} merged")
+
