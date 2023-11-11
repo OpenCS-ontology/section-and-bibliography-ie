@@ -13,7 +13,7 @@ for archive in "${archives[@]}"; do
                 if [ -f "$file" ]; then
                     cp "$file" /common/$(basename "$file" .pdf).pdf
                     bash ./run.sh /common/$(basename "$file" .pdf).pdf
-                    cp /common/processed_ttl/$(basename "$file" .pdf | tr '[:upper:]' '[:lower:]').ttl /home/output_ttl_files/$archive/$(basename "$dir")/$(basename "$file" .pdf).ttl
+                    cp /common/processed_ttl/$(basename "$file" .pdf | tr '[:upper:]' '[:lower:]' | tr -d '_').ttl /home/output_ttl_files/$archive/$(basename "$dir")/$(basename "$file" .pdf).ttl
                 fi
             done
         fi

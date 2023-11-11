@@ -45,7 +45,11 @@ def json_to_rdf(filepath):
         parse_sections(g, doc_as_json, body_matter)
 
     output_name = re.sub(r"\s+", "_", doc_as_json.get("title", "").strip())
-    output_path = Path(filepath.parent) / "processed_ttl" / f"{output_name.lower()}.ttl"
+    output_path = (
+        Path(filepath.parent)
+        / "processed_ttl"
+        / f"{output_name.lower().replace('_', '')}.ttl"
+    )
     g.serialize(destination=output_path, format="turtle")
     output_path.chmod(0o666)
 
@@ -116,114 +120,131 @@ def parse_sections(g, doc_as_json, body_matter):
         doc_as_json.get("pdf_parse", {}).get("body_text", [])
     ):
         section_name: str = paragraph["section"]
-        match = re.match(r"^([0-9\s.IVX]+) (.*)$", paragraph["text"])
-        if not section_name:
-            if not match and prev_section_name != "":
-                section_name = prev_section_name
-            elif match:
-                num, section_name = match.group(1), match.group(2)
-                section_name = section_name.split(". ", 1)[0]
-                section_name = num + " " + section_name
-                prev_section_name = section_name
-            else:
+        try:
+            match = re.match(r"^([0-9\s.IVX]+) (.*)$", paragraph["text"])
+            if not section_name:
+                if not match and prev_section_name != "":
+                    section_name = prev_section_name
+                elif match:
+                    num, section_name = match.group(1), match.group(2)
+                    section_name = section_name.split(". ", 1)[0]
+                    section_name = num + " " + section_name
+                    prev_section_name = section_name
+                else:
+                    continue
+            if section_name != prev_section_name:
+                match = re.match(r"^([0-9\s.IVX]+) (.*)$", section_name)
+                if match:
+                    num, section_name = match.group(1), match.group(2)
+                    section_name = section_name.split(". ", 1)[0]
+                    section_name = num + " " + section_name
+                    prev_section_name = section_name
+
+            if not section_name or not any(c.isalpha() for c in section_name):
                 continue
-        if section_name != prev_section_name:
+
+            section_number: str = paragraph["sec_num"]
+            if not section_number and section_name is not None:
+                match = re.match(r"^([0-9\s.IVX]+) (.*)$", section_name)
+                if match:
+                    section_number = match.group(1)
+                else:
+                    section_number = None
             match = re.match(r"^([0-9\s.IVX]+) (.*)$", section_name)
             if match:
-                num, section_name = match.group(1), match.group(2)
-                section_name = section_name.split(". ", 1)[0]
-                section_name = num + " " + section_name
-                prev_section_name = section_name
-
-        if not section_name or not any(c.isalpha() for c in section_name):
-            continue
-
-        section_number: str = paragraph["sec_num"]
-        if not section_number and section_name is not None:
-            match = re.match(r"^([0-9\s.IVX]+) (.*)$", section_name)
-            if match:
-                section_number = match.group(1)
-            else:
-                section_number = None
-        match = re.match(r"^([0-9\s.IVX]+) (.*)$", section_name)
-        if match:
-            section_name = match.group(2)
-        section_number = (
-            ".".join(map(to_arabic, section_number.split(".")))
-            if section_number is not None
-            else None
-        )
-        if (section_name, section_number) not in sections_dict:
-            g.add((section := SDP[f"section{i}"], RDF.type, DOCO.Section))
-            g.add(
-                (section_title := SDP[f"sectionTitle{i}"], RDF.type, DOCO.SectionTitle)
+                section_name = match.group(2)
+            section_number = (
+                ".".join(map(to_arabic, section_number.split(".")))
+                if section_number is not None
+                else None
             )
-            g.add((section_title, C4O.hasContent, Literal(section_name)))
-            g.add((section, PO.containsAsHeader, section_title))
-            if section_number:
+            if (section_name, section_number) not in sections_dict:
+                g.add((section := SDP[f"section{i}"], RDF.type, DOCO.Section))
                 g.add(
                     (
-                        section_label := SDP[f"sectionLabel{i}"],
+                        section_title := SDP[f"sectionTitle{i}"],
                         RDF.type,
-                        DOCO.SectionLabel,
+                        DOCO.SectionTitle,
                     )
                 )
-                g.add((section_label, C4O.hasContent, Literal(section_number)))
-                g.add((section, PO.contains, section_label))
-            sections_dict[(section_name, section_number)] = section
-
-            depth = len(list(filter(None, str(section_number).split("."))))
-            if depth == 1:
-                if hierarchy[0] == "":
-                    g.add((body_matter, CO.firstItem, body_list_item := BNode()))
-                else:
-                    g.add((body_list_item, CO.nextItem, next_body_list_item := BNode()))
-                    body_list_item = next_body_list_item
-                g.add((body_list_item, CO.itemContent, section))
-                g.add((body_matter, PO.contains, section))
-                hierarchy[0] = section
-                first_iter = True
-            elif depth == 2:
-                if first_iter:
-                    g.add((hierarchy[0], CO.firstItem, list_item := BNode()))
-                else:
-                    g.add((list_item, CO.nextItem, next_list_item := BNode()))
-                    list_item = next_list_item
-                g.add((list_item, CO.itemContent, section))
-                g.add((hierarchy[0], PO.contains, section))
-                hierarchy[1] = section
-                first_iter = False
-                first_iter_inner = True
-            else:
-                if first_iter_inner:
-                    g.add((hierarchy[1], CO.firstItem, list_item_inner := BNode()))
-                else:
+                g.add((section_title, C4O.hasContent, Literal(section_name)))
+                g.add((section, PO.containsAsHeader, section_title))
+                if section_number:
                     g.add(
-                        (list_item_inner, CO.nextItem, next_list_item_inner := BNode())
+                        (
+                            section_label := SDP[f"sectionLabel{i}"],
+                            RDF.type,
+                            DOCO.SectionLabel,
+                        )
                     )
-                    list_item_inner = next_list_item_inner
-                g.add((list_item_inner, CO.itemContent, section))
-                g.add((hierarchy[1], PO.contains, section))
-                first_iter_inner = False
-        else:
-            section = sections_dict[(section_name, section_number)]
+                    g.add((section_label, C4O.hasContent, Literal(section_number)))
+                    g.add((section, PO.contains, section_label))
+                sections_dict[(section_name, section_number)] = section
 
-        for citation in paragraph.get("cite_spans", []):
-            if citation.get("ref_id", None):
-                g.add(
-                    (
-                        section,
-                        PO.contains,
-                        citation_node := SDP[f"referenceTo{citation['ref_id']}"],
+                depth = len(list(filter(None, str(section_number).split("."))))
+                if depth == 1:
+                    if hierarchy[0] == "":
+                        g.add((body_matter, CO.firstItem, body_list_item := BNode()))
+                    else:
+                        g.add(
+                            (
+                                body_list_item,
+                                CO.nextItem,
+                                next_body_list_item := BNode(),
+                            )
+                        )
+                        body_list_item = next_body_list_item
+                    g.add((body_list_item, CO.itemContent, section))
+                    g.add((body_matter, PO.contains, section))
+                    hierarchy[0] = section
+                    first_iter = True
+                elif depth == 2:
+                    if first_iter:
+                        g.add((hierarchy[0], CO.firstItem, list_item := BNode()))
+                    else:
+                        g.add((list_item, CO.nextItem, next_list_item := BNode()))
+                        list_item = next_list_item
+                    g.add((list_item, CO.itemContent, section))
+                    g.add((hierarchy[0], PO.contains, section))
+                    hierarchy[1] = section
+                    first_iter = False
+                    first_iter_inner = True
+                else:
+                    if first_iter_inner:
+                        g.add((hierarchy[1], CO.firstItem, list_item_inner := BNode()))
+                    else:
+                        g.add(
+                            (
+                                list_item_inner,
+                                CO.nextItem,
+                                next_list_item_inner := BNode(),
+                            )
+                        )
+                        list_item_inner = next_list_item_inner
+                    g.add((list_item_inner, CO.itemContent, section))
+                    g.add((hierarchy[1], PO.contains, section))
+                    first_iter_inner = False
+            else:
+                section = sections_dict[(section_name, section_number)]
+
+            for citation in paragraph.get("cite_spans", []):
+                if citation.get("ref_id", None):
+                    g.add(
+                        (
+                            section,
+                            PO.contains,
+                            citation_node := SDP[f"referenceTo{citation['ref_id']}"],
+                        )
                     )
-                )
-                g.add((citation_node, RDF.type, DEO.Reference))
-                cite_text = citation["text"]
-                for char in [",", ".", "[", "]", "(", ")"]:
-                    cite_text = cite_text.replace(char, "")
-                cite_text = f"[{cite_text}]"
-                g.add((citation_node, C4O.hasContent, Literal(cite_text)))
-                g.add((citation_node, DCTERMS.references, SDP[citation["ref_id"]]))
+                    g.add((citation_node, RDF.type, DEO.Reference))
+                    cite_text = citation["text"]
+                    for char in [",", ".", "[", "]", "(", ")"]:
+                        cite_text = cite_text.replace(char, "")
+                    cite_text = f"[{cite_text}]"
+                    g.add((citation_node, C4O.hasContent, Literal(cite_text)))
+                    g.add((citation_node, DCTERMS.references, SDP[citation["ref_id"]]))
+        except:
+            print(f"Grobid failed in scraping section {section_name}, skipping it")
 
 
 def parse_bibliography(g, doc_as_json):

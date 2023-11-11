@@ -66,7 +66,9 @@ if __name__ == "__main__":
                     final_out_path = os.path.join(output_path, archive, dir)
                     final_output_ttl = ttl_file
                     for out_ttl in os.listdir(final_out_path):
-                        if ttl_file.lower() == out_ttl.lower():
+                        if ttl_file.lower().replace("_", "") == out_ttl.lower().replace(
+                            "_", ""
+                        ):
                             final_out_path = out_ttl
 
                     try:
