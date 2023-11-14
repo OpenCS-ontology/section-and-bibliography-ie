@@ -85,5 +85,5 @@ if __name__ == "__main__":
                         print(f"File {ttl_file} merged")
                     except:
                         print(
-                            f"Cannot scraper more information from {ttl_file} file, final ttl will be creating based on input file"
+                            f"Cannot scrape more information from {ttl_file} file, final ttl will be creating based on input file"
                         )
