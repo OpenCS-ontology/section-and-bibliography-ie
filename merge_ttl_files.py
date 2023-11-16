@@ -1,6 +1,7 @@
 from rdflib import Graph, RDF, Namespace, URIRef, BNode, Literal
 import os
 import re
+from rapidfuzz import fuzz
 
 
 def merge_ttl(ttl_file_org, ttl_file_add):
@@ -65,11 +66,16 @@ if __name__ == "__main__":
                 for ttl_file in os.listdir(dir_path):
                     final_out_path = os.path.join(output_path, archive, dir)
                     final_output_ttl = ttl_file
+                    mod_ttl_file = "".join(
+                        [char for char in ttl_file.lower() if char.isalpha()]
+                    )
                     for out_ttl in os.listdir(final_out_path):
-                        if ttl_file.lower().replace("_", "") == out_ttl.lower().replace(
-                            "_", ""
-                        ):
+                        mod_out_ttl = "".join(
+                            [char for char in out_ttl.lower() if char.isalpha()]
+                        )
+                        if fuzz.ratio(mod_ttl_file, mod_out_ttl) > 95:
                             final_out_path = out_ttl
+                            break
 
                     try:
                         g = merge_ttl(

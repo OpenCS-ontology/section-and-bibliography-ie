@@ -1,5 +1,8 @@
 FROM python:3.8.15
 RUN apt-get update && apt-cache search jdk && apt-get install -y openjdk-11-jdk
+RUN apt-get install python3 -y \
+    && sudo apt-get install python3-pip -y \
+    && pip install rapidfuzz
 RUN java --version
 COPY repo_setup.sh repo_setup.sh
 RUN ./repo_setup.sh
