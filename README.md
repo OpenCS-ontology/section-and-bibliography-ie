@@ -1,5 +1,19 @@
-# section-and-bibliography-ie
-Section &amp; bibliography information extraction
+# Section and bibliography extractor
+
+This component extracts various structured information about sections and bibliographies from research articles' PDF files using the `GROBID` Docker container. It takes articles' PDFs and Turtle files and returns new Turtle files enriched with the extracted information.
+
+## Authors
+
+- [Tomasz Siudalski](https://github.com/tsiudalski)
+- [Grzegorz Zbrzeżny](https://github.com/grzegorzZ1)
+
+## Credits
+
+This project is based on the work of the following authors from the original project:
+
+- [Krystian Kurek](https://github.com/KrystianKurek)
+- [Anastasiya Danilenka](https://github.com/adanilenka)
+
 
 ## Features
 
